@@ -50,7 +50,11 @@ Bước này tải khá nhiều thứ, mất vài phút.
 ```
 git config user.name "huy53qldd-cpu"
 git config user.email "huy53qldd@gmail.com"
+git config --global pull.rebase true
 ```
+
+> Dòng thứ ba làm cho lịch sử sửa đổi thẳng một hàng, dễ đọc. Nếu lúc cài Git
+> anh đã chọn "Rebase" rồi thì gõ lại cũng không sao.
 
 ### Bước 5 — Chạy thử
 
@@ -89,8 +93,9 @@ git commit -m "mô tả ngắn việc vừa làm"
 git push
 ```
 
-> Nếu quên `git pull` trước khi làm, lúc `git push` sẽ bị báo lỗi. Khi đó gõ
-> `git pull --rebase` rồi `git push` lại. Cứ bình tĩnh, code không mất đi đâu.
+> Nếu quên `git pull` trước khi làm, lúc `git push` sẽ bị báo lỗi. Khi đó chỉ
+> cần gõ `git pull` rồi `git push` lại là xong. Cứ bình tĩnh, code không mất
+> đi đâu cả.
 
 ---
 
