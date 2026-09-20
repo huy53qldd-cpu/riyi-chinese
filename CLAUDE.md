@@ -1,5 +1,14 @@
 # Dự án Riyi - Quy tắc cố định
 
+## ĐỌC TRƯỚC KHI LÀM BẤT CỨ VIỆC GÌ
+
+Mở `tai-lieu/QUYET-DINH-DA-CHOT.md` trước. File đó ghi mọi quyết định đã chốt
+giữa chủ dự án và Claude, đang làm tới đâu, và đang chờ trả lời câu hỏi nào.
+
+Việc nào đã có trong file đó thì KHÔNG hỏi lại. Chốt thêm quyết định mới thì
+ghi bổ sung vào đó rồi commit, đừng để quyết định chỉ nằm trong cửa sổ trò
+chuyện vì cửa sổ đó không đi theo sang máy khác.
+
 App học tiếng Trung (HSK 3.0, cấp 1-3) dành cho người Việt đã biết tiếng Nhật
 (trình độ N4-N1). Chủ dự án KHÔNG BIẾT LẬP TRÌNH.
 

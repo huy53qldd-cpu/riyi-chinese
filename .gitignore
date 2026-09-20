@@ -38,3 +38,8 @@ venv/
 firebase-debug.log
 .env
 .env.local
+
+# --- Lich su tro chuyen cua Claude Code ---
+# Khong bao gio dua vao kho cong khai: co the chua noi dung liet ke thu muc may.
+*.jsonl
+!src/du-lieu/**/*.jsonl
