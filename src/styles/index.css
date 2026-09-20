@@ -1,0 +1,216 @@
+/* =============================================================================
+   RIYI — CSS CHÍNH
+   File này nối bảng màu (tokens.css) vào Tailwind, khai báo font đã cắt nhỏ,
+   và đặt vài quy tắc nền tảng cho chữ Hán / pinyin / furigana.
+
+   KHÔNG viết màu trực tiếp vào file này. Màu nằm ở tokens.css.
+   ============================================================================= */
+
+@import "tailwindcss";
+@import "./tokens.css";
+
+/* -----------------------------------------------------------------------------
+   FONT ĐÃ CẮT NHỎ (SUBSET)
+   Các file .woff2 dưới đây do công cụ cong-cu/cat-font.py tạo ra, chỉ chứa đúng
+   những ký tự app thực sự dùng. Không tải font CJK bản đầy đủ (bản đầy đủ nặng
+   hơn 10MB mỗi font, sẽ rất chậm trên điện thoại dùng mạng 4G).
+
+   font-display: swap — hiện chữ bằng font dự phòng trước, đổi sang font thật
+   khi tải xong, để người dùng không nhìn vào màn hình trắng.
+   ----------------------------------------------------------------------------- */
+
+/* Tiếng Trung giản thể */
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url("/fonts/noto-sans-sc-subset.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Tiếng Nhật */
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("/fonts/noto-sans-jp-subset.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Tiếng Việt và chữ Latin. Nunito có nét bo tròn, hợp với logo Riyi. */
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/nunito-subset.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -----------------------------------------------------------------------------
+   NỐI BẢNG MÀU VÀO TAILWIND
+   Sau khai báo này, trong giao diện có thể viết class kiểu bg-nen, text-chu,
+   border-vien... và Tailwind sẽ tự lấy đúng màu từ tokens.css.
+   Dùng "@theme inline" (không phải "@theme") vì giá trị trỏ tới biến khác.
+   ----------------------------------------------------------------------------- */
+@theme inline {
+  --color-nen: var(--nen);
+  --color-nen-phu: var(--nen-phu);
+  --color-nen-noi: var(--nen-noi);
+
+  --color-chu: var(--chu);
+  --color-chu-mo: var(--chu-mo);
+  --color-chu-tren-nhan: var(--chu-tren-nhan);
+
+  --color-nhan: var(--nhan);
+  --color-nhan-dam: var(--nhan-dam);
+  --color-nhan-nhat: var(--nhan-nhat);
+
+  --color-vien: var(--vien);
+  --color-vien-dam: var(--vien-dam);
+
+  --color-dung: var(--dung);
+  --color-sai: var(--sai);
+  --color-canh-bao: var(--canh-bao);
+
+  --color-nguy-hiem-nhe: var(--nguy-hiem-nhe);
+  --color-nguy-hiem-vua: var(--nguy-hiem-vua);
+  --color-nguy-hiem-nang: var(--nguy-hiem-nang);
+
+  --font-viet: var(--font-viet);
+  --font-trung: var(--font-trung);
+  --font-nhat: var(--font-nhat);
+
+  --radius-nho: var(--bo-goc-nho);
+  --radius-vua: var(--bo-goc);
+  --radius-lon: var(--bo-goc-lon);
+}
+
+/* -----------------------------------------------------------------------------
+   NỀN TẢNG
+   ----------------------------------------------------------------------------- */
+html {
+  /* Chặn trình duyệt tự phóng to chữ khi xoay ngang điện thoại */
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--nen);
+}
+
+body {
+  margin: 0;
+  background-color: var(--nen);
+  color: var(--chu);
+  font-family: var(--font-viet);
+  font-size: var(--co-chu-latin);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+
+  /* Chặn kéo co giãn quá đà trên iPhone, cho app giống ứng dụng thật hơn */
+  overscroll-behavior-y: none;
+}
+
+/* Không cho chọn-bôi đen lung tung khi chạm, trừ vùng nội dung học */
+button,
+nav {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* -----------------------------------------------------------------------------
+   CHỮ HÁN VÀ RUBY (PINYIN / FURIGANA)
+
+   Quy tắc bắt buộc của dự án:
+   - Mọi đoạn tiếng Trung phải có lang="zh-CN"
+   - Mọi đoạn tiếng Nhật phải có lang="ja"
+   Thiếu thuộc tính này thì trình duyệt vẽ SAI TỰ DẠNG dù đã chọn đúng font.
+
+   Hai dòng :lang() dưới đây là chốt chặn cuối: kể cả khi ai đó quên đặt class
+   font, chỉ cần có lang= là vẫn ra đúng font.
+   ----------------------------------------------------------------------------- */
+:lang(zh-CN),
+:lang(zh) {
+  font-family: var(--font-trung);
+}
+
+:lang(ja) {
+  font-family: var(--font-nhat);
+}
+
+/* Chữ Hán luôn lớn hơn chữ Latin */
+.chu-han {
+  font-size: var(--co-chu-han);
+  line-height: 1.9; /* chừa chỗ phía trên cho pinyin/furigana */
+  letter-spacing: 0.02em;
+}
+
+/* Ruby = chữ nhỏ chạy phía trên chữ Hán, đúng kiểu sách in.
+   Dùng cho cả pinyin (tiếng Trung) và furigana (tiếng Nhật). */
+ruby {
+  ruby-align: center;
+}
+
+rt {
+  font-size: var(--co-chu-ruby);
+  font-weight: 400;
+  color: var(--chu-mo);
+  letter-spacing: 0;
+  /* Pinyin và furigana luôn dùng font Latin/Kana của chính ngôn ngữ đó,
+     không để font tiếng Trung vẽ chữ kana và ngược lại. */
+  user-select: none;
+}
+
+/* Pinyin là chữ Latin có dấu thanh, luôn dùng font Latin cho đều nét */
+:lang(zh-CN) rt,
+:lang(zh) rt {
+  font-family: var(--font-viet);
+}
+
+/* Furigana là kana, phải dùng font tiếng Nhật */
+:lang(ja) rt {
+  font-family: var(--font-nhat);
+}
+
+/* Tắt furigana: người dùng bật/tắt trong Cài đặt, mặc định BẬT.
+   Khi tắt thì ẩn chữ nhỏ nhưng GIỮ NGUYÊN chỗ trống, để dòng chữ không
+   bị nhảy lên nhảy xuống gây khó chịu. */
+:root[data-furigana="tat"] :lang(ja) rt {
+  visibility: hidden;
+}
+
+/* -----------------------------------------------------------------------------
+   LOGO THEO THEME
+   Chọn bản logo theo data-theme CỦA APP, không theo cài đặt sáng/tối của máy.
+   Hai thứ đó có thể lệch nhau, và nếu chọn nhầm thì chữ "Riyi" sẽ trùng màu
+   nền và biến mất. Xem giải thích đầy đủ trong src/thanh-phan/Logo.jsx.
+   ----------------------------------------------------------------------------- */
+.logo-toi {
+  display: none;
+}
+
+:root[data-theme="toi"] .logo-sang {
+  display: none;
+}
+
+:root[data-theme="toi"] .logo-toi {
+  display: block;
+}
+
+/* -----------------------------------------------------------------------------
+   HỖ TRỢ TIẾP CẬN
+   ----------------------------------------------------------------------------- */
+
+/* Người dùng bật "giảm chuyển động" trong cài đặt máy thì tắt hiệu ứng */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Viền khi dùng bàn phím Tab để di chuyển, cần rõ để không bị lạc */
+:focus-visible {
+  outline: 3px solid var(--nhan);
+  outline-offset: 2px;
+  border-radius: var(--bo-goc-nho);
+}

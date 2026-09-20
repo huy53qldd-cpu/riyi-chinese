@@ -1,0 +1,71 @@
+{
+  "loai": "ngu-phap",
+  "cap": 1,
+  "phienBan": 1,
+  "capNhatLuc": "2026-09-20",
+  "ghiChuFileMau": "File MẪU của giai đoạn 0, chỉ để xem cấu trúc. Khoảng 15 điểm ngữ pháp sẽ nhập ở giai đoạn 5.",
+  "danhSach": [
+    {
+      "id": "np-0001",
+      "capHsk": 1,
+      "ten": "了 chỉ sự hoàn thành của hành động",
+      "congThuc": "Chủ ngữ + Động từ + 了 + Tân ngữ",
+      "viDu": [
+        {
+          "trung": "我吃了饭。",
+          "pinyin": ["wǒ", "chī", "le", "fàn", ""],
+          "viet": "Tôi ăn cơm rồi.",
+          "ghiChuBienDieu": null
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "～た",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "了 đánh dấu hành động ĐÃ HOÀN THÀNH, còn た là THÌ QUÁ KHỨ. Hai thứ này không trùng nhau. Câu tiếng Trung có 了 vẫn có thể nói về tương lai, ví dụ 明天吃了饭再走 (mai ăn cơm xong rồi hãy đi), trong khi た không dùng như vậy được.",
+        "viDuNhat": "ご飯[はん]を食[た]べました。"
+      },
+      "giaiThichViet": "了 đặt ngay sau động từ để nói hành động đó đã xong. Đây KHÔNG phải là dấu hiệu của thì quá khứ.",
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "Người biết tiếng Nhật hay coi 了 là た. Không phải. 了 nói về việc HOÀN THÀNH, không nói về thời gian.",
+          "cauSai": null,
+          "cauDung": null
+        }
+      ],
+      "cangKiemTra": []
+    },
+    {
+      "id": "np-0002",
+      "capHsk": 1,
+      "ten": "Trật tự cơ bản: chủ – động – tân",
+      "congThuc": "Chủ ngữ + Động từ + Tân ngữ",
+      "viDu": [
+        {
+          "trung": "我喝水。",
+          "pinyin": ["wǒ", "hē", "shuǐ", ""],
+          "viet": "Tôi uống nước.",
+          "ghiChuBienDieu": null
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "主語 + 目的語 + を + 動詞",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Trật tự NGƯỢC NHAU. Tiếng Trung đặt động từ TRƯỚC tân ngữ, tiếng Nhật đặt động từ ở CUỐI câu. Tiếng Trung cũng không có trợ từ đánh dấu tân ngữ như を.",
+        "viDuNhat": "私[わたし]は水[みず]を飲[の]みます。"
+      },
+      "giaiThichViet": "Đây là khác biệt lớn nhất và gây lỗi nhiều nhất với người học đã quen tiếng Nhật. Động từ tiếng Trung đứng giữa, không đứng cuối.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Đặt động từ ở cuối câu theo thói quen tiếng Nhật là lỗi phổ biến nhất.",
+          "cauSai": "我水喝。",
+          "cauDung": "我喝水。"
+        }
+      ],
+      "cangKiemTra": []
+    }
+  ]
+}

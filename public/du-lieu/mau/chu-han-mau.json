@@ -1,0 +1,156 @@
+{
+  "loai": "chu-han",
+  "cap": 1,
+  "phienBan": 1,
+  "capNhatLuc": "2026-09-20",
+  "ghiChuFileMau": "File MẪU của giai đoạn 0, chỉ để xem cấu trúc. Nội dung thật nhập ở giai đoạn 1.",
+  "danhSach": [
+    {
+      "id": "han-0001",
+      "capHsk": 1,
+      "gianThe": "学",
+      "tuDangNhat": "学",
+      "phonThe": "學",
+      "soSanhTuDang": {
+        "trungVsNhat": "giong-het",
+        "khacNetVe": false,
+        "ghiChu": "Tiếng Trung và tiếng Nhật dùng chung dạng giản lược 学. Phồn thể 學 khác hẳn."
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "xué",
+            "chinh": true,
+            "viDuTu": "学习",
+            "viDuNghia": "học tập"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "ガク",
+            "chinh": true,
+            "viDuTu": "学生[がくせい]",
+            "viDuNghia": "học sinh"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "まな-ぶ",
+            "chinh": true,
+            "viDuTu": "学[まな]ぶ",
+            "viDuNghia": "học"
+          }
+        ],
+        "amHanViet": [{ "am": "học", "chinh": true }]
+      },
+      "nghia": {
+        "trung": "学习；模仿",
+        "nhat": "学[まな]ぶ、勉強[べんきょう]する",
+        "viet": "học, học tập"
+      },
+      "soNet": 8,
+      "boThu": "子",
+      "cangKiemTra": []
+    },
+    {
+      "id": "han-0002",
+      "capHsk": 1,
+      "gianThe": "直",
+      "tuDangNhat": "直",
+      "phonThe": "直",
+      "soSanhTuDang": {
+        "trungVsNhat": "giong-het",
+        "khacNetVe": true,
+        "ghiChu": "Cùng một mã Unicode nhưng NÉT VẼ khác nhau: nét dọc bên trái ở phần dưới. Đây là lý do app phải dùng hai font riêng cho hai ngôn ngữ."
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "zhí",
+            "chinh": true,
+            "viDuTu": "一直",
+            "viDuNghia": "luôn luôn, thẳng"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "チョク",
+            "chinh": true,
+            "viDuTu": "直接[ちょくせつ]",
+            "viDuNghia": "trực tiếp"
+          },
+          {
+            "am": "ジキ",
+            "chinh": false,
+            "viDuTu": "正直[しょうじき]",
+            "viDuNghia": "thật thà"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "なお-す",
+            "chinh": true,
+            "viDuTu": "直[なお]す",
+            "viDuNghia": "sửa"
+          }
+        ],
+        "amHanViet": [{ "am": "trực", "chinh": true }]
+      },
+      "nghia": {
+        "trung": "不弯曲；一直",
+        "nhat": "まっすぐ、直[なお]す",
+        "viet": "thẳng, trực tiếp"
+      },
+      "soNet": 8,
+      "boThu": "目",
+      "cangKiemTra": []
+    },
+    {
+      "id": "han-0003",
+      "capHsk": 2,
+      "gianThe": "门",
+      "tuDangNhat": "門",
+      "phonThe": "門",
+      "soSanhTuDang": {
+        "trungVsNhat": "khac-hoan-toan",
+        "khacNetVe": false,
+        "ghiChu": "Chữ Nhật giữ nguyên dạng phồn thể 門. Người mới nhìn 门 sẽ không đoán ra là cùng một chữ."
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "mén",
+            "chinh": true,
+            "viDuTu": "门口",
+            "viDuNghia": "cửa ra vào"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "モン",
+            "chinh": true,
+            "viDuTu": "専門[せんもん]",
+            "viDuNghia": "chuyên môn"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "かど",
+            "chinh": true,
+            "viDuTu": "門[かど]",
+            "viDuNghia": "cổng"
+          }
+        ],
+        "amHanViet": [{ "am": "môn", "chinh": true }]
+      },
+      "nghia": {
+        "trung": "出入口",
+        "nhat": "門[もん]、出入[でい]り口[ぐち]",
+        "viet": "cửa, cổng"
+      },
+      "soNet": 3,
+      "boThu": "门",
+      "cangKiemTra": []
+    }
+  ]
+}

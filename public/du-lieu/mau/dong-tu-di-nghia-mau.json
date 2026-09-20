@@ -1,0 +1,70 @@
+{
+  "loai": "dong-tu-di-nghia",
+  "phienBan": 1,
+  "capNhatLuc": "2026-09-20",
+  "ghiChuFileMau": "File MẪU của giai đoạn 0, chỉ để xem cấu trúc. Đủ 20 cặp sẽ nhập ở giai đoạn 3.",
+
+  "luuYDauTab": "Nhiều cặp từ dưới đây khi viết ra trông hơi khác nhau giữa tiếng Trung và tiếng Nhật, ví dụ 検討 và 检讨, hay 質問 và 质问. Đây CHỈ là khác biệt giữa chữ giản thể và chữ phồn thể / tự dạng Nhật, hoàn toàn không phải hai chữ khác nhau. Âm Hán Việt và ý nghĩa gốc của chữ là GIỐNG NHAU HOÀN TOÀN. Điểm khác nhau cần chú ý nằm ở NGHĨA CỦA TỪ khi dùng trong tiếng Trung và tiếng Nhật hiện đại, chứ không nằm ở cách viết.",
+
+  "danhSach": [
+    {
+      "id": "dtdn-0001",
+      "chuNhat": "手紙",
+      "chuTrungGianThe": "手纸",
+      "amHanViet": "thủ chỉ",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": null,
+      "trung": {
+        "pinyin": ["shǒu", "zhǐ"],
+        "nghia": "giấy vệ sinh",
+        "viDu": {
+          "trung": "请给我一包手纸。",
+          "pinyin": ["qǐng", "gěi", "wǒ", "yì", "bāo", "shǒu", "zhǐ", ""],
+          "nghiaViet": "Làm ơn đưa tôi một gói giấy vệ sinh.",
+          "ghiChuBienDieu": "一 ở đây đọc thành yì vì đứng trước thanh 1."
+        }
+      },
+      "nhat": {
+        "cachDoc": "てがみ",
+        "nghia": "lá thư",
+        "viDu": {
+          "nhat": "母[はは]に手紙[てがみ]を書[か]きました。",
+          "nghiaViet": "Tôi đã viết thư cho mẹ."
+        }
+      },
+      "viet": {
+        "giaiThich": "Cùng viết là 手紙 / 手纸 nhưng nghĩa khác hẳn. Tiếng Nhật là lá thư, tiếng Trung là giấy vệ sinh.",
+        "choDeNham": "Muốn nói 'lá thư' trong tiếng Trung phải dùng 信 (xìn). Dùng nhầm 手纸 sẽ thành câu rất khó xử."
+      },
+      "cangKiemTra": []
+    },
+    {
+      "id": "dtdn-0002",
+      "chuNhat": "切手",
+      "chuTrungGianThe": "切手",
+      "amHanViet": "thiết thủ",
+      "tonTaiTrongTiengTrung": false,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": null,
+      "trung": {
+        "pinyin": null,
+        "nghia": null,
+        "viDu": null
+      },
+      "nhat": {
+        "cachDoc": "きって",
+        "nghia": "con tem",
+        "viDu": {
+          "nhat": "切手[きって]を貼[は]ってください。",
+          "nghiaViet": "Xin hãy dán tem."
+        }
+      },
+      "viet": {
+        "giaiThich": "Đây là ví dụ cho trường hợp từ tiếng Nhật KHÔNG tồn tại như một từ trong tiếng Trung hiện đại. Hai chữ 切 và 手 ghép lại không tạo thành từ có nghĩa trong tiếng Trung.",
+        "choDeNham": "'Con tem' trong tiếng Trung là 邮票 (yóupiào), hoàn toàn khác mặt chữ."
+      },
+      "cangKiemTra": []
+    }
+  ]
+}

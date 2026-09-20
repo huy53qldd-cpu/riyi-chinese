@@ -1,0 +1,68 @@
+<!doctype html>
+<!--
+  Riyi — app học tiếng Trung cho người Việt đã biết tiếng Nhật.
+
+  lang="vi" vì toàn bộ giao diện là tiếng Việt.
+  Riêng các đoạn tiếng Trung và tiếng Nhật bên trong sẽ tự gắn lang="zh-CN"
+  và lang="ja" của chúng, để trình duyệt vẽ đúng tự dạng.
+-->
+<html lang="vi" data-theme="sang" data-furigana="bat">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!--
+      viewport-fit=cover: cho app tràn sát mép trên màn hình iPhone tai thỏ.
+      Không đặt maximum-scale, để người dùng vẫn phóng to chữ được khi cần.
+    -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <title>Riyi — Học tiếng Trung cho người biết tiếng Nhật</title>
+    <meta
+      name="description"
+      content="Học tiếng Trung HSK 1–3 bằng vốn Hán tự tiếng Nhật sẵn có. Đối chiếu chữ Hán, đồng tự dị nghĩa, từ vựng và ngữ pháp Trung – Nhật – Việt."
+    />
+
+    <!-- Màu thanh trạng thái điện thoại. Lấy đúng màu nền của 2 theme. -->
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#FFF6E5"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#2A1F1A"
+    />
+
+    <link rel="icon" href="/hinh/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/hinh/icon-192.png" />
+    <link rel="apple-touch-icon" href="/hinh/icon-180.png" />
+
+    <!--
+      Tải trước font tiếng Trung và tiếng Nhật.
+      Hai font này là thứ nặng nhất của app, nên báo trình duyệt tải sớm để
+      chữ Hán không bị hiện muộn.
+    -->
+    <link
+      rel="preload"
+      href="/fonts/noto-sans-sc-subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/noto-sans-jp-subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

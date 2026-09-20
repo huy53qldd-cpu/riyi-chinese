@@ -1,0 +1,25 @@
+KÝ TỰ THÊM TAY CHO VIỆC CẮT FONT
+================================================================================
+File này là LỀ AN TOÀN, không phải nội dung bài học.
+
+Công cụ cat-font.py tự gom ký tự từ dữ liệu bài học (các file JSON). Nghĩa là
+khi thêm bài mới, chạy lại "npm run cat-font" là font tự có thêm chữ mới.
+
+Nhưng có một khoảng trống: TỰ DẠNG NHẬT (新字体). Nhiều chữ Nhật không trùng
+chữ giản thể Trung, cũng không trùng chữ phồn thể, nên không thể suy ra tự động.
+Ví dụ:  実 (Nhật) / 實 (phồn thể) / 实 (giản thể)
+        広 (Nhật) / 廣 (phồn thể) / 广 (giản thể)
+        検 (Nhật) / 檢 (phồn thể) / 检 (giản thể)
+
+Vì vậy file này chép sẵn các chữ Nhật hay dùng, để trong lúc chưa nhập xong dữ
+liệu vẫn không bị hiện ô vuông trống. Thừa vài chữ không sao, chỉ tốn vài KB.
+
+Mọi ký tự trong file đều được đưa vào font. Chữ tiếng Việt giải thích ở trên
+cũng được đưa vào, nhưng chữ Việt vốn đã có đủ rồi nên không ảnh hưởng gì.
+================================================================================
+
+-- 20 cặp đồng tự dị nghĩa của Tab B (lấy từ bản yêu cầu của chủ dự án) --
+手紙 娘 勉強 汽車 愛人 大家 走 丈夫 検討 質問 新聞 先生 工作 経理 切手 湯 床 告訴 可憐 東西
+
+-- Tự dạng Nhật thông dụng --
+亜悪圧囲医為壱逸隠栄営衛駅謁円縁艶塩奥応欧殴桜横温穏仮価禍画会壊懐絵拡殻覚学岳楽喝渇褐缶勧巻陥寛漢関歓観顔器既帰気祈亀偽戯犠旧拠挙虚峡挟狭郷教響暁勤謹区駆勲薫径茎恵掲渓経蛍軽継鶏芸撃欠倹健険圏剣検権献研県顕験厳効広恒鉱号国黒穀砕済斎剤冊雑参惨桟蚕賛残糸姉歯児辞湿実写社者煮釈寿収臭従渋獣縦祝粛処暑署緒諸叙尚将祥称渉焼証奨条状乗浄剰畳縄壌嬢譲醸触嘱神真寝慎尽図粋酔随髄数枢瀬声静斉税摂節説専浅戦践銭潜繊禅祖双壮争荘捜挿巣曽装僧層総騒増憎蔵贈臓即属続堕対体帯滞台滝択沢担単胆嘆団断弾遅痴昼虫鋳庁徴聴懲勅鎮塚逓鉄転点伝都灯当党盗稲闘徳独読突届難弐悩脳覇拝廃売梅麦発髪抜蛮卑秘碑浜賓頻敏瓶侮福払仏併並塀辺変弁舗穂宝褒豊墨没翻毎万満免黙訳薬与予余誉揺様謡来頼乱覧猟塁涙類礼励戻霊隷齢暦歴恋練錬炉労郎朗廊楼録湾歩

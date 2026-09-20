@@ -1,0 +1,40 @@
+# --- Thư viện tải về, không cần lưu vào kho ---
+node_modules/
+
+# --- Kết quả đóng gói, tự sinh lại được ---
+dist/
+dist-ssr/
+*.local
+
+# --- Font GỐC chưa cắt, tổng cộng khoảng 27 MB ---
+# Không lưu vào kho cho nhẹ. Tải lại bằng lệnh: npm run tai-font
+# Font ĐÃ CẮT (public/fonts) thì VẪN lưu, vì app cần để chạy.
+cong-cu/font-goc/
+
+# --- File kết quả tạm của công cụ ---
+cong-cu/ket-qua-so-sanh-tu-dang.png
+
+# --- Nhật ký lỗi ---
+logs/
+*.log
+npm-debug.log*
+
+# --- File của trình soạn thảo và hệ điều hành ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Firebase (sẽ dùng từ giai đoạn 6) ---
+.firebase/
+firebase-debug.log
+.env
+.env.local

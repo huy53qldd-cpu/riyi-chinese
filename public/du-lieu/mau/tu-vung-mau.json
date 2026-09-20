@@ -1,0 +1,83 @@
+{
+  "loai": "tu-vung",
+  "cap": 1,
+  "phienBan": 1,
+  "capNhatLuc": "2026-09-20",
+  "ghiChuFileMau": "File MẪU của giai đoạn 0, chỉ để xem cấu trúc. 300 từ HSK 1 sẽ nhập ở giai đoạn 4.",
+  "danhSach": [
+    {
+      "id": "tu-0001",
+      "capHsk": 1,
+      "soThuTuHsk": 1,
+      "tu": "爱",
+      "pinyin": ["ài"],
+      "tuLoai": "động từ",
+      "chuDe": "cam-xuc",
+      "nghiaNhat": "愛[あい]する、好[す]きだ",
+      "nghiaViet": "yêu, yêu thích",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我爱我的家。",
+          "pinyin": ["wǒ", "ài", "wǒ", "de", "jiā", ""],
+          "nhat": "私[わたし]は家族[かぞく]を愛[あい]しています。",
+          "viet": "Tôi yêu gia đình tôi.",
+          "ghiChuBienDieu": null
+        }
+      ],
+      "cangKiemTra": []
+    },
+    {
+      "id": "tu-0123",
+      "capHsk": 1,
+      "soThuTuHsk": 123,
+      "tu": "没有",
+      "pinyin": ["méi", "yǒu"],
+      "tuLoai": "động từ, phó từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "ない、持[も]っていない",
+      "nghiaViet": "không có, chưa",
+      "ghiChuBienDieu": "Hai thanh 3 liền nhau: 没有 đọc thực tế là méiyǒu, chữ 没 chuyển thành thanh 2.",
+      "capPhu": [],
+      "dangRutGon": "没",
+      "viDu": [
+        {
+          "trung": "我没有钱。",
+          "pinyin": ["wǒ", "méi", "yǒu", "qián", ""],
+          "nhat": "私[わたし]はお金[かね]がありません。",
+          "viet": "Tôi không có tiền.",
+          "ghiChuBienDieu": null
+        }
+      ],
+      "cangKiemTra": []
+    },
+    {
+      "id": "tu-0007",
+      "capHsk": 1,
+      "soThuTuHsk": 7,
+      "tu": "半",
+      "pinyin": ["bàn"],
+      "tuLoai": "số từ",
+      "chuDe": "so-dem",
+      "nghiaNhat": "半分[はんぶん]、半[はん]",
+      "nghiaViet": "một nửa, rưỡi",
+      "ghiChuBienDieu": null,
+      "capPhu": [4],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "现在两点半。",
+          "pinyin": ["xiàn", "zài", "liǎng", "diǎn", "bàn", ""],
+          "nhat": "今[いま]は二時半[にじはん]です。",
+          "viet": "Bây giờ là hai giờ rưỡi.",
+          "ghiChuBienDieu": null
+        }
+      ],
+      "cangKiemTra": [
+        "capPhu: [4] nghĩa là từ này còn một nghĩa khác thuộc HSK cấp 4. App chỉ dạy nghĩa cấp 1."
+      ]
+    }
+  ]
+}

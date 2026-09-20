@@ -1,0 +1,31 @@
+{
+  "name": "riyi-chinese",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Riyi — app học tiếng Trung HSK 1-3 cho người Việt đã biết tiếng Nhật",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "tach-logo": "python cong-cu/tach-logo.py",
+    "rut-hsk": "python cong-cu/rut-du-lieu-hsk.py",
+    "tai-font": "python cong-cu/tai-font.py",
+    "cat-font": "python cong-cu/cat-font.py",
+    "so-sanh-tu-dang": "python cong-cu/so-sanh-tu-dang.py"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.4",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "tailwindcss": "^4.2.4",
+    "vite": "^8.3.0"
+  }
+}

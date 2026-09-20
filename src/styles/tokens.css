@@ -1,0 +1,141 @@
+/* =============================================================================
+   RIYI — BẢNG MÀU VÀ BIẾN GIAO DIỆN
+   =============================================================================
+
+   ĐÂY LÀ FILE DUY NHẤT CHỨA MÀU CỦA TOÀN BỘ APP.
+   Muốn đổi màu cả app thì chỉ sửa ở đây, không sửa chỗ nào khác.
+
+   4 màu thương hiệu bên dưới được lấy TRỰC TIẾP từ file logo
+   (thuong-hieu/Riyi Chinese.png), không phải màu tự chọn.
+
+   ---------------------------------------------------------------------------
+   LƯU Ý QUAN TRỌNG VỀ MÀU CAM
+   ---------------------------------------------------------------------------
+   Màu cam đặt trên nền kem chỉ đạt độ tương phản 3.06:1, KHÔNG đủ để đọc
+   chữ nhỏ (chuẩn quốc tế cần 4.5:1). Vì vậy:
+
+     ĐƯỢC dùng cam cho : mặt trời, nút bấm, viền, biểu tượng, tiêu đề to
+     KHÔNG dùng cam cho: chữ nhỏ, chữ giải thích, pinyin, furigana
+
+   Chữ nhỏ luôn dùng --chu (nâu đậm), đạt 14.94:1 — rất rõ, đọc được cả
+   ngoài nắng.
+   ============================================================================= */
+
+:root {
+  /* ---------------------------------------------------------------------------
+     TẦNG 1 — 4 MÀU GỐC CỦA THƯƠNG HIỆU
+     Đây là màu thô. Không dùng trực tiếp trong giao diện, hãy dùng tầng 2.
+     --------------------------------------------------------------------------- */
+  --goc-cam: #f0600f; /* mặt trời, điểm nhấn */
+  --goc-nau: #2a1f1a; /* chữ, đường chân trời */
+  --goc-kem: #fff6e5; /* nền sáng */
+  --goc-be: #eadfcb; /* nền phụ, viền */
+
+  /* Vài biến thể đậm/nhạt của màu cam và nâu, dùng cho trạng thái bấm, bóng đổ.
+     Tất cả đều xuất phát từ 4 màu gốc ở trên. */
+  --goc-cam-dam: #cc4f0b;
+  --goc-cam-nhat: #fbe3d2;
+  --goc-nau-nhat: #5c4a40;
+  --goc-nau-rat-dam: #1a120e;
+
+  /* ---------------------------------------------------------------------------
+     TẦNG 2 — VAI TRÒ (THEME SÁNG)
+     Giao diện chỉ được dùng các biến ở tầng này, để đổi theme là đổi hết.
+     --------------------------------------------------------------------------- */
+  --nen: var(--goc-kem); /* nền chính của màn hình */
+  --nen-phu: var(--goc-be); /* nền thẻ, nền vùng phụ */
+  --nen-noi: #fffdf7; /* nền thẻ nổi lên trên nền chính */
+
+  --chu: var(--goc-nau); /* chữ chính */
+  --chu-mo: var(--goc-nau-nhat); /* chữ phụ, chú thích, pinyin */
+  --chu-tren-nhan: var(--goc-kem); /* chữ đặt trên nền cam */
+
+  --nhan: var(--goc-cam); /* màu nhấn: nút chính, mặt trời, thanh tiến độ */
+  --nhan-dam: var(--goc-cam-dam); /* lúc bấm giữ */
+  --nhan-nhat: var(--goc-cam-nhat); /* nền mờ của màu nhấn */
+
+  --vien: #ddd0b8; /* đường kẻ, viền thẻ */
+  --vien-dam: var(--goc-nau-nhat);
+
+  --mo-dan: rgba(42, 31, 26, 0.45); /* lớp phủ mờ sau hộp thoại */
+  --bong: rgba(42, 31, 26, 0.1); /* bóng đổ của thẻ */
+
+  /* Mặt trời ở tab Mục tiêu: chưa đạt thì xám, đạt rồi thì rực rỡ */
+  --mat-troi-chua-dat: #c4bbab;
+  --mat-troi-dat: var(--goc-cam);
+
+  /* Màu báo trạng thái. Giữ cùng tông ấm với thương hiệu, không dùng đỏ/xanh gắt. */
+  --dung: #2f7d54;
+  --sai: #c0392b;
+  --canh-bao: #b8730d;
+
+  /* Ba mức nguy hiểm của tab Đồng tự dị nghĩa */
+  --nguy-hiem-nhe: #7a8b5a;
+  --nguy-hiem-vua: #b8730d;
+  --nguy-hiem-nang: #c0392b;
+
+  /* ---------------------------------------------------------------------------
+     FONT
+     Mỗi ngôn ngữ một font riêng. KHÔNG dùng chung, vì cùng một mã Unicode
+     nhưng tự dạng vẽ khác nhau giữa tiếng Trung và tiếng Nhật (直, 骨, 今...).
+     Thứ tự dự phòng cũng phải tách riêng, nếu không trình duyệt sẽ lấy nhầm
+     font hệ thống của ngôn ngữ kia.
+     --------------------------------------------------------------------------- */
+  --font-viet: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-trung: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-nhat: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+
+  /* ---------------------------------------------------------------------------
+     CỠ CHỮ
+     Quy tắc bắt buộc: chữ Hán LUÔN lớn hơn chữ Latin để nhìn rõ nét bút.
+     --------------------------------------------------------------------------- */
+  --co-chu-latin: 1rem; /* 16px — chữ Việt thường */
+  --co-chu-latin-nho: 0.8125rem; /* 13px — chú thích */
+  --co-chu-han: 1.5rem; /* 24px — chữ Hán trong câu, to hơn Latin 1.5 lần */
+  --co-chu-han-the: 4.5rem; /* 72px — chữ Hán đứng một mình trên thẻ */
+  --co-chu-ruby: 0.5em; /* pinyin và furigana, tính theo cỡ chữ Hán */
+
+  /* ---------------------------------------------------------------------------
+     BO GÓC VÀ KHOẢNG CÁCH
+     Bo góc khá tròn cho hợp với logo (logo Riyi dùng nét bo tròn).
+     --------------------------------------------------------------------------- */
+  --bo-goc-nho: 8px;
+  --bo-goc: 16px;
+  --bo-goc-lon: 24px;
+  --bo-goc-tron: 999px;
+
+  /* Chiều cao hai thanh cố định, dùng để chừa chỗ cho nội dung ở giữa */
+  --cao-thanh-tren: 56px;
+  --cao-thanh-duoi: 60px;
+}
+
+/* =============================================================================
+   THEME TỐI
+   Chỉ đổi TẦNG 2. Tầng 1 giữ nguyên vì đó là màu thương hiệu.
+   Bật bằng cách đặt data-theme="toi" lên thẻ <html>.
+   ============================================================================= */
+:root[data-theme="toi"] {
+  --nen: var(--goc-nau);
+  --nen-phu: #3a2c25;
+  --nen-noi: #3a2c25;
+
+  --chu: var(--goc-kem);
+  --chu-mo: #b8a894;
+  --chu-tren-nhan: var(--goc-kem);
+
+  --vien: #4d3c33;
+  --vien-dam: #6b5648;
+
+  --mo-dan: rgba(0, 0, 0, 0.6);
+  --bong: rgba(0, 0, 0, 0.35);
+
+  --mat-troi-chua-dat: #5c4a40;
+
+  --dung: #6fbf8f;
+  --sai: #e8796b;
+  --canh-bao: #e0a44a;
+
+  --nguy-hiem-nhe: #a8bb85;
+  --nguy-hiem-vua: #e0a44a;
+  --nguy-hiem-nang: #e8796b;
+}
