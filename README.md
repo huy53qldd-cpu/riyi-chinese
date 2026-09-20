@@ -7,6 +7,93 @@ App học tiếng Trung HSK cấp 1–3, dành cho người Việt đã có nề
 
 ---
 
+## Cài đặt trên một máy tính mới
+
+Làm theo đúng thứ tự. Chỉ phải làm **một lần** cho mỗi máy.
+
+### Bước 1 — Cài 3 phần mềm nền
+
+Tải và cài, cứ bấm Next đến hết:
+
+| Phần mềm | Tải ở đâu | Để làm gì |
+| --- | --- | --- |
+| **Node.js** (bản LTS) | nodejs.org | chạy app |
+| **Python** (3.10 trở lên) | python.org | chạy các công cụ |
+| **Git** | git-scm.com | tải code về, lưu lịch sử |
+
+> Khi cài Python, nhớ **tích vào ô "Add Python to PATH"** ở màn hình đầu tiên.
+> Bỏ qua ô này thì các lệnh công cụ sẽ báo không tìm thấy Python.
+
+### Bước 2 — Tải code về
+
+Mở Terminal (hoặc Command Prompt), gõ từng dòng:
+
+```
+cd Desktop
+git clone https://github.com/huy53qldd-cpu/riyi-chinese.git
+cd riyi-chinese
+```
+
+Lần đầu sẽ hiện cửa sổ đăng nhập GitHub, đăng nhập bình thường.
+
+### Bước 3 — Cài thư viện
+
+```
+npm install
+pip install -r cong-cu/thu-vien-python.txt
+```
+
+Bước này tải khá nhiều thứ, mất vài phút.
+
+### Bước 4 — Khai báo tên để lưu lịch sử
+
+```
+git config user.name "huy53qldd-cpu"
+git config user.email "huy53qldd@gmail.com"
+```
+
+### Bước 5 — Chạy thử
+
+```
+npm run dev
+```
+
+Mở địa chỉ hiện ra là xong. App chạy được ngay, **không cần** tải font hay rút
+lại dữ liệu, vì những thứ đó đã nằm sẵn trong kho.
+
+### Bước 6 — Chỉ khi cần sửa font
+
+Font **gốc** chưa cắt nặng 27 MB nên không lưu trong kho. Chỉ khi nào cần cắt
+lại font (tức là sau khi thêm bài học mới) thì gõ:
+
+```
+npm run tai-font
+npm run cat-font
+```
+
+---
+
+## Làm việc trên hai máy
+
+Để hai máy không giẫm chân nhau, giữ đúng thói quen này:
+
+**Trước khi bắt đầu làm** — lấy về thay đổi mới nhất:
+```
+git pull
+```
+
+**Sau khi làm xong** — đẩy lên cho máy kia lấy được:
+```
+git add -A
+git commit -m "mô tả ngắn việc vừa làm"
+git push
+```
+
+> Nếu quên `git pull` trước khi làm, lúc `git push` sẽ bị báo lỗi. Khi đó gõ
+> `git pull --rebase` rồi `git push` lại. Cứ bình tĩnh, code không mất đi đâu.
+
+---
+
 ## Chạy app trên máy
 
 Mở Terminal ở thư mục này rồi gõ:
@@ -60,6 +147,8 @@ Riyi Chinese/
 
 | Lệnh | Việc nó làm |
 | --- | --- |
+| `npm install` | Cài thư viện Node (lần đầu trên máy mới) |
+| `pip install -r cong-cu/thu-vien-python.txt` | Cài thư viện Python (lần đầu trên máy mới) |
 | `npm run dev` | Chạy app để xem thử |
 | `npm run build` | Đóng gói app để đưa lên mạng |
 | `npm run tai-font` | Tải font gốc về (chỉ cần khi máy mới) |

@@ -1,0 +1,21 @@
+# Thư viện Python mà các công cụ trong thư mục cong-cu/ cần dùng.
+#
+# CÁCH CÀI (mở Terminal ở thư mục dự án, gõ một dòng này):
+#     pip install -r cong-cu/thu-vien-python.txt
+#
+# Chỉ cần cài MỘT LẦN trên mỗi máy tính.
+# Tất cả đều miễn phí và mã nguồn mở.
+
+# Đọc file PDF đại cương HSK        -> dùng bởi rut-du-lieu-hsk.py
+pypdf>=6.0
+
+# Xử lý ảnh, cắt logo, tạo icon     -> dùng bởi tach-logo.py, so-sanh-tu-dang.py
+pillow>=11.0
+
+# Cắt nhỏ font, xuất ra .woff2      -> dùng bởi cat-font.py
+# Phần [woff] kéo theo brotli, thứ dùng để nén file font cho nhẹ.
+fonttools[woff]>=4.60
+
+# Đổi chữ giản thể sang phồn thể    -> dùng bởi cat-font.py
+# Phục vụ cột thứ 3 của bảng đối chiếu tự dạng ở Tab A.
+opencc-python-reimplemented>=0.1.7
