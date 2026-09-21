@@ -10,7 +10,7 @@ thứ đã quyết.
 > Không tự quyết."* File này là bộ nhớ của quy tắc đó. Việc nào đã có trong
 > đây thì **không hỏi lại nữa**.
 
-Cập nhật lần cuối: 2026-09-20 — sau khi xong giai đoạn 0.
+Cập nhật lần cuối: 2026-09-21 — đã kết nối Firebase và deploy (GĐ 6).
 
 ---
 
@@ -279,6 +279,7 @@ dùng được để kiểm tra font.
 | 14.8 | Đã **gỡ khu vực tạm của GĐ 0** (công tắc giả lập đăng nhập). Thanh trên của người đã đăng nhập hiện 0/20, không còn số giả 12/20 (số thật làm ở GĐ 7). Nút "Đổi khoá học" giữ lại ở cuối trang |
 | 14.9 | Hosting: `firebase.json` + lệnh `npm run trien-khai`. Đăng nhập Google **không chạy** qua địa chỉ `192.168.x.x`, nên thử đăng nhập trên điện thoại phải qua địa chỉ Hosting (dạng `ten-du-an.web.app`) |
 | 14.10 | Sửa lỗi phát hiện khi thử giao diện tối: `--nhan-nhat` chưa có bản tối nên nhãn và ô lưu ý (12 chỗ) chữ sáng trên nền sáng. Đã thêm màu cam-nâu đậm cho theme tối |
+| 14.11 | **Đã kết nối Firebase (2026-09-21).** Dự án `riyi-chinese`, app web tên `riyi`, Firestore đặt ở `asia-southeast1`, đã bật đăng nhập Google. Đã deploy: **https://riyi-chinese.web.app**. File `.firebaserc` (chọn dự án mặc định) nằm trong kho; file `.env` không lên kho, máy mới phải tạo lại theo README hoặc chép từ máy cũ |
 
 ### Đang chờ chủ dự án
 
@@ -287,7 +288,7 @@ dùng được để kiểm tra font.
 3. Rà dữ liệu Tab B: 20 cặp, mục "Chưa kiểm tra" của từng cặp. Đặc biệt 3 chỗ Claude chưa chắc: (a) nghĩa Trung "mẹ" của 娘 chỉ là khẩu ngữ một số vùng, (b) từ gợi ý thay thế như 结实, 约定 (c) bản dịch Việt của các câu.
 4. Rà dữ liệu Tab C: 100 từ, mục "Chưa kiểm tra" của từng từ, đặc biệt nghĩa Nhật/Việt và bản dịch Việt của câu.
 5. Rà nội dung ngữ pháp Tab F: 15 điểm, đặc biệt phần "Chỗ lệch" và "Lỗi hay gặp" (Claude soạn, không có nguồn kiểm).
-6. **Kết nối Firebase và deploy** theo README, mục "Kết nối Firebase": điền `.env`, bật đăng nhập Google, tạo Firestore, chạy `firebase login` và `npm run trien-khai`. Rồi thử đăng nhập, đánh dấu "đã học", tập viết trên điện thoại (chưa được kiểm thử với Firebase thật).
+6. ~~Kết nối Firebase và deploy~~ **Đã xong 2026-09-21** (xem 14.11). Còn lại: thử đăng nhập, đánh dấu "đã học", tập viết trên điện thoại thật. Nội dung cũ: kết nối Firebase và deploy theo README, mục "Kết nối Firebase": điền `.env`, bật đăng nhập Google, tạo Firestore, chạy `firebase login` và `npm run trien-khai`. Rồi thử đăng nhập, đánh dấu "đã học", tập viết trên điện thoại (chưa được kiểm thử với Firebase thật).
 7. Duyệt GĐ 3, 4, 5, 6 để sang GĐ 7 (Tab D mục tiêu, Tab E ôn tập).
 
 ### Còn nợ kỹ thuật, xử lý ở giai đoạn sau
