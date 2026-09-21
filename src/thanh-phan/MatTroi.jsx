@@ -30,6 +30,7 @@ export default function MatTroi({ dat, lanVuaDat = 0, rong = 34, className = "" 
         alt=""
         width={rong}
         height={cao}
+        style={{ width: `${rong / 16}rem`, height: "auto" }}
         className={`mat-troi tru-anh-dao shrink-0 ${hieuUng} ${className}`}
       />
       {/* Theme hoa anh đào: bông hoa, cùng hiệu ứng xám / toả sáng / nảy lên.

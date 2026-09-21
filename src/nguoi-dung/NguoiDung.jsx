@@ -42,6 +42,7 @@ import {
   dangXuatGoogle,
   theoDoiDangNhap,
 } from "../firebase/dangNhap.js";
+import { docTenDaNho, nhoTen, quenTen } from "./nhoDangNhap.js";
 import { docTienDo, ghiLo } from "../firebase/luuTru.js";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
 import {
@@ -105,6 +106,9 @@ export function NguoiDungProvider({ children }) {
     daCauHinhFirebase ? "dang-kiem-tra" : "khach",
   );
   const [nguoi, setNguoi] = useState(null);
+  // Tên người đăng nhập lần trước trên máy (xem nhoDangNhap.js). Dùng để chào
+  // ngay lúc mở app, trong khi Firebase còn đang kiểm tra phiên đăng nhập.
+  const [tenDaNho] = useState(docTenDaNho);
   const [caiDat, setCaiDat] = useState(docCaiDatMay);
   const [daHoc, setDaHoc] = useState({});
   const [tapViet, setTapViet] = useState({});
@@ -207,8 +211,10 @@ export function NguoiDungProvider({ children }) {
   useEffect(() => {
     if (!daCauHinhFirebase) return undefined;
 
-    return theoDoiDangNhap(async (n) => {
+    return theoDoiDangNhap(async (n, khongKiemTraDuoc) => {
       if (!n) {
+        // Chỉ quên tên khi Firebase báo đã đăng xuất thật, không quên khi lỗi mạng
+        if (!khongKiemTraDuoc) quenTen();
         nguoiRef.current = null;
         sanSangGhi.current = false;
         choGhi.current = HANG_CHO_TRONG();
@@ -225,6 +231,7 @@ export function NguoiDungProvider({ children }) {
 
       nguoiRef.current = n;
       setNguoi(n);
+      nhoTen(n.ten || n.email);
       try {
         const d = await docTienDo(n.uid);
         if (d.caiDat) {
@@ -461,6 +468,10 @@ export function NguoiDungProvider({ children }) {
       trangThai,
       nguoi,
       daDangNhap: trangThai === "da-dang-nhap",
+      // Đang chờ Firebase kiểm tra, và máy này có người đăng nhập lần trước:
+      // nhiều khả năng sắp vào lại được, nên KHÔNG hiện nút đăng nhập.
+      dangKhoiPhuc: trangThai === "dang-kiem-tra" && Boolean(tenDaNho),
+      tenDaNho,
       coTheDangNhap: daCauHinhFirebase,
       caiDat,
       daHoc,
@@ -482,6 +493,7 @@ export function NguoiDungProvider({ children }) {
     [
       trangThai,
       nguoi,
+      tenDaNho,
       caiDat,
       daHoc,
       tapViet,

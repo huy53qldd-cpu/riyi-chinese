@@ -123,8 +123,8 @@
   --bo-goc-tron: 999px;
 
   /* Chiều cao hai thanh cố định, dùng để chừa chỗ cho nội dung ở giữa */
-  --cao-thanh-tren: 56px;
-  --cao-thanh-duoi: 60px;
+  --cao-thanh-tren: 3.5rem; /* 56px ở cỡ chữ Vừa; tính theo rem để to lên cùng chữ */
+  --cao-thanh-duoi: 3.75rem; /* 60px ở cỡ chữ Vừa */
 }
 
 /* =============================================================================

@@ -60,6 +60,8 @@ self.addEventListener("message", (suKien) => {
 // Có mạng thì tải bình thường từ mạng; mất mạng thì trả trang báo mất mạng.
 self.addEventListener("fetch", (suKien) => {
   if (suKien.request.mode !== "navigate") return;
+  // Trang riêng của Firebase (trang đăng nhập Google /__/auth/...): để yên hoàn toàn
+  if (new URL(suKien.request.url).pathname.startsWith("/__/")) return;
   suKien.respondWith(
     (async () => {
       try {

@@ -15,6 +15,9 @@ import { capNhatNoiDung, phienBanNoiDung } from "../du-lieu/taiDuLieu.js";
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
 import BieuTuong, { HoaAnhDao, LogoGoogle } from "../thanh-phan/BieuTuong.jsx";
+import ChuTrung from "../thanh-phan/ChuTrung.jsx";
+import ChuNhat from "../thanh-phan/ChuNhat.jsx";
+import { CAC_CO_CHU } from "../nguoi-dung/caiDat.js";
 
 // Ba giao diện. Hình minh hoạ đi kèm để dễ nhận ra, màu thật nằm ở tokens.css.
 const CAC_GIAO_DIEN = [
@@ -70,10 +73,12 @@ export default function CaiDat({ quayLai }) {
           </>
         ) : (
           <>
-            <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-              Bạn đang học ở chế độ khách, tiến độ sẽ không được lưu. Đăng nhập
-              để lưu tiến độ và dùng được trên nhiều máy.
-            </p>
+            {!nd.dangKhoiPhuc && (
+              <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+                Bạn đang học ở chế độ khách, tiến độ sẽ không được lưu. Đăng nhập
+                để lưu tiến độ và dùng được trên nhiều máy.
+              </p>
+            )}
             <NutDangNhap nd={nd} />
           </>
         )}
@@ -91,6 +96,11 @@ export default function CaiDat({ quayLai }) {
           moTa="Chữ nhỏ ghi cách đọc phía trên chữ Hán tiếng Nhật."
           bat={nd.caiDat.furigana === "bat"}
           doi={(bat) => nd.doiCaiDat("furigana", bat ? "bat" : "tat")}
+        />
+
+        <ThanhKeoCoChu
+          dangChon={nd.caiDat.coChu}
+          chon={(ma) => nd.doiCaiDat("coChu", ma)}
         />
 
         <ChonGiaoDien
@@ -181,6 +191,15 @@ function MucUngDung() {
  */
 export function NutDangNhap({ nd }) {
   const sanSang = nd.coTheDangNhap && nd.trangThai !== "dang-kiem-tra";
+  // Đang vào lại tài khoản của lần trước thì không hiện nút, tránh trông như
+  // đã bị đăng xuất (quyết định 18.10)
+  if (nd.dangKhoiPhuc) {
+    return (
+      <p className="text-chu-mo m-0 text-center text-[length:var(--co-chu-latin-nho)]">
+        Đang vào lại tài khoản của bạn...
+      </p>
+    );
+  }
   return (
     <div className="flex flex-col items-center gap-2">
       <button
@@ -199,6 +218,56 @@ export function NutDangNhap({ nd }) {
           Đăng nhập chưa sẵn sàng vì ứng dụng chưa được kết nối Firebase.
         </p>
       )}
+    </div>
+  );
+}
+
+/**
+ * Thanh kéo cỡ chữ theo 5 nấc (quyết định 18.9). Kéo tới đâu cả app đổi cỡ
+ * ngay tới đó, kèm một dòng xem trước có đủ tiếng Việt, tiếng Trung, tiếng Nhật.
+ */
+function ThanhKeoCoChu({ dangChon, chon }) {
+  const viTri = Math.max(0, CAC_CO_CHU.findIndex((c) => c.ma === dangChon));
+  const nac = CAC_CO_CHU[viTri];
+  return (
+    <div className="flex flex-col gap-2">
+      <div className="flex items-baseline justify-between gap-3">
+        <label
+          htmlFor="thanh-keo-co-chu"
+          className="flex items-center gap-2 text-[length:var(--co-chu-latin)] font-semibold"
+        >
+          <BieuTuong ten="co-chu" />
+          Cỡ chữ
+        </label>
+        <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold">
+          {nac.nhan}
+        </span>
+      </div>
+      <div className="flex items-center gap-3">
+        <span aria-hidden="true" className="text-[length:var(--co-chu-latin-nho)] font-bold">
+          A
+        </span>
+        <input
+          id="thanh-keo-co-chu"
+          type="range"
+          min={0}
+          max={CAC_CO_CHU.length - 1}
+          step={1}
+          value={viTri}
+          aria-valuetext={nac.nhan}
+          onChange={(e) => chon(CAC_CO_CHU[Number(e.target.value)].ma)}
+          className="h-8 min-w-0 flex-1 cursor-pointer accent-[var(--nhan)]"
+        />
+        <span aria-hidden="true" className="text-[length:1.375rem] font-bold">
+          A
+        </span>
+      </div>
+      {/* Xem trước: Trung → Nhật → Việt */}
+      <div className="border-vien flex flex-wrap items-end gap-x-4 gap-y-1 rounded-[var(--bo-goc-nho)] border border-dashed px-3 py-2">
+        <ChuTrung amTiet={[{ chu: "汉", pinyin: "hàn" }, { chu: "字", pinyin: "zì" }]} />
+        <ChuNhat noiDung="漢字[かんじ]" />
+        <span className="text-[length:var(--co-chu-latin)]">chữ Hán</span>
+      </div>
     </div>
   );
 }
@@ -229,7 +298,7 @@ function ChonGiaoDien({ dangChon, chon }) {
               role="radio"
               aria-checked={chonRoi}
               onClick={() => chon(g.ma)}
-              className={`flex flex-col items-center gap-1 rounded-[var(--bo-goc)] border-2 px-2 py-2.5 text-[length:var(--co-chu-latin-nho)] font-semibold transition-colors ${
+              className={`flex flex-col items-center gap-1 rounded-[var(--bo-goc)] border-2 px-1 py-2.5 text-center text-[length:var(--co-chu-latin-nho)] leading-tight font-semibold transition-colors ${
                 chonRoi ? "border-nhan bg-nhan-nhat" : "border-vien bg-transparent"
               }`}
             >

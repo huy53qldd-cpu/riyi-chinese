@@ -365,6 +365,10 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 18.5 | **Nút đăng nhập căn giữa** ở cả 3 chỗ (màn chọn khoá học, Cài đặt, tab Mục tiêu), chữ "Đăng nhập bằng Google" (G viết hoa theo quy định thương hiệu của Google), kèm logo chữ G nhiều màu của Google (ngoại lệ duy nhất của quy tắc biểu tượng đơn sắc, vì Google yêu cầu logo đúng màu) |
 | 18.6 | **Vẫn chỉ đăng nhập Google.** Đã tư vấn: Facebook làm được qua Firebase nhưng cần app Meta, trang chính sách, có thể phải duyệt; Zalo Firebase không hỗ trợ, phải có máy chủ riêng (Cloud Functions, cần gói trả tiền Blaze). Chưa làm |
 | 18.7 | **Logo tông hồng cho theme hoa anh đào** (chủ dự án duyệt): `logo-anh-dao.png`, tô lại từ bản sáng, mặt trời hồng #E27493, chữ nâu mận #3A2229, hình dạng giữ nguyên. Tạo bằng `npm run tach-logo` |
+| 18.8 | **Dòng tác giả** "Được xây dựng và phát triển bởi Yuhry Vũ": chữ nhỏ, màu nhạt, căn giữa, cuối màn chọn khoá học, luôn hiện |
+| 18.9 | **Thanh kéo cỡ chữ** trong Cài đặt, 5 nấc (Nhỏ, Vừa mặc định, Lớn, Rất lớn, Lớn nhất), phóng TOÀN BỘ chữ cùng tỉ lệ (chữ Việt, chữ Hán, pinyin, furigana, biểu tượng, khoảng cách), nên chữ Hán vẫn luôn to hơn chữ Latin. Nấc lớn nhất đo thử trên màn hình điện thoại hẹp để nút và bố cục không vỡ. Lưu như các cài đặt khác (trên máy, và theo tài khoản nếu đã đăng nhập) |
+| 18.10 | **Không phải đăng nhập lại khi tắt app** (lỗi chủ dự án gặp trên iPhone, mở app từ màn hình chính). App nhớ tên người đã đăng nhập trên máy để lúc mở lại hiện ngay "Chào mừng bạn đã quay trở lại, [tên]" thay vì nút đăng nhập trong lúc chờ Firebase kiểm tra. Trang đăng nhập Google chuyển về cùng địa chỉ với app (`authDomain` = riyi-chinese.web.app, theo khuyến nghị của Google cho Safari/iPhone), và trong app cài ở màn hình chính thì đăng nhập bằng cách chuyển trang thay vì cửa sổ nhỏ |
+| 18.11 | **Màn chọn khoá học khi đã đăng nhập** chỉ còn một dòng: "Chào mừng bạn đã quay trở lại, [tên]" |
 
 ### Đang chờ chủ dự án
 

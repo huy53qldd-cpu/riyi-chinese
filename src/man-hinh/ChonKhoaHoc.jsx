@@ -107,7 +107,7 @@ export default function ChonKhoaHoc({ chonKhoa, moNangCap, moCaiDat }) {
                     →
                   </span>
                 ) : (
-                  <span className="bg-nen-phu text-chu-mo shrink-0 rounded-[var(--bo-goc-tron)] px-2.5 py-1 text-[11px] font-bold whitespace-nowrap">
+                  <span className="bg-nen-phu text-chu-mo shrink-0 rounded-[var(--bo-goc-tron)] px-2.5 py-1 text-[0.6875rem] font-bold whitespace-nowrap">
                     Chưa mở
                   </span>
                 )}
@@ -121,13 +121,15 @@ export default function ChonKhoaHoc({ chonKhoa, moNangCap, moCaiDat }) {
           TÀI KHOẢN
           --------------------------------------------------------------------- */}
       <section className="border-vien mt-auto flex flex-col gap-2 border-t pt-5">
-        {nd.daDangNhap ? (
-          <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)]">
-            Xin chào,{" "}
+        {nd.daDangNhap || nd.dangKhoiPhuc ? (
+          // Đã đăng nhập, hoặc đang vào lại tài khoản của lần trước: chỉ một
+          // dòng chào (quyết định 18.11). Máy chưa từng nhớ tên nghĩa là vừa
+          // đăng nhập lần đầu, nên chào "Chào mừng bạn" thay vì "quay trở lại".
+          <p className="text-chu-mo m-0 text-center text-[length:var(--co-chu-latin)]">
+            {nd.tenDaNho ? "Chào mừng bạn đã quay trở lại, " : "Chào mừng bạn, "}
             <span className="text-chu font-bold">
-              {nd.nguoi?.ten || nd.nguoi?.email}
+              {nd.nguoi?.ten || nd.nguoi?.email || nd.tenDaNho}
             </span>
-            . Tiến độ học của bạn sẽ được lưu.
           </p>
         ) : (
           <>
@@ -138,6 +140,11 @@ export default function ChonKhoaHoc({ chonKhoa, moNangCap, moCaiDat }) {
           </>
         )}
       </section>
+
+      {/* Dòng tác giả, luôn hiện (quyết định 18.8) */}
+      <p className="text-chu-mo m-0 mt-6 text-center text-[length:var(--co-chu-latin-nho)] opacity-80">
+        Được xây dựng và phát triển bởi Yuhry Vũ
+      </p>
     </main>
   );
 }

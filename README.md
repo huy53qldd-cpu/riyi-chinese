@@ -279,6 +279,20 @@ File `.env` **không** lên kho Git (đã chặn sẵn).
 3. Thẻ **Settings → Authorized domains**: có sẵn `localhost` và tên miền của dự án
    (dạng `ten-du-an.web.app`). Đủ dùng, không cần thêm gì.
 
+### Bước B2 — Để iPhone không bắt đăng nhập lại (làm một lần)
+
+iPhone chặn chia sẻ dữ liệu giữa hai địa chỉ khác nhau, nên trang đăng nhập Google
+phải nằm cùng địa chỉ với app:
+
+1. Vào **https://console.cloud.google.com/apis/credentials?project=riyi-chinese**
+   (đăng nhập đúng tài khoản Google đã tạo Firebase).
+2. Ở mục **OAuth 2.0 Client IDs**, bấm vào dòng **Web client (auto created by Google Service)**.
+3. Ở **Authorized redirect URIs**, bấm **Add URI**, dán:
+   `https://riyi-chinese.web.app/__/auth/handler`
+4. Bấm **Save** (Lưu). Google có thể mất vài phút mới áp dụng.
+5. Trong file `.env`, dòng `VITE_FIREBASE_AUTH_DOMAIN` đổi thành `riyi-chinese.web.app`,
+   rồi chạy lại `npm run trien-khai`.
+
 ### Bước C — Tạo cơ sở dữ liệu Firestore
 
 1. **Build → Firestore Database → Create database**.

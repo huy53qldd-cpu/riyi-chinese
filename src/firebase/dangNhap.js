@@ -11,6 +11,14 @@
 
 import { layDichVu } from "./khoiTao.js";
 
+/** true khi app đang chạy như ứng dụng cài ở màn hình chính (không trong trình duyệt). */
+function laAppManHinhChinh() {
+  return (
+    window.navigator.standalone === true ||
+    window.matchMedia?.("(display-mode: standalone)").matches === true
+  );
+}
+
 /** Đổi mã lỗi của Firebase thành câu tiếng Việt cho người dùng. */
 function loiDangNhapTiengViet(loi) {
   const ma = loi?.code ?? loi?.message ?? "";
@@ -47,6 +55,15 @@ export async function dangNhapGoogle() {
     // đăng nhập nhầm vào tài khoản cũ
     nhaCungCap.setCustomParameters({ prompt: "select_account" });
 
+    // App cài ở màn hình chính iPhone: cửa sổ nhỏ mở ra ngoài app và hay làm
+    // mất phiên đăng nhập, nên dùng cách chuyển trang. Cách này chỉ chạy ổn khi
+    // trang đăng nhập nằm CÙNG địa chỉ với app (authDomain trong .env trùng tên
+    // miền đang mở), nên chỉ bật khi điều kiện đó đúng (quyết định 18.10).
+    if (laAppManHinhChinh() && auth.config.authDomain === location.host) {
+      await signInWithRedirect(auth, nhaCungCap);
+      return { thanhCong: true, thongBao: null };
+    }
+
     try {
       await signInWithPopup(auth, nhaCungCap);
     } catch (loi) {
@@ -79,7 +96,8 @@ export async function dangXuatGoogle() {
  * Theo dõi trạng thái đăng nhập: gọi `khiDoi(nguoiDung | null)` ngay khi biết
  * trạng thái, và mỗi khi đăng nhập/đăng xuất.
  * Trả về hàm để ngừng theo dõi. Nếu chưa cấu hình Firebase hoặc lỗi thì gọi
- * `khiDoi(null)` một lần, tức coi như chế độ khách.
+ * `khiDoi(null, true)` một lần, tức coi như chế độ khách. Tham số thứ hai = true
+ * nghĩa là KHÔNG kiểm tra được (lỗi mạng...), khác với đã đăng xuất thật.
  */
 export function theoDoiDangNhap(khiDoi) {
   let ngung = () => {};
@@ -101,10 +119,10 @@ export function theoDoiDangNhap(khiDoi) {
                 }
               : null,
           ),
-        () => khiDoi(null),
+        () => khiDoi(null, true),
       );
     })
-    .catch(() => khiDoi(null));
+    .catch(() => khiDoi(null, true));
 
   return () => {
     daNgung = true;

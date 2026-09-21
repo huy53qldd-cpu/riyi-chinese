@@ -70,10 +70,12 @@ export default function ThanhTren({
         <MatTroi dat={dat} lanVuaDat={lanVuaDat} />
 
         <div className="min-w-0 flex-1">
-          <div className="flex items-baseline gap-2 text-[length:var(--co-chu-latin-nho)] leading-tight font-bold">
-            <span>{dat ? "Đã đạt mục tiêu!" : "Mục tiêu hôm nay"}</span>
+          {/* Luôn một dòng. Chữ to (thanh kéo cỡ chữ) mà hết chỗ thì phần
+              "· N ngày liền" bị rút gọn bằng dấu "…", tên mục tiêu giữ nguyên */}
+          <div className="flex items-baseline gap-2 text-[length:var(--co-chu-latin-nho)] leading-tight font-bold whitespace-nowrap">
+            <span className="shrink-0">{dat ? "Đã đạt mục tiêu!" : "Mục tiêu hôm nay"}</span>
             {chuoi > 0 && (
-              <span className="text-chu-mo font-semibold">· {chuoi} ngày liền</span>
+              <span className="text-chu-mo min-w-0 truncate font-semibold">· {chuoi} ngày liền</span>
             )}
           </div>
 
