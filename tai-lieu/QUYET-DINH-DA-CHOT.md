@@ -350,6 +350,9 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 17.9 | **Danh sách chữ Hán hiện 60 thẻ mỗi lần**, nút "Xem thêm" để hiện tiếp, cho máy yếu không bị chậm |
 | 17.10 | **Chủ dự án duyệt thêm 41 cặp đồng tự dị nghĩa** (tổng 61). Nhóm A, dễ hiểu lầm nặng: 东西 先生 告诉 颜色 非常 多少 便宜 打算 意思 清楚 小心 结束 事情 生气 床 看病 不要 前年 节目 放心. Nhóm B, lệch nghĩa hoặc sắc thái: 医院 女儿 快乐 方便 故事 名人 难听 一定 马上 老师 时候 安静 后天 后年 明白 酒店 地方 妻子 作业 出来 所以. Loại: 了解 生日 走路 同事 一直 经常 说话 热情 过去 黄色 书 本 (nghĩa gần hoặc từ Nhật hiếm) |
 | 17.11 | **Đồng tự: pinyin của từ lấy theo đại cương HSK** (file từ vựng đã dựng) nếu từ có trong HSK 1–3, chỉ dùng CC-CEDICT cho từ ngoài HSK. Tatoeba không có câu Nhật phù hợp thì Claude tự soạn (`tuSoan`, ghi `cangKiemTra`); chỗ máy gắn furigana sai thì nhập tay nguyên câu (`furigana`) |
+| 17.12 | **Ngữ pháp 70 điểm** (HSK 1: 24, HSK 2: 23, HSK 3: 23): giữ nguyên 15 điểm cũ (id np-0001…0015 không đổi), thêm 55 điểm theo đại cương, gộp các mục chỉ là danh sách từ. Có đủ 把, 被, bổ ngữ khả năng, 的/得/地. Câu ví dụ lấy từ Tatoeba (ưu tiên câu chỉ dùng chữ HSK 1–3); 2 câu của điểm 先…再 Tatoeba chưa có bản dịch Nhật nên Claude dịch (`nhat`, ghi `cangKiemTra`). Điểm 没有…那么 chỉ có 1 câu ví dụ vì Tatoeba không có câu thứ hai phù hợp |
+| 17.13 | **儿化 trong câu ngữ pháp ghi pinyin là "r"** (哪儿 = nǎ r), thống nhất với file từ vựng. Chữ nhiều âm máy gắn sai thì sửa bằng `troTu` của từng điểm (只 zhī, 长 cháng) |
+| 17.14 | **Chữ Nhật chèn trong văn bản tiếng Việt phải đánh dấu `{ja|…}`** (VanBanPha coi chữ Hán trần là tiếng Trung). Đã soát và đánh dấu lại toàn bộ phần giải thích ngữ pháp và đồng tự, kể cả một chỗ sót ở điểm 的 của GĐ 5 |
 
 ### Đang chờ chủ dự án
 
@@ -386,7 +389,7 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 - [x] GĐ 6 — Đăng nhập Google, Firestore, Cài đặt. **Code xong, chờ chủ dự án kết nối Firebase và deploy để thử trên điện thoại.**
 - [x] GĐ 7 — Luyện tập (Tab B, C, F), Tab D mục tiêu ngày, Tab E review tuần. **Đã làm xong, chờ chủ dự án thử trên điện thoại và duyệt.**
 - [x] GĐ 8 — Hoàn thiện PWA. **Đã làm xong, chờ chủ dự án thử cài trên điện thoại và duyệt.**
-- [ ] GĐ 9 — Bổ sung đầy đủ HSK 1–3
+- [x] GĐ 9 — Bổ sung đầy đủ HSK 1–3 (1000 từ, 655 chữ, 61 cặp đồng tự, 70 điểm ngữ pháp; toàn bộ còn `cangKiemTra` chờ chủ dự án rà)
 - [ ] GĐ 10 — Chức năng bổ sung
 
 ---

@@ -109,6 +109,10 @@ def dung():
         for vd in m["viDu"]:
             cau = cmn[vd["id"]]
             nhat_goc = next((jpn[j] for j in sorted(cmn_jpn.get(vd["id"], ()), key=int) if j in jpn), None)
+            if nhat_goc is None and "nhat" in vd:
+                # Tatoeba có câu Trung nhưng chưa có bản dịch Nhật: Claude dịch, ghi rõ
+                nhat_goc = vd["nhat"]
+                cang.append(f"Bản dịch tiếng Nhật của câu Tatoeba #{vd['id']} do Claude dịch (Tatoeba chưa có bản dịch Nhật), cần kiểm tra.")
             if nhat_goc is None:
                 raise SystemExit(f"Điểm {i}: câu {vd['id']} không có bản dịch Nhật")
             py = pinyin_diem(cau, m.get("troTu", {}))
@@ -162,7 +166,7 @@ def dung():
             json.dumps({
                 "loai": "ngu-phap",
                 "cap": cap,
-                "phienBan": 2,
+                "phienBan": 3,
                 "capNhatLuc": NGAY,
                 "nguon": "Các điểm chọn theo đại cương HSK 2025-11 (mục nguonPDF). Câu ví dụ và bản dịch Nhật: Tatoeba (CC BY 2.0 FR).",
                 "danhSach": ds,

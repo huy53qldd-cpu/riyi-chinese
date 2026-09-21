@@ -1,7 +1,7 @@
 {
   "loai": "ngu-phap",
   "cap": 2,
-  "phienBan": 2,
+  "phienBan": 3,
   "capNhatLuc": "2026-09-21",
   "nguon": "Các điểm chọn theo đại cương HSK 2025-11 (mục nguonPDF). Câu ví dụ và bản dịch Nhật: Tatoeba (CC BY 2.0 FR).",
   "danhSach": [
@@ -384,6 +384,2014 @@
         }
       ],
       "nguonPDF": "结果补语1 动词+错/懂/好/会/完",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0029",
+      "capHsk": 2,
+      "ten": "Lặp động từ: 看看, 试一试",
+      "congThuc": "AA ／ A一A ／ ABAB",
+      "viDu": [
+        {
+          "trung": "我想看看。",
+          "pinyin": [
+            "wǒ",
+            "xiǎng",
+            "kàn",
+            "kàn",
+            ""
+          ],
+          "nhat": "それを見[み]たいものです。",
+          "viet": "Tôi muốn xem thử.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (想).",
+          "nguon": "Tatoeba #332819",
+          "tachTu": [
+            "我",
+            "想",
+            "看看"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "试试这件毛衣。",
+          "pinyin": [
+            "shì",
+            "shì",
+            "zhè",
+            "jiàn",
+            "máo",
+            "yī",
+            ""
+          ],
+          "nhat": "このセーターを着[き]てみて。",
+          "viet": "Thử cái áo len này đi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3667783",
+          "tachTu": [
+            "试试",
+            "这件",
+            "毛衣"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "ちょっと〜してみる",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Gần với ちょっと〜てみる. Động từ hai âm tiết lặp ABAB, không lặp từng chữ (AABB là cách lặp của TÍNH TỪ)."
+      },
+      "giaiThichViet": "Lặp động từ để nói làm thử, làm một chút, giọng nhẹ nhàng: 看看 (xem thử), 试一试 (thử xem). Động từ hai âm tiết lặp theo kiểu ABAB: 休息休息.",
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Động từ hai âm tiết lặp theo ABAB.",
+          "cauSai": {
+            "trung": "我们休休息息吧。",
+            "pinyin": [
+              "wǒ",
+              "men",
+              "xiū",
+              "xiū",
+              "xī",
+              "xī",
+              "ba",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我们休息休息吧。",
+            "pinyin": [
+              "wǒ",
+              "men",
+              "xiū",
+              "xī",
+              "xiū",
+              "xī",
+              "ba",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "动词重叠 AA、A一A、A了A、ABAB",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0030",
+      "capHsk": 2,
+      "ten": "着: trạng thái đang kéo dài",
+      "congThuc": "Động từ + 着 (+ Tân ngữ)",
+      "viDu": [
+        {
+          "trung": "她穿着红裙子。",
+          "pinyin": [
+            "tā",
+            "chuān",
+            "zhe",
+            "hóng",
+            "qún",
+            "zi",
+            ""
+          ],
+          "nhat": "彼女[かのじょ]は赤[あか]いスカートをはいていた。",
+          "viet": "Cô ấy mặc váy đỏ.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #349263",
+          "tachTu": [
+            "她",
+            "穿",
+            "着",
+            "红",
+            "裙子"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "他手里拿着铅笔。",
+          "pinyin": [
+            "tā",
+            "shǒu",
+            "lǐ",
+            "ná",
+            "zhe",
+            "qiān",
+            "bǐ",
+            ""
+          ],
+          "nhat": "彼[かれ]は鉛筆[えんぴつ]を手[て]に持[も]った。",
+          "viet": "Anh ấy cầm bút chì trong tay.",
+          "ghiChuBienDieu": "手 đọc thành thanh 2 khi đứng trước thanh 3 (里).",
+          "nguon": "Tatoeba #344836",
+          "tachTu": [
+            "他",
+            "手里",
+            "拿",
+            "着",
+            "铅笔"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜ている（状態）",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "〜ている của tiếng Nhật vừa là 'đang làm' vừa là 'đang ở trạng thái'. Tiếng Trung tách hai: đang làm dùng 在/正在, trạng thái kéo dài dùng 着."
+      },
+      "giaiThichViet": "着 sau động từ nói một trạng thái đang được giữ nguyên: 穿着 (đang mặc sẵn), 拿着 (đang cầm), 开着 (đang mở).",
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "'Cô ấy đang mặc váy đỏ' (đang trong bộ váy) dùng 着. 在穿 là đang mặc vào, đang thay đồ.",
+          "cauSai": {
+            "trung": "她在穿红裙子。",
+            "pinyin": [
+              "tā",
+              "zài",
+              "chuān",
+              "hóng",
+              "qún",
+              "zi",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "她穿着红裙子。",
+            "pinyin": [
+              "tā",
+              "chuān",
+              "zhe",
+              "hóng",
+              "qún",
+              "zi",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "动态助词 着；持续态 动词+着（1）表示状态的持续",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0031",
+      "capHsk": 2,
+      "ten": "是…的: nhấn mạnh khi nào, ở đâu, bằng gì",
+      "congThuc": "(是) + thời gian / nơi / cách + Động từ + 的",
+      "viDu": [
+        {
+          "trung": "我是从中国来的。",
+          "pinyin": [
+            "wǒ",
+            "shì",
+            "cóng",
+            "zhōng",
+            "guó",
+            "lái",
+            "de",
+            ""
+          ],
+          "nhat": "中国[ちゅうごく]から来[き]ました。",
+          "viet": "Tôi đến từ Trung Quốc.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #717391",
+          "tachTu": [
+            "我",
+            "是",
+            "从",
+            "中国",
+            "来",
+            "的"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "你昨天几点睡的？",
+          "pinyin": [
+            "nǐ",
+            "zuó",
+            "tiān",
+            "jǐ",
+            "diǎn",
+            "shuì",
+            "de",
+            ""
+          ],
+          "nhat": "昨日[きのう]は何[なん]時[じ]に寝[ね]たんですか？",
+          "viet": "Hôm qua bạn ngủ lúc mấy giờ?",
+          "ghiChuBienDieu": "几 đọc thành thanh 2 khi đứng trước thanh 3 (点).",
+          "nguon": "Tatoeba #9962104",
+          "tachTu": [
+            "你",
+            "昨天",
+            "几点",
+            "睡",
+            "的"
+          ],
+          "cachXepKhac": [
+            [
+              "昨天",
+              "你",
+              "几点",
+              "睡",
+              "的"
+            ]
+          ]
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜のです ／ 〜んです（中国から来たんです）",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Giống 〜んです ở chỗ nói về chi tiết của một việc đã xảy ra. Khác: trong câu 是…的 thường KHÔNG dùng 了."
+      },
+      "giaiThichViet": "Dùng cho việc ĐÃ xảy ra, khi muốn hỏi hoặc nhấn mạnh chi tiết: khi nào, ở đâu, bằng cách nào, với ai. 是 có thể bỏ, 的 thì giữ.",
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Câu 是…的 đã nói về quá khứ, không thêm 了.",
+          "cauSai": {
+            "trung": "我是昨天来了的。",
+            "pinyin": [
+              "wǒ",
+              "shì",
+              "zuó",
+              "tiān",
+              "lái",
+              "le",
+              "de",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我是昨天来的。",
+            "pinyin": [
+              "wǒ",
+              "shì",
+              "zuó",
+              "tiān",
+              "lái",
+              "de",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "“是……的”句1 强调时间、地点、方式、动作者",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0032",
+      "capHsk": 2,
+      "ten": "Bổ ngữ xu hướng: 来, 去, 出来, 回去…",
+      "congThuc": "Động từ + 来/去 ; Động từ + 上/下/进/出/回/过 + 来/去",
+      "viDu": [
+        {
+          "trung": "她从车里出来了。",
+          "pinyin": [
+            "tā",
+            "cóng",
+            "chē",
+            "lǐ",
+            "chū",
+            "lái",
+            "le",
+            ""
+          ],
+          "nhat": "彼女[かのじょ]は車[くるま]から降[お]りた。",
+          "viet": "Cô ấy bước ra khỏi xe.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #407251",
+          "tachTu": [
+            "她",
+            "从",
+            "车",
+            "里",
+            "出来",
+            "了"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "我们在等他回来。",
+          "pinyin": [
+            "wǒ",
+            "men",
+            "zài",
+            "děng",
+            "tā",
+            "huí",
+            "lái",
+            ""
+          ],
+          "nhat": "彼[かれ]の帰[かえ]りを待[ま]ってるの。",
+          "viet": "Chúng tôi đang đợi anh ấy về.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8932447",
+          "tachTu": [
+            "我们",
+            "在",
+            "等",
+            "他",
+            "回来"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜てくる ／ 〜ていく",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Gần với 〜てくる/〜ていく. Nhưng nếu có danh từ chỉ nơi chốn, nó chen vào GIỮA, trước 来/去: 回家去, 进教室来."
+      },
+      "giaiThichViet": "来 là về phía người nói, 去 là rời xa người nói. Ghép với 上 (lên), 下 (xuống), 进 (vào), 出 (ra), 回 (về), 过 (qua) để chỉ hướng: 出来, 回去, 进来.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Nơi chốn đứng trước 来/去, không đứng sau.",
+          "cauSai": {
+            "trung": "他回来家了。",
+            "pinyin": [
+              "tā",
+              "huí",
+              "lái",
+              "jiā",
+              "le",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "他回家来了。",
+            "pinyin": [
+              "tā",
+              "huí",
+              "jiā",
+              "lái",
+              "le",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "趋向补语1 动词+来/去；动词+上/下/进/出/过/回；复合趋向补语",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0033",
+      "capHsk": 2,
+      "ten": "要…了 / 快要…了: sắp…",
+      "congThuc": "(快 / 就) 要 + Động từ + 了",
+      "viDu": [
+        {
+          "trung": "天快要下雨了。",
+          "pinyin": [
+            "tiān",
+            "kuài",
+            "yào",
+            "xià",
+            "yǔ",
+            "le",
+            ""
+          ],
+          "nhat": "今[いま]にも雨[あめ]が降[ふ]りそうだ。",
+          "viet": "Trời sắp mưa rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #335128",
+          "tachTu": [
+            "天",
+            "快要",
+            "下雨",
+            "了"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "飞机快要起飞了。",
+          "pinyin": [
+            "fēi",
+            "jī",
+            "kuài",
+            "yào",
+            "qǐ",
+            "fēi",
+            "le",
+            ""
+          ],
+          "nhat": "飛行[ひこう]機[き]は離陸[りりく]間際[まぎわ]だ。",
+          "viet": "Máy bay sắp cất cánh rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8883976",
+          "tachTu": [
+            "飞机",
+            "快要",
+            "起飞",
+            "了"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "もうすぐ〜する ／ 〜そうだ",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "了 cuối câu ở đây không chỉ quá khứ; nó cùng 要 tạo nghĩa 'sắp'. Có từ thời gian cụ thể thì dùng 就要, không dùng 快要."
+      },
+      "giaiThichViet": "Nói việc sắp xảy ra. 快要…了 = sắp sửa; 就要…了 thường đi với thời gian cụ thể (明天就要走了).",
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Có thời gian cụ thể (明天) thì dùng 就要.",
+          "cauSai": {
+            "trung": "明天快要考试了。",
+            "pinyin": [
+              "míng",
+              "tiān",
+              "kuài",
+              "yào",
+              "kǎo",
+              "shì",
+              "le",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "明天就要考试了。",
+            "pinyin": [
+              "míng",
+              "tiān",
+              "jiù",
+              "yào",
+              "kǎo",
+              "shì",
+              "le",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "固定格式 要/快要/就要……了",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0034",
+      "capHsk": 2,
+      "ten": "还是: hỏi chọn A hay B",
+      "congThuc": "A 还是 B？",
+      "viDu": [
+        {
+          "trung": "那是只猫还是只狗？",
+          "pinyin": [
+            "nà",
+            "shì",
+            "zhī",
+            "māo",
+            "hái",
+            "shì",
+            "zhī",
+            "gǒu",
+            ""
+          ],
+          "nhat": "あれは猫[ねこ]ですか犬[いぬ]ですか。",
+          "viet": "Đó là con mèo hay con chó?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8249451",
+          "tachTu": [
+            "那",
+            "是",
+            "只",
+            "猫",
+            "还是",
+            "只",
+            "狗"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "那个包是你的还是他的？",
+          "pinyin": [
+            "nà",
+            "ge",
+            "bāo",
+            "shì",
+            "nǐ",
+            "de",
+            "hái",
+            "shì",
+            "tā",
+            "de",
+            ""
+          ],
+          "nhat": "このバッグはあなたのですか。彼[かれ]のですか。",
+          "viet": "Cái túi đó là của bạn hay của anh ấy?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2040522",
+          "tachTu": [
+            "那个",
+            "包",
+            "是",
+            "你的",
+            "还是",
+            "他的"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "A ですか、それとも B ですか",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Câu hỏi 还是 đã là câu hỏi, không thêm 吗. Trong câu KỂ, 'hoặc' dùng 或者 (xem điểm HSK 3)."
+      },
+      "giaiThichViet": "还是 nối hai lựa chọn trong câu hỏi: 你喝茶还是咖啡？ (uống trà hay cà phê?).",
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Câu hỏi lựa chọn không thêm 吗.",
+          "cauSai": {
+            "trung": "你喝茶还是咖啡吗？",
+            "pinyin": [
+              "nǐ",
+              "hē",
+              "chá",
+              "hái",
+              "shì",
+              "kā",
+              "fēi",
+              "ma",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "你喝茶还是咖啡？",
+            "pinyin": [
+              "nǐ",
+              "hē",
+              "chá",
+              "hái",
+              "shì",
+              "kā",
+              "fēi",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "疑问句 用“还是”连接的选择问句；选择复句（是）……，还是……",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0035",
+      "capHsk": 2,
+      "ten": "虽然…但是: tuy… nhưng…",
+      "congThuc": "虽然 A，但是/可是 B",
+      "viDu": [
+        {
+          "trung": "这本书虽然很厚，但是不贵。",
+          "pinyin": [
+            "zhè",
+            "běn",
+            "shū",
+            "suī",
+            "rán",
+            "hěn",
+            "hòu",
+            "",
+            "dàn",
+            "shì",
+            "bù",
+            "guì",
+            ""
+          ],
+          "nhat": "その本[ほん]は厚[あつ]いが、高[たか]くはない。",
+          "viet": "Quyển sách này tuy dày nhưng không đắt.",
+          "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (贵).",
+          "nguon": "Tatoeba #8976063",
+          "tachTu": [
+            "这本",
+            "书",
+            "虽然",
+            "很",
+            "厚，",
+            "但是",
+            "不",
+            "贵"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "虽然明天好像会下雨，但我会加油的。",
+          "pinyin": [
+            "suī",
+            "rán",
+            "míng",
+            "tiān",
+            "hǎo",
+            "xiàng",
+            "huì",
+            "xià",
+            "yǔ",
+            "",
+            "dàn",
+            "wǒ",
+            "huì",
+            "jiā",
+            "yóu",
+            "de",
+            ""
+          ],
+          "nhat": "明日[あす]雨[あめ]のようだががんばろう。",
+          "viet": "Tuy mai hình như sẽ mưa, nhưng tôi sẽ cố gắng.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8682684",
+          "tachTu": [
+            "虽然",
+            "明天",
+            "好像",
+            "会",
+            "下雨，",
+            "但",
+            "我",
+            "会",
+            "加油",
+            "的"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "A けれども／が、B",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật chỉ cần một từ nối ở CUỐI vế đầu (けれど). Tiếng Trung đặt 虽然 ở ĐẦU vế đầu (hoặc sau chủ ngữ), và 但是 ở đầu vế sau."
+      },
+      "giaiThichViet": "Hai vế trái ý nhau. Thường dùng cả cặp; 虽然 có thể bỏ, 但是 thì hay giữ lại.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Theo thói quen けれど, người học hay đặt 虽然 cuối vế. 虽然 đứng đầu vế hoặc ngay sau chủ ngữ.",
+          "cauSai": {
+            "trung": "这本书很厚虽然，但是不贵。",
+            "pinyin": [
+              "zhè",
+              "běn",
+              "shū",
+              "hěn",
+              "hòu",
+              "suī",
+              "rán",
+              "",
+              "dàn",
+              "shì",
+              "bù",
+              "guì",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "这本书虽然很厚，但是不贵。",
+            "pinyin": [
+              "zhè",
+              "běn",
+              "shū",
+              "suī",
+              "rán",
+              "hěn",
+              "hòu",
+              "",
+              "dàn",
+              "shì",
+              "bù",
+              "guì",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "转折复句 虽然……，但是……；连词 但、但是、虽然",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0036",
+      "capHsk": 2,
+      "ten": "因为…所以: vì… nên…",
+      "congThuc": "因为 A，所以 B",
+      "viDu": [
+        {
+          "trung": "因为下雨，所以我们去不了海边。",
+          "pinyin": [
+            "yīn",
+            "wèi",
+            "xià",
+            "yǔ",
+            "",
+            "suǒ",
+            "yǐ",
+            "wǒ",
+            "men",
+            "qù",
+            "bù",
+            "liǎo",
+            "hǎi",
+            "biān",
+            ""
+          ],
+          "nhat": "雨[あめ]のため、私[わたし]たちは海[うみ]へ行[い]けませんでした。",
+          "viet": "Vì trời mưa nên chúng tôi không đi biển được.",
+          "ghiChuBienDieu": "所以我: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu. 了 đọc thành thanh 2 khi đứng trước thanh 3 (海).",
+          "nguon": "Tatoeba #6486694",
+          "tachTu": [
+            "因为",
+            "下雨，",
+            "所以",
+            "我们",
+            "去不了",
+            "海边"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "因为今天学校休息，所以我在家看了一天电视。",
+          "pinyin": [
+            "yīn",
+            "wèi",
+            "jīn",
+            "tiān",
+            "xué",
+            "xiào",
+            "xiū",
+            "xī",
+            "",
+            "suǒ",
+            "yǐ",
+            "wǒ",
+            "zài",
+            "jiā",
+            "kàn",
+            "le",
+            "yī",
+            "tiān",
+            "diàn",
+            "shì",
+            ""
+          ],
+          "nhat": "今日[きょう]は学校[がっこう]が休[やす]みだったので、一[いち]日中[にっちゅう]家[か]でテレビを見[み]ていた。",
+          "viet": "Vì hôm nay trường nghỉ nên tôi ở nhà xem TV cả ngày.",
+          "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 1 (天). 所以我: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+          "nguon": "Tatoeba #2448656",
+          "tachTu": [
+            "因为",
+            "今天",
+            "学校",
+            "休息，",
+            "所以",
+            "我",
+            "在家",
+            "看",
+            "了",
+            "一天",
+            "电视"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "A から／ので、B",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "から/ので đứng CUỐI vế nguyên nhân; 因为 đứng ĐẦU vế. Nhớ cặp đồng tự 所以: đây là 'cho nên', không phải 'lý do'."
+      },
+      "giaiThichViet": "因为 đứng đầu vế nguyên nhân, 所以 đứng đầu vế kết quả.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "因为 đứng đầu vế nguyên nhân, không đứng cuối như から.",
+          "cauSai": {
+            "trung": "下雨因为，所以我们不去。",
+            "pinyin": [
+              "xià",
+              "yǔ",
+              "yīn",
+              "wèi",
+              "",
+              "suǒ",
+              "yǐ",
+              "wǒ",
+              "men",
+              "bù",
+              "qù",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "因为下雨，所以我们不去。",
+            "pinyin": [
+              "yīn",
+              "wèi",
+              "xià",
+              "yǔ",
+              "",
+              "suǒ",
+              "yǐ",
+              "wǒ",
+              "men",
+              "bù",
+              "qù",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "因果复句 因为……，所以……；连词 因为、所以",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0037",
+      "capHsk": 2,
+      "ten": "一…就…: vừa… là…",
+      "congThuc": "(Chủ ngữ) 一 + A，(Chủ ngữ) 就 + B",
+      "viDu": [
+        {
+          "trung": "她一到，我们就开始。",
+          "pinyin": [
+            "tā",
+            "yī",
+            "dào",
+            "",
+            "wǒ",
+            "men",
+            "jiù",
+            "kāi",
+            "shǐ",
+            ""
+          ],
+          "nhat": "彼女[かのじょ]が来[き]たらすぐに始[はじ]めよう。",
+          "viet": "Cô ấy vừa đến là chúng ta bắt đầu.",
+          "ghiChuBienDieu": "一 đọc thành yí vì đứng trước thanh 4 (到).",
+          "nguon": "Tatoeba #332808",
+          "tachTu": [
+            "她",
+            "一",
+            "到，",
+            "我们",
+            "就",
+            "开始"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "今天早上一起床就下着大雨了。",
+          "pinyin": [
+            "jīn",
+            "tiān",
+            "zǎo",
+            "shàng",
+            "yī",
+            "qǐ",
+            "chuáng",
+            "jiù",
+            "xià",
+            "zhe",
+            "dà",
+            "yǔ",
+            "le",
+            ""
+          ],
+          "nhat": "今朝[けさ]起[お]きたら雨[あめ]が激[はげ]しく降[ふ]っていました。",
+          "viet": "Sáng nay vừa dậy thì trời đã mưa to.",
+          "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (起).",
+          "nguon": "Tatoeba #432920",
+          "tachTu": [
+            "今天",
+            "早上",
+            "一",
+            "起床",
+            "就",
+            "下",
+            "着",
+            "大雨",
+            "了"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜するとすぐ ／ 〜たとたん",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật chỉ cần đổi đuôi (〜とすぐ). Tiếng Trung cần hai chữ, và mỗi chữ đứng SAU chủ ngữ của vế mình: 她一到，我们就开始."
+      },
+      "giaiThichViet": "Việc B xảy ra ngay sau việc A. 一 và 就 đều là phó từ, đứng trước động từ và sau chủ ngữ của vế mình.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "一 và 就 không đứng trước chủ ngữ.",
+          "cauSai": {
+            "trung": "一她到，就我们开始。",
+            "pinyin": [
+              "yī",
+              "tā",
+              "dào",
+              "",
+              "jiù",
+              "wǒ",
+              "men",
+              "kāi",
+              "shǐ",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "她一到，我们就开始。",
+            "pinyin": [
+              "tā",
+              "yī",
+              "dào",
+              "",
+              "wǒ",
+              "men",
+              "jiù",
+              "kāi",
+              "shǐ",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "紧缩复句 一……就……",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0038",
+      "capHsk": 2,
+      "ten": "让 / 叫 / 请: bảo ai làm gì",
+      "congThuc": "A + 让/叫/请 + B + Động từ",
+      "viDu": [
+        {
+          "trung": "我让他扫地了。",
+          "pinyin": [
+            "wǒ",
+            "ràng",
+            "tā",
+            "sǎo",
+            "dì",
+            "le",
+            ""
+          ],
+          "nhat": "私[わたし]は彼[かれ]に床[ゆか]を掃除[そうじ]させた。",
+          "viet": "Tôi đã bảo anh ấy quét nhà.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #793586",
+          "tachTu": [
+            "我",
+            "让",
+            "他",
+            "扫地",
+            "了"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "让我再睡十分钟！",
+          "pinyin": [
+            "ràng",
+            "wǒ",
+            "zài",
+            "shuì",
+            "shí",
+            "fēn",
+            "zhōng",
+            ""
+          ],
+          "nhat": "あと10分[ふん]寝[ね]させて。",
+          "viet": "Cho tôi ngủ thêm mười phút!",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #11698445",
+          "tachTu": [
+            "让",
+            "我",
+            "再",
+            "睡",
+            "十分钟"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "A は B に〜させる ／ 〜てもらう",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật đổi đuôi động từ (させる, てもらう). Tiếng Trung giữ nguyên động từ, chỉ thêm 让 và người làm đứng NGAY SAU 让."
+      },
+      "giaiThichViet": "Người thứ hai vừa là tân ngữ của 让/叫/请, vừa là người làm động từ phía sau. 让 = để, bảo; 叫 = bảo (khẩu ngữ); 请 = mời, nhờ.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Người làm phải đứng ngay sau 让, trước động từ.",
+          "cauSai": {
+            "trung": "我让扫地他。",
+            "pinyin": [
+              "wǒ",
+              "ràng",
+              "sǎo",
+              "dì",
+              "tā",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我让他扫地。",
+            "pinyin": [
+              "wǒ",
+              "ràng",
+              "tā",
+              "sǎo",
+              "dì",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "兼语句1 表使令：主语+请/叫/让……+宾语1+动词+宾语2",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0039",
+      "capHsk": 2,
+      "ten": "给 + người + động từ: làm cho ai",
+      "congThuc": "给 + người + Động từ (+ Tân ngữ)",
+      "viDu": [
+        {
+          "trung": "他给我写了封信。",
+          "pinyin": [
+            "tā",
+            "gěi",
+            "wǒ",
+            "xiě",
+            "le",
+            "fēng",
+            "xìn",
+            ""
+          ],
+          "nhat": "彼[かれ]は私[わたし]に手紙[てがみ]を書[か]いた。",
+          "viet": "Anh ấy đã viết cho tôi một lá thư.",
+          "ghiChuBienDieu": "给我写: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+          "nguon": "Tatoeba #7768143",
+          "tachTu": [
+            "他",
+            "给",
+            "我",
+            "写",
+            "了",
+            "封",
+            "信"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "请给我打电话。",
+          "pinyin": [
+            "qǐng",
+            "gěi",
+            "wǒ",
+            "dǎ",
+            "diàn",
+            "huà",
+            ""
+          ],
+          "nhat": "私[わたし]に電話[でんわ]して下[くだ]さい。",
+          "viet": "Hãy gọi điện cho tôi.",
+          "ghiChuBienDieu": "请给我打: có 4 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+          "nguon": "Tatoeba #8933788",
+          "tachTu": [
+            "请",
+            "给",
+            "我",
+            "打",
+            "电话"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "人 + に + 〜する ／ 〜てあげる・〜てくれる",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật: {ja|私に電話する} (に đứng sau người). Tiếng Trung: 给 đứng TRƯỚC người, và cả cụm đứng trước động từ."
+      },
+      "giaiThichViet": "给 làm giới từ: làm việc gì cho ai, hướng về ai. Cả cụm 给 + người đứng TRƯỚC động từ: 给我打电话 (gọi điện cho tôi).",
+      "canhBaoLoi": [
+        {
+          "loai": "thieu-thanh-phan",
+          "noiDung": "Thiếu 给 thì câu không nói được gọi cho ai. 打电话 không nhận người làm tân ngữ trực tiếp.",
+          "cauSai": {
+            "trung": "请打电话我。",
+            "pinyin": [
+              "qǐng",
+              "dǎ",
+              "diàn",
+              "huà",
+              "wǒ",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "请给我打电话。",
+            "pinyin": [
+              "qǐng",
+              "gěi",
+              "wǒ",
+              "dǎ",
+              "diàn",
+              "huà",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "介词 给；双宾语句2 主语+动词+给+宾语1+宾语2",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0040",
+      "capHsk": 2,
+      "ten": "从…到…: từ… đến…",
+      "congThuc": "从 + A + 到 + B",
+      "viDu": [
+        {
+          "trung": "他从早工作到晚。",
+          "pinyin": [
+            "tā",
+            "cóng",
+            "zǎo",
+            "gōng",
+            "zuò",
+            "dào",
+            "wǎn",
+            ""
+          ],
+          "nhat": "彼[かれ]は朝[あさ]から晩[ばん]まで働[はたら]いた。",
+          "viet": "Anh ấy làm việc từ sáng đến tối.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1324867",
+          "tachTu": [
+            "他",
+            "从",
+            "早",
+            "工作",
+            "到",
+            "晚"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "从家到公司要花多长时间？",
+          "pinyin": [
+            "cóng",
+            "jiā",
+            "dào",
+            "gōng",
+            "sī",
+            "yào",
+            "huā",
+            "duō",
+            "cháng",
+            "shí",
+            "jiān",
+            ""
+          ],
+          "nhat": "家[いえ]から会社[かいしゃ]までどれくらい時間[じかん]がかかりますか。",
+          "viet": "Từ nhà đến công ty mất bao lâu?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3667869",
+          "tachTu": [
+            "从",
+            "家",
+            "到",
+            "公司",
+            "要",
+            "花",
+            "多长",
+            "时间"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "A から B まで",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "から/まで đứng SAU danh từ; 从/到 đứng TRƯỚC danh từ. Cụm từ… đến… nằm trước động từ, không đặt cuối câu."
+      },
+      "giaiThichViet": "从 là 'từ' (điểm xuất phát về thời gian hoặc nơi chốn), 到 là 'đến'. Cụm 从…到… thường đứng trước động từ; với thời gian cũng có thể nói 工作到晚.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Khoảng thời gian 从…到… đặt trước động từ.",
+          "cauSai": {
+            "trung": "我工作从八点到五点。",
+            "pinyin": [
+              "wǒ",
+              "gōng",
+              "zuò",
+              "cóng",
+              "bā",
+              "diǎn",
+              "dào",
+              "wǔ",
+              "diǎn",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我从八点到五点工作。",
+            "pinyin": [
+              "wǒ",
+              "cóng",
+              "bā",
+              "diǎn",
+              "dào",
+              "wǔ",
+              "diǎn",
+              "gōng",
+              "zuò",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "介词 从1、从2；固定格式 从……到……",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0041",
+      "capHsk": 2,
+      "ten": "的, 得, 地: ba chữ cùng đọc de",
+      "congThuc": "… 的 + Danh từ ; … 地 + Động từ ; Động từ + 得 + …",
+      "viDu": [
+        {
+          "trung": "他慢慢地走。",
+          "pinyin": [
+            "tā",
+            "màn",
+            "màn",
+            "de",
+            "zǒu",
+            ""
+          ],
+          "nhat": "彼[かれ]はゆっくりと歩[ある]く。",
+          "viet": "Anh ấy đi chầm chậm.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #512111",
+          "tachTu": [
+            "他",
+            "慢慢",
+            "地",
+            "走"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "她努力地工作。",
+          "pinyin": [
+            "tā",
+            "nǔ",
+            "lì",
+            "de",
+            "gōng",
+            "zuò",
+            ""
+          ],
+          "nhat": "彼女[かのじょ]は一生[いっしょう]懸命[けんめい]働[はたら]いた。",
+          "viet": "Cô ấy làm việc chăm chỉ.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #817269",
+          "tachTu": [
+            "她",
+            "努力",
+            "地",
+            "工作"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜の + 名詞 ／ 〜く・〜に + 動詞 ／ 〜するのが〜",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật đổi đuôi tính từ ({ja|ゆっくり歩く}, {ja|速く走る}). Tiếng Trung giữ nguyên tính từ, và chọn chữ theo vị trí: trước động từ dùng 地, sau động từ dùng 得."
+      },
+      "giaiThichViet": "Ba chữ đều đọc de nhưng vị trí khác nhau: 的 đứng trước DANH TỪ (我的书), 地 đứng trước ĐỘNG TỪ (慢慢地走 = đi chầm chậm), 得 đứng SAU động từ nối với phần đánh giá (走得慢 = đi chậm).",
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Sau động từ, nối với phần đánh giá, dùng 得, không dùng 地.",
+          "cauSai": {
+            "trung": "他跑地很快。",
+            "pinyin": [
+              "tā",
+              "pǎo",
+              "de",
+              "hěn",
+              "kuài",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "他跑得很快。",
+            "pinyin": [
+              "tā",
+              "pǎo",
+              "de",
+              "hěn",
+              "kuài",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "结构助词 得、地（HSK 2）；结构助词 的1（HSK 1）",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0042",
+      "capHsk": 2,
+      "ten": "没有…那么: không bằng",
+      "congThuc": "A + 没有 + B + (那么/这么) + Tính từ",
+      "viDu": [
+        {
+          "trung": "我弟弟没有二郎那么高。",
+          "pinyin": [
+            "wǒ",
+            "dì",
+            "di",
+            "méi",
+            "yǒu",
+            "èr",
+            "láng",
+            "nà",
+            "me",
+            "gāo",
+            ""
+          ],
+          "nhat": "私[わたし]の弟[おとうと]は、二郎[じろう]さんほど背[せ]が高[たか]くありません。",
+          "viet": "Em trai tôi không cao bằng Jiro.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8800738",
+          "tachTu": [
+            "我",
+            "弟弟",
+            "没有",
+            "二郎",
+            "那么",
+            "高"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "A は B ほど〜ない",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Gần với 〜ほど〜ない, nhưng 没有 đứng TRƯỚC B, tính từ để ở dạng khẳng định. Không dùng 不比 với nghĩa này (不比 có nghĩa khác, xem điểm so sánh HSK 3)."
+      },
+      "giaiThichViet": "So sánh kém: A không (…) bằng B. 那么/这么 thêm vào cho rõ ý 'đến mức đó'.",
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Tính từ sau 没有…那么 để dạng khẳng định, không phủ định lần nữa.",
+          "cauSai": {
+            "trung": "我没有他那么不高。",
+            "pinyin": [
+              "wǒ",
+              "méi",
+              "yǒu",
+              "tā",
+              "nà",
+              "me",
+              "bù",
+              "gāo",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我没有他那么高。",
+            "pinyin": [
+              "wǒ",
+              "méi",
+              "yǒu",
+              "tā",
+              "nà",
+              "me",
+              "gāo",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "比较句1（3）A有/没有B（+这么/那么）+形容词",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0043",
+      "capHsk": 2,
+      "ten": "Thời lượng đứng sau động từ",
+      "congThuc": "Động từ + (了) + thời lượng (+ Tân ngữ)",
+      "viDu": [
+        {
+          "trung": "我睡了九个小时。",
+          "pinyin": [
+            "wǒ",
+            "shuì",
+            "le",
+            "jiǔ",
+            "gè",
+            "xiǎo",
+            "shí",
+            ""
+          ],
+          "nhat": "九[きゅう]時間[じかん]寝[ね]た。",
+          "viet": "Tôi đã ngủ chín tiếng.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1470410",
+          "tachTu": [
+            "我",
+            "睡",
+            "了",
+            "九个",
+            "小时"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "那部小说我看了三天。",
+          "pinyin": [
+            "nà",
+            "bù",
+            "xiǎo",
+            "shuō",
+            "wǒ",
+            "kàn",
+            "le",
+            "sān",
+            "tiān",
+            ""
+          ],
+          "nhat": "その小説[しょうせつ]なら３日[か]で読[よ]んだぜ。",
+          "viet": "Cuốn tiểu thuyết đó tôi đọc mất ba ngày.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10157004",
+          "tachTu": [
+            "那部",
+            "小说",
+            "我",
+            "看",
+            "了",
+            "三天"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "時間 + 動詞（9時間寝た）",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Ngược với tiếng Nhật: tiếng Nhật đặt thời lượng TRƯỚC động từ ({ja|9時間寝た}), tiếng Trung đặt SAU (睡了九个小时). Còn thời điểm (lúc mấy giờ) thì vẫn đứng trước động từ."
+      },
+      "giaiThichViet": "Làm trong bao lâu thì đặt thời lượng SAU động từ: 睡了九个小时 (ngủ chín tiếng). Số lần cũng vậy: 去过两次.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Thời lượng đứng sau động từ.",
+          "cauSai": {
+            "trung": "我九个小时睡了。",
+            "pinyin": [
+              "wǒ",
+              "jiǔ",
+              "gè",
+              "xiǎo",
+              "shí",
+              "shuì",
+              "le",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我睡了九个小时。",
+            "pinyin": [
+              "wǒ",
+              "shuì",
+              "le",
+              "jiǔ",
+              "gè",
+              "xiǎo",
+              "shí",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "数量补语2（1）表示动作持续的时间",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0044",
+      "capHsk": 2,
+      "ten": "已经…了: đã… rồi",
+      "congThuc": "已经 + Động từ/Tính từ + 了",
+      "viDu": [
+        {
+          "trung": "我已经吃过午饭了。",
+          "pinyin": [
+            "wǒ",
+            "yǐ",
+            "jīng",
+            "chī",
+            "guo",
+            "wǔ",
+            "fàn",
+            "le",
+            ""
+          ],
+          "nhat": "お昼[ひる]はもう食[た]べたよ。",
+          "viet": "Tôi ăn trưa rồi.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (已).",
+          "nguon": "Tatoeba #4900930",
+          "tachTu": [
+            "我",
+            "已经",
+            "吃",
+            "过",
+            "午饭",
+            "了"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "电影已经开始了吗？",
+          "pinyin": [
+            "diàn",
+            "yǐng",
+            "yǐ",
+            "jīng",
+            "kāi",
+            "shǐ",
+            "le",
+            "ma",
+            ""
+          ],
+          "nhat": "映画[えいが]はもう始[はじ]まりましたか。",
+          "viet": "Phim đã bắt đầu chưa?",
+          "ghiChuBienDieu": "影 đọc thành thanh 2 khi đứng trước thanh 3 (已).",
+          "nguon": "Tatoeba #349924",
+          "tachTu": [
+            "电影",
+            "已经",
+            "开始",
+            "了",
+            "吗"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "もう〜した",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật chỉ cần もう với đuôi た. Tiếng Trung 已经 thường phải có 了 đi kèm; thiếu 了 câu nghe chưa trọn."
+      },
+      "giaiThichViet": "已经 là 'đã', đứng trước động từ; câu thường kết thúc bằng 了.",
+      "canhBaoLoi": [
+        {
+          "loai": "thieu-thanh-phan",
+          "noiDung": "已经 thường đi cùng 了 ở cuối.",
+          "cauSai": {
+            "trung": "电影已经开始。",
+            "pinyin": [
+              "diàn",
+              "yǐng",
+              "yǐ",
+              "jīng",
+              "kāi",
+              "shǐ",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "电影已经开始了。",
+            "pinyin": [
+              "diàn",
+              "yǐng",
+              "yǐ",
+              "jīng",
+              "kāi",
+              "shǐ",
+              "le",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "时间副词 已经",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0045",
+      "capHsk": 2,
+      "ten": "Câu 'voi thì mũi dài': 她个子很高",
+      "congThuc": "Chủ ngữ lớn + Chủ ngữ nhỏ + Vị ngữ",
+      "viDu": [
+        {
+          "trung": "她个子很高。",
+          "pinyin": [
+            "tā",
+            "gè",
+            "zi",
+            "hěn",
+            "gāo",
+            ""
+          ],
+          "nhat": "彼女[かのじょ]は背[せ]が高[たか]い。",
+          "viet": "Cô ấy cao.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8780264",
+          "tachTu": [
+            "她",
+            "个子",
+            "很",
+            "高"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "汤姆眼睛不好。",
+          "pinyin": [
+            "tāng",
+            "mǔ",
+            "yǎn",
+            "jīng",
+            "bù",
+            "hǎo",
+            ""
+          ],
+          "nhat": "トムは目[め]が悪[わる]い。",
+          "viet": "Tom bị kém mắt.",
+          "ghiChuBienDieu": "姆 đọc thành thanh 2 khi đứng trước thanh 3 (眼).",
+          "nguon": "Tatoeba #5072408",
+          "tachTu": [
+            "汤姆",
+            "眼睛",
+            "不",
+            "好"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "A は B が〜（彼女は背が高い）",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Rất giống 〜は〜が của tiếng Nhật. Chỉ khác là tiếng Trung không có は, が: hai chủ ngữ đứng liền nhau, không thêm 是."
+      },
+      "giaiThichViet": "Vị ngữ là cả một câu nhỏ (chủ ngữ + vị ngữ) nói về chủ ngữ lớn: 她个子很高 = cô ấy (thì) dáng người cao.",
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "Không thêm 是 vào giữa theo thói quen です.",
+          "cauSai": {
+            "trung": "她是个子很高。",
+            "pinyin": [
+              "tā",
+              "shì",
+              "gè",
+              "zi",
+              "hěn",
+              "gāo",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "她个子很高。",
+            "pinyin": [
+              "tā",
+              "gè",
+              "zi",
+              "hěn",
+              "gāo",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "主谓句4：主谓谓语句",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0046",
+      "capHsk": 2,
+      "ten": "别: đừng",
+      "congThuc": "别 + Động từ (+ 了)",
+      "viDu": [
+        {
+          "trung": "别担心了。",
+          "pinyin": [
+            "bié",
+            "dān",
+            "xīn",
+            "le",
+            ""
+          ],
+          "nhat": "心配[しんぱい]しないで。",
+          "viet": "Đừng lo nữa.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8715889",
+          "tachTu": [
+            "别",
+            "担心",
+            "了"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "别忘了带伞。",
+          "pinyin": [
+            "bié",
+            "wàng",
+            "le",
+            "dài",
+            "sǎn",
+            ""
+          ],
+          "nhat": "傘[かさ]忘[わす]れないでね。",
+          "viet": "Đừng quên mang ô nhé.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #4881645",
+          "tachTu": [
+            "别",
+            "忘",
+            "了",
+            "带",
+            "伞"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜ないで ／ 〜な",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật đổi đuôi động từ (〜ないで); tiếng Trung chỉ thêm 别 phía trước. 不 và 没 không dùng để cấm."
+      },
+      "giaiThichViet": "别 = 不要, dùng để khuyên, cấm: 别担心 (đừng lo). Thêm 了 cuối câu khi bảo dừng việc đang làm: 别哭了.",
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Câu khuyên, cấm dùng 别 hoặc 不要, không dùng 不.",
+          "cauSai": {
+            "trung": "不担心！",
+            "pinyin": [
+              "bù",
+              "dān",
+              "xīn",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "别担心！",
+            "pinyin": [
+              "bié",
+              "dān",
+              "xīn",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "祈使句 用“别”的祈使句；否定副词 别",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0047",
+      "capHsk": 2,
+      "ten": "Số ước lượng: 两三, 几, 三十多",
+      "congThuc": "Hai số liền nhau ; 几 + lượng từ ; Số + 多 (+ lượng từ)",
+      "viDu": [
+        {
+          "trung": "过两三天就好了。",
+          "pinyin": [
+            "guò",
+            "liǎng",
+            "sān",
+            "tiān",
+            "jiù",
+            "hǎo",
+            "le",
+            ""
+          ],
+          "nhat": "２、３日[にち]もすればよくなるよ。",
+          "viet": "Hai ba ngày nữa là khỏi thôi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8700792",
+          "tachTu": [
+            "过",
+            "两三天",
+            "就",
+            "好",
+            "了"
+          ],
+          "cachXepKhac": []
+        },
+        {
+          "trung": "我已经三十多了。",
+          "pinyin": [
+            "wǒ",
+            "yǐ",
+            "jīng",
+            "sān",
+            "shí",
+            "duō",
+            "le",
+            ""
+          ],
+          "nhat": "僕[ぼく]はすでに三十[さんじゅう]歳[さい]越[こ]えだ。",
+          "viet": "Tôi đã hơn ba mươi rồi.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (已).",
+          "nguon": "Tatoeba #10019662",
+          "tachTu": [
+            "我",
+            "已经",
+            "三十多",
+            "了"
+          ],
+          "cachXepKhac": []
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "2、3日 ／ 何人か ／ 30過ぎ",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật dùng {ja|何} + か cho 'vài'; tiếng Trung dùng 几 không có dấu hỏi. Vị trí của 多 phụ thuộc số tròn chục hay không."
+      },
+      "giaiThichViet": "两三天 = hai ba ngày; 几个 = vài cái (trong câu kể); 三十多 = hơn ba mươi. Số tròn chục thì 多 đứng TRƯỚC lượng từ (十多个); số lẻ thì 多 đứng SAU lượng từ (一个多小时).",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Số tròn chục: 多 đứng trước lượng từ.",
+          "cauSai": {
+            "trung": "十个多人",
+            "pinyin": [
+              "shí",
+              "gè",
+              "duō",
+              "rén"
+            ]
+          },
+          "cauDung": {
+            "trung": "十多个人",
+            "pinyin": [
+              "shí",
+              "duō",
+              "gè",
+              "rén"
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "概数表达法1（1）用“几”表示概数（2）数词+多+量词（3）数词+量词+多；概数表达法2（2）相邻数词连用表示概数（HSK 3）",
       "cangKiemTra": [
         "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
         "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",

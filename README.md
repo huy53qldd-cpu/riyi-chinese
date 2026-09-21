@@ -3,7 +3,7 @@
 App học tiếng Trung HSK cấp 1–3, dành cho người Việt đã có nền tảng tiếng Nhật
 (N4–N1). Khai thác mối liên hệ Hán tự Trung – Nhật và âm Hán Việt để học nhanh hơn.
 
-**Trạng thái: đã xong giai đoạn 8 (cài app vào màn hình chính, báo bản mới, báo mất mạng). App đang chạy ở https://riyi-chinese.web.app. Còn chờ chủ dự án thử trên điện thoại và rà dữ liệu.**
+**Trạng thái: đã xong giai đoạn 9 (đủ nội dung HSK 1–3: 1000 từ vựng, 655 chữ Hán, 61 cặp đồng tự dị nghĩa, 70 điểm ngữ pháp). App đang chạy ở https://riyi-chinese.web.app. Toàn bộ nội dung là bản nháp, còn chờ chủ dự án rà (mục "Chưa kiểm tra" trong app).**
 
 ---
 
@@ -361,5 +361,5 @@ Unihan (Unicode), CC-CEDICT (MDBG, CC BY-SA), KanjiVG (CC BY-SA 3.0), hanzi-writ
 - [x] GĐ 6 — Đăng nhập Google, Firestore, màn hình Cài đặt (đã kết nối Firebase)
 - [x] GĐ 7 — Luyện tập ở Tab B, C, F; Tab D mục tiêu ngày; Tab E review tuần
 - [x] GĐ 8 — Hoàn thiện PWA: cài vào màn hình chính, splash, báo bản mới, báo mất mạng, phiên bản dữ liệu
-- [ ] GĐ 9 — Bổ sung đầy đủ HSK 1–3
+- [x] GĐ 9 — Bổ sung đầy đủ HSK 1–3: 1000 từ, 655 chữ (có nét viết Trung/Nhật), 61 cặp đồng tự, 70 điểm ngữ pháp
 - [ ] GĐ 10 — Chức năng bổ sung
