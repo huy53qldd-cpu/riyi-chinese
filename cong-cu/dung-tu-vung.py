@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Công cụ DỰNG FILE DỮ LIỆU TỪ VỰNG (Tab C, giai đoạn 4).
+Công cụ DỰNG FILE DỮ LIỆU TỪ VỰNG (Tab C, giai đoạn 4, mở rộng ở giai đoạn 9).
 
 CÁCH LÀM:
-  Ghép các nguồn thành public/du-lieu/tu-vung-hsk1.json:
+  Ghép các nguồn thành public/du-lieu/tu-vung-hsk1.json, -hsk2.json, -hsk3.json
+  (mỗi cấp HSK một file). Chỉ dựng những từ đã có phần nhập tay.
 
     TỰ ĐỘNG:
       - PDF đại cương HSK: từ, pinyin, cấp, từ loại (词性), cấp phụ, dạng rút gọn
@@ -14,6 +15,9 @@ CÁCH LÀM:
       - Quy tắc biến điệu (不, 一, hai thanh 3 liền nhau): sinh ghi chú tự động
     NHẬP TAY (cong-cu/tu-vung-nhap-tay.json): từ Nhật tương đương, nghĩa Việt,
     chủ đề, mã câu ví dụ, bản dịch Việt của câu. Đây là bản nháp cần người rà.
+    Từ số 101 trở đi (GĐ 9): nghĩa Việt rút gọn từ CVDICT (CC BY-SA 4.0), câu ví
+    dụ chọn theo thứ tự xếp hạng tự động (câu ngắn, ít chữ ngoài HSK 1-3, từ cần
+    học đứng thành từ riêng), Claude xem lại từng câu.
 
   Từ nào không tìm được câu ví dụ phù hợp thì để trống, không bịa.
 
@@ -32,6 +36,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from fugashi import Tagger
+from opencc import OpenCC
 from pypinyin import Style, pinyin
 
 from ngon_ngu import HAN, bo_dau, gan_furigana, ghi_chu_bien_dieu, pinyin_cau
@@ -39,16 +44,18 @@ from ngon_ngu import HAN, bo_dau, gan_furigana, ghi_chu_bien_dieu, pinyin_cau
 N = Path("cong-cu/nguon-mo")
 NHAP_TAY = Path("cong-cu/tu-vung-nhap-tay.json")
 PDF_JSON = Path("src/du-lieu/hsk-goc/tu-vung-goc.json")
-FILE_RA = Path("public/du-lieu/tu-vung-hsk1.json")
-NGAY = "2026-09-20"
-SO_TU = 100  # giai đoạn 4 làm 100 từ đầu (số thứ tự 1-100) của HSK 1
+THU_MUC_RA = Path("public/du-lieu")
+NGAY = "2026-09-21"
+# Phiên bản từng file. Sửa nội dung file nào thì tăng số của file đó, và nhớ sửa
+# cả public/du-lieu/manifest.json cho khớp.
+PHIEN_BAN = {1: 2, 2: 1, 3: 1}
 
 # Từ loại trong PDF (词性) -> tiếng Việt
 TU_LOAI = {
     "名": "danh từ", "动": "động từ", "形": "tính từ", "副": "phó từ",
     "数": "số từ", "量": "lượng từ", "代": "đại từ", "助": "trợ từ",
     "介": "giới từ", "连": "liên từ", "前缀": "tiền tố", "后缀": "hậu tố",
-    "叹": "thán từ", "拟声": "từ tượng thanh",
+    "叹": "thán từ", "拟声": "từ tượng thanh", "数量": "số lượng từ",
 }
 # Từ hay gặp mà chỉ nghĩa tiếng Anh khác nhau về từ ngữ, không cần cảnh báo
 TU_DUNG = {"to", "a", "an", "the", "of", "or", "and", "sb", "sth", "be", "one", "in", "on", "for", "with", "used", "as", "cl"}
@@ -121,6 +128,10 @@ def tach_pinyin_pdf(tu, pinyin_pdf):
     Trả về None nếu độ dài không khớp (để báo người kiểm tra).
     """
     chuoi = unicodedata.normalize("NFC", pinyin_pdf).replace(" ", "").replace("'", "")
+    if len(tu) == 1:
+        # Từ một chữ: cả chuỗi là pinyin của chữ đó (máy có thể đoán sai âm của
+        # chữ nhiều âm đọc như 得 děi, 还 huán, nên không dùng máy ở đây)
+        return [chuoi.lower()]
     may = [a[0] for a in pinyin(tu, style=Style.TONE, errors=lambda s: list(s))]
     do_dai = [len(bo_dau(a)) for a in may]
     # 儿 hoá âm cuối: 玩儿 trong PDF là "wánr", chữ 儿 chỉ còn "r"
@@ -163,23 +174,37 @@ def dich_tu_loai(pdf):
 # --------------------------------------------------------------------------
 def dung():
     nhap = json.loads(NHAP_TAY.read_text(encoding="utf-8"))
-    pdf = json.loads(PDF_JSON.read_text(encoding="utf-8"))["danhSach"][:SO_TU]
+    pdf = [
+        m for m in json.loads(PDF_JSON.read_text(encoding="utf-8"))["danhSach"]
+        if str(m["soThuTu"]) in nhap["danhSach"]
+    ]
 
     print("Đang nạp nguồn dữ liệu...")
     cmn, jpn = doc_cau("cmn_sentences.tsv.bz2"), doc_cau("jpn_sentences.tsv.bz2")
     cmn_jpn = doc_lien_ket("cmn-jpn_links.tsv.bz2")
     jm, cd = doc_jmdict_nghia(), doc_cedict_nghia()
     tagger = Tagger()
+    # Một số câu Tatoeba viết chữ phồn thể; câu nào đánh dấu doiGianThe thì đổi
+    # sang giản thể (cùng một câu, chỉ đổi cách viết)
+    t2s = OpenCC("t2s")
 
-    ds, canh_bao = [], []
+    theo_cap, canh_bao = defaultdict(list), []
     for m in pdf:
         so = str(m["soThuTu"])
         tay = nhap["danhSach"][so]
         tu = m["dangRutGon"] or m["tu"]
         cang = ["Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh."]
+        if m["soThuTu"] > 100:
+            cang[0] = "Từ Nhật tương đương và chủ đề là bản nháp Claude soạn; nghĩa Việt rút gọn từ CVDICT (bản dịch máy). Chưa có người xác minh."
 
         # --- Pinyin từng chữ ---
-        am_tiet = tach_pinyin_pdf(m["tu"], m["pinyin"])
+        # Vài mục PDF rút ra thiếu pinyin (ví dụ 女儿 chỉ có "nǚ"). Bản sửa tay
+        # nằm trong suaPinyinPDF, đối chiếu với CC-CEDICT, và luôn ghi cangKiemTra.
+        pinyin_pdf = m["pinyin"]
+        if so in nhap.get("suaPinyinPDF", {}):
+            pinyin_pdf = nhap["suaPinyinPDF"][so]
+            cang.append(f"Pinyin trong PDF rút ra là '{m['pinyin']}' (thiếu), đã sửa tay thành '{pinyin_pdf}' theo CC-CEDICT, cần kiểm tra.")
+        am_tiet = tach_pinyin_pdf(m["tu"], pinyin_pdf)
         if am_tiet is None:
             canh_bao.append(f"{so} {m['tu']}: không tách được pinyin '{m['pinyin']}' theo từng chữ")
             am_tiet = [m["pinyin"]]
@@ -225,6 +250,9 @@ def dung():
         vd = nhap["viDu"].get(so)
         if vd:
             cau = cmn[vd["id"]]
+            if vd.get("doiGianThe"):
+                cau = t2s.convert(cau)
+                cang.append("Câu ví dụ gốc viết chữ phồn thể, máy (OpenCC) đã đổi sang giản thể, cần kiểm tra.")
             nhat_goc = next((jpn[j] for j in sorted(cmn_jpn.get(vd["id"], ())) if j in jpn), None)
             if nhat_goc is None:
                 raise SystemExit(f"{so} {tu}: câu {vd['id']} không có bản dịch Nhật")
@@ -247,7 +275,7 @@ def dung():
         else:
             cang.append("Chưa có câu ví dụ: Tatoeba không có câu phù hợp cho từ này.")
 
-        ds.append({
+        theo_cap[m["cap"]].append({
             "id": f"tu-{m['soThuTu']:04d}",
             "capHsk": m["cap"],
             "soThuTuHsk": m["soThuTu"],
@@ -264,20 +292,23 @@ def dung():
             "cangKiemTra": cang,
         })
 
-    FILE_RA.write_text(
-        json.dumps({
-            "loai": "tu-vung",
-            "cap": 1,
-            "phienBan": 1,
-            "capNhatLuc": NGAY,
-            "nguon": "Từ, pinyin, từ loại: đại cương HSK 2025-11. Đối chiếu nghĩa: JMdict, CC-CEDICT (EDRDG/MDBG, CC BY-SA). Câu ví dụ và bản dịch Nhật: Tatoeba (CC BY 2.0 FR).",
-            "danhMucChuDe": nhap["danhMucChuDe"],
-            "danhSach": ds,
-        }, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    print(f"Đã ghi {len(ds)} từ vào {FILE_RA}")
-    print(f"Từ có câu ví dụ: {sum(1 for m in ds if m['viDu'])}/{len(ds)}")
+    for cap, ds in sorted(theo_cap.items()):
+        file_ra = THU_MUC_RA / f"tu-vung-hsk{cap}.json"
+        file_ra.write_text(
+            json.dumps({
+                "loai": "tu-vung",
+                "cap": cap,
+                "phienBan": PHIEN_BAN[cap],
+                "capNhatLuc": NGAY,
+                "nguon": "Từ, pinyin, từ loại: đại cương HSK 2025-11. Đối chiếu nghĩa: JMdict, CC-CEDICT (EDRDG/MDBG, CC BY-SA). Nghĩa Việt từ số 101: CVDICT (CC BY-SA 4.0). Câu ví dụ và bản dịch Nhật: Tatoeba (CC BY 2.0 FR).",
+                "danhMucChuDe": nhap["danhMucChuDe"],
+                "danhSach": ds,
+            }, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
+        print(f"Đã ghi {len(ds)} từ vào {file_ra}")
+        print(f"   có câu ví dụ: {sum(1 for m in ds if m['viDu'])}/{len(ds)}")
     print(f"\nCẢNH BÁO ({len(canh_bao)}):")
     for c in canh_bao:
         print("  !!", c)

@@ -8,10 +8,10 @@ KHI NÀO CẦN:
   (public/du-lieu/).
 
 TẢI VỀ ĐÂU (cả hai thư mục đều KHÔNG lưu trong kho Git vì rất nặng):
-    cong-cu/nguon-mo/      KANJIDIC2, Unihan, JMdict, CC-CEDICT, Tatoeba
+    cong-cu/nguon-mo/      KANJIDIC2, Unihan, JMdict, CC-CEDICT, CVDICT, Tatoeba
     kanji_kakijun/         KanjiVG (bộ nét chữ Nhật, dùng cho tập viết)
 
-Tải tổng cộng khoảng 70 MB (KanjiVG thêm khoảng 270 MB sau khi giải nén).
+Tải tổng cộng khoảng 80 MB (KanjiVG thêm khoảng 270 MB sau khi giải nén).
 File nào đã có thì bỏ qua, chạy lại nhiều lần không sao.
 
 CÁCH CHẠY:
@@ -34,6 +34,8 @@ CAC_FILE = [
     ("Unihan.zip", "https://www.unicode.org/Public/UCD/latest/ucd/Unihan.zip"),
     ("JMdict_e.gz", "http://ftp.edrdg.org/pub/Nihongo/JMdict_e.gz"),
     ("cedict_1_0_ts_utf-8_mdbg.zip", "https://www.mdbg.net/chinese/export/cedict/cedict_1_0_ts_utf-8_mdbg.zip"),
+    # Từ điển Trung–Việt (CC BY-SA 4.0), dịch từ CC-CEDICT. Nguồn nghĩa tiếng Việt từ GĐ 9.
+    ("CVDICT.u8", "https://raw.githubusercontent.com/ph0ngp/CVDICT/main/CVDICT.u8"),
     ("jpn_sentences.tsv.bz2", TATOEBA + "jpn/jpn_sentences.tsv.bz2"),
     ("cmn_sentences.tsv.bz2", TATOEBA + "cmn/cmn_sentences.tsv.bz2"),
     ("vie_sentences.tsv.bz2", TATOEBA + "vie/vie_sentences.tsv.bz2"),
