@@ -4,7 +4,7 @@
 
    Hai cài đặt:
      furigana : "bat" (mặc định) hoặc "tat"  — hiện/ẩn chữ nhỏ trên chữ Hán Nhật
-     giaoDien : "sang" (mặc định) hoặc "toi"
+     giaoDien : "sang" (mặc định), "toi" hoặc "anh-dao" (hoa anh đào, GĐ 10)
 
    Cài đặt luôn được lưu TRÊN MÁY (localStorage), kể cả ở chế độ khách. Người đã
    đăng nhập thì cài đặt còn được đồng bộ lên tài khoản (xem NguoiDung.jsx).
@@ -19,7 +19,7 @@ export const CAI_DAT_MAC_DINH = { furigana: "bat", giaoDien: "sang" };
 
 const GIA_TRI_HOP_LE = {
   furigana: ["bat", "tat"],
-  giaoDien: ["sang", "toi"],
+  giaoDien: ["sang", "toi", "anh-dao"],
 };
 
 /** Giữ lại các cài đặt hợp lệ, chỗ nào sai hoặc thiếu thì dùng mặc định. */
@@ -54,4 +54,14 @@ export function apDungCaiDat(caiDat) {
   const goc = document.documentElement;
   goc.dataset.furigana = caiDat.furigana;
   goc.dataset.theme = caiDat.giaoDien;
+
+  // Màu thanh trạng thái điện thoại theo theme CỦA APP. index.html đặt sẵn hai
+  // thẻ theo sáng/tối của máy; khi app đã chạy thì cả hai lấy đúng màu nền của
+  // theme đang chọn (đọc từ tokens.css, không ghi mã màu ở đây).
+  const mauNen = getComputedStyle(goc).getPropertyValue("--nen").trim();
+  if (mauNen) {
+    document
+      .querySelectorAll('meta[name="theme-color"]')
+      .forEach((the) => the.setAttribute("content", mauNen));
+  }
 }

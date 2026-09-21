@@ -16,6 +16,7 @@
 
 import { LOAI_MUC_TIEU } from "../nguoi-dung/nhatKy.js";
 import MatTroi from "./MatTroi.jsx";
+import BieuTuong from "./BieuTuong.jsx";
 
 export default function ThanhTren({
   daDangNhap,
@@ -109,7 +110,7 @@ function NutCaiDat({ moCaiDat }) {
       aria-label="Cài đặt"
       className="text-chu-mo flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xl"
     >
-      <span aria-hidden="true">⚙</span>
+      <BieuTuong ten="cai-dat" co={20} />
     </button>
   );
 }

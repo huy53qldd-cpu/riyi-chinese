@@ -7,7 +7,12 @@
 
    `lanVuaDat` tăng lên mỗi lần vừa đạt mục tiêu: đổi key để trình duyệt chạy
    lại hiệu ứng "nảy lên" một lần.
+   Ở theme hoa anh đào, mặt trời được thay bằng bông hoa anh đào (quyết định
+   18.3). Cả hai cùng được vẽ, CSS ẩn cái không hợp theme (.tru-anh-dao,
+   .chi-anh-dao trong index.css).
    ============================================================================= */
+
+import { HoaAnhDao } from "./BieuTuong.jsx";
 
 export default function MatTroi({ dat, lanVuaDat = 0, rong = 34, className = "" }) {
   const hieuUng = !dat
@@ -15,14 +20,26 @@ export default function MatTroi({ dat, lanVuaDat = 0, rong = 34, className = "" 
     : lanVuaDat > 0
       ? "mat-troi-vua-dat"
       : "mat-troi-da-dat";
+  const cao = Math.round((rong * 18) / 34);
   return (
-    <img
-      key={lanVuaDat}
-      src="/hinh/mat-troi.png"
-      alt=""
-      width={rong}
-      height={Math.round((rong * 18) / 34)}
-      className={`mat-troi shrink-0 ${hieuUng} ${className}`}
-    />
+    <>
+      {/* Theme sáng, tối: mặt trời lấy từ logo */}
+      <img
+        key={`mt-${lanVuaDat}`}
+        src="/hinh/mat-troi.png"
+        alt=""
+        width={rong}
+        height={cao}
+        className={`mat-troi tru-anh-dao shrink-0 ${hieuUng} ${className}`}
+      />
+      {/* Theme hoa anh đào: bông hoa, cùng hiệu ứng xám / toả sáng / nảy lên.
+          Hoa hình tròn nên lấy cỡ lớn hơn chiều cao mặt trời một chút. */}
+      <span
+        key={`hoa-${lanVuaDat}`}
+        className={`mat-troi chi-anh-dao shrink-0 text-[var(--mat-troi-dat)] ${hieuUng} ${className}`}
+      >
+        <HoaAnhDao co={Math.round(cao * 1.3)} />
+      </span>
+    </>
   );
 }

@@ -21,7 +21,8 @@
       // "riyi-cai-dat", xem src/nguoi-dung/caiDat.js)
       try {
         const caiDat = JSON.parse(localStorage.getItem("riyi-cai-dat"));
-        if (caiDat?.giaoDien === "toi") document.documentElement.dataset.theme = "toi";
+        if (caiDat?.giaoDien === "toi" || caiDat?.giaoDien === "anh-dao")
+          document.documentElement.dataset.theme = caiDat.giaoDien;
       } catch {
         // Không đọc được thì dùng theme sáng
       }
@@ -33,6 +34,7 @@
         --chu-mo: #5c4a40;
         --nhan: #f0600f;
         --xam: #c4bbab;
+        --chu-tren-nhan: #fff6e5;
       }
       /* Theme tối: theo cài đặt "Giao diện tối" của app (đọc ở script đầu trang) */
       :root[data-theme="toi"] {
@@ -40,6 +42,17 @@
         --chu: #fff6e5;
         --chu-mo: #b8a894;
         --xam: #5c4a40;
+      }
+      /* Theme hoa anh đào (GĐ 10). Màu chép từ src/styles/tokens.css vì trang này
+         phải tự đứng một mình khi mất mạng. */
+      :root[data-theme="anh-dao"] {
+        --nen: #fff4f6;
+        --chu: #3a2229;
+        --chu-mo: #6b4a55;
+        --nhan: #e27493;
+        --xam: #d8c3c9;
+        /* Chữ trên nút hồng phải đậm, chữ sáng không đủ tương phản */
+        --chu-tren-nhan: #3a2229;
       }
       html,
       body {
@@ -75,7 +88,7 @@
         border-radius: 999px;
         padding: 12px 28px;
         background: var(--nhan);
-        color: #fff6e5;
+        color: var(--chu-tren-nhan);
         font: inherit;
         font-weight: 700;
         cursor: pointer;

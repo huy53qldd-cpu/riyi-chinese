@@ -31,9 +31,9 @@ export function chonKhacNhau(nguon, soLuong, tru = []) {
 // Class dùng chung cho các màn luyện tập (màu lấy từ tokens.css qua Tailwind)
 export const kieu = {
   nutChinh:
-    "border-nhan bg-nhan text-chu-tren-nhan rounded-[var(--bo-goc-tron)] border px-5 py-2.5 text-[length:var(--co-chu-latin)] font-bold disabled:opacity-40",
+    "border-nhan bg-nhan text-chu-tren-nhan inline-flex items-center justify-center gap-2 rounded-[var(--bo-goc-tron)] border px-5 py-2.5 text-[length:var(--co-chu-latin)] font-bold disabled:opacity-40",
   nutPhu:
-    "border-vien rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold disabled:opacity-40",
+    "border-vien inline-flex items-center justify-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold disabled:opacity-40",
   khung:
     "border-vien bg-nen-noi flex flex-col gap-2 rounded-[var(--bo-goc)] border p-4",
   nhanTieuDe:

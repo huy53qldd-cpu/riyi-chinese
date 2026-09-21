@@ -17,6 +17,7 @@ import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
 import KhungTapViet from "../thanh-phan/KhungTapViet.jsx";
 import { kieu } from "./tienIch.js";
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 /**
  * @param {string}   tieuDe      Tên lượt luyện, ví dụ "Trắc nghiệm từ vựng"
@@ -77,9 +78,11 @@ export default function PhienLuyenTap({ tieuDe, taoDanhSach, quayLai }) {
         </div>
         <div className="flex flex-wrap gap-2">
           <button type="button" onClick={lamLuotMoi} className={kieu.nutChinh}>
+            <BieuTuong ten="lam-lai" />
             Làm lượt mới
           </button>
           <button type="button" onClick={quayLai} className={kieu.nutPhu}>
+            <BieuTuong ten="quay-lai" co={16} />
             Quay lại
           </button>
         </div>
@@ -110,7 +113,8 @@ export default function PhienLuyenTap({ tieuDe, taoDanhSach, quayLai }) {
           onClick={() => setViTri((v) => v + 1)}
           className={`${kieu.nutChinh} self-stretch`}
         >
-          {conCau ? "Câu tiếp theo →" : "Xem kết quả"}
+          {conCau ? "Câu tiếp theo" : "Xem kết quả"}
+          <BieuTuong ten={conCau ? "tiep-theo" : "ket-qua"} />
         </button>
       )}
     </section>
@@ -125,7 +129,8 @@ function ThanhDauPhien({ tieuDe, quayLai, viTri, tong }) {
     <div className="flex flex-col gap-2">
       <div className="flex items-center gap-3">
         <button type="button" onClick={quayLai} className={kieu.nutPhu}>
-          ← Thoát
+          <BieuTuong ten="quay-lai" co={16} />
+          Thoát
         </button>
         <h1 className="m-0 min-w-0 flex-1 truncate text-[length:var(--co-chu-latin)] font-bold">
           {tieuDe}
@@ -303,6 +308,7 @@ function CauHoiSapXep({ cau, traLoi }) {
           disabled={conLai.length > 0}
           className={`${kieu.nutChinh} self-stretch`}
         >
+          <BieuTuong ten="kiem-tra" />
           Kiểm tra
         </button>
       )}
@@ -344,6 +350,7 @@ function TheGhiNho({ cau, traLoi }) {
           onClick={() => setDaLat(true)}
           className={`${kieu.nutChinh} self-stretch`}
         >
+          <BieuTuong ten="lat-the" />
           Lật thẻ
         </button>
       )}
@@ -351,9 +358,11 @@ function TheGhiNho({ cau, traLoi }) {
       {daLat && danhGia === null && (
         <div className="grid grid-cols-2 gap-2">
           <button type="button" onClick={() => chon(false)} className={`${kieu.nutPhu} py-3`}>
+            <BieuTuong ten="chua-nho" co={16} />
             Chưa nhớ
           </button>
           <button type="button" onClick={() => chon(true)} className={`${kieu.nutChinh} py-3`}>
+            <BieuTuong ten="da-nho" />
             Đã nhớ
           </button>
         </div>

@@ -18,6 +18,7 @@ import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
 import MatTroi from "../thanh-phan/MatTroi.jsx";
 import { chuyenSangBanMoi, theoDoiBanMoi } from "./capNhatApp.js";
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 // Quay lại app sau ít nhất chừng này thì kiểm tra nội dung bài học mới
 const PHUT_GIUA_HAI_LAN_KIEM_TRA = 30;
@@ -77,8 +78,9 @@ export function DaiBanMoi() {
         type="button"
         onClick={taiLai}
         disabled={dangTai}
-        className="border-nhan bg-nhan text-chu-tren-nhan shrink-0 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-bold disabled:opacity-60"
+        className="border-nhan bg-nhan text-chu-tren-nhan inline-flex shrink-0 items-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-bold disabled:opacity-60"
       >
+        <BieuTuong ten="cap-nhat" co={16} className={dangTai ? "animate-spin" : ""} />
         {dangTai ? "Đang tải lại..." : "Tải lại để cập nhật"}
       </button>
     </div>

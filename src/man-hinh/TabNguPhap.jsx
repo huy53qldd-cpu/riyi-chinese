@@ -32,6 +32,7 @@ import {
   cauHoiSapXep,
   taoLuot,
 } from "../luyen-tap/taoCauHoi.jsx";
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 const CACH_LUYEN = [
   { ma: "sap-xep", nhan: "Sắp xếp câu" },
@@ -217,9 +218,10 @@ function ChiTietNguPhap({ diem, quayLai }) {
         <button
           type="button"
           onClick={quayLai}
-          className="border-vien rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
+          className="border-vien inline-flex items-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
         >
-          ← Về danh sách
+          <BieuTuong ten="quay-lai" co={16} />
+          Về danh sách
         </button>
       </div>
       <NutDaHoc id={diem.id} />

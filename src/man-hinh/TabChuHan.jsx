@@ -22,6 +22,7 @@ import NutDaHoc, { DauDaHoc } from "../thanh-phan/NutDaHoc.jsx";
 import KhungTapViet from "../thanh-phan/KhungTapViet.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 // Nhãn so sánh tự dạng. Nhãn do người nhập liệu quyết định, không do code đoán.
 const NHAN_TU_DANG = {
@@ -156,8 +157,9 @@ export default function TabChuHan() {
         <button
           type="button"
           onClick={() => setSoHien((n) => n + SO_THE_MOI_LAN)}
-          className="border-vien mt-4 w-full rounded-[var(--bo-goc-tron)] border px-4 py-2.5 text-[length:var(--co-chu-latin-nho)] font-semibold"
+          className="border-vien mt-4 inline-flex w-full items-center justify-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2.5 text-[length:var(--co-chu-latin-nho)] font-semibold"
         >
+          <BieuTuong ten="xem-them" co={16} />
           Xem thêm ({hienThi.length - soHien} chữ nữa)
         </button>
       )}
@@ -211,9 +213,10 @@ function ChiTietChuHan({ muc, quayLai }) {
         <button
           type="button"
           onClick={quayLai}
-          className="border-vien rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
+          className="border-vien inline-flex items-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
         >
-          ← Về danh sách
+          <BieuTuong ten="quay-lai" co={16} />
+          Về danh sách
         </button>
       </div>
       <NutDaHoc id={muc.id} />

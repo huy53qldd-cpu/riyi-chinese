@@ -6,6 +6,8 @@
    Nội dung câu chữ lấy đúng theo yêu cầu, không tự đổi.
    ============================================================================= */
 
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
+
 export default function DangNangCap({ quayLai }) {
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-xl flex-col items-center justify-center px-6 text-center">
@@ -26,8 +28,9 @@ export default function DangNangCap({ quayLai }) {
       <button
         type="button"
         onClick={quayLai}
-        className="bg-nhan text-chu-tren-nhan active:bg-nhan-dam mt-8 rounded-[var(--bo-goc-tron)] px-8 py-3 text-[length:var(--co-chu-latin)] font-bold transition-colors"
+        className="bg-nhan text-chu-tren-nhan active:bg-nhan-dam mt-8 inline-flex items-center gap-2 rounded-[var(--bo-goc-tron)] px-8 py-3 text-[length:var(--co-chu-latin)] font-bold transition-colors"
       >
+        <BieuTuong ten="quay-lai" />
         Quay lại
       </button>
     </main>

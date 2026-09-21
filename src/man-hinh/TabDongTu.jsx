@@ -27,6 +27,7 @@ import VanBanPha from "../thanh-phan/VanBanPha.jsx";
 import KhungChonLuyenTap from "../luyen-tap/KhungChonLuyenTap.jsx";
 import PhienLuyenTap from "../luyen-tap/PhienLuyenTap.jsx";
 import { cauHoiDongTu, taoLuot } from "../luyen-tap/taoCauHoi.jsx";
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 // Ba mức nguy hiểm. Màu lấy từ tokens.css (--nguy-hiem-*). Các màu này không đủ
 // tương phản để làm chữ nhỏ, nên chỉ dùng làm chấm màu, chữ vẫn là màu chính.
@@ -253,9 +254,10 @@ function ChiTietDongTu({ muc, quayLai }) {
         <button
           type="button"
           onClick={quayLai}
-          className="border-vien rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
+          className="border-vien inline-flex items-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
         >
-          ← Về danh sách
+          <BieuTuong ten="quay-lai" co={16} />
+          Về danh sách
         </button>
       </div>
 

@@ -354,6 +354,18 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 17.13 | **儿化 trong câu ngữ pháp ghi pinyin là "r"** (哪儿 = nǎ r), thống nhất với file từ vựng. Chữ nhiều âm máy gắn sai thì sửa bằng `troTu` của từng điểm (只 zhī, 长 cháng) |
 | 17.14 | **Chữ Nhật chèn trong văn bản tiếng Việt phải đánh dấu `{ja|…}`** (VanBanPha coi chữ Hán trần là tiếng Trung). Đã soát và đánh dấu lại toàn bộ phần giải thích ngữ pháp và đồng tự, kể cả một chỗ sót ở điểm 的 của GĐ 5 |
 
+### GĐ 10 (phần 1) — biểu tượng, theme hoa anh đào, nút đăng nhập (2026-09-21)
+
+| # | Quyết định |
+|---|---|
+| 18.1 | **Biểu tượng đơn sắc cho nút**: gắn cho nút hành động (Luyện tập, Tập viết, Xem mẫu, Đánh dấu đã học, Quay lại...), các cách luyện tập và các mục trong Cài đặt. KHÔNG gắn cho nút lọc nhỏ (HSK 1/2/3, Tất cả, chủ đề). Dùng bộ Lucide (giấy phép ISC), nét mảnh, màu theo màu chữ của nút nên tự đổi theo theme. Toàn bộ bảng "nút nào dùng hình nào" nằm ở một file: `src/thanh-phan/BieuTuong.jsx` |
+| 18.2 | **Theme thứ ba "Hoa anh đào"**, chỉ có bản sáng: nền trắng hồng, chữ nâu mận đậm, điểm nhấn hồng phấn. Chữ trên nút hồng là chữ ĐẬM (chữ sáng trên hồng không đủ tương phản). Cài đặt đổi từ công tắc Sáng/Tối thành 3 lựa chọn: Sáng, Tối, Hoa anh đào |
+| 18.3 | **Biểu tượng ở theme hoa anh đào**: giữ hình, đổi sang tông hồng; thay riêng vài điểm nhấn: mặt trời mục tiêu thành bông hoa anh đào, dấu "đã học" thành cánh hoa, thêm vài cánh hoa trang trí mờ ở góc màn hình |
+| 18.4 | **Biểu đồ tuần ở theme hoa anh đào**: "tuần này" hồng #d9658a, "tuần trước" tím #6a5acd (đã chạy bộ kiểm tra màu, phân biệt được cả với người mù màu; xanh dương cũ bị trùng với hồng khi mù màu đỏ) |
+| 18.5 | **Nút đăng nhập căn giữa** ở cả 3 chỗ (màn chọn khoá học, Cài đặt, tab Mục tiêu), chữ "Đăng nhập bằng Google" (G viết hoa theo quy định thương hiệu của Google), kèm logo chữ G nhiều màu của Google (ngoại lệ duy nhất của quy tắc biểu tượng đơn sắc, vì Google yêu cầu logo đúng màu) |
+| 18.6 | **Vẫn chỉ đăng nhập Google.** Đã tư vấn: Facebook làm được qua Firebase nhưng cần app Meta, trang chính sách, có thể phải duyệt; Zalo Firebase không hỗ trợ, phải có máy chủ riêng (Cloud Functions, cần gói trả tiền Blaze). Chưa làm |
+| 18.7 | **Còn để ngỏ**: logo "Riyi" (ảnh PNG, mặt trời cam) ở màn chọn khoá học vẫn giữ nguyên ở theme hoa anh đào. Chờ chủ dự án quyết có cần bản logo hồng riêng không |
+
 ### Đang chờ chủ dự án
 
 1. Rà lại dữ liệu 10 chữ (mở từng chữ, bấm mục "Chưa kiểm tra").

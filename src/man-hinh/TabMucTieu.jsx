@@ -27,6 +27,8 @@ import {
 } from "../nguoi-dung/nhatKy.js";
 import MatTroi from "../thanh-phan/MatTroi.jsx";
 import { kieu } from "../luyen-tap/tienIch.js";
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
+import { NutDangNhap } from "./CaiDat.jsx";
 
 const THU = ["CN", "T2", "T3", "T4", "T5", "T6", "T7"];
 
@@ -54,7 +56,8 @@ export default function TabMucTieu({ quayLai }) {
     <section className="flex flex-col gap-5">
       <div>
         <button type="button" onClick={quayLai} className={kieu.nutPhu}>
-          ← Quay lại
+          <BieuTuong ten="quay-lai" co={16} />
+            Quay lại
         </button>
       </div>
 
@@ -164,7 +167,7 @@ export default function TabMucTieu({ quayLai }) {
             aria-label="Giảm mục tiêu"
             className={`${kieu.nutPhu} h-11 w-11 p-0 text-xl`}
           >
-            −
+            <BieuTuong ten="giam" co={20} />
           </button>
           <p className="m-0 min-w-24 text-center text-[length:var(--co-chu-latin)] font-bold tabular-nums">
             {nd.mucTieu.soLuong} {loai.donVi}
@@ -176,7 +179,7 @@ export default function TabMucTieu({ quayLai }) {
             aria-label="Tăng mục tiêu"
             className={`${kieu.nutPhu} h-11 w-11 p-0 text-xl`}
           >
-            +
+            <BieuTuong ten="tang" co={20} />
           </button>
         </div>
         <p className={kieu.chuNho}>
@@ -203,7 +206,8 @@ export function CanDangNhap({ tieuDe, quayLai }) {
       {quayLai && (
         <div>
           <button type="button" onClick={quayLai} className={kieu.nutPhu}>
-            ← Quay lại
+            <BieuTuong ten="quay-lai" co={16} />
+            Quay lại
           </button>
         </div>
       )}
@@ -213,11 +217,7 @@ export function CanDangNhap({ tieuDe, quayLai }) {
         <p className="m-0 text-[length:var(--co-chu-latin)] leading-relaxed">
           Phần này cần đăng nhập để lưu tiến độ học của bạn.
         </p>
-        {nd.coTheDangNhap && (
-          <button type="button" onClick={nd.dangNhap} className={kieu.nutChinh}>
-            Đăng nhập bằng Google
-          </button>
-        )}
+        {nd.coTheDangNhap && <NutDangNhap nd={nd} />}
       </div>
     </section>
   );

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132">
+  <!-- Mặt nạ cánh hoa trang trí cho theme hoa anh đào. Chỉ dùng hình, màu do CSS tô. -->
+  <g fill="#000">
+    <g transform="translate(78 40)">
+      <path d="M0 0 C-7 -6 -8.5 -16 -4 -22 L0 -19 L4 -22 C8.5 -16 7 -6 0 0 Z"/>
+      <path d="M0 0 C-7 -6 -8.5 -16 -4 -22 L0 -19 L4 -22 C8.5 -16 7 -6 0 0 Z" transform="rotate(72)"/>
+      <path d="M0 0 C-7 -6 -8.5 -16 -4 -22 L0 -19 L4 -22 C8.5 -16 7 -6 0 0 Z" transform="rotate(144)"/>
+      <path d="M0 0 C-7 -6 -8.5 -16 -4 -22 L0 -19 L4 -22 C8.5 -16 7 -6 0 0 Z" transform="rotate(216)"/>
+      <path d="M0 0 C-7 -6 -8.5 -16 -4 -22 L0 -19 L4 -22 C8.5 -16 7 -6 0 0 Z" transform="rotate(288)"/>
+    </g>
+    <path d="M30 78 C24 73 23 65 27 60 L30 62.5 L33 60 C37 65 36 73 30 78 Z" transform="rotate(-30 30 70)"/>
+    <path d="M100 100 C95.5 96 95 90 98 86 L100 88 L102 86 C105 90 104.5 96 100 100 Z" transform="rotate(25 100 93)"/>
+    <path d="M58 118 C54.5 115 54 110.5 56.5 107.5 L58 109 L59.5 107.5 C62 110.5 61.5 115 58 118 Z" transform="rotate(-60 58 113)"/>
+  </g>
+</svg>

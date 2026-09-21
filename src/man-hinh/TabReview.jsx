@@ -47,6 +47,7 @@ import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
 import { ghepFurigana } from "../du-lieu/ghepFurigana.js";
 import { CanDangNhap } from "./TabMucTieu.jsx";
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 const SO_MUC_SAI_HIEN = 10;
 const SO_TUAN_XEM_LAI = Math.floor(SO_NGAY_GIU / 7) - 1;
@@ -156,7 +157,7 @@ export default function TabReview() {
           aria-label="Tuần trước đó"
           className={`${kieu.nutPhu} h-10 w-10 p-0 text-lg`}
         >
-          ‹
+          <BieuTuong ten="truoc" co={20} />
         </button>
         <p className="m-0 text-center text-[length:var(--co-chu-latin)] font-bold">
           {laTuanNay ? "Tuần này" : "Tuần"} · {ngayNgan(ngayDau)} – {ngayNgan(congNgay(ngayDau, 6))}
@@ -168,7 +169,7 @@ export default function TabReview() {
           aria-label="Tuần sau đó"
           className={`${kieu.nutPhu} h-10 w-10 p-0 text-lg`}
         >
-          ›
+          <BieuTuong ten="sau" co={20} />
         </button>
       </div>
 
@@ -253,6 +254,7 @@ export default function TabReview() {
                   onClick={() => setDangLuyen(saiHien.map((m) => m.id))}
                   className={`${kieu.nutChinh} self-stretch`}
                 >
+                  <BieuTuong ten="luyen-lai" />
                   Luyện lại {saiHien.length} mục này
                 </button>
               </>

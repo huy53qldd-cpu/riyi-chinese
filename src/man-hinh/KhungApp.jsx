@@ -36,6 +36,7 @@ import TabNguPhap from "./TabNguPhap.jsx";
 import TabTuVung from "./TabTuVung.jsx";
 import TabMucTieu from "./TabMucTieu.jsx";
 import TabReview from "./TabReview.jsx";
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 export default function KhungApp({ thoatKhoa }) {
   const [tabDangMo, setTabDangMo] = useState(TAB.CHU_HAN);
@@ -92,8 +93,9 @@ export default function KhungApp({ thoatKhoa }) {
         <button
           type="button"
           onClick={thoatKhoa}
-          className="border-vien mt-6 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
+          className="border-vien mt-6 inline-flex items-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
         >
+          <BieuTuong ten="doi-khoa" co={16} />
           Đổi khoá học
         </button>
       </main>

@@ -17,6 +17,7 @@
 import Logo from "../thanh-phan/Logo.jsx";
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import { NutDangNhap } from "./CaiDat.jsx";
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 const DANH_SACH_KHOA = [
   {
@@ -50,7 +51,7 @@ export default function ChonKhoaHoc({ chonKhoa, moNangCap, moCaiDat }) {
         aria-label="Cài đặt"
         className="border-vien text-chu-mo absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded-full border text-xl"
       >
-        <span aria-hidden="true">⚙</span>
+        <BieuTuong ten="cai-dat" co={20} />
       </button>
 
       {/* ---------------------------------------------------------------------
@@ -130,7 +131,7 @@ export default function ChonKhoaHoc({ chonKhoa, moNangCap, moCaiDat }) {
           </p>
         ) : (
           <>
-            <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+            <p className="text-chu-mo m-0 text-center text-[length:var(--co-chu-latin-nho)] leading-relaxed">
               Bạn có thể học ngay ở chế độ khách. Đăng nhập để lưu tiến độ.
             </p>
             <NutDangNhap nd={nd} />

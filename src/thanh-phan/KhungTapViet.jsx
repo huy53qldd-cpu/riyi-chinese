@@ -20,6 +20,7 @@ import { useEffect, useRef, useState } from "react";
 import HanziWriter from "hanzi-writer";
 
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
+import BieuTuong from "./BieuTuong.jsx";
 
 const GOC_NET = `${import.meta.env.BASE_URL}du-lieu/net-viet/`;
 const CO_KHUNG = 280; // cạnh khung vuông, tính theo pixel
@@ -136,7 +137,7 @@ export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong }) {
   const khongCo = trangThai === "khong-co";
   const rangBuoc = trangThai === "cho-du-lieu" || khongCo;
   const nutChung =
-    "rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold disabled:opacity-40";
+    "inline-flex items-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold disabled:opacity-40";
 
   return (
     <div className="flex flex-col items-center gap-3">
@@ -180,6 +181,7 @@ export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong }) {
           disabled={rangBuoc || trangThai === "dang-xem"}
           className={`border-vien ${nutChung}`}
         >
+          <BieuTuong ten="xem-mau" co={16} />
           Xem mẫu
         </button>
         <button
@@ -188,6 +190,7 @@ export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong }) {
           disabled={rangBuoc || trangThai === "dang-xem"}
           className={`border-nhan bg-nhan text-chu-tren-nhan ${nutChung}`}
         >
+          <BieuTuong ten="tap-viet" co={16} />
           {trangThai === "dang-tap" || trangThai === "xong"
             ? "Viết lại"
             : "Tập viết"}

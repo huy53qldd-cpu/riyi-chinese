@@ -194,6 +194,47 @@ rt {
 }
 
 /* -----------------------------------------------------------------------------
+   THEME HOA ANH ĐÀO (GĐ 10): vài điểm nhấn đổi hình
+   .tru-anh-dao : chỉ hiện ở theme sáng/tối (ví dụ mặt trời lấy từ logo)
+   .chi-anh-dao : chỉ hiện ở theme hoa anh đào (ví dụ bông hoa, cánh hoa)
+   Chọn bằng CSS để không phải truyền theme vào từng thành phần.
+   ----------------------------------------------------------------------------- */
+.chi-anh-dao {
+  display: none;
+}
+
+:root[data-theme="anh-dao"] .chi-anh-dao {
+  display: inline-flex;
+}
+
+:root[data-theme="anh-dao"] .tru-anh-dao {
+  display: none;
+}
+
+/* Vài cánh hoa trang trí mờ ở góc trên bên phải, nằm dưới mọi nội dung và
+   không bắt được bấm. Hình cánh hoa vẽ bằng mặt nạ SVG, màu lấy từ tokens.css. */
+/* Nền do thẻ <html> tô, thân trang trong suốt để cánh hoa (z-index -1) nằm giữa
+   nền và nội dung. Các thẻ có nền riêng sẽ che cánh hoa, đúng ý muốn. */
+:root[data-theme="anh-dao"] body {
+  background-color: transparent;
+}
+
+:root[data-theme="anh-dao"] body::before {
+  content: "";
+  position: fixed;
+  top: calc(var(--cao-thanh-tren) + 8px);
+  right: 8px;
+  width: 132px;
+  height: 132px;
+  background-color: var(--canh-hoa-trang-tri);
+  opacity: 0.28;
+  pointer-events: none;
+  z-index: -1;
+  -webkit-mask: url("/hinh/canh-hoa-trang-tri.svg") no-repeat center / contain;
+  mask: url("/hinh/canh-hoa-trang-tri.svg") no-repeat center / contain;
+}
+
+/* -----------------------------------------------------------------------------
    MẶT TRỜI MỤC TIÊU (GĐ 7)
    Chưa đạt: xám mờ. Đạt mục tiêu: màu thật, toả sáng nhẹ liên tục.
    Vừa đạt xong: nảy lên một lần (class mat-troi-vua-dat, gắn lại mỗi lần đạt).

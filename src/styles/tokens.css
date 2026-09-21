@@ -88,6 +88,10 @@
   --nguy-hiem-vua: #b8730d;
   --nguy-hiem-nang: #c0392b;
 
+  /* Nền tròn sau logo chữ G trên nút đăng nhập. Google yêu cầu chữ G đặt trên
+     nền trắng ở MỌI theme, nên theme tối và hoa anh đào không đổi biến này. */
+  --nen-logo-google: #ffffff;
+
   /* ---------------------------------------------------------------------------
      FONT
      Mỗi ngôn ngữ một font riêng. KHÔNG dùng chung, vì cùng một mã Unicode
@@ -160,4 +164,53 @@
   --nguy-hiem-nhe: #a8bb85;
   --nguy-hiem-vua: #e0a44a;
   --nguy-hiem-nang: #e8796b;
+}
+
+/* =============================================================================
+   THEME HOA ANH ĐÀO (GĐ 10)
+   Chỉ có bản sáng. Nền trắng hồng, chữ nâu mận đậm, điểm nhấn hồng phấn.
+   Bật bằng cách đặt data-theme="anh-dao" lên thẻ <html>.
+
+   Tương phản đã đo:
+     chữ chính trên nền       13.5 : 1
+     chữ phụ trên nền          7.1 : 1
+     chữ ĐẬM trên nút hồng     5.0 : 1  (chữ sáng trên hồng chỉ ~2 : 1, không đủ,
+                                         nên nút hồng ở theme này dùng chữ đậm)
+   Giống màu cam ở theme sáng, hồng KHÔNG dùng cho chữ nhỏ.
+   Đổi màu ở đây thì nhớ sửa cả public/mat-mang.html (trang báo mất mạng).
+   ============================================================================= */
+:root[data-theme="anh-dao"] {
+  --goc-hong: #e27493; /* hồng phấn đậm vừa: nút, mặt trời thành hoa, viền nhấn */
+  --goc-hong-dam: #c95a7b;
+  --goc-hong-nhat: #fcdde6;
+  --goc-man: #3a2229; /* nâu mận: chữ */
+
+  --nen: #fff4f6;
+  --nen-phu: #f8e6eb;
+  --nen-noi: #fffafb;
+
+  --chu: var(--goc-man);
+  --chu-mo: #6b4a55;
+  --chu-tren-nhan: var(--goc-man);
+
+  --nhan: var(--goc-hong);
+  --nhan-dam: var(--goc-hong-dam);
+  --nhan-nhat: var(--goc-hong-nhat);
+
+  --vien: #f0cdd7;
+  --vien-dam: #6b4a55;
+
+  --mo-dan: rgba(58, 34, 41, 0.45);
+  --bong: rgba(58, 34, 41, 0.08);
+
+  --mat-troi-chua-dat: #d8c3c9;
+  --mat-troi-dat: var(--goc-hong);
+
+  /* Biểu đồ tuần: hồng và tím. Đã chạy bộ kiểm tra màu (kể cả người mù màu) trên
+     nền thẻ #fffafb. Xanh dương của theme sáng bị trùng với hồng khi mù màu đỏ. */
+  --bieu-do-tuan-nay: #d9658a;
+  --bieu-do-tuan-truoc: #6a5acd;
+
+  /* Cánh hoa trang trí mờ ở góc màn hình */
+  --canh-hoa-trang-tri: #f4a6bc;
 }

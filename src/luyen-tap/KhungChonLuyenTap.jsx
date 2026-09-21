@@ -7,6 +7,7 @@
    ============================================================================= */
 
 import { kieu } from "./tienIch.js";
+import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 /**
  * @param {Array<{ma: string, nhan: string}>} cacCach  Các cách luyện
@@ -16,7 +17,10 @@ import { kieu } from "./tienIch.js";
 export default function KhungChonLuyenTap({ cacCach, soMuc, chon }) {
   return (
     <div className={`${kieu.khung} mt-4`}>
-      <p className={kieu.nhanTieuDe}>Luyện tập</p>
+      <p className={`${kieu.nhanTieuDe} flex items-center gap-1.5`}>
+        <BieuTuong ten="luyen-tap" co={16} />
+        Luyện tập
+      </p>
       <div className="flex flex-wrap gap-2">
         {cacCach.map((c) => (
           <button
@@ -26,6 +30,8 @@ export default function KhungChonLuyenTap({ cacCach, soMuc, chon }) {
             disabled={soMuc === 0}
             className={kieu.nutChinh}
           >
+            {/* Mã cách luyện (the, trac-nghiem, sap-xep...) cũng là tên hình */}
+            <BieuTuong ten={c.ma === "the" ? "the-ghi-nho" : c.ma} />
             {c.nhan}
           </button>
         ))}
