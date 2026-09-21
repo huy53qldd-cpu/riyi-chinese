@@ -1,6 +1,6 @@
 {
   "loai": "dong-tu-di-nghia",
-  "phienBan": 1,
+  "phienBan": 2,
   "capNhatLuc": "2026-09-20",
   "nguon": "Nghĩa tiếng Trung đối chiếu CC-CEDICT, cách đọc tiếng Nhật đối chiếu JMdict, âm Hán Việt đối chiếu KANJIDIC2 (đều EDRDG/MDBG, CC BY-SA). Câu ví dụ: Tatoeba (CC BY 2.0 FR).",
   "luuYDauTab": "Nhiều cặp từ dưới đây khi viết ra trông hơi khác nhau giữa tiếng Trung và tiếng Nhật, ví dụ {ja|検討} và 检讨, hay {ja|経理} và 经理. Đây CHỈ là khác biệt giữa chữ giản thể và tự dạng Nhật, hoàn toàn không phải hai chữ khác nhau. Âm Hán Việt và ý nghĩa gốc của từng chữ là GIỐNG NHAU. Điểm khác nhau cần chú ý nằm ở NGHĨA CỦA TỪ khi dùng trong tiếng Trung và tiếng Nhật hiện đại, chứ không nằm ở cách viết.",
@@ -980,6 +980,2003 @@
       "cangKiemTra": [
         "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
         "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0021",
+      "chuNhat": "東西",
+      "chuTrungGianThe": "东西",
+      "amHanViet": "đông tây",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "dōng",
+          "xi"
+        ],
+        "nghia": "đồ vật, đồ đạc",
+        "viDu": {
+          "trung": "她去买东西。",
+          "pinyin": [
+            "tā",
+            "qù",
+            "mǎi",
+            "dōng",
+            "xi",
+            ""
+          ],
+          "nghiaViet": "Cô ấy đi mua đồ.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2200437"
+        }
+      },
+      "nhat": {
+        "cachDoc": "とうざい",
+        "nghia": "phía đông và phía tây; phương Đông và phương Tây",
+        "viDu": {
+          "nhat": "この国[くに]では東西[とうざい]の文化[ぶんか]が交じり合[まじりあ]っている。",
+          "nghiaViet": "Ở nước này, văn hoá phương Đông và phương Tây hoà trộn với nhau.",
+          "nguon": "Tatoeba #221950"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|東西} (とうざい) là đông và tây. Tiếng Trung 东西 đọc dōngxi (chữ 西 đọc thanh nhẹ) là đồ vật, đồ đạc.",
+        "choDeNham": "Đọc dōngxī (西 thanh 1) thì mới là 'đông tây' giống tiếng Nhật. Trong HSK gặp nhiều nhất là nghĩa 'đồ vật': 买东西 = đi mua đồ."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0022",
+      "chuNhat": "先生",
+      "chuTrungGianThe": "先生",
+      "amHanViet": "tiên sinh",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "xiān",
+          "sheng"
+        ],
+        "nghia": "ông (gọi đàn ông lịch sự); chồng",
+        "viDu": {
+          "trung": "王先生来自中国。",
+          "pinyin": [
+            "wáng",
+            "xiān",
+            "sheng",
+            "lái",
+            "zì",
+            "zhōng",
+            "guó",
+            ""
+          ],
+          "nghiaViet": "Ông Vương đến từ Trung Quốc.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3365872"
+        }
+      },
+      "nhat": {
+        "cachDoc": "せんせい",
+        "nghia": "thầy giáo; bác sĩ, luật sư (người được kính trọng)",
+        "viDu": {
+          "nhat": "母[はは]は高校[こうこう]の先生[せんせい]です。",
+          "nghiaViet": "Mẹ tôi là giáo viên cấp 3.",
+          "nguon": "Tatoeba #3050904"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|先生} là thầy giáo, bác sĩ... Tiếng Trung 先生 (xiānsheng) đặt sau họ để gọi đàn ông một cách lịch sự (王先生 = ông Vương), hoặc có nghĩa là chồng.",
+        "choDeNham": "Gọi thầy cô giáo trong tiếng Trung là 老师 (lǎoshī). Gọi thầy là 王先生 thì chỉ là 'ông Vương', không còn ý thầy trò."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0023",
+      "chuNhat": "告訴",
+      "chuTrungGianThe": "告诉",
+      "amHanViet": "cáo tố",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "gào",
+          "su"
+        ],
+        "nghia": "nói cho biết, bảo",
+        "viDu": {
+          "trung": "请告诉我。",
+          "pinyin": [
+            "qǐng",
+            "gào",
+            "su",
+            "wǒ",
+            ""
+          ],
+          "nghiaViet": "Xin hãy nói cho tôi biết.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #13897276"
+        }
+      },
+      "nhat": {
+        "cachDoc": "こくそ",
+        "nghia": "tố cáo, kiện (ra toà)",
+        "viDu": {
+          "nhat": "彼[かれ]は殺人[さつじん]罪[ざい]で告訴[こくそ]された。",
+          "nghiaViet": "Anh ta bị kiện về tội giết người.",
+          "nguon": "Tatoeba #106719"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|告訴} là kiện, tố cáo. Tiếng Trung 告诉 (gàosu) là từ rất thường ngày: nói cho ai biết.",
+        "choDeNham": "Thấy 告诉我 đừng tưởng là 'kiện tôi'; đó chỉ là 'nói cho tôi biết'. 'Kiện' tiếng Trung là 起诉 (qǐsù)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0024",
+      "chuNhat": "顔色",
+      "chuTrungGianThe": "颜色",
+      "amHanViet": "nhan sắc",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "yán",
+          "sè"
+        ],
+        "nghia": "màu sắc",
+        "viDu": {
+          "trung": "我喜欢绿颜色。",
+          "pinyin": [
+            "wǒ",
+            "xǐ",
+            "huān",
+            "lǜ",
+            "yán",
+            "sè",
+            ""
+          ],
+          "nghiaViet": "Tôi thích màu xanh lá.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1020422"
+        }
+      },
+      "nhat": {
+        "cachDoc": "かおいろ",
+        "nghia": "sắc mặt",
+        "viDu": {
+          "nhat": "彼[かれ]は顔色[かおいろ]が悪[わる]い。",
+          "nghiaViet": "Sắc mặt anh ấy không tốt.",
+          "nguon": "Tatoeba #108689"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|顔色} là sắc mặt. Tiếng Trung 颜色 (yánsè) là màu sắc nói chung.",
+        "choDeNham": "'Sắc mặt' tiếng Trung là 脸色 (liǎnsè). 'Màu sắc' tiếng Nhật là {ja|色}."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0025",
+      "chuNhat": "非常",
+      "chuTrungGianThe": "非常",
+      "amHanViet": "phi thường",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "fēi",
+          "cháng"
+        ],
+        "nghia": "rất, vô cùng",
+        "viDu": {
+          "trung": "非常好吃！",
+          "pinyin": [
+            "fēi",
+            "cháng",
+            "hǎo",
+            "chī",
+            ""
+          ],
+          "nghiaViet": "Rất ngon!",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #13167430"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ひじょう",
+        "nghia": "rất ({ja|非常}に); khẩn cấp ({ja|非常口} = lối thoát hiểm)",
+        "viDu": {
+          "nhat": "非常口[ひじょうぐち]はどこにありますか。",
+          "nghiaViet": "Lối thoát hiểm ở đâu?",
+          "nguon": "Tatoeba #85758"
+        }
+      },
+      "viet": {
+        "giaiThich": "Cả hai tiếng đều dùng với nghĩa 'rất'. Nhưng tiếng Nhật phải thêm に ({ja|非常}に), và {ja|非常} đứng một mình còn có nghĩa khẩn cấp. Tiếng Trung 非常 chủ yếu làm trạng từ 'rất', đặt thẳng trước tính từ.",
+        "choDeNham": "Tiếng Trung nói 非常好 là đủ, không thêm gì vào giữa. 'Lối thoát hiểm' tiếng Trung là 安全出口."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0026",
+      "chuNhat": "多少",
+      "chuTrungGianThe": "多少",
+      "amHanViet": "đa thiểu",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "duō",
+          "shao"
+        ],
+        "nghia": "bao nhiêu",
+        "viDu": {
+          "trung": "多少钱？",
+          "pinyin": [
+            "duō",
+            "shao",
+            "qián",
+            ""
+          ],
+          "nghiaViet": "Bao nhiêu tiền?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3697906"
+        }
+      },
+      "nhat": {
+        "cachDoc": "たしょう",
+        "nghia": "ít nhiều, đôi chút",
+        "viDu": {
+          "nhat": "彼[かれ]は多少[たしょう]興奮[こうふん]した。",
+          "nghiaViet": "Anh ấy hơi phấn khích.",
+          "nguon": "Tatoeba #102567"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|多少} là 'ít nhiều, một chút'. Tiếng Trung 多少 (duōshao) là từ để hỏi số lượng: bao nhiêu.",
+        "choDeNham": "'Một chút' tiếng Trung là 有点儿 hoặc 一点儿. 'Bao nhiêu' tiếng Nhật là いくら hoặc どのくらい."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0027",
+      "chuNhat": "便宜",
+      "chuTrungGianThe": "便宜",
+      "amHanViet": "tiện nghi",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "pián",
+          "yi"
+        ],
+        "nghia": "rẻ",
+        "viDu": {
+          "trung": "这个很便宜。",
+          "pinyin": [
+            "zhè",
+            "ge",
+            "hěn",
+            "pián",
+            "yi",
+            ""
+          ],
+          "nghiaViet": "Cái này rẻ lắm.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1216079"
+        }
+      },
+      "nhat": {
+        "cachDoc": "べんぎ",
+        "nghia": "sự tiện lợi, thuận tiện",
+        "viDu": {
+          "nhat": "公衆[こうしゅう]の便宜[べんぎ]は尊重[そんちょう]されねばならない。",
+          "nghiaViet": "Sự thuận tiện của công chúng phải được tôn trọng.",
+          "nguon": "Tatoeba #173999"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|便宜} là sự thuận tiện. Tiếng Trung 便宜 đọc piányi là rẻ. (Đọc biànyí mới là 'thuận tiện', ít gặp.)",
+        "choDeNham": "Thấy 便宜 trên bảng giá là 'rẻ'. 'Tiện lợi' tiếng Trung thường nói 方便. 'Rẻ' tiếng Nhật là {ja|安}い."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0028",
+      "chuNhat": "打算",
+      "chuTrungGianThe": "打算",
+      "amHanViet": "đả toán",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "dǎ",
+          "suàn"
+        ],
+        "nghia": "định, dự định",
+        "viDu": {
+          "trung": "你打算出国吗？",
+          "pinyin": [
+            "nǐ",
+            "dǎ",
+            "suàn",
+            "chū",
+            "guó",
+            "ma",
+            ""
+          ],
+          "nghiaViet": "Bạn định ra nước ngoài à?",
+          "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (打).",
+          "nguon": "Tatoeba #476641"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ださん",
+        "nghia": "tính toán thiệt hơn, vụ lợi ({ja|打算的})",
+        "viDu": {
+          "nhat": "彼[かれ]はとても打算[ださん]的[てき]だ。",
+          "nghiaViet": "Anh ta rất hay tính toán thiệt hơn.",
+          "nguon": "Tatoeba #111546"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|打算} mang ý chê: tính toán vụ lợi. Tiếng Trung 打算 (dǎsuàn) trung tính: định làm gì, dự định.",
+        "choDeNham": "Nói 我打算… chỉ là 'tôi định…', không có ý xấu. Đừng dịch sang tiếng Nhật thành {ja|打算}; hãy dùng 〜つもり."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0029",
+      "chuNhat": "意思",
+      "chuTrungGianThe": "意思",
+      "amHanViet": "ý tư",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "yì",
+          "si"
+        ],
+        "nghia": "ý nghĩa; ý (của câu nói)",
+        "viDu": {
+          "trung": "什么意思？",
+          "pinyin": [
+            "shén",
+            "me",
+            "yì",
+            "si",
+            ""
+          ],
+          "nghiaViet": "Nghĩa là gì? / Ý bạn là sao?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #13904664"
+        }
+      },
+      "nhat": {
+        "cachDoc": "いし",
+        "nghia": "ý chí, ý muốn",
+        "viDu": {
+          "nhat": "意思[いし]の強[つよ]い人[ひと]は堕落[だらく]しない。",
+          "nghiaViet": "Người có ý chí mạnh mẽ sẽ không sa ngã.",
+          "nguon": "Tatoeba #191051"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|意思} là ý muốn, ý chí. Tiếng Trung 意思 (yìsi) là ý nghĩa, ý của câu nói.",
+        "choDeNham": "Hay gặp: 有意思 = thú vị, 不好意思 = ngại quá, xin lỗi. 'Ý chí' tiếng Trung là 意志 (yìzhì)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0030",
+      "chuNhat": "清楚",
+      "chuTrungGianThe": "清楚",
+      "amHanViet": "thanh sở",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "qīng",
+          "chu"
+        ],
+        "nghia": "rõ ràng; hiểu rõ",
+        "viDu": {
+          "trung": "我看不清楚。",
+          "pinyin": [
+            "wǒ",
+            "kàn",
+            "bù",
+            "qīng",
+            "chu",
+            ""
+          ],
+          "nghiaViet": "Tôi nhìn không rõ.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #344001"
+        }
+      },
+      "nhat": {
+        "cachDoc": "せいそ",
+        "nghia": "thanh tú, nhã nhặn, gọn gàng (dáng vẻ)",
+        "viDu": {
+          "nhat": "彼女[かのじょ]は清楚[せいそ]な服装[ふくそう]で面接[めんせつ]に行[い]った。",
+          "nghiaViet": "Cô ấy mặc đồ nhã nhặn, gọn gàng đi phỏng vấn.",
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|清楚} khen dáng vẻ thanh tú, nhã nhặn. Tiếng Trung 清楚 (qīngchu) là rõ ràng, hoặc hiểu rõ.",
+        "choDeNham": "看不清楚 = nhìn không rõ, 我不清楚 = tôi không rõ. Tiếng Trung không dùng 清楚 để khen người."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Câu ví dụ tiếng Nhật do Claude tự soạn, không lấy từ Tatoeba.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0031",
+      "chuNhat": "小心",
+      "chuTrungGianThe": "小心",
+      "amHanViet": "tiểu tâm",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "xiǎo",
+          "xīn"
+        ],
+        "nghia": "cẩn thận",
+        "viDu": {
+          "trung": "小心狗！",
+          "pinyin": [
+            "xiǎo",
+            "xīn",
+            "gǒu",
+            ""
+          ],
+          "nghiaViet": "Cẩn thận có chó!",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #772362"
+        }
+      },
+      "nhat": {
+        "cachDoc": "しょうしん",
+        "nghia": "nhút nhát, nhát gan ({ja|小心者})",
+        "viDu": {
+          "nhat": "おまえらはみんな小心者[しょうしんもの]だ。",
+          "nghiaViet": "Chúng mày toàn là lũ nhát gan.",
+          "nguon": "Tatoeba #347191"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|小心} là nhút nhát. Tiếng Trung 小心 (xiǎoxīn) là cẩn thận, hay gặp trên biển báo.",
+        "choDeNham": "Biển 小心 là lời cảnh báo 'cẩn thận', không phải chê ai nhát gan. 'Nhát gan' tiếng Trung là 胆小 (dǎnxiǎo)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0032",
+      "chuNhat": "結束",
+      "chuTrungGianThe": "结束",
+      "amHanViet": "kết thúc",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "jié",
+          "shù"
+        ],
+        "nghia": "kết thúc, xong",
+        "viDu": {
+          "trung": "会议结束了。",
+          "pinyin": [
+            "huì",
+            "yì",
+            "jié",
+            "shù",
+            "le",
+            ""
+          ],
+          "nghiaViet": "Cuộc họp kết thúc rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1411729"
+        }
+      },
+      "nhat": {
+        "cachDoc": "けっそく",
+        "nghia": "đoàn kết, gắn bó (của một nhóm)",
+        "viDu": {
+          "nhat": "チームの結束[けっそく]が固[かた]い。",
+          "nghiaViet": "Cả đội gắn bó với nhau rất chặt chẽ.",
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "viet": {
+        "giaiThich": "Âm Hán Việt 'kết thúc' khớp với nghĩa tiếng Trung 结束 (jiéshù). Tiếng Nhật {ja|結束} lại là sự đoàn kết, gắn bó.",
+        "choDeNham": "'Kết thúc' tiếng Nhật là {ja|終}わる. 'Đoàn kết' tiếng Trung là 团结 (tuánjié)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Câu ví dụ tiếng Nhật do Claude tự soạn, không lấy từ Tatoeba.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0033",
+      "chuNhat": "事情",
+      "chuTrungGianThe": "事情",
+      "amHanViet": "sự tình",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "shì",
+          "qing"
+        ],
+        "nghia": "việc, chuyện",
+        "viDu": {
+          "trung": "我有很多事情要做。",
+          "pinyin": [
+            "wǒ",
+            "yǒu",
+            "hěn",
+            "duō",
+            "shì",
+            "qing",
+            "yào",
+            "zuò",
+            ""
+          ],
+          "nghiaViet": "Tôi có rất nhiều việc phải làm.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2317119"
+        }
+      },
+      "nhat": {
+        "cachDoc": "じじょう",
+        "nghia": "hoàn cảnh, tình hình, lý do",
+        "viDu": {
+          "nhat": "事情[じじょう]は後[あと]で説明[せつめい]する。",
+          "nghiaViet": "Tôi sẽ giải thích tình hình sau.",
+          "nguon": "Tatoeba #174340"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|事情} là hoàn cảnh, lý do riêng. Tiếng Trung 事情 (shìqing) là 'việc' nói chung.",
+        "choDeNham": "Muốn nói 'hoàn cảnh, tình hình' tiếng Trung dùng 情况 (qíngkuàng). 'Việc' tiếng Nhật là {ja|事}(こと) hoặc {ja|用事}."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0034",
+      "chuNhat": "生気",
+      "chuTrungGianThe": "生气",
+      "amHanViet": "sinh khí",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "shēng",
+          "qì"
+        ],
+        "nghia": "tức giận",
+        "viDu": {
+          "trung": "别生气。",
+          "pinyin": [
+            "bié",
+            "shēng",
+            "qì",
+            ""
+          ],
+          "nghiaViet": "Đừng giận.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1889330"
+        }
+      },
+      "nhat": {
+        "cachDoc": "せいき",
+        "nghia": "sinh khí, sức sống",
+        "viDu": {
+          "nhat": "花[はな]は雨[あめ]のあと生気[せいき]を取り戻[とりもど]した。",
+          "nghiaViet": "Sau cơn mưa, hoa lấy lại sức sống.",
+          "nguon": "Tatoeba #186616"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|生気} là sức sống. Tiếng Trung 生气 (shēngqì) trong giao tiếp gần như luôn là tức giận.",
+        "choDeNham": "Nghĩa 'sức sống' tiếng Trung chỉ gặp trong văn viết như 生气勃勃. 'Tức giận' tiếng Nhật là {ja|怒}る."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0035",
+      "chuNhat": "床",
+      "chuTrungGianThe": "床",
+      "amHanViet": "sàng",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "chuáng"
+        ],
+        "nghia": "giường",
+        "viDu": {
+          "trung": "我在床上。",
+          "pinyin": [
+            "wǒ",
+            "zài",
+            "chuáng",
+            "shàng",
+            ""
+          ],
+          "nghiaViet": "Tôi đang ở trên giường.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2309633"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ゆか",
+        "nghia": "sàn nhà",
+        "viDu": {
+          "nhat": "床[ゆか]は冷[つめ]たい感[かん]じがする。",
+          "nghiaViet": "Sàn nhà có cảm giác lạnh.",
+          "nguon": "Tatoeba #5390260"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|床} đọc ゆか là sàn nhà (đọc とこ mới là chỗ nằm). Tiếng Trung 床 (chuáng) là cái giường.",
+        "choDeNham": "'Sàn nhà' tiếng Trung là 地板 (dìbǎn). 'Giường' tiếng Nhật là ベッド."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0036",
+      "chuNhat": "看病",
+      "chuTrungGianThe": "看病",
+      "amHanViet": "khán bệnh",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "kàn",
+          "bìng"
+        ],
+        "nghia": "khám bệnh (bác sĩ); đi khám bệnh (người bệnh)",
+        "viDu": {
+          "trung": "你应该去看病。",
+          "pinyin": [
+            "nǐ",
+            "yīng",
+            "gāi",
+            "qù",
+            "kàn",
+            "bìng",
+            ""
+          ],
+          "nghiaViet": "Bạn nên đi khám bệnh.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3699941"
+        }
+      },
+      "nhat": {
+        "cachDoc": "かんびょう",
+        "nghia": "chăm sóc người ốm",
+        "viDu": {
+          "nhat": "彼女[かのじょ]は病気[びょうき]の母[はは]を看病[かんびょう]している。",
+          "nghiaViet": "Cô ấy đang chăm sóc người mẹ bị ốm.",
+          "nguon": "Tatoeba #87004"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|看病} là chăm sóc người ốm. Tiếng Trung 看病 (kànbìng) là bác sĩ khám bệnh, hoặc người bệnh đi khám.",
+        "choDeNham": "'Chăm sóc người ốm' tiếng Trung là 照顾病人 (zhàogù bìngrén)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0037",
+      "chuNhat": "不要",
+      "chuTrungGianThe": "不要",
+      "amHanViet": "bất yếu",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "bù",
+          "yào"
+        ],
+        "nghia": "đừng; không muốn",
+        "viDu": {
+          "trung": "不要怕！",
+          "pinyin": [
+            "bù",
+            "yào",
+            "pà",
+            ""
+          ],
+          "nghiaViet": "Đừng sợ!",
+          "ghiChuBienDieu": "不 đọc thành thanh 2 khi đứng trước thanh 4 (要).",
+          "nguon": "Tatoeba #13194104"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ふよう",
+        "nghia": "không cần thiết",
+        "viDu": {
+          "nhat": "参加[さんか]会費[かいひ]は不要[ふよう]です。",
+          "nghiaViet": "Không cần đóng phí tham gia.",
+          "nguon": "Tatoeba #169448"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|不要} là không cần thiết. Tiếng Trung 不要 (búyào) là 'đừng' (khuyên, cấm) hoặc 'không muốn'.",
+        "choDeNham": "'Không cần' tiếng Trung là 不用 (búyòng). Nói 不要 với người khác là 'đừng', nghe như ra lệnh."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0038",
+      "chuNhat": "前年",
+      "chuTrungGianThe": "前年",
+      "amHanViet": "tiền niên",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "qián",
+          "nián"
+        ],
+        "nghia": "năm kia (hai năm trước)",
+        "viDu": {
+          "trung": "我前年去过北京。",
+          "pinyin": [
+            "wǒ",
+            "qián",
+            "nián",
+            "qù",
+            "guò",
+            "běi",
+            "jīng",
+            ""
+          ],
+          "nghiaViet": "Tôi đã đi Bắc Kinh vào năm kia.",
+          "ghiChuBienDieu": null,
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ぜんねん",
+        "nghia": "năm trước đó (so với một mốc)",
+        "viDu": {
+          "nhat": "彼[かれ]は前年[ぜんねん]に死[し]んだ。",
+          "nghiaViet": "Ông ấy mất vào năm trước đó.",
+          "nguon": "Tatoeba #8918291"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|前年} là năm liền trước một mốc thời gian. Tiếng Trung 前年 (qiánnián) là năm kia, tức hai năm trước năm nay.",
+        "choDeNham": "Tiếng Trung: 去年 = năm ngoái, 前年 = năm kia. 'Năm kia' tiếng Nhật là {ja|一昨年}(おととし). Nhầm là lệch mất một năm."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Câu ví dụ tiếng Trung do Claude tự soạn, không lấy từ Tatoeba.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0039",
+      "chuNhat": "節目",
+      "chuTrungGianThe": "节目",
+      "amHanViet": "tiết mục",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "jié",
+          "mù"
+        ],
+        "nghia": "chương trình (TV, biểu diễn)",
+        "viDu": {
+          "trung": "今天电视有什么好节目？",
+          "pinyin": [
+            "jīn",
+            "tiān",
+            "diàn",
+            "shì",
+            "yǒu",
+            "shén",
+            "me",
+            "hǎo",
+            "jié",
+            "mù",
+            ""
+          ],
+          "nghiaViet": "Hôm nay TV có chương trình gì hay?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3534639"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ふしめ",
+        "nghia": "bước ngoặt, cột mốc; mắt gỗ",
+        "viDu": {
+          "nhat": "その日[ひ]が彼[かれ]の人生[じんせい]の節目[ふしめ]であった。",
+          "nghiaViet": "Ngày hôm đó là bước ngoặt trong đời anh ấy.",
+          "nguon": "Tatoeba #207358"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|節目} là bước ngoặt, cột mốc. Tiếng Trung 节目 (jiémù) là chương trình TV, tiết mục biểu diễn.",
+        "choDeNham": "'Chương trình TV' tiếng Nhật là {ja|番組}. 'Bước ngoặt' tiếng Trung là 转折点 (zhuǎnzhédiǎn)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0040",
+      "chuNhat": "放心",
+      "chuTrungGianThe": "放心",
+      "amHanViet": "phóng tâm",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "fàng",
+          "xīn"
+        ],
+        "nghia": "yên tâm",
+        "viDu": {
+          "trung": "放心，没事的。",
+          "pinyin": [
+            "fàng",
+            "xīn",
+            "",
+            "méi",
+            "shì",
+            "de",
+            ""
+          ],
+          "nghiaViet": "Yên tâm, không sao đâu.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1424246"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ほうしん",
+        "nghia": "thẫn thờ, ngây người; (ít dùng) yên tâm",
+        "viDu": {
+          "nhat": "彼[かれ]は放心[ほうしん]した顔[かお]つきをしていた。",
+          "nghiaViet": "Anh ấy có vẻ mặt thẫn thờ.",
+          "nguon": "Tatoeba #100048"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|放心} hay gặp với nghĩa thẫn thờ ({ja|放心状態}). Tiếng Trung 放心 (fàngxīn) là yên tâm.",
+        "choDeNham": "'Yên tâm' tiếng Nhật thường dùng {ja|安心}. Tiếng Trung 你放心 = bạn cứ yên tâm."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0041",
+      "chuNhat": "医院",
+      "chuTrungGianThe": "医院",
+      "amHanViet": "y viện",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "yī",
+          "yuàn"
+        ],
+        "nghia": "bệnh viện",
+        "viDu": {
+          "trung": "她去医院了。",
+          "pinyin": [
+            "tā",
+            "qù",
+            "yī",
+            "yuàn",
+            "le",
+            ""
+          ],
+          "nghiaViet": "Cô ấy đi bệnh viện rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #11837596"
+        }
+      },
+      "nhat": {
+        "cachDoc": "いいん",
+        "nghia": "phòng khám (tư, nhỏ)",
+        "viDu": {
+          "nhat": "もしもし、山田[やまだ]医院[いいん]です。",
+          "nghiaViet": "A lô, phòng khám Yamada xin nghe.",
+          "nguon": "Tatoeba #74600"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|医院} là phòng khám nhỏ, thường của tư nhân. Tiếng Trung 医院 (yīyuàn) là bệnh viện nói chung, cả bệnh viện lớn.",
+        "choDeNham": "'Bệnh viện' tiếng Nhật là {ja|病院}. Phòng khám nhỏ tiếng Trung là 诊所 (zhěnsuǒ)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0042",
+      "chuNhat": "女児",
+      "chuTrungGianThe": "女儿",
+      "amHanViet": "nữ nhi",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "nǚ",
+          "ér"
+        ],
+        "nghia": "con gái (của bố mẹ)",
+        "viDu": {
+          "trung": "我有一个女儿。",
+          "pinyin": [
+            "wǒ",
+            "yǒu",
+            "yī",
+            "gè",
+            "nǚ",
+            "ér",
+            ""
+          ],
+          "nghiaViet": "Tôi có một đứa con gái.",
+          "ghiChuBienDieu": "一 đọc thành thanh 2 khi đứng trước thanh 4 (个).",
+          "nguon": "Tatoeba #399944"
+        }
+      },
+      "nhat": {
+        "cachDoc": "じょじ",
+        "nghia": "bé gái (nói chung, văn trang trọng)",
+        "viDu": {
+          "nhat": "公園[こうえん]で女児[じょじ]が遊[あそ]んでいる。",
+          "nghiaViet": "Có bé gái đang chơi trong công viên.",
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|女児} là bé gái nói chung, hay gặp trên tin tức. Tiếng Trung 女儿 (nǚ'ér) là con gái của ai đó.",
+        "choDeNham": "'Con gái tôi' tiếng Nhật là {ja|娘}; tiếng Trung 娘 lại là mẹ (xem cặp {ja|娘} / 娘)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Câu ví dụ tiếng Nhật do Claude tự soạn, không lấy từ Tatoeba.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0043",
+      "chuNhat": "快楽",
+      "chuTrungGianThe": "快乐",
+      "amHanViet": "khoái lạc",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "kuài",
+          "lè"
+        ],
+        "nghia": "vui vẻ, hạnh phúc",
+        "viDu": {
+          "trung": "新年快乐！",
+          "pinyin": [
+            "xīn",
+            "nián",
+            "kuài",
+            "lè",
+            ""
+          ],
+          "nghiaViet": "Chúc mừng năm mới!",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #373237"
+        }
+      },
+      "nhat": {
+        "cachDoc": "かいらく",
+        "nghia": "khoái lạc, thú vui hưởng lạc",
+        "viDu": {
+          "nhat": "彼女[かのじょ]は快楽[かいらく]にふけった。",
+          "nghiaViet": "Cô ấy đắm chìm trong khoái lạc.",
+          "nguon": "Tatoeba #90766"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|快楽} là khoái lạc, thú hưởng lạc, sắc thái không trong sáng. Tiếng Trung 快乐 (kuàilè) là vui vẻ, dùng trong mọi lời chúc.",
+        "choDeNham": "生日快乐 là 'chúc mừng sinh nhật'. Đừng dịch thẳng sang tiếng Nhật thành {ja|快楽}."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0044",
+      "chuNhat": "方便",
+      "chuTrungGianThe": "方便",
+      "amHanViet": "phương tiện",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "fāng",
+          "biàn"
+        ],
+        "nghia": "tiện lợi",
+        "viDu": {
+          "trung": "这很方便。",
+          "pinyin": [
+            "zhè",
+            "hěn",
+            "fāng",
+            "biàn",
+            ""
+          ],
+          "nghiaViet": "Cái này rất tiện.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #7768311"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ほうべん",
+        "nghia": "phương tiện, cách để đạt mục đích",
+        "viDu": {
+          "nhat": "嘘[うそ]も方便[ほうべん]。",
+          "nghiaViet": "Nói dối đôi khi cũng là một cách cần thiết.",
+          "nguon": "Tatoeba #189505"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|方便} là phương tiện, cách làm (như câu {ja|嘘}も{ja|方便}). Tiếng Trung 方便 (fāngbiàn) là tiện lợi.",
+        "choDeNham": "'Tiện lợi' tiếng Nhật là {ja|便利}. Tiếng Trung 方便一下 còn là cách nói tránh 'đi vệ sinh'."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0045",
+      "chuNhat": "故事",
+      "chuTrungGianThe": "故事",
+      "amHanViet": "cố sự",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "gù",
+          "shi"
+        ],
+        "nghia": "câu chuyện",
+        "viDu": {
+          "trung": "故事很有趣。",
+          "pinyin": [
+            "gù",
+            "shi",
+            "hěn",
+            "yǒu",
+            "qù",
+            ""
+          ],
+          "nghiaViet": "Câu chuyện rất thú vị.",
+          "ghiChuBienDieu": "很 đọc thành thanh 2 khi đứng trước thanh 3 (有).",
+          "nguon": "Tatoeba #348163"
+        }
+      },
+      "nhat": {
+        "cachDoc": "こじ",
+        "nghia": "điển cố, sự tích xưa",
+        "viDu": {
+          "nhat": "この言葉[ことば]には中国[ちゅうごく]の故事[こじ]がある。",
+          "nghiaViet": "Câu nói này có điển cố từ Trung Quốc.",
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|故事} là điển cố, sự tích xưa. Tiếng Trung 故事 (gùshi) là câu chuyện bất kỳ, kể cả truyện cho trẻ con.",
+        "choDeNham": "'Câu chuyện' tiếng Nhật là {ja|話} hoặc {ja|物語}. 讲故事 = kể chuyện."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Câu ví dụ tiếng Nhật do Claude tự soạn, không lấy từ Tatoeba.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0046",
+      "chuNhat": "名人",
+      "chuTrungGianThe": "名人",
+      "amHanViet": "danh nhân",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "míng",
+          "rén"
+        ],
+        "nghia": "người nổi tiếng",
+        "viDu": {
+          "trung": "你现在是名人了。",
+          "pinyin": [
+            "nǐ",
+            "xiàn",
+            "zài",
+            "shì",
+            "míng",
+            "rén",
+            "le",
+            ""
+          ],
+          "nghiaViet": "Giờ bạn là người nổi tiếng rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #6089775"
+        }
+      },
+      "nhat": {
+        "cachDoc": "めいじん",
+        "nghia": "bậc thầy, cao thủ (trong một việc)",
+        "viDu": {
+          "nhat": "料理[りょうり]にかけては、彼女[かのじょ]は名人[めいじん]だ。",
+          "nghiaViet": "Về nấu ăn thì cô ấy là bậc thầy.",
+          "nguon": "Tatoeba #77937"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|名人} là người rất giỏi một việc. Tiếng Trung 名人 (míngrén) là người nổi tiếng.",
+        "choDeNham": "'Người nổi tiếng' tiếng Nhật là {ja|有名人}. 'Cao thủ' tiếng Trung là 高手 (gāoshǒu)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0047",
+      "chuNhat": "難聴",
+      "chuTrungGianThe": "难听",
+      "amHanViet": "nan thính",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "nán",
+          "tīng"
+        ],
+        "nghia": "khó nghe (âm thanh chói tai, lời nói thô)",
+        "viDu": {
+          "trung": "鋼琴走調了，音色很難聽。",
+          "pinyin": [
+            "gāng",
+            "qín",
+            "zǒu",
+            "diào",
+            "le",
+            "",
+            "yīn",
+            "sè",
+            "hěn",
+            "nán",
+            "tīng",
+            ""
+          ],
+          "nghiaViet": "Đàn piano lạc tông rồi, tiếng đàn nghe rất khó chịu.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #340148"
+        }
+      },
+      "nhat": {
+        "cachDoc": "なんちょう",
+        "nghia": "lãng tai, nghe kém",
+        "viDu": {
+          "nhat": "祖父[そふ]は難聴[なんちょう]なので、大[おお]きな声[こえ]で話[はな]してください。",
+          "nghiaViet": "Ông tôi bị lãng tai nên hãy nói to lên.",
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|難聴} là bệnh nghe kém. Tiếng Trung 难听 (nántīng) là âm thanh hoặc lời nói khó nghe.",
+        "choDeNham": "'Lãng tai' tiếng Trung là 耳背 (ěrbèi) hoặc 听力不好. 他说话很难听 là chê lời anh ta nói khó nghe."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Câu tiếng Trung không chứa nguyên từ 难听.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Câu ví dụ tiếng Nhật do Claude tự soạn, không lấy từ Tatoeba.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0048",
+      "chuNhat": "一定",
+      "chuTrungGianThe": "一定",
+      "amHanViet": "nhất định",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "yī",
+          "dìng"
+        ],
+        "nghia": "chắc chắn, nhất định (sẽ)",
+        "viDu": {
+          "trung": "请一定要来。",
+          "pinyin": [
+            "qǐng",
+            "yī",
+            "dìng",
+            "yào",
+            "lái",
+            ""
+          ],
+          "nghiaViet": "Nhất định phải đến nhé.",
+          "ghiChuBienDieu": "一 đọc thành thanh 2 khi đứng trước thanh 4 (定).",
+          "nguon": "Tatoeba #5114116"
+        }
+      },
+      "nhat": {
+        "cachDoc": "いってい",
+        "nghia": "cố định, không đổi; một mức nào đó",
+        "viDu": {
+          "nhat": "彼[かれ]は自転[じてん]車[しゃ]を一定[いってい]の速度[そくど]で走[はし]らせた。",
+          "nghiaViet": "Anh ấy đạp xe với tốc độ không đổi.",
+          "nguon": "Tatoeba #105204"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|一定} là cố định, không đổi. Tiếng Trung 一定 (yídìng) hay gặp nhất với nghĩa 'chắc chắn': 我一定来 = tôi nhất định đến. (一定的 cũng có nghĩa 'một mức nào đó' giống tiếng Nhật.)",
+        "choDeNham": "'Chắc chắn' tiếng Nhật là {ja|必}ず hoặc きっと."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0049",
+      "chuNhat": "馬上",
+      "chuTrungGianThe": "马上",
+      "amHanViet": "mã thượng",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "mǎ",
+          "shàng"
+        ],
+        "nghia": "ngay lập tức",
+        "viDu": {
+          "trung": "马上回来。",
+          "pinyin": [
+            "mǎ",
+            "shàng",
+            "huí",
+            "lái",
+            ""
+          ],
+          "nghiaViet": "Tôi về ngay.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #9475952"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ばじょう",
+        "nghia": "trên lưng ngựa",
+        "viDu": {
+          "nhat": "馬上[ばじょう]の騎士[きし]をみてごらん。",
+          "nghiaViet": "Hãy nhìn người kỵ sĩ trên lưng ngựa kìa.",
+          "nguon": "Tatoeba #121587"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|馬上} là trên lưng ngựa. Tiếng Trung 马上 (mǎshàng) là ngay lập tức, rất hay dùng.",
+        "choDeNham": "'Ngay lập tức' tiếng Nhật là すぐ hoặc {ja|直}ちに."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0050",
+      "chuNhat": "老師",
+      "chuTrungGianThe": "老师",
+      "amHanViet": "lão sư",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "lǎo",
+          "shī"
+        ],
+        "nghia": "thầy giáo, cô giáo",
+        "viDu": {
+          "trung": "我是老师。",
+          "pinyin": [
+            "wǒ",
+            "shì",
+            "lǎo",
+            "shī",
+            ""
+          ],
+          "nghiaViet": "Tôi là giáo viên.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1050441"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ろうし",
+        "nghia": "thiền sư, nhà sư lớn tuổi (từ trang trọng, ít gặp)",
+        "viDu": {
+          "nhat": "老師[ろうし]は弟子[でし]たちに禅[ぜん]を教[おし]えた。",
+          "nghiaViet": "Vị lão sư dạy thiền cho các đệ tử.",
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|老師} là cách gọi thiền sư, nhà sư lớn tuổi. Tiếng Trung 老师 (lǎoshī) là thầy cô giáo, chữ 老 ở đây tỏ ý kính trọng, không có nghĩa là già.",
+        "choDeNham": "'Thầy giáo' tiếng Nhật là {ja|先生}; còn 先生 trong tiếng Trung là 'ông' (xem cặp {ja|先生} / 先生)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Câu ví dụ tiếng Nhật do Claude tự soạn, không lấy từ Tatoeba.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0051",
+      "chuNhat": "時候",
+      "chuTrungGianThe": "时候",
+      "amHanViet": "thời hậu",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "shí",
+          "hou"
+        ],
+        "nghia": "lúc, khi",
+        "viDu": {
+          "trung": "你什么时候来？",
+          "pinyin": [
+            "nǐ",
+            "shén",
+            "me",
+            "shí",
+            "hou",
+            "lái",
+            ""
+          ],
+          "nghiaViet": "Khi nào bạn đến?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #11502926"
+        }
+      },
+      "nhat": {
+        "cachDoc": "じこう",
+        "nghia": "tiết trời theo mùa",
+        "viDu": {
+          "nhat": "手紙[てがみ]は時候[じこう]の挨拶[あいさつ]から書[か]き始[はじ]める。",
+          "nghiaViet": "Thư được mở đầu bằng lời chào hỏi về tiết trời.",
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|時候} là tiết trời theo mùa, gặp trong thư từ trang trọng. Tiếng Trung 时候 (shíhou) là lúc, khi: 什么时候 = khi nào.",
+        "choDeNham": "'Khi…' tiếng Nhật là 〜とき ({ja|時}). Mẫu tiếng Trung: …的时候 = khi…"
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Câu ví dụ tiếng Nhật do Claude tự soạn, không lấy từ Tatoeba.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0052",
+      "chuNhat": "安静",
+      "chuTrungGianThe": "安静",
+      "amHanViet": "an tĩnh",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "ān",
+          "jìng"
+        ],
+        "nghia": "yên tĩnh, im lặng",
+        "viDu": {
+          "trung": "请安静一点！",
+          "pinyin": [
+            "qǐng",
+            "ān",
+            "jìng",
+            "yī",
+            "diǎn",
+            ""
+          ],
+          "nghiaViet": "Xin hãy yên lặng một chút!",
+          "ghiChuBienDieu": "一 đọc thành thanh 4 khi đứng trước thanh 3 (点).",
+          "nguon": "Tatoeba #420004"
+        }
+      },
+      "nhat": {
+        "cachDoc": "あんせい",
+        "nghia": "nằm nghỉ tĩnh dưỡng (khi ốm)",
+        "viDu": {
+          "nhat": "安静[あんせい]にしていてください。",
+          "nghiaViet": "Hãy nằm nghỉ ngơi cho yên.",
+          "nguon": "Tatoeba #191326"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|安静} là nằm yên nghỉ ngơi theo lời bác sĩ. Tiếng Trung 安静 (ānjìng) là yên tĩnh, im lặng.",
+        "choDeNham": "'Yên tĩnh' tiếng Nhật là {ja|静}か. Người Nhật nghe {ja|安静} sẽ nghĩ đến bệnh nhân."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0053",
+      "chuNhat": "後天",
+      "chuTrungGianThe": "后天",
+      "amHanViet": "hậu thiên",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "hòu",
+          "tiān"
+        ],
+        "nghia": "ngày kia",
+        "viDu": {
+          "trung": "后天见。",
+          "pinyin": [
+            "hòu",
+            "tiān",
+            "jiàn",
+            ""
+          ],
+          "nghiaViet": "Hẹn gặp ngày kia.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #5571069"
+        }
+      },
+      "nhat": {
+        "cachDoc": "こうてん",
+        "nghia": "hậu thiên, có được sau khi sinh ra ({ja|後天的})",
+        "viDu": {
+          "nhat": "その習慣[しゅうかん]は後天[こうてん]的[てき]で、先天[せんてん]的[てき]なものではない。",
+          "nghiaViet": "Thói quen đó do học mà có, không phải bẩm sinh.",
+          "nguon": "Tatoeba #209448"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|後天} là hậu thiên (trái với bẩm sinh). Tiếng Trung 后天 (hòutiān) là ngày kia, tức hai ngày sau hôm nay.",
+        "choDeNham": "Tiếng Trung: 明天 = ngày mai, 后天 = ngày kia. 'Ngày kia' tiếng Nhật là {ja|明後日}(あさって)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0054",
+      "chuNhat": "後年",
+      "chuTrungGianThe": "后年",
+      "amHanViet": "hậu niên",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "hòu",
+          "nián"
+        ],
+        "nghia": "năm sau nữa (hai năm tới)",
+        "viDu": {
+          "trung": "湯姆將在後年高中畢業。",
+          "pinyin": [
+            "tāng",
+            "mǔ",
+            "jiāng",
+            "zài",
+            "hòu",
+            "nián",
+            "gāo",
+            "zhōng",
+            "bì",
+            "yè",
+            ""
+          ],
+          "nghiaViet": "Tom sẽ tốt nghiệp cấp 3 vào năm sau nữa.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #13573428"
+        }
+      },
+      "nhat": {
+        "cachDoc": "こうねん",
+        "nghia": "những năm về sau; lúc về già",
+        "viDu": {
+          "nhat": "彼[かれ]は後年[こうねん]は平穏[へいおん]に暮[く]らした。",
+          "nghiaViet": "Những năm về sau ông ấy sống yên bình.",
+          "nguon": "Tatoeba #107475"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|後年} là những năm về sau. Tiếng Trung 后年 (hòunián) là năm sau nữa, tức hai năm tới.",
+        "choDeNham": "Tiếng Trung: 明年 = năm sau, 后年 = năm sau nữa. 'Năm sau nữa' tiếng Nhật là {ja|再来年}(さらいねん)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Câu tiếng Trung không chứa nguyên từ 后年.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0055",
+      "chuNhat": "明白",
+      "chuTrungGianThe": "明白",
+      "amHanViet": "minh bạch",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "míng",
+          "bai"
+        ],
+        "nghia": "hiểu (động từ); rõ ràng",
+        "viDu": {
+          "trung": "明白了。",
+          "pinyin": [
+            "míng",
+            "bai",
+            "le",
+            ""
+          ],
+          "nghiaViet": "Hiểu rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2296399"
+        }
+      },
+      "nhat": {
+        "cachDoc": "めいはく",
+        "nghia": "rõ ràng, hiển nhiên",
+        "viDu": {
+          "nhat": "その事実[じじつ]はだれにも明白[めいはく]だ。",
+          "nghiaViet": "Sự thật đó ai cũng thấy rõ.",
+          "nguon": "Tatoeba #209804"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|明白} chỉ là tính từ 'rõ ràng, hiển nhiên'. Tiếng Trung 明白 (míngbai) hay dùng nhất như động từ: hiểu.",
+        "choDeNham": "我明白了 = tôi hiểu rồi. 'Hiểu' tiếng Nhật là {ja|分}かる."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0056",
+      "chuNhat": "酒店",
+      "chuTrungGianThe": "酒店",
+      "amHanViet": "tửu điếm",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "jiǔ",
+          "diàn"
+        ],
+        "nghia": "khách sạn",
+        "viDu": {
+          "trung": "我住在这间酒店。",
+          "pinyin": [
+            "wǒ",
+            "zhù",
+            "zài",
+            "zhè",
+            "jiān",
+            "jiǔ",
+            "diàn",
+            ""
+          ],
+          "nghiaViet": "Tôi ở khách sạn này.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #342848"
+        }
+      },
+      "nhat": {
+        "cachDoc": "さかみせ",
+        "nghia": "cửa hàng bán rượu",
+        "viDu": {
+          "nhat": "近所[きんじょ]の酒店[さかみせ]でビールを買[か]った。",
+          "nghiaViet": "Tôi đã mua bia ở cửa hàng rượu gần nhà.",
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|酒店} là cửa hàng bán rượu. Tiếng Trung 酒店 (jiǔdiàn) ngày nay chủ yếu là khách sạn (thường là khách sạn lớn).",
+        "choDeNham": "Đi du lịch Trung Quốc thấy biển 酒店 là khách sạn, không phải tiệm rượu. 'Khách sạn' tiếng Nhật là ホテル."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Câu ví dụ tiếng Nhật do Claude tự soạn, không lấy từ Tatoeba.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0057",
+      "chuNhat": "地方",
+      "chuTrungGianThe": "地方",
+      "amHanViet": "địa phương",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "dì",
+          "fang"
+        ],
+        "nghia": "chỗ, nơi",
+        "viDu": {
+          "trung": "我在找地方坐。",
+          "pinyin": [
+            "wǒ",
+            "zài",
+            "zhǎo",
+            "dì",
+            "fang",
+            "zuò",
+            ""
+          ],
+          "nghiaViet": "Tôi đang tìm chỗ ngồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #5863300"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ちほう",
+        "nghia": "vùng, địa phương; tỉnh lẻ",
+        "viDu": {
+          "nhat": "この地方[ちほう]を寒波[かんぱ]が襲[おそ]った。",
+          "nghiaViet": "Một đợt rét tràn vào vùng này.",
+          "nguon": "Tatoeba #220574"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|地方} là vùng, địa phương. Tiếng Trung 地方 đọc dìfang (方 thanh nhẹ) là chỗ, nơi nói chung.",
+        "choDeNham": "Đọc dìfāng (方 thanh 1) mới là 'địa phương' như 地方政府. 'Chỗ' tiếng Nhật là {ja|所}(ところ)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0058",
+      "chuNhat": "妻子",
+      "chuTrungGianThe": "妻子",
+      "amHanViet": "thê tử",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "qī",
+          "zi"
+        ],
+        "nghia": "vợ",
+        "viDu": {
+          "trung": "她是我妻子。",
+          "pinyin": [
+            "tā",
+            "shì",
+            "wǒ",
+            "qī",
+            "zi",
+            ""
+          ],
+          "nghiaViet": "Cô ấy là vợ tôi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1325183"
+        }
+      },
+      "nhat": {
+        "cachDoc": "さいし",
+        "nghia": "vợ và con",
+        "viDu": {
+          "nhat": "彼[かれ]は妻子[さいし]を捨[す]てた。",
+          "nghiaViet": "Anh ta bỏ rơi vợ con.",
+          "nguon": "Tatoeba #106874"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|妻子} là vợ và con. Tiếng Trung 妻子 (qīzi) chỉ một người: vợ.",
+        "choDeNham": "'Vợ tôi' tiếng Nhật là {ja|妻}. 'Vợ con' tiếng Trung là 妻儿 hoặc 老婆孩子."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0059",
+      "chuNhat": "作業",
+      "chuTrungGianThe": "作业",
+      "amHanViet": "tác nghiệp",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "zuò",
+          "yè"
+        ],
+        "nghia": "bài tập (về nhà)",
+        "viDu": {
+          "trung": "快去做作业。",
+          "pinyin": [
+            "kuài",
+            "qù",
+            "zuò",
+            "zuò",
+            "yè",
+            ""
+          ],
+          "nghiaViet": "Mau đi làm bài tập đi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8851563"
+        }
+      },
+      "nhat": {
+        "cachDoc": "さぎょう",
+        "nghia": "công việc, thao tác (lao động)",
+        "viDu": {
+          "nhat": "手間[てま]がかかる作業[さぎょう]です。",
+          "nghiaViet": "Đây là công việc tốn nhiều công sức.",
+          "nguon": "Tatoeba #11390339"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|作業} là công việc chân tay, thao tác. Tiếng Trung 作业 (zuòyè) trong trường học là bài tập về nhà.",
+        "choDeNham": "'Bài tập về nhà' tiếng Nhật là {ja|宿題}. 做作业 = làm bài tập."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0060",
+      "chuNhat": "出来",
+      "chuTrungGianThe": "出来",
+      "amHanViet": "xuất lai",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "chū",
+          "lái"
+        ],
+        "nghia": "(bổ ngữ) ra, ra ngoài",
+        "viDu": {
+          "trung": "她要哭出来了。",
+          "pinyin": [
+            "tā",
+            "yào",
+            "kū",
+            "chū",
+            "lái",
+            "le",
+            ""
+          ],
+          "nghiaViet": "Cô ấy sắp khóc oà ra rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #796633"
+        }
+      },
+      "nhat": {
+        "cachDoc": "でき",
+        "nghia": "{ja|出来}る: có thể, làm được; xong",
+        "viDu": {
+          "nhat": "あなたは泳[およ]ぐ事[こと]が出来[でき]ますか。",
+          "nghiaViet": "Bạn có biết bơi không?",
+          "nguon": "Tatoeba #232298"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|出来}る là có thể, làm được. Tiếng Trung 出来 (chūlái) chỉ hướng 'ra', thường đứng sau động từ: 拿出来 = lấy ra, 哭出来 = khóc oà ra.",
+        "choDeNham": "Đừng hiểu 出来 là 'có thể'. 'Có thể' tiếng Trung là 能 hoặc 会."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0061",
+      "chuNhat": "所以",
+      "chuTrungGianThe": "所以",
+      "amHanViet": "sở dĩ",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "suǒ",
+          "yǐ"
+        ],
+        "nghia": "vì vậy, cho nên",
+        "viDu": {
+          "trung": "我很累所以早睡了。",
+          "pinyin": [
+            "wǒ",
+            "hěn",
+            "lèi",
+            "suǒ",
+            "yǐ",
+            "zǎo",
+            "shuì",
+            "le",
+            ""
+          ],
+          "nghiaViet": "Tôi mệt nên đi ngủ sớm.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (很); 所 đọc thành thanh 2 khi đứng trước thanh 3 (以).",
+          "nguon": "Tatoeba #348007"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ゆえん",
+        "nghia": "lý do, căn nguyên (văn viết)",
+        "viDu": {
+          "nhat": "これが彼[かれ]が愛[あい]される所以[ゆえん]だ。",
+          "nghiaViet": "Đó là lý do anh ấy được yêu mến.",
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|所以} (ゆえん) là lý do. Tiếng Trung 所以 (suǒyǐ) là 'cho nên', đứng ở vế kết quả: 因为…所以… = vì… nên…",
+        "choDeNham": "Âm Hán Việt 'sở dĩ' dễ làm tưởng là 'lý do'. Nhưng 所以 đứng trước kết quả, không phải trước nguyên nhân."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Câu ví dụ tiếng Nhật do Claude tự soạn, không lấy từ Tatoeba.",
         "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
       ]
     }

@@ -15,7 +15,7 @@
     "tu-vung-hsk1": { "duongDan": "tu-vung-hsk1.json", "phienBan": 2, "soMuc": 300, "sanSang": true },
     "tu-vung-hsk2": { "duongDan": "tu-vung-hsk2.json", "phienBan": 1, "soMuc": 200, "sanSang": true },
     "tu-vung-hsk3": { "duongDan": "tu-vung-hsk3.json", "phienBan": 1, "soMuc": 500, "sanSang": true },
-    "dong-tu-di-nghia": { "duongDan": "dong-tu-di-nghia.json", "phienBan": 1, "soMuc": 20, "sanSang": true },
+    "dong-tu-di-nghia": { "duongDan": "dong-tu-di-nghia.json", "phienBan": 2, "soMuc": 61, "sanSang": true },
     "ngu-phap-hsk1": { "duongDan": "ngu-phap-hsk1.json", "phienBan": 2, "soMuc": 11, "sanSang": true },
     "ngu-phap-hsk2": { "duongDan": "ngu-phap-hsk2.json", "phienBan": 2, "soMuc": 4, "sanSang": true },
     "ngu-phap-hsk3": { "duongDan": "ngu-phap-hsk3.json", "phienBan": 0, "soMuc": 0, "sanSang": false }

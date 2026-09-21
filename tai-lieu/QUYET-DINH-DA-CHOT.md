@@ -348,6 +348,8 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 17.7 | **Âm Hán Việt dự phòng**: chữ không có trong bảng chính thì lấy qua chữ phồn thể, cuối cùng lấy âm đầu tiên của Unihan kVietnamese và ghi `cangKiemTra` (Unihan lẫn cả âm Nôm) |
 | 17.8 | **Chữ chỉ gặp ở thanh nhẹ** trong từ HSK (候 trong 时候, 思 trong 意思...): vẫn lấy từ đó làm ví dụ cho âm chính và ghi chú rõ trong `cangKiemTra` |
 | 17.9 | **Danh sách chữ Hán hiện 60 thẻ mỗi lần**, nút "Xem thêm" để hiện tiếp, cho máy yếu không bị chậm |
+| 17.10 | **Chủ dự án duyệt thêm 41 cặp đồng tự dị nghĩa** (tổng 61). Nhóm A, dễ hiểu lầm nặng: 东西 先生 告诉 颜色 非常 多少 便宜 打算 意思 清楚 小心 结束 事情 生气 床 看病 不要 前年 节目 放心. Nhóm B, lệch nghĩa hoặc sắc thái: 医院 女儿 快乐 方便 故事 名人 难听 一定 马上 老师 时候 安静 后天 后年 明白 酒店 地方 妻子 作业 出来 所以. Loại: 了解 生日 走路 同事 一直 经常 说话 热情 过去 黄色 书 本 (nghĩa gần hoặc từ Nhật hiếm) |
+| 17.11 | **Đồng tự: pinyin của từ lấy theo đại cương HSK** (file từ vựng đã dựng) nếu từ có trong HSK 1–3, chỉ dùng CC-CEDICT cho từ ngoài HSK. Tatoeba không có câu Nhật phù hợp thì Claude tự soạn (`tuSoan`, ghi `cangKiemTra`); chỗ máy gắn furigana sai thì nhập tay nguyên câu (`furigana`) |
 
 ### Đang chờ chủ dự án
 

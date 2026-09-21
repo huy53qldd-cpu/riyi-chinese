@@ -108,6 +108,15 @@ def doc_han_viet():
     }
 
 
+def doc_pinyin_hsk():
+    """{từ HSK 1-3: pinyin từng chữ} lấy từ file từ vựng đã dựng (theo đại cương, có thanh nhẹ)."""
+    kq = {}
+    for tep in sorted(Path("public/du-lieu").glob("tu-vung-hsk*.json")):
+        for m in json.loads(tep.read_text(encoding="utf-8"))["danhSach"]:
+            kq.setdefault(m["tu"], m["pinyin"])
+    return kq
+
+
 def doc_cap_hsk():
     """{từ giản thể: cấp HSK thấp nhất}."""
     d = json.loads(Path("src/du-lieu/hsk-goc/tu-vung-goc.json").read_text(encoding="utf-8"))
@@ -147,6 +156,7 @@ def dung():
     jpn, cmn, vie = doc_cau("jpn_sentences.tsv.bz2"), doc_cau("cmn_sentences.tsv.bz2"), doc_cau("vie_sentences.tsv.bz2")
     jpn_vie = doc_lien_ket("jpn-vie_links.tsv.bz2")
     jm, cd, hv, hsk = doc_jmdict(), doc_cedict(), doc_han_viet(), doc_cap_hsk()
+    py_hsk = doc_pinyin_hsk()
     tagger = Tagger()
 
     ds = []
@@ -174,7 +184,9 @@ def dung():
         if ton_tai:
             if not muc_cd:
                 raise SystemExit(f"{gian}: đánh dấu có tồn tại nhưng CC-CEDICT không có")
-            pinyin_tu = chon_pinyin_cedict(gian, muc_cd)
+            # Từ có trong HSK 1-3 thì lấy pinyin theo đại cương (ví dụ 东西 dōngxi,
+            # 地方 dìfang), không để máy chọn giữa các mục CC-CEDICT
+            pinyin_tu = py_hsk.get(gian) or chon_pinyin_cedict(gian, muc_cd)
             if pinyin_tu is None:
                 cang.append("Không mục CC-CEDICT nào khớp pinyin máy gắn, đang dùng mục đầu tiên, cần kiểm tra.")
                 pinyin_tu = [am_tiet_co_dau(a) for a in muc_cd[0][0].split()]
@@ -212,8 +224,13 @@ def dung():
 
         # --- Phần tiếng Nhật ---
         vn = m["viDuNhat"]
-        cau_nhat = jpn[vn["id"]]
-        furi = gan_furigana(cau_nhat, tagger)
+        if "id" in vn:
+            cau_nhat, nguon_nhat = jpn[vn["id"]], f"Tatoeba #{vn['id']}"
+        else:
+            cau_nhat, nguon_nhat = vn["tuSoan"], "Claude tự soạn (Tatoeba không có câu phù hợp)"
+            cang.append("Câu ví dụ tiếng Nhật do Claude tự soạn, không lấy từ Tatoeba.")
+        # Chỗ máy gắn furigana sai (小心者, 非常口...) thì nhập tay nguyên câu có furigana
+        furi = vn.get("furigana") or gan_furigana(cau_nhat, tagger)
         # Từ ngoại lai như マージャン viết bằng kanji thì furigana hiện katakana
         if re.search("[ァ-ヶ]", m["docNhat"]):
             furi = furi.replace(f"[{kata_sang_hira(m['docNhat'])}]", f"[{m['docNhat']}]")
@@ -221,11 +238,11 @@ def dung():
             cang.append(f"Furigana tự gắn cho câu Nhật không chứa cách đọc {m['docNhat']} của từ đích, cần kiểm tra.")
         cang.append("Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra.")
         nghia_viet_nhat = vn["viet"]
-        if nghia_viet_nhat is None:
+        if nghia_viet_nhat is None and "id" in vn:
             # Lấy bản dịch Việt của Tatoeba nếu có
             # sorted để lần chạy nào cũng chọn cùng một bản dịch (tập hợp không có thứ tự cố định)
             nghia_viet_nhat = next((vie[j] for j in sorted(jpn_vie.get(vn["id"], ()), key=int) if j in vie), None)
-            if nghia_viet_nhat is None:
+            if nghia_viet_nhat is None and "id" in vn:
                 raise SystemExit(f"{nhat}: không có bản dịch Việt của Tatoeba và cũng chưa nhập tay")
         nhat_kq = {
             "cachDoc": m["docNhat"],
@@ -233,7 +250,7 @@ def dung():
             "viDu": {
                 "nhat": furi,
                 "nghiaViet": nghia_viet_nhat,
-                "nguon": f"Tatoeba #{vn['id']}",
+                "nguon": nguon_nhat,
             },
         }
 
@@ -255,7 +272,7 @@ def dung():
     FILE_RA.write_text(
         json.dumps({
             "loai": "dong-tu-di-nghia",
-            "phienBan": 1,
+            "phienBan": 2,
             "capNhatLuc": NGAY,
             "nguon": "Nghĩa tiếng Trung đối chiếu CC-CEDICT, cách đọc tiếng Nhật đối chiếu JMdict, âm Hán Việt đối chiếu KANJIDIC2 (đều EDRDG/MDBG, CC BY-SA). Câu ví dụ: Tatoeba (CC BY 2.0 FR).",
             "luuYDauTab": nhap["luuYDauTab"],
