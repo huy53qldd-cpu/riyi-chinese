@@ -476,6 +476,8 @@ export function NguoiDungProvider({ children }) {
       nhatKy,
       tienDoHomNay,
       lanVuaDat,
+      // Ghi ngay phần tiến độ đang chờ (dùng trước khi tải lại trang để cập nhật)
+      ghiNgay: ghiLoNgay,
     }),
     [
       trangThai,
@@ -494,6 +496,7 @@ export function NguoiDungProvider({ children }) {
       nhatKy,
       tienDoHomNay,
       lanVuaDat,
+      ghiLoNgay,
     ],
   );
 

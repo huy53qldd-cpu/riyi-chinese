@@ -11,9 +11,13 @@ import { createRoot } from "react-dom/client";
 import "./styles/index.css";
 import App from "./App.jsx";
 import { apDungCaiDat, docCaiDatMay } from "./nguoi-dung/caiDat.js";
+import { dangKyServiceWorker } from "./pwa/capNhatApp.js";
 
 // Áp cài đặt đã lưu (furigana, sáng/tối) ngay từ đầu, trước khi vẽ giao diện
 apDungCaiDat(docCaiDatMay());
+
+// Service worker: cho cài app vào màn hình chính và báo khi có bản mới
+dangKyServiceWorker();
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

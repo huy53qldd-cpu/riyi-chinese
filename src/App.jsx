@@ -22,6 +22,7 @@ import CaiDat from "./man-hinh/CaiDat.jsx";
 import KhungApp from "./man-hinh/KhungApp.jsx";
 import { NguoiDungProvider } from "./nguoi-dung/NguoiDung.jsx";
 import { KhoThongBao } from "./thanh-phan/ThongBao.jsx";
+import { DaiBanMoi, ManMatMang } from "./pwa/ThongBaoPwa.jsx";
 
 const MAN_HINH = {
   CHON_KHOA: "chon-khoa-hoc",
@@ -52,6 +53,10 @@ export default function App() {
         {manHinh === MAN_HINH.NANG_CAP && <DangNangCap quayLai={veChonKhoa} />}
 
         {manHinh === MAN_HINH.CAI_DAT && <CaiDat quayLai={veChonKhoa} />}
+
+        {/* Hiện trên mọi màn hình: báo có bản app mới, báo mất mạng */}
+        <DaiBanMoi />
+        <ManMatMang />
       </NguoiDungProvider>
     </KhoThongBao>
   );

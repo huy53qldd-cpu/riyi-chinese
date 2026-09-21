@@ -19,6 +19,15 @@
 
    Chữ nhỏ luôn dùng --chu (nâu đậm), đạt 14.94:1 — rất rõ, đọc được cả
    ngoài nắng.
+
+   ---------------------------------------------------------------------------
+   NHỮNG CHỖ BUỘC PHẢI VIẾT LẠI MÀU (vì không đọc được file này)
+   ---------------------------------------------------------------------------
+   Đổi 4 màu gốc thì nhớ sửa cả những chỗ sau:
+     - index.html                 thẻ theme-color (màu thanh trạng thái)
+     - public/manifest.webmanifest  background_color, theme_color (Android)
+     - public/mat-mang.html        trang báo mất mạng (phải tự đứng một mình)
+     - cong-cu/tach-logo.py, cong-cu/tao-splash.py  (rồi chạy lại hai công cụ)
    ============================================================================= */
 
 :root {

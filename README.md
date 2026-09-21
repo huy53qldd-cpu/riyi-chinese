@@ -3,7 +3,7 @@
 App học tiếng Trung HSK cấp 1–3, dành cho người Việt đã có nền tảng tiếng Nhật
 (N4–N1). Khai thác mối liên hệ Hán tự Trung – Nhật và âm Hán Việt để học nhanh hơn.
 
-**Trạng thái: đã xong giai đoạn 7 (luyện tập, mục tiêu ngày, review tuần). App đang chạy ở https://riyi-chinese.web.app. Còn chờ chủ dự án thử trên điện thoại và rà dữ liệu.**
+**Trạng thái: đã xong giai đoạn 8 (cài app vào màn hình chính, báo bản mới, báo mất mạng). App đang chạy ở https://riyi-chinese.web.app. Còn chờ chủ dự án thử trên điện thoại và rà dữ liệu.**
 
 ---
 
@@ -176,6 +176,7 @@ Riyi Chinese/
 | `npm run cat-font` | **Cắt nhỏ font theo chữ đang dùng** |
 | `npm run rut-hsk` | Rút lại dữ liệu HSK từ file PDF |
 | `npm run tach-logo` | Cắt lại logo và tạo icon (khi đổi file logo) |
+| `npm run tao-splash` | Tạo lại ảnh màn hình chờ cho iPhone/iPad (sau khi chạy `tach-logo`) |
 | `npm run so-sanh-tu-dang` | Đo xem chữ Trung và Nhật vẽ khác nhau bao nhiêu |
 | `npm run tai-nguon-mo` | Tải các file nguồn mở, cần trước khi chạy các lệnh `dung-...` trên máy mới |
 | `npm run dung-chu-han` | Dựng lại dữ liệu chữ Hán (Tab A) |
@@ -316,6 +317,30 @@ bấm **Đăng nhập bằng Google** để thử.
 | "Địa chỉ này chưa được phép đăng nhập" | Đang mở app bằng địa chỉ `192.168...`, hoặc tên miền chưa có trong Authorized domains |
 | "Chưa lưu được tiến độ" | Chưa làm Bước C hoặc chưa đưa quy tắc bảo mật lên (`npm run trien-khai`) |
 
+## Cài Riyi vào màn hình chính điện thoại
+
+Mở **https://riyi-chinese.web.app** rồi:
+
+- **iPhone (Safari):** bấm nút Chia sẻ (ô vuông có mũi tên lên) → **Thêm vào
+  MH chính** → Thêm. Phải dùng Safari, Chrome trên iPhone không cài được.
+- **Android (Chrome):** bấm dấu ⋮ góc trên → **Cài đặt ứng dụng** (hoặc
+  "Thêm vào màn hình chính").
+
+App mở toàn màn hình như ứng dụng thật, có màn hình chờ logo Riyi.
+
+**Cập nhật:** mỗi lần chạy `npm run trien-khai`, người đang mở app sẽ thấy dải
+"Đã có phiên bản mới của Riyi" kèm nút **Tải lại để cập nhật**. Không cần gỡ
+app cài lại.
+
+**Sửa dữ liệu bài học:** nhớ TĂNG `phienBan` của file vừa sửa và
+`phienBanDuLieu` trong `public/du-lieu/manifest.json`. Không tăng thì điện
+thoại có thể vẫn dùng bản cũ đã lưu.
+
+**Mất mạng:** Riyi không học được khi mất mạng (theo yêu cầu). App hiện thông báo
+"Cần kết nối mạng để sử dụng Riyi." và tự chạy tiếp khi có mạng lại.
+
+---
+
 ## Nền tảng kỹ thuật
 
 Vite + React + Tailwind CSS v4. Firebase: đăng nhập Google, Firestore, Hosting
@@ -335,6 +360,6 @@ Unihan (Unicode), CC-CEDICT (MDBG, CC BY-SA), KanjiVG (CC BY-SA 3.0), hanzi-writ
 - [x] GĐ 5 — Tab F (15 điểm ngữ pháp)
 - [x] GĐ 6 — Đăng nhập Google, Firestore, màn hình Cài đặt (đã kết nối Firebase)
 - [x] GĐ 7 — Luyện tập ở Tab B, C, F; Tab D mục tiêu ngày; Tab E review tuần
-- [ ] GĐ 8 — Hoàn thiện PWA
+- [x] GĐ 8 — Hoàn thiện PWA: cài vào màn hình chính, splash, báo bản mới, báo mất mạng, phiên bản dữ liệu
 - [ ] GĐ 9 — Bổ sung đầy đủ HSK 1–3
 - [ ] GĐ 10 — Chức năng bổ sung

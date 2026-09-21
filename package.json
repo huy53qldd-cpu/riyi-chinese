@@ -10,6 +10,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "tach-logo": "python cong-cu/tach-logo.py",
+    "tao-splash": "python cong-cu/tao-splash.py",
     "rut-hsk": "python cong-cu/rut-du-lieu-hsk.py",
     "tai-font": "python cong-cu/tai-font.py",
     "cat-font": "python cong-cu/cat-font.py",

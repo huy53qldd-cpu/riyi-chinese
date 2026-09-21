@@ -10,7 +10,7 @@ thứ đã quyết.
 > Không tự quyết."* File này là bộ nhớ của quy tắc đó. Việc nào đã có trong
 > đây thì **không hỏi lại nữa**.
 
-Cập nhật lần cuối: 2026-09-21 — xong GĐ 7 (luyện tập, mục tiêu ngày, review tuần).
+Cập nhật lần cuối: 2026-09-21 — xong GĐ 8 (PWA).
 
 ---
 
@@ -311,6 +311,30 @@ Claude tự chọn khi làm (chủ dự án xem lại, muốn đổi thì báo):
 | 15.17 | Máy này không có nguồn Tatoeba nên chưa chạy lại `npm run dung-ngu-phap`: đã sửa công cụ để giữ `tachTu`, và thêm `tachTu` thẳng vào file dữ liệu. Khi chạy lại công cụ trên máy có nguồn, kết quả phải giống hệt |
 | 15.18 | Đã thử bằng trình duyệt tự động (Firebase giả trong bộ nhớ, không đụng dữ liệu thật): mọi chế độ luyện tập, đạt mục tiêu (chuỗi 4 → 5), đếm phút, Review, theme tối, chế độ khách (không ghi gì). **Chưa thử với Firebase thật và điện thoại thật** |
 
+### GĐ 8 — quyết định và kết quả (2026-09-21)
+
+Chủ dự án chọn:
+
+| # | Nội dung |
+| --- | --- |
+| 16.1 | **Service worker tự viết, loại nhỏ**: chỉ lưu sẵn ĐÚNG MỘT trang `mat-mang.html` để mở app lúc mất mạng thì hiện lời báo tiếng Việt thay trang lỗi của trình duyệt. Không lưu bài học, ảnh, font, mã app (đúng quy tắc không làm offline). Không dùng thư viện Workbox / vite-plugin-pwa |
+| 16.2 | **Có ảnh splash riêng cho iPhone/iPad**: 17 cỡ màn hình, logo giữa nền kem, tổng 271 KB (máy chỉ tải khi cài vào màn hình chính). Tạo bằng `npm run tao-splash`, công cụ tự viết lại khối khai báo trong `index.html` |
+| 16.3 | **Tên dưới biểu tượng app: "Riyi"** |
+
+Claude làm theo bản yêu cầu và tự chọn chi tiết:
+
+| # | Nội dung |
+| --- | --- |
+| 16.4 | `manifest.webmanifest`: tên đầy đủ "Riyi — Học tiếng Trung cho người biết tiếng Nhật", nền và thanh trạng thái màu kem, 3 icon (192, 512, 512 maskable). Không khoá xoay màn hình |
+| 16.5 | **Phiên bản app = thời điểm đóng gói** (giờ Việt Nam, ví dụ "2026-09-21 15:18"), đóng dấu vào `sw.js` mỗi lần `npm run build`. Hiện trong Cài đặt → Ứng dụng |
+| 16.6 | Có bản mới: trình duyệt kiểm tra khi mở app, khi quay lại app và mỗi giờ; tải ngầm rồi **chờ**, hiện dải "Đã có phiên bản mới của Riyi" + nút **"Tải lại để cập nhật"**. Không tự tải lại giữa lúc đang làm bài. Trước khi tải lại, app ghi nốt tiến độ đang chờ lên Firestore |
+| 16.7 | Mất mạng khi đang dùng: màn che kín "Cần kết nối mạng để sử dụng Riyi.", có mạng lại thì tự biến mất, bài đang làm vẫn giữ nguyên |
+| 16.8 | **Phiên bản dữ liệu**: `manifest.json` luôn tải mới; mỗi file bài học tải kèm `?v=<phienBan>`, nên tăng số là máy bỏ bản cũ. Quay lại app sau ≥ 30 phút thì kiểm tra lại, có nội dung mới thì báo "sẽ hiện khi bạn mở lại tab" (không tải lại giữa chừng để khỏi mất bài đang làm). `phienBanDuLieu` nâng lên **6** vì GĐ 7 đã sửa file ngữ pháp |
+| 16.9 | Cài đặt có mục **Ứng dụng**: phiên bản app, phiên bản nội dung, nút **"Cập nhật nội dung"** |
+| 16.10 | Firebase Hosting: trang chính `/`, `index.html`, `sw.js`, manifest, `du-lieu/manifest.json` luôn hỏi lại máy chủ (no-cache); mã đã đóng gói trong `assets/` lưu 1 năm (tên file đổi mỗi bản nên không bị kẹt) |
+| 16.11 | Màu kem/cam/nâu buộc phải viết lại ở `index.html`, `manifest.webmanifest`, `mat-mang.html` và 2 công cụ Python vì những chỗ đó không đọc được `tokens.css`. Đã ghi danh sách này ở đầu `tokens.css` |
+| 16.12 | Đã thử trên bản đóng gói bằng trình duyệt tự động: manifest không lỗi; mở app lúc mất mạng hiện trang báo; mất mạng khi đang dùng hiện màn che rồi tự tắt; đóng gói bản mới → hiện dải báo → bấm → lên bản mới; nút Cập nhật nội dung chạy. **Chưa thử cài thật trên iPhone/Android** (splash iPhone chỉ thấy được trên máy thật) |
+
 ### Đang chờ chủ dự án
 
 1. Rà lại dữ liệu 10 chữ (mở từng chữ, bấm mục "Chưa kiểm tra").
@@ -322,7 +346,9 @@ Claude tự chọn khi làm (chủ dự án xem lại, muốn đổi thì báo):
 7. ~~Duyệt GĐ 3–6 để sang GĐ 7~~ Chủ dự án trả lời câu hỏi GĐ 7 và cho làm tiếp (2026-09-21). Dữ liệu GĐ 1–5 vẫn chờ rà (mục 1, 3, 4, 5).
 8. **Thử GĐ 7 trên điện thoại** với tài khoản thật: làm vài lượt luyện tập, xem thanh mục tiêu, đạt mục tiêu, mở Review. Xem lại các lựa chọn 15.5–15.16.
 9. Rà cách chia câu cho bài sắp xếp (15.16).
-10. Duyệt GĐ 7 để sang GĐ 8 (hoàn thiện PWA).
+10. ~~Duyệt GĐ 7~~ Chủ dự án cho sang GĐ 8 (2026-09-21).
+11. **Thử GĐ 8 trên điện thoại thật**: cài Riyi vào màn hình chính (hướng dẫn trong README), xem màn hình chờ, bật chế độ máy bay rồi mở app, và xem dải "Đã có phiên bản mới" sau lần triển khai tiếp theo.
+12. Duyệt GĐ 8 để sang GĐ 9 (bổ sung đầy đủ nội dung HSK 1–3).
 
 ### Còn nợ kỹ thuật, xử lý ở giai đoạn sau
 
@@ -343,7 +369,7 @@ Claude tự chọn khi làm (chủ dự án xem lại, muốn đổi thì báo):
 - [x] GĐ 5 — Tab F (ngữ pháp, 15 điểm HSK 1–2). **Đã làm xong, chờ chủ dự án rà dữ liệu và duyệt.**
 - [x] GĐ 6 — Đăng nhập Google, Firestore, Cài đặt. **Code xong, chờ chủ dự án kết nối Firebase và deploy để thử trên điện thoại.**
 - [x] GĐ 7 — Luyện tập (Tab B, C, F), Tab D mục tiêu ngày, Tab E review tuần. **Đã làm xong, chờ chủ dự án thử trên điện thoại và duyệt.**
-- [ ] GĐ 8 — Hoàn thiện PWA
+- [x] GĐ 8 — Hoàn thiện PWA. **Đã làm xong, chờ chủ dự án thử cài trên điện thoại và duyệt.**
 - [ ] GĐ 9 — Bổ sung đầy đủ HSK 1–3
 - [ ] GĐ 10 — Chức năng bổ sung
 

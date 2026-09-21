@@ -1,0 +1,106 @@
+<!doctype html>
+<!--
+  TRANG BÁO MẤT MẠNG
+  Service worker (sw.js) lưu sẵn ĐÚNG trang này, và chỉ trang này. Khi mở Riyi
+  lúc không có mạng, trình duyệt hiện trang này thay cho trang lỗi của nó.
+  Riyi không học được khi mất mạng (quy tắc dự án), nên trang chỉ có lời báo và
+  nút thử lại.
+
+  Trang phải tự đứng một mình (không tải font, ảnh hay file nào khác) vì lúc hiện
+  trang này là lúc không có mạng. Vì vậy màu được viết thẳng ở đây, lấy đúng 4
+  màu thương hiệu trong src/styles/tokens.css.
+-->
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#FFF6E5" />
+    <title>Riyi — Cần kết nối mạng</title>
+    <script>
+      // Dùng đúng theme người dùng đã chọn trong app (lưu trên máy ở khoá
+      // "riyi-cai-dat", xem src/nguoi-dung/caiDat.js)
+      try {
+        const caiDat = JSON.parse(localStorage.getItem("riyi-cai-dat"));
+        if (caiDat?.giaoDien === "toi") document.documentElement.dataset.theme = "toi";
+      } catch {
+        // Không đọc được thì dùng theme sáng
+      }
+    </script>
+    <style>
+      :root {
+        --nen: #fff6e5;
+        --chu: #2a1f1a;
+        --chu-mo: #5c4a40;
+        --nhan: #f0600f;
+        --xam: #c4bbab;
+      }
+      /* Theme tối: theo cài đặt "Giao diện tối" của app (đọc ở script đầu trang) */
+      :root[data-theme="toi"] {
+        --nen: #2a1f1a;
+        --chu: #fff6e5;
+        --chu-mo: #b8a894;
+        --xam: #5c4a40;
+      }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: var(--nen);
+        color: var(--chu);
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+      main {
+        min-height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 24px;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.25rem;
+      }
+      p {
+        margin: 0;
+        color: var(--chu-mo);
+        line-height: 1.6;
+      }
+      button {
+        margin-top: 8px;
+        border: 0;
+        border-radius: 999px;
+        padding: 12px 28px;
+        background: var(--nhan);
+        color: #fff6e5;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Mặt trời Riyi, màu xám vì đang không có mạng -->
+      <svg width="120" height="64" viewBox="0 0 120 64" aria-hidden="true">
+        <g stroke="var(--xam)" stroke-width="7" stroke-linecap="round" fill="none">
+          <line x1="60" y1="6" x2="60" y2="16" />
+          <line x1="28" y1="18" x2="35" y2="25" />
+          <line x1="92" y1="18" x2="85" y2="25" />
+          <line x1="12" y1="58" x2="108" y2="58" />
+        </g>
+        <path d="M34 55 A26 26 0 0 1 86 55 Z" fill="var(--xam)" />
+      </svg>
+      <h1>Cần kết nối mạng để sử dụng Riyi.</h1>
+      <p>Hãy bật wifi hoặc dữ liệu di động, rồi thử lại.</p>
+      <button type="button" onclick="location.reload()">Thử lại</button>
+    </main>
+    <script>
+      // Có mạng trở lại thì tự mở lại app
+      window.addEventListener("online", () => location.reload());
+    </script>
+  </body>
+</html>

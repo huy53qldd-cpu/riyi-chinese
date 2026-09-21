@@ -2,13 +2,18 @@
    MÀN HÌNH CÀI ĐẶT
    =============================================================================
 
-   Gồm: tài khoản (đăng nhập / đăng xuất), bật tắt furigana, giao diện sáng/tối.
+   Gồm: tài khoản (đăng nhập / đăng xuất), bật tắt furigana, giao diện sáng/tối,
+   và mục Ứng dụng (phiên bản, nút "Cập nhật nội dung").
 
    Chế độ khách vẫn đổi được furigana và giao diện, nhưng chỉ lưu trên máy này.
    Người đã đăng nhập thì các cài đặt này đi theo tài khoản sang máy khác.
    ============================================================================= */
 
+import { useEffect, useState } from "react";
+
+import { capNhatNoiDung, phienBanNoiDung } from "../du-lieu/taiDuLieu.js";
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
+import { useThongBao } from "../thanh-phan/ThongBao.jsx";
 
 export default function CaiDat({ quayLai }) {
   const nd = useNguoiDung();
@@ -91,7 +96,71 @@ export default function CaiDat({ quayLai }) {
           </p>
         )}
       </section>
+
+      <MucUngDung />
     </main>
+  );
+}
+
+/* -----------------------------------------------------------------------------
+   MỤC ỨNG DỤNG: phiên bản app, phiên bản nội dung, nút cập nhật nội dung
+   ----------------------------------------------------------------------------- */
+function MucUngDung() {
+  const hienThongBao = useThongBao();
+  const [banNoiDung, setBanNoiDung] = useState(null);
+  const [dangCapNhat, setDangCapNhat] = useState(false);
+
+  useEffect(() => {
+    let conSong = true;
+    phienBanNoiDung().then((b) => conSong && setBanNoiDung(b));
+    return () => {
+      conSong = false;
+    };
+  }, []);
+
+  async function capNhat() {
+    setDangCapNhat(true);
+    try {
+      const cu = banNoiDung;
+      const moi = await capNhatNoiDung();
+      setBanNoiDung(moi);
+      hienThongBao(
+        cu !== null && moi > cu
+          ? `Đã tải nội dung mới (phiên bản ${moi}).`
+          : "Nội dung bài học đã là bản mới nhất.",
+      );
+    } catch {
+      hienThongBao("Không cập nhật được. Hãy kiểm tra mạng rồi thử lại.");
+    }
+    setDangCapNhat(false);
+  }
+
+  return (
+    <section className="border-vien bg-nen-noi flex flex-col gap-3 rounded-[var(--bo-goc)] border p-4">
+      <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
+        Ứng dụng
+      </h2>
+      <dl className="m-0 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-[length:var(--co-chu-latin-nho)]">
+        <dt className="text-chu-mo">Phiên bản app</dt>
+        <dd className="m-0 font-semibold tabular-nums">{__PHIEN_BAN_APP__}</dd>
+        <dt className="text-chu-mo">Nội dung bài học</dt>
+        <dd className="m-0 font-semibold tabular-nums">
+          {banNoiDung === null ? "…" : `phiên bản ${banNoiDung}`}
+        </dd>
+      </dl>
+      <button
+        type="button"
+        onClick={capNhat}
+        disabled={dangCapNhat}
+        className="border-vien self-start rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold disabled:opacity-50"
+      >
+        {dangCapNhat ? "Đang cập nhật..." : "Cập nhật nội dung"}
+      </button>
+      <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+        App tự lấy nội dung mới khi mở. Bấm nút này nếu muốn lấy ngay mà không
+        cần mở lại app.
+      </p>
+    </section>
   );
 }
 

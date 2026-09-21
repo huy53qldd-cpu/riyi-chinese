@@ -1,6 +1,6 @@
 {
-  "phienBanDuLieu": 5,
-  "capNhatLuc": "2026-09-20",
+  "phienBanDuLieu": 6,
+  "capNhatLuc": "2026-09-21",
   "ghiChu": "App đọc file này đầu tiên khi mở. Thấy phienBanDuLieu lớn hơn bản đang có thì tải lại dữ liệu và xoá cache cũ. GĐ 1-5: mới có 10 chữ Hán HSK 1, 20 cặp đồng tự dị nghĩa 100 từ vựng HSK 1 (số 1-100) và 15 điểm ngữ pháp HSK 1-2 (bản nháp, còn cangKiemTra). Các file còn lại chưa có.",
   "nguon": {
     "ten": "新版HSK考试大纲（词汇、汉字、语法）",
