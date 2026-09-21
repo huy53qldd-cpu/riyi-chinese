@@ -1,0 +1,850 @@
+{
+  "loai": "ngu-phap",
+  "cap": 1,
+  "phienBan": 1,
+  "capNhatLuc": "2026-09-20",
+  "nguon": "Các điểm chọn theo đại cương HSK 2025-11 (mục nguonPDF). Câu ví dụ và bản dịch Nhật: Tatoeba (CC BY 2.0 FR).",
+  "danhSach": [
+    {
+      "id": "np-0001",
+      "capHsk": 1,
+      "ten": "Trật tự cơ bản: chủ – động – tân",
+      "congThuc": "Chủ ngữ + Động từ + Tân ngữ",
+      "viDu": [
+        {
+          "trung": "我学英语。",
+          "pinyin": [
+            "wǒ",
+            "xué",
+            "yīng",
+            "yǔ",
+            ""
+          ],
+          "nhat": "私[わたし]は英語[えいご]を勉強[べんきょう]します。",
+          "viet": "Tôi học tiếng Anh.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10448719"
+        },
+        {
+          "trung": "我喜欢猫。",
+          "pinyin": [
+            "wǒ",
+            "xǐ",
+            "huān",
+            "māo",
+            ""
+          ],
+          "nhat": "私[わたし]は猫[ねこ]が好[す]きだ。",
+          "viet": "Tôi thích mèo.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (喜).",
+          "nguon": "Tatoeba #382426"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "主語 + 目的語 + を + 動詞",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Trật tự NGƯỢC nhau: tiếng Trung đặt động từ TRƯỚC tân ngữ, tiếng Nhật đặt động từ ở CUỐI câu. Tiếng Trung cũng không có trợ từ như を, が để đánh dấu vai trò của từ."
+      },
+      "giaiThichViet": "Động từ đứng ngay sau chủ ngữ, tân ngữ đứng sau động từ. Vai trò của từ do VỊ TRÍ quyết định, không có trợ từ nào đánh dấu tân ngữ.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Đặt động từ ở cuối câu theo thói quen tiếng Nhật là lỗi phổ biến nhất khi dịch nguyên trật tự từ sang tiếng Trung.",
+          "cauSai": {
+            "trung": "我英语学。",
+            "pinyin": [
+              "wǒ",
+              "yīng",
+              "yǔ",
+              "xué",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我学英语。",
+            "pinyin": [
+              "wǒ",
+              "xué",
+              "yīng",
+              "yǔ",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "主谓句1：动词谓语句；动宾短语",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0002",
+      "capHsk": 1,
+      "ten": "了 sau động từ: hành động hoàn thành",
+      "congThuc": "Chủ ngữ + Động từ + 了 (+ Tân ngữ)",
+      "viDu": [
+        {
+          "trung": "我喝了水。",
+          "pinyin": [
+            "wǒ",
+            "hē",
+            "le",
+            "shuǐ",
+            ""
+          ],
+          "nhat": "私[わたし]は水[みず]を飲[の]みました。",
+          "viet": "Tôi đã uống nước.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #9415187"
+        },
+        {
+          "trung": "我买了一本书。",
+          "pinyin": [
+            "wǒ",
+            "mǎi",
+            "le",
+            "yī",
+            "běn",
+            "shū",
+            ""
+          ],
+          "nhat": "私[わたし]は一[いち]冊[さつ]の本[ほん]を買[か]った。",
+          "viet": "Tôi đã mua một quyển sách.",
+          "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (本). 我 đọc thành thanh 2 khi đứng trước thanh 3 (买).",
+          "nguon": "Tatoeba #11837753"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜た（〜ました）",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "了 đánh dấu hành động ĐÃ HOÀN THÀNH, còn た là THÌ QUÁ KHỨ. Hai thứ này không trùng nhau: việc quá khứ có tính thói quen hoặc chỉ miêu tả thì tiếng Trung thường không dùng 了, và 了 vẫn có thể dùng cho việc chưa xảy ra (明天吃了饭再走), điều mà た không làm được."
+      },
+      "giaiThichViet": "了 đặt ngay sau động từ để nói hành động đó đã hoàn thành. Đây KHÔNG phải dấu hiệu của thì quá khứ. Khi tân ngữ đơn giản, câu có 了 thường cần thêm số lượng hoặc phần nối tiếp cho tự nhiên (我买了一本书, 我喝了水就走).",
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "Người biết tiếng Nhật hay thêm 了 vào mọi câu quá khứ vì thấy た. Câu quá khứ mang tính thói quen thường không dùng 了.",
+          "cauSai": {
+            "trung": "我小时候每天喝了牛奶。",
+            "pinyin": [
+              "wǒ",
+              "xiǎo",
+              "shí",
+              "hòu",
+              "měi",
+              "tiān",
+              "hē",
+              "le",
+              "niú",
+              "nǎi",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我小时候每天喝牛奶。",
+            "pinyin": [
+              "wǒ",
+              "xiǎo",
+              "shí",
+              "hòu",
+              "měi",
+              "tiān",
+              "hē",
+              "niú",
+              "nǎi",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "动态助词 了1；完成态 用动态助词“了1”表示",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0003",
+      "capHsk": 1,
+      "ten": "了 cuối câu: tình huống mới, sự thay đổi",
+      "congThuc": "Câu + 了",
+      "viDu": [
+        {
+          "trung": "又下雨了！",
+          "pinyin": [
+            "yòu",
+            "xià",
+            "yǔ",
+            "le",
+            ""
+          ],
+          "nhat": "また雨[あめ]だ。",
+          "viet": "Lại mưa rồi!",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #507343"
+        },
+        {
+          "trung": "你长大了。",
+          "pinyin": [
+            "nǐ",
+            "zhǎng",
+            "dà",
+            "le",
+            ""
+          ],
+          "nhat": "あなたは成長[せいちょう]しました。",
+          "viet": "Bạn lớn rồi.",
+          "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (长).",
+          "nguon": "Tatoeba #9962396"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜た／〜ている／〜なった",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật không có một dạng cố định tương ứng. Tuỳ ngữ cảnh mà dịch thành なった, た hay ている. Ý 'một trạng thái mới vừa xuất hiện' của 了 không có dấu hiệu ngữ pháp riêng trong tiếng Nhật."
+      },
+      "giaiThichViet": "了 đặt CUỐI câu báo một tình huống mới hoặc sự thay đổi trạng thái: trời mưa rồi, lớn rồi. Cùng một chữ 了 nhưng khác chức năng với 了 đứng sau động từ.",
+      "canhBaoLoi": [
+        {
+          "loai": "thieu-thanh-phan",
+          "noiDung": "Thiếu 了 thì câu chỉ nói về việc lớn lên nói chung, không diễn đạt 'đã lớn rồi'.",
+          "cauSai": {
+            "trung": "你长大。",
+            "pinyin": [
+              "nǐ",
+              "zhǎng",
+              "dà",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "你长大了。",
+            "pinyin": [
+              "nǐ",
+              "zhǎng",
+              "dà",
+              "le",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "语气助词 了2；变化态 用动态助词“了2”表示",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0004",
+      "capHsk": 1,
+      "ten": "有 và 没有: có và không có",
+      "congThuc": "Chủ ngữ + 有 + Tân ngữ  |  Chủ ngữ + 没有 + Tân ngữ",
+      "viDu": [
+        {
+          "trung": "我有词典。",
+          "pinyin": [
+            "wǒ",
+            "yǒu",
+            "cí",
+            "diǎn",
+            ""
+          ],
+          "nhat": "僕[ぼく]は辞書[じしょ]を持[も]っています。",
+          "viet": "Tôi có từ điển.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (有).",
+          "nguon": "Tatoeba #695413"
+        },
+        {
+          "trung": "我没有书。",
+          "pinyin": [
+            "wǒ",
+            "méi",
+            "yǒu",
+            "shū",
+            ""
+          ],
+          "nhat": "私[わたし]は本[ほん]を持[も]っていない。",
+          "viet": "Tôi không có sách.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #12169790"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜がある／〜がいる／〜を持っている",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật chia thành ある (vật) và いる (người, con vật), còn tiếng Trung chỉ có MỘT chữ 有 cho cả hai. Chủ ngữ của câu tiếng Trung là người sở hữu, trong khi tiếng Nhật hay đặt người sở hữu với に và vật sở hữu với が ({ja|私には本がある})."
+      },
+      "giaiThichViet": "有 nói về sở hữu. Phủ định của 有 là 没有 (nói nhanh có thể chỉ nói 没), tuyệt đối không dùng 不有.",
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Phủ định của 有 là 没有, không phải 不有.",
+          "cauSai": {
+            "trung": "我不有书。",
+            "pinyin": [
+              "wǒ",
+              "bù",
+              "yǒu",
+              "shū",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我没有书。",
+            "pinyin": [
+              "wǒ",
+              "méi",
+              "yǒu",
+              "shū",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "“有”字句1 表示领有；否定副词 没（有）",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0005",
+      "capHsk": 1,
+      "ten": "不 và 没: hai cách phủ định",
+      "congThuc": "不 + Động từ / Tính từ  |  没(有) + Động từ",
+      "viDu": [
+        {
+          "trung": "我不看报纸。",
+          "pinyin": [
+            "wǒ",
+            "bù",
+            "kàn",
+            "bào",
+            "zhǐ",
+            ""
+          ],
+          "nhat": "新聞[しんぶん]は読[よ]まないんだ。",
+          "viet": "Tôi không đọc báo.",
+          "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (看).",
+          "nguon": "Tatoeba #11239872"
+        },
+        {
+          "trung": "顾客没来。",
+          "pinyin": [
+            "gù",
+            "kè",
+            "méi",
+            "lái",
+            ""
+          ],
+          "nhat": "客[きゃく]はやってこなかった。",
+          "viet": "Khách không đến.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #902044"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜ない／〜なかった／〜ていない",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật chỉ có MỘT dạng phủ định ない rồi chia theo thì. Tiếng Trung chọn 不 hay 没 theo LOẠI phủ định (thói quen, ý chí hay việc có xảy ra), không theo thì. Vì vậy một ない có thể ứng với 不 hoặc 没 tuỳ ngữ cảnh."
+      },
+      "giaiThichViet": "不 phủ định thói quen, ý muốn, trạng thái hiện tại hoặc tương lai. 没 phủ định việc đã xảy ra hoặc chưa xảy ra.",
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "Nói về việc đã qua mà không xảy ra thì dùng 没, dùng 不 sẽ thành 'hôm qua đã không định đến'.",
+          "cauSai": {
+            "trung": "他昨天不来。",
+            "pinyin": [
+              "tā",
+              "zuó",
+              "tiān",
+              "bù",
+              "lái",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "他昨天没来。",
+            "pinyin": [
+              "tā",
+              "zuó",
+              "tiān",
+              "méi",
+              "lái",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "否定副词 不、没（有）、不要",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0006",
+      "capHsk": 1,
+      "ten": "Câu hỏi: 吗 và từ nghi vấn",
+      "congThuc": "Câu trần thuật + 吗？  |  Từ nghi vấn đặt đúng vị trí cần hỏi",
+      "viDu": [
+        {
+          "trung": "你叫什么？",
+          "pinyin": [
+            "nǐ",
+            "jiào",
+            "shén",
+            "me",
+            ""
+          ],
+          "nhat": "名前[なまえ]は何[なん]？",
+          "viet": "Bạn tên gì?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10966808"
+        },
+        {
+          "trung": "你忙吗？",
+          "pinyin": [
+            "nǐ",
+            "máng",
+            "ma",
+            ""
+          ],
+          "nhat": "忙[いそが]しいんですか？",
+          "viet": "Bạn bận không?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #487274"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜か／何・誰 + 助詞",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "吗 giống trợ từ か ở cuối câu, và từ nghi vấn cũng đứng đúng chỗ của thành phần cần hỏi như {ja|何}, {ja|誰}. Điểm lệch: câu đã có từ nghi vấn thì KHÔNG thêm 吗, trong khi tiếng Nhật vẫn thêm か ({ja|何ですか})."
+      },
+      "giaiThichViet": "Hỏi có/không: thêm 吗 cuối câu. Hỏi thông tin: thay phần cần hỏi bằng từ nghi vấn (什么, 谁, 几, 哪儿), không đổi trật tự câu.",
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "Thấy か cuối câu hỏi nên thêm 吗 cả khi đã có từ nghi vấn.",
+          "cauSai": {
+            "trung": "你叫什么吗？",
+            "pinyin": [
+              "nǐ",
+              "jiào",
+              "shén",
+              "me",
+              "ma",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "你叫什么？",
+            "pinyin": [
+              "nǐ",
+              "jiào",
+              "shén",
+              "me",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "疑问句（1）是非问句（2）特指问句；疑问代词",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0007",
+      "capHsk": 1,
+      "ten": "在 / 正在: đang làm",
+      "congThuc": "Chủ ngữ + 在 / 正在 + Động từ (+ Tân ngữ)",
+      "viDu": [
+        {
+          "trung": "我在吃西瓜。",
+          "pinyin": [
+            "wǒ",
+            "zài",
+            "chī",
+            "xī",
+            "guā",
+            ""
+          ],
+          "nhat": "私[わたし]はスイカを食[た]べています。",
+          "viet": "Tôi đang ăn dưa hấu.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10613902"
+        },
+        {
+          "trung": "我正在学韩语。",
+          "pinyin": [
+            "wǒ",
+            "zhèng",
+            "zài",
+            "xué",
+            "hán",
+            "yǔ",
+            ""
+          ],
+          "nhat": "私[わたし]は韓国[かんこく]語[ご]を勉強[べんきょう]している。",
+          "viet": "Tôi đang học tiếng Hàn.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #5668936"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜ている",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "〜ている của tiếng Nhật vừa chỉ hành động đang diễn ra vừa chỉ trạng thái kết quả ({ja|窓が開いている}). Tiếng Trung tách hai chức năng: 在/正在 chỉ 'đang làm', còn trạng thái kết quả dùng cách khác (着, 了). Không thể dịch mọi 〜ている thành 在."
+      },
+      "giaiThichViet": "在 hoặc 正在 đặt TRƯỚC động từ để nói hành động đang diễn ra.",
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "Đừng dịch máy móc mọi 〜ている thành 在. Với trạng thái kết quả như 'cửa sổ đang mở', 在 không phải cách nói đúng.",
+          "cauSai": null,
+          "cauDung": null
+        }
+      ],
+      "nguonPDF": "进行态（1）……在/正在+动词",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0008",
+      "capHsk": 1,
+      "ten": "Lượng từ: số từ + lượng từ + danh từ",
+      "congThuc": "Số từ + Lượng từ + Danh từ",
+      "viDu": [
+        {
+          "trung": "我有一条狗。",
+          "pinyin": [
+            "wǒ",
+            "yǒu",
+            "yī",
+            "tiáo",
+            "gǒu",
+            ""
+          ],
+          "nhat": "私[わたし]は犬[いぬ]を飼[か]っている。",
+          "viet": "Tôi có một con chó.",
+          "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 2 (条). 我 đọc thành thanh 2 khi đứng trước thanh 3 (有).",
+          "nguon": "Tatoeba #414228"
+        },
+        {
+          "trung": "他有两只猫。",
+          "pinyin": [
+            "tā",
+            "yǒu",
+            "liǎng",
+            "zhǐ",
+            "māo",
+            ""
+          ],
+          "nhat": "彼[かれ]は、二[に]匹[ひき]猫[ねこ]を飼[か]っている。",
+          "viet": "Anh ấy có hai con mèo.",
+          "ghiChuBienDieu": "有两只: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+          "nguon": "Tatoeba #482305"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "名詞 + を + 数 + 助数詞",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Cùng ý tưởng với {ja|助数詞} nhưng lượng từ Trung và trợ số từ Nhật KHÔNG trùng nhau: chó là 一条狗 (条) mà tiếng Nhật là {ja|一匹} ({ja|匹}), mèo là 两只猫 (只) mà tiếng Nhật là {ja|二匹} ({ja|匹}). Vị trí cũng khác: tiếng Trung đặt số lượng TRƯỚC danh từ, tiếng Nhật thường đặt SAU danh từ ({ja|犬を一匹飼っている})."
+      },
+      "giaiThichViet": "Giữa số từ và danh từ bắt buộc có lượng từ, và mỗi loại danh từ đi với lượng từ riêng: 个 (chung), 本 (sách), 只 (con vật nhỏ), 条 (vật dài, cả con chó), 件 (áo, sự việc).",
+      "canhBaoLoi": [
+        {
+          "loai": "thieu-thanh-phan",
+          "noiDung": "Không được bỏ lượng từ giữa số từ và danh từ.",
+          "cauSai": {
+            "trung": "我有一狗。",
+            "pinyin": [
+              "wǒ",
+              "yǒu",
+              "yī",
+              "gǒu",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我有一条狗。",
+            "pinyin": [
+              "wǒ",
+              "yǒu",
+              "yī",
+              "tiáo",
+              "gǒu",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "量词 名量词（1）专用名量词：本、个、家、口、块、件、只、元；数量短语",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0009",
+      "capHsk": 1,
+      "ten": "的: định ngữ đứng trước danh từ",
+      "congThuc": "Định ngữ + 的 + Danh từ",
+      "viDu": [
+        {
+          "trung": "这是我的车。",
+          "pinyin": [
+            "zhè",
+            "shì",
+            "wǒ",
+            "de",
+            "chē",
+            ""
+          ],
+          "nhat": "これは私[わたし]の車[くるま]です。",
+          "viet": "Đây là xe của tôi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #789581"
+        },
+        {
+          "trung": "汤姆的手大。",
+          "pinyin": [
+            "tāng",
+            "mǔ",
+            "de",
+            "shǒu",
+            "dà",
+            ""
+          ],
+          "nhat": "トムは手[て]が大[おお]きい。",
+          "viet": "Tay của Tom to.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #5114139"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜の",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "的 giống の nhưng không trùng khít. Ví dụ tiếng Trung nói 汤姆的手大 (tay CỦA Tom to) thì tiếng Nhật tự nhiên hơn là {ja|トムは手が大きい} (Tom thì tay to) với chủ ngữ phụ が. Ngoài ra 的 còn đứng sau tính từ (漂亮的花), còn tính từ tiếng Nhật đứng thẳng trước danh từ (きれいな花)."
+      },
+      "giaiThichViet": "的 nối định ngữ (người sở hữu, tính chất) với danh từ. Với đại từ nhân xưng và người thân gần gũi thường bỏ 的 (我妈妈).",
+      "canhBaoLoi": [
+        {
+          "loai": "thieu-thanh-phan",
+          "noiDung": "Thiếu 的 giữa đại từ sở hữu và danh từ vật.",
+          "cauSai": {
+            "trung": "这是我车。",
+            "pinyin": [
+              "zhè",
+              "shì",
+              "wǒ",
+              "chē",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "这是我的车。",
+            "pinyin": [
+              "zhè",
+              "shì",
+              "wǒ",
+              "de",
+              "chē",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "结构助词 的1；定语",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0010",
+      "capHsk": 1,
+      "ten": "Thời gian và nơi chốn đứng trước động từ",
+      "congThuc": "Chủ ngữ + (Thời gian) + 在 + Nơi chốn + Động từ",
+      "viDu": [
+        {
+          "trung": "我在花园里玩。",
+          "pinyin": [
+            "wǒ",
+            "zài",
+            "huā",
+            "yuán",
+            "lǐ",
+            "wán",
+            ""
+          ],
+          "nhat": "私[わたし]は庭[にわ]で遊[あそ]びます。",
+          "viet": "Tôi chơi ở trong vườn.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2785224"
+        },
+        {
+          "trung": "我每天跑步。",
+          "pinyin": [
+            "wǒ",
+            "měi",
+            "tiān",
+            "pǎo",
+            "bù",
+            ""
+          ],
+          "nhat": "私[わたし]は毎日[まいにち]走[はし]ります。",
+          "viet": "Ngày nào tôi cũng chạy bộ.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (每).",
+          "nguon": "Tatoeba #414247"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "時間 + 場所 + で + 動詞",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Vị trí gần giống nhau (đều đứng trước động từ) nên ít lệch về thứ tự. Điểm khác là hình thức: tiếng Trung dùng giới từ 在 đặt TRƯỚC danh từ nơi chốn, tiếng Nhật dùng trợ từ で đặt SAU danh từ."
+      },
+      "giaiThichViet": "Từ chỉ thời gian đặt trước động từ (đầu câu hoặc sau chủ ngữ). 在 + nơi chốn cũng đặt TRƯỚC động từ chính.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Không đặt 在 + nơi chốn sau động từ hành động (trừ vài động từ như 住在, 坐在).",
+          "cauSai": {
+            "trung": "我玩在花园里。",
+            "pinyin": [
+              "wǒ",
+              "wán",
+              "zài",
+              "huā",
+              "yuán",
+              "lǐ",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我在花园里玩。",
+            "pinyin": [
+              "wǒ",
+              "zài",
+              "huā",
+              "yuán",
+              "lǐ",
+              "wán",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "状语 表示时间、处所的词语作状语；介词 引出时间、处所 在",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0011",
+      "capHsk": 1,
+      "ten": "Động từ năng nguyện: 会 能 想 要 可以",
+      "congThuc": "Chủ ngữ + Động từ năng nguyện + Động từ (+ Tân ngữ)",
+      "viDu": [
+        {
+          "trung": "我会说法语。",
+          "pinyin": [
+            "wǒ",
+            "huì",
+            "shuō",
+            "fǎ",
+            "yǔ",
+            ""
+          ],
+          "nhat": "私[わたし]はフランス語[ご]を話[はな]すことが出来[でき]ます。",
+          "viet": "Tôi biết nói tiếng Pháp.",
+          "ghiChuBienDieu": "法 đọc thành thanh 2 khi đứng trước thanh 3 (语).",
+          "nguon": "Tatoeba #136236"
+        },
+        {
+          "trung": "我想去外国。",
+          "pinyin": [
+            "wǒ",
+            "xiǎng",
+            "qù",
+            "wài",
+            "guó",
+            ""
+          ],
+          "nhat": "私[わたし]は外国[がいこく]へ行[い]きたい。",
+          "viet": "Tôi muốn ra nước ngoài.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (想).",
+          "nguon": "Tatoeba #382414"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜できる／〜たい／〜てもいい",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật diễn đạt bằng đuôi chia của động từ (できる, 〜たい, 〜てもいい) đặt ở CUỐI câu. Tiếng Trung dùng từ riêng đứng TRƯỚC động từ chính và không chia. 会 và 能 đều gần với できる nhưng khác nhau: 会 là kỹ năng học được, 能 là năng lực hoặc điều kiện ở thời điểm đó."
+      },
+      "giaiThichViet": "Đứng trước động từ chính: 会 (biết làm nhờ đã học), 能 (có khả năng, điều kiện cho phép), 想 (muốn), 要 (muốn, cần), 可以 (được phép).",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Đặt từ năng nguyện sau động từ chính theo thói quen đuôi câu tiếng Nhật.",
+          "cauSai": {
+            "trung": "我法语说会。",
+            "pinyin": [
+              "wǒ",
+              "fǎ",
+              "yǔ",
+              "shuō",
+              "huì",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我会说法语。",
+            "pinyin": [
+              "wǒ",
+              "huì",
+              "shuō",
+              "fǎ",
+              "yǔ",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "能愿动词 会、能；想、要；可以",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    }
+  ]
+}

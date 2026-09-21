@@ -1,0 +1,987 @@
+{
+  "loai": "dong-tu-di-nghia",
+  "phienBan": 1,
+  "capNhatLuc": "2026-09-20",
+  "nguon": "Nghĩa tiếng Trung đối chiếu CC-CEDICT, cách đọc tiếng Nhật đối chiếu JMdict, âm Hán Việt đối chiếu KANJIDIC2 (đều EDRDG/MDBG, CC BY-SA). Câu ví dụ: Tatoeba (CC BY 2.0 FR).",
+  "luuYDauTab": "Nhiều cặp từ dưới đây khi viết ra trông hơi khác nhau giữa tiếng Trung và tiếng Nhật, ví dụ {ja|検討} và 检讨, hay {ja|経理} và 经理. Đây CHỈ là khác biệt giữa chữ giản thể và tự dạng Nhật, hoàn toàn không phải hai chữ khác nhau. Âm Hán Việt và ý nghĩa gốc của từng chữ là GIỐNG NHAU. Điểm khác nhau cần chú ý nằm ở NGHĨA CỦA TỪ khi dùng trong tiếng Trung và tiếng Nhật hiện đại, chứ không nằm ở cách viết.",
+  "danhSach": [
+    {
+      "id": "dtdn-0001",
+      "chuNhat": "手紙",
+      "chuTrungGianThe": "手纸",
+      "amHanViet": "thủ chỉ",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": null,
+      "trung": {
+        "pinyin": [
+          "shǒu",
+          "zhǐ"
+        ],
+        "nghia": "giấy vệ sinh",
+        "viDu": {
+          "trung": "手纸用完了。",
+          "pinyin": [
+            "shǒu",
+            "zhǐ",
+            "yòng",
+            "wán",
+            "le",
+            ""
+          ],
+          "nghiaViet": "Hết giấy vệ sinh rồi.",
+          "ghiChuBienDieu": "手纸: chữ 手 đọc thành thanh 2 khi đứng trước thanh 3.",
+          "nguon": "Claude tự soạn (Tatoeba không có câu phù hợp)"
+        }
+      },
+      "nhat": {
+        "cachDoc": "てがみ",
+        "nghia": "lá thư",
+        "viDu": {
+          "nhat": "手紙[てがみ]を下[くだ]さい。",
+          "nghiaViet": "Xin hãy gửi thư cho tôi.",
+          "nguon": "Tatoeba #148569"
+        }
+      },
+      "viet": {
+        "giaiThich": "Cùng viết là {ja|手紙} / 手纸 nhưng nghĩa khác hẳn: tiếng Nhật là lá thư, tiếng Trung là giấy vệ sinh.",
+        "choDeNham": "Muốn nói 'lá thư' trong tiếng Trung phải dùng 信 (xìn). Dùng nhầm 手纸 sẽ thành câu rất khó xử."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Câu ví dụ tiếng Trung do Claude tự soạn, không lấy từ Tatoeba.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0002",
+      "chuNhat": "勉強",
+      "chuTrungGianThe": "勉强",
+      "amHanViet": "miễn cưỡng",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": null,
+      "trung": {
+        "pinyin": [
+          "miǎn",
+          "qiǎng"
+        ],
+        "nghia": "miễn cưỡng, gượng ép",
+        "viDu": {
+          "trung": "汤姆勉强签了文件。",
+          "pinyin": [
+            "tāng",
+            "mǔ",
+            "miǎn",
+            "qiǎng",
+            "qiān",
+            "le",
+            "wén",
+            "jiàn",
+            ""
+          ],
+          "nghiaViet": "Tom miễn cưỡng ký vào giấy tờ.",
+          "ghiChuBienDieu": "勉强: chữ 勉 đọc thành thanh 2 khi đứng trước thanh 3.",
+          "nguon": "Tatoeba #9489506"
+        }
+      },
+      "nhat": {
+        "cachDoc": "べんきょう",
+        "nghia": "học, học tập",
+        "viDu": {
+          "nhat": "勉強[べんきょう]しなさい。",
+          "nghiaViet": "Hãy học bài đi.",
+          "nguon": "Tatoeba #83322"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|勉強} (べんきょう) là học tập. Tiếng Trung 勉强 (miǎnqiǎng) là miễn cưỡng, gượng ép, hoặc chỉ vừa đủ.",
+        "choDeNham": "Muốn nói 'học' trong tiếng Trung dùng 学习 (xuéxí). Nói 勉强 sẽ thành 'làm một cách gượng ép'."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0003",
+      "chuNhat": "大丈夫",
+      "chuTrungGianThe": "大丈夫",
+      "amHanViet": "đại trượng phu",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": null,
+      "trung": {
+        "pinyin": [
+          "dà",
+          "zhàng",
+          "fu"
+        ],
+        "nghia": "bậc trượng phu, đấng nam nhi",
+        "viDu": {
+          "trung": "在背后说别人坏话不是大丈夫所为。",
+          "pinyin": [
+            "zài",
+            "bèi",
+            "hòu",
+            "shuō",
+            "bié",
+            "rén",
+            "huài",
+            "huà",
+            "bù",
+            "shì",
+            "dà",
+            "zhàng",
+            "fu",
+            "suǒ",
+            "wèi",
+            ""
+          ],
+          "nghiaViet": "Nói xấu người khác sau lưng không phải việc của bậc trượng phu.",
+          "ghiChuBienDieu": "不 ở đây đọc thành bú vì đứng trước thanh 4.",
+          "nguon": "Tatoeba #1997144"
+        }
+      },
+      "nhat": {
+        "cachDoc": "だいじょうぶ",
+        "nghia": "ổn, không sao",
+        "viDu": {
+          "nhat": "大丈夫[だいじょうぶ]だよ。",
+          "nghiaViet": "Không sao đâu.",
+          "nguon": "Tatoeba #1282984"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|大丈夫} (だいじょうぶ) là ổn, không sao. Tiếng Trung 大丈夫 (dàzhàngfu) là bậc nam nhi có khí phách.",
+        "choDeNham": "Muốn nói 'không sao' trong tiếng Trung dùng 没关系 (méi guānxi) hoặc 没事 (méi shì)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0004",
+      "chuNhat": "走る",
+      "chuTrungGianThe": "走",
+      "amHanViet": "tẩu",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "zǒu"
+        ],
+        "nghia": "đi, đi bộ",
+        "viDu": {
+          "trung": "我走路去。",
+          "pinyin": [
+            "wǒ",
+            "zǒu",
+            "lù",
+            "qù",
+            ""
+          ],
+          "nghiaViet": "Tôi đi bộ đến đó.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (走).",
+          "nguon": "Tatoeba #380734"
+        }
+      },
+      "nhat": {
+        "cachDoc": "はしる",
+        "nghia": "chạy",
+        "viDu": {
+          "nhat": "ここでは走[はし]るな。",
+          "nghiaViet": "Đừng chạy ở đây.",
+          "nguon": "Tatoeba #224594"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|走}る (はしる) là chạy. Tiếng Trung 走 (zǒu) là đi bộ.",
+        "choDeNham": "Muốn nói 'chạy' trong tiếng Trung dùng 跑 (pǎo)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0005",
+      "chuNhat": "娘",
+      "chuTrungGianThe": "娘",
+      "amHanViet": "nương",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": null,
+      "trung": {
+        "pinyin": [
+          "niáng"
+        ],
+        "nghia": "mẹ, má (khẩu ngữ)",
+        "viDu": {
+          "trung": "有奶便是娘",
+          "pinyin": [
+            "yǒu",
+            "nǎi",
+            "biàn",
+            "shì",
+            "niáng"
+          ],
+          "nghiaViet": "Có sữa là mẹ (tục ngữ, ý nói ai cho lợi ích thì theo người đó).",
+          "ghiChuBienDieu": "有 đọc thành thanh 2 khi đứng trước thanh 3 (奶).",
+          "nguon": "Tatoeba #5932467"
+        }
+      },
+      "nhat": {
+        "cachDoc": "むすめ",
+        "nghia": "con gái, cô gái trẻ",
+        "viDu": {
+          "nhat": "これは娘[むすめ]です。",
+          "nghiaViet": "Đây là con gái tôi.",
+          "nguon": "Tatoeba #2213091"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|娘} (むすめ) là con gái. Tiếng Trung 娘 (niáng) là mẹ, cách gọi khẩu ngữ ở một số vùng.",
+        "choDeNham": "Muốn nói 'con gái' trong tiếng Trung dùng 女儿 (nǚ'ér). Gọi con gái mình là 娘 sẽ thành gọi mẹ."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0006",
+      "chuNhat": "愛人",
+      "chuTrungGianThe": "爱人",
+      "amHanViet": "ái nhân",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "ài",
+          "ren"
+        ],
+        "nghia": "vợ hoặc chồng (Đại lục)",
+        "viDu": {
+          "trung": "我的爱人很会做饭。",
+          "pinyin": [
+            "wǒ",
+            "de",
+            "ài",
+            "ren",
+            "hěn",
+            "huì",
+            "zuò",
+            "fàn",
+            ""
+          ],
+          "nghiaViet": "Vợ/chồng tôi nấu ăn rất giỏi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #7148495"
+        }
+      },
+      "nhat": {
+        "cachDoc": "あいじん",
+        "nghia": "người tình, nhân tình",
+        "viDu": {
+          "nhat": "ここだけの話[はなし]だが、彼[かれ]には愛人[あいじん]がいる。",
+          "nghiaViet": "Nói riêng với bạn thôi, anh ấy có người tình.",
+          "nguon": "Tatoeba #224691"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|愛人} (あいじん) là người tình ngoài hôn nhân. Tiếng Trung 爱人 (àiren) ở Đại lục là vợ hoặc chồng.",
+        "choDeNham": "Ở Đại lục, 爱人 nói về vợ/chồng mình nên hoàn toàn bình thường. Ngược lại, gọi vợ mình là {ja|愛人} trong tiếng Nhật sẽ gây hiểu lầm nghiêm trọng."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0007",
+      "chuNhat": "老婆",
+      "chuTrungGianThe": "老婆",
+      "amHanViet": "lão bà",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": null,
+      "trung": {
+        "pinyin": [
+          "lǎo",
+          "pó"
+        ],
+        "nghia": "vợ (khẩu ngữ)",
+        "viDu": {
+          "trung": "她是我老婆。",
+          "pinyin": [
+            "tā",
+            "shì",
+            "wǒ",
+            "lǎo",
+            "pó",
+            ""
+          ],
+          "nghiaViet": "Cô ấy là vợ tôi.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (老).",
+          "nguon": "Tatoeba #13259313"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ろうば",
+        "nghia": "bà lão",
+        "viDu": {
+          "nhat": "あの老婆[ろうば]は誰[だれ]ですか？",
+          "nghiaViet": "Bà lão kia là ai vậy?",
+          "nguon": "Tatoeba #1147602"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|老婆} (ろうば) là bà lão. Tiếng Trung 老婆 (lǎopo) là vợ, cách gọi thân mật trong khẩu ngữ.",
+        "choDeNham": "Gọi vợ là {ja|老婆} trong tiếng Nhật sẽ thành 'bà lão', rất bất lịch sự."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0008",
+      "chuNhat": "丈夫",
+      "chuTrungGianThe": "丈夫",
+      "amHanViet": "trượng phu",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 2,
+      "trung": {
+        "pinyin": [
+          "zhàng",
+          "fu"
+        ],
+        "nghia": "chồng",
+        "viDu": {
+          "trung": "他是我丈夫。",
+          "pinyin": [
+            "tā",
+            "shì",
+            "wǒ",
+            "zhàng",
+            "fu",
+            ""
+          ],
+          "nghiaViet": "Anh ấy là chồng tôi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #13260802"
+        }
+      },
+      "nhat": {
+        "cachDoc": "じょうぶ",
+        "nghia": "bền chắc, khoẻ mạnh",
+        "viDu": {
+          "nhat": "この縄[なわ]は丈夫[じょうぶ]だ。",
+          "nghiaViet": "Sợi dây này rất chắc.",
+          "nguon": "Tatoeba #4212224"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|丈夫} (じょうぶ) là bền chắc, khoẻ mạnh. Tiếng Trung 丈夫 (zhàngfu) là chồng.",
+        "choDeNham": "Muốn nói 'bền, chắc' trong tiếng Trung dùng 结实 (jiēshi). Khen sợi dây là 丈夫 sẽ thành 'sợi dây là chồng'."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0009",
+      "chuNhat": "約束",
+      "chuTrungGianThe": "约束",
+      "amHanViet": "ước thúc",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": null,
+      "trung": {
+        "pinyin": [
+          "yuē",
+          "shù"
+        ],
+        "nghia": "ràng buộc, kiềm chế, hạn chế",
+        "viDu": {
+          "trung": "我在这里总感到约束。",
+          "pinyin": [
+            "wǒ",
+            "zài",
+            "zhè",
+            "lǐ",
+            "zǒng",
+            "gǎn",
+            "dào",
+            "yuē",
+            "shù",
+            ""
+          ],
+          "nghiaViet": "Ở đây tôi luôn cảm thấy bị gò bó.",
+          "ghiChuBienDieu": "总 đọc thành thanh 2 khi đứng trước thanh 3 (感).",
+          "nguon": "Tatoeba #2416132"
+        }
+      },
+      "nhat": {
+        "cachDoc": "やくそく",
+        "nghia": "lời hứa, cuộc hẹn",
+        "viDu": {
+          "nhat": "約束[やくそく]は守[まも]るよ。",
+          "nghiaViet": "Tôi sẽ giữ lời hứa.",
+          "nguon": "Tatoeba #10624578"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|約束} (やくそく) là lời hứa, cuộc hẹn. Tiếng Trung 约束 (yuēshù) là ràng buộc, kiềm chế.",
+        "choDeNham": "Muốn nói 'lời hứa' trong tiếng Trung dùng 承诺 (chéngnuò) hoặc 约定 (yuēdìng)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0010",
+      "chuNhat": "検討",
+      "chuTrungGianThe": "检讨",
+      "amHanViet": "kiểm thảo",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": null,
+      "trung": {
+        "pinyin": [
+          "jiǎn",
+          "tǎo"
+        ],
+        "nghia": "tự kiểm điểm, nhận lỗi; rà soát",
+        "viDu": {
+          "trung": "我在校庆后打扫的时候弄掉了一把学校的钥匙，我被迫写了一份检讨。",
+          "pinyin": [
+            "wǒ",
+            "zài",
+            "xiào",
+            "qìng",
+            "hòu",
+            "dǎ",
+            "sǎo",
+            "de",
+            "shí",
+            "hòu",
+            "nòng",
+            "diào",
+            "le",
+            "yī",
+            "bǎ",
+            "xué",
+            "xiào",
+            "de",
+            "yào",
+            "shi",
+            "",
+            "wǒ",
+            "bèi",
+            "pò",
+            "xiě",
+            "le",
+            "yī",
+            "fèn",
+            "jiǎn",
+            "tǎo",
+            ""
+          ],
+          "nghiaViet": "Lúc dọn dẹp sau lễ kỷ niệm trường, tôi làm mất một chiếc chìa khoá của trường, nên bị buộc phải viết bản kiểm điểm.",
+          "ghiChuBienDieu": "Câu có nhiều biến điệu: 打扫 (打 đọc thành thanh 2), 一把 (一 đọc thành yì), 一份 (一 đọc thành yí), 检讨 (检 đọc thành thanh 2).",
+          "nguon": "Tatoeba #787627"
+        }
+      },
+      "nhat": {
+        "cachDoc": "けんとう",
+        "nghia": "xem xét, cân nhắc",
+        "viDu": {
+          "nhat": "その件[けん]は検討[けんとう]中[ちゅう]だ。",
+          "nghiaViet": "Vấn đề đó đang được xem xét.",
+          "nguon": "Tatoeba #211062"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|検討} (けんとう) là xem xét, cân nhắc. Tiếng Trung 检讨 (jiǎntǎo) thường là tự kiểm điểm, nhận lỗi; cũng có nghĩa rà soát.",
+        "choDeNham": "Trong tiếng Trung, 写检讨 là viết bản kiểm điểm nhận lỗi. Muốn nói 'xem xét' thì dùng 考虑 (kǎolǜ)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0011",
+      "chuNhat": "汽車",
+      "chuTrungGianThe": "汽车",
+      "amHanViet": "khí xa",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "qì",
+          "chē"
+        ],
+        "nghia": "ô tô",
+        "viDu": {
+          "trung": "汽车发生故障了。",
+          "pinyin": [
+            "qì",
+            "chē",
+            "fā",
+            "shēng",
+            "gù",
+            "zhàng",
+            "le",
+            ""
+          ],
+          "nghiaViet": "Ô tô bị hỏng rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #336112"
+        }
+      },
+      "nhat": {
+        "cachDoc": "きしゃ",
+        "nghia": "tàu hỏa (cách gọi cũ, gốc là tàu chạy hơi nước)",
+        "viDu": {
+          "nhat": "彼[かれ]は汽車[きしゃ]に乗[の]った。",
+          "nghiaViet": "Anh ấy đã lên tàu hỏa.",
+          "nguon": "Tatoeba #108557"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|汽車} (きしゃ) là tàu hỏa. Tiếng Trung 汽车 (qìchē) là ô tô.",
+        "choDeNham": "Muốn nói 'tàu hỏa' trong tiếng Trung dùng 火车 (huǒchē). Nói 汽车 là ô tô."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0012",
+      "chuNhat": "工作",
+      "chuTrungGianThe": "工作",
+      "amHanViet": "công tác",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "gōng",
+          "zuò"
+        ],
+        "nghia": "công việc, làm việc",
+        "viDu": {
+          "trung": "一起工作。",
+          "pinyin": [
+            "yī",
+            "qǐ",
+            "gōng",
+            "zuò",
+            ""
+          ],
+          "nghiaViet": "Cùng làm việc.",
+          "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (起).",
+          "nguon": "Tatoeba #13150949"
+        }
+      },
+      "nhat": {
+        "cachDoc": "こうさく",
+        "nghia": "thủ công, sự chế tạo; cũng chỉ hoạt động ngầm",
+        "viDu": {
+          "nhat": "彼[かれ]は工作[こうさく]に熟練[じゅくれん]している。",
+          "nghiaViet": "Anh ấy thành thạo thủ công.",
+          "nguon": "Tatoeba #107395"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|工作} (こうさく) là thủ công, chế tạo. Tiếng Trung 工作 (gōngzuò) là công việc, làm việc.",
+        "choDeNham": "Muốn nói 'công việc' trong tiếng Nhật dùng {ja|仕事} (しごと)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0013",
+      "chuNhat": "経理",
+      "chuTrungGianThe": "经理",
+      "amHanViet": "kinh lý",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "jīng",
+          "lǐ"
+        ],
+        "nghia": "giám đốc, quản lý",
+        "viDu": {
+          "trung": "对，是我们经理。",
+          "pinyin": [
+            "duì",
+            "",
+            "shì",
+            "wǒ",
+            "men",
+            "jīng",
+            "lǐ",
+            ""
+          ],
+          "nghiaViet": "Đúng, là giám đốc của chúng tôi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #389056"
+        }
+      },
+      "nhat": {
+        "cachDoc": "けいり",
+        "nghia": "kế toán",
+        "viDu": {
+          "nhat": "彼[かれ]は経理[けいり]部[ぶ]で働[はたら]いている。",
+          "nghiaViet": "Anh ấy làm ở phòng kế toán.",
+          "nguon": "Tatoeba #107965"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|経理} (けいり) là kế toán. Tiếng Trung 经理 (jīnglǐ) là giám đốc, quản lý.",
+        "choDeNham": "Muốn nói 'kế toán' trong tiếng Trung dùng 会计 (kuàijì)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0014",
+      "chuNhat": "大家",
+      "chuTrungGianThe": "大家",
+      "amHanViet": "đại gia",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": 1,
+      "trung": {
+        "pinyin": [
+          "dà",
+          "jiā"
+        ],
+        "nghia": "mọi người, tất cả",
+        "viDu": {
+          "trung": "大家好。",
+          "pinyin": [
+            "dà",
+            "jiā",
+            "hǎo",
+            ""
+          ],
+          "nghiaViet": "Chào mọi người.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #338827"
+        }
+      },
+      "nhat": {
+        "cachDoc": "おおや",
+        "nghia": "chủ nhà cho thuê",
+        "viDu": {
+          "nhat": "大家[おおや]さんは家賃[やちん]をあげたいそうだ。",
+          "nghiaViet": "Nghe nói chủ nhà muốn tăng tiền thuê.",
+          "nguon": "Tatoeba #137657"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|大家} (おおや) là chủ nhà cho thuê (còn đọc たいか là bậc thầy, chuyên gia). Tiếng Trung 大家 (dàjiā) là mọi người.",
+        "choDeNham": "Muốn nói 'mọi người' trong tiếng Nhật dùng {ja|皆さん} (みなさん)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0015",
+      "chuNhat": "新聞",
+      "chuTrungGianThe": "新闻",
+      "amHanViet": "tân văn",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-lech-nhe",
+      "capHsk": 3,
+      "trung": {
+        "pinyin": [
+          "xīn",
+          "wén"
+        ],
+        "nghia": "tin tức",
+        "viDu": {
+          "trung": "你听到新闻了吗？",
+          "pinyin": [
+            "nǐ",
+            "tīng",
+            "dào",
+            "xīn",
+            "wén",
+            "le",
+            "ma",
+            ""
+          ],
+          "nghiaViet": "Bạn nghe tin tức chưa?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #345984"
+        }
+      },
+      "nhat": {
+        "cachDoc": "しんぶん",
+        "nghia": "tờ báo",
+        "viDu": {
+          "nhat": "新聞[しんぶん]どこ？",
+          "nghiaViet": "Báo đâu?",
+          "nguon": "Tatoeba #145180"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|新聞} (しんぶん) là tờ báo. Tiếng Trung 新闻 (xīnwén) là tin tức.",
+        "choDeNham": "Muốn nói 'tờ báo' trong tiếng Trung dùng 报纸 (bàozhǐ)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0016",
+      "chuNhat": "湯",
+      "chuTrungGianThe": "汤",
+      "amHanViet": "thang",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": null,
+      "trung": {
+        "pinyin": [
+          "tāng"
+        ],
+        "nghia": "canh, súp",
+        "viDu": {
+          "trung": "汤太烫了。",
+          "pinyin": [
+            "tāng",
+            "tài",
+            "tàng",
+            "le",
+            ""
+          ],
+          "nghiaViet": "Canh nóng quá.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8831896"
+        }
+      },
+      "nhat": {
+        "cachDoc": "ゆ",
+        "nghia": "nước nóng",
+        "viDu": {
+          "nhat": "風呂[ふろ]に湯[ゆ]を入[い]れる。",
+          "nghiaViet": "Cho nước nóng vào bồn tắm.",
+          "nguon": "Tatoeba #83915"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|湯} (ゆ) là nước nóng. Tiếng Trung 汤 (tāng) là canh, súp.",
+        "choDeNham": "Muốn nói 'nước nóng' trong tiếng Trung dùng 热水 (rèshuǐ). Uống 汤 ở Trung Quốc là ăn canh."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0017",
+      "chuNhat": "迷惑",
+      "chuTrungGianThe": "迷惑",
+      "amHanViet": "mê hoặc",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": null,
+      "trung": {
+        "pinyin": [
+          "mí",
+          "huo"
+        ],
+        "nghia": "làm cho mơ hồ, rối trí",
+        "viDu": {
+          "trung": "她告诉了我她很迷惑的。",
+          "pinyin": [
+            "tā",
+            "gào",
+            "sù",
+            "le",
+            "wǒ",
+            "tā",
+            "hěn",
+            "mí",
+            "huo",
+            "de",
+            ""
+          ],
+          "nghiaViet": "Cô ấy bảo tôi là cô ấy rất bối rối.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8932118"
+        }
+      },
+      "nhat": {
+        "cachDoc": "めいわく",
+        "nghia": "phiền hà, sự làm phiền",
+        "viDu": {
+          "nhat": "トムに迷惑[めいわく]をかけるな。",
+          "nghiaViet": "Đừng làm phiền Tom.",
+          "nguon": "Tatoeba #9988874"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|迷惑} (めいわく) là phiền hà, sự làm phiền. Tiếng Trung 迷惑 (míhuo) là làm cho mơ hồ, rối trí.",
+        "choDeNham": "Muốn nói 'làm phiền' trong tiếng Trung dùng 麻烦 (máfan)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0018",
+      "chuNhat": "怪我",
+      "chuTrungGianThe": "怪我",
+      "amHanViet": "quái ngã",
+      "tonTaiTrongTiengTrung": false,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": null,
+      "trung": {
+        "pinyin": null,
+        "nghia": null,
+        "viDu": null
+      },
+      "nhat": {
+        "cachDoc": "けが",
+        "nghia": "vết thương, bị thương",
+        "viDu": {
+          "nhat": "怪我[けが]はないですか？",
+          "nghiaViet": "Bạn có bị thương không?",
+          "nguon": "Tatoeba #10610346"
+        }
+      },
+      "viet": {
+        "giaiThich": "Từ {ja|怪我} (けが) của tiếng Nhật không tồn tại như một từ trong tiếng Trung hiện đại. Hai chữ 怪 và 我 chỉ đứng cạnh nhau như hai từ riêng.",
+        "choDeNham": "'Vết thương' trong tiếng Trung là 伤 (shāng), 'bị thương' là 受伤 (shòushāng)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0019",
+      "chuNhat": "切手",
+      "chuTrungGianThe": "切手",
+      "amHanViet": "thiết thủ",
+      "tonTaiTrongTiengTrung": false,
+      "mucNguyHiem": "nghia-khac-han",
+      "capHsk": null,
+      "trung": {
+        "pinyin": null,
+        "nghia": null,
+        "viDu": null
+      },
+      "nhat": {
+        "cachDoc": "きって",
+        "nghia": "con tem",
+        "viDu": {
+          "nhat": "切手[きって]はどこで買[か]える？",
+          "nghiaViet": "Mua tem ở đâu được?",
+          "nguon": "Tatoeba #10815068"
+        }
+      },
+      "viet": {
+        "giaiThich": "Từ {ja|切手} (きって) của tiếng Nhật không tồn tại như một từ trong tiếng Trung hiện đại. Hai chữ 切 và 手 ghép lại không tạo thành từ có nghĩa.",
+        "choDeNham": "'Con tem' trong tiếng Trung là 邮票 (yóupiào), hoàn toàn khác mặt chữ."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "dtdn-0020",
+      "chuNhat": "麻雀",
+      "chuTrungGianThe": "麻雀",
+      "amHanViet": "ma tước",
+      "tonTaiTrongTiengTrung": true,
+      "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "capHsk": null,
+      "trung": {
+        "pinyin": [
+          "má",
+          "què"
+        ],
+        "nghia": "chim sẻ",
+        "viDu": {
+          "trung": "麻雀正在树上唱歌。",
+          "pinyin": [
+            "má",
+            "què",
+            "zhèng",
+            "zài",
+            "shù",
+            "shàng",
+            "chàng",
+            "gē",
+            ""
+          ],
+          "nghiaViet": "Chim sẻ đang hót trên cây.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8744816"
+        }
+      },
+      "nhat": {
+        "cachDoc": "マージャン",
+        "nghia": "mạt chược",
+        "viDu": {
+          "nhat": "麻雀[マージャン]のやり方[かた]を知[し]ってる？",
+          "nghiaViet": "Bạn biết chơi mạt chược không?",
+          "nguon": "Tatoeba #81436"
+        }
+      },
+      "viet": {
+        "giaiThich": "Tiếng Nhật {ja|麻雀} (マージャン) là mạt chược. Tiếng Trung 麻雀 (máquè) là chim sẻ.",
+        "choDeNham": "Muốn nói 'mạt chược' trong tiếng Trung dùng 麻将 (májiàng)."
+      },
+      "cangKiemTra": [
+        "Nghĩa Việt, phần giải thích, chỗ dễ nhầm và câu dịch Việt là bản nháp, chưa có người xác minh.",
+        "Pinyin của câu tiếng Trung do máy gắn tự động, cần kiểm tra chữ nhiều âm đọc.",
+        "Furigana của câu tiếng Nhật do máy gắn tự động, cần kiểm tra."
+      ]
+    }
+  ]
+}

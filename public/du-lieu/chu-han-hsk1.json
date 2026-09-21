@@ -1,0 +1,684 @@
+{
+  "loai": "chu-han",
+  "cap": 1,
+  "phienBan": 1,
+  "capNhatLuc": "2026-09-20",
+  "nguon": "Chữ Hán lấy từ đại cương HSK 2025-11. Âm On/Kun/Hán Việt: KANJIDIC2 (EDRDG, CC BY-SA 4.0). Pinyin, phồn thể, số nét, bộ thủ: Unihan (Unicode).",
+  "danhSach": [
+    {
+      "id": "han-0001",
+      "capHsk": 1,
+      "gianThe": "人",
+      "tuDangNhat": "人",
+      "phonThe": "人",
+      "soSanhTuDang": {
+        "trungVsNhat": "giong-het",
+        "khacNetVe": false,
+        "ghiChu": null
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "rén",
+            "chinh": true,
+            "viDuTu": "中国人",
+            "viDuPinyin": [
+              "zhōng",
+              "guó",
+              "rén"
+            ],
+            "viDuNghia": "người Trung Quốc"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "ジン",
+            "chinh": true,
+            "viDuTu": "日本人[にほんじん]",
+            "viDuNghia": "người Nhật"
+          },
+          {
+            "am": "ニン",
+            "chinh": false,
+            "viDuTu": "三人[さんにん]",
+            "viDuNghia": "ba người"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "ひと",
+            "chinh": true,
+            "viDuTu": "人[ひと]",
+            "viDuNghia": "người"
+          }
+        ],
+        "amHanViet": [
+          {
+            "am": "nhân",
+            "chinh": true
+          }
+        ]
+      },
+      "nghia": {
+        "nhat": "人[ひと]、人間[にんげん]",
+        "viet": "người"
+      },
+      "soNet": 2,
+      "boThu": "人",
+      "boThuPinyin": [
+        "rén"
+      ],
+      "cangKiemTra": [
+        "Nghĩa Trung/Nhật/Việt và từ ví dụ là bản nháp, chưa có người xác minh."
+      ]
+    },
+    {
+      "id": "han-0002",
+      "capHsk": 1,
+      "gianThe": "学",
+      "tuDangNhat": "学",
+      "phonThe": "學",
+      "soSanhTuDang": {
+        "trungVsNhat": "giong-het",
+        "khacNetVe": false,
+        "ghiChu": null
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "xué",
+            "chinh": true,
+            "viDuTu": "学习",
+            "viDuPinyin": [
+              "xué",
+              "xí"
+            ],
+            "viDuNghia": "học tập"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "ガク",
+            "chinh": true,
+            "viDuTu": "学生[がくせい]",
+            "viDuNghia": "học sinh"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "まな-ぶ",
+            "chinh": true,
+            "viDuTu": "学[まな]ぶ",
+            "viDuNghia": "học"
+          }
+        ],
+        "amHanViet": [
+          {
+            "am": "học",
+            "chinh": true
+          }
+        ]
+      },
+      "nghia": {
+        "nhat": "学[まな]ぶ、勉強[べんきょう]する",
+        "viet": "học, học tập"
+      },
+      "soNet": 8,
+      "boThu": "子",
+      "boThuPinyin": [
+        "zǐ"
+      ],
+      "cangKiemTra": [
+        "Nghĩa Trung/Nhật/Việt và từ ví dụ là bản nháp, chưa có người xác minh."
+      ]
+    },
+    {
+      "id": "han-0003",
+      "capHsk": 1,
+      "gianThe": "今",
+      "tuDangNhat": "今",
+      "phonThe": "今",
+      "soSanhTuDang": {
+        "trungVsNhat": "giong-het",
+        "khacNetVe": true,
+        "ghiChu": "Cùng mã Unicode nhưng nét vẽ của font Trung và font Nhật khác nhau."
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "jīn",
+            "chinh": true,
+            "viDuTu": "今天",
+            "viDuPinyin": [
+              "jīn",
+              "tiān"
+            ],
+            "viDuNghia": "hôm nay"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "コン",
+            "chinh": true,
+            "viDuTu": "今週[こんしゅう]",
+            "viDuNghia": "tuần này"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "いま",
+            "chinh": true,
+            "viDuTu": "今[いま]",
+            "viDuNghia": "bây giờ"
+          }
+        ],
+        "amHanViet": [
+          {
+            "am": "kim",
+            "chinh": true
+          }
+        ]
+      },
+      "nghia": {
+        "nhat": "今[いま]、現在[げんざい]",
+        "viet": "nay, bây giờ"
+      },
+      "soNet": 4,
+      "boThu": "人",
+      "boThuPinyin": [
+        "rén"
+      ],
+      "cangKiemTra": [
+        "Âm On キン (rất hiếm) chưa đưa vào vì chưa có từ ví dụ chắc chắn.",
+        "Nghĩa Trung/Nhật/Việt và từ ví dụ là bản nháp, chưa có người xác minh."
+      ]
+    },
+    {
+      "id": "han-0004",
+      "capHsk": 1,
+      "gianThe": "好",
+      "tuDangNhat": "好",
+      "phonThe": "好",
+      "soSanhTuDang": {
+        "trungVsNhat": "giong-het",
+        "khacNetVe": false,
+        "ghiChu": null
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "hǎo",
+            "chinh": true,
+            "viDuTu": "你好",
+            "viDuPinyin": [
+              "nǐ",
+              "hǎo"
+            ],
+            "viDuNghia": "xin chào",
+            "ghiChuBienDieu": "你好: chữ 你 đọc thành thanh 2 khi đứng trước thanh 3."
+          },
+          {
+            "am": "hào",
+            "chinh": false,
+            "viDuTu": "爱好",
+            "viDuPinyin": [
+              "ài",
+              "hào"
+            ],
+            "viDuNghia": "sở thích"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "コウ",
+            "chinh": true,
+            "viDuTu": "好意[こうい]",
+            "viDuNghia": "thiện ý"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "す-く",
+            "chinh": true,
+            "viDuTu": "好[す]き",
+            "viDuNghia": "thích"
+          },
+          {
+            "am": "この-む",
+            "chinh": false,
+            "viDuTu": "好[この]む",
+            "viDuNghia": "ưa chuộng"
+          }
+        ],
+        "amHanViet": [
+          {
+            "am": "hảo",
+            "chinh": true
+          },
+          {
+            "am": "hiếu",
+            "chinh": false
+          }
+        ]
+      },
+      "nghia": {
+        "nhat": "好[す]き、良[よ]い",
+        "viet": "tốt; thích"
+      },
+      "soNet": 6,
+      "boThu": "女",
+      "boThuPinyin": [
+        "nǚ"
+      ],
+      "cangKiemTra": [
+        "Âm Kun よ-い / い-い chưa đưa vào vì chưa có từ ví dụ chắc chắn.",
+        "Nghĩa Trung/Nhật/Việt và từ ví dụ là bản nháp, chưa có người xác minh."
+      ]
+    },
+    {
+      "id": "han-0005",
+      "capHsk": 1,
+      "gianThe": "车",
+      "tuDangNhat": "車",
+      "phonThe": "車",
+      "soSanhTuDang": {
+        "trungVsNhat": "khac-hoan-toan",
+        "khacNetVe": false,
+        "ghiChu": null
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "chē",
+            "chinh": true,
+            "viDuTu": "汽车",
+            "viDuPinyin": [
+              "qì",
+              "chē"
+            ],
+            "viDuNghia": "ô tô"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "シャ",
+            "chinh": true,
+            "viDuTu": "電車[でんしゃ]",
+            "viDuNghia": "tàu điện"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "くるま",
+            "chinh": true,
+            "viDuTu": "車[くるま]",
+            "viDuNghia": "xe"
+          }
+        ],
+        "amHanViet": [
+          {
+            "am": "xa",
+            "chinh": true
+          }
+        ]
+      },
+      "nghia": {
+        "nhat": "車[くるま]、乗[の]り物[もの]",
+        "viet": "xe"
+      },
+      "soNet": 4,
+      "boThu": "车",
+      "boThuPinyin": [
+        "chē"
+      ],
+      "cangKiemTra": [
+        "Âm jū (quân xe trong cờ tướng) chưa đưa vào vì ngoài phạm vi HSK 1.",
+        "Nghĩa Trung/Nhật/Việt và từ ví dụ là bản nháp, chưa có người xác minh."
+      ]
+    },
+    {
+      "id": "han-0006",
+      "capHsk": 1,
+      "gianThe": "书",
+      "tuDangNhat": "書",
+      "phonThe": "書",
+      "soSanhTuDang": {
+        "trungVsNhat": "khac-hoan-toan",
+        "khacNetVe": false,
+        "ghiChu": null
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "shū",
+            "chinh": true,
+            "viDuTu": "书包",
+            "viDuPinyin": [
+              "shū",
+              "bāo"
+            ],
+            "viDuNghia": "cặp sách"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "ショ",
+            "chinh": true,
+            "viDuTu": "図書館[としょかん]",
+            "viDuNghia": "thư viện"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "か-く",
+            "chinh": true,
+            "viDuTu": "書[か]く",
+            "viDuNghia": "viết"
+          }
+        ],
+        "amHanViet": [
+          {
+            "am": "thư",
+            "chinh": true
+          }
+        ]
+      },
+      "nghia": {
+        "nhat": "書[か]く、本[ほん]",
+        "viet": "sách; viết"
+      },
+      "soNet": 4,
+      "boThu": "乙",
+      "boThuPinyin": [
+        "yǐ"
+      ],
+      "cangKiemTra": [
+        "Nghĩa Trung/Nhật/Việt và từ ví dụ là bản nháp, chưa có người xác minh."
+      ]
+    },
+    {
+      "id": "han-0007",
+      "capHsk": 1,
+      "gianThe": "见",
+      "tuDangNhat": "見",
+      "phonThe": "見",
+      "soSanhTuDang": {
+        "trungVsNhat": "khac-hoan-toan",
+        "khacNetVe": false,
+        "ghiChu": null
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "jiàn",
+            "chinh": true,
+            "viDuTu": "再见",
+            "viDuPinyin": [
+              "zài",
+              "jiàn"
+            ],
+            "viDuNghia": "tạm biệt"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "ケン",
+            "chinh": true,
+            "viDuTu": "意見[いけん]",
+            "viDuNghia": "ý kiến"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "み-る",
+            "chinh": true,
+            "viDuTu": "見[み]る",
+            "viDuNghia": "xem, nhìn"
+          }
+        ],
+        "amHanViet": [
+          {
+            "am": "kiến",
+            "chinh": true
+          },
+          {
+            "am": "hiện",
+            "chinh": false
+          }
+        ]
+      },
+      "nghia": {
+        "nhat": "見[み]る、会[あ]う",
+        "viet": "thấy, gặp"
+      },
+      "soNet": 4,
+      "boThu": "见",
+      "boThuPinyin": [
+        "jiàn"
+      ],
+      "cangKiemTra": [
+        "Âm xiàn (dùng như 现, hiếm) chưa đưa vào vì ngoài phạm vi HSK 1.",
+        "Nghĩa Trung/Nhật/Việt và từ ví dụ là bản nháp, chưa có người xác minh."
+      ]
+    },
+    {
+      "id": "han-0008",
+      "capHsk": 1,
+      "gianThe": "东",
+      "tuDangNhat": "東",
+      "phonThe": "東",
+      "soSanhTuDang": {
+        "trungVsNhat": "khac-hoan-toan",
+        "khacNetVe": false,
+        "ghiChu": null
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "dōng",
+            "chinh": true,
+            "viDuTu": "东方",
+            "viDuPinyin": [
+              "dōng",
+              "fāng"
+            ],
+            "viDuNghia": "phương đông"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "トウ",
+            "chinh": true,
+            "viDuTu": "東京[とうきょう]",
+            "viDuNghia": "Tokyo"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "ひがし",
+            "chinh": true,
+            "viDuTu": "東[ひがし]",
+            "viDuNghia": "phía đông"
+          }
+        ],
+        "amHanViet": [
+          {
+            "am": "đông",
+            "chinh": true
+          }
+        ]
+      },
+      "nghia": {
+        "nhat": "東[ひがし]",
+        "viet": "phía đông"
+      },
+      "soNet": 5,
+      "boThu": "一",
+      "boThuPinyin": [
+        "yī"
+      ],
+      "cangKiemTra": [
+        "Nghĩa Trung/Nhật/Việt và từ ví dụ là bản nháp, chưa có người xác minh."
+      ]
+    },
+    {
+      "id": "han-0009",
+      "capHsk": 1,
+      "gianThe": "爱",
+      "tuDangNhat": "愛",
+      "phonThe": "愛",
+      "soSanhTuDang": {
+        "trungVsNhat": "khac-mot-chut",
+        "khacNetVe": false,
+        "ghiChu": "Chữ Nhật {ja|愛} giữ bộ 心 ở giữa, chữ giản thể 爱 bỏ bộ này."
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "ài",
+            "chinh": true,
+            "viDuTu": "我爱你",
+            "viDuPinyin": [
+              "wǒ",
+              "ài",
+              "nǐ"
+            ],
+            "viDuNghia": "tôi yêu bạn"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "アイ",
+            "chinh": true,
+            "viDuTu": "愛情[あいじょう]",
+            "viDuNghia": "tình yêu"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "いと-しい",
+            "chinh": true,
+            "viDuTu": "愛[いと]しい",
+            "viDuNghia": "đáng yêu, thân thương"
+          }
+        ],
+        "amHanViet": [
+          {
+            "am": "ái",
+            "chinh": true
+          }
+        ]
+      },
+      "nghia": {
+        "nhat": "愛[あい]、愛[あい]する",
+        "viet": "yêu"
+      },
+      "soNet": 10,
+      "boThu": "爪",
+      "boThuPinyin": [
+        "zhǎo"
+      ],
+      "cangKiemTra": [
+        "Nghĩa Trung/Nhật/Việt và từ ví dụ là bản nháp, chưa có người xác minh."
+      ]
+    },
+    {
+      "id": "han-0010",
+      "capHsk": 1,
+      "gianThe": "说",
+      "tuDangNhat": "説",
+      "phonThe": "說",
+      "soSanhTuDang": {
+        "trungVsNhat": "khac-mot-chut",
+        "khacNetVe": false,
+        "ghiChu": "Bộ bên trái là 讠 (giản thể) ở tiếng Trung, còn tiếng Nhật giữ {ja|言}."
+      },
+      "amDoc": {
+        "pinyin": [
+          {
+            "am": "shuō",
+            "chinh": true,
+            "viDuTu": "说话",
+            "viDuPinyin": [
+              "shuō",
+              "huà"
+            ],
+            "viDuNghia": "nói chuyện"
+          },
+          {
+            "am": "shuì",
+            "chinh": false,
+            "viDuTu": "游说",
+            "viDuPinyin": [
+              "yóu",
+              "shuì"
+            ],
+            "viDuNghia": "du thuyết, đi thuyết phục"
+          }
+        ],
+        "amOn": [
+          {
+            "am": "セツ",
+            "chinh": true,
+            "viDuTu": "説明[せつめい]",
+            "viDuNghia": "giải thích"
+          },
+          {
+            "am": "ゼイ",
+            "chinh": false,
+            "viDuTu": "遊説[ゆうぜい]",
+            "viDuNghia": "du thuyết"
+          }
+        ],
+        "amKun": [
+          {
+            "am": "と-く",
+            "chinh": true,
+            "viDuTu": "説[と]く",
+            "viDuNghia": "giải thích, thuyết phục"
+          }
+        ],
+        "amHanViet": [
+          {
+            "am": "duyệt",
+            "chinh": false
+          },
+          {
+            "am": "thoát",
+            "chinh": false
+          },
+          {
+            "am": "thuế",
+            "chinh": false
+          },
+          {
+            "am": "thuyết",
+            "chinh": false
+          },
+          {
+            "am": "thót",
+            "chinh": false
+          },
+          {
+            "am": "thốt",
+            "chinh": false
+          }
+        ]
+      },
+      "nghia": {
+        "nhat": "説[と]く、話[はな]す",
+        "viet": "nói; thuyết"
+      },
+      "soNet": 9,
+      "boThu": "讠",
+      "boThuPinyin": [
+        "yán"
+      ],
+      "cangKiemTra": [
+        "Âm yuè (dùng như 悦, cổ) chưa đưa vào vì ngoài phạm vi HSK 1.",
+        "Phồn thể có nhiều dạng (說 説), đang dùng 說.",
+        "Nghĩa Trung/Nhật/Việt và từ ví dụ là bản nháp, chưa có người xác minh."
+      ]
+    }
+  ]
+}

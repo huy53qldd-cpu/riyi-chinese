@@ -1,0 +1,1226 @@
+{
+  "ghiChu": "Phần NHẬP TAY của giai đoạn 4 (Tab C, từ số 1-100 của HSK 1). Từ Nhật tương đương, nghĩa Việt và chủ đề là BẢN NHÁP do Claude soạn, cần chủ dự án rà lại. 'kiem' là các từ khoá JMdict để công cụ đối chiếu nghĩa tiếng Anh với CC-CEDICT; để rỗng nghĩa là không kiểm tra tự động (trợ từ, tiền tố, cụm).",
+  "danhSach": {
+    "1": {
+      "nhat": "愛[あい]する、好[す]きだ",
+      "kiem": [
+        "愛する"
+      ],
+      "viet": "yêu, yêu thích",
+      "chuDe": "cam-xuc"
+    },
+    "2": {
+      "nhat": "〜ましょう、〜でしょう、〜ね",
+      "kiem": [],
+      "viet": "nhé, đi, chứ (trợ từ rủ rê, đề nghị, phỏng đoán)",
+      "chuDe": "ngu-phap-co-ban"
+    },
+    "3": {
+      "nhat": "八[はち]",
+      "kiem": [
+        "八"
+      ],
+      "viet": "tám",
+      "chuDe": "so-dem"
+    },
+    "4": {
+      "nhat": "お父[とう]さん、パパ",
+      "kiem": [
+        "お父さん"
+      ],
+      "viet": "bố, ba, cha",
+      "chuDe": "gia-dinh"
+    },
+    "5": {
+      "nhat": "百[ひゃく]",
+      "kiem": [
+        "百"
+      ],
+      "viet": "trăm",
+      "chuDe": "so-dem"
+    },
+    "6": {
+      "nhat": "昼間[ひるま]、日中[にっちゅう]",
+      "kiem": [
+        "昼間"
+      ],
+      "viet": "ban ngày",
+      "chuDe": "thoi-gian"
+    },
+    "7": {
+      "nhat": "半分[はんぶん]、半[はん]",
+      "kiem": [
+        "半分"
+      ],
+      "viet": "nửa, một nửa",
+      "chuDe": "so-dem"
+    },
+    "8": {
+      "nhat": "肉[にく]まん、中華[ちゅうか]まん",
+      "kiem": [
+        "肉まん"
+      ],
+      "viet": "bánh bao",
+      "chuDe": "do-an"
+    },
+    "9": {
+      "nhat": "コップ、カップ",
+      "kiem": [
+        "コップ"
+      ],
+      "viet": "cốc, ly",
+      "chuDe": "do-dung"
+    },
+    "10": {
+      "nhat": "〜冊[さつ]",
+      "kiem": [
+        "冊"
+      ],
+      "viet": "quyển (lượng từ cho sách)",
+      "chuDe": "luong-tu"
+    },
+    "11": {
+      "nhat": "〜側[がわ]、〜辺[へん]",
+      "kiem": [
+        "側"
+      ],
+      "viet": "bên, phía (hậu tố chỉ phương vị)",
+      "chuDe": "phuong-vi"
+    },
+    "12": {
+      "nhat": "病気[びょうき]",
+      "kiem": [
+        "病気"
+      ],
+      "viet": "bệnh; bị bệnh",
+      "chuDe": "suc-khoe"
+    },
+    "13": {
+      "nhat": "〜ない、〜ではない",
+      "kiem": [],
+      "viet": "không",
+      "chuDe": "ngu-phap-co-ban"
+    },
+    "14": {
+      "nhat": "どういたしまして、遠慮[えんりょ]しないで",
+      "kiem": [
+        "どういたしまして"
+      ],
+      "viet": "đừng khách sáo; không có gì",
+      "chuDe": "chao-hoi"
+    },
+    "15": {
+      "nhat": "〜しないで、〜してはいけない、いらない",
+      "kiem": [],
+      "viet": "đừng; không cần",
+      "chuDe": "ngu-phap-co-ban"
+    },
+    "16": {
+      "nhat": "料理[りょうり]、おかず、野菜[やさい]",
+      "kiem": [
+        "野菜"
+      ],
+      "viet": "món ăn; rau",
+      "chuDe": "do-an"
+    },
+    "17": {
+      "nhat": "お茶[ちゃ]",
+      "kiem": [
+        "お茶"
+      ],
+      "viet": "trà",
+      "chuDe": "do-an"
+    },
+    "18": {
+      "nhat": "歌[うた]う",
+      "kiem": [
+        "歌う"
+      ],
+      "viet": "hát",
+      "chuDe": "hoat-dong"
+    },
+    "19": {
+      "nhat": "スーパー、スーパーマーケット",
+      "kiem": [
+        "スーパーマーケット"
+      ],
+      "viet": "siêu thị",
+      "chuDe": "noi-chon"
+    },
+    "20": {
+      "nhat": "車[くるま]",
+      "kiem": [
+        "車"
+      ],
+      "viet": "xe",
+      "chuDe": "giao-thong"
+    },
+    "21": {
+      "nhat": "食[た]べる",
+      "kiem": [
+        "食べる"
+      ],
+      "viet": "ăn",
+      "chuDe": "do-an"
+    },
+    "22": {
+      "nhat": "着[き]る、履[は]く",
+      "kiem": [
+        "着る"
+      ],
+      "viet": "mặc, mang, đi (quần áo, giày dép)",
+      "chuDe": "quan-ao"
+    },
+    "23": {
+      "nhat": "タクシー",
+      "kiem": [
+        "タクシー"
+      ],
+      "viet": "taxi",
+      "chuDe": "giao-thong"
+    },
+    "24": {
+      "nhat": "大[おお]きい",
+      "kiem": [
+        "大きい"
+      ],
+      "viet": "to, lớn",
+      "chuDe": "tinh-chat"
+    },
+    "25": {
+      "nhat": "電話[でんわ]をかける",
+      "kiem": [],
+      "viet": "gọi điện thoại",
+      "chuDe": "hoat-dong"
+    },
+    "26": {
+      "nhat": "みなさん、みんな",
+      "kiem": [
+        "皆さん"
+      ],
+      "viet": "mọi người",
+      "chuDe": "nguoi"
+    },
+    "27": {
+      "nhat": "着[つ]く、到着[とうちゃく]する",
+      "kiem": [
+        "到着"
+      ],
+      "viet": "đến, tới",
+      "chuDe": "hoat-dong"
+    },
+    "28": {
+      "nhat": "大学[だいがく]",
+      "kiem": [
+        "大学"
+      ],
+      "viet": "đại học",
+      "chuDe": "truong-hoc"
+    },
+    "29": {
+      "nhat": "大学生[だいがくせい]",
+      "kiem": [
+        "大学生"
+      ],
+      "viet": "sinh viên đại học",
+      "chuDe": "truong-hoc"
+    },
+    "30": {
+      "nhat": "〜の",
+      "kiem": [],
+      "viet": "của (trợ từ định ngữ)",
+      "chuDe": "ngu-phap-co-ban"
+    },
+    "31": {
+      "nhat": "第[だい]〜",
+      "kiem": [],
+      "viet": "thứ (tiền tố chỉ số thứ tự)",
+      "chuDe": "so-dem"
+    },
+    "32": {
+      "nhat": "店[みせ]",
+      "kiem": [
+        "店"
+      ],
+      "viet": "cửa hàng, tiệm",
+      "chuDe": "noi-chon"
+    },
+    "33": {
+      "nhat": "〜時[じ]",
+      "kiem": [
+        "時"
+      ],
+      "viet": "giờ (chỉ giờ đồng hồ)",
+      "chuDe": "thoi-gian"
+    },
+    "34": {
+      "nhat": "電話[でんわ]",
+      "kiem": [
+        "電話"
+      ],
+      "viet": "điện thoại",
+      "chuDe": "do-dung"
+    },
+    "35": {
+      "nhat": "パソコン、コンピューター",
+      "kiem": [
+        "パソコン"
+      ],
+      "viet": "máy tính",
+      "chuDe": "do-dung"
+    },
+    "36": {
+      "nhat": "テレビ",
+      "kiem": [
+        "テレビ"
+      ],
+      "viet": "tivi",
+      "chuDe": "do-dung"
+    },
+    "37": {
+      "nhat": "映画[えいが]",
+      "kiem": [
+        "映画"
+      ],
+      "viet": "phim",
+      "chuDe": "giai-tri"
+    },
+    "38": {
+      "nhat": "映画館[えいがかん]",
+      "kiem": [
+        "映画館"
+      ],
+      "viet": "rạp chiếu phim",
+      "chuDe": "noi-chon"
+    },
+    "39": {
+      "nhat": "弟[おとうと]",
+      "kiem": [
+        "弟"
+      ],
+      "viet": "em trai",
+      "chuDe": "gia-dinh"
+    },
+    "40": {
+      "nhat": "物[もの]、品物[しなもの]",
+      "kiem": [
+        "物"
+      ],
+      "viet": "đồ, đồ vật",
+      "chuDe": "do-dung"
+    },
+    "41": {
+      "nhat": "みな、すべて、どちらも",
+      "kiem": [
+        "皆"
+      ],
+      "viet": "đều, tất cả",
+      "chuDe": "ngu-phap-co-ban"
+    },
+    "42": {
+      "nhat": "読[よ]む",
+      "kiem": [
+        "読む"
+      ],
+      "viet": "đọc",
+      "chuDe": "hoat-dong"
+    },
+    "43": {
+      "nhat": "正[ただ]しい、〜に対[たい]して",
+      "kiem": [
+        "正しい"
+      ],
+      "viet": "đúng; đối với",
+      "chuDe": "tinh-chat"
+    },
+    "44": {
+      "nhat": "すみません、ごめんなさい",
+      "kiem": [
+        "ごめんなさい"
+      ],
+      "viet": "xin lỗi",
+      "chuDe": "chao-hoi"
+    },
+    "45": {
+      "nhat": "多[おお]い",
+      "kiem": [
+        "多い"
+      ],
+      "viet": "nhiều",
+      "chuDe": "tinh-chat"
+    },
+    "46": {
+      "nhat": "いくつ、いくら、どのくらい",
+      "kiem": [
+        "幾ら"
+      ],
+      "viet": "bao nhiêu",
+      "chuDe": "so-dem"
+    },
+    "47": {
+      "nhat": "読書[どくしょ]する、勉強[べんきょう]する",
+      "kiem": [
+        "読書"
+      ],
+      "viet": "đọc sách; học",
+      "chuDe": "hoat-dong"
+    },
+    "48": {
+      "nhat": "二[に]",
+      "kiem": [
+        "二"
+      ],
+      "viet": "hai",
+      "chuDe": "so-dem"
+    },
+    "49": {
+      "nhat": "息子[むすこ]",
+      "kiem": [
+        "息子"
+      ],
+      "viet": "con trai",
+      "chuDe": "gia-dinh"
+    },
+    "50": {
+      "nhat": "ご飯[はん]、食事[しょくじ]",
+      "kiem": [
+        "ご飯"
+      ],
+      "viet": "cơm; bữa ăn",
+      "chuDe": "do-an"
+    },
+    "51": {
+      "nhat": "ホテル、レストラン",
+      "kiem": [
+        "ホテル",
+        "レストラン"
+      ],
+      "viet": "khách sạn; nhà hàng",
+      "chuDe": "noi-chon"
+    },
+    "52": {
+      "nhat": "部屋[へや]",
+      "kiem": [
+        "部屋"
+      ],
+      "viet": "phòng",
+      "chuDe": "noi-chon"
+    },
+    "53": {
+      "nhat": "とても、非常[ひじょう]に",
+      "kiem": [
+        "非常に"
+      ],
+      "viet": "rất, vô cùng",
+      "chuDe": "ngu-phap-co-ban"
+    },
+    "54": {
+      "nhat": "飛行機[ひこうき]",
+      "kiem": [
+        "飛行機"
+      ],
+      "viet": "máy bay",
+      "chuDe": "giao-thong"
+    },
+    "55": {
+      "nhat": "〜分[ふん]",
+      "kiem": [
+        "分"
+      ],
+      "viet": "phút; phân (đơn vị)",
+      "chuDe": "thoi-gian"
+    },
+    "56": {
+      "nhat": "〜分[ふん]、〜分間[ふんかん]",
+      "kiem": [
+        "分"
+      ],
+      "viet": "phút (khoảng thời gian)",
+      "chuDe": "thoi-gian"
+    },
+    "57": {
+      "nhat": "うれしい、喜[よろこ]ぶ",
+      "kiem": [
+        "嬉しい"
+      ],
+      "viet": "vui, vui mừng",
+      "chuDe": "cam-xuc"
+    },
+    "58": {
+      "nhat": "〜個[こ]、〜人[にん]",
+      "kiem": [
+        "個"
+      ],
+      "viet": "cái, con, người (lượng từ chung)",
+      "chuDe": "luong-tu"
+    },
+    "59": {
+      "nhat": "歌[うた]",
+      "kiem": [
+        "歌"
+      ],
+      "viet": "bài hát",
+      "chuDe": "giai-tri"
+    },
+    "60": {
+      "nhat": "兄[あに]、お兄[にい]さん",
+      "kiem": [
+        "兄"
+      ],
+      "viet": "anh trai",
+      "chuDe": "gia-dinh"
+    },
+    "61": {
+      "nhat": "あげる、くれる、与[あた]える",
+      "kiem": [
+        "あげる"
+      ],
+      "viet": "cho, đưa, tặng",
+      "chuDe": "hoat-dong"
+    },
+    "62": {
+      "nhat": "会社[かいしゃ]",
+      "kiem": [
+        "会社"
+      ],
+      "viet": "công ty",
+      "chuDe": "noi-chon"
+    },
+    "63": {
+      "nhat": "仕事[しごと]、働[はたら]く",
+      "kiem": [
+        "仕事"
+      ],
+      "viet": "công việc; làm việc",
+      "chuDe": "hoat-dong"
+    },
+    "64": {
+      "nhat": "犬[いぬ]",
+      "kiem": [
+        "犬"
+      ],
+      "viet": "chó",
+      "chuDe": "dong-vat"
+    },
+    "65": {
+      "nhat": "高[たか]い（値段[ねだん]が）",
+      "kiem": [
+        "高い"
+      ],
+      "viet": "đắt",
+      "chuDe": "tinh-chat"
+    },
+    "66": {
+      "nhat": "国[くに]",
+      "kiem": [
+        "国"
+      ],
+      "viet": "nước, quốc gia",
+      "chuDe": "noi-chon"
+    },
+    "67": {
+      "nhat": "まだ、さらに、もっと",
+      "kiem": [
+        "まだ"
+      ],
+      "viet": "còn, vẫn, vẫn còn",
+      "chuDe": "ngu-phap-co-ban"
+    },
+    "68": {
+      "nhat": "子供[こども]",
+      "kiem": [
+        "子供"
+      ],
+      "viet": "trẻ con, con cái",
+      "chuDe": "gia-dinh"
+    },
+    "69": {
+      "nhat": "中国語[ちゅうごくご]",
+      "kiem": [
+        "中国語"
+      ],
+      "viet": "tiếng Hán, tiếng Trung",
+      "chuDe": "ngon-ngu"
+    },
+    "70": {
+      "nhat": "漢字[かんじ]",
+      "kiem": [
+        "漢字"
+      ],
+      "viet": "chữ Hán",
+      "chuDe": "ngon-ngu"
+    },
+    "71": {
+      "nhat": "〜日[にち]（日付[ひづけ]）、番号[ばんごう]",
+      "kiem": [
+        "番号"
+      ],
+      "viet": "ngày (trong tháng); số",
+      "chuDe": "thoi-gian"
+    },
+    "72": {
+      "nhat": "良[よ]い、いい",
+      "kiem": [
+        "良い"
+      ],
+      "viet": "tốt, hay, khoẻ",
+      "chuDe": "tinh-chat"
+    },
+    "73": {
+      "nhat": "おいしい",
+      "kiem": [
+        "美味しい"
+      ],
+      "viet": "ngon",
+      "chuDe": "do-an"
+    },
+    "74": {
+      "nhat": "きれいだ、見[み]ごたえがある",
+      "kiem": [
+        "綺麗"
+      ],
+      "viet": "đẹp, dễ nhìn; hay (khi xem)",
+      "chuDe": "tinh-chat"
+    },
+    "75": {
+      "nhat": "聞[き]いて心地[ここち]よい",
+      "kiem": [],
+      "viet": "hay, nghe êm tai",
+      "chuDe": "tinh-chat"
+    },
+    "76": {
+      "nhat": "面白[おもしろ]い、楽[たの]しい",
+      "kiem": [
+        "面白い"
+      ],
+      "viet": "vui, thú vị",
+      "chuDe": "tinh-chat"
+    },
+    "77": {
+      "nhat": "〜と、および",
+      "kiem": [],
+      "viet": "và, với",
+      "chuDe": "ngu-phap-co-ban"
+    },
+    "78": {
+      "nhat": "飲[の]む",
+      "kiem": [
+        "飲む"
+      ],
+      "viet": "uống",
+      "chuDe": "do-an"
+    },
+    "79": {
+      "nhat": "とても、たいへん",
+      "kiem": [
+        "とても"
+      ],
+      "viet": "rất",
+      "chuDe": "ngu-phap-co-ban"
+    },
+    "80": {
+      "nhat": "後[あと]、後[うし]ろ",
+      "kiem": [
+        "後"
+      ],
+      "viet": "sau; phía sau",
+      "chuDe": "phuong-vi"
+    },
+    "81": {
+      "nhat": "帰[かえ]る、戻[もど]る",
+      "kiem": [
+        "帰る"
+      ],
+      "viet": "về, quay lại",
+      "chuDe": "hoat-dong"
+    },
+    "82": {
+      "nhat": "〜できる、〜ことができる",
+      "kiem": [],
+      "viet": "biết (làm gì nhờ đã học), có thể",
+      "chuDe": "ngu-phap-co-ban"
+    },
+    "83": {
+      "nhat": "列車[れっしゃ]",
+      "kiem": [
+        "列車"
+      ],
+      "viet": "tàu hỏa",
+      "chuDe": "giao-thong"
+    },
+    "84": {
+      "nhat": "いくつ、何[なん]〜",
+      "kiem": [
+        "幾つ"
+      ],
+      "viet": "mấy, bao nhiêu (số nhỏ)",
+      "chuDe": "so-dem"
+    },
+    "85": {
+      "nhat": "家[いえ]、家[うち]、家庭[かてい]",
+      "kiem": [
+        "家"
+      ],
+      "viet": "nhà, gia đình",
+      "chuDe": "gia-dinh"
+    },
+    "86": {
+      "nhat": "会[あ]う、見[み]る",
+      "kiem": [
+        "会う",
+        "見る"
+      ],
+      "viet": "thấy, gặp",
+      "chuDe": "hoat-dong"
+    },
+    "87": {
+      "nhat": "〜枚[まい]、〜件[けん]",
+      "kiem": [
+        "件"
+      ],
+      "viet": "cái, chiếc (lượng từ cho quần áo, sự việc)",
+      "chuDe": "luong-tu"
+    },
+    "88": {
+      "nhat": "呼[よ]ぶ、〜という名前[なまえ]だ",
+      "kiem": [
+        "呼ぶ"
+      ],
+      "viet": "gọi; tên là",
+      "chuDe": "hoat-dong"
+    },
+    "89": {
+      "nhat": "餃子[ギョーザ]",
+      "kiem": [
+        "餃子"
+      ],
+      "viet": "sủi cảo, bánh chẻo",
+      "chuDe": "do-an"
+    },
+    "90": {
+      "nhat": "家族[かぞく]",
+      "kiem": [
+        "家族"
+      ],
+      "viet": "người nhà, gia đình",
+      "chuDe": "gia-dinh"
+    },
+    "91": {
+      "nhat": "卵[たまご]",
+      "kiem": [
+        "卵"
+      ],
+      "viet": "trứng gà",
+      "chuDe": "do-an"
+    },
+    "92": {
+      "nhat": "姉[あね]、お姉[ねえ]さん",
+      "kiem": [
+        "姉"
+      ],
+      "viet": "chị gái",
+      "chuDe": "gia-dinh"
+    },
+    "93": {
+      "nhat": "今年[ことし]",
+      "kiem": [
+        "今年"
+      ],
+      "viet": "năm nay",
+      "chuDe": "thoi-gian"
+    },
+    "94": {
+      "nhat": "今日[きょう]",
+      "kiem": [
+        "今日"
+      ],
+      "viet": "hôm nay",
+      "chuDe": "thoi-gian"
+    },
+    "95": {
+      "nhat": "九[きゅう]、九[く]",
+      "kiem": [
+        "九"
+      ],
+      "viet": "chín",
+      "chuDe": "so-dem"
+    },
+    "96": {
+      "nhat": "思[おも]う、感[かん]じる",
+      "kiem": [
+        "思う"
+      ],
+      "viet": "cảm thấy, nghĩ rằng",
+      "chuDe": "hoat-dong"
+    },
+    "97": {
+      "nhat": "開[あ]ける、開[ひら]く",
+      "kiem": [
+        "開ける"
+      ],
+      "viet": "mở; lái (xe); bật",
+      "chuDe": "hoat-dong"
+    },
+    "98": {
+      "nhat": "車[くるま]を運転[うんてん]する",
+      "kiem": [
+        "運転"
+      ],
+      "viet": "lái xe",
+      "chuDe": "giao-thong"
+    },
+    "99": {
+      "nhat": "見[み]る、読[よ]む",
+      "kiem": [
+        "見る"
+      ],
+      "viet": "nhìn, xem, đọc",
+      "chuDe": "hoat-dong"
+    },
+    "100": {
+      "nhat": "診察[しんさつ]を受[う]ける、医者[いしゃ]にかかる",
+      "kiem": [
+        "診察"
+      ],
+      "viet": "đi khám bệnh",
+      "chuDe": "suc-khoe"
+    }
+  },
+  "ghiChuViDu": "Mỗi từ có tối đa 1 câu ví dụ lấy từ Tatoeba (CC BY 2.0 FR) theo mã câu Trung, kèm bản dịch Nhật đi cặp trong Tatoeba. Bản dịch Việt là bản nháp Claude soạn. Từ nào không có trong 'viDu' là không tìm được câu phù hợp trong Tatoeba (14 不客气, 55 分, 75 好听, 76 好玩儿), để trống, không bịa.",
+  "danhMucChuDe": {
+    "chao-hoi": "Chào hỏi",
+    "so-dem": "Số đếm",
+    "gia-dinh": "Gia đình",
+    "do-an": "Ăn uống",
+    "do-dung": "Đồ dùng",
+    "noi-chon": "Nơi chốn",
+    "giao-thong": "Giao thông",
+    "thoi-gian": "Thời gian",
+    "hoat-dong": "Hành động",
+    "tinh-chat": "Tính chất",
+    "cam-xuc": "Cảm xúc",
+    "ngu-phap-co-ban": "Ngữ pháp cơ bản",
+    "luong-tu": "Lượng từ",
+    "phuong-vi": "Phương vị",
+    "dong-vat": "Động vật",
+    "truong-hoc": "Trường học",
+    "ngon-ngu": "Ngôn ngữ",
+    "giai-tri": "Giải trí",
+    "suc-khoe": "Sức khoẻ",
+    "quan-ao": "Quần áo",
+    "nguoi": "Người"
+  },
+  "viDu": {
+    "1": {
+      "id": "380195",
+      "viet": "Tôi yêu bạn."
+    },
+    "2": {
+      "id": "4977427",
+      "viet": "Đi thôi!"
+    },
+    "3": {
+      "id": "8806670",
+      "viet": "Tôi có tám người anh trai."
+    },
+    "4": {
+      "id": "332500",
+      "viet": "Bố tôi rất bận."
+    },
+    "5": {
+      "id": "1883460",
+      "viet": "Tôi nợ anh ấy một trăm yên."
+    },
+    "6": {
+      "id": "13880640",
+      "viet": "Ban ngày tôi đi làm."
+    },
+    "7": {
+      "id": "375357",
+      "viet": "Trường tan học lúc 3 giờ rưỡi."
+    },
+    "8": {
+      "id": "6680079",
+      "viet": "Ngày nào tôi cũng ăn bánh bao ở cửa hàng tiện lợi."
+    },
+    "9": {
+      "id": "4885037",
+      "viet": "Đây là cốc của ai?"
+    },
+    "10": {
+      "id": "5869913",
+      "viet": "Quyển sách này nhỏ."
+    },
+    "11": {
+      "id": "5091361",
+      "viet": "Bên đó có người không?"
+    },
+    "12": {
+      "id": "982224",
+      "viet": "Anh ấy bị bệnh rồi."
+    },
+    "13": {
+      "id": "2182379",
+      "viet": "Không hiểu."
+    },
+    "15": {
+      "id": "13275195",
+      "viet": "Đừng làm ồn."
+    },
+    "16": {
+      "id": "10192331",
+      "viet": "Bạn có thích món ăn Trung Quốc không?"
+    },
+    "17": {
+      "id": "408498",
+      "viet": "Cô ấy đang pha trà."
+    },
+    "18": {
+      "id": "397199",
+      "viet": "Bạn có thích hát không?"
+    },
+    "19": {
+      "id": "4147188",
+      "viet": "Đã đi siêu thị."
+    },
+    "20": {
+      "id": "1911080",
+      "viet": "Mời lên xe."
+    },
+    "21": {
+      "id": "10483588",
+      "viet": "Ăn từ từ thôi."
+    },
+    "22": {
+      "id": "1400904",
+      "viet": "Mùa đông mặc áo len lông cừu."
+    },
+    "23": {
+      "id": "346457",
+      "viet": "Taxi đến rồi."
+    },
+    "24": {
+      "id": "1366211",
+      "viet": "Ngôi nhà đó rất lớn."
+    },
+    "25": {
+      "id": "10695961",
+      "viet": "Tôi đang gọi điện thoại."
+    },
+    "26": {
+      "id": "762992",
+      "viet": "Mọi người đều cười."
+    },
+    "27": {
+      "id": "1218350",
+      "viet": "Mùa thu đến rồi."
+    },
+    "28": {
+      "id": "12686379",
+      "viet": "Đại học khai giảng vào tháng Tư."
+    },
+    "29": {
+      "id": "567558",
+      "viet": "Tôi là sinh viên đại học."
+    },
+    "30": {
+      "id": "4760167",
+      "viet": "Cái này là của tôi."
+    },
+    "31": {
+      "id": "13876168",
+      "viet": "Xin hãy lật đến trang thứ chín."
+    },
+    "32": {
+      "id": "2144020",
+      "viet": "Cửa hàng này bán rau."
+    },
+    "33": {
+      "id": "8293429",
+      "viet": "Bây giờ là mấy giờ?"
+    },
+    "34": {
+      "id": "414482",
+      "viet": "Không ai nghe điện thoại."
+    },
+    "35": {
+      "id": "343844",
+      "viet": "Tôi có một cái máy tính."
+    },
+    "36": {
+      "id": "10695997",
+      "viet": "Tôi đang xem tivi."
+    },
+    "37": {
+      "id": "667350",
+      "viet": "Tôi thích xem phim."
+    },
+    "38": {
+      "id": "3859480",
+      "viet": "Rạp chiếu phim có gần ga tàu điện không?"
+    },
+    "39": {
+      "id": "13876694",
+      "viet": "Cô ấy đã kèm em trai làm bài tập."
+    },
+    "40": {
+      "id": "4881583",
+      "viet": "Bạn đang tìm gì à?"
+    },
+    "41": {
+      "id": "8780285",
+      "viet": "Ai cũng có điểm yếu."
+    },
+    "42": {
+      "id": "4761389",
+      "viet": "Cô ấy đang đọc tiếng Trung."
+    },
+    "43": {
+      "id": "8749674",
+      "viet": "Cái này không đúng."
+    },
+    "44": {
+      "id": "3378156",
+      "viet": "Xin lỗi, tôi đến muộn."
+    },
+    "45": {
+      "id": "10570094",
+      "viet": "Đừng ăn quá nhiều."
+    },
+    "46": {
+      "id": "5072395",
+      "viet": "Một thùng bao nhiêu tiền?"
+    },
+    "47": {
+      "id": "1733405",
+      "viet": "Đọc sách rất quan trọng."
+    },
+    "48": {
+      "id": "8715880",
+      "viet": "Nhà vệ sinh nam ở tầng hai."
+    },
+    "49": {
+      "id": "10029668",
+      "viet": "Con trai tôi mười tuổi rồi."
+    },
+    "50": {
+      "id": "10966821",
+      "viet": "Các bạn ăn cơm chưa?"
+    },
+    "51": {
+      "id": "659849",
+      "viet": "Tôi từng làm việc ở một nhà hàng."
+    },
+    "52": {
+      "id": "8943496",
+      "viet": "Có người đã vào phòng."
+    },
+    "53": {
+      "id": "334426",
+      "viet": "Cảm ơn rất nhiều!"
+    },
+    "54": {
+      "id": "461498",
+      "viet": "Máy bay đến đúng giờ."
+    },
+    "56": {
+      "id": "504639",
+      "viet": "Tôi còn phải đợi năm phút nữa."
+    },
+    "57": {
+      "id": "338023",
+      "viet": "Anh ấy rất vui."
+    },
+    "58": {
+      "id": "630268",
+      "viet": "Vẽ một vòng tròn."
+    },
+    "59": {
+      "id": "3859479",
+      "viet": "Bạn biết bài hát này không?"
+    },
+    "60": {
+      "id": "2144004",
+      "viet": "Anh ấy có ba người anh trai."
+    },
+    "61": {
+      "id": "4956751",
+      "viet": "Xin cho tôi ít nước."
+    },
+    "62": {
+      "id": "2054054",
+      "viet": "Công ty chúng tôi là công ty trách nhiệm hữu hạn."
+    },
+    "63": {
+      "id": "5100103",
+      "viet": "Công việc thế nào?"
+    },
+    "64": {
+      "id": "7781713",
+      "viet": "Bạn sợ chó à?"
+    },
+    "65": {
+      "id": "924018",
+      "viet": "Cái này không đắt."
+    },
+    "66": {
+      "id": "382414",
+      "viet": "Tôi muốn ra nước ngoài."
+    },
+    "67": {
+      "id": "602882",
+      "viet": "Còn muối không?"
+    },
+    "68": {
+      "id": "5578208",
+      "viet": "Đứa trẻ bị cảm rồi."
+    },
+    "69": {
+      "id": "2027963",
+      "viet": "Bạn biết nói tiếng Trung không?"
+    },
+    "70": {
+      "id": "1843469",
+      "viet": "Tôi đang học chữ Hán."
+    },
+    "71": {
+      "id": "4463940",
+      "viet": "Hôm nay là ngày 5 tháng 3."
+    },
+    "72": {
+      "id": "982281",
+      "viet": "Bạn vẫn ổn chứ?"
+    },
+    "73": {
+      "id": "2062924",
+      "viet": "Chuối rất ngon."
+    },
+    "74": {
+      "id": "1366190",
+      "viet": "Bạn đã xem bộ phim nào hay thế này chưa?"
+    },
+    "77": {
+      "id": "8888035",
+      "viet": "Tôi quen anh ấy."
+    },
+    "78": {
+      "id": "411612",
+      "viet": "Bạn có uống rượu không?"
+    },
+    "79": {
+      "id": "1278516",
+      "viet": "Cô ấy rất bận."
+    },
+    "80": {
+      "id": "330582",
+      "viet": "Sau này hãy nói tiếp."
+    },
+    "81": {
+      "id": "13111620",
+      "viet": "Về đi."
+    },
+    "82": {
+      "id": "4764637",
+      "viet": "Tôi biết lái xe."
+    },
+    "83": {
+      "id": "333835",
+      "viet": "Tàu hỏa khởi hành lúc 6 giờ."
+    },
+    "84": {
+      "id": "755839",
+      "viet": "Mấy quả táo?"
+    },
+    "85": {
+      "id": "1163571",
+      "viet": "Cô ấy có ở nhà không?"
+    },
+    "86": {
+      "id": "4879134",
+      "viet": "Mai gặp lại."
+    },
+    "87": {
+      "id": "3667783",
+      "viet": "Thử chiếc áo len này đi."
+    },
+    "88": {
+      "id": "13947400",
+      "viet": "Tôi tên là Vương Minh."
+    },
+    "89": {
+      "id": "13972629",
+      "viet": "Sủi cảo nhà làm nhiều nhân lắm."
+    },
+    "90": {
+      "id": "471395",
+      "viet": "Đây là người nhà của bạn à?"
+    },
+    "91": {
+      "id": "334425",
+      "viet": "Xin hỏi, trứng gà ở đâu?"
+    },
+    "92": {
+      "id": "469250",
+      "viet": "Anh ấy có ba người chị gái."
+    },
+    "93": {
+      "id": "472815",
+      "viet": "Mùa hè năm nay rất lạnh."
+    },
+    "94": {
+      "id": "776959",
+      "viet": "Hôm nay có tuyết."
+    },
+    "95": {
+      "id": "1878287",
+      "viet": "Ngân hàng mở cửa lúc 9 giờ."
+    },
+    "96": {
+      "id": "12686127",
+      "viet": "Tôi nghĩ anh ấy sẽ đến."
+    },
+    "97": {
+      "id": "862207",
+      "viet": "Mở cửa ra!"
+    },
+    "98": {
+      "id": "5092212",
+      "viet": "Lái xe chậm thôi."
+    },
+    "99": {
+      "id": "10350401",
+      "viet": "Nhìn anh ấy."
+    },
+    "100": {
+      "id": "3699941",
+      "viet": "Bạn nên đi khám bệnh."
+    }
+  },
+  "suaFurigana": {
+    "28": [
+      [
+        "四[よん]月[がつ]",
+        "四月[しがつ]"
+      ]
+    ],
+    "33": [
+      [
+        "何時[なんどき]",
+        "何時[なんじ]"
+      ]
+    ],
+    "46": [
+      [
+        "一[いち]箱[ばこ]",
+        "一箱[ひとはこ]"
+      ]
+    ],
+    "86": [
+      [
+        "明日[あす]",
+        "明日[あした]"
+      ]
+    ]
+  },
+  "ghiChuSuaFurigana": "Sửa tay những chỗ máy gắn furigana sai (rà bằng mắt ngày 2026-09-20). Mỗi mục là [chuỗi máy gắn, chuỗi đúng]; nếu chuỗi máy gắn không còn xuất hiện thì công cụ báo lỗi để biết bản sửa đã cũ."
+}

@@ -1,0 +1,416 @@
+{
+  "ghiChu": "Phần NHẬP TAY của giai đoạn 5 (Tab F, 15 điểm ngữ pháp HSK 1-2). Phần giải thích, đối chiếu tiếng Nhật, cảnh báo lỗi, câu sai/đúng và bản dịch Việt là BẢN NHÁP do Claude soạn từ kiến thức ngữ pháp, KHÔNG có từ điển nào kiểm được, nên mọi điểm đều còn cangKiemTra. Câu ví dụ chọn theo mã Tatoeba (CC BY 2.0 FR) kèm bản dịch Nhật đi cặp. 'nguonPDF' ghi mục của đại cương HSK làm căn cứ chọn điểm.",
+  "danhSach": [
+    {
+      "capHsk": 1,
+      "nguonPDF": "主谓句1：动词谓语句；动宾短语",
+      "ten": "Trật tự cơ bản: chủ – động – tân",
+      "congThuc": "Chủ ngữ + Động từ + Tân ngữ",
+      "giaiThichViet": "Động từ đứng ngay sau chủ ngữ, tân ngữ đứng sau động từ. Vai trò của từ do VỊ TRÍ quyết định, không có trợ từ nào đánh dấu tân ngữ.",
+      "cauTrucNhat": "主語 + 目的語 + を + 動詞",
+      "choLech": "Trật tự NGƯỢC nhau: tiếng Trung đặt động từ TRƯỚC tân ngữ, tiếng Nhật đặt động từ ở CUỐI câu. Tiếng Trung cũng không có trợ từ như を, が để đánh dấu vai trò của từ.",
+      "viDu": [
+        {
+          "id": "10448719",
+          "viet": "Tôi học tiếng Anh."
+        },
+        {
+          "id": "382426",
+          "viet": "Tôi thích mèo."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Đặt động từ ở cuối câu theo thói quen tiếng Nhật là lỗi phổ biến nhất khi dịch nguyên trật tự từ sang tiếng Trung.",
+          "cauSai": "我英语学。",
+          "cauDung": "我学英语。"
+        }
+      ]
+    },
+    {
+      "capHsk": 1,
+      "nguonPDF": "动态助词 了1；完成态 用动态助词“了1”表示",
+      "ten": "了 sau động từ: hành động hoàn thành",
+      "congThuc": "Chủ ngữ + Động từ + 了 (+ Tân ngữ)",
+      "giaiThichViet": "了 đặt ngay sau động từ để nói hành động đó đã hoàn thành. Đây KHÔNG phải dấu hiệu của thì quá khứ. Khi tân ngữ đơn giản, câu có 了 thường cần thêm số lượng hoặc phần nối tiếp cho tự nhiên (我买了一本书, 我喝了水就走).",
+      "cauTrucNhat": "〜た（〜ました）",
+      "choLech": "了 đánh dấu hành động ĐÃ HOÀN THÀNH, còn た là THÌ QUÁ KHỨ. Hai thứ này không trùng nhau: việc quá khứ có tính thói quen hoặc chỉ miêu tả thì tiếng Trung thường không dùng 了, và 了 vẫn có thể dùng cho việc chưa xảy ra (明天吃了饭再走), điều mà た không làm được.",
+      "viDu": [
+        {
+          "id": "9415187",
+          "viet": "Tôi đã uống nước."
+        },
+        {
+          "id": "11837753",
+          "viet": "Tôi đã mua một quyển sách."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "Người biết tiếng Nhật hay thêm 了 vào mọi câu quá khứ vì thấy た. Câu quá khứ mang tính thói quen thường không dùng 了.",
+          "cauSai": "我小时候每天喝了牛奶。",
+          "cauDung": "我小时候每天喝牛奶。"
+        }
+      ]
+    },
+    {
+      "capHsk": 1,
+      "nguonPDF": "语气助词 了2；变化态 用动态助词“了2”表示",
+      "ten": "了 cuối câu: tình huống mới, sự thay đổi",
+      "congThuc": "Câu + 了",
+      "giaiThichViet": "了 đặt CUỐI câu báo một tình huống mới hoặc sự thay đổi trạng thái: trời mưa rồi, lớn rồi. Cùng một chữ 了 nhưng khác chức năng với 了 đứng sau động từ.",
+      "cauTrucNhat": "〜た／〜ている／〜なった",
+      "choLech": "Tiếng Nhật không có một dạng cố định tương ứng. Tuỳ ngữ cảnh mà dịch thành なった, た hay ている. Ý 'một trạng thái mới vừa xuất hiện' của 了 không có dấu hiệu ngữ pháp riêng trong tiếng Nhật.",
+      "viDu": [
+        {
+          "id": "507343",
+          "viet": "Lại mưa rồi!"
+        },
+        {
+          "id": "9962396",
+          "viet": "Bạn lớn rồi."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "thieu-thanh-phan",
+          "noiDung": "Thiếu 了 thì câu chỉ nói về việc lớn lên nói chung, không diễn đạt 'đã lớn rồi'.",
+          "cauSai": "你长大。",
+          "cauDung": "你长大了。"
+        }
+      ]
+    },
+    {
+      "capHsk": 1,
+      "nguonPDF": "“有”字句1 表示领有；否定副词 没（有）",
+      "ten": "有 và 没有: có và không có",
+      "congThuc": "Chủ ngữ + 有 + Tân ngữ  |  Chủ ngữ + 没有 + Tân ngữ",
+      "giaiThichViet": "有 nói về sở hữu. Phủ định của 有 là 没有 (nói nhanh có thể chỉ nói 没), tuyệt đối không dùng 不有.",
+      "cauTrucNhat": "〜がある／〜がいる／〜を持っている",
+      "choLech": "Tiếng Nhật chia thành ある (vật) và いる (người, con vật), còn tiếng Trung chỉ có MỘT chữ 有 cho cả hai. Chủ ngữ của câu tiếng Trung là người sở hữu, trong khi tiếng Nhật hay đặt người sở hữu với に và vật sở hữu với が ({ja|私には本がある}).",
+      "viDu": [
+        {
+          "id": "695413",
+          "viet": "Tôi có từ điển."
+        },
+        {
+          "id": "12169790",
+          "viet": "Tôi không có sách."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Phủ định của 有 là 没有, không phải 不有.",
+          "cauSai": "我不有书。",
+          "cauDung": "我没有书。"
+        }
+      ]
+    },
+    {
+      "capHsk": 1,
+      "nguonPDF": "否定副词 不、没（有）、不要",
+      "ten": "不 và 没: hai cách phủ định",
+      "congThuc": "不 + Động từ / Tính từ  |  没(有) + Động từ",
+      "giaiThichViet": "不 phủ định thói quen, ý muốn, trạng thái hiện tại hoặc tương lai. 没 phủ định việc đã xảy ra hoặc chưa xảy ra.",
+      "cauTrucNhat": "〜ない／〜なかった／〜ていない",
+      "choLech": "Tiếng Nhật chỉ có MỘT dạng phủ định ない rồi chia theo thì. Tiếng Trung chọn 不 hay 没 theo LOẠI phủ định (thói quen, ý chí hay việc có xảy ra), không theo thì. Vì vậy một ない có thể ứng với 不 hoặc 没 tuỳ ngữ cảnh.",
+      "viDu": [
+        {
+          "id": "11239872",
+          "viet": "Tôi không đọc báo."
+        },
+        {
+          "id": "902044",
+          "viet": "Khách không đến."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "Nói về việc đã qua mà không xảy ra thì dùng 没, dùng 不 sẽ thành 'hôm qua đã không định đến'.",
+          "cauSai": "他昨天不来。",
+          "cauDung": "他昨天没来。"
+        }
+      ]
+    },
+    {
+      "capHsk": 1,
+      "nguonPDF": "疑问句（1）是非问句（2）特指问句；疑问代词",
+      "ten": "Câu hỏi: 吗 và từ nghi vấn",
+      "congThuc": "Câu trần thuật + 吗？  |  Từ nghi vấn đặt đúng vị trí cần hỏi",
+      "giaiThichViet": "Hỏi có/không: thêm 吗 cuối câu. Hỏi thông tin: thay phần cần hỏi bằng từ nghi vấn (什么, 谁, 几, 哪儿), không đổi trật tự câu.",
+      "cauTrucNhat": "〜か／何・誰 + 助詞",
+      "choLech": "吗 giống trợ từ か ở cuối câu, và từ nghi vấn cũng đứng đúng chỗ của thành phần cần hỏi như {ja|何}, {ja|誰}. Điểm lệch: câu đã có từ nghi vấn thì KHÔNG thêm 吗, trong khi tiếng Nhật vẫn thêm か ({ja|何ですか}).",
+      "viDu": [
+        {
+          "id": "10966808",
+          "viet": "Bạn tên gì?"
+        },
+        {
+          "id": "487274",
+          "viet": "Bạn bận không?"
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "Thấy か cuối câu hỏi nên thêm 吗 cả khi đã có từ nghi vấn.",
+          "cauSai": "你叫什么吗？",
+          "cauDung": "你叫什么？"
+        }
+      ]
+    },
+    {
+      "capHsk": 1,
+      "nguonPDF": "进行态（1）……在/正在+动词",
+      "ten": "在 / 正在: đang làm",
+      "congThuc": "Chủ ngữ + 在 / 正在 + Động từ (+ Tân ngữ)",
+      "giaiThichViet": "在 hoặc 正在 đặt TRƯỚC động từ để nói hành động đang diễn ra.",
+      "cauTrucNhat": "〜ている",
+      "choLech": "〜ている của tiếng Nhật vừa chỉ hành động đang diễn ra vừa chỉ trạng thái kết quả ({ja|窓が開いている}). Tiếng Trung tách hai chức năng: 在/正在 chỉ 'đang làm', còn trạng thái kết quả dùng cách khác (着, 了). Không thể dịch mọi 〜ている thành 在.",
+      "viDu": [
+        {
+          "id": "10613902",
+          "viet": "Tôi đang ăn dưa hấu."
+        },
+        {
+          "id": "5668936",
+          "viet": "Tôi đang học tiếng Hàn."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "nham-voi-tieng-nhat",
+          "noiDung": "Đừng dịch máy móc mọi 〜ている thành 在. Với trạng thái kết quả như 'cửa sổ đang mở', 在 không phải cách nói đúng.",
+          "cauSai": null,
+          "cauDung": null
+        }
+      ]
+    },
+    {
+      "capHsk": 1,
+      "nguonPDF": "量词 名量词（1）专用名量词：本、个、家、口、块、件、只、元；数量短语",
+      "ten": "Lượng từ: số từ + lượng từ + danh từ",
+      "congThuc": "Số từ + Lượng từ + Danh từ",
+      "giaiThichViet": "Giữa số từ và danh từ bắt buộc có lượng từ, và mỗi loại danh từ đi với lượng từ riêng: 个 (chung), 本 (sách), 只 (con vật nhỏ), 条 (vật dài, cả con chó), 件 (áo, sự việc).",
+      "cauTrucNhat": "名詞 + を + 数 + 助数詞",
+      "choLech": "Cùng ý tưởng với {ja|助数詞} nhưng lượng từ Trung và trợ số từ Nhật KHÔNG trùng nhau: chó là 一条狗 (条) mà tiếng Nhật là {ja|一匹} ({ja|匹}), mèo là 两只猫 (只) mà tiếng Nhật là {ja|二匹} ({ja|匹}). Vị trí cũng khác: tiếng Trung đặt số lượng TRƯỚC danh từ, tiếng Nhật thường đặt SAU danh từ ({ja|犬を一匹飼っている}).",
+      "viDu": [
+        {
+          "id": "414228",
+          "viet": "Tôi có một con chó."
+        },
+        {
+          "id": "482305",
+          "viet": "Anh ấy có hai con mèo."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "thieu-thanh-phan",
+          "noiDung": "Không được bỏ lượng từ giữa số từ và danh từ.",
+          "cauSai": "我有一狗。",
+          "cauDung": "我有一条狗。"
+        }
+      ]
+    },
+    {
+      "capHsk": 1,
+      "nguonPDF": "结构助词 的1；定语",
+      "ten": "的: định ngữ đứng trước danh từ",
+      "congThuc": "Định ngữ + 的 + Danh từ",
+      "giaiThichViet": "的 nối định ngữ (người sở hữu, tính chất) với danh từ. Với đại từ nhân xưng và người thân gần gũi thường bỏ 的 (我妈妈).",
+      "cauTrucNhat": "〜の",
+      "choLech": "的 giống の nhưng không trùng khít. Ví dụ tiếng Trung nói 汤姆的手大 (tay CỦA Tom to) thì tiếng Nhật tự nhiên hơn là {ja|トムは手が大きい} (Tom thì tay to) với chủ ngữ phụ が. Ngoài ra 的 còn đứng sau tính từ (漂亮的花), còn tính từ tiếng Nhật đứng thẳng trước danh từ (きれいな花).",
+      "viDu": [
+        {
+          "id": "789581",
+          "viet": "Đây là xe của tôi."
+        },
+        {
+          "id": "5114139",
+          "viet": "Tay của Tom to."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "thieu-thanh-phan",
+          "noiDung": "Thiếu 的 giữa đại từ sở hữu và danh từ vật.",
+          "cauSai": "这是我车。",
+          "cauDung": "这是我的车。"
+        }
+      ]
+    },
+    {
+      "capHsk": 1,
+      "nguonPDF": "状语 表示时间、处所的词语作状语；介词 引出时间、处所 在",
+      "ten": "Thời gian và nơi chốn đứng trước động từ",
+      "congThuc": "Chủ ngữ + (Thời gian) + 在 + Nơi chốn + Động từ",
+      "giaiThichViet": "Từ chỉ thời gian đặt trước động từ (đầu câu hoặc sau chủ ngữ). 在 + nơi chốn cũng đặt TRƯỚC động từ chính.",
+      "cauTrucNhat": "時間 + 場所 + で + 動詞",
+      "choLech": "Vị trí gần giống nhau (đều đứng trước động từ) nên ít lệch về thứ tự. Điểm khác là hình thức: tiếng Trung dùng giới từ 在 đặt TRƯỚC danh từ nơi chốn, tiếng Nhật dùng trợ từ で đặt SAU danh từ.",
+      "viDu": [
+        {
+          "id": "2785224",
+          "viet": "Tôi chơi ở trong vườn."
+        },
+        {
+          "id": "414247",
+          "viet": "Ngày nào tôi cũng chạy bộ."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Không đặt 在 + nơi chốn sau động từ hành động (trừ vài động từ như 住在, 坐在).",
+          "cauSai": "我玩在花园里。",
+          "cauDung": "我在花园里玩。"
+        }
+      ]
+    },
+    {
+      "capHsk": 1,
+      "nguonPDF": "能愿动词 会、能；想、要；可以",
+      "ten": "Động từ năng nguyện: 会 能 想 要 可以",
+      "congThuc": "Chủ ngữ + Động từ năng nguyện + Động từ (+ Tân ngữ)",
+      "giaiThichViet": "Đứng trước động từ chính: 会 (biết làm nhờ đã học), 能 (có khả năng, điều kiện cho phép), 想 (muốn), 要 (muốn, cần), 可以 (được phép).",
+      "cauTrucNhat": "〜できる／〜たい／〜てもいい",
+      "choLech": "Tiếng Nhật diễn đạt bằng đuôi chia của động từ (できる, 〜たい, 〜てもいい) đặt ở CUỐI câu. Tiếng Trung dùng từ riêng đứng TRƯỚC động từ chính và không chia. 会 và 能 đều gần với できる nhưng khác nhau: 会 là kỹ năng học được, 能 là năng lực hoặc điều kiện ở thời điểm đó.",
+      "viDu": [
+        {
+          "id": "136236",
+          "viet": "Tôi biết nói tiếng Pháp."
+        },
+        {
+          "id": "382414",
+          "viet": "Tôi muốn ra nước ngoài."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "Đặt từ năng nguyện sau động từ chính theo thói quen đuôi câu tiếng Nhật.",
+          "cauSai": "我法语说会。",
+          "cauDung": "我会说法语。"
+        }
+      ]
+    },
+    {
+      "capHsk": 2,
+      "nguonPDF": "比较句1（1）A比B+形容词；介词 比",
+      "ten": "So sánh bằng 比",
+      "congThuc": "A + 比 + B + Tính từ",
+      "giaiThichViet": "So sánh hơn: A 比 B + tính từ. Không thêm 很 trước tính từ trong câu có 比.",
+      "cauTrucNhat": "AはBより + 形容詞",
+      "choLech": "Vị trí của đối tượng so sánh ngược nhau: tiếng Trung đặt 比 TRƯỚC B (比B), tiếng Nhật đặt より SAU B (Bより). Ngoài ra tiếng Trung không dùng 很 trước tính từ trong câu 比.",
+      "viDu": [
+        {
+          "id": "916624",
+          "viet": "Tôi thấp hơn bạn."
+        },
+        {
+          "id": "340652",
+          "viet": "Trái đất nhỏ hơn mặt trời."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Không dùng 很 (và các phó từ mức độ) trước tính từ trong câu 比.",
+          "cauSai": "我比你很矮。",
+          "cauDung": "我比你矮。"
+        }
+      ]
+    },
+    {
+      "capHsk": 2,
+      "nguonPDF": "状态补语1 动词+得+形容词性短语；结构助词 得",
+      "ten": "得: bổ ngữ trạng thái",
+      "congThuc": "Động từ + 得 + Tính từ (+ Bổ ngữ)",
+      "giaiThichViet": "得 nối động từ với phần mô tả mức độ hoặc cách thức: 跑得快 (chạy nhanh). Đừng nhầm 得 với 的 và 地, cả ba cùng đọc là de.",
+      "cauTrucNhat": "〜のが速い／〜く + 動詞",
+      "choLech": "Không có dạng trùng khít. Tiếng Nhật thường đưa tính từ lên TRƯỚC động từ làm trạng từ ({ja|速く走る}) hoặc dùng {ja|〜のが上手だ}, còn tiếng Trung đặt phần mô tả SAU động từ qua 得. Trật tự mô tả và động từ vì vậy bị đảo.",
+      "viDu": [
+        {
+          "id": "5072385",
+          "viet": "Tom chạy nhanh."
+        },
+        {
+          "id": "335609",
+          "viet": "Tom đi rất chậm."
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "thieu-thanh-phan",
+          "noiDung": "Thiếu 得 khi mô tả cách thức của động từ.",
+          "cauSai": "他跑很快。",
+          "cauDung": "他跑得很快。"
+        }
+      ],
+      "troTu": {
+        "得": "de"
+      }
+    },
+    {
+      "capHsk": 2,
+      "nguonPDF": "经历态 用动态助词“过”表示；动态助词 过",
+      "ten": "过: đã từng",
+      "congThuc": "Động từ + 过 (+ Tân ngữ)  |  没(有) + Động từ + 过",
+      "giaiThichViet": "过 đặt sau động từ để nói đã từng trải qua. Phủ định dùng 没(有)…过, không dùng 不.",
+      "cauTrucNhat": "〜たことがある",
+      "choLech": "Gần tương đương nhất với 〜たことがある. Điểm lệch: 过 là hậu tố gắn thẳng vào động từ (去过), còn 〜たことがある là cụm nhiều thành phần. Phủ định là 没去过. Ngoài ra 过 còn có nghĩa 'xong' (吃过饭了 = ăn cơm xong rồi), nghĩa này 〜たことがある không có.",
+      "viDu": [
+        {
+          "id": "333004",
+          "viet": "Cô ấy từng đến Paris."
+        },
+        {
+          "id": "471037",
+          "viet": "Bạn đã từng thấy cá voi chưa?"
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Phủ định kinh nghiệm dùng 没…过, không dùng 不.",
+          "cauSai": "我不去过巴黎。",
+          "cauDung": "我没去过巴黎。"
+        }
+      ],
+      "troTu": {
+        "过": "guo"
+      }
+    },
+    {
+      "capHsk": 2,
+      "nguonPDF": "结果补语1 动词+错/懂/好/会/完",
+      "ten": "Bổ ngữ kết quả: 完 懂 错 好",
+      "congThuc": "Động từ + Bổ ngữ kết quả (完 / 懂 / 错 / 好) (+ 了)",
+      "giaiThichViet": "Thêm 完, 懂, 错, 好… ngay sau động từ để nói KẾT QUẢ của hành động: 吃完 (ăn xong), 听懂 (nghe hiểu), 写错 (viết sai). Phủ định dùng 没: 没听懂.",
+      "cauTrucNhat": "〜終わる／〜てわかる／〜間違える",
+      "choLech": "Tiếng Nhật diễn đạt kết quả bằng động từ ghép hoặc cụm khác ({ja|食べ終わる}, {ja|聞いてわかる}, {ja|書き間違える}). Tiếng Trung ghép động từ với bổ ngữ thành một khối, không chia đuôi ở giữa. Các cặp này không tương ứng 1-1, ví dụ 懂 là 'hiểu' và không trùng hẳn với わかる.",
+      "viDu": [
+        {
+          "id": "9453425",
+          "viet": "Chúng tôi đã ăn xong bữa trưa."
+        },
+        {
+          "id": "2032276",
+          "viet": "Hiểu chưa?"
+        }
+      ],
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "了 đứng SAU bổ ngữ kết quả, không chen vào giữa động từ và bổ ngữ.",
+          "cauSai": "我听了懂。",
+          "cauDung": "我听懂了。"
+        }
+      ]
+    }
+  ]
+}

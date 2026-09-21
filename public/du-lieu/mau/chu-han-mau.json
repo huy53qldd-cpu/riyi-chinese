@@ -44,7 +44,6 @@
         "amHanViet": [{ "am": "học", "chinh": true }]
       },
       "nghia": {
-        "trung": "学习；模仿",
         "nhat": "学[まな]ぶ、勉強[べんきょう]する",
         "viet": "học, học tập"
       },
@@ -97,7 +96,6 @@
         "amHanViet": [{ "am": "trực", "chinh": true }]
       },
       "nghia": {
-        "trung": "不弯曲；一直",
         "nhat": "まっすぐ、直[なお]す",
         "viet": "thẳng, trực tiếp"
       },
@@ -144,7 +142,6 @@
         "amHanViet": [{ "am": "môn", "chinh": true }]
       },
       "nghia": {
-        "trung": "出入口",
         "nhat": "門[もん]、出入[でい]り口[ぐち]",
         "viet": "cửa, cổng"
       },

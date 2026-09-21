@@ -115,7 +115,7 @@ Ba trường hợp cần ghi:
       // Âm nào "chinh": true thì hiển thị to, các âm còn lại hiện nhỏ bên dưới.
       "amDoc": {
         "pinyin": [
-          { "am": "xué", "chinh": true, "viDuTu": "学习", "viDuNghia": "học tập" }
+          { "am": "xué", "chinh": true, "viDuTu": "学习", "viDuPinyin": ["xué", "xí"], "viDuNghia": "học tập" }
         ],
         "amOn": [
           { "am": "ガク", "chinh": true, "viDuTu": "学生[がくせい]", "viDuNghia": "học sinh" }
@@ -130,13 +130,13 @@ Ba trường hợp cần ghi:
 
       // --- Nghĩa, đúng thứ tự Trung → Nhật → Việt ---
       "nghia": {
-        "trung": "学习、模仿",
         "nhat": "学[まな]ぶ、勉強[べんきょう]する",
         "viet": "học, học tập"
       },
 
       "soNet": 8,
       "boThu": "子",
+      "boThuPinyin": ["zǐ"],    // pinyin của chính chữ bộ thủ, để hiện ruby
 
       // Danh sách trường chưa xác minh được, để người kiểm tra biết đường rà lại.
       // Mảng rỗng nghĩa là đã kiểm tra hết.
@@ -309,7 +309,6 @@ Ba trường hợp cần ghi:
         "nhan": "gần tương đương, không trùng khít",
         "choLech": "了 đánh dấu hành động ĐÃ HOÀN THÀNH, còn た là THÌ QUÁ KHỨ. Hai thứ này không trùng nhau ...",
 
-        "viDuNhat": "ご飯[はん]を食[た]べました。"
       },
 
       "giaiThichViet": "...",

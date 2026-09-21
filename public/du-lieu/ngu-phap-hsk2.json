@@ -1,0 +1,325 @@
+{
+  "loai": "ngu-phap",
+  "cap": 2,
+  "phienBan": 1,
+  "capNhatLuc": "2026-09-20",
+  "nguon": "Các điểm chọn theo đại cương HSK 2025-11 (mục nguonPDF). Câu ví dụ và bản dịch Nhật: Tatoeba (CC BY 2.0 FR).",
+  "danhSach": [
+    {
+      "id": "np-0012",
+      "capHsk": 2,
+      "ten": "So sánh bằng 比",
+      "congThuc": "A + 比 + B + Tính từ",
+      "viDu": [
+        {
+          "trung": "我比你矮。",
+          "pinyin": [
+            "wǒ",
+            "bǐ",
+            "nǐ",
+            "ǎi",
+            ""
+          ],
+          "nhat": "私[わたし]はあなたよりも背[せ]が低[ひく]い。",
+          "viet": "Tôi thấp hơn bạn.",
+          "ghiChuBienDieu": "我比你矮: có 4 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+          "nguon": "Tatoeba #916624"
+        },
+        {
+          "trung": "地球比太阳小。",
+          "pinyin": [
+            "dì",
+            "qiú",
+            "bǐ",
+            "tài",
+            "yáng",
+            "xiǎo",
+            ""
+          ],
+          "nhat": "地球[ちきゅう]は太陽[たいよう]より小[ちい]さいです。",
+          "viet": "Trái đất nhỏ hơn mặt trời.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #340652"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "AはBより + 形容詞",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Vị trí của đối tượng so sánh ngược nhau: tiếng Trung đặt 比 TRƯỚC B (比B), tiếng Nhật đặt より SAU B (Bより). Ngoài ra tiếng Trung không dùng 很 trước tính từ trong câu 比."
+      },
+      "giaiThichViet": "So sánh hơn: A 比 B + tính từ. Không thêm 很 trước tính từ trong câu có 比.",
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Không dùng 很 (và các phó từ mức độ) trước tính từ trong câu 比.",
+          "cauSai": {
+            "trung": "我比你很矮。",
+            "pinyin": [
+              "wǒ",
+              "bǐ",
+              "nǐ",
+              "hěn",
+              "ǎi",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我比你矮。",
+            "pinyin": [
+              "wǒ",
+              "bǐ",
+              "nǐ",
+              "ǎi",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "比较句1（1）A比B+形容词；介词 比",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0013",
+      "capHsk": 2,
+      "ten": "得: bổ ngữ trạng thái",
+      "congThuc": "Động từ + 得 + Tính từ (+ Bổ ngữ)",
+      "viDu": [
+        {
+          "trung": "汤姆跑得快。",
+          "pinyin": [
+            "tāng",
+            "mǔ",
+            "pǎo",
+            "de",
+            "kuài",
+            ""
+          ],
+          "nhat": "トムは足[あし]が速[はや]い。",
+          "viet": "Tom chạy nhanh.",
+          "ghiChuBienDieu": "姆 đọc thành thanh 2 khi đứng trước thanh 3 (跑).",
+          "nguon": "Tatoeba #5072385"
+        },
+        {
+          "trung": "汤姆走得很慢。",
+          "pinyin": [
+            "tāng",
+            "mǔ",
+            "zǒu",
+            "de",
+            "hěn",
+            "màn",
+            ""
+          ],
+          "nhat": "トムはゆっくり歩[ある]く。",
+          "viet": "Tom đi rất chậm.",
+          "ghiChuBienDieu": "姆 đọc thành thanh 2 khi đứng trước thanh 3 (走).",
+          "nguon": "Tatoeba #335609"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜のが速い／〜く + 動詞",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Không có dạng trùng khít. Tiếng Nhật thường đưa tính từ lên TRƯỚC động từ làm trạng từ ({ja|速く走る}) hoặc dùng {ja|〜のが上手だ}, còn tiếng Trung đặt phần mô tả SAU động từ qua 得. Trật tự mô tả và động từ vì vậy bị đảo."
+      },
+      "giaiThichViet": "得 nối động từ với phần mô tả mức độ hoặc cách thức: 跑得快 (chạy nhanh). Đừng nhầm 得 với 的 và 地, cả ba cùng đọc là de.",
+      "canhBaoLoi": [
+        {
+          "loai": "thieu-thanh-phan",
+          "noiDung": "Thiếu 得 khi mô tả cách thức của động từ.",
+          "cauSai": {
+            "trung": "他跑很快。",
+            "pinyin": [
+              "tā",
+              "pǎo",
+              "hěn",
+              "kuài",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "他跑得很快。",
+            "pinyin": [
+              "tā",
+              "pǎo",
+              "de",
+              "hěn",
+              "kuài",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "状态补语1 动词+得+形容词性短语；结构助词 得",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0014",
+      "capHsk": 2,
+      "ten": "过: đã từng",
+      "congThuc": "Động từ + 过 (+ Tân ngữ)  |  没(有) + Động từ + 过",
+      "viDu": [
+        {
+          "trung": "她去过巴黎。",
+          "pinyin": [
+            "tā",
+            "qù",
+            "guo",
+            "bā",
+            "lí",
+            ""
+          ],
+          "nhat": "彼女[かのじょ]はパリに行[い]ったことがある。",
+          "viet": "Cô ấy từng đến Paris.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #333004"
+        },
+        {
+          "trung": "你见过鲸鱼吗？",
+          "pinyin": [
+            "nǐ",
+            "jiàn",
+            "guo",
+            "jīng",
+            "yú",
+            "ma",
+            ""
+          ],
+          "nhat": "鯨[くじら]を見[み]たことがありますか。",
+          "viet": "Bạn đã từng thấy cá voi chưa?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #471037"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜たことがある",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Gần tương đương nhất với 〜たことがある. Điểm lệch: 过 là hậu tố gắn thẳng vào động từ (去过), còn 〜たことがある là cụm nhiều thành phần. Phủ định là 没去过. Ngoài ra 过 còn có nghĩa 'xong' (吃过饭了 = ăn cơm xong rồi), nghĩa này 〜たことがある không có."
+      },
+      "giaiThichViet": "过 đặt sau động từ để nói đã từng trải qua. Phủ định dùng 没(有)…过, không dùng 不.",
+      "canhBaoLoi": [
+        {
+          "loai": "dung-sai-tu",
+          "noiDung": "Phủ định kinh nghiệm dùng 没…过, không dùng 不.",
+          "cauSai": {
+            "trung": "我不去过巴黎。",
+            "pinyin": [
+              "wǒ",
+              "bù",
+              "qù",
+              "guo",
+              "bā",
+              "lí",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我没去过巴黎。",
+            "pinyin": [
+              "wǒ",
+              "méi",
+              "qù",
+              "guo",
+              "bā",
+              "lí",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "经历态 用动态助词“过”表示；动态助词 过",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    },
+    {
+      "id": "np-0015",
+      "capHsk": 2,
+      "ten": "Bổ ngữ kết quả: 完 懂 错 好",
+      "congThuc": "Động từ + Bổ ngữ kết quả (完 / 懂 / 错 / 好) (+ 了)",
+      "viDu": [
+        {
+          "trung": "我们吃完了午餐。",
+          "pinyin": [
+            "wǒ",
+            "men",
+            "chī",
+            "wán",
+            "le",
+            "wǔ",
+            "cān",
+            ""
+          ],
+          "nhat": "私[わたし]達[たち]は、昼食[ちゅうしょく]を食[た]べ終[お]えた。",
+          "viet": "Chúng tôi đã ăn xong bữa trưa.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #9453425"
+        },
+        {
+          "trung": "懂了吗？",
+          "pinyin": [
+            "dǒng",
+            "le",
+            "ma",
+            ""
+          ],
+          "nhat": "分[わ]かりますか。",
+          "viet": "Hiểu chưa?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2032276"
+        }
+      ],
+      "doiChieuNhat": {
+        "coCauTrucTrungKhit": false,
+        "cauTruc": "〜終わる／〜てわかる／〜間違える",
+        "nhan": "gần tương đương, không trùng khít",
+        "choLech": "Tiếng Nhật diễn đạt kết quả bằng động từ ghép hoặc cụm khác ({ja|食べ終わる}, {ja|聞いてわかる}, {ja|書き間違える}). Tiếng Trung ghép động từ với bổ ngữ thành một khối, không chia đuôi ở giữa. Các cặp này không tương ứng 1-1, ví dụ 懂 là 'hiểu' và không trùng hẳn với わかる."
+      },
+      "giaiThichViet": "Thêm 完, 懂, 错, 好… ngay sau động từ để nói KẾT QUẢ của hành động: 吃完 (ăn xong), 听懂 (nghe hiểu), 写错 (viết sai). Phủ định dùng 没: 没听懂.",
+      "canhBaoLoi": [
+        {
+          "loai": "trat-tu-tu",
+          "noiDung": "了 đứng SAU bổ ngữ kết quả, không chen vào giữa động từ và bổ ngữ.",
+          "cauSai": {
+            "trung": "我听了懂。",
+            "pinyin": [
+              "wǒ",
+              "tīng",
+              "le",
+              "dǒng",
+              ""
+            ]
+          },
+          "cauDung": {
+            "trung": "我听懂了。",
+            "pinyin": [
+              "wǒ",
+              "tīng",
+              "dǒng",
+              "le",
+              ""
+            ]
+          }
+        }
+      ],
+      "nguonPDF": "结果补语1 动词+错/懂/好/会/完",
+      "cangKiemTra": [
+        "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+      ]
+    }
+  ]
+}

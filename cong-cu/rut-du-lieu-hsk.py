@@ -66,6 +66,9 @@ MAU_TU_VUNG = re.compile(
     r"((?:（[^）]*）)*)\s+"                        # các cấp phụ, ví dụ （4）
     r"([" + HAN + r"]+(?:（[" + HAN + r"]+）[" + HAN + r"]*)*\d?)\s+"  # 词语
     r"([" + PINYIN + r"]+(?:\s+[" + PINYIN + r"]+)*)"  # 拼音
+    # 词性 (từ loại), có thể không có. Dùng [ 	] chứ không dùng \s để không
+    # nuốt sang dòng kế tiếp. Ví dụ: 动 | 名、后缀 | 数、（副）
+    r"(?:[ 	]+((?:[" + HAN + r"]+|（[" + HAN + r"]+）)(?:、(?:[" + HAN + r"]+|（[" + HAN + r"]+）))*))?"
 )
 
 
@@ -77,7 +80,7 @@ def rut_tu_vung(reader):
 
     for _, chu in doc_trang(reader, 2, 40):
         for khop in MAU_TU_VUNG.finditer(chu):
-            so_tt, cap, cap_phu_tho, tu, pinyin = khop.groups()
+            so_tt, cap, cap_phu_tho, tu, pinyin, tu_loai = khop.groups()
 
             if cap not in ("1", "2", "3"):
                 continue
@@ -106,6 +109,8 @@ def rut_tu_vung(reader):
                     "tu": dang_day_du,
                     "pinyin": pinyin.strip().replace("(", "").replace(")", ""),
                     "cap": int(cap),
+                    # 词性 nguyên văn trong PDF, ví dụ "名、后缀". None nếu PDF không ghi
+                    "tuLoaiPDF": tu_loai,
                     # Cấp phụ: từ này còn một NGHĨA KHÁC thuộc cấp cao hơn.
                     # App chỉ dạy nghĩa của cấp chính, nhưng lưu lại để biết.
                     "capPhu": cap_phu,

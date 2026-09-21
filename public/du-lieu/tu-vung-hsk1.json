@@ -1,0 +1,3785 @@
+{
+  "loai": "tu-vung",
+  "cap": 1,
+  "phienBan": 1,
+  "capNhatLuc": "2026-09-20",
+  "nguon": "Từ, pinyin, từ loại: đại cương HSK 2025-11. Đối chiếu nghĩa: JMdict, CC-CEDICT (EDRDG/MDBG, CC BY-SA). Câu ví dụ và bản dịch Nhật: Tatoeba (CC BY 2.0 FR).",
+  "danhMucChuDe": {
+    "chao-hoi": "Chào hỏi",
+    "so-dem": "Số đếm",
+    "gia-dinh": "Gia đình",
+    "do-an": "Ăn uống",
+    "do-dung": "Đồ dùng",
+    "noi-chon": "Nơi chốn",
+    "giao-thong": "Giao thông",
+    "thoi-gian": "Thời gian",
+    "hoat-dong": "Hành động",
+    "tinh-chat": "Tính chất",
+    "cam-xuc": "Cảm xúc",
+    "ngu-phap-co-ban": "Ngữ pháp cơ bản",
+    "luong-tu": "Lượng từ",
+    "phuong-vi": "Phương vị",
+    "dong-vat": "Động vật",
+    "truong-hoc": "Trường học",
+    "ngon-ngu": "Ngôn ngữ",
+    "giai-tri": "Giải trí",
+    "suc-khoe": "Sức khoẻ",
+    "quan-ao": "Quần áo",
+    "nguoi": "Người"
+  },
+  "danhSach": [
+    {
+      "id": "tu-0001",
+      "capHsk": 1,
+      "soThuTuHsk": 1,
+      "tu": "爱",
+      "pinyin": [
+        "ài"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "cam-xuc",
+      "nghiaNhat": "愛[あい]する、好[す]きだ",
+      "nghiaViet": "yêu, yêu thích",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我爱您。",
+          "pinyin": [
+            "wǒ",
+            "ài",
+            "nín",
+            ""
+          ],
+          "nhat": "私[わたし]はあなたを愛[あい]しています。",
+          "viet": "Tôi yêu bạn.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #380195"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0002",
+      "capHsk": 1,
+      "soThuTuHsk": 2,
+      "tu": "吧",
+      "pinyin": [
+        "ba"
+      ],
+      "tuLoai": "trợ từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "〜ましょう、〜でしょう、〜ね",
+      "nghiaViet": "nhé, đi, chứ (trợ từ rủ rê, đề nghị, phỏng đoán)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "走吧！",
+          "pinyin": [
+            "zǒu",
+            "ba",
+            ""
+          ],
+          "nhat": "行[い]こう！",
+          "viet": "Đi thôi!",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #4977427"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Không đối chiếu tự động được với từ điển (trợ từ, tiền tố hoặc cụm từ), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0003",
+      "capHsk": 1,
+      "soThuTuHsk": 3,
+      "tu": "八",
+      "pinyin": [
+        "bā"
+      ],
+      "tuLoai": "số từ",
+      "chuDe": "so-dem",
+      "nghiaNhat": "八[はち]",
+      "nghiaViet": "tám",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我有八个哥哥。",
+          "pinyin": [
+            "wǒ",
+            "yǒu",
+            "bā",
+            "gè",
+            "gē",
+            "gē",
+            ""
+          ],
+          "nhat": "私[わたし]は兄[あに]が八[はち]人[にん]います。",
+          "viet": "Tôi có tám người anh trai.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (有).",
+          "nguon": "Tatoeba #8806670"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0004",
+      "capHsk": 1,
+      "soThuTuHsk": 4,
+      "tu": "爸爸",
+      "pinyin": [
+        "bà",
+        "ba"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "gia-dinh",
+      "nghiaNhat": "お父[とう]さん、パパ",
+      "nghiaViet": "bố, ba, cha",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我爸爸很忙。",
+          "pinyin": [
+            "wǒ",
+            "bà",
+            "ba",
+            "hěn",
+            "máng",
+            ""
+          ],
+          "nhat": "私[わたし]の父[ちち]は忙[いそが]しい。",
+          "viet": "Bố tôi rất bận.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #332500"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0005",
+      "capHsk": 1,
+      "soThuTuHsk": 5,
+      "tu": "百",
+      "pinyin": [
+        "bǎi"
+      ],
+      "tuLoai": "số từ",
+      "chuDe": "so-dem",
+      "nghiaNhat": "百[ひゃく]",
+      "nghiaViet": "trăm",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我欠他一百日元。",
+          "pinyin": [
+            "wǒ",
+            "qiàn",
+            "tā",
+            "yī",
+            "bǎi",
+            "rì",
+            "yuán",
+            ""
+          ],
+          "nhat": "私[わたし]は彼[かれ]から百[ひゃく]円[えん]借[か]りている。",
+          "viet": "Tôi nợ anh ấy một trăm yên.",
+          "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (百).",
+          "nguon": "Tatoeba #1883460"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0006",
+      "capHsk": 1,
+      "soThuTuHsk": 6,
+      "tu": "白天",
+      "pinyin": [
+        "bái",
+        "tiān"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "thoi-gian",
+      "nghiaNhat": "昼間[ひるま]、日中[にっちゅう]",
+      "nghiaViet": "ban ngày",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我白天在工作。",
+          "pinyin": [
+            "wǒ",
+            "bái",
+            "tiān",
+            "zài",
+            "gōng",
+            "zuò",
+            ""
+          ],
+          "nhat": "昼間[ひるま]は働[はたら]いてます。",
+          "viet": "Ban ngày tôi đi làm.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #13880640"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0007",
+      "capHsk": 1,
+      "soThuTuHsk": 7,
+      "tu": "半",
+      "pinyin": [
+        "bàn"
+      ],
+      "tuLoai": "số từ, (phó từ)",
+      "chuDe": "so-dem",
+      "nghiaNhat": "半分[はんぶん]、半[はん]",
+      "nghiaViet": "nửa, một nửa",
+      "ghiChuBienDieu": null,
+      "capPhu": [
+        4
+      ],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "学校3点半放学。",
+          "pinyin": [
+            "xué",
+            "xiào",
+            "",
+            "diǎn",
+            "bàn",
+            "fàng",
+            "xué",
+            ""
+          ],
+          "nhat": "学校[がっこう]は三[さん]時[じ]半[はん]に終[お]わる。",
+          "viet": "Trường tan học lúc 3 giờ rưỡi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #375357"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0008",
+      "capHsk": 1,
+      "soThuTuHsk": 8,
+      "tu": "包子",
+      "pinyin": [
+        "bāo",
+        "zi"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-an",
+      "nghiaNhat": "肉[にく]まん、中華[ちゅうか]まん",
+      "nghiaViet": "bánh bao",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "每天在便利店吃包子。",
+          "pinyin": [
+            "měi",
+            "tiān",
+            "zài",
+            "biàn",
+            "lì",
+            "diàn",
+            "chī",
+            "bāo",
+            "zi",
+            ""
+          ],
+          "nhat": "毎日[まいにち]コンビニで肉[にく]まんを食[た]べています。",
+          "viet": "Ngày nào tôi cũng ăn bánh bao ở cửa hàng tiện lợi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #6680079"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0009",
+      "capHsk": 1,
+      "soThuTuHsk": 9,
+      "tu": "杯子",
+      "pinyin": [
+        "bēi",
+        "zi"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-dung",
+      "nghiaNhat": "コップ、カップ",
+      "nghiaViet": "cốc, ly",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "这是谁的杯子？",
+          "pinyin": [
+            "zhè",
+            "shì",
+            "shéi",
+            "de",
+            "bēi",
+            "zi",
+            ""
+          ],
+          "nhat": "これ誰[だれ]のコップ？",
+          "viet": "Đây là cốc của ai?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #4885037"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0010",
+      "capHsk": 1,
+      "soThuTuHsk": 10,
+      "tu": "本",
+      "pinyin": [
+        "běn"
+      ],
+      "tuLoai": "lượng từ",
+      "chuDe": "luong-tu",
+      "nghiaNhat": "〜冊[さつ]",
+      "nghiaViet": "quyển (lượng từ cho sách)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "这本书小。",
+          "pinyin": [
+            "zhè",
+            "běn",
+            "shū",
+            "xiǎo",
+            ""
+          ],
+          "nhat": "この本[ほん]は小[ちい]さい。",
+          "viet": "Quyển sách này nhỏ.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #5869913"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0011",
+      "capHsk": 1,
+      "soThuTuHsk": 11,
+      "tu": "边",
+      "pinyin": [
+        "biān"
+      ],
+      "tuLoai": "danh từ, hậu tố",
+      "chuDe": "phuong-vi",
+      "nghiaNhat": "〜側[がわ]、〜辺[へん]",
+      "nghiaViet": "bên, phía (hậu tố chỉ phương vị)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "那边有人吗？",
+          "pinyin": [
+            "nà",
+            "biān",
+            "yǒu",
+            "rén",
+            "ma",
+            ""
+          ],
+          "nhat": "誰[だれ]かいるの？",
+          "viet": "Bên đó có người không?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #5091361"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0012",
+      "capHsk": 1,
+      "soThuTuHsk": 12,
+      "tu": "病",
+      "pinyin": [
+        "bìng"
+      ],
+      "tuLoai": "danh từ, động từ",
+      "chuDe": "suc-khoe",
+      "nghiaNhat": "病気[びょうき]",
+      "nghiaViet": "bệnh; bị bệnh",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "他生病了。",
+          "pinyin": [
+            "tā",
+            "shēng",
+            "bìng",
+            "le",
+            ""
+          ],
+          "nhat": "彼[かれ]は病気[びょうき]です。",
+          "viet": "Anh ấy bị bệnh rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #982224"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0013",
+      "capHsk": 1,
+      "soThuTuHsk": 13,
+      "tu": "不",
+      "pinyin": [
+        "bù"
+      ],
+      "tuLoai": "phó từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "〜ない、〜ではない",
+      "nghiaViet": "không",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "不懂。",
+          "pinyin": [
+            "bù",
+            "dǒng",
+            ""
+          ],
+          "nhat": "分[わ]からない。",
+          "viet": "Không hiểu.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2182379"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Không đối chiếu tự động được với từ điển (trợ từ, tiền tố hoặc cụm từ), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0014",
+      "capHsk": 1,
+      "soThuTuHsk": 14,
+      "tu": "不客气",
+      "pinyin": [
+        "bù",
+        "kè",
+        "qi"
+      ],
+      "tuLoai": null,
+      "chuDe": "chao-hoi",
+      "nghiaNhat": "どういたしまして、遠慮[えんりょ]しないで",
+      "nghiaViet": "đừng khách sáo; không có gì",
+      "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (客).",
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Chưa có câu ví dụ: Tatoeba không có câu phù hợp cho từ này."
+      ]
+    },
+    {
+      "id": "tu-0015",
+      "capHsk": 1,
+      "soThuTuHsk": 15,
+      "tu": "不要",
+      "pinyin": [
+        "bù",
+        "yào"
+      ],
+      "tuLoai": "phó từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "〜しないで、〜してはいけない、いらない",
+      "nghiaViet": "đừng; không cần",
+      "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (要).",
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "不要吵。",
+          "pinyin": [
+            "bù",
+            "yào",
+            "chǎo",
+            ""
+          ],
+          "nhat": "騒[さわ]ぐな。",
+          "viet": "Đừng làm ồn.",
+          "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (要).",
+          "nguon": "Tatoeba #13275195"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Không đối chiếu tự động được với từ điển (trợ từ, tiền tố hoặc cụm từ), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0016",
+      "capHsk": 1,
+      "soThuTuHsk": 16,
+      "tu": "菜",
+      "pinyin": [
+        "cài"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-an",
+      "nghiaNhat": "料理[りょうり]、おかず、野菜[やさい]",
+      "nghiaViet": "món ăn; rau",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "你喜欢中国菜吗？",
+          "pinyin": [
+            "nǐ",
+            "xǐ",
+            "huān",
+            "zhōng",
+            "guó",
+            "cài",
+            "ma",
+            ""
+          ],
+          "nhat": "中華[ちゅうか]料理[りょうり]が好[す]きですか？",
+          "viet": "Bạn có thích món ăn Trung Quốc không?",
+          "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (喜).",
+          "nguon": "Tatoeba #10192331"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0017",
+      "capHsk": 1,
+      "soThuTuHsk": 17,
+      "tu": "茶",
+      "pinyin": [
+        "chá"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-an",
+      "nghiaNhat": "お茶[ちゃ]",
+      "nghiaViet": "trà",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "她正在泡茶。",
+          "pinyin": [
+            "tā",
+            "zhèng",
+            "zài",
+            "pào",
+            "chá",
+            ""
+          ],
+          "nhat": "彼女[かのじょ]はお茶[ちゃ]を入[い]れているところだった。",
+          "viet": "Cô ấy đang pha trà.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #408498"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0018",
+      "capHsk": 1,
+      "soThuTuHsk": 18,
+      "tu": "唱",
+      "pinyin": [
+        "chàng"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "歌[うた]う",
+      "nghiaViet": "hát",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "你喜欢唱歌吗？",
+          "pinyin": [
+            "nǐ",
+            "xǐ",
+            "huān",
+            "chàng",
+            "gē",
+            "ma",
+            ""
+          ],
+          "nhat": "歌[うた]うことは好[す]きですか。",
+          "viet": "Bạn có thích hát không?",
+          "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (喜).",
+          "nguon": "Tatoeba #397199"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0019",
+      "capHsk": 1,
+      "soThuTuHsk": 19,
+      "tu": "超市",
+      "pinyin": [
+        "chāo",
+        "shì"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "noi-chon",
+      "nghiaNhat": "スーパー、スーパーマーケット",
+      "nghiaViet": "siêu thị",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "去了超市。",
+          "pinyin": [
+            "qù",
+            "le",
+            "chāo",
+            "shì",
+            ""
+          ],
+          "nhat": "スーパーに行[い]きました。",
+          "viet": "Đã đi siêu thị.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #4147188"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0020",
+      "capHsk": 1,
+      "soThuTuHsk": 20,
+      "tu": "车",
+      "pinyin": [
+        "chē"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "giao-thong",
+      "nghiaNhat": "車[くるま]",
+      "nghiaViet": "xe",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "请上车。",
+          "pinyin": [
+            "qǐng",
+            "shàng",
+            "chē",
+            ""
+          ],
+          "nhat": "どうぞお乗[の]り下[くだ]さい。",
+          "viet": "Mời lên xe.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1911080"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0021",
+      "capHsk": 1,
+      "soThuTuHsk": 21,
+      "tu": "吃",
+      "pinyin": [
+        "chī"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "do-an",
+      "nghiaNhat": "食[た]べる",
+      "nghiaViet": "ăn",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "慢慢吃。",
+          "pinyin": [
+            "màn",
+            "màn",
+            "chī",
+            ""
+          ],
+          "nhat": "ゆっくり食[た]べて。",
+          "viet": "Ăn từ từ thôi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10483588"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0022",
+      "capHsk": 1,
+      "soThuTuHsk": 22,
+      "tu": "穿",
+      "pinyin": [
+        "chuān"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "quan-ao",
+      "nghiaNhat": "着[き]る、履[は]く",
+      "nghiaViet": "mặc, mang, đi (quần áo, giày dép)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "冬天穿羊毛衣。",
+          "pinyin": [
+            "dōng",
+            "tiān",
+            "chuān",
+            "yáng",
+            "máo",
+            "yī",
+            ""
+          ],
+          "nhat": "冬[ふゆ]には羊毛[ようもう]の服[ふく]を着[き]ます。",
+          "viet": "Mùa đông mặc áo len lông cừu.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1400904"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0023",
+      "capHsk": 1,
+      "soThuTuHsk": 23,
+      "tu": "出租车",
+      "pinyin": [
+        "chū",
+        "zū",
+        "chē"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "giao-thong",
+      "nghiaNhat": "タクシー",
+      "nghiaViet": "taxi",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "出租车到了。",
+          "pinyin": [
+            "chū",
+            "zū",
+            "chē",
+            "dào",
+            "le",
+            ""
+          ],
+          "nhat": "タクシーが到着[とうちゃく]した。",
+          "viet": "Taxi đến rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #346457"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0024",
+      "capHsk": 1,
+      "soThuTuHsk": 24,
+      "tu": "大",
+      "pinyin": [
+        "dà"
+      ],
+      "tuLoai": "tính từ",
+      "chuDe": "tinh-chat",
+      "nghiaNhat": "大[おお]きい",
+      "nghiaViet": "to, lớn",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "那栋房子很大。",
+          "pinyin": [
+            "nà",
+            "dòng",
+            "fáng",
+            "zi",
+            "hěn",
+            "dà",
+            ""
+          ],
+          "nhat": "あの家[いえ]は大[おお]きいです。",
+          "viet": "Ngôi nhà đó rất lớn.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1366211"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0025",
+      "capHsk": 1,
+      "soThuTuHsk": 25,
+      "tu": "打电话",
+      "pinyin": [
+        "dǎ",
+        "diàn",
+        "huà"
+      ],
+      "tuLoai": null,
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "電話[でんわ]をかける",
+      "nghiaViet": "gọi điện thoại",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我在打电话。",
+          "pinyin": [
+            "wǒ",
+            "zài",
+            "dǎ",
+            "diàn",
+            "huà",
+            ""
+          ],
+          "nhat": "電話[でんわ]中[ちゅう]なんですよ。",
+          "viet": "Tôi đang gọi điện thoại.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10695961"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Không đối chiếu tự động được với từ điển (trợ từ, tiền tố hoặc cụm từ), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0026",
+      "capHsk": 1,
+      "soThuTuHsk": 26,
+      "tu": "大家",
+      "pinyin": [
+        "dà",
+        "jiā"
+      ],
+      "tuLoai": "đại từ",
+      "chuDe": "nguoi",
+      "nghiaNhat": "みなさん、みんな",
+      "nghiaViet": "mọi người",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "大家笑了。",
+          "pinyin": [
+            "dà",
+            "jiā",
+            "xiào",
+            "le",
+            ""
+          ],
+          "nhat": "皆[みな]が笑[わら]った。",
+          "viet": "Mọi người đều cười.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #762992"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0027",
+      "capHsk": 1,
+      "soThuTuHsk": 27,
+      "tu": "到",
+      "pinyin": [
+        "dào"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "着[つ]く、到着[とうちゃく]する",
+      "nghiaViet": "đến, tới",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "秋天到了。",
+          "pinyin": [
+            "qiū",
+            "tiān",
+            "dào",
+            "le",
+            ""
+          ],
+          "nhat": "秋[あき]になりました。",
+          "viet": "Mùa thu đến rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1218350"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Nghĩa tiếng Anh của từ Nhật (JMdict) không có từ nào trùng với từ Trung (CC-CEDICT), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0028",
+      "capHsk": 1,
+      "soThuTuHsk": 28,
+      "tu": "大学",
+      "pinyin": [
+        "dà",
+        "xué"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "truong-hoc",
+      "nghiaNhat": "大学[だいがく]",
+      "nghiaViet": "đại học",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "大学四月开学。",
+          "pinyin": [
+            "dà",
+            "xué",
+            "sì",
+            "yuè",
+            "kāi",
+            "xué",
+            ""
+          ],
+          "nhat": "四月[しがつ]から大学[だいがく]が始[はじ]まります。",
+          "viet": "Đại học khai giảng vào tháng Tư.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #12686379"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0029",
+      "capHsk": 1,
+      "soThuTuHsk": 29,
+      "tu": "大学生",
+      "pinyin": [
+        "dà",
+        "xué",
+        "shēng"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "truong-hoc",
+      "nghiaNhat": "大学生[だいがくせい]",
+      "nghiaViet": "sinh viên đại học",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我是大学生。",
+          "pinyin": [
+            "wǒ",
+            "shì",
+            "dà",
+            "xué",
+            "shēng",
+            ""
+          ],
+          "nhat": "大学[だいがく]生[せい]です。",
+          "viet": "Tôi là sinh viên đại học.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #567558"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0030",
+      "capHsk": 1,
+      "soThuTuHsk": 30,
+      "tu": "的",
+      "pinyin": [
+        "de"
+      ],
+      "tuLoai": "trợ từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "〜の",
+      "nghiaViet": "của (trợ từ định ngữ)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "这是我的。",
+          "pinyin": [
+            "zhè",
+            "shì",
+            "wǒ",
+            "de",
+            ""
+          ],
+          "nhat": "これ、私[わたし]のよ。",
+          "viet": "Cái này là của tôi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #4760167"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Không đối chiếu tự động được với từ điển (trợ từ, tiền tố hoặc cụm từ), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0031",
+      "capHsk": 1,
+      "soThuTuHsk": 31,
+      "tu": "第",
+      "pinyin": [
+        "dì"
+      ],
+      "tuLoai": "tiền tố",
+      "chuDe": "so-dem",
+      "nghiaNhat": "第[だい]〜",
+      "nghiaViet": "thứ (tiền tố chỉ số thứ tự)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "请翻到第九页。",
+          "pinyin": [
+            "qǐng",
+            "fān",
+            "dào",
+            "dì",
+            "jiǔ",
+            "yè",
+            ""
+          ],
+          "nhat": "九[きゅう]ページを開[ひら]きなさい。",
+          "viet": "Xin hãy lật đến trang thứ chín.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #13876168"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Không đối chiếu tự động được với từ điển (trợ từ, tiền tố hoặc cụm từ), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0032",
+      "capHsk": 1,
+      "soThuTuHsk": 32,
+      "tu": "店",
+      "pinyin": [
+        "diàn"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "noi-chon",
+      "nghiaNhat": "店[みせ]",
+      "nghiaViet": "cửa hàng, tiệm",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "这家店在卖蔬菜。",
+          "pinyin": [
+            "zhè",
+            "jiā",
+            "diàn",
+            "zài",
+            "mài",
+            "shū",
+            "cài",
+            ""
+          ],
+          "nhat": "その店[みせ]は野菜[やさい]を売[う]っている。",
+          "viet": "Cửa hàng này bán rau.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2144020"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0033",
+      "capHsk": 1,
+      "soThuTuHsk": 33,
+      "tu": "点",
+      "pinyin": [
+        "diǎn"
+      ],
+      "tuLoai": "lượng từ, (danh từ)",
+      "chuDe": "thoi-gian",
+      "nghiaNhat": "〜時[じ]",
+      "nghiaViet": "giờ (chỉ giờ đồng hồ)",
+      "ghiChuBienDieu": null,
+      "capPhu": [
+        3
+      ],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "现在几点？",
+          "pinyin": [
+            "xiàn",
+            "zài",
+            "jǐ",
+            "diǎn",
+            ""
+          ],
+          "nhat": "今[いま]、何時[なんじ]ですか。",
+          "viet": "Bây giờ là mấy giờ?",
+          "ghiChuBienDieu": "几 đọc thành thanh 2 khi đứng trước thanh 3 (点).",
+          "nguon": "Tatoeba #8293429"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0034",
+      "capHsk": 1,
+      "soThuTuHsk": 34,
+      "tu": "电话",
+      "pinyin": [
+        "diàn",
+        "huà"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-dung",
+      "nghiaNhat": "電話[でんわ]",
+      "nghiaViet": "điện thoại",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "没人接电话。",
+          "pinyin": [
+            "méi",
+            "rén",
+            "jiē",
+            "diàn",
+            "huà",
+            ""
+          ],
+          "nhat": "だれも電話[でんわ]に出[で]ませんでした。",
+          "viet": "Không ai nghe điện thoại.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #414482"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0035",
+      "capHsk": 1,
+      "soThuTuHsk": 35,
+      "tu": "电脑",
+      "pinyin": [
+        "diàn",
+        "nǎo"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-dung",
+      "nghiaNhat": "パソコン、コンピューター",
+      "nghiaViet": "máy tính",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我有一台电脑。",
+          "pinyin": [
+            "wǒ",
+            "yǒu",
+            "yī",
+            "tái",
+            "diàn",
+            "nǎo",
+            ""
+          ],
+          "nhat": "パソコンは持[も]ってます。",
+          "viet": "Tôi có một cái máy tính.",
+          "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 2 (台). 我 đọc thành thanh 2 khi đứng trước thanh 3 (有).",
+          "nguon": "Tatoeba #343844"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0036",
+      "capHsk": 1,
+      "soThuTuHsk": 36,
+      "tu": "电视",
+      "pinyin": [
+        "diàn",
+        "shì"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-dung",
+      "nghiaNhat": "テレビ",
+      "nghiaViet": "tivi",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我在看电视。",
+          "pinyin": [
+            "wǒ",
+            "zài",
+            "kàn",
+            "diàn",
+            "shì",
+            ""
+          ],
+          "nhat": "テレビを見[み]ている所[ところ]だ。",
+          "viet": "Tôi đang xem tivi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10695997"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0037",
+      "capHsk": 1,
+      "soThuTuHsk": 37,
+      "tu": "电影",
+      "pinyin": [
+        "diàn",
+        "yǐng"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "giai-tri",
+      "nghiaNhat": "映画[えいが]",
+      "nghiaViet": "phim",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我喜欢看电影。",
+          "pinyin": [
+            "wǒ",
+            "xǐ",
+            "huān",
+            "kàn",
+            "diàn",
+            "yǐng",
+            ""
+          ],
+          "nhat": "私[わたし]は映画[えいが]が好[す]きです。",
+          "viet": "Tôi thích xem phim.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (喜).",
+          "nguon": "Tatoeba #667350"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0038",
+      "capHsk": 1,
+      "soThuTuHsk": 38,
+      "tu": "电影院",
+      "pinyin": [
+        "diàn",
+        "yǐng",
+        "yuàn"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "noi-chon",
+      "nghiaNhat": "映画館[えいがかん]",
+      "nghiaViet": "rạp chiếu phim",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "电影院离电车站近吗？",
+          "pinyin": [
+            "diàn",
+            "yǐng",
+            "yuàn",
+            "lí",
+            "diàn",
+            "chē",
+            "zhàn",
+            "jìn",
+            "ma",
+            ""
+          ],
+          "nhat": "映画[えいが]館[かん]は駅[えき]から近[ちか]いの？",
+          "viet": "Rạp chiếu phim có gần ga tàu điện không?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3859480"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0039",
+      "capHsk": 1,
+      "soThuTuHsk": 39,
+      "tu": "弟弟",
+      "pinyin": [
+        "dì",
+        "di"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "gia-dinh",
+      "nghiaNhat": "弟[おとうと]",
+      "nghiaViet": "em trai",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "她辅导了弟弟的作业。",
+          "pinyin": [
+            "tā",
+            "fǔ",
+            "dǎo",
+            "le",
+            "dì",
+            "di",
+            "de",
+            "zuò",
+            "yè",
+            ""
+          ],
+          "nhat": "彼女[かのじょ]は弟[おとうと]の宿題[しゅくだい]を手伝[てつだ]ってあげた。",
+          "viet": "Cô ấy đã kèm em trai làm bài tập.",
+          "ghiChuBienDieu": "辅 đọc thành thanh 2 khi đứng trước thanh 3 (导).",
+          "nguon": "Tatoeba #13876694"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0040",
+      "capHsk": 1,
+      "soThuTuHsk": 40,
+      "tu": "东西",
+      "pinyin": [
+        "dōng",
+        "xi"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-dung",
+      "nghiaNhat": "物[もの]、品物[しなもの]",
+      "nghiaViet": "đồ, đồ vật",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "在找东西吗？",
+          "pinyin": [
+            "zài",
+            "zhǎo",
+            "dōng",
+            "xi",
+            "ma",
+            ""
+          ],
+          "nhat": "何[なん]か探[さが]してるの？",
+          "viet": "Bạn đang tìm gì à?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #4881583"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0041",
+      "capHsk": 1,
+      "soThuTuHsk": 41,
+      "tu": "都",
+      "pinyin": [
+        "dōu"
+      ],
+      "tuLoai": "phó từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "みな、すべて、どちらも",
+      "nghiaViet": "đều, tất cả",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "谁都有弱点。",
+          "pinyin": [
+            "shéi",
+            "dōu",
+            "yǒu",
+            "ruò",
+            "diǎn",
+            ""
+          ],
+          "nhat": "誰[だれ]にでも弱点[じゃくてん]がある。",
+          "viet": "Ai cũng có điểm yếu.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8780285"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0042",
+      "capHsk": 1,
+      "soThuTuHsk": 42,
+      "tu": "读",
+      "pinyin": [
+        "dú"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "読[よ]む",
+      "nghiaViet": "đọc",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "她在读中文。",
+          "pinyin": [
+            "tā",
+            "zài",
+            "dú",
+            "zhōng",
+            "wén",
+            ""
+          ],
+          "nhat": "中国[ちゅうごく]語[ご]を読[よ]んでいる。",
+          "viet": "Cô ấy đang đọc tiếng Trung.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #4761389"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0043",
+      "capHsk": 1,
+      "soThuTuHsk": 43,
+      "tu": "对",
+      "pinyin": [
+        "duì"
+      ],
+      "tuLoai": "tính từ, giới từ",
+      "chuDe": "tinh-chat",
+      "nghiaNhat": "正[ただ]しい、〜に対[たい]して",
+      "nghiaViet": "đúng; đối với",
+      "ghiChuBienDieu": null,
+      "capPhu": [
+        4
+      ],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "这个不对。",
+          "pinyin": [
+            "zhè",
+            "ge",
+            "bù",
+            "duì",
+            ""
+          ],
+          "nhat": "これは間違[まちが]いだ。",
+          "viet": "Cái này không đúng.",
+          "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (对).",
+          "nguon": "Tatoeba #8749674"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0044",
+      "capHsk": 1,
+      "soThuTuHsk": 44,
+      "tu": "对不起",
+      "pinyin": [
+        "duì",
+        "bu",
+        "qǐ"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "chao-hoi",
+      "nghiaNhat": "すみません、ごめんなさい",
+      "nghiaViet": "xin lỗi",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "对不起，我来晚了。",
+          "pinyin": [
+            "duì",
+            "bu",
+            "qǐ",
+            "",
+            "wǒ",
+            "lái",
+            "wǎn",
+            "le",
+            ""
+          ],
+          "nhat": "遅[おく]れてごめん。",
+          "viet": "Xin lỗi, tôi đến muộn.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3378156"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0045",
+      "capHsk": 1,
+      "soThuTuHsk": 45,
+      "tu": "多",
+      "pinyin": [
+        "duō"
+      ],
+      "tuLoai": "tính từ, đại từ",
+      "chuDe": "tinh-chat",
+      "nghiaNhat": "多[おお]い",
+      "nghiaViet": "nhiều",
+      "ghiChuBienDieu": null,
+      "capPhu": [
+        2
+      ],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "别吃太多。",
+          "pinyin": [
+            "bié",
+            "chī",
+            "tài",
+            "duō",
+            ""
+          ],
+          "nhat": "食[た]べ過[す]ぎるな。",
+          "viet": "Đừng ăn quá nhiều.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10570094"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0046",
+      "capHsk": 1,
+      "soThuTuHsk": 46,
+      "tu": "多少",
+      "pinyin": [
+        "duō",
+        "shao"
+      ],
+      "tuLoai": "đại từ",
+      "chuDe": "so-dem",
+      "nghiaNhat": "いくつ、いくら、どのくらい",
+      "nghiaViet": "bao nhiêu",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "一箱多少钱？",
+          "pinyin": [
+            "yī",
+            "xiāng",
+            "duō",
+            "shao",
+            "qián",
+            ""
+          ],
+          "nhat": "一箱[ひとはこ]いくらですか？",
+          "viet": "Một thùng bao nhiêu tiền?",
+          "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 1 (箱).",
+          "nguon": "Tatoeba #5072395"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0047",
+      "capHsk": 1,
+      "soThuTuHsk": 47,
+      "tu": "读书",
+      "pinyin": [
+        "dú",
+        "shū"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "読書[どくしょ]する、勉強[べんきょう]する",
+      "nghiaViet": "đọc sách; học",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "读书很重要。",
+          "pinyin": [
+            "dú",
+            "shū",
+            "hěn",
+            "zhòng",
+            "yào",
+            ""
+          ],
+          "nhat": "本[ほん]を読[よ]むことは大切[たいせつ]です。",
+          "viet": "Đọc sách rất quan trọng.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1733405"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0048",
+      "capHsk": 1,
+      "soThuTuHsk": 48,
+      "tu": "二",
+      "pinyin": [
+        "èr"
+      ],
+      "tuLoai": "số từ",
+      "chuDe": "so-dem",
+      "nghiaNhat": "二[に]",
+      "nghiaViet": "hai",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "男厕所在二楼。",
+          "pinyin": [
+            "nán",
+            "cè",
+            "suǒ",
+            "zài",
+            "èr",
+            "lóu",
+            ""
+          ],
+          "nhat": "男子[だんし]トイレは2階[かい]です。",
+          "viet": "Nhà vệ sinh nam ở tầng hai.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8715880"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0049",
+      "capHsk": 1,
+      "soThuTuHsk": 49,
+      "tu": "儿子",
+      "pinyin": [
+        "ér",
+        "zi"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "gia-dinh",
+      "nghiaNhat": "息子[むすこ]",
+      "nghiaViet": "con trai",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我儿子十岁了。",
+          "pinyin": [
+            "wǒ",
+            "ér",
+            "zi",
+            "shí",
+            "suì",
+            "le",
+            ""
+          ],
+          "nhat": "息子[むすこ]は十[じゅう]歳[さい]です。",
+          "viet": "Con trai tôi mười tuổi rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10029668"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0050",
+      "capHsk": 1,
+      "soThuTuHsk": 50,
+      "tu": "饭",
+      "pinyin": [
+        "fàn"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-an",
+      "nghiaNhat": "ご飯[はん]、食事[しょくじ]",
+      "nghiaViet": "cơm; bữa ăn",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "你们吃饭了吗？",
+          "pinyin": [
+            "nǐ",
+            "men",
+            "chī",
+            "fàn",
+            "le",
+            "ma",
+            ""
+          ],
+          "nhat": "ごはん食[た]べたの？",
+          "viet": "Các bạn ăn cơm chưa?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10966821"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0051",
+      "capHsk": 1,
+      "soThuTuHsk": 51,
+      "tu": "饭店",
+      "pinyin": [
+        "fàn",
+        "diàn"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "noi-chon",
+      "nghiaNhat": "ホテル、レストラン",
+      "nghiaViet": "khách sạn; nhà hàng",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我曾在一家饭店工作过。",
+          "pinyin": [
+            "wǒ",
+            "céng",
+            "zài",
+            "yī",
+            "jiā",
+            "fàn",
+            "diàn",
+            "gōng",
+            "zuò",
+            "guò",
+            ""
+          ],
+          "nhat": "かつて私[わたし]はレストランで働[はたら]いていた。",
+          "viet": "Tôi từng làm việc ở một nhà hàng.",
+          "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 1 (家).",
+          "nguon": "Tatoeba #659849"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0052",
+      "capHsk": 1,
+      "soThuTuHsk": 52,
+      "tu": "房间",
+      "pinyin": [
+        "fáng",
+        "jiān"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "noi-chon",
+      "nghiaNhat": "部屋[へや]",
+      "nghiaViet": "phòng",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "有人进过房间。",
+          "pinyin": [
+            "yǒu",
+            "rén",
+            "jìn",
+            "guò",
+            "fáng",
+            "jiān",
+            ""
+          ],
+          "nhat": "だれかが部屋[へや]に入[はい]った。",
+          "viet": "Có người đã vào phòng.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8943496"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0053",
+      "capHsk": 1,
+      "soThuTuHsk": 53,
+      "tu": "非常",
+      "pinyin": [
+        "fēi",
+        "cháng"
+      ],
+      "tuLoai": "phó từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "とても、非常[ひじょう]に",
+      "nghiaViet": "rất, vô cùng",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "非常感谢！",
+          "pinyin": [
+            "fēi",
+            "cháng",
+            "gǎn",
+            "xiè",
+            ""
+          ],
+          "nhat": "どうもありがとうございます！",
+          "viet": "Cảm ơn rất nhiều!",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #334426"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0054",
+      "capHsk": 1,
+      "soThuTuHsk": 54,
+      "tu": "飞机",
+      "pinyin": [
+        "fēi",
+        "jī"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "giao-thong",
+      "nghiaNhat": "飛行機[ひこうき]",
+      "nghiaViet": "máy bay",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "飞机准时到了。",
+          "pinyin": [
+            "fēi",
+            "jī",
+            "zhǔn",
+            "shí",
+            "dào",
+            "le",
+            ""
+          ],
+          "nhat": "飛行[ひこう]機[き]は時間[じかん]どおり到着[とうちゃく]した。",
+          "viet": "Máy bay đến đúng giờ.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #461498"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0055",
+      "capHsk": 1,
+      "soThuTuHsk": 55,
+      "tu": "分",
+      "pinyin": [
+        "fēn"
+      ],
+      "tuLoai": "lượng từ",
+      "chuDe": "thoi-gian",
+      "nghiaNhat": "〜分[ふん]",
+      "nghiaViet": "phút; phân (đơn vị)",
+      "ghiChuBienDieu": null,
+      "capPhu": [
+        3
+      ],
+      "dangRutGon": null,
+      "viDu": [],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Chưa có câu ví dụ: Tatoeba không có câu phù hợp cho từ này."
+      ]
+    },
+    {
+      "id": "tu-0056",
+      "capHsk": 1,
+      "soThuTuHsk": 56,
+      "tu": "分钟",
+      "pinyin": [
+        "fēn",
+        "zhōng"
+      ],
+      "tuLoai": "lượng từ",
+      "chuDe": "thoi-gian",
+      "nghiaNhat": "〜分[ふん]、〜分間[ふんかん]",
+      "nghiaViet": "phút (khoảng thời gian)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我还要等五分钟。",
+          "pinyin": [
+            "wǒ",
+            "hái",
+            "yào",
+            "děng",
+            "wǔ",
+            "fēn",
+            "zhōng",
+            ""
+          ],
+          "nhat": "もう５分[ふん]待[ま]とう。",
+          "viet": "Tôi còn phải đợi năm phút nữa.",
+          "ghiChuBienDieu": "等 đọc thành thanh 2 khi đứng trước thanh 3 (五).",
+          "nguon": "Tatoeba #504639"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0057",
+      "capHsk": 1,
+      "soThuTuHsk": 57,
+      "tu": "高兴",
+      "pinyin": [
+        "gāo",
+        "xìng"
+      ],
+      "tuLoai": "tính từ",
+      "chuDe": "cam-xuc",
+      "nghiaNhat": "うれしい、喜[よろこ]ぶ",
+      "nghiaViet": "vui, vui mừng",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "他很高兴。",
+          "pinyin": [
+            "tā",
+            "hěn",
+            "gāo",
+            "xìng",
+            ""
+          ],
+          "nhat": "彼[かれ]は幸[しあわ]せだ。",
+          "viet": "Anh ấy rất vui.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #338023"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0058",
+      "capHsk": 1,
+      "soThuTuHsk": 58,
+      "tu": "个",
+      "pinyin": [
+        "gè"
+      ],
+      "tuLoai": "lượng từ",
+      "chuDe": "luong-tu",
+      "nghiaNhat": "〜個[こ]、〜人[にん]",
+      "nghiaViet": "cái, con, người (lượng từ chung)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "画一个圈。",
+          "pinyin": [
+            "huà",
+            "yī",
+            "gè",
+            "quān",
+            ""
+          ],
+          "nhat": "円[えん]を描[えが]いてくれ。",
+          "viet": "Vẽ một vòng tròn.",
+          "ghiChuBienDieu": "一 đọc thành yí vì đứng trước thanh 4 (个).",
+          "nguon": "Tatoeba #630268"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0059",
+      "capHsk": 1,
+      "soThuTuHsk": 59,
+      "tu": "歌",
+      "pinyin": [
+        "gē"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "giai-tri",
+      "nghiaNhat": "歌[うた]",
+      "nghiaViet": "bài hát",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "知道这首歌吗？",
+          "pinyin": [
+            "zhī",
+            "dào",
+            "zhè",
+            "shǒu",
+            "gē",
+            "ma",
+            ""
+          ],
+          "nhat": "この歌[うた]知[し]ってる？",
+          "viet": "Bạn biết bài hát này không?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3859479"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0060",
+      "capHsk": 1,
+      "soThuTuHsk": 60,
+      "tu": "哥哥",
+      "pinyin": [
+        "gē",
+        "ge"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "gia-dinh",
+      "nghiaNhat": "兄[あに]、お兄[にい]さん",
+      "nghiaViet": "anh trai",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "他有三个哥哥。",
+          "pinyin": [
+            "tā",
+            "yǒu",
+            "sān",
+            "gè",
+            "gē",
+            "ge",
+            ""
+          ],
+          "nhat": "彼[かれ]は３人[にん]の兄[あに]がいる。",
+          "viet": "Anh ấy có ba người anh trai.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2144004"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0061",
+      "capHsk": 1,
+      "soThuTuHsk": 61,
+      "tu": "给",
+      "pinyin": [
+        "gěi"
+      ],
+      "tuLoai": "động từ, (giới từ)",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "あげる、くれる、与[あた]える",
+      "nghiaViet": "cho, đưa, tặng",
+      "ghiChuBienDieu": null,
+      "capPhu": [
+        2
+      ],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "请给我些水。",
+          "pinyin": [
+            "qǐng",
+            "gěi",
+            "wǒ",
+            "xiē",
+            "shuǐ",
+            ""
+          ],
+          "nhat": "水[みず]をください。",
+          "viet": "Xin cho tôi ít nước.",
+          "ghiChuBienDieu": "请给我: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+          "nguon": "Tatoeba #4956751"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0062",
+      "capHsk": 1,
+      "soThuTuHsk": 62,
+      "tu": "公司",
+      "pinyin": [
+        "gōng",
+        "sī"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "noi-chon",
+      "nghiaNhat": "会社[かいしゃ]",
+      "nghiaViet": "công ty",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我们公司是有限公司。",
+          "pinyin": [
+            "wǒ",
+            "men",
+            "gōng",
+            "sī",
+            "shì",
+            "yǒu",
+            "xiàn",
+            "gōng",
+            "sī",
+            ""
+          ],
+          "nhat": "我々[われわれ]の会社[かいしゃ]は有限[ゆうげん]会社[かいしゃ]だ。",
+          "viet": "Công ty chúng tôi là công ty trách nhiệm hữu hạn.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2054054"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0063",
+      "capHsk": 1,
+      "soThuTuHsk": 63,
+      "tu": "工作",
+      "pinyin": [
+        "gōng",
+        "zuò"
+      ],
+      "tuLoai": "động từ, danh từ",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "仕事[しごと]、働[はたら]く",
+      "nghiaViet": "công việc; làm việc",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "工作怎么样？",
+          "pinyin": [
+            "gōng",
+            "zuò",
+            "zěn",
+            "me",
+            "yàng",
+            ""
+          ],
+          "nhat": "仕事[しごと]はどうですか？",
+          "viet": "Công việc thế nào?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #5100103"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0064",
+      "capHsk": 1,
+      "soThuTuHsk": 64,
+      "tu": "狗",
+      "pinyin": [
+        "gǒu"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "dong-vat",
+      "nghiaNhat": "犬[いぬ]",
+      "nghiaViet": "chó",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "你怕狗吗？",
+          "pinyin": [
+            "nǐ",
+            "pà",
+            "gǒu",
+            "ma",
+            ""
+          ],
+          "nhat": "犬[いぬ]が怖[こわ]いの？",
+          "viet": "Bạn sợ chó à?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #7781713"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0065",
+      "capHsk": 1,
+      "soThuTuHsk": 65,
+      "tu": "贵",
+      "pinyin": [
+        "guì"
+      ],
+      "tuLoai": "tính từ",
+      "chuDe": "tinh-chat",
+      "nghiaNhat": "高[たか]い（値段[ねだん]が）",
+      "nghiaViet": "đắt",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "这个不贵。",
+          "pinyin": [
+            "zhè",
+            "ge",
+            "bù",
+            "guì",
+            ""
+          ],
+          "nhat": "これは高[たか]くないです。",
+          "viet": "Cái này không đắt.",
+          "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (贵).",
+          "nguon": "Tatoeba #924018"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0066",
+      "capHsk": 1,
+      "soThuTuHsk": 66,
+      "tu": "国",
+      "pinyin": [
+        "guó"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "noi-chon",
+      "nghiaNhat": "国[くに]",
+      "nghiaViet": "nước, quốc gia",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我想去外国。",
+          "pinyin": [
+            "wǒ",
+            "xiǎng",
+            "qù",
+            "wài",
+            "guó",
+            ""
+          ],
+          "nhat": "海外[かいがい]に行[い]きたい。",
+          "viet": "Tôi muốn ra nước ngoài.",
+          "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (想).",
+          "nguon": "Tatoeba #382414"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0067",
+      "capHsk": 1,
+      "soThuTuHsk": 67,
+      "tu": "还",
+      "pinyin": [
+        "hái"
+      ],
+      "tuLoai": "phó từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "まだ、さらに、もっと",
+      "nghiaViet": "còn, vẫn, vẫn còn",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "盐还有吗？",
+          "pinyin": [
+            "yán",
+            "hái",
+            "yǒu",
+            "ma",
+            ""
+          ],
+          "nhat": "塩[しお]って、残[のこ]ってる？",
+          "viet": "Còn muối không?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #602882"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0068",
+      "capHsk": 1,
+      "soThuTuHsk": 68,
+      "tu": "孩子",
+      "pinyin": [
+        "hái",
+        "zi"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "gia-dinh",
+      "nghiaNhat": "子供[こども]",
+      "nghiaViet": "trẻ con, con cái",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "孩子感冒了。",
+          "pinyin": [
+            "hái",
+            "zi",
+            "gǎn",
+            "mào",
+            "le",
+            ""
+          ],
+          "nhat": "子供[こども]は風邪[かぜ]を引[ひ]いた。",
+          "viet": "Đứa trẻ bị cảm rồi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #5578208"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0069",
+      "capHsk": 1,
+      "soThuTuHsk": 69,
+      "tu": "汉语",
+      "pinyin": [
+        "hàn",
+        "yǔ"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "ngon-ngu",
+      "nghiaNhat": "中国語[ちゅうごくご]",
+      "nghiaViet": "tiếng Hán, tiếng Trung",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "你会说汉语吗?",
+          "pinyin": [
+            "nǐ",
+            "huì",
+            "shuō",
+            "hàn",
+            "yǔ",
+            "ma",
+            ""
+          ],
+          "nhat": "中国[ちゅうごく]語[ご]は話[はな]せますか？",
+          "viet": "Bạn biết nói tiếng Trung không?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #2027963"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0070",
+      "capHsk": 1,
+      "soThuTuHsk": 70,
+      "tu": "汉字",
+      "pinyin": [
+        "hàn",
+        "zì"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "ngon-ngu",
+      "nghiaNhat": "漢字[かんじ]",
+      "nghiaViet": "chữ Hán",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我在学汉字。",
+          "pinyin": [
+            "wǒ",
+            "zài",
+            "xué",
+            "hàn",
+            "zì",
+            ""
+          ],
+          "nhat": "私[わたし]は漢字[かんじ]を勉強[べんきょう]しています。",
+          "viet": "Tôi đang học chữ Hán.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1843469"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0071",
+      "capHsk": 1,
+      "soThuTuHsk": 71,
+      "tu": "号",
+      "pinyin": [
+        "hào"
+      ],
+      "tuLoai": "danh từ, lượng từ",
+      "chuDe": "thoi-gian",
+      "nghiaNhat": "〜日[にち]（日付[ひづけ]）、番号[ばんごう]",
+      "nghiaViet": "ngày (trong tháng); số",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "今天是三月五号。",
+          "pinyin": [
+            "jīn",
+            "tiān",
+            "shì",
+            "sān",
+            "yuè",
+            "wǔ",
+            "hào",
+            ""
+          ],
+          "nhat": "今日[きょう]は三[さん]月[がつ]五[いつ]日[か]です。",
+          "viet": "Hôm nay là ngày 5 tháng 3.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #4463940"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0072",
+      "capHsk": 1,
+      "soThuTuHsk": 72,
+      "tu": "好",
+      "pinyin": [
+        "hǎo"
+      ],
+      "tuLoai": "tính từ, (phó từ), (động từ)",
+      "chuDe": "tinh-chat",
+      "nghiaNhat": "良[よ]い、いい",
+      "nghiaViet": "tốt, hay, khoẻ",
+      "ghiChuBienDieu": null,
+      "capPhu": [
+        2,
+        4
+      ],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "你还好吧？",
+          "pinyin": [
+            "nǐ",
+            "hái",
+            "hǎo",
+            "ba",
+            ""
+          ],
+          "nhat": "大丈夫[だいじょうぶ]ですか？",
+          "viet": "Bạn vẫn ổn chứ?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #982281"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0073",
+      "capHsk": 1,
+      "soThuTuHsk": 73,
+      "tu": "好吃",
+      "pinyin": [
+        "hǎo",
+        "chī"
+      ],
+      "tuLoai": "tính từ",
+      "chuDe": "do-an",
+      "nghiaNhat": "おいしい",
+      "nghiaViet": "ngon",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "香蕉很好吃。",
+          "pinyin": [
+            "xiāng",
+            "jiāo",
+            "hěn",
+            "hǎo",
+            "chī",
+            ""
+          ],
+          "nhat": "バナナはとてもおいしいです。",
+          "viet": "Chuối rất ngon.",
+          "ghiChuBienDieu": "很 đọc thành thanh 2 khi đứng trước thanh 3 (好).",
+          "nguon": "Tatoeba #2062924"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0074",
+      "capHsk": 1,
+      "soThuTuHsk": 74,
+      "tu": "好看",
+      "pinyin": [
+        "hǎo",
+        "kàn"
+      ],
+      "tuLoai": "tính từ",
+      "chuDe": "tinh-chat",
+      "nghiaNhat": "きれいだ、見[み]ごたえがある",
+      "nghiaViet": "đẹp, dễ nhìn; hay (khi xem)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "你看过这么好看的电影吗？",
+          "pinyin": [
+            "nǐ",
+            "kàn",
+            "guò",
+            "zhè",
+            "me",
+            "hǎo",
+            "kàn",
+            "de",
+            "diàn",
+            "yǐng",
+            "ma",
+            ""
+          ],
+          "nhat": "こんなすばらしい映画[えいが]を見[み]たことがありますか。",
+          "viet": "Bạn đã xem bộ phim nào hay thế này chưa?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1366190"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Nghĩa tiếng Anh của từ Nhật (JMdict) không có từ nào trùng với từ Trung (CC-CEDICT), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0075",
+      "capHsk": 1,
+      "soThuTuHsk": 75,
+      "tu": "好听",
+      "pinyin": [
+        "hǎo",
+        "tīng"
+      ],
+      "tuLoai": "tính từ",
+      "chuDe": "tinh-chat",
+      "nghiaNhat": "聞[き]いて心地[ここち]よい",
+      "nghiaViet": "hay, nghe êm tai",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Không đối chiếu tự động được với từ điển (trợ từ, tiền tố hoặc cụm từ), cần kiểm tra nghĩa.",
+        "Chưa có câu ví dụ: Tatoeba không có câu phù hợp cho từ này."
+      ]
+    },
+    {
+      "id": "tu-0076",
+      "capHsk": 1,
+      "soThuTuHsk": 76,
+      "tu": "好玩儿",
+      "pinyin": [
+        "hǎo",
+        "wán",
+        "r"
+      ],
+      "tuLoai": "tính từ",
+      "chuDe": "tinh-chat",
+      "nghiaNhat": "面白[おもしろ]い、楽[たの]しい",
+      "nghiaViet": "vui, thú vị",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Nghĩa tiếng Anh của từ Nhật (JMdict) không có từ nào trùng với từ Trung (CC-CEDICT), cần kiểm tra nghĩa.",
+        "Chưa có câu ví dụ: Tatoeba không có câu phù hợp cho từ này."
+      ]
+    },
+    {
+      "id": "tu-0077",
+      "capHsk": 1,
+      "soThuTuHsk": 77,
+      "tu": "和",
+      "pinyin": [
+        "hé"
+      ],
+      "tuLoai": "giới từ, liên từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "〜と、および",
+      "nghiaViet": "và, với",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我和他认识。",
+          "pinyin": [
+            "wǒ",
+            "hé",
+            "tā",
+            "rèn",
+            "shí",
+            ""
+          ],
+          "nhat": "彼[かれ]とは面識[めんしき]がある。",
+          "viet": "Tôi quen anh ấy.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #8888035"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Không đối chiếu tự động được với từ điển (trợ từ, tiền tố hoặc cụm từ), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0078",
+      "capHsk": 1,
+      "soThuTuHsk": 78,
+      "tu": "喝",
+      "pinyin": [
+        "hē"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "do-an",
+      "nghiaNhat": "飲[の]む",
+      "nghiaViet": "uống",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "你喝酒吗？",
+          "pinyin": [
+            "nǐ",
+            "hē",
+            "jiǔ",
+            "ma",
+            ""
+          ],
+          "nhat": "お酒[さけ]は飲[の]みますか。",
+          "viet": "Bạn có uống rượu không?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #411612"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0079",
+      "capHsk": 1,
+      "soThuTuHsk": 79,
+      "tu": "很",
+      "pinyin": [
+        "hěn"
+      ],
+      "tuLoai": "phó từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "とても、たいへん",
+      "nghiaViet": "rất",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "她很忙。",
+          "pinyin": [
+            "tā",
+            "hěn",
+            "máng",
+            ""
+          ],
+          "nhat": "彼女[かのじょ]は大変[たいへん]忙[いそが]しい。",
+          "viet": "Cô ấy rất bận.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1278516"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0080",
+      "capHsk": 1,
+      "soThuTuHsk": 80,
+      "tu": "后",
+      "pinyin": [
+        "hòu"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "phuong-vi",
+      "nghiaNhat": "後[あと]、後[うし]ろ",
+      "nghiaViet": "sau; phía sau",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "以后再讲。",
+          "pinyin": [
+            "yǐ",
+            "hòu",
+            "zài",
+            "jiǎng",
+            ""
+          ],
+          "nhat": "今後[こんご]話[はなし]をしよう。",
+          "viet": "Sau này hãy nói tiếp.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #330582"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0081",
+      "capHsk": 1,
+      "soThuTuHsk": 81,
+      "tu": "回",
+      "pinyin": [
+        "huí"
+      ],
+      "tuLoai": "động từ, (lượng từ)",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "帰[かえ]る、戻[もど]る",
+      "nghiaViet": "về, quay lại",
+      "ghiChuBienDieu": null,
+      "capPhu": [
+        3
+      ],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "回去吧。",
+          "pinyin": [
+            "huí",
+            "qù",
+            "ba",
+            ""
+          ],
+          "nhat": "帰[かえ]れ。",
+          "viet": "Về đi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #13111620"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0082",
+      "capHsk": 1,
+      "soThuTuHsk": 82,
+      "tu": "会",
+      "pinyin": [
+        "huì"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "ngu-phap-co-ban",
+      "nghiaNhat": "〜できる、〜ことができる",
+      "nghiaViet": "biết (làm gì nhờ đã học), có thể",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我会开车。",
+          "pinyin": [
+            "wǒ",
+            "huì",
+            "kāi",
+            "chē",
+            ""
+          ],
+          "nhat": "私[わたし]は車[くるま]を運転[うんてん]できます。",
+          "viet": "Tôi biết lái xe.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #4764637"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Không đối chiếu tự động được với từ điển (trợ từ, tiền tố hoặc cụm từ), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0083",
+      "capHsk": 1,
+      "soThuTuHsk": 83,
+      "tu": "火车",
+      "pinyin": [
+        "huǒ",
+        "chē"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "giao-thong",
+      "nghiaNhat": "列車[れっしゃ]",
+      "nghiaViet": "tàu hỏa",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "火车6点出发。",
+          "pinyin": [
+            "huǒ",
+            "chē",
+            "",
+            "diǎn",
+            "chū",
+            "fā",
+            ""
+          ],
+          "nhat": "列車[れっしゃ]は６時[じ]に出[で]る。",
+          "viet": "Tàu hỏa khởi hành lúc 6 giờ.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #333835"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0084",
+      "capHsk": 1,
+      "soThuTuHsk": 84,
+      "tu": "几",
+      "pinyin": [
+        "jǐ"
+      ],
+      "tuLoai": "đại từ, số từ",
+      "chuDe": "so-dem",
+      "nghiaNhat": "いくつ、何[なん]〜",
+      "nghiaViet": "mấy, bao nhiêu (số nhỏ)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "几只苹果？",
+          "pinyin": [
+            "jǐ",
+            "zhī",
+            "píng",
+            "guǒ",
+            ""
+          ],
+          "nhat": "リンゴはいくつですか？",
+          "viet": "Mấy quả táo?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #755839"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0085",
+      "capHsk": 1,
+      "soThuTuHsk": 85,
+      "tu": "家",
+      "pinyin": [
+        "jiā"
+      ],
+      "tuLoai": "danh từ, lượng từ, (hậu tố)",
+      "chuDe": "gia-dinh",
+      "nghiaNhat": "家[いえ]、家[うち]、家庭[かてい]",
+      "nghiaViet": "nhà, gia đình",
+      "ghiChuBienDieu": null,
+      "capPhu": [
+        3
+      ],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "她在家吗?",
+          "pinyin": [
+            "tā",
+            "zài",
+            "jiā",
+            "ma",
+            ""
+          ],
+          "nhat": "彼女[かのじょ]は家[いえ]にいますか。",
+          "viet": "Cô ấy có ở nhà không?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #1163571"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0086",
+      "capHsk": 1,
+      "soThuTuHsk": 86,
+      "tu": "见",
+      "pinyin": [
+        "jiàn"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "会[あ]う、見[み]る",
+      "nghiaViet": "thấy, gặp",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "明天见。",
+          "pinyin": [
+            "míng",
+            "tiān",
+            "jiàn",
+            ""
+          ],
+          "nhat": "また明日[あした]。",
+          "viet": "Mai gặp lại.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #4879134"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0087",
+      "capHsk": 1,
+      "soThuTuHsk": 87,
+      "tu": "件",
+      "pinyin": [
+        "jiàn"
+      ],
+      "tuLoai": "lượng từ",
+      "chuDe": "luong-tu",
+      "nghiaNhat": "〜枚[まい]、〜件[けん]",
+      "nghiaViet": "cái, chiếc (lượng từ cho quần áo, sự việc)",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "试试这件毛衣。",
+          "pinyin": [
+            "shì",
+            "shì",
+            "zhè",
+            "jiàn",
+            "máo",
+            "yī",
+            ""
+          ],
+          "nhat": "このセーターを着[き]てみて。",
+          "viet": "Thử chiếc áo len này đi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3667783"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0088",
+      "capHsk": 1,
+      "soThuTuHsk": 88,
+      "tu": "叫",
+      "pinyin": [
+        "jiào"
+      ],
+      "tuLoai": "động từ, (giới từ)",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "呼[よ]ぶ、〜という名前[なまえ]だ",
+      "nghiaViet": "gọi; tên là",
+      "ghiChuBienDieu": null,
+      "capPhu": [
+        4
+      ],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我叫王明。",
+          "pinyin": [
+            "wǒ",
+            "jiào",
+            "wáng",
+            "míng",
+            ""
+          ],
+          "nhat": "王明[おうめい]と言[い]います。",
+          "viet": "Tôi tên là Vương Minh.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #13947400"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0089",
+      "capHsk": 1,
+      "soThuTuHsk": 89,
+      "tu": "饺子",
+      "pinyin": [
+        "jiǎo",
+        "zi"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-an",
+      "nghiaNhat": "餃子[ギョーザ]",
+      "nghiaViet": "sủi cảo, bánh chẻo",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我们自制的饺子馅料十足。",
+          "pinyin": [
+            "wǒ",
+            "men",
+            "zì",
+            "zhì",
+            "de",
+            "jiǎo",
+            "zi",
+            "xiàn",
+            "liào",
+            "shí",
+            "zú",
+            ""
+          ],
+          "nhat": "家[いえ]のギョウザはみっちり具[ぐ]が入[はい]ってる。",
+          "viet": "Sủi cảo nhà làm nhiều nhân lắm.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #13972629"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0090",
+      "capHsk": 1,
+      "soThuTuHsk": 90,
+      "tu": "家人",
+      "pinyin": [
+        "jiā",
+        "rén"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "gia-dinh",
+      "nghiaNhat": "家族[かぞく]",
+      "nghiaViet": "người nhà, gia đình",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "这是你的家人吗？",
+          "pinyin": [
+            "zhè",
+            "shì",
+            "nǐ",
+            "de",
+            "jiā",
+            "rén",
+            "ma",
+            ""
+          ],
+          "nhat": "こちらはあなたのご家族[かぞく]ですか？",
+          "viet": "Đây là người nhà của bạn à?",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #471395"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0091",
+      "capHsk": 1,
+      "soThuTuHsk": 91,
+      "tu": "鸡蛋",
+      "pinyin": [
+        "jī",
+        "dàn"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "do-an",
+      "nghiaNhat": "卵[たまご]",
+      "nghiaViet": "trứng gà",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "请问鸡蛋在哪里？",
+          "pinyin": [
+            "qǐng",
+            "wèn",
+            "jī",
+            "dàn",
+            "zài",
+            "nǎ",
+            "lǐ",
+            ""
+          ],
+          "nhat": "すみません、卵[たまご]はどこにありますか？",
+          "viet": "Xin hỏi, trứng gà ở đâu?",
+          "ghiChuBienDieu": "哪 đọc thành thanh 2 khi đứng trước thanh 3 (里).",
+          "nguon": "Tatoeba #334425"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0092",
+      "capHsk": 1,
+      "soThuTuHsk": 92,
+      "tu": "姐姐",
+      "pinyin": [
+        "jiě",
+        "jie"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "gia-dinh",
+      "nghiaNhat": "姉[あね]、お姉[ねえ]さん",
+      "nghiaViet": "chị gái",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "他有三个姐姐。",
+          "pinyin": [
+            "tā",
+            "yǒu",
+            "sān",
+            "gè",
+            "jiě",
+            "jie",
+            ""
+          ],
+          "nhat": "彼[かれ]は姉[あね]が３人[にん]います。",
+          "viet": "Anh ấy có ba người chị gái.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #469250"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0093",
+      "capHsk": 1,
+      "soThuTuHsk": 93,
+      "tu": "今年",
+      "pinyin": [
+        "jīn",
+        "nián"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "thoi-gian",
+      "nghiaNhat": "今年[ことし]",
+      "nghiaViet": "năm nay",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "今年夏天很冷。",
+          "pinyin": [
+            "jīn",
+            "nián",
+            "xià",
+            "tiān",
+            "hěn",
+            "lěng",
+            ""
+          ],
+          "nhat": "今年[ことし]の夏[なつ]は寒[さむ]いです。",
+          "viet": "Mùa hè năm nay rất lạnh.",
+          "ghiChuBienDieu": "很 đọc thành thanh 2 khi đứng trước thanh 3 (冷).",
+          "nguon": "Tatoeba #472815"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0094",
+      "capHsk": 1,
+      "soThuTuHsk": 94,
+      "tu": "今天",
+      "pinyin": [
+        "jīn",
+        "tiān"
+      ],
+      "tuLoai": "danh từ",
+      "chuDe": "thoi-gian",
+      "nghiaNhat": "今日[きょう]",
+      "nghiaViet": "hôm nay",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "今天下雪。",
+          "pinyin": [
+            "jīn",
+            "tiān",
+            "xià",
+            "xuě",
+            ""
+          ],
+          "nhat": "今日[きょう]は雪[ゆき]です。",
+          "viet": "Hôm nay có tuyết.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #776959"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0095",
+      "capHsk": 1,
+      "soThuTuHsk": 95,
+      "tu": "九",
+      "pinyin": [
+        "jiǔ"
+      ],
+      "tuLoai": "số từ",
+      "chuDe": "so-dem",
+      "nghiaNhat": "九[きゅう]、九[く]",
+      "nghiaViet": "chín",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "银行九点开门。",
+          "pinyin": [
+            "yín",
+            "háng",
+            "jiǔ",
+            "diǎn",
+            "kāi",
+            "mén",
+            ""
+          ],
+          "nhat": "銀行[ぎんこう]は９時[じ]に開[ひら]く。",
+          "viet": "Ngân hàng mở cửa lúc 9 giờ.",
+          "ghiChuBienDieu": "九 đọc thành thanh 2 khi đứng trước thanh 3 (点).",
+          "nguon": "Tatoeba #1878287"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0096",
+      "capHsk": 1,
+      "soThuTuHsk": 96,
+      "tu": "觉得",
+      "pinyin": [
+        "jué",
+        "de"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "思[おも]う、感[かん]じる",
+      "nghiaViet": "cảm thấy, nghĩ rằng",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "我觉得他会来。",
+          "pinyin": [
+            "wǒ",
+            "jué",
+            "de",
+            "tā",
+            "huì",
+            "lái",
+            ""
+          ],
+          "nhat": "彼[かれ]は来[く]ると思[おも]います。",
+          "viet": "Tôi nghĩ anh ấy sẽ đến.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #12686127"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0097",
+      "capHsk": 1,
+      "soThuTuHsk": 97,
+      "tu": "开",
+      "pinyin": [
+        "kāi"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "開[あ]ける、開[ひら]く",
+      "nghiaViet": "mở; lái (xe); bật",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "开门！",
+          "pinyin": [
+            "kāi",
+            "mén",
+            ""
+          ],
+          "nhat": "開[あ]けてくれ。",
+          "viet": "Mở cửa ra!",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #862207"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0098",
+      "capHsk": 1,
+      "soThuTuHsk": 98,
+      "tu": "开车",
+      "pinyin": [
+        "kāi",
+        "chē"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "giao-thong",
+      "nghiaNhat": "車[くるま]を運転[うんてん]する",
+      "nghiaViet": "lái xe",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "开车慢点。",
+          "pinyin": [
+            "kāi",
+            "chē",
+            "màn",
+            "diǎn",
+            ""
+          ],
+          "nhat": "ゆっくり運転[うんてん]しなさい。",
+          "viet": "Lái xe chậm thôi.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #5092212"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0099",
+      "capHsk": 1,
+      "soThuTuHsk": 99,
+      "tu": "看",
+      "pinyin": [
+        "kàn"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "hoat-dong",
+      "nghiaNhat": "見[み]る、読[よ]む",
+      "nghiaViet": "nhìn, xem, đọc",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "看他。",
+          "pinyin": [
+            "kàn",
+            "tā",
+            ""
+          ],
+          "nhat": "彼[かれ]を見[み]て。",
+          "viet": "Nhìn anh ấy.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #10350401"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    },
+    {
+      "id": "tu-0100",
+      "capHsk": 1,
+      "soThuTuHsk": 100,
+      "tu": "看病",
+      "pinyin": [
+        "kàn",
+        "bìng"
+      ],
+      "tuLoai": "động từ",
+      "chuDe": "suc-khoe",
+      "nghiaNhat": "診察[しんさつ]を受[う]ける、医者[いしゃ]にかかる",
+      "nghiaViet": "đi khám bệnh",
+      "ghiChuBienDieu": null,
+      "capPhu": [],
+      "dangRutGon": null,
+      "viDu": [
+        {
+          "trung": "你应该去看病。",
+          "pinyin": [
+            "nǐ",
+            "yīng",
+            "gāi",
+            "qù",
+            "kàn",
+            "bìng",
+            ""
+          ],
+          "nhat": "医者[いしゃ]に診[み]てもらった方[ほう]がいいよ。",
+          "viet": "Bạn nên đi khám bệnh.",
+          "ghiChuBienDieu": null,
+          "nguon": "Tatoeba #3699941"
+        }
+      ],
+      "cangKiemTra": [
+        "Từ Nhật tương đương, nghĩa Việt, chủ đề là bản nháp, chưa có người xác minh.",
+        "Nghĩa tiếng Anh của từ Nhật (JMdict) không có từ nào trùng với từ Trung (CC-CEDICT), cần kiểm tra nghĩa.",
+        "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, và bản dịch Việt là bản nháp, cần kiểm tra."
+      ]
+    }
+  ]
+}

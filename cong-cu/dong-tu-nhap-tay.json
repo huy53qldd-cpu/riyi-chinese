@@ -1,0 +1,168 @@
+{
+  "ghiChu": "Phần NHẬP TAY của giai đoạn 3 (Tab B). Nghĩa Việt, giải thích, câu dịch Việt là BẢN NHÁP do Claude soạn, cần chủ dự án rà lại. Câu ví dụ chọn theo mã Tatoeba (CC BY 2.0 FR); chỗ nào Tatoeba không có thì ghi 'tuSoan' và câu do Claude tự soạn.",
+  "luuYDauTab": "Nhiều cặp từ dưới đây khi viết ra trông hơi khác nhau giữa tiếng Trung và tiếng Nhật, ví dụ {ja|検討} và 检讨, hay {ja|経理} và 经理. Đây CHỈ là khác biệt giữa chữ giản thể và tự dạng Nhật, hoàn toàn không phải hai chữ khác nhau. Âm Hán Việt và ý nghĩa gốc của từng chữ là GIỐNG NHAU. Điểm khác nhau cần chú ý nằm ở NGHĨA CỦA TỪ khi dùng trong tiếng Trung và tiếng Nhật hiện đại, chứ không nằm ở cách viết.",
+  "danhSach": [
+    {
+      "chuNhat": "手紙", "gianThe": "手纸", "hanViet": "thủ chỉ", "docNhat": "てがみ", "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "nghiaTrung": "giấy vệ sinh", "nghiaNhat": "lá thư",
+      "viDuNhat": { "id": "148569", "viet": "Xin hãy gửi thư cho tôi." },
+      "viDuTrung": { "tuSoan": "手纸用完了。", "viet": "Hết giấy vệ sinh rồi.", "ghiChuBienDieu": "手纸: chữ 手 đọc thành thanh 2 khi đứng trước thanh 3." },
+      "giaiThich": "Cùng viết là {ja|手紙} / 手纸 nhưng nghĩa khác hẳn: tiếng Nhật là lá thư, tiếng Trung là giấy vệ sinh.",
+      "choDeNham": "Muốn nói 'lá thư' trong tiếng Trung phải dùng 信 (xìn). Dùng nhầm 手纸 sẽ thành câu rất khó xử."
+    },
+    {
+      "chuNhat": "勉強", "gianThe": "勉强", "hanViet": "miễn cưỡng", "docNhat": "べんきょう", "mucNguyHiem": "nghia-khac-han",
+      "nghiaTrung": "miễn cưỡng, gượng ép", "nghiaNhat": "học, học tập",
+      "viDuNhat": { "id": "83322", "viet": "Hãy học bài đi." },
+      "viDuTrung": { "id": "9489506", "viet": "Tom miễn cưỡng ký vào giấy tờ.", "ghiChuBienDieu": "勉强: chữ 勉 đọc thành thanh 2 khi đứng trước thanh 3." },
+      "giaiThich": "Tiếng Nhật {ja|勉強} (べんきょう) là học tập. Tiếng Trung 勉强 (miǎnqiǎng) là miễn cưỡng, gượng ép, hoặc chỉ vừa đủ.",
+      "choDeNham": "Muốn nói 'học' trong tiếng Trung dùng 学习 (xuéxí). Nói 勉强 sẽ thành 'làm một cách gượng ép'."
+    },
+    {
+      "chuNhat": "大丈夫", "gianThe": "大丈夫", "hanViet": "đại trượng phu", "docNhat": "だいじょうぶ", "mucNguyHiem": "nghia-khac-han",
+      "nghiaTrung": "bậc trượng phu, đấng nam nhi", "nghiaNhat": "ổn, không sao",
+      "viDuNhat": { "id": "1282984", "viet": "Không sao đâu." },
+      "viDuTrung": { "id": "1997144", "viet": "Nói xấu người khác sau lưng không phải việc của bậc trượng phu.", "ghiChuBienDieu": "不 ở đây đọc thành bú vì đứng trước thanh 4." },
+      "giaiThich": "Tiếng Nhật {ja|大丈夫} (だいじょうぶ) là ổn, không sao. Tiếng Trung 大丈夫 (dàzhàngfu) là bậc nam nhi có khí phách.",
+      "choDeNham": "Muốn nói 'không sao' trong tiếng Trung dùng 没关系 (méi guānxi) hoặc 没事 (méi shì)."
+    },
+    {
+      "chuNhat": "走る", "gianThe": "走", "hanViet": "tẩu", "docNhat": "はしる", "mucNguyHiem": "nghia-lech-nhe",
+      "nghiaTrung": "đi, đi bộ", "nghiaNhat": "chạy",
+      "viDuNhat": { "id": "224594", "viet": "Đừng chạy ở đây." },
+      "viDuTrung": { "id": "380734", "viet": "Tôi đi bộ đến đó.", "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (走)." },
+      "giaiThich": "Tiếng Nhật {ja|走}る (はしる) là chạy. Tiếng Trung 走 (zǒu) là đi bộ.",
+      "choDeNham": "Muốn nói 'chạy' trong tiếng Trung dùng 跑 (pǎo)."
+    },
+    {
+      "chuNhat": "娘", "gianThe": "娘", "hanViet": "nương", "docNhat": "むすめ", "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "nghiaTrung": "mẹ, má (khẩu ngữ)", "nghiaNhat": "con gái, cô gái trẻ",
+      "viDuNhat": { "id": "2213091", "viet": "Đây là con gái tôi." },
+      "viDuTrung": { "id": "5932467", "viet": "Có sữa là mẹ (tục ngữ, ý nói ai cho lợi ích thì theo người đó).", "ghiChuBienDieu": "有 đọc thành thanh 2 khi đứng trước thanh 3 (奶)." },
+      "giaiThich": "Tiếng Nhật {ja|娘} (むすめ) là con gái. Tiếng Trung 娘 (niáng) là mẹ, cách gọi khẩu ngữ ở một số vùng.",
+      "choDeNham": "Muốn nói 'con gái' trong tiếng Trung dùng 女儿 (nǚ'ér). Gọi con gái mình là 娘 sẽ thành gọi mẹ."
+    },
+    {
+      "chuNhat": "愛人", "gianThe": "爱人", "hanViet": "ái nhân", "docNhat": "あいじん", "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "nghiaTrung": "vợ hoặc chồng (Đại lục)", "nghiaNhat": "người tình, nhân tình",
+      "viDuNhat": { "id": "224691", "viet": "Nói riêng với bạn thôi, anh ấy có người tình." },
+      "viDuTrung": { "id": "7148495", "viet": "Vợ/chồng tôi nấu ăn rất giỏi.", "ghiChuBienDieu": null },
+      "giaiThich": "Tiếng Nhật {ja|愛人} (あいじん) là người tình ngoài hôn nhân. Tiếng Trung 爱人 (àiren) ở Đại lục là vợ hoặc chồng.",
+      "choDeNham": "Ở Đại lục, 爱人 nói về vợ/chồng mình nên hoàn toàn bình thường. Ngược lại, gọi vợ mình là {ja|愛人} trong tiếng Nhật sẽ gây hiểu lầm nghiêm trọng."
+    },
+    {
+      "chuNhat": "老婆", "gianThe": "老婆", "hanViet": "lão bà", "docNhat": "ろうば", "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "nghiaTrung": "vợ (khẩu ngữ)", "nghiaNhat": "bà lão",
+      "viDuNhat": { "id": "1147602", "viet": "Bà lão kia là ai vậy?" },
+      "viDuTrung": { "id": "13259313", "viet": "Cô ấy là vợ tôi.", "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (老)." },
+      "giaiThich": "Tiếng Nhật {ja|老婆} (ろうば) là bà lão. Tiếng Trung 老婆 (lǎopo) là vợ, cách gọi thân mật trong khẩu ngữ.",
+      "choDeNham": "Gọi vợ là {ja|老婆} trong tiếng Nhật sẽ thành 'bà lão', rất bất lịch sự."
+    },
+    {
+      "chuNhat": "丈夫", "gianThe": "丈夫", "hanViet": "trượng phu", "docNhat": "じょうぶ", "mucNguyHiem": "nghia-khac-han",
+      "nghiaTrung": "chồng", "nghiaNhat": "bền chắc, khoẻ mạnh",
+      "viDuNhat": { "id": "4212224", "viet": "Sợi dây này rất chắc." },
+      "viDuTrung": { "id": "13260802", "viet": "Anh ấy là chồng tôi.", "ghiChuBienDieu": null },
+      "giaiThich": "Tiếng Nhật {ja|丈夫} (じょうぶ) là bền chắc, khoẻ mạnh. Tiếng Trung 丈夫 (zhàngfu) là chồng.",
+      "choDeNham": "Muốn nói 'bền, chắc' trong tiếng Trung dùng 结实 (jiēshi). Khen sợi dây là 丈夫 sẽ thành 'sợi dây là chồng'."
+    },
+    {
+      "chuNhat": "約束", "gianThe": "约束", "hanViet": "ước thúc", "docNhat": "やくそく", "mucNguyHiem": "nghia-khac-han",
+      "nghiaTrung": "ràng buộc, kiềm chế, hạn chế", "nghiaNhat": "lời hứa, cuộc hẹn",
+      "viDuNhat": { "id": "10624578", "viet": "Tôi sẽ giữ lời hứa." },
+      "viDuTrung": { "id": "2416132", "viet": "Ở đây tôi luôn cảm thấy bị gò bó.", "ghiChuBienDieu": "总 đọc thành thanh 2 khi đứng trước thanh 3 (感)." },
+      "giaiThich": "Tiếng Nhật {ja|約束} (やくそく) là lời hứa, cuộc hẹn. Tiếng Trung 约束 (yuēshù) là ràng buộc, kiềm chế.",
+      "choDeNham": "Muốn nói 'lời hứa' trong tiếng Trung dùng 承诺 (chéngnuò) hoặc 约定 (yuēdìng)."
+    },
+    {
+      "chuNhat": "検討", "gianThe": "检讨", "hanViet": "kiểm thảo", "docNhat": "けんとう", "mucNguyHiem": "nghia-lech-nhe",
+      "nghiaTrung": "tự kiểm điểm, nhận lỗi; rà soát", "nghiaNhat": "xem xét, cân nhắc",
+      "viDuNhat": { "id": "211062", "viet": "Vấn đề đó đang được xem xét." },
+      "viDuTrung": { "id": "787627", "viet": "Lúc dọn dẹp sau lễ kỷ niệm trường, tôi làm mất một chiếc chìa khoá của trường, nên bị buộc phải viết bản kiểm điểm.", "ghiChuBienDieu": "Câu có nhiều biến điệu: 打扫 (打 đọc thành thanh 2), 一把 (一 đọc thành yì), 一份 (一 đọc thành yí), 检讨 (检 đọc thành thanh 2)." },
+      "giaiThich": "Tiếng Nhật {ja|検討} (けんとう) là xem xét, cân nhắc. Tiếng Trung 检讨 (jiǎntǎo) thường là tự kiểm điểm, nhận lỗi; cũng có nghĩa rà soát.",
+      "choDeNham": "Trong tiếng Trung, 写检讨 là viết bản kiểm điểm nhận lỗi. Muốn nói 'xem xét' thì dùng 考虑 (kǎolǜ)."
+    },
+    {
+      "chuNhat": "汽車", "gianThe": "汽车", "hanViet": "khí xa", "docNhat": "きしゃ", "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "nghiaTrung": "ô tô", "nghiaNhat": "tàu hỏa (cách gọi cũ, gốc là tàu chạy hơi nước)",
+      "viDuNhat": { "id": "108557", "viet": "Anh ấy đã lên tàu hỏa." },
+      "viDuTrung": { "id": "336112", "viet": "Ô tô bị hỏng rồi.", "ghiChuBienDieu": null },
+      "giaiThich": "Tiếng Nhật {ja|汽車} (きしゃ) là tàu hỏa. Tiếng Trung 汽车 (qìchē) là ô tô.",
+      "choDeNham": "Muốn nói 'tàu hỏa' trong tiếng Trung dùng 火车 (huǒchē). Nói 汽车 là ô tô."
+    },
+    {
+      "chuNhat": "工作", "gianThe": "工作", "hanViet": "công tác", "docNhat": "こうさく", "mucNguyHiem": "nghia-khac-han",
+      "nghiaTrung": "công việc, làm việc", "nghiaNhat": "thủ công, sự chế tạo; cũng chỉ hoạt động ngầm",
+      "viDuNhat": { "id": "107395", "viet": "Anh ấy thành thạo thủ công." },
+      "viDuTrung": { "id": "13150949", "viet": "Cùng làm việc.", "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (起)." },
+      "giaiThich": "Tiếng Nhật {ja|工作} (こうさく) là thủ công, chế tạo. Tiếng Trung 工作 (gōngzuò) là công việc, làm việc.",
+      "choDeNham": "Muốn nói 'công việc' trong tiếng Nhật dùng {ja|仕事} (しごと)."
+    },
+    {
+      "chuNhat": "経理", "gianThe": "经理", "hanViet": "kinh lý", "docNhat": "けいり", "mucNguyHiem": "nghia-khac-han",
+      "nghiaTrung": "giám đốc, quản lý", "nghiaNhat": "kế toán",
+      "viDuNhat": { "id": "107965", "viet": "Anh ấy làm ở phòng kế toán." },
+      "viDuTrung": { "id": "389056", "viet": "Đúng, là giám đốc của chúng tôi.", "ghiChuBienDieu": null },
+      "giaiThich": "Tiếng Nhật {ja|経理} (けいり) là kế toán. Tiếng Trung 经理 (jīnglǐ) là giám đốc, quản lý.",
+      "choDeNham": "Muốn nói 'kế toán' trong tiếng Trung dùng 会计 (kuàijì)."
+    },
+    {
+      "chuNhat": "大家", "gianThe": "大家", "hanViet": "đại gia", "docNhat": "おおや", "mucNguyHiem": "nghia-khac-han",
+      "nghiaTrung": "mọi người, tất cả", "nghiaNhat": "chủ nhà cho thuê",
+      "viDuNhat": { "id": "137657", "viet": "Nghe nói chủ nhà muốn tăng tiền thuê." },
+      "viDuTrung": { "id": "338827", "viet": "Chào mọi người.", "ghiChuBienDieu": null },
+      "giaiThich": "Tiếng Nhật {ja|大家} (おおや) là chủ nhà cho thuê (còn đọc たいか là bậc thầy, chuyên gia). Tiếng Trung 大家 (dàjiā) là mọi người.",
+      "choDeNham": "Muốn nói 'mọi người' trong tiếng Nhật dùng {ja|皆さん} (みなさん)."
+    },
+    {
+      "chuNhat": "新聞", "gianThe": "新闻", "hanViet": "tân văn", "docNhat": "しんぶん", "mucNguyHiem": "nghia-lech-nhe",
+      "nghiaTrung": "tin tức", "nghiaNhat": "tờ báo",
+      "viDuNhat": { "id": "145180", "viet": null },
+      "viDuTrung": { "id": "345984", "viet": "Bạn nghe tin tức chưa?", "ghiChuBienDieu": null },
+      "giaiThich": "Tiếng Nhật {ja|新聞} (しんぶん) là tờ báo. Tiếng Trung 新闻 (xīnwén) là tin tức.",
+      "choDeNham": "Muốn nói 'tờ báo' trong tiếng Trung dùng 报纸 (bàozhǐ)."
+    },
+    {
+      "chuNhat": "湯", "gianThe": "汤", "hanViet": "thang", "docNhat": "ゆ", "mucNguyHiem": "nghia-khac-han",
+      "nghiaTrung": "canh, súp", "nghiaNhat": "nước nóng",
+      "viDuNhat": { "id": "83915", "viet": "Cho nước nóng vào bồn tắm." },
+      "viDuTrung": { "id": "8831896", "viet": "Canh nóng quá.", "ghiChuBienDieu": null },
+      "giaiThich": "Tiếng Nhật {ja|湯} (ゆ) là nước nóng. Tiếng Trung 汤 (tāng) là canh, súp.",
+      "choDeNham": "Muốn nói 'nước nóng' trong tiếng Trung dùng 热水 (rèshuǐ). Uống 汤 ở Trung Quốc là ăn canh."
+    },
+    {
+      "chuNhat": "迷惑", "gianThe": "迷惑", "hanViet": "mê hoặc", "docNhat": "めいわく", "mucNguyHiem": "nghia-khac-han",
+      "nghiaTrung": "làm cho mơ hồ, rối trí", "nghiaNhat": "phiền hà, sự làm phiền",
+      "viDuNhat": { "id": "9988874", "viet": "Đừng làm phiền Tom." },
+      "viDuTrung": { "id": "8932118", "viet": "Cô ấy bảo tôi là cô ấy rất bối rối.", "ghiChuBienDieu": null },
+      "giaiThich": "Tiếng Nhật {ja|迷惑} (めいわく) là phiền hà, sự làm phiền. Tiếng Trung 迷惑 (míhuo) là làm cho mơ hồ, rối trí.",
+      "choDeNham": "Muốn nói 'làm phiền' trong tiếng Trung dùng 麻烦 (máfan)."
+    },
+    {
+      "chuNhat": "怪我", "gianThe": "怪我", "hanViet": "quái ngã", "docNhat": "けが", "mucNguyHiem": "nghia-khac-han",
+      "tonTaiTrongTiengTrung": false,
+      "nghiaTrung": null, "nghiaNhat": "vết thương, bị thương",
+      "viDuNhat": { "id": "10610346", "viet": "Bạn có bị thương không?" },
+      "viDuTrung": null,
+      "giaiThich": "Từ {ja|怪我} (けが) của tiếng Nhật không tồn tại như một từ trong tiếng Trung hiện đại. Hai chữ 怪 và 我 chỉ đứng cạnh nhau như hai từ riêng.",
+      "choDeNham": "'Vết thương' trong tiếng Trung là 伤 (shāng), 'bị thương' là 受伤 (shòushāng)."
+    },
+    {
+      "chuNhat": "切手", "gianThe": "切手", "hanViet": "thiết thủ", "docNhat": "きって", "mucNguyHiem": "nghia-khac-han",
+      "tonTaiTrongTiengTrung": false,
+      "nghiaTrung": null, "nghiaNhat": "con tem",
+      "viDuNhat": { "id": "10815068", "viet": "Mua tem ở đâu được?" },
+      "viDuTrung": null,
+      "giaiThich": "Từ {ja|切手} (きって) của tiếng Nhật không tồn tại như một từ trong tiếng Trung hiện đại. Hai chữ 切 và 手 ghép lại không tạo thành từ có nghĩa.",
+      "choDeNham": "'Con tem' trong tiếng Trung là 邮票 (yóupiào), hoàn toàn khác mặt chữ."
+    },
+    {
+      "chuNhat": "麻雀", "gianThe": "麻雀", "hanViet": "ma tước", "docNhat": "マージャン", "mucNguyHiem": "de-hieu-lam-nghiem-trong",
+      "nghiaTrung": "chim sẻ", "nghiaNhat": "mạt chược",
+      "viDuNhat": { "id": "81436", "viet": null },
+      "viDuTrung": { "id": "8744816", "viet": "Chim sẻ đang hót trên cây.", "ghiChuBienDieu": null },
+      "giaiThich": "Tiếng Nhật {ja|麻雀} (マージャン) là mạt chược. Tiếng Trung 麻雀 (máquè) là chim sẻ.",
+      "choDeNham": "Muốn nói 'mạt chược' trong tiếng Trung dùng 麻将 (májiàng)."
+    }
+  ]
+}

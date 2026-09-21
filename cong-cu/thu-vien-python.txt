@@ -19,3 +19,15 @@ fonttools[woff]>=4.60
 # Đổi chữ giản thể sang phồn thể    -> dùng bởi cat-font.py
 # Phục vụ cột thứ 3 của bảng đối chiếu tự dạng ở Tab A.
 opencc-python-reimplemented>=0.1.7
+
+# Dựng dữ liệu nét viết từ KanjiVG (đường tâm -> hình tô kín)
+svgpathtools>=1.6
+
+shapely>=2.0
+
+# Dựng dữ liệu đồng tự dị nghĩa: gắn pinyin và furigana cho câu ví dụ
+pypinyin>=0.53
+
+fugashi>=1.3
+
+unidic-lite>=1.0
