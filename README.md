@@ -278,6 +278,9 @@ File `.env` **không** lên kho Git (đã chặn sẵn).
    → **Save**.
 3. Thẻ **Settings → Authorized domains**: có sẵn `localhost` và tên miền của dự án
    (dạng `ten-du-an.web.app`). Đủ dùng, không cần thêm gì.
+4. (GĐ 10) Cũng ở thẻ **Sign-in method** → **Add new provider** → chọn **Email/Password**
+   → bật dòng đầu tiên **Email/Password** (KHÔNG cần bật "Email link") → **Save**.
+   Việc này cho phép người dùng tạo tài khoản bằng email + mật khẩu.
 
 ### Bước B2 — Để iPhone không bắt đăng nhập lại (làm một lần)
 

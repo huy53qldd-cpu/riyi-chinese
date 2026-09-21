@@ -27,13 +27,18 @@ import {
   ChevronRight,
   CircleCheck,
   Eye,
+  EyeOff,
   Flag,
   GalleryVerticalEnd,
   Info,
+  KeyRound,
   Languages,
   ListChecks,
   ListOrdered,
+  LogIn,
   LogOut,
+  Mail,
+  MailCheck,
   Minus,
   Moon,
   NotebookPen,
@@ -46,6 +51,7 @@ import {
   Sun,
   SquarePen,
   Type,
+  UserPlus,
   X,
 } from "lucide-react";
 
@@ -91,6 +97,14 @@ const HINH = {
   "ung-dung": Info,
   "cap-nhat": RefreshCw,
   "dang-xuat": LogOut,
+  // Tài khoản email + mật khẩu (GĐ 10)
+  "dang-nhap": LogIn,
+  "email": Mail,
+  "tao-tai-khoan": UserPlus,
+  "mat-khau": KeyRound,
+  "hien-mat-khau": Eye,
+  "an-mat-khau": EyeOff,
+  "xac-minh": MailCheck,
 };
 
 /** Đổi cỡ px (tính ở cỡ chữ Vừa) ra rem, để hình to nhỏ theo thanh kéo cỡ chữ. */

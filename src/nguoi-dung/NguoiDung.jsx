@@ -43,6 +43,7 @@ import {
   theoDoiDangNhap,
 } from "../firebase/dangNhap.js";
 import { docTenDaNho, nhoTen, quenTen } from "./nhoDangNhap.js";
+import { kiemTraDaXacMinh, taoTaiKhoan } from "../firebase/taiKhoanEmail.js";
 import { docTienDo, ghiLo } from "../firebase/luuTru.js";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
 import {
@@ -109,6 +110,9 @@ export function NguoiDungProvider({ children }) {
   // Tên người đăng nhập lần trước trên máy (xem nhoDangNhap.js). Dùng để chào
   // ngay lúc mở app, trong khi Firebase còn đang kiểm tra phiên đăng nhập.
   const [tenDaNho] = useState(docTenDaNho);
+  // Tên người vừa gõ ở màn tạo tài khoản. Firebase báo "đã đăng nhập" ngay khi
+  // tạo xong, TRƯỚC khi kịp lưu tên hiển thị, nên giữ tạm tên ở đây để dùng.
+  const tenVuaTao = useRef("");
   const [caiDat, setCaiDat] = useState(docCaiDatMay);
   const [daHoc, setDaHoc] = useState({});
   const [tapViet, setTapViet] = useState({});
@@ -229,6 +233,7 @@ export function NguoiDungProvider({ children }) {
         return;
       }
 
+      if (!n.ten && tenVuaTao.current) n = { ...n, ten: tenVuaTao.current };
       nguoiRef.current = n;
       setNguoi(n);
       nhoTen(n.ten || n.email);
@@ -283,6 +288,26 @@ export function NguoiDungProvider({ children }) {
     const kq = await dangNhapGoogle();
     if (!kq.thanhCong) hienThongBao(kq.thongBao, 4);
   }, [hienThongBao]);
+
+  // --- Tài khoản email + mật khẩu (GĐ 10) ---
+  const taoTaiKhoanEmail = useCallback(async (duLieu) => {
+    tenVuaTao.current = duLieu.ten.trim();
+    const kq = await taoTaiKhoan(duLieu);
+    if (kq.thanhCong) {
+      // Tên đã lưu lên Firebase: cập nhật người đang dùng cho chắc
+      setNguoi((n) => (n ? { ...n, ten: kq.ten } : n));
+      nhoTen(kq.ten);
+    }
+    tenVuaTao.current = kq.thanhCong ? kq.ten : "";
+    return kq;
+  }, []);
+
+  /** Hỏi lại Firebase xem email đã được xác minh chưa, rồi cập nhật giao diện. */
+  const xemLaiXacMinh = useCallback(async () => {
+    const da = await kiemTraDaXacMinh();
+    if (da) setNguoi((n) => (n ? { ...n, daXacMinh: true } : n));
+    return da;
+  }, []);
 
   const dangXuat = useCallback(async () => {
     await ghiLoNgay(); // ghi nốt phần đang chờ trước khi thoát
@@ -478,6 +503,8 @@ export function NguoiDungProvider({ children }) {
       tapViet,
       dangNhap,
       dangXuat,
+      taoTaiKhoanEmail,
+      xemLaiXacMinh,
       doiCaiDat,
       danhDauDaHoc,
       ghiTapViet,
@@ -499,6 +526,8 @@ export function NguoiDungProvider({ children }) {
       tapViet,
       dangNhap,
       dangXuat,
+      taoTaiKhoanEmail,
+      xemLaiXacMinh,
       doiCaiDat,
       danhDauDaHoc,
       ghiTapViet,

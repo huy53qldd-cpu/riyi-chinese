@@ -32,9 +32,15 @@ App học tiếng Trung (HSK 3.0, cấp 1-3) dành cho người Việt đã bi�
 
 ## Đăng nhập
 
-- CHỈ có một nút duy nhất: Đăng nhập bằng Google.
-- KHÔNG tạo tài khoản, KHÔNG email/mật khẩu, KHÔNG quên mật khẩu, KHÔNG liên kết
-  tài khoản.
+- Hai cách đăng nhập (đổi từ GĐ 10, xem quyết định 18.12): nút "Đăng nhập bằng
+  Google", và tài khoản EMAIL + MẬT KHẨU do người dùng tự tạo.
+- Tạo tài khoản: tên hiển thị, email, mật khẩu (tối thiểu 8 ký tự), nhập lại
+  mật khẩu. Tạo xong dùng được ngay, app gửi email xác minh.
+- Quên mật khẩu: gửi EMAIL CÓ LINK ĐẶT MẬT KHẨU MỚI (không bao giờ gửi lại
+  mật khẩu cũ, vì Firebase không lưu mật khẩu gốc).
+- Đổi mật khẩu trong Cài đặt (phải nhập mật khẩu cũ), chỉ cho tài khoản email.
+- KHÔNG đăng nhập bằng tên đăng nhập, KHÔNG liên kết tài khoản Google với
+  tài khoản email.
 - Có chế độ khách: học được nhưng không lưu tiến độ, không mục tiêu, không review.
 
 ## Dữ liệu

@@ -2,8 +2,8 @@
    ĐĂNG NHẬP BẰNG GOOGLE
    =============================================================================
 
-   CHỈ có đăng nhập bằng Google. Không tạo tài khoản, không email/mật khẩu,
-   không quên mật khẩu, không liên kết tài khoản.
+   File này lo đăng nhập bằng Google và theo dõi trạng thái đăng nhập chung.
+   Tài khoản email + mật khẩu (GĐ 10) nằm ở taiKhoanEmail.js.
 
    QUY TẮC: mọi lỗi báo cho người dùng đều bằng TIẾNG VIỆT ngắn gọn, KHÔNG
    bao giờ hiện mã lỗi tiếng Anh của Firebase (như "auth/popup-blocked").
@@ -116,6 +116,9 @@ export function theoDoiDangNhap(khiDoi) {
                   uid: nguoi.uid,
                   ten: nguoi.displayName ?? "",
                   email: nguoi.email ?? "",
+                  // "google.com" hoặc "password" (tài khoản email + mật khẩu)
+                  phuongThuc: nguoi.providerData?.[0]?.providerId ?? "",
+                  daXacMinh: nguoi.emailVerified === true,
                 }
               : null,
           ),

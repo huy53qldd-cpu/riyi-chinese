@@ -18,6 +18,8 @@ import BieuTuong, { HoaAnhDao, LogoGoogle } from "../thanh-phan/BieuTuong.jsx";
 import ChuTrung from "../thanh-phan/ChuTrung.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import { CAC_CO_CHU } from "../nguoi-dung/caiDat.js";
+import ManTaiKhoanEmail, { ONhapMatKhau } from "./ManTaiKhoanEmail.jsx";
+import { doiMatKhau, guiLaiEmailXacMinh } from "../firebase/taiKhoanEmail.js";
 
 // Ba giao diện. Hình minh hoạ đi kèm để dễ nhận ra, màu thật nằm ở tokens.css.
 const CAC_GIAO_DIEN = [
@@ -62,6 +64,7 @@ export default function CaiDat({ quayLai }) {
             <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
               Tiến độ học và cài đặt của bạn được lưu theo tài khoản này.
             </p>
+            {nd.nguoi?.phuongThuc === "password" && <MucTaiKhoanEmail nd={nd} />}
             <button
               type="button"
               onClick={nd.dangXuat}
@@ -191,6 +194,8 @@ function MucUngDung() {
  */
 export function NutDangNhap({ nd }) {
   const sanSang = nd.coTheDangNhap && nd.trangThai !== "dang-kiem-tra";
+  // Mở màn tài khoản email (đăng nhập, tạo tài khoản, quên mật khẩu)
+  const [moEmail, setMoEmail] = useState(false);
   // Đang vào lại tài khoản của lần trước thì không hiện nút, tránh trông như
   // đã bị đăng xuất (quyết định 18.10)
   if (nd.dangKhoiPhuc) {
@@ -213,10 +218,146 @@ export function NutDangNhap({ nd }) {
         </span>
         Đăng nhập bằng Google
       </button>
+      <button
+        type="button"
+        onClick={() => setMoEmail(true)}
+        disabled={!sanSang}
+        className="border-vien bg-nen-noi inline-flex items-center gap-2 rounded-[var(--bo-goc-tron)] border px-5 py-2.5 text-[length:var(--co-chu-latin-nho)] font-semibold disabled:opacity-50"
+      >
+        <BieuTuong ten="email" co={16} />
+        Đăng nhập hoặc tạo tài khoản bằng email
+      </button>
+      {moEmail && <ManTaiKhoanEmail dong={() => setMoEmail(false)} />}
       {!nd.coTheDangNhap && (
         <p className="text-chu-mo m-0 text-center text-[length:var(--co-chu-latin-nho)]">
           Đăng nhập chưa sẵn sàng vì ứng dụng chưa được kết nối Firebase.
         </p>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Phần riêng của tài khoản email + mật khẩu trong Cài đặt (quyết định 18.14,
+ * 18.15): nhắc xác minh email, và đổi mật khẩu.
+ */
+function MucTaiKhoanEmail({ nd }) {
+  const hienThongBao = useThongBao();
+  const [moDoi, setMoDoi] = useState(false);
+  const [dangGui, setDangGui] = useState(false);
+  const [loi, setLoi] = useState(null);
+  const [o, setO] = useState({ matKhauCu: "", matKhauMoi: "", nhapLai: "" });
+  const doi = (khoa) => (e) => setO((cu) => ({ ...cu, [khoa]: e.target.value }));
+
+  async function guiDoi(e) {
+    e.preventDefault();
+    setDangGui(true);
+    setLoi(null);
+    const kq = await doiMatKhau(o);
+    setDangGui(false);
+    if (kq.thanhCong) {
+      hienThongBao(kq.thongBao);
+      setO({ matKhauCu: "", matKhauMoi: "", nhapLai: "" });
+      setMoDoi(false);
+    } else {
+      setLoi(kq.thongBao);
+    }
+  }
+
+  async function guiLaiXacMinh() {
+    const kq = await guiLaiEmailXacMinh();
+    hienThongBao(kq.thongBao, 5);
+  }
+
+  async function daXacMinhRoi() {
+    const da = await nd.xemLaiXacMinh();
+    hienThongBao(
+      da
+        ? "Email đã được xác minh. Cảm ơn bạn!"
+        : "Email chưa được xác minh. Hãy bấm vào link trong email rồi thử lại.",
+      4,
+    );
+  }
+
+  return (
+    <div className="border-vien flex flex-col gap-3 border-t pt-3">
+      <p className="m-0 flex items-center gap-2 text-[length:var(--co-chu-latin-nho)]">
+        <BieuTuong ten="email" co={16} />
+        <span className="min-w-0 break-all">{nd.nguoi.email}</span>
+      </p>
+
+      {!nd.nguoi.daXacMinh && (
+        <div className="bg-nhan-nhat flex flex-col gap-2 rounded-[var(--bo-goc-nho)] p-3">
+          <p className="m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+            Email của bạn <strong>chưa được xác minh</strong>. Hãy mở email từ Riyi
+            và bấm vào link. Nếu gõ nhầm email, bạn sẽ không lấy lại được mật khẩu
+            khi quên.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <button type="button" onClick={guiLaiXacMinh} className={`${kieuNutVien} bg-nen-noi`}>
+              <BieuTuong ten="xac-minh" co={16} />
+              Gửi lại email xác minh
+            </button>
+            <button type="button" onClick={daXacMinhRoi} className={`${kieuNutVien} bg-nen-noi`}>
+              <BieuTuong ten="kiem-tra" co={16} />
+              Tôi đã xác minh
+            </button>
+          </div>
+        </div>
+      )}
+
+      {!moDoi ? (
+        <button type="button" onClick={() => setMoDoi(true)} className={`${kieuNutVien} self-start`}>
+          <BieuTuong ten="mat-khau" co={16} />
+          Đổi mật khẩu
+        </button>
+      ) : (
+        <form onSubmit={guiDoi} className="flex flex-col gap-3" noValidate>
+          <ONhapMatKhau
+            nhan="Mật khẩu hiện tại"
+            value={o.matKhauCu}
+            onChange={doi("matKhauCu")}
+            autoComplete="current-password"
+          />
+          <ONhapMatKhau
+            nhan="Mật khẩu mới"
+            value={o.matKhauMoi}
+            onChange={doi("matKhauMoi")}
+            autoComplete="new-password"
+            goiY="Ít nhất 8 ký tự."
+          />
+          <ONhapMatKhau
+            nhan="Nhập lại mật khẩu mới"
+            value={o.nhapLai}
+            onChange={doi("nhapLai")}
+            autoComplete="new-password"
+          />
+          {loi && (
+            <p role="alert" className="text-sai m-0 text-[length:var(--co-chu-latin-nho)] font-semibold">
+              {loi}
+            </p>
+          )}
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="submit"
+              disabled={dangGui}
+              className="bg-nhan text-chu-tren-nhan inline-flex items-center gap-1.5 rounded-[var(--bo-goc-tron)] px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-bold disabled:opacity-50"
+            >
+              <BieuTuong ten="mat-khau" co={16} />
+              {dangGui ? "Đang đổi..." : "Lưu mật khẩu mới"}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setMoDoi(false);
+                setLoi(null);
+              }}
+              className={kieuNutVien}
+            >
+              Huỷ
+            </button>
+          </div>
+        </form>
       )}
     </div>
   );
