@@ -3,7 +3,7 @@
 App học tiếng Trung HSK cấp 1–3, dành cho người Việt đã có nền tảng tiếng Nhật
 (N4–N1). Khai thác mối liên hệ Hán tự Trung – Nhật và âm Hán Việt để học nhanh hơn.
 
-**Trạng thái: đã xong giai đoạn 0 (nền móng).**
+**Trạng thái: đã xong giai đoạn 6 (đăng nhập Google và lưu tiến độ). Còn chờ chủ dự án kết nối Firebase và rà dữ liệu, xem mục "Kết nối Firebase" bên dưới.**
 
 ---
 
@@ -97,6 +97,22 @@ git push
 > cần gõ `git pull` rồi `git push` lại là xong. Cứ bình tĩnh, code không mất
 > đi đâu cả.
 
+### Bắt đầu trên một máy mới: cần tải thêm gì?
+
+Sau khi làm Bước 1 đến 4 ở đầu file này (cài Node, Python, Git, tải code về, cài
+thư viện), phần còn lại tuỳ việc định làm:
+
+| Việc định làm | Cần làm thêm |
+| --- | --- |
+| Chạy app, xem, sửa giao diện | Không cần gì thêm. Dữ liệu bài học đã dựng sẵn trong kho |
+| Đăng nhập Google, lưu tiến độ | Tạo file `.env` (xem mục "Kết nối Firebase"). File này **không** nằm trên GitHub, mỗi máy tự tạo |
+| Dựng lại dữ liệu (`npm run dung-...`) | Chạy **`npm run tai-nguon-mo`** một lần. Lệnh này tải KANJIDIC2, JMdict, CC-CEDICT, Tatoeba, KanjiVG (khoảng 70 MB, nặng nên không lưu trên GitHub) |
+| Cắt lại font | `npm run tai-font` rồi `npm run cat-font` |
+
+Với Claude: mở phiên làm việc mới ở thư mục dự án và nói **"Đọc
+`tai-lieu/QUYET-DINH-DA-CHOT.md` và `CLAUDE.md` trước khi làm gì."** File đó ghi
+mọi quyết định đã chốt, đang làm tới giai đoạn nào, và đang chờ anh việc gì.
+
 ---
 
 ## Chạy app trên máy
@@ -161,6 +177,13 @@ Riyi Chinese/
 | `npm run rut-hsk` | Rút lại dữ liệu HSK từ file PDF |
 | `npm run tach-logo` | Cắt lại logo và tạo icon (khi đổi file logo) |
 | `npm run so-sanh-tu-dang` | Đo xem chữ Trung và Nhật vẽ khác nhau bao nhiêu |
+| `npm run tai-nguon-mo` | Tải các file nguồn mở, cần trước khi chạy các lệnh `dung-...` trên máy mới |
+| `npm run dung-chu-han` | Dựng lại dữ liệu chữ Hán (Tab A) |
+| `npm run dung-net-viet` | Dựng lại dữ liệu nét viết (tập viết) |
+| `npm run dung-dong-tu` | Dựng lại dữ liệu đồng tự dị nghĩa (Tab B) |
+| `npm run dung-tu-vung` | Dựng lại dữ liệu từ vựng (Tab C) |
+| `npm run dung-ngu-phap` | Dựng lại dữ liệu ngữ pháp (Tab F) |
+| `npm run trien-khai` | Đóng gói và **đưa app lên mạng** (Firebase Hosting) |
 
 > **Quan trọng:** mỗi khi thêm bài học mới, nhớ chạy `npm run cat-font`.
 > Công cụ tự đi quét dữ liệu và tự thêm chữ mới vào font, nên không cần khai báo tay.
@@ -222,20 +245,95 @@ Số liệu đã rút được (cấp 1–3, số thứ tự liên tục, không
 
 ---
 
+## Kết nối Firebase và đưa app lên mạng
+
+App chạy được ngay cả khi CHƯA kết nối Firebase (ở chế độ khách, không lưu tiến
+độ). Làm các bước dưới đây **một lần** để có đăng nhập Google, lưu tiến độ, và để
+dùng được trên điện thoại từ bất cứ đâu. Tất cả đều nằm trong gói miễn phí (Spark).
+
+> **Vì sao phải đưa lên mạng mới thử được đăng nhập trên điện thoại?** Google
+> chỉ cho đăng nhập từ `localhost` hoặc một tên miền thật. Địa chỉ kiểu
+> `192.168.x.x` (địa chỉ mạng nhà khi chạy `npm run dev`) bị Google từ chối. Học
+> ở chế độ khách qua địa chỉ đó thì vẫn được.
+
+### Bước A — Lấy 6 dòng cấu hình
+
+1. Vào **console.firebase.google.com**, mở dự án của anh.
+2. Bấm bánh răng cạnh "Project Overview" → **Project settings** (Cài đặt dự án).
+3. Kéo xuống mục **Your apps**. Chưa có app nào thì bấm biểu tượng **`</>`** (Web),
+   đặt tên bất kỳ (ví dụ "riyi"), **không** tích "Firebase Hosting" ở bước này,
+   bấm Register.
+4. Màn hình hiện một đoạn `firebaseConfig = { apiKey: "...", ... }`.
+5. Trong thư mục `riyi-chinese`, **sao chép file `.env.example` thành `.env`**
+   (giữ nguyên thư mục), mở `.env` bằng Notepad và điền 6 giá trị tương ứng, không
+   có dấu ngoặc kép. Ví dụ: `VITE_FIREBASE_PROJECT_ID=ten-du-an-cua-anh`.
+
+File `.env` **không** lên kho Git (đã chặn sẵn).
+
+### Bước B — Bật đăng nhập Google
+
+1. Trong Firebase Console: **Build → Authentication → Get started**.
+2. Thẻ **Sign-in method** → chọn **Google** → bật **Enable**, chọn email hỗ trợ
+   → **Save**.
+3. Thẻ **Settings → Authorized domains**: có sẵn `localhost` và tên miền của dự án
+   (dạng `ten-du-an.web.app`). Đủ dùng, không cần thêm gì.
+
+### Bước C — Tạo cơ sở dữ liệu Firestore
+
+1. **Build → Firestore Database → Create database**.
+2. Chọn chế độ **Production mode** (bảo mật, quy tắc sẽ được đưa lên ở Bước D).
+3. Chọn nơi đặt máy chủ gần Việt Nam (ví dụ `asia-southeast1` Singapore).
+   **Không đổi lại được sau này.**
+
+### Bước D — Đưa app lên mạng (làm một lần cài đặt, sau đó mỗi lần một lệnh)
+
+Gõ từng dòng trong Terminal, đang đứng trong thư mục `riyi-chinese`:
+
+```
+npm install -g firebase-tools
+firebase login
+firebase use --add
+```
+
+- Lệnh 2 mở trình duyệt để đăng nhập tài khoản Google (dùng tài khoản của dự án).
+- Lệnh 3: chọn dự án của anh trong danh sách, đặt tên viết tắt là `default`.
+
+Rồi mỗi lần muốn cập nhật app lên mạng:
+
+```
+npm run trien-khai
+```
+
+Lệnh này đóng gói app và đưa lên cùng với quy tắc bảo mật Firestore. Xong sẽ in
+ra địa chỉ (dạng `https://ten-du-an.web.app`). Mở địa chỉ đó trên điện thoại rồi
+bấm **Đăng nhập bằng Google** để thử.
+
+### Nếu gặp lỗi
+
+| Hiện tượng | Nguyên nhân thường gặp |
+| --- | --- |
+| Nút đăng nhập báo "chưa được kết nối Firebase" | Chưa có file `.env`, hoặc chưa chạy lại `npm run dev` sau khi sửa `.env` |
+| "Địa chỉ này chưa được phép đăng nhập" | Đang mở app bằng địa chỉ `192.168...`, hoặc tên miền chưa có trong Authorized domains |
+| "Chưa lưu được tiến độ" | Chưa làm Bước C hoặc chưa đưa quy tắc bảo mật lên (`npm run trien-khai`) |
+
 ## Nền tảng kỹ thuật
 
-Vite + React + Tailwind CSS v4. Sau này thêm Firebase (chỉ Google Sign-In,
-Firestore, Hosting — gói Spark miễn phí). App cần mạng, **không** chạy offline.
+Vite + React + Tailwind CSS v4. Firebase: đăng nhập Google, Firestore, Hosting
+(gói Spark miễn phí). App cần mạng, **không** chạy offline.
+
+Dữ liệu tham khảo đã dùng, ghi nguồn một dòng: KANJIDIC2, JMdict (EDRDG, CC BY-SA),
+Unihan (Unicode), CC-CEDICT (MDBG, CC BY-SA), KanjiVG (CC BY-SA 3.0), hanzi-writer-data
+(Arphic), Tatoeba (CC BY 2.0 FR).
 
 ## Tiến độ theo giai đoạn
 
 - [x] **GĐ 0** — Nền móng: cấu trúc JSON, khung app 6 tab, font đã cắt
-- [ ] GĐ 1 — Tab A phần tĩnh (10 thẻ chữ Hán)
-- [ ] GĐ 2 — Tab A phần viết tay (HanziWriter)
-- [ ] GĐ 3 — Tab B (20 cặp đồng tự dị nghĩa)
-- [ ] GĐ 4 — Tab C (từ vựng)
-- [ ] GĐ 5 — Tab F (ngữ pháp)
-- [ ] GĐ 6 — Đăng nhập Google, Firestore
+- [x] GĐ 1 — Tab A phần tĩnh (10 thẻ chữ Hán)
+- [x] GĐ 2 — Tab A phần viết tay (HanziWriter)
+- [x] GĐ 3 — Tab B (20 cặp đồng tự dị nghĩa)
+- [x] GĐ 4 — Tab C (100 từ HSK 1)
+- [x] GĐ 5 — Tab F (15 điểm ngữ pháp)
+- [x] GĐ 6 — Đăng nhập Google, Firestore, màn hình Cài đặt (code xong, chờ kết nối Firebase)
 - [ ] GĐ 7 — Tab D và Tab E (mục tiêu, review)
 - [ ] GĐ 8 — Hoàn thiện PWA
 - [ ] GĐ 9 — Bổ sung đầy đủ HSK 1–3

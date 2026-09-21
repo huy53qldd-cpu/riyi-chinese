@@ -13,9 +13,18 @@
     "rut-hsk": "python cong-cu/rut-du-lieu-hsk.py",
     "tai-font": "python cong-cu/tai-font.py",
     "cat-font": "python cong-cu/cat-font.py",
-    "so-sanh-tu-dang": "python cong-cu/so-sanh-tu-dang.py"
+    "so-sanh-tu-dang": "python cong-cu/so-sanh-tu-dang.py",
+    "tai-nguon-mo": "python cong-cu/tai-nguon-mo.py",
+    "dung-chu-han": "python cong-cu/dung-chu-han.py",
+    "dung-net-viet": "python cong-cu/dung-net-viet.py",
+    "dung-dong-tu": "python cong-cu/dung-dong-tu.py",
+    "dung-tu-vung": "python cong-cu/dung-tu-vung.py",
+    "dung-ngu-phap": "python cong-cu/dung-ngu-phap.py",
+    "trien-khai": "vite build && firebase deploy"
   },
   "dependencies": {
+    "firebase": "^12.19.0",
+    "hanzi-writer": "^3.7.3",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

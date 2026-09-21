@@ -8,24 +8,35 @@
    Chỉ hiện khi ĐÃ ĐĂNG NHẬP. Chế độ khách không có mục tiêu, không có streak,
    nên thanh này ẩn hẳn và thay bằng dải nhắc chế độ khách.
 
-   GIAI ĐOẠN 0: chỉ dựng hình, số liệu là số giả để xem bố cục.
-   Số thật và hiệu ứng mặt trời tỏa sáng làm ở GĐ 7.
+   Số liệu mục tiêu thật và hiệu ứng mặt trời tỏa sáng làm ở GĐ 7. Trước đó
+   thanh này hiện 0 trên mục tiêu, không hiện số giả.
+
+   Cả hai trạng thái đều có nút bánh răng để mở Cài đặt.
    ============================================================================= */
 
-export default function ThanhTren({ daDangNhap, daLam = 0, mucTieu = 0, moMucTieu }) {
+export default function ThanhTren({
+  daDangNhap,
+  daLam = 0,
+  mucTieu = 0,
+  moMucTieu,
+  moCaiDat,
+}) {
   // -------------------------------------------------------------------------
   // CHẾ ĐỘ KHÁCH — không có mục tiêu, chỉ nhắc nhẹ một dòng
   // -------------------------------------------------------------------------
   if (!daDangNhap) {
     return (
       <div
-        className="bg-nen-phu text-chu-mo fixed inset-x-0 top-0 z-40 flex items-center justify-center px-4 text-center text-[length:var(--co-chu-latin-nho)]"
+        className="bg-nen-phu text-chu-mo fixed inset-x-0 top-0 z-40 flex items-center gap-2 px-4 text-center text-[length:var(--co-chu-latin-nho)]"
         style={{
           minHeight: "var(--cao-thanh-tren)",
           paddingTop: "env(safe-area-inset-top)",
         }}
       >
-        Bạn đang học ở chế độ khách, tiến độ sẽ không được lưu.
+        <span className="flex-1 py-2">
+          Bạn đang học ở chế độ khách, tiến độ sẽ không được lưu.
+        </span>
+        <NutCaiDat moCaiDat={moCaiDat} />
       </div>
     );
   }
@@ -37,53 +48,72 @@ export default function ThanhTren({ daDangNhap, daLam = 0, mucTieu = 0, moMucTie
   const tiLe = mucTieu > 0 ? Math.min(1, daLam / mucTieu) : 0;
 
   return (
-    <button
-      type="button"
-      onClick={moMucTieu}
-      aria-label={`Mục tiêu hôm nay, đã làm ${daLam} trên ${mucTieu}`}
-      className="bg-nen-noi border-vien fixed inset-x-0 top-0 z-40 flex w-full items-center gap-3 border-b px-4 text-left"
+    <div
+      className="bg-nen-noi border-vien fixed inset-x-0 top-0 z-40 flex w-full items-center gap-2 border-b px-4"
       style={{
         minHeight: "var(--cao-thanh-tren)",
         paddingTop: "env(safe-area-inset-top)",
       }}
     >
-      {/* Mặt trời lấy từ logo Riyi.
-          Chưa đạt mục tiêu thì xám mờ, đạt rồi thì rực rỡ màu cam.
-          Hiệu ứng động sẽ thêm ở GĐ 7. */}
-      <img
-        src="/hinh/mat-troi.png"
-        alt=""
-        width="34"
-        height="18"
-        className="shrink-0 transition-all duration-500"
-        style={{
-          filter: datMucTieu ? "none" : "grayscale(1) opacity(0.45)",
-        }}
-      />
+      <button
+        type="button"
+        onClick={moMucTieu}
+        aria-label={`Mục tiêu hôm nay, đã làm ${daLam} trên ${mucTieu}`}
+        className="flex min-w-0 flex-1 items-center gap-3 text-left"
+      >
+        {/* Mặt trời lấy từ logo Riyi.
+            Chưa đạt mục tiêu thì xám mờ, đạt rồi thì rực rỡ màu cam.
+            Hiệu ứng động sẽ thêm ở GĐ 7. */}
+        <img
+          src="/hinh/mat-troi.png"
+          alt=""
+          width="34"
+          height="18"
+          className="shrink-0 transition-all duration-500"
+          style={{
+            filter: datMucTieu ? "none" : "grayscale(1) opacity(0.45)",
+          }}
+        />
 
-      <div className="min-w-0 flex-1">
-        <div className="text-[length:var(--co-chu-latin-nho)] leading-tight font-bold">
-          Mục tiêu hôm nay
-        </div>
+        <div className="min-w-0 flex-1">
+          <div className="text-[length:var(--co-chu-latin-nho)] leading-tight font-bold">
+            Mục tiêu hôm nay
+          </div>
 
-        {/* Thanh tiến độ */}
-        <div
-          className="bg-nen-phu mt-1 h-1.5 w-full overflow-hidden rounded-[var(--bo-goc-tron)]"
-          role="progressbar"
-          aria-valuenow={daLam}
-          aria-valuemin={0}
-          aria-valuemax={mucTieu}
-        >
+          {/* Thanh tiến độ */}
           <div
-            className="bg-nhan h-full rounded-[var(--bo-goc-tron)] transition-[width] duration-500"
-            style={{ width: `${tiLe * 100}%` }}
-          />
+            className="bg-nen-phu mt-1 h-1.5 w-full overflow-hidden rounded-[var(--bo-goc-tron)]"
+            role="progressbar"
+            aria-valuenow={daLam}
+            aria-valuemin={0}
+            aria-valuemax={mucTieu}
+          >
+            <div
+              className="bg-nhan h-full rounded-[var(--bo-goc-tron)] transition-[width] duration-500"
+              style={{ width: `${tiLe * 100}%` }}
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="text-chu-mo shrink-0 text-[length:var(--co-chu-latin-nho)] font-semibold tabular-nums">
-        {daLam}/{mucTieu}
-      </div>
+        <div className="text-chu-mo shrink-0 text-[length:var(--co-chu-latin-nho)] font-semibold tabular-nums">
+          {daLam}/{mucTieu}
+        </div>
+      </button>
+      <NutCaiDat moCaiDat={moCaiDat} />
+    </div>
+  );
+}
+
+/** Nút bánh răng mở màn hình Cài đặt. */
+function NutCaiDat({ moCaiDat }) {
+  return (
+    <button
+      type="button"
+      onClick={moCaiDat}
+      aria-label="Cài đặt"
+      className="text-chu-mo flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xl"
+    >
+      <span aria-hidden="true">⚙</span>
     </button>
   );
 }

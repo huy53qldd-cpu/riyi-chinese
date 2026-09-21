@@ -123,6 +123,12 @@
   --chu-mo: #b8a894;
   --chu-tren-nhan: var(--goc-kem);
 
+  /* Nền mờ của màu nhấn (nhãn, ô lưu ý). Bản sáng là cam nhạt nên chữ sáng đặt
+     lên đó sẽ biến mất, vì vậy theme tối phải dùng cam-nâu ĐẬM. Tương phản với
+     chữ kem khoảng 10:1. */
+  --nhan: var(--goc-cam);
+  --nhan-nhat: #5a3322;
+
   --vien: #4d3c33;
   --vien-dam: #6b5648;
 

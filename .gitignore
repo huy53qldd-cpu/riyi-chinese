@@ -43,3 +43,9 @@ firebase-debug.log
 # Khong bao gio dua vao kho cong khai: co the chua noi dung liet ke thu muc may.
 *.jsonl
 !src/du-lieu/**/*.jsonl
+
+# --- Nguồn mở tải về để dựng dữ liệu (tự tải lại bằng npm run dung-chu-han) ---
+cong-cu/nguon-mo/
+
+# --- Bộ nét chữ Nhật KanjiVG tải về (273 MB, chỉ để công cụ đọc) ---
+kanji_kakijun/

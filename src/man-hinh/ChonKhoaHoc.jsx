@@ -10,10 +10,13 @@
    Cấu trúc để sẵn cho dễ mở rộng: thêm khoá mới chỉ cần thêm một mục vào mảng
    DANH_SACH_KHOA bên dưới, không phải sửa giao diện.
 
-   GIAI ĐOẠN 0: chưa có đăng nhập. Nút "Đăng nhập bằng Google" làm ở GĐ 6.
+   Cuối màn hình có khối tài khoản: nút "Đăng nhập bằng Google" (chế độ khách)
+   hoặc lời chào (đã đăng nhập). Chế độ khách vẫn vào học bình thường.
    ============================================================================= */
 
 import Logo from "../thanh-phan/Logo.jsx";
+import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
+import { NutDangNhap } from "./CaiDat.jsx";
 
 const DANH_SACH_KHOA = [
   {
@@ -36,9 +39,20 @@ const DANH_SACH_KHOA = [
   },
 ];
 
-export default function ChonKhoaHoc({ chonKhoa, moNangCap }) {
+export default function ChonKhoaHoc({ chonKhoa, moNangCap, moCaiDat }) {
+  const nd = useNguoiDung();
+
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-5 py-8">
+    <main className="relative mx-auto flex min-h-dvh w-full max-w-xl flex-col px-5 py-8">
+      <button
+        type="button"
+        onClick={moCaiDat}
+        aria-label="Cài đặt"
+        className="border-vien text-chu-mo absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded-full border text-xl"
+      >
+        <span aria-hidden="true">⚙</span>
+      </button>
+
       {/* ---------------------------------------------------------------------
           LOGO
           Dùng hai file ảnh khác nhau cho theme sáng và theme tối. Ảnh nền trong
@@ -103,12 +117,26 @@ export default function ChonKhoaHoc({ chonKhoa, moNangCap }) {
       </ul>
 
       {/* ---------------------------------------------------------------------
-          GHI CHÚ GIAI ĐOẠN
-          Sẽ gỡ khi làm xong GĐ 6 (đăng nhập).
+          TÀI KHOẢN
           --------------------------------------------------------------------- */}
-      <p className="border-vien text-chu-mo mt-auto border-t pt-5 text-center text-[length:var(--co-chu-latin-nho)]">
-        Phần đăng nhập bằng Google sẽ được làm ở giai đoạn sau.
-      </p>
+      <section className="border-vien mt-auto flex flex-col gap-2 border-t pt-5">
+        {nd.daDangNhap ? (
+          <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)]">
+            Xin chào,{" "}
+            <span className="text-chu font-bold">
+              {nd.nguoi?.ten || nd.nguoi?.email}
+            </span>
+            . Tiến độ học của bạn sẽ được lưu.
+          </p>
+        ) : (
+          <>
+            <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+              Bạn có thể học ngay ở chế độ khách. Đăng nhập để lưu tiến độ.
+            </p>
+            <NutDangNhap nd={nd} />
+          </>
+        )}
+      </section>
     </main>
   );
 }

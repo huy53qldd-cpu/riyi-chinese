@@ -14,12 +14,15 @@
        │  5 mục điều hướng            │  ← thanh dưới
        └─────────────────────────────┘
 
-   GIAI ĐOẠN 0: nội dung các tab còn TRỐNG, chỉ có tên tab và mô tả.
-   Nội dung thật làm lần lượt ở GĐ 1 đến GĐ 7.
+   Nội dung thật làm lần lượt ở GĐ 1 đến GĐ 7. Đã có: Tab A chữ Hán (GĐ 1-2), Tab B đồng tự dị nghĩa (GĐ 3),
+   Tab C từ vựng (GĐ 4), Tab F ngữ pháp (GĐ 5).
+   Các tab còn lại vẫn trống, chỉ có tên tab và mô tả.
    ============================================================================= */
 
 import { useState } from "react";
 
+import CaiDat from "./CaiDat.jsx";
+import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import ThanhTren from "../thanh-phan/ThanhTren.jsx";
 import ThanhDuoi from "../thanh-phan/ThanhDuoi.jsx";
 import NutLoa from "../thanh-phan/NutLoa.jsx";
@@ -27,15 +30,23 @@ import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import { TAB, timTab } from "../thanh-phan/danhSachTab.jsx";
 import KiemTraFont from "./KiemTraFont.jsx";
+import TabChuHan from "./TabChuHan.jsx";
+import TabDongTu from "./TabDongTu.jsx";
+import TabNguPhap from "./TabNguPhap.jsx";
+import TabTuVung from "./TabTuVung.jsx";
 
 export default function KhungApp({ thoatKhoa }) {
   const [tabDangMo, setTabDangMo] = useState(TAB.CHU_HAN);
 
-  // TẠM THỜI cho GĐ 0: công tắc giả lập đăng nhập, để xem được thanh trên ở
-  // cả hai trạng thái. Sẽ gỡ bỏ khi làm xong GĐ 6.
-  const [gialapDangNhap, setGialapDangNhap] = useState(true);
+  // Cài đặt mở ngay trong khung này (không đổi màn hình) để không mất tab đang xem
+  const [dangMoCaiDat, setDangMoCaiDat] = useState(false);
+  const nd = useNguoiDung();
 
   const tab = timTab(tabDangMo);
+
+  if (dangMoCaiDat) {
+    return <CaiDat quayLai={() => setDangMoCaiDat(false)} />;
+  }
 
   return (
     <div
@@ -48,15 +59,25 @@ export default function KhungApp({ thoatKhoa }) {
       }}
     >
       <ThanhTren
-        daDangNhap={gialapDangNhap}
-        daLam={12}
+        daDangNhap={nd.daDangNhap}
+        // Số mục tiêu thật làm ở GĐ 7; trước đó để 0, không hiện số giả
+        daLam={0}
         mucTieu={20}
         moMucTieu={() => setTabDangMo(TAB.MUC_TIEU)}
+        moCaiDat={() => setDangMoCaiDat(true)}
       />
 
       <main className="px-5 pt-5">
         {tabDangMo === TAB.MUC_TIEU ? (
           <NoiDungMucTieu quayLai={() => setTabDangMo(TAB.CHU_HAN)} />
+        ) : tabDangMo === TAB.CHU_HAN ? (
+          <TabChuHan />
+        ) : tabDangMo === TAB.DONG_TU ? (
+          <TabDongTu />
+        ) : tabDangMo === TAB.TU_VUNG ? (
+          <TabTuVung />
+        ) : tabDangMo === TAB.NGU_PHAP ? (
+          <TabNguPhap />
         ) : (
           <NoiDungTabTrong tab={tab} />
         )}
@@ -69,30 +90,13 @@ export default function KhungApp({ thoatKhoa }) {
           </div>
         )}
 
-        {/* --- Khu vực tạm thời của GĐ 0, sẽ gỡ sau --- */}
-        <section className="border-vien mt-6 rounded-[var(--bo-goc)] border border-dashed p-4">
-          <h2 className="text-chu-mo m-0 mb-3 text-[length:var(--co-chu-latin-nho)] font-bold">
-            Khu vực tạm thời của giai đoạn 0
-          </h2>
-
-          <label className="flex cursor-pointer items-center gap-2.5 text-[length:var(--co-chu-latin-nho)]">
-            <input
-              type="checkbox"
-              checked={gialapDangNhap}
-              onChange={(e) => setGialapDangNhap(e.target.checked)}
-              className="accent-nhan h-4 w-4"
-            />
-            Giả lập đã đăng nhập (để xem thanh "Mục tiêu hôm nay")
-          </label>
-
-          <button
-            type="button"
-            onClick={thoatKhoa}
-            className="border-vien mt-3 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
-          >
-            Về màn hình chọn khoá học
-          </button>
-        </section>
+        <button
+          type="button"
+          onClick={thoatKhoa}
+          className="border-vien mt-6 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
+        >
+          Đổi khoá học
+        </button>
       </main>
 
       <ThanhDuoi tabDangMo={tabDangMo} doiTab={setTabDangMo} />

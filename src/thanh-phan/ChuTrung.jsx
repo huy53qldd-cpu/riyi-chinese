@@ -1,3 +1,5 @@
+import VanBanPha from "./VanBanPha.jsx";
+
 /* =============================================================================
    HIỂN THỊ TIẾNG TRUNG KÈM PINYIN
    =============================================================================
@@ -72,7 +74,7 @@ export default function ChuTrung({
 
       {ghiChuBienDieu && (
         <p className="text-chu-mo m-0 mt-1 text-[length:var(--co-chu-latin-nho)] italic">
-          {ghiChuBienDieu}
+          <VanBanPha noiDung={ghiChuBienDieu} />
         </p>
       )}
     </div>

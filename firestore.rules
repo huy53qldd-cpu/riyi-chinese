@@ -1,0 +1,34 @@
+rules_version = '2';
+
+// =============================================================================
+// QUY TẮC BẢO MẬT FIRESTORE — Riyi
+// =============================================================================
+// Mỗi người dùng chỉ đọc và ghi được ĐÚNG tài liệu của chính mình
+// (nguoiDung/{uid}), và chỉ khi đã đăng nhập. Mọi nơi khác đều bị chặn.
+//
+// Khi ghi, tài liệu chỉ được có 4 trường: caiDat, daHoc, tapViet, capNhatLuc,
+// và hai bảng daHoc, tapViet không được quá 5000 mục (chặn ghi rác làm đầy
+// dung lượng gói miễn phí).
+//
+// Sau khi sửa file này, đưa lên Firebase bằng:  firebase deploy --only firestore:rules
+// =============================================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /nguoiDung/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+
+      allow write: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['caiDat', 'daHoc', 'tapViet', 'capNhatLuc'])
+        && (!('daHoc' in request.resource.data) || request.resource.data.daHoc.size() <= 5000)
+        && (!('tapViet' in request.resource.data) || request.resource.data.tapViet.size() <= 5000);
+    }
+
+    // Chặn tất cả nơi còn lại
+    match /{tatCa=**} {
+      allow read, write: if false;
+    }
+  }
+}
