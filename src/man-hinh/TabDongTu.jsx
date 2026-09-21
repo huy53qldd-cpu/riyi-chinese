@@ -11,6 +11,9 @@
 
    Lưu ý đầu tab nằm trong DỮ LIỆU (luuYDauTab), không viết cứng ở đây, để sửa
    câu chữ không phải sửa code.
+
+   Luyện tập (GĐ 7): trắc nghiệm "chọn nghĩa đúng trong tiếng Trung", đáp án
+   nhiễu chính là nghĩa tiếng Nhật. Trả lời sai thì cặp từ vào Review.
    ============================================================================= */
 
 import { useEffect, useState } from "react";
@@ -21,6 +24,9 @@ import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
+import KhungChonLuyenTap from "../luyen-tap/KhungChonLuyenTap.jsx";
+import PhienLuyenTap from "../luyen-tap/PhienLuyenTap.jsx";
+import { cauHoiDongTu, taoLuot } from "../luyen-tap/taoCauHoi.jsx";
 
 // Ba mức nguy hiểm. Màu lấy từ tokens.css (--nguy-hiem-*). Các màu này không đủ
 // tương phản để làm chữ nhỏ, nên chỉ dùng làm chấm màu, chữ vẫn là màu chính.
@@ -58,6 +64,7 @@ export default function TabDongTu() {
   const [du, setDu] = useState({ luuYDauTab: "", danhSach: [] });
   const [cap, setCap] = useState("tat-ca");
   const [cangMo, setCangMo] = useState(null);
+  const [dangLuyen, setDangLuyen] = useState(false);
 
   useEffect(() => {
     let conSong = true; // tránh cập nhật khi người dùng đã rời tab
@@ -78,6 +85,18 @@ export default function TabDongTu() {
   }
 
   const hienThi = du.danhSach.filter((m) => khopBoLoc(m, cap));
+
+  if (dangLuyen) {
+    return (
+      <PhienLuyenTap
+        tieuDe="Chọn nghĩa tiếng Trung"
+        taoDanhSach={() =>
+          taoLuot(hienThi, (m) => cauHoiDongTu(m, du.danhSach))
+        }
+        quayLai={() => setDangLuyen(false)}
+      />
+    );
+  }
 
   return (
     <section>
@@ -134,6 +153,14 @@ export default function TabDongTu() {
             Chưa có cặp từ nào ở mục này.
           </p>
         </div>
+      )}
+
+      {trangThai === "xong" && hienThi.length > 0 && (
+        <KhungChonLuyenTap
+          cacCach={[{ ma: "chon-nghia", nhan: "Chọn nghĩa tiếng Trung" }]}
+          soMuc={hienThi.filter((m) => m.tonTaiTrongTiengTrung).length}
+          chon={() => setDangLuyen(true)}
+        />
       )}
 
       {trangThai === "xong" && hienThi.length > 0 && (

@@ -10,7 +10,7 @@ thứ đã quyết.
 > Không tự quyết."* File này là bộ nhớ của quy tắc đó. Việc nào đã có trong
 > đây thì **không hỏi lại nữa**.
 
-Cập nhật lần cuối: 2026-09-21 — đã kết nối Firebase và deploy (GĐ 6).
+Cập nhật lần cuối: 2026-09-21 — xong GĐ 7 (luyện tập, mục tiêu ngày, review tuần).
 
 ---
 
@@ -281,6 +281,36 @@ dùng được để kiểm tra font.
 | 14.10 | Sửa lỗi phát hiện khi thử giao diện tối: `--nhan-nhat` chưa có bản tối nên nhãn và ô lưu ý (12 chỗ) chữ sáng trên nền sáng. Đã thêm màu cam-nâu đậm cho theme tối |
 | 14.11 | **Đã kết nối Firebase (2026-09-21).** Dự án `riyi-chinese`, app web tên `riyi`, Firestore đặt ở `asia-southeast1`, đã bật đăng nhập Google. Đã deploy: **https://riyi-chinese.web.app**. File `.firebaserc` (chọn dự án mặc định) nằm trong kho; file `.env` không lên kho, máy mới phải tạo lại theo README hoặc chép từ máy cũ |
 
+### GĐ 7 — quyết định và kết quả (2026-09-21)
+
+Chủ dự án trả lời 4 câu hỏi trước GĐ 7:
+
+| # | Nội dung |
+| --- | --- |
+| 15.1 | **Làm trắc nghiệm ngay trong GĐ 7, trước Tab D và E** (các chế độ luyện tập ở Tab B, C, F chưa có từ các giai đoạn trước, mà Review cần tỉ lệ đúng và mục sai) |
+| 15.2 | **Mục tiêu ngày chỉ tính khi trả lời ĐÚNG** (không tính nút "đã học") |
+| 15.3 | **Có đếm số phút học** |
+| 15.4 | **Tuần từ thứ Hai đến Chủ nhật; trang Review xem được bất cứ lúc nào**, cả tuần đang chạy lẫn các tuần trước |
+
+Claude tự chọn khi làm (chủ dự án xem lại, muốn đổi thì báo):
+
+| # | Nội dung |
+| --- | --- |
+| 15.5 | Luyện tập: **Tab B** chọn nghĩa tiếng Trung (đáp án nhiễu gồm nghĩa tiếng Nhật, chọn nhầm thì ghi "Đây là nghĩa trong tiếng Nhật"); **Tab C** thẻ ghi nhớ, trắc nghiệm nghĩa Việt, điền từ vào câu ví dụ (chọn từ trong 4 từ, không gõ); **Tab F** sắp xếp câu, chọn câu đúng (lấy cặp câu sai/đúng ở "Lỗi hay gặp"). Mỗi lượt 10 câu, lấy từ các mục đang hiện theo bộ lọc |
+| 15.6 | 怪我, 切手 **không đưa vào trắc nghiệm Tab B** vì không có trong tiếng Trung nên không có pinyin (quy tắc: chữ Trung luôn có pinyin) |
+| 15.7 | Thẻ ghi nhớ: bấm **"Đã nhớ" tính là đúng**, "Chưa nhớ" tính là sai |
+| 15.8 | Chữ Hán: **tập viết xong mà không cần gợi ý thì tính là đúng**; phải nhờ gợi ý (sai 3 lần một nét) thì tính là sai và chữ đó vào Review |
+| 15.9 | Ba loại mục tiêu, chọn MỘT: **chữ Hán** (mặc định 5), **từ** (mặc định 10, tính cả Tab C và Tab B), **phút** (mặc định 15). Ngữ pháp không có loại mục tiêu riêng, nhưng vẫn tính vào tỉ lệ đúng và Review. Một mục đúng nhiều lần trong ngày chỉ tính một |
+| 15.10 | Đếm phút: chỉ khi app đang hiện trên màn hình VÀ có chạm/bấm/cuộn trong 2 phút gần nhất. Để app mở rồi bỏ đi thì dừng đếm sau 2 phút |
+| 15.11 | Chuỗi ngày (streak) = số ngày liên tiếp **đạt mục tiêu**. Hôm nay chưa đạt thì vẫn giữ chuỗi của hôm qua; bỏ trọn một ngày thì về 0. Đạt mục tiêu rồi thì ngày đó vẫn tính là đạt kể cả khi sau đó nâng mục tiêu |
+| 15.12 | Ngày tính theo **giờ trên máy người dùng**, không theo giờ quốc tế. Đã sửa lỗi cũ: "lần cuối tập viết" trước đây ghi theo giờ quốc tế, học trước 7 giờ sáng sẽ bị ghi sang hôm trước |
+| 15.13 | Firestore: thêm 3 trường vào tài liệu `nguoiDung/{uid}`: `mucTieu`, `nhatKy` (theo ngày: đúng, sai, số giây, đã đạt), `chuoi`. Nhật ký **chỉ giữ 70 ngày** (Review xem lại được khoảng 9 tuần). Quy tắc bảo mật đã cập nhật, nhật ký tối đa 120 ngày. Số phút ghi lên chậm hơn (5 phút một lần) cho đỡ tốn lượt ghi |
+| 15.14 | Review: 5 ô số (chữ Hán, từ, phút, tỉ lệ đúng, số ngày đạt) kèm chênh lệch với tuần trước; biểu đồ cột từng ngày theo **loại mục tiêu đang đặt**; 10 mục sai nhiều nhất + nút "Luyện lại" (từ → trắc nghiệm nghĩa, đồng tự → chọn nghĩa, ngữ pháp → sắp xếp hoặc chọn câu, chữ Hán → tập viết) |
+| 15.15 | Màu biểu đồ: tuần này cam thương hiệu, tuần trước xanh `#2a86b0` (theme tối `#3d9fc4`). Đã chạy bộ kiểm tra màu: phân biệt được với người mù màu và đủ tương phản ở cả hai theme. Nằm trong `tokens.css` |
+| 15.16 | Bài sắp xếp câu cần chia câu thành mảnh: **Claude chia tay** 30 câu ví dụ (trường `tachTu` trong `ngu-phap-nhap-tay.json`), công cụ kiểm tra ghép lại phải đúng câu. Chấp nhận thêm cách xếp khác ở 3 câu: 我喝水了, 每天我跑步, 我们吃完午餐了. Mọi điểm ngữ pháp có thêm một dòng `cangKiemTra` về việc này |
+| 15.17 | Máy này không có nguồn Tatoeba nên chưa chạy lại `npm run dung-ngu-phap`: đã sửa công cụ để giữ `tachTu`, và thêm `tachTu` thẳng vào file dữ liệu. Khi chạy lại công cụ trên máy có nguồn, kết quả phải giống hệt |
+| 15.18 | Đã thử bằng trình duyệt tự động (Firebase giả trong bộ nhớ, không đụng dữ liệu thật): mọi chế độ luyện tập, đạt mục tiêu (chuỗi 4 → 5), đếm phút, Review, theme tối, chế độ khách (không ghi gì). **Chưa thử với Firebase thật và điện thoại thật** |
+
 ### Đang chờ chủ dự án
 
 1. Rà lại dữ liệu 10 chữ (mở từng chữ, bấm mục "Chưa kiểm tra").
@@ -289,16 +319,19 @@ dùng được để kiểm tra font.
 4. Rà dữ liệu Tab C: 100 từ, mục "Chưa kiểm tra" của từng từ, đặc biệt nghĩa Nhật/Việt và bản dịch Việt của câu.
 5. Rà nội dung ngữ pháp Tab F: 15 điểm, đặc biệt phần "Chỗ lệch" và "Lỗi hay gặp" (Claude soạn, không có nguồn kiểm).
 6. ~~Kết nối Firebase và deploy~~ **Đã xong 2026-09-21** (xem 14.11). Còn lại: thử đăng nhập, đánh dấu "đã học", tập viết trên điện thoại thật. Nội dung cũ: kết nối Firebase và deploy theo README, mục "Kết nối Firebase": điền `.env`, bật đăng nhập Google, tạo Firestore, chạy `firebase login` và `npm run trien-khai`. Rồi thử đăng nhập, đánh dấu "đã học", tập viết trên điện thoại (chưa được kiểm thử với Firebase thật).
-7. Duyệt GĐ 3, 4, 5, 6 để sang GĐ 7 (Tab D mục tiêu, Tab E ôn tập).
+7. ~~Duyệt GĐ 3–6 để sang GĐ 7~~ Chủ dự án trả lời câu hỏi GĐ 7 và cho làm tiếp (2026-09-21). Dữ liệu GĐ 1–5 vẫn chờ rà (mục 1, 3, 4, 5).
+8. **Thử GĐ 7 trên điện thoại** với tài khoản thật: làm vài lượt luyện tập, xem thanh mục tiêu, đạt mục tiêu, mở Review. Xem lại các lựa chọn 15.5–15.16.
+9. Rà cách chia câu cho bài sắp xếp (15.16).
+10. Duyệt GĐ 7 để sang GĐ 8 (hoàn thiện PWA).
 
 ### Còn nợ kỹ thuật, xử lý ở giai đoạn sau
 
 | Việc | Xử lý ở |
 | --- | --- |
-| Gỡ ô "Khu vực tạm thời của giai đoạn 0" (công tắc giả lập đăng nhập) | GĐ 6 |
+| ~~Gỡ ô "Khu vực tạm thời của giai đoạn 0" (công tắc giả lập đăng nhập)~~ | Đã xong ở GĐ 6 |
 | Gỡ ô kiểm tra tự dạng và ô "Thử hiển thị ba thứ tiếng" | GĐ cuối |
 | Gắn nguồn âm thanh thật vào `phatAm.js` | Chờ chủ dự án chốt giọng máy hay file thu sẵn |
-| Nút bật/tắt furigana trong Cài đặt (CSS đã sẵn sàng, chưa có màn hình Cài đặt) | GĐ 6 |
+| ~~Nút bật/tắt furigana trong Cài đặt~~ | Đã xong ở GĐ 6 |
 | Nghĩa tiếng Nhật, âm On, âm Hán Việt, câu ví dụ — **PDF không có**, phải nhập thêm | GĐ 1–5 |
 
 ### Các giai đoạn còn lại
@@ -309,7 +342,7 @@ dùng được để kiểm tra font.
 - [x] GĐ 4 — Tab C (từ vựng, 100 từ HSK 1). **Đã làm xong, chờ chủ dự án rà dữ liệu và duyệt.**
 - [x] GĐ 5 — Tab F (ngữ pháp, 15 điểm HSK 1–2). **Đã làm xong, chờ chủ dự án rà dữ liệu và duyệt.**
 - [x] GĐ 6 — Đăng nhập Google, Firestore, Cài đặt. **Code xong, chờ chủ dự án kết nối Firebase và deploy để thử trên điện thoại.**
-- [ ] GĐ 7 — Tab D và Tab E (mục tiêu, review)
+- [x] GĐ 7 — Luyện tập (Tab B, C, F), Tab D mục tiêu ngày, Tab E review tuần. **Đã làm xong, chờ chủ dự án thử trên điện thoại và duyệt.**
 - [ ] GĐ 8 — Hoàn thiện PWA
 - [ ] GĐ 9 — Bổ sung đầy đủ HSK 1–3
 - [ ] GĐ 10 — Chức năng bổ sung

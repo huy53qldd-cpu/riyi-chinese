@@ -9,8 +9,10 @@
    Thứ tự nội dung luôn là TRUNG → NHẬT → VIỆT. Nhãn chủ đề nằm trong dữ liệu
    (danhMucChuDe), không viết cứng ở đây.
 
-   Chưa làm ở giai đoạn này: nút loa (chưa chốt nguồn âm thanh), học/ôn bằng
-   thẻ ghi nhớ (giai đoạn 7), lưu tiến độ (giai đoạn 6).
+   Luyện tập (GĐ 7): thẻ ghi nhớ, trắc nghiệm nghĩa, điền từ vào câu ví dụ.
+   Luyện trên đúng những từ đang hiện theo bộ lọc.
+
+   Chưa làm: nút loa (chưa chốt nguồn âm thanh).
    ============================================================================= */
 
 import { useEffect, useState } from "react";
@@ -20,6 +22,21 @@ import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import NutDaHoc, { DauDaHoc } from "../thanh-phan/NutDaHoc.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
+import KhungChonLuyenTap from "../luyen-tap/KhungChonLuyenTap.jsx";
+import PhienLuyenTap from "../luyen-tap/PhienLuyenTap.jsx";
+import {
+  cauHoiDienTu,
+  cauHoiNghiaTu,
+  taoLuot,
+  theGhiNhoTu,
+} from "../luyen-tap/taoCauHoi.jsx";
+
+// Ba cách luyện từ vựng
+const CACH_LUYEN = [
+  { ma: "the", nhan: "Thẻ ghi nhớ" },
+  { ma: "trac-nghiem", nhan: "Trắc nghiệm" },
+  { ma: "dien-tu", nhan: "Điền từ" },
+];
 
 const CAC_CAP = [
   { ma: 0, nhan: "Tất cả" },
@@ -41,6 +58,7 @@ export default function TabTuVung() {
   const [cap, setCap] = useState(0);
   const [chuDe, setChuDe] = useState("tat-ca");
   const [tuDangMo, setTuDangMo] = useState(null);
+  const [cachLuyen, setCachLuyen] = useState(null);
 
   useEffect(() => {
     let conSong = true; // tránh cập nhật khi người dùng đã rời tab
@@ -75,6 +93,22 @@ export default function TabTuVung() {
       (cap === 0 || t.capHsk === cap) &&
       (chuDe === "tat-ca" || t.chuDe === chuDe),
   );
+
+  if (cachLuyen) {
+    // Đáp án nhiễu lấy từ TOÀN BỘ danh sách, để lọc hẹp vẫn đủ 4 lựa chọn
+    const tao = {
+      the: (t) => theGhiNhoTu(t),
+      "trac-nghiem": (t) => cauHoiNghiaTu(t, du.danhSach),
+      "dien-tu": (t) => cauHoiDienTu(t, du.danhSach),
+    }[cachLuyen];
+    return (
+      <PhienLuyenTap
+        tieuDe={CACH_LUYEN.find((c) => c.ma === cachLuyen).nhan}
+        taoDanhSach={() => taoLuot(hienThi, tao)}
+        quayLai={() => setCachLuyen(null)}
+      />
+    );
+  }
 
   return (
     <section>
@@ -144,6 +178,14 @@ export default function TabTuVung() {
             Chưa có từ nào ở mục này.
           </p>
         </div>
+      )}
+
+      {trangThai === "xong" && hienThi.length > 0 && (
+        <KhungChonLuyenTap
+          cacCach={CACH_LUYEN}
+          soMuc={hienThi.length}
+          chon={setCachLuyen}
+        />
       )}
 
       {trangThai === "xong" && hienThi.length > 0 && (

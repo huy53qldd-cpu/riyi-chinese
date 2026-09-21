@@ -1,8 +1,8 @@
 {
   "loai": "ngu-phap",
   "cap": 2,
-  "phienBan": 1,
-  "capNhatLuc": "2026-09-20",
+  "phienBan": 2,
+  "capNhatLuc": "2026-09-21",
   "nguon": "Các điểm chọn theo đại cương HSK 2025-11 (mục nguonPDF). Câu ví dụ và bản dịch Nhật: Tatoeba (CC BY 2.0 FR).",
   "danhSach": [
     {
@@ -23,7 +23,14 @@
           "nhat": "私[わたし]はあなたよりも背[せ]が低[ひく]い。",
           "viet": "Tôi thấp hơn bạn.",
           "ghiChuBienDieu": "我比你矮: có 4 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
-          "nguon": "Tatoeba #916624"
+          "nguon": "Tatoeba #916624",
+          "tachTu": [
+            "我",
+            "比",
+            "你",
+            "矮"
+          ],
+          "cachXepKhac": []
         },
         {
           "trung": "地球比太阳小。",
@@ -39,7 +46,14 @@
           "nhat": "地球[ちきゅう]は太陽[たいよう]より小[ちい]さいです。",
           "viet": "Trái đất nhỏ hơn mặt trời.",
           "ghiChuBienDieu": null,
-          "nguon": "Tatoeba #340652"
+          "nguon": "Tatoeba #340652",
+          "tachTu": [
+            "地球",
+            "比",
+            "太阳",
+            "小"
+          ],
+          "cachXepKhac": []
         }
       ],
       "doiChieuNhat": {
@@ -80,7 +94,8 @@
       "cangKiemTra": [
         "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
         "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
-        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
       ]
     },
     {
@@ -102,7 +117,14 @@
           "nhat": "トムは足[あし]が速[はや]い。",
           "viet": "Tom chạy nhanh.",
           "ghiChuBienDieu": "姆 đọc thành thanh 2 khi đứng trước thanh 3 (跑).",
-          "nguon": "Tatoeba #5072385"
+          "nguon": "Tatoeba #5072385",
+          "tachTu": [
+            "汤姆",
+            "跑",
+            "得",
+            "快"
+          ],
+          "cachXepKhac": []
         },
         {
           "trung": "汤姆走得很慢。",
@@ -118,7 +140,15 @@
           "nhat": "トムはゆっくり歩[ある]く。",
           "viet": "Tom đi rất chậm.",
           "ghiChuBienDieu": "姆 đọc thành thanh 2 khi đứng trước thanh 3 (走).",
-          "nguon": "Tatoeba #335609"
+          "nguon": "Tatoeba #335609",
+          "tachTu": [
+            "汤姆",
+            "走",
+            "得",
+            "很",
+            "慢"
+          ],
+          "cachXepKhac": []
         }
       ],
       "doiChieuNhat": {
@@ -159,7 +189,8 @@
       "cangKiemTra": [
         "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
         "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
-        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
       ]
     },
     {
@@ -181,7 +212,14 @@
           "nhat": "彼女[かのじょ]はパリに行[い]ったことがある。",
           "viet": "Cô ấy từng đến Paris.",
           "ghiChuBienDieu": null,
-          "nguon": "Tatoeba #333004"
+          "nguon": "Tatoeba #333004",
+          "tachTu": [
+            "她",
+            "去",
+            "过",
+            "巴黎"
+          ],
+          "cachXepKhac": []
         },
         {
           "trung": "你见过鲸鱼吗？",
@@ -197,7 +235,15 @@
           "nhat": "鯨[くじら]を見[み]たことがありますか。",
           "viet": "Bạn đã từng thấy cá voi chưa?",
           "ghiChuBienDieu": null,
-          "nguon": "Tatoeba #471037"
+          "nguon": "Tatoeba #471037",
+          "tachTu": [
+            "你",
+            "见",
+            "过",
+            "鲸鱼",
+            "吗"
+          ],
+          "cachXepKhac": []
         }
       ],
       "doiChieuNhat": {
@@ -241,7 +287,8 @@
       "cangKiemTra": [
         "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
         "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
-        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
       ]
     },
     {
@@ -265,7 +312,23 @@
           "nhat": "私[わたし]達[たち]は、昼食[ちゅうしょく]を食[た]べ終[お]えた。",
           "viet": "Chúng tôi đã ăn xong bữa trưa.",
           "ghiChuBienDieu": null,
-          "nguon": "Tatoeba #9453425"
+          "nguon": "Tatoeba #9453425",
+          "tachTu": [
+            "我们",
+            "吃",
+            "完",
+            "了",
+            "午餐"
+          ],
+          "cachXepKhac": [
+            [
+              "我们",
+              "吃",
+              "完",
+              "午餐",
+              "了"
+            ]
+          ]
         },
         {
           "trung": "懂了吗？",
@@ -278,7 +341,13 @@
           "nhat": "分[わ]かりますか。",
           "viet": "Hiểu chưa?",
           "ghiChuBienDieu": null,
-          "nguon": "Tatoeba #2032276"
+          "nguon": "Tatoeba #2032276",
+          "tachTu": [
+            "懂",
+            "了",
+            "吗"
+          ],
+          "cachXepKhac": []
         }
       ],
       "doiChieuNhat": {
@@ -318,7 +387,8 @@
       "cangKiemTra": [
         "Giải thích, đối chiếu tiếng Nhật, chỗ lệch, cảnh báo lỗi và bản dịch Việt do Claude soạn từ kiến thức ngữ pháp, không có nguồn đối chứng ngoài, cần người biết tiếng Nhật và tiếng Trung rà lại.",
         "Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.",
-        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra."
+        "Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.",
+        "Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra."
       ]
     }
   ]

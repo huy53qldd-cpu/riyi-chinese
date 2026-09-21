@@ -12,6 +12,9 @@
    lệch đều lấy từ DỮ LIỆU, không viết cứng ở đây.
 
    Thứ tự nội dung: TRUNG → NHẬT → VIỆT.
+
+   Luyện tập (GĐ 7): sắp xếp trật tự từ (mảnh câu chia sẵn trong dữ liệu, trường
+   tachTu) và chọn câu đúng (lấy câu sai/đúng trong phần "Lỗi hay gặp").
    ============================================================================= */
 
 import { useEffect, useState } from "react";
@@ -22,6 +25,18 @@ import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import NutDaHoc, { DauDaHoc } from "../thanh-phan/NutDaHoc.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
+import KhungChonLuyenTap from "../luyen-tap/KhungChonLuyenTap.jsx";
+import PhienLuyenTap from "../luyen-tap/PhienLuyenTap.jsx";
+import {
+  cauHoiChonCauDung,
+  cauHoiSapXep,
+  taoLuot,
+} from "../luyen-tap/taoCauHoi.jsx";
+
+const CACH_LUYEN = [
+  { ma: "sap-xep", nhan: "Sắp xếp câu" },
+  { ma: "chon-cau", nhan: "Chọn câu đúng" },
+];
 
 const CAC_CAP = [
   { ma: 0, nhan: "Tất cả" },
@@ -50,6 +65,7 @@ export default function TabNguPhap() {
   const [danhSach, setDanhSach] = useState([]);
   const [cap, setCap] = useState(0);
   const [diemDangMo, setDiemDangMo] = useState(null);
+  const [cachLuyen, setCachLuyen] = useState(null);
 
   useEffect(() => {
     let conSong = true; // tránh cập nhật khi người dùng đã rời tab
@@ -72,6 +88,23 @@ export default function TabNguPhap() {
   }
 
   const hienThi = danhSach.filter((d) => cap === 0 || d.capHsk === cap);
+
+  if (cachLuyen) {
+    // Mỗi câu ví dụ (hoặc mỗi cặp câu sai/đúng) là một câu hỏi
+    const cacCau =
+      cachLuyen === "sap-xep"
+        ? hienThi.flatMap((d) => d.viDu.map((vd) => () => cauHoiSapXep(d, vd)))
+        : hienThi.flatMap((d) =>
+            d.canhBaoLoi.map((cb) => () => cauHoiChonCauDung(d, cb)),
+          );
+    return (
+      <PhienLuyenTap
+        tieuDe={CACH_LUYEN.find((c) => c.ma === cachLuyen).nhan}
+        taoDanhSach={() => taoLuot(cacCau, (tao) => tao())}
+        quayLai={() => setCachLuyen(null)}
+      />
+    );
+  }
 
   return (
     <section>
@@ -125,6 +158,14 @@ export default function TabNguPhap() {
             Chưa có điểm ngữ pháp nào ở cấp này.
           </p>
         </div>
+      )}
+
+      {trangThai === "xong" && hienThi.length > 0 && (
+        <KhungChonLuyenTap
+          cacCach={CACH_LUYEN}
+          soMuc={hienThi.length}
+          chon={setCachLuyen}
+        />
       )}
 
       {trangThai === "xong" && hienThi.length > 0 && (

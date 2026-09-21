@@ -12,7 +12,8 @@
      nhat/<chữ>.json   nét của chữ Nhật (thứ tự nét chuẩn Nhật)
 
    Khi hoàn thành một lần tập viết, kết quả (số lần, số nét sai) được ghi nhận cho
-   người đã đăng nhập; chế độ khách không lưu.
+   người đã đăng nhập; chế độ khách không lưu. Viết xong mà không phải nhờ gợi ý
+   thì tính là làm ĐÚNG chữ đó (dùng cho mục tiêu ngày và Review).
    ============================================================================= */
 
 import { useEffect, useRef, useState } from "react";
@@ -32,11 +33,13 @@ function docMau(ten) {
  * @param {string} idChu     Mã chữ trong dữ liệu (ví dụ "han-0001"), để lưu kết quả
  * @param {string} chu       Chữ cần tập viết
  * @param {string} ngonNgu   "trung" hoặc "nhat", quyết định dùng bộ nét nào
+ * @param {Function} [khiXong]  Gọi khi viết xong, nhận true nếu KHÔNG cần gợi ý
  */
-export default function KhungTapViet({ idChu, chu, ngonNgu }) {
+export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong }) {
   const nd = useNguoiDung();
   const oVe = useRef(null);
   const nguoiViet = useRef(null);
+  const daCanGoiY = useRef(false); // có nét nào sai tới mức hiện gợi ý chưa
   // Trạng thái: cho-du-lieu | san-sang | dang-xem | dang-tap | xong | khong-co
   const [trangThai, setTrangThai] = useState("cho-du-lieu");
   const [thongBao, setThongBao] = useState("");
@@ -98,6 +101,7 @@ export default function KhungTapViet({ idChu, chu, ngonNgu }) {
     const nguoi = nguoiViet.current;
     setTrangThai("dang-tap");
     setThongBao("Dùng ngón tay viết nét đầu tiên.");
+    daCanGoiY.current = false;
     nguoi.quiz({
       onCorrectStroke: (d) =>
         setThongBao(
@@ -105,19 +109,25 @@ export default function KhungTapViet({ idChu, chu, ngonNgu }) {
             ? `Đúng rồi. Còn ${d.strokesRemaining} nét.`
             : "",
         ),
-      onMistake: (d) =>
+      onMistake: (d) => {
+        // Sai 3 lần một nét thì thư viện hiện gợi ý (showHintAfterMisses)
+        if (d.mistakesOnStroke >= 3) daCanGoiY.current = true;
         setThongBao(
           d.mistakesOnStroke >= 3
             ? "Nét này chưa đúng. Hãy làm theo nét gợi ý."
             : "Chưa đúng, thử lại nét này.",
-        ),
+        );
+      },
       onComplete: (d) => {
-        nd.ghiTapViet(idChu, ngonNgu, d.totalMistakes);
+        nd.ghiTapViet(idChu, ngonNgu, d.totalMistakes, daCanGoiY.current);
+        khiXong?.(!daCanGoiY.current);
         setTrangThai("xong");
         setThongBao(
           d.totalMistakes === 0
             ? "Hoàn thành, không sai nét nào."
-            : `Hoàn thành, sai ${d.totalMistakes} lần.`,
+            : daCanGoiY.current
+              ? `Hoàn thành nhờ gợi ý, sai ${d.totalMistakes} lần. Chữ này sẽ vào mục ôn tập.`
+              : `Hoàn thành, sai ${d.totalMistakes} lần.`,
         );
       },
     });

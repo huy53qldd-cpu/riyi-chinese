@@ -295,7 +295,15 @@ Ba trường hợp cần ghi:
           "trung": "我吃了饭。",
           "pinyin": ["wǒ", "chī", "le", "fàn", ""],
           "viet": "Tôi ăn cơm rồi.",
-          "ghiChuBienDieu": null
+          "ghiChuBienDieu": null,
+
+          // Dùng cho bài "Sắp xếp câu" (GĐ 7). Các mảnh ghép lại phải ra đúng
+          // câu, không tính dấu câu cuối. Chia tay trong cong-cu/ngu-phap-nhap-tay.json
+          // dạng "我/吃/了/饭", công cụ tự kiểm tra rồi tách thành mảng.
+          "tachTu": ["我", "吃", "了", "饭"],
+          // Những cách xếp KHÁC cũng đúng ngữ pháp (cùng bộ mảnh). Rỗng nếu chỉ
+          // có một cách đúng.
+          "cachXepKhac": [["我", "吃", "饭", "了"]]
         }
       ],
 

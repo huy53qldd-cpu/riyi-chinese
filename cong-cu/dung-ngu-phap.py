@@ -34,7 +34,7 @@ from ngon_ngu import gan_furigana, ghi_chu_bien_dieu, pinyin_cau
 N = Path("cong-cu/nguon-mo")
 NHAP_TAY = Path("cong-cu/ngu-phap-nhap-tay.json")
 THU_MUC_RA = Path("public/du-lieu")
-NGAY = "2026-09-20"
+NGAY = "2026-09-21"
 
 NHAN_DOI_CHIEU = "gần tương đương, không trùng khít"
 
@@ -57,6 +57,25 @@ def doc_lien_ket(ten):
             if len(p) == 2:
                 kq[p[0]].add(p[1])
     return kq
+
+
+DAU_CAU = "。！？，"
+
+
+def tach_tu(cau, vd, i):
+    """
+    Cách chia câu thành các mảnh cho bài sắp xếp câu (GĐ 7). Chia tay trong file
+    nhập tay, dạng "我/学/英语". Kiểm tra ghép lại phải ra đúng câu (bỏ dấu câu
+    cuối), và mỗi cách xếp khác phải dùng đúng bộ mảnh đó.
+    """
+    manh = vd["tachTu"].split("/")
+    if "".join(manh) != cau.rstrip(DAU_CAU):
+        raise SystemExit(f"Điểm {i}: tachTu '{vd['tachTu']}' không khớp câu {cau}")
+    khac = [k.split("/") for k in vd.get("cachXepKhac", [])]
+    for k in khac:
+        if sorted(k) != sorted(manh):
+            raise SystemExit(f"Điểm {i}: cachXepKhac '{'/'.join(k)}' không cùng bộ mảnh")
+    return manh, khac
 
 
 def pinyin_diem(cau, tro_tu):
@@ -93,6 +112,7 @@ def dung():
             if nhat_goc is None:
                 raise SystemExit(f"Điểm {i}: câu {vd['id']} không có bản dịch Nhật")
             py = pinyin_diem(cau, m.get("troTu", {}))
+            manh, khac = tach_tu(cau, vd, i)
             vi_du.append({
                 "trung": cau,
                 "pinyin": py,
@@ -100,6 +120,8 @@ def dung():
                 "viet": vd["viet"],
                 "ghiChuBienDieu": ghi_chu_bien_dieu(list(cau), py),
                 "nguon": f"Tatoeba #{vd['id']}",
+                "tachTu": manh,
+                "cachXepKhac": khac,
             })
         cang.append("Pinyin, furigana, ghi chú biến điệu của câu ví dụ do máy gắn theo quy tắc, cần kiểm tra.")
 
@@ -113,6 +135,7 @@ def dung():
             })
         if any(cb["cauSai"] for cb in m["canhBaoLoi"]):
             cang.append("Câu sai và câu đúng trong phần cảnh báo do Claude tự soạn (không nguồn nào có câu sai), cần kiểm tra.")
+        cang.append("Cách chia câu thành các mảnh và các cách xếp khác được chấp nhận trong bài sắp xếp câu do Claude chia tay, cần kiểm tra.")
 
         theo_cap[m["capHsk"]].append({
             "id": f"np-{i:04d}",
@@ -139,7 +162,7 @@ def dung():
             json.dumps({
                 "loai": "ngu-phap",
                 "cap": cap,
-                "phienBan": 1,
+                "phienBan": 2,
                 "capNhatLuc": NGAY,
                 "nguon": "Các điểm chọn theo đại cương HSK 2025-11 (mục nguonPDF). Câu ví dụ và bản dịch Nhật: Tatoeba (CC BY 2.0 FR).",
                 "danhSach": ds,

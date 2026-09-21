@@ -69,6 +69,11 @@
   --sai: #c0392b;
   --canh-bao: #b8730d;
 
+  /* Biểu đồ so sánh tuần ở tab Review. Đã chạy bộ kiểm tra màu (phân biệt được
+     cả với người mù màu, đủ tương phản trên nền thẻ) cho cả hai theme. */
+  --bieu-do-tuan-nay: var(--goc-cam);
+  --bieu-do-tuan-truoc: #2a86b0;
+
   /* Ba mức nguy hiểm của tab Đồng tự dị nghĩa */
   --nguy-hiem-nhe: #7a8b5a;
   --nguy-hiem-vua: #b8730d;
@@ -140,6 +145,8 @@
   --dung: #6fbf8f;
   --sai: #e8796b;
   --canh-bao: #e0a44a;
+
+  --bieu-do-tuan-truoc: #3d9fc4;
 
   --nguy-hiem-nhe: #a8bb85;
   --nguy-hiem-vua: #e0a44a;

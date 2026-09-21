@@ -8,16 +8,19 @@
    Chỉ hiện khi ĐÃ ĐĂNG NHẬP. Chế độ khách không có mục tiêu, không có streak,
    nên thanh này ẩn hẳn và thay bằng dải nhắc chế độ khách.
 
-   Số liệu mục tiêu thật và hiệu ứng mặt trời tỏa sáng làm ở GĐ 7. Trước đó
-   thanh này hiện 0 trên mục tiêu, không hiện số giả.
+   Số liệu lấy từ nd.tienDoHomNay (NguoiDung.jsx). Đạt mục tiêu thì mặt trời
+   nảy lên và toả sáng. Bấm vào thanh để mở tab Mục tiêu.
 
    Cả hai trạng thái đều có nút bánh răng để mở Cài đặt.
    ============================================================================= */
 
+import { LOAI_MUC_TIEU } from "../nguoi-dung/nhatKy.js";
+import MatTroi from "./MatTroi.jsx";
+
 export default function ThanhTren({
   daDangNhap,
-  daLam = 0,
-  mucTieu = 0,
+  tienDo,
+  lanVuaDat = 0,
   moMucTieu,
   moCaiDat,
 }) {
@@ -44,7 +47,8 @@ export default function ThanhTren({
   // -------------------------------------------------------------------------
   // ĐÃ ĐĂNG NHẬP — hiện mặt trời và tiến độ
   // -------------------------------------------------------------------------
-  const datMucTieu = mucTieu > 0 && daLam >= mucTieu;
+  const { daLam, mucTieu, dat, chuoi, loai } = tienDo;
+  const donVi = LOAI_MUC_TIEU[loai].donVi;
   const tiLe = mucTieu > 0 ? Math.min(1, daLam / mucTieu) : 0;
 
   return (
@@ -58,26 +62,18 @@ export default function ThanhTren({
       <button
         type="button"
         onClick={moMucTieu}
-        aria-label={`Mục tiêu hôm nay, đã làm ${daLam} trên ${mucTieu}`}
+        aria-label={`Mục tiêu hôm nay, đã làm ${daLam} trên ${mucTieu} ${donVi}${dat ? ", đã đạt" : ""}`}
         className="flex min-w-0 flex-1 items-center gap-3 text-left"
       >
-        {/* Mặt trời lấy từ logo Riyi.
-            Chưa đạt mục tiêu thì xám mờ, đạt rồi thì rực rỡ màu cam.
-            Hiệu ứng động sẽ thêm ở GĐ 7. */}
-        <img
-          src="/hinh/mat-troi.png"
-          alt=""
-          width="34"
-          height="18"
-          className="shrink-0 transition-all duration-500"
-          style={{
-            filter: datMucTieu ? "none" : "grayscale(1) opacity(0.45)",
-          }}
-        />
+        {/* Mặt trời lấy từ logo Riyi: chưa đạt thì xám mờ, đạt rồi thì toả sáng */}
+        <MatTroi dat={dat} lanVuaDat={lanVuaDat} />
 
         <div className="min-w-0 flex-1">
-          <div className="text-[length:var(--co-chu-latin-nho)] leading-tight font-bold">
-            Mục tiêu hôm nay
+          <div className="flex items-baseline gap-2 text-[length:var(--co-chu-latin-nho)] leading-tight font-bold">
+            <span>{dat ? "Đã đạt mục tiêu!" : "Mục tiêu hôm nay"}</span>
+            {chuoi > 0 && (
+              <span className="text-chu-mo font-semibold">· {chuoi} ngày liền</span>
+            )}
           </div>
 
           {/* Thanh tiến độ */}
@@ -96,7 +92,7 @@ export default function ThanhTren({
         </div>
 
         <div className="text-chu-mo shrink-0 text-[length:var(--co-chu-latin-nho)] font-semibold tabular-nums">
-          {daLam}/{mucTieu}
+          {daLam}/{mucTieu} {donVi}
         </div>
       </button>
       <NutCaiDat moCaiDat={moCaiDat} />

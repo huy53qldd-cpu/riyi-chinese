@@ -12,11 +12,13 @@
       "viDu": [
         {
           "id": "10448719",
-          "viet": "Tôi học tiếng Anh."
+          "viet": "Tôi học tiếng Anh.",
+          "tachTu": "我/学/英语"
         },
         {
           "id": "382426",
-          "viet": "Tôi thích mèo."
+          "viet": "Tôi thích mèo.",
+          "tachTu": "我/喜欢/猫"
         }
       ],
       "canhBaoLoi": [
@@ -39,11 +41,16 @@
       "viDu": [
         {
           "id": "9415187",
-          "viet": "Tôi đã uống nước."
+          "viet": "Tôi đã uống nước.",
+          "tachTu": "我/喝/了/水",
+          "cachXepKhac": [
+            "我/喝/水/了"
+          ]
         },
         {
           "id": "11837753",
-          "viet": "Tôi đã mua một quyển sách."
+          "viet": "Tôi đã mua một quyển sách.",
+          "tachTu": "我/买/了/一本/书"
         }
       ],
       "canhBaoLoi": [
@@ -66,11 +73,13 @@
       "viDu": [
         {
           "id": "507343",
-          "viet": "Lại mưa rồi!"
+          "viet": "Lại mưa rồi!",
+          "tachTu": "又/下雨/了"
         },
         {
           "id": "9962396",
-          "viet": "Bạn lớn rồi."
+          "viet": "Bạn lớn rồi.",
+          "tachTu": "你/长大/了"
         }
       ],
       "canhBaoLoi": [
@@ -93,11 +102,13 @@
       "viDu": [
         {
           "id": "695413",
-          "viet": "Tôi có từ điển."
+          "viet": "Tôi có từ điển.",
+          "tachTu": "我/有/词典"
         },
         {
           "id": "12169790",
-          "viet": "Tôi không có sách."
+          "viet": "Tôi không có sách.",
+          "tachTu": "我/没有/书"
         }
       ],
       "canhBaoLoi": [
@@ -120,11 +131,13 @@
       "viDu": [
         {
           "id": "11239872",
-          "viet": "Tôi không đọc báo."
+          "viet": "Tôi không đọc báo.",
+          "tachTu": "我/不/看/报纸"
         },
         {
           "id": "902044",
-          "viet": "Khách không đến."
+          "viet": "Khách không đến.",
+          "tachTu": "顾客/没/来"
         }
       ],
       "canhBaoLoi": [
@@ -147,11 +160,13 @@
       "viDu": [
         {
           "id": "10966808",
-          "viet": "Bạn tên gì?"
+          "viet": "Bạn tên gì?",
+          "tachTu": "你/叫/什么"
         },
         {
           "id": "487274",
-          "viet": "Bạn bận không?"
+          "viet": "Bạn bận không?",
+          "tachTu": "你/忙/吗"
         }
       ],
       "canhBaoLoi": [
@@ -174,11 +189,13 @@
       "viDu": [
         {
           "id": "10613902",
-          "viet": "Tôi đang ăn dưa hấu."
+          "viet": "Tôi đang ăn dưa hấu.",
+          "tachTu": "我/在/吃/西瓜"
         },
         {
           "id": "5668936",
-          "viet": "Tôi đang học tiếng Hàn."
+          "viet": "Tôi đang học tiếng Hàn.",
+          "tachTu": "我/正在/学/韩语"
         }
       ],
       "canhBaoLoi": [
@@ -201,11 +218,13 @@
       "viDu": [
         {
           "id": "414228",
-          "viet": "Tôi có một con chó."
+          "viet": "Tôi có một con chó.",
+          "tachTu": "我/有/一条/狗"
         },
         {
           "id": "482305",
-          "viet": "Anh ấy có hai con mèo."
+          "viet": "Anh ấy có hai con mèo.",
+          "tachTu": "他/有/两只/猫"
         }
       ],
       "canhBaoLoi": [
@@ -228,11 +247,13 @@
       "viDu": [
         {
           "id": "789581",
-          "viet": "Đây là xe của tôi."
+          "viet": "Đây là xe của tôi.",
+          "tachTu": "这/是/我/的/车"
         },
         {
           "id": "5114139",
-          "viet": "Tay của Tom to."
+          "viet": "Tay của Tom to.",
+          "tachTu": "汤姆/的/手/大"
         }
       ],
       "canhBaoLoi": [
@@ -255,11 +276,16 @@
       "viDu": [
         {
           "id": "2785224",
-          "viet": "Tôi chơi ở trong vườn."
+          "viet": "Tôi chơi ở trong vườn.",
+          "tachTu": "我/在/花园/里/玩"
         },
         {
           "id": "414247",
-          "viet": "Ngày nào tôi cũng chạy bộ."
+          "viet": "Ngày nào tôi cũng chạy bộ.",
+          "tachTu": "我/每天/跑步",
+          "cachXepKhac": [
+            "每天/我/跑步"
+          ]
         }
       ],
       "canhBaoLoi": [
@@ -282,11 +308,13 @@
       "viDu": [
         {
           "id": "136236",
-          "viet": "Tôi biết nói tiếng Pháp."
+          "viet": "Tôi biết nói tiếng Pháp.",
+          "tachTu": "我/会/说/法语"
         },
         {
           "id": "382414",
-          "viet": "Tôi muốn ra nước ngoài."
+          "viet": "Tôi muốn ra nước ngoài.",
+          "tachTu": "我/想/去/外国"
         }
       ],
       "canhBaoLoi": [
@@ -309,11 +337,13 @@
       "viDu": [
         {
           "id": "916624",
-          "viet": "Tôi thấp hơn bạn."
+          "viet": "Tôi thấp hơn bạn.",
+          "tachTu": "我/比/你/矮"
         },
         {
           "id": "340652",
-          "viet": "Trái đất nhỏ hơn mặt trời."
+          "viet": "Trái đất nhỏ hơn mặt trời.",
+          "tachTu": "地球/比/太阳/小"
         }
       ],
       "canhBaoLoi": [
@@ -336,11 +366,13 @@
       "viDu": [
         {
           "id": "5072385",
-          "viet": "Tom chạy nhanh."
+          "viet": "Tom chạy nhanh.",
+          "tachTu": "汤姆/跑/得/快"
         },
         {
           "id": "335609",
-          "viet": "Tom đi rất chậm."
+          "viet": "Tom đi rất chậm.",
+          "tachTu": "汤姆/走/得/很/慢"
         }
       ],
       "canhBaoLoi": [
@@ -366,11 +398,13 @@
       "viDu": [
         {
           "id": "333004",
-          "viet": "Cô ấy từng đến Paris."
+          "viet": "Cô ấy từng đến Paris.",
+          "tachTu": "她/去/过/巴黎"
         },
         {
           "id": "471037",
-          "viet": "Bạn đã từng thấy cá voi chưa?"
+          "viet": "Bạn đã từng thấy cá voi chưa?",
+          "tachTu": "你/见/过/鲸鱼/吗"
         }
       ],
       "canhBaoLoi": [
@@ -396,11 +430,16 @@
       "viDu": [
         {
           "id": "9453425",
-          "viet": "Chúng tôi đã ăn xong bữa trưa."
+          "viet": "Chúng tôi đã ăn xong bữa trưa.",
+          "tachTu": "我们/吃/完/了/午餐",
+          "cachXepKhac": [
+            "我们/吃/完/午餐/了"
+          ]
         },
         {
           "id": "2032276",
-          "viet": "Hiểu chưa?"
+          "viet": "Hiểu chưa?",
+          "tachTu": "懂/了/吗"
         }
       ],
       "canhBaoLoi": [

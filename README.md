@@ -3,7 +3,7 @@
 App học tiếng Trung HSK cấp 1–3, dành cho người Việt đã có nền tảng tiếng Nhật
 (N4–N1). Khai thác mối liên hệ Hán tự Trung – Nhật và âm Hán Việt để học nhanh hơn.
 
-**Trạng thái: đã xong giai đoạn 6 (đăng nhập Google và lưu tiến độ). Còn chờ chủ dự án kết nối Firebase và rà dữ liệu, xem mục "Kết nối Firebase" bên dưới.**
+**Trạng thái: đã xong giai đoạn 7 (luyện tập, mục tiêu ngày, review tuần). App đang chạy ở https://riyi-chinese.web.app. Còn chờ chủ dự án thử trên điện thoại và rà dữ liệu.**
 
 ---
 
@@ -333,8 +333,8 @@ Unihan (Unicode), CC-CEDICT (MDBG, CC BY-SA), KanjiVG (CC BY-SA 3.0), hanzi-writ
 - [x] GĐ 3 — Tab B (20 cặp đồng tự dị nghĩa)
 - [x] GĐ 4 — Tab C (100 từ HSK 1)
 - [x] GĐ 5 — Tab F (15 điểm ngữ pháp)
-- [x] GĐ 6 — Đăng nhập Google, Firestore, màn hình Cài đặt (code xong, chờ kết nối Firebase)
-- [ ] GĐ 7 — Tab D và Tab E (mục tiêu, review)
+- [x] GĐ 6 — Đăng nhập Google, Firestore, màn hình Cài đặt (đã kết nối Firebase)
+- [x] GĐ 7 — Luyện tập ở Tab B, C, F; Tab D mục tiêu ngày; Tab E review tuần
 - [ ] GĐ 8 — Hoàn thiện PWA
 - [ ] GĐ 9 — Bổ sung đầy đủ HSK 1–3
 - [ ] GĐ 10 — Chức năng bổ sung

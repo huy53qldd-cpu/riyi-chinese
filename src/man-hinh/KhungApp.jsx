@@ -14,9 +14,9 @@
        │  5 mục điều hướng            │  ← thanh dưới
        └─────────────────────────────┘
 
-   Nội dung thật làm lần lượt ở GĐ 1 đến GĐ 7. Đã có: Tab A chữ Hán (GĐ 1-2), Tab B đồng tự dị nghĩa (GĐ 3),
-   Tab C từ vựng (GĐ 4), Tab F ngữ pháp (GĐ 5).
-   Các tab còn lại vẫn trống, chỉ có tên tab và mô tả.
+   Đã có đủ 6 tab: Tab A chữ Hán (GĐ 1-2), Tab B đồng tự dị nghĩa (GĐ 3),
+   Tab C từ vựng (GĐ 4), Tab F ngữ pháp (GĐ 5), Tab D mục tiêu và Tab E review
+   (GĐ 7).
    ============================================================================= */
 
 import { useState } from "react";
@@ -28,12 +28,14 @@ import ThanhDuoi from "../thanh-phan/ThanhDuoi.jsx";
 import NutLoa from "../thanh-phan/NutLoa.jsx";
 import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
-import { TAB, timTab } from "../thanh-phan/danhSachTab.jsx";
+import { TAB } from "../thanh-phan/danhSachTab.jsx";
 import KiemTraFont from "./KiemTraFont.jsx";
 import TabChuHan from "./TabChuHan.jsx";
 import TabDongTu from "./TabDongTu.jsx";
 import TabNguPhap from "./TabNguPhap.jsx";
 import TabTuVung from "./TabTuVung.jsx";
+import TabMucTieu from "./TabMucTieu.jsx";
+import TabReview from "./TabReview.jsx";
 
 export default function KhungApp({ thoatKhoa }) {
   const [tabDangMo, setTabDangMo] = useState(TAB.CHU_HAN);
@@ -41,8 +43,6 @@ export default function KhungApp({ thoatKhoa }) {
   // Cài đặt mở ngay trong khung này (không đổi màn hình) để không mất tab đang xem
   const [dangMoCaiDat, setDangMoCaiDat] = useState(false);
   const nd = useNguoiDung();
-
-  const tab = timTab(tabDangMo);
 
   if (dangMoCaiDat) {
     return <CaiDat quayLai={() => setDangMoCaiDat(false)} />;
@@ -60,16 +60,15 @@ export default function KhungApp({ thoatKhoa }) {
     >
       <ThanhTren
         daDangNhap={nd.daDangNhap}
-        // Số mục tiêu thật làm ở GĐ 7; trước đó để 0, không hiện số giả
-        daLam={0}
-        mucTieu={20}
+        tienDo={nd.tienDoHomNay}
+        lanVuaDat={nd.lanVuaDat}
         moMucTieu={() => setTabDangMo(TAB.MUC_TIEU)}
         moCaiDat={() => setDangMoCaiDat(true)}
       />
 
       <main className="px-5 pt-5">
         {tabDangMo === TAB.MUC_TIEU ? (
-          <NoiDungMucTieu quayLai={() => setTabDangMo(TAB.CHU_HAN)} />
+          <TabMucTieu quayLai={() => setTabDangMo(TAB.CHU_HAN)} />
         ) : tabDangMo === TAB.CHU_HAN ? (
           <TabChuHan />
         ) : tabDangMo === TAB.DONG_TU ? (
@@ -79,7 +78,7 @@ export default function KhungApp({ thoatKhoa }) {
         ) : tabDangMo === TAB.NGU_PHAP ? (
           <TabNguPhap />
         ) : (
-          <NoiDungTabTrong tab={tab} />
+          <TabReview />
         )}
 
         {/* Ô kiểm tra font chỉ hiện ở tab đầu, là tiêu chí nghiệm thu GĐ 0 */}
@@ -101,69 +100,6 @@ export default function KhungApp({ thoatKhoa }) {
 
       <ThanhDuoi tabDangMo={tabDangMo} doiTab={setTabDangMo} />
     </div>
-  );
-}
-
-/* -----------------------------------------------------------------------------
-   Nội dung tạm của một tab chưa làm
-   ----------------------------------------------------------------------------- */
-function NoiDungTabTrong({ tab }) {
-  if (!tab) return null;
-
-  const thuTuGiaiDoan = {
-    [TAB.CHU_HAN]: "giai đoạn 1 và 2",
-    [TAB.DONG_TU]: "giai đoạn 3",
-    [TAB.TU_VUNG]: "giai đoạn 4",
-    [TAB.NGU_PHAP]: "giai đoạn 5",
-    [TAB.REVIEW]: "giai đoạn 7",
-  };
-
-  return (
-    <section>
-      <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-        {tab.nhanDay}
-      </h1>
-      <p className="text-chu-mo mt-1.5 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-        {tab.moTa}
-      </p>
-
-      <div className="border-vien bg-nen-phu mt-4 rounded-[var(--bo-goc)] border border-dashed p-6 text-center">
-        <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)]">
-          Nội dung tab này sẽ được làm ở {thuTuGiaiDoan[tab.ma]}.
-        </p>
-      </div>
-    </section>
-  );
-}
-
-/* -----------------------------------------------------------------------------
-   Nội dung tạm của tab Mục tiêu hôm nay
-   ----------------------------------------------------------------------------- */
-function NoiDungMucTieu({ quayLai }) {
-  return (
-    <section>
-      <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-        Mục tiêu hôm nay
-      </h1>
-      <p className="text-chu-mo mt-1.5 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-        Đặt mục tiêu mỗi ngày theo số chữ Hán, số từ hoặc số phút. Đạt mục tiêu
-        thì mặt trời Riyi sẽ toả sáng.
-      </p>
-
-      <div className="border-vien bg-nen-phu mt-4 rounded-[var(--bo-goc)] border border-dashed p-6 text-center">
-        <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)]">
-          Nội dung tab này sẽ được làm ở giai đoạn 7.
-        </p>
-      </div>
-
-      <button
-        type="button"
-        onClick={quayLai}
-        className="border-vien mt-4 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
-      >
-        Quay lại
-      </button>
-    </section>
   );
 }
 
