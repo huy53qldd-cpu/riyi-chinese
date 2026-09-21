@@ -343,6 +343,11 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 17.2 | **Nghĩa tiếng Việt lấy từ CVDICT** (từ điển Trung–Việt mở, CC BY-SA 4.0, github.com/ph0ngp/CVDICT), Claude chọn nghĩa đúng cấp HSK và viết gọn. Lưu ý: CVDICT phần lớn do máy (GPT-4o) dịch từ CC-CEDICT, tác giả sửa tay những mục trông sai, nên vẫn ghi `cangKiemTra` |
 | 17.3 | **Ngữ pháp phủ đủ đại cương HSK 1–3**, gộp các mục chỉ là danh sách từ thành điểm chung (ước tính 50–70 điểm), có đủ các điểm bắt buộc: 把, 被, bổ ngữ khả năng, 的/得/地 |
 | 17.4 | **Tìm thêm cặp đồng tự dị nghĩa trong HSK 1–3**: máy so nghĩa tiếng Anh CC-CEDICT và JMdict, Claude lọc, **chủ dự án duyệt danh sách trước** khi soạn nội dung |
+| 17.5 | **Chữ Hán HSK 1–3 đủ 655 chữ** (246 / 125 / 284), dựng từ `cong-cu/chu-han-nhap-tay.json`. Âm On/Kun, từ ví dụ tiếng Nhật chọn tự động trong JMdict (từ thông dụng), Claude rà và sửa tay; toàn bộ còn `cangKiemTra` |
+| 17.6 | **75 chữ tiếng Nhật không dùng** (爸, 吗, 哪...): `tuDangNhat = null`, nhãn `khong-co-trong-tieng-nhat` ("Tiếng Nhật không dùng chữ này"). Cột chữ Nhật hiện dấu "—", ẩn âm On/Kun, tập viết chỉ có giản thể. Phần nghĩa tiếng Nhật vẫn ghi từ Nhật tương đương (爸 → 父) |
+| 17.7 | **Âm Hán Việt dự phòng**: chữ không có trong bảng chính thì lấy qua chữ phồn thể, cuối cùng lấy âm đầu tiên của Unihan kVietnamese và ghi `cangKiemTra` (Unihan lẫn cả âm Nôm) |
+| 17.8 | **Chữ chỉ gặp ở thanh nhẹ** trong từ HSK (候 trong 时候, 思 trong 意思...): vẫn lấy từ đó làm ví dụ cho âm chính và ghi chú rõ trong `cangKiemTra` |
+| 17.9 | **Danh sách chữ Hán hiện 60 thẻ mỗi lần**, nút "Xem thêm" để hiện tiếp, cho máy yếu không bị chậm |
 
 ### Đang chờ chủ dự án
 

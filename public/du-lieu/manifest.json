@@ -1,7 +1,7 @@
 {
-  "phienBanDuLieu": 6,
+  "phienBanDuLieu": 7,
   "capNhatLuc": "2026-09-21",
-  "ghiChu": "App đọc file này đầu tiên khi mở. Thấy phienBanDuLieu lớn hơn bản đang có thì tải lại dữ liệu và xoá cache cũ. GĐ 1-5: mới có 10 chữ Hán HSK 1, 20 cặp đồng tự dị nghĩa 100 từ vựng HSK 1 (số 1-100) và 15 điểm ngữ pháp HSK 1-2 (bản nháp, còn cangKiemTra). Các file còn lại chưa có.",
+  "ghiChu": "App đọc file này đầu tiên khi mở. Thấy phienBanDuLieu lớn hơn bản đang có thì tải lại dữ liệu và xoá cache cũ. GĐ 9: đủ 655 chữ Hán và 1000 từ vựng HSK 1-3 (bản nháp, còn cangKiemTra); ngữ pháp và đồng tự dị nghĩa đang bổ sung.",
   "nguon": {
     "ten": "新版HSK考试大纲（词汇、汉字、语法）",
     "donViPhatHanh": "中外语言交流合作中心",
@@ -9,9 +9,9 @@
     "apDung": "2026-07"
   },
   "tep": {
-    "chu-han-hsk1": { "duongDan": "chu-han-hsk1.json", "phienBan": 1, "soMuc": 10, "sanSang": true },
-    "chu-han-hsk2": { "duongDan": "chu-han-hsk2.json", "phienBan": 0, "soMuc": 0, "sanSang": false },
-    "chu-han-hsk3": { "duongDan": "chu-han-hsk3.json", "phienBan": 0, "soMuc": 0, "sanSang": false },
+    "chu-han-hsk1": { "duongDan": "chu-han-hsk1.json", "phienBan": 2, "soMuc": 246, "sanSang": true },
+    "chu-han-hsk2": { "duongDan": "chu-han-hsk2.json", "phienBan": 1, "soMuc": 125, "sanSang": true },
+    "chu-han-hsk3": { "duongDan": "chu-han-hsk3.json", "phienBan": 1, "soMuc": 284, "sanSang": true },
     "tu-vung-hsk1": { "duongDan": "tu-vung-hsk1.json", "phienBan": 2, "soMuc": 300, "sanSang": true },
     "tu-vung-hsk2": { "duongDan": "tu-vung-hsk2.json", "phienBan": 1, "soMuc": 200, "sanSang": true },
     "tu-vung-hsk3": { "duongDan": "tu-vung-hsk3.json", "phienBan": 1, "soMuc": 500, "sanSang": true },

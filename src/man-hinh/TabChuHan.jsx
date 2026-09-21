@@ -28,7 +28,23 @@ const NHAN_TU_DANG = {
   "giong-het": "Giống hệt",
   "khac-mot-chut": "Khác một chút",
   "khac-hoan-toan": "Khác hoàn toàn",
+  "khong-co-trong-tieng-nhat": "Tiếng Nhật không dùng chữ này",
 };
+
+// Danh sách dài (HSK 1-3 có 655 chữ): mỗi lần chỉ vẽ một phần, bấm "Xem thêm" để hiện tiếp
+const SO_THE_MOI_LAN = 60;
+
+/** Ô thay cho chữ Nhật khi tiếng Nhật không dùng chữ này. */
+function KhongCoChuNhat({ co }) {
+  return (
+    <span
+      className={`text-chu-mo ${co === "the" ? "text-[length:2.5rem]" : "text-[length:1.75rem]"} leading-none`}
+      aria-label="Tiếng Nhật không dùng chữ này"
+    >
+      —
+    </span>
+  );
+}
 
 const CAC_CAP = [
   { ma: 0, nhan: "Tất cả" },
@@ -50,6 +66,7 @@ export default function TabChuHan() {
   const [danhSach, setDanhSach] = useState([]);
   const [cap, setCap] = useState(0);
   const [chuDangMo, setChuDangMo] = useState(null);
+  const [soHien, setSoHien] = useState(SO_THE_MOI_LAN);
 
   useEffect(() => {
     let conSong = true; // tránh cập nhật khi người dùng đã rời tab
@@ -89,7 +106,10 @@ export default function TabChuHan() {
           <button
             key={c.ma}
             type="button"
-            onClick={() => setCap(c.ma)}
+            onClick={() => {
+              setCap(c.ma);
+              setSoHien(SO_THE_MOI_LAN);
+            }}
             aria-pressed={cap === c.ma}
             className={`rounded-[var(--bo-goc-tron)] border px-3.5 py-1.5 text-[length:var(--co-chu-latin-nho)] font-semibold transition-colors ${
               cap === c.ma
@@ -117,19 +137,29 @@ export default function TabChuHan() {
       {trangThai === "xong" && hienThi.length === 0 && (
         <div className="border-vien bg-nen-phu mt-4 rounded-[var(--bo-goc)] border border-dashed p-6 text-center">
           <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)]">
-            Chưa có chữ nào ở cấp này. Sẽ bổ sung ở giai đoạn 9.
+            Chưa có chữ nào ở cấp này.
           </p>
         </div>
       )}
 
       {trangThai === "xong" && hienThi.length > 0 && (
         <ul className="m-0 mt-4 grid list-none grid-cols-2 gap-3 p-0">
-          {hienThi.map((muc) => (
+          {hienThi.slice(0, soHien).map((muc) => (
             <li key={muc.id}>
               <TheChuHan muc={muc} moChiTiet={() => setChuDangMo(muc)} />
             </li>
           ))}
         </ul>
+      )}
+
+      {trangThai === "xong" && hienThi.length > soHien && (
+        <button
+          type="button"
+          onClick={() => setSoHien((n) => n + SO_THE_MOI_LAN)}
+          className="border-vien mt-4 w-full rounded-[var(--bo-goc-tron)] border px-4 py-2.5 text-[length:var(--co-chu-latin-nho)] font-semibold"
+        >
+          Xem thêm ({hienThi.length - soHien} chữ nữa)
+        </button>
       )}
     </section>
   );
@@ -150,8 +180,12 @@ function TheChuHan({ muc, moChiTiet }) {
       <div className="flex items-end justify-center gap-4">
         {/* TRUNG: giản thể kèm pinyin chính */}
         <ChuTrung amTiet={[{ chu: muc.gianThe, pinyin: pinyinChinh }]} />
-        {/* NHẬT */}
-        <ChuNhat noiDung={muc.tuDangNhat} />
+        {/* NHẬT (có chữ Tiếng Nhật không dùng, ví dụ 爸, 吗) */}
+        {muc.tuDangNhat ? (
+          <ChuNhat noiDung={muc.tuDangNhat} />
+        ) : (
+          <KhongCoChuNhat />
+        )}
       </div>
       {/* VIỆT */}
       <span className="text-[length:var(--co-chu-latin)] font-semibold">
@@ -196,7 +230,11 @@ function ChiTietChuHan({ muc, quayLai }) {
           </div>
           <div>
             <p className={nhanTieuDe}>Chữ Nhật</p>
-            <ChuNhat co="the" noiDung={muc.tuDangNhat} />
+            {muc.tuDangNhat ? (
+              <ChuNhat co="the" noiDung={muc.tuDangNhat} />
+            ) : (
+              <KhongCoChuNhat co="the" />
+            )}
           </div>
           <div>
             <p className={nhanTieuDe}>Phồn thể</p>
@@ -237,17 +275,21 @@ function ChiTietChuHan({ muc, quayLai }) {
           ))}
         </NhomAm>
 
-        <NhomAm nhan="Âm On (tiếng Nhật)">
-          {amDoc.amOn.map((a) => (
-            <ViDuNhatCoAm key={a.am} a={a} />
-          ))}
-        </NhomAm>
+        {amDoc.amOn.length > 0 && (
+          <NhomAm nhan="Âm On (tiếng Nhật)">
+            {amDoc.amOn.map((a) => (
+              <ViDuNhatCoAm key={a.am} a={a} />
+            ))}
+          </NhomAm>
+        )}
 
-        <NhomAm nhan="Âm Kun (tiếng Nhật)">
-          {amDoc.amKun.map((a) => (
-            <ViDuNhatCoAm key={a.am} a={a} />
-          ))}
-        </NhomAm>
+        {amDoc.amKun.length > 0 && (
+          <NhomAm nhan="Âm Kun (tiếng Nhật)">
+            {amDoc.amKun.map((a) => (
+              <ViDuNhatCoAm key={a.am} a={a} />
+            ))}
+          </NhomAm>
+        )}
 
         <NhomAm nhan="Âm Hán Việt">
           <p className="m-0 flex flex-wrap items-baseline gap-x-3 gap-y-1">
@@ -305,7 +347,9 @@ function ChiTietChuHan({ muc, quayLai }) {
           {[
             { ma: "trung", nhan: "Giản thể (Trung)", chu: muc.gianThe },
             { ma: "nhat", nhan: "Chữ Nhật", chu: muc.tuDangNhat },
-          ].map((b) => (
+          ]
+            .filter((b) => b.chu)
+            .map((b) => (
             <button
               key={b.ma}
               type="button"
@@ -365,6 +409,7 @@ function AmChinhPhu({ am, chinh }) {
 
 /** Từ ví dụ tiếng Trung: có pinyin trên từng chữ, kèm nghĩa Việt. */
 function ViDuTrung({ viDu }) {
+  if (!viDu.viDuTu) return null;
   return (
     <div className="mt-0.5 flex flex-wrap items-baseline gap-x-3">
       <ChuTrung

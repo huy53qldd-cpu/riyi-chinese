@@ -105,6 +105,9 @@ def dung():
             ("trung", m["gianThe"], tu_hanzi_writer),
             ("nhat", m["tuDangNhat"], tu_kanjivg),
         ):
+            # Chữ tiếng Nhật không dùng (tuDangNhat = null) thì không có bộ nét Nhật
+            if chu is None:
+                continue
             du_lieu = ham(chu)
             if du_lieu is None:
                 thieu.append(f"{thu_muc}/{chu}")
