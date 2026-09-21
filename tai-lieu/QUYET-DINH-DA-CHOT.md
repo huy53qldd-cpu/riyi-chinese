@@ -335,6 +335,15 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 16.11 | Màu kem/cam/nâu buộc phải viết lại ở `index.html`, `manifest.webmanifest`, `mat-mang.html` và 2 công cụ Python vì những chỗ đó không đọc được `tokens.css`. Đã ghi danh sách này ở đầu `tokens.css` |
 | 16.12 | Đã thử trên bản đóng gói bằng trình duyệt tự động: manifest không lỗi; mở app lúc mất mạng hiện trang báo; mất mạng khi đang dùng hiện màn che rồi tự tắt; đóng gói bản mới → hiện dải báo → bấm → lên bản mới; nút Cập nhật nội dung chạy. **Chưa thử cài thật trên iPhone/Android** (splash iPhone chỉ thấy được trên máy thật) |
 
+### GĐ 9 — quyết định trước khi làm (2026-09-21)
+
+| # | Nội dung |
+| --- | --- |
+| 17.1 | **Làm hết GĐ 9 trong một lượt** (từ vựng, chữ Hán, ngữ pháp, đồng tự), xong cả mới đưa lên cho chủ dự án rà |
+| 17.2 | **Nghĩa tiếng Việt lấy từ CVDICT** (từ điển Trung–Việt mở, CC BY-SA 4.0, github.com/ph0ngp/CVDICT), Claude chọn nghĩa đúng cấp HSK và viết gọn. Lưu ý: CVDICT phần lớn do máy (GPT-4o) dịch từ CC-CEDICT, tác giả sửa tay những mục trông sai, nên vẫn ghi `cangKiemTra` |
+| 17.3 | **Ngữ pháp phủ đủ đại cương HSK 1–3**, gộp các mục chỉ là danh sách từ thành điểm chung (ước tính 50–70 điểm), có đủ các điểm bắt buộc: 把, 被, bổ ngữ khả năng, 的/得/地 |
+| 17.4 | **Tìm thêm cặp đồng tự dị nghĩa trong HSK 1–3**: máy so nghĩa tiếng Anh CC-CEDICT và JMdict, Claude lọc, **chủ dự án duyệt danh sách trước** khi soạn nội dung |
+
 ### Đang chờ chủ dự án
 
 1. Rà lại dữ liệu 10 chữ (mở từng chữ, bấm mục "Chưa kiểm tra").
