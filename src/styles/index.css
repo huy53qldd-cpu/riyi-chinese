@@ -193,6 +193,18 @@ rt {
   display: block;
 }
 
+.logo-anh-dao {
+  display: none;
+}
+
+:root[data-theme="anh-dao"] .logo-sang {
+  display: none;
+}
+
+:root[data-theme="anh-dao"] .logo-anh-dao {
+  display: block;
+}
+
 /* -----------------------------------------------------------------------------
    THEME HOA ANH ĐÀO (GĐ 10): vài điểm nhấn đổi hình
    .tru-anh-dao : chỉ hiện ở theme sáng/tối (ví dụ mặt trời lấy từ logo)

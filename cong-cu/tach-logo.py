@@ -6,6 +6,8 @@ File gốc "thuong-hieu/Riyi Chinese.png" là một BẢNG NHẬN DIỆN gồm 3
 Script này cắt bảng đó ra thành các file riêng mà app dùng được:
   - logo-sang.png   : logo đầy đủ, nền trong suốt, dùng trên nền sáng
   - logo-toi.png    : logo đầy đủ, nền trong suốt, dùng trên nền tối
+  - logo-anh-dao.png: logo tông hồng cho theme hoa anh đào (GĐ 10), tô lại màu
+                      từ bản sáng, hình dạng giữ nguyên
   - mat-troi.png    : chỉ riêng hình mặt trời (dùng cho tab Mục tiêu)
   - icon-*.png      : icon app vuông cho PWA, nhiều kích cỡ
   - favicon.ico     : icon hiện trên tab trình duyệt
@@ -27,6 +29,10 @@ CAM = (240, 96, 15)       # #F0600F - mặt trời
 NAU = (42, 31, 26)        # #2A1F1A - chữ, đường chân trời
 KEM = (255, 246, 229)     # #FFF6E5 - nền sáng
 BE = (234, 223, 203)      # #EADFCB - nền phụ
+
+# Màu theme hoa anh đào, chép từ src/styles/tokens.css (--goc-hong, --goc-man)
+HONG = (226, 116, 147)    # #E27493 - mặt trời
+MAN = (58, 34, 41)        # #3A2229 - chữ, đường chân trời
 
 # Toạ độ 3 ô trong bảng nhận diện (đã đo bằng máy, không phải ước lượng)
 O_TRAI = (0, 0, 1360, 1280)         # logo trên nền kem
@@ -123,6 +129,20 @@ def main():
     logo_toi = cat_sat_vien(tach_nen(goc.crop(O_PHAI_TREN), NAU, [KEM, CAM]))
     logo_toi.save(RA / "logo-toi.png")
     print(f"  logo-toi.png       {logo_toi.size[0]}x{logo_toi.size[1]}")
+
+    # --- 2b. Logo cho theme hoa anh đào: tô lại bản sáng ---
+    # Mỗi pixel của bản sáng mang đúng màu nâu (chữ) hoặc cam (mặt trời) kèm độ
+    # mờ, nên chỉ việc đổi màu theo từng pixel, giữ nguyên độ mờ để viền mượt.
+    logo_anh_dao = logo_sang.copy()
+    px = logo_anh_dao.load()
+    for y in range(logo_anh_dao.size[1]):
+        for x in range(logo_anh_dao.size[0]):
+            r, g, b, a = px[x, y]
+            if a:
+                moi = HONG if (r, g, b) == CAM else MAN
+                px[x, y] = moi + (a,)
+    logo_anh_dao.save(RA / "logo-anh-dao.png")
+    print(f"  logo-anh-dao.png   {logo_anh_dao.size[0]}x{logo_anh_dao.size[1]}")
 
     # --- 3. Riêng hình mặt trời, dùng cho tab Mục tiêu hôm nay ---
     mat_troi = cat_sat_vien(tach_nen(goc.crop(VUNG_MAT_TROI), KEM, [NAU, CAM]))

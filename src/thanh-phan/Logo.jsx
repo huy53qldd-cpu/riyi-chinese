@@ -2,7 +2,8 @@
    LOGO RIYI
    =============================================================================
 
-   Logo có hai bản: chữ nâu cho nền sáng, chữ kem cho nền tối.
+   Logo có ba bản: chữ nâu cho nền sáng, chữ kem cho nền tối, và bản tông hồng
+   (chữ nâu mận, mặt trời hồng) cho theme hoa anh đào (GĐ 10).
 
    LƯU Ý QUAN TRỌNG — đây là chỗ rất dễ làm sai:
    KHÔNG được chọn logo theo prefers-color-scheme (tức là theo cài đặt sáng/tối
@@ -11,7 +12,7 @@
    logo chữ kem đặt lên nền kem, và chữ "Riyi" biến mất, chỉ còn mặt trời.
 
    Vì vậy phải chọn theo data-theme của chính app. Việc chọn do CSS lo
-   (xem phần .logo-sang / .logo-toi trong index.css).
+   (xem phần .logo-sang / .logo-toi / .logo-anh-dao trong index.css).
    ============================================================================= */
 
 export default function Logo({ rong = 150, className = "" }) {
@@ -38,6 +39,16 @@ export default function Logo({ rong = 150, className = "" }) {
         width="480"
         height="468"
         className="logo-toi h-auto w-full"
+      />
+
+      {/* Bản tông hồng cho theme hoa anh đào */}
+      <img
+        src="/hinh/logo-anh-dao.png"
+        alt=""
+        aria-hidden="true"
+        width="738"
+        height="714"
+        className="logo-anh-dao h-auto w-full"
       />
     </span>
   );

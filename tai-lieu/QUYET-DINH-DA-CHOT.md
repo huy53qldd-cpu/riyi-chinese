@@ -364,7 +364,7 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 18.4 | **Biểu đồ tuần ở theme hoa anh đào**: "tuần này" hồng #d9658a, "tuần trước" tím #6a5acd (đã chạy bộ kiểm tra màu, phân biệt được cả với người mù màu; xanh dương cũ bị trùng với hồng khi mù màu đỏ) |
 | 18.5 | **Nút đăng nhập căn giữa** ở cả 3 chỗ (màn chọn khoá học, Cài đặt, tab Mục tiêu), chữ "Đăng nhập bằng Google" (G viết hoa theo quy định thương hiệu của Google), kèm logo chữ G nhiều màu của Google (ngoại lệ duy nhất của quy tắc biểu tượng đơn sắc, vì Google yêu cầu logo đúng màu) |
 | 18.6 | **Vẫn chỉ đăng nhập Google.** Đã tư vấn: Facebook làm được qua Firebase nhưng cần app Meta, trang chính sách, có thể phải duyệt; Zalo Firebase không hỗ trợ, phải có máy chủ riêng (Cloud Functions, cần gói trả tiền Blaze). Chưa làm |
-| 18.7 | **Còn để ngỏ**: logo "Riyi" (ảnh PNG, mặt trời cam) ở màn chọn khoá học vẫn giữ nguyên ở theme hoa anh đào. Chờ chủ dự án quyết có cần bản logo hồng riêng không |
+| 18.7 | **Logo tông hồng cho theme hoa anh đào** (chủ dự án duyệt): `logo-anh-dao.png`, tô lại từ bản sáng, mặt trời hồng #E27493, chữ nâu mận #3A2229, hình dạng giữ nguyên. Tạo bằng `npm run tach-logo` |
 
 ### Đang chờ chủ dự án
 
