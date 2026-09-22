@@ -1,0 +1,3420 @@
+{
+ "loai": "lo-trinh",
+ "phienBan": 1,
+ "capNhatLuc": "2026-09-22",
+ "nguon": "Xếp từ HSK 1–3 (đại cương 2025-11) theo cấp và độ thông dụng (tần suất trong từ điển jieba, giấy phép MIT). Chữ Hán lấy từ chính các từ của bài; ngữ pháp theo cấp, ưu tiên điểm có câu ví dụ dùng từ đã học.",
+ "moiBai": {
+  "chu": 5,
+  "tu": 10,
+  "nguPhap": 1
+ },
+ "soBai": 131,
+ "baiHoc": [
+  {
+   "so": 1,
+   "capHsk": 1,
+   "chu": [
+    "han-0102",
+    "han-0165",
+    "han-0227",
+    "han-0074",
+    "han-0220"
+   ],
+   "tu": [
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077",
+    "tu-0263",
+    "tu-0200",
+    "tu-0013",
+    "tu-0221",
+    "tu-0030",
+    "tu-0170"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0004",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 2,
+   "capHsk": 1,
+   "chu": [
+    "han-0172",
+    "han-0024",
+    "han-0187",
+    "han-0040",
+    "han-0001"
+   ],
+   "tu": [
+    "tu-0253",
+    "tu-0279",
+    "tu-0174",
+    "tu-0148",
+    "tu-0146",
+    "tu-0196",
+    "tu-0254",
+    "tu-0027",
+    "tu-0041",
+    "tu-0043"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0009",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 3,
+   "capHsk": 1,
+   "chu": [
+    "han-0211",
+    "han-0231",
+    "han-0152",
+    "han-0131",
+    "han-0236"
+   ],
+   "tu": [
+    "tu-0106",
+    "tu-0067",
+    "tu-0252",
+    "tu-0024",
+    "tu-0202",
+    "tu-0289",
+    "tu-0058",
+    "tu-0080",
+    "tu-0167",
+    "tu-0131"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0003",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 4,
+   "capHsk": 1,
+   "chu": [
+    "han-0130",
+    "han-0010",
+    "han-0212",
+    "han-0037",
+    "han-0045"
+   ],
+   "tu": [
+    "tu-0269",
+    "tu-0225",
+    "tu-0287",
+    "tu-0045",
+    "tu-0222",
+    "tu-0204",
+    "tu-0145",
+    "tu-0072",
+    "tu-0082",
+    "tu-0123"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0011",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 5,
+   "capHsk": 1,
+   "chu": [
+    "han-0047",
+    "han-0100",
+    "han-0069",
+    "han-0210",
+    "han-0035"
+   ],
+   "tu": [
+    "tu-0172",
+    "tu-0110",
+    "tu-0103",
+    "tu-0061",
+    "tu-0079",
+    "tu-0099",
+    "tu-0063",
+    "tu-0161",
+    "tu-0242",
+    "tu-0229"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0021",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 6,
+   "capHsk": 1,
+   "chu": [
+    "han-0216",
+    "han-0174",
+    "han-0060",
+    "han-0076",
+    "han-0146"
+   ],
+   "tu": [
+    "tu-0281",
+    "tu-0201",
+    "tu-0183",
+    "tu-0086",
+    "tu-0232",
+    "tu-0220",
+    "tu-0270",
+    "tu-0298",
+    "tu-0286",
+    "tu-0209"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0024",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 7,
+   "capHsk": 1,
+   "chu": [
+    "han-0038",
+    "han-0124",
+    "han-0225",
+    "han-0195",
+    "han-0235"
+   ],
+   "tu": [
+    "tu-0062",
+    "tu-0185",
+    "tu-0071",
+    "tu-0088",
+    "tu-0111",
+    "tu-0288",
+    "tu-0173",
+    "tu-0010",
+    "tu-0124",
+    "tu-0085"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0006",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 8,
+   "capHsk": 1,
+   "chu": [
+    "han-0159",
+    "han-0048",
+    "han-0095",
+    "han-0129",
+    "han-0004"
+   ],
+   "tu": [
+    "tu-0021",
+    "tu-0207",
+    "tu-0212",
+    "tu-0055",
+    "tu-0219",
+    "tu-0231",
+    "tu-0260",
+    "tu-0188",
+    "tu-0187",
+    "tu-0249"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0005",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 9,
+   "capHsk": 1,
+   "chu": [
+    "han-0081",
+    "han-0149",
+    "han-0104",
+    "han-0061",
+    "han-0075"
+   ],
+   "tu": [
+    "tu-0066",
+    "tu-0294",
+    "tu-0282",
+    "tu-0268",
+    "tu-0144",
+    "tu-0152",
+    "tu-0097",
+    "tu-0276",
+    "tu-0048",
+    "tu-0181"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0019",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 10,
+   "capHsk": 1,
+   "chu": [
+    "han-0094",
+    "han-0143",
+    "han-0204",
+    "han-0198",
+    "han-0173"
+   ],
+   "tu": [
+    "tu-0002",
+    "tu-0203",
+    "tu-0033",
+    "tu-0193",
+    "tu-0081",
+    "tu-0165",
+    "tu-0031",
+    "tu-0149",
+    "tu-0114",
+    "tu-0278"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0002",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 11,
+   "capHsk": 1,
+   "chu": [
+    "han-0007",
+    "han-0199",
+    "han-0226",
+    "han-0116",
+    "han-0246"
+   ],
+   "tu": [
+    "tu-0104",
+    "tu-0296",
+    "tu-0028",
+    "tu-0283",
+    "tu-0026",
+    "tu-0198",
+    "tu-0190",
+    "tu-0040",
+    "tu-0180",
+    "tu-0239"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0007",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 12,
+   "capHsk": 1,
+   "chu": [
+    "han-0039",
+    "han-0179",
+    "han-0163",
+    "han-0072",
+    "han-0089"
+   ],
+   "tu": [
+    "tu-0162",
+    "tu-0247",
+    "tu-0068",
+    "tu-0238",
+    "tu-0251",
+    "tu-0142",
+    "tu-0011",
+    "tu-0096",
+    "tu-0094",
+    "tu-0053"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0001",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 13,
+   "capHsk": 1,
+   "chu": [
+    "han-0105",
+    "han-0150",
+    "han-0020",
+    "han-0118",
+    "han-0086"
+   ],
+   "tu": [
+    "tu-0223",
+    "tu-0265",
+    "tu-0297",
+    "tu-0001",
+    "tu-0015",
+    "tu-0150",
+    "tu-0134",
+    "tu-0230",
+    "tu-0273",
+    "tu-0259"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0008",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 14,
+   "capHsk": 1,
+   "chu": [
+    "han-0030",
+    "han-0177",
+    "han-0181",
+    "han-0055",
+    "han-0186"
+   ],
+   "tu": [
+    "tu-0250",
+    "tu-0136",
+    "tu-0205",
+    "tu-0132",
+    "tu-0169",
+    "tu-0199",
+    "tu-0022",
+    "tu-0116",
+    "tu-0017",
+    "tu-0046"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0010",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 15,
+   "capHsk": 1,
+   "chu": [
+    "han-0078",
+    "han-0067",
+    "han-0238",
+    "han-0223",
+    "han-0128"
+   ],
+   "tu": [
+    "tu-0118",
+    "tu-0197",
+    "tu-0078",
+    "tu-0101",
+    "tu-0020",
+    "tu-0093",
+    "tu-0241",
+    "tu-0049",
+    "tu-0156",
+    "tu-0054"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0017",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 16,
+   "capHsk": 1,
+   "chu": [
+    "han-0244",
+    "han-0134",
+    "han-0093",
+    "han-0050",
+    "han-0154"
+   ],
+   "tu": [
+    "tu-0012",
+    "tu-0171",
+    "tu-0016",
+    "tu-0113",
+    "tu-0034",
+    "tu-0292",
+    "tu-0084",
+    "tu-0007",
+    "tu-0234",
+    "tu-0095"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0016",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 17,
+   "capHsk": 1,
+   "chu": [
+    "han-0196",
+    "han-0013",
+    "han-0175",
+    "han-0043",
+    "han-0167"
+   ],
+   "tu": [
+    "tu-0184",
+    "tu-0160",
+    "tu-0115",
+    "tu-0137",
+    "tu-0138",
+    "tu-0003",
+    "tu-0261",
+    "tu-0192",
+    "tu-0105",
+    "tu-0168"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0022",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 18,
+   "capHsk": 1,
+   "chu": [
+    "han-0057",
+    "han-0101",
+    "han-0003",
+    "han-0087",
+    "han-0080"
+   ],
+   "tu": [
+    "tu-0153",
+    "tu-0087",
+    "tu-0107",
+    "tu-0050",
+    "tu-0056",
+    "tu-0206",
+    "tu-0215",
+    "tu-0217",
+    "tu-0042",
+    "tu-0057"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0028",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 19,
+   "capHsk": 1,
+   "chu": [
+    "han-0233",
+    "han-0166",
+    "han-0121",
+    "han-0145",
+    "han-0042"
+   ],
+   "tu": [
+    "tu-0130",
+    "tu-0109",
+    "tu-0257",
+    "tu-0284",
+    "tu-0037",
+    "tu-0036",
+    "tu-0189",
+    "tu-0237",
+    "tu-0300",
+    "tu-0255"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0018",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 20,
+   "capHsk": 1,
+   "chu": [
+    "han-0180",
+    "han-0156",
+    "han-0110",
+    "han-0230",
+    "han-0098"
+   ],
+   "tu": [
+    "tu-0117",
+    "tu-0210",
+    "tu-0065",
+    "tu-0267",
+    "tu-0211",
+    "tu-0018",
+    "tu-0060",
+    "tu-0248",
+    "tu-0258",
+    "tu-0214"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0026",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 21,
+   "capHsk": 1,
+   "chu": [
+    "han-0241",
+    "han-0232",
+    "han-0170",
+    "han-0240",
+    "han-0006"
+   ],
+   "tu": [
+    "tu-0029",
+    "tu-0246",
+    "tu-0064",
+    "tu-0285",
+    "tu-0163",
+    "tu-0035",
+    "tu-0032",
+    "tu-0005",
+    "tu-0235",
+    "tu-0129"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0023",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 22,
+   "capHsk": 1,
+   "chu": [
+    "han-0190",
+    "han-0008",
+    "han-0153",
+    "han-0201",
+    "han-0144"
+   ],
+   "tu": [
+    "tu-0178",
+    "tu-0059",
+    "tu-0102",
+    "tu-0143",
+    "tu-0073",
+    "tu-0092",
+    "tu-0208",
+    "tu-0052",
+    "tu-0004",
+    "tu-0047"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0020",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 23,
+   "capHsk": 1,
+   "chu": [
+    "han-0022",
+    "han-0141",
+    "han-0002",
+    "han-0202",
+    "han-0054"
+   ],
+   "tu": [
+    "tu-0277",
+    "tu-0141",
+    "tu-0218",
+    "tu-0121",
+    "tu-0295",
+    "tu-0157",
+    "tu-0140",
+    "tu-0158",
+    "tu-0119",
+    "tu-0135"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0025",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 24,
+   "capHsk": 1,
+   "chu": [
+    "han-0021",
+    "han-0122",
+    "han-0188",
+    "han-0245",
+    "han-0049"
+   ],
+   "tu": [
+    "tu-0133",
+    "tu-0112",
+    "tu-0290",
+    "tu-0195",
+    "tu-0039",
+    "tu-0069",
+    "tu-0194",
+    "tu-0262",
+    "tu-0083",
+    "tu-0006"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0027",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 25,
+   "capHsk": 1,
+   "chu": [
+    "han-0034",
+    "han-0009",
+    "han-0234",
+    "han-0132",
+    "han-0228"
+   ],
+   "tu": [
+    "tu-0291",
+    "tu-0155",
+    "tu-0091",
+    "tu-0175",
+    "tu-0159",
+    "tu-0243",
+    "tu-0025",
+    "tu-0051",
+    "tu-0275",
+    "tu-0074"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0031",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 26,
+   "capHsk": 1,
+   "chu": [
+    "han-0140",
+    "han-0027",
+    "han-0044",
+    "han-0014",
+    "han-0157"
+   ],
+   "tu": [
+    "tu-0240",
+    "tu-0256",
+    "tu-0044",
+    "tu-0299",
+    "tu-0213",
+    "tu-0128",
+    "tu-0070",
+    "tu-0090",
+    "tu-0280",
+    "tu-0176"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0039",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 27,
+   "capHsk": 1,
+   "chu": [
+    "han-0120",
+    "han-0123",
+    "han-0147",
+    "han-0171",
+    "han-0032"
+   ],
+   "tu": [
+    "tu-0125",
+    "tu-0179",
+    "tu-0216",
+    "tu-0151",
+    "tu-0166",
+    "tu-0147",
+    "tu-0177",
+    "tu-0227",
+    "tu-0100",
+    "tu-0236"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0040",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 28,
+   "capHsk": 1,
+   "chu": [
+    "han-0162",
+    "han-0119",
+    "han-0115",
+    "han-0111",
+    "han-0026"
+   ],
+   "tu": [
+    "tu-0019",
+    "tu-0164",
+    "tu-0122",
+    "tu-0098",
+    "tu-0224",
+    "tu-0226",
+    "tu-0182",
+    "tu-0009",
+    "tu-0038",
+    "tu-0127"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0032",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 29,
+   "capHsk": 1,
+   "chu": [
+    "han-0031",
+    "han-0185",
+    "han-0194",
+    "han-0113",
+    "han-0073"
+   ],
+   "tu": [
+    "tu-0023",
+    "tu-0293",
+    "tu-0089",
+    "tu-0274",
+    "tu-0272",
+    "tu-0139",
+    "tu-0075",
+    "tu-0245",
+    "tu-0191",
+    "tu-0120"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0043",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 30,
+   "capHsk": 1,
+   "chu": [
+    "han-0178",
+    "han-0005",
+    "han-0053",
+    "han-0023",
+    "han-0071"
+   ],
+   "tu": [
+    "tu-0154",
+    "tu-0233",
+    "tu-0244",
+    "tu-0008",
+    "tu-0228",
+    "tu-0076",
+    "tu-0126",
+    "tu-0014",
+    "tu-0264",
+    "tu-0266"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0044",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 31,
+   "capHsk": 2,
+   "chu": [
+    "han-0025",
+    "han-0197",
+    "han-0082",
+    "han-0108",
+    "han-0085"
+   ],
+   "tu": [
+    "tu-0375",
+    "tu-0334",
+    "tu-0488",
+    "tu-0333",
+    "tu-0332",
+    "tu-0330",
+    "tu-0324",
+    "tu-0431",
+    "tu-0347",
+    "tu-0494"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0037",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 32,
+   "capHsk": 2,
+   "chu": [
+    "han-0017",
+    "han-0091",
+    "han-0158",
+    "han-0138",
+    "han-0112"
+   ],
+   "tu": [
+    "tu-0348",
+    "tu-0316",
+    "tu-0497",
+    "tu-0341",
+    "tu-0472",
+    "tu-0495",
+    "tu-0422",
+    "tu-0491",
+    "tu-0314",
+    "tu-0400"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0038",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 33,
+   "capHsk": 2,
+   "chu": [
+    "han-0126",
+    "han-0011",
+    "han-0193",
+    "han-0168",
+    "han-0065"
+   ],
+   "tu": [
+    "tu-0418",
+    "tu-0378",
+    "tu-0490",
+    "tu-0474",
+    "tu-0309",
+    "tu-0327",
+    "tu-0344",
+    "tu-0458",
+    "tu-0382",
+    "tu-0319"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0014",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 34,
+   "capHsk": 2,
+   "chu": [
+    "han-0224",
+    "han-0083",
+    "han-0099",
+    "han-0229",
+    "han-0092"
+   ],
+   "tu": [
+    "tu-0439",
+    "tu-0449",
+    "tu-0433",
+    "tu-0445",
+    "tu-0331",
+    "tu-0392",
+    "tu-0404",
+    "tu-0398",
+    "tu-0369",
+    "tu-0335"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0047",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 35,
+   "capHsk": 2,
+   "chu": [
+    "han-0139",
+    "han-0088",
+    "han-0052",
+    "han-0133",
+    "han-0051"
+   ],
+   "tu": [
+    "tu-0438",
+    "tu-0363",
+    "tu-0486",
+    "tu-0383",
+    "tu-0301",
+    "tu-0405",
+    "tu-0408",
+    "tu-0489",
+    "tu-0485",
+    "tu-0323"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0042",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 36,
+   "capHsk": 2,
+   "chu": [
+    "han-0183",
+    "han-0176",
+    "han-0046",
+    "han-0063",
+    "han-0018"
+   ],
+   "tu": [
+    "tu-0370",
+    "tu-0351",
+    "tu-0451",
+    "tu-0456",
+    "tu-0453",
+    "tu-0493",
+    "tu-0483",
+    "tu-0396",
+    "tu-0475",
+    "tu-0432"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0041",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 37,
+   "capHsk": 2,
+   "chu": [
+    "han-0169",
+    "han-0103",
+    "han-0109",
+    "han-0016",
+    "han-0058"
+   ],
+   "tu": [
+    "tu-0403",
+    "tu-0311",
+    "tu-0437",
+    "tu-0484",
+    "tu-0448",
+    "tu-0498",
+    "tu-0358",
+    "tu-0465",
+    "tu-0443",
+    "tu-0337"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0015",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 38,
+   "capHsk": 2,
+   "chu": [
+    "han-0222",
+    "han-0068",
+    "han-0066",
+    "han-0221",
+    "han-0205"
+   ],
+   "tu": [
+    "tu-0359",
+    "tu-0364",
+    "tu-0361",
+    "tu-0414",
+    "tu-0466",
+    "tu-0342",
+    "tu-0461",
+    "tu-0349",
+    "tu-0321",
+    "tu-0352"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0034",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 39,
+   "capHsk": 2,
+   "chu": [
+    "han-0096",
+    "han-0028",
+    "han-0106",
+    "han-0206",
+    "han-0208"
+   ],
+   "tu": [
+    "tu-0389",
+    "tu-0340",
+    "tu-0454",
+    "tu-0478",
+    "tu-0368",
+    "tu-0410",
+    "tu-0468",
+    "tu-0492",
+    "tu-0430",
+    "tu-0381"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0045",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 40,
+   "capHsk": 2,
+   "chu": [
+    "han-0182",
+    "han-0029",
+    "han-0036",
+    "han-0151",
+    "han-0064"
+   ],
+   "tu": [
+    "tu-0366",
+    "tu-0357",
+    "tu-0477",
+    "tu-0371",
+    "tu-0462",
+    "tu-0446",
+    "tu-0372",
+    "tu-0423",
+    "tu-0305",
+    "tu-0326"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0035",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 41,
+   "capHsk": 2,
+   "chu": [
+    "han-0084",
+    "han-0062",
+    "han-0142",
+    "han-0237",
+    "han-0215"
+   ],
+   "tu": [
+    "tu-0391",
+    "tu-0362",
+    "tu-0476",
+    "tu-0390",
+    "tu-0380",
+    "tu-0322",
+    "tu-0441",
+    "tu-0420",
+    "tu-0313",
+    "tu-0307"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0013",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 42,
+   "capHsk": 2,
+   "chu": [
+    "han-0015",
+    "han-0213",
+    "han-0041",
+    "han-0033",
+    "han-0059"
+   ],
+   "tu": [
+    "tu-0417",
+    "tu-0426",
+    "tu-0450",
+    "tu-0373",
+    "tu-0343",
+    "tu-0304",
+    "tu-0360",
+    "tu-0421",
+    "tu-0356",
+    "tu-0487"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0036",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 43,
+   "capHsk": 2,
+   "chu": [
+    "han-0127",
+    "han-0164",
+    "han-0097",
+    "han-0160",
+    "han-0200"
+   ],
+   "tu": [
+    "tu-0355",
+    "tu-0329",
+    "tu-0447",
+    "tu-0338",
+    "tu-0457",
+    "tu-0425",
+    "tu-0413",
+    "tu-0401",
+    "tu-0427",
+    "tu-0310"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0012",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 44,
+   "capHsk": 2,
+   "chu": [
+    "han-0019",
+    "han-0148",
+    "han-0203",
+    "han-0161",
+    "han-0207"
+   ],
+   "tu": [
+    "tu-0317",
+    "tu-0455",
+    "tu-0471",
+    "tu-0467",
+    "tu-0411",
+    "tu-0407",
+    "tu-0442",
+    "tu-0388",
+    "tu-0394",
+    "tu-0303"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0033",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 45,
+   "capHsk": 2,
+   "chu": [
+    "han-0209",
+    "han-0184",
+    "han-0218",
+    "han-0242",
+    "han-0114"
+   ],
+   "tu": [
+    "tu-0395",
+    "tu-0397",
+    "tu-0367",
+    "tu-0376",
+    "tu-0384",
+    "tu-0452",
+    "tu-0416",
+    "tu-0353",
+    "tu-0473",
+    "tu-0470"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0046",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 46,
+   "capHsk": 2,
+   "chu": [
+    "han-0107",
+    "han-0012",
+    "han-0191",
+    "han-0077",
+    "han-0090"
+   ],
+   "tu": [
+    "tu-0500",
+    "tu-0463",
+    "tu-0440",
+    "tu-0320",
+    "tu-0377",
+    "tu-0325",
+    "tu-0481",
+    "tu-0436",
+    "tu-0350",
+    "tu-0336"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0030",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 47,
+   "capHsk": 2,
+   "chu": [
+    "han-0219",
+    "han-0079",
+    "han-0125",
+    "han-0155",
+    "han-0192"
+   ],
+   "tu": [
+    "tu-0429",
+    "tu-0306",
+    "tu-0482",
+    "tu-0315",
+    "tu-0419",
+    "tu-0318",
+    "tu-0428",
+    "tu-0312",
+    "tu-0496",
+    "tu-0302"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0029",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 48,
+   "capHsk": 2,
+   "chu": [
+    "han-0056",
+    "han-0214",
+    "han-0239",
+    "han-0117",
+    "han-0189"
+   ],
+   "tu": [
+    "tu-0499",
+    "tu-0424",
+    "tu-0480",
+    "tu-0365",
+    "tu-0386",
+    "tu-0402",
+    "tu-0374",
+    "tu-0387",
+    "tu-0385",
+    "tu-0460"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0063",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 49,
+   "capHsk": 2,
+   "chu": [
+    "han-0217",
+    "han-0136",
+    "han-0135",
+    "han-0243",
+    "han-0070"
+   ],
+   "tu": [
+    "tu-0469",
+    "tu-0479",
+    "tu-0345",
+    "tu-0412",
+    "tu-0444",
+    "tu-0434",
+    "tu-0339",
+    "tu-0379",
+    "tu-0308",
+    "tu-0435"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0064",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 50,
+   "capHsk": 2,
+   "chu": [
+    "han-0137",
+    "han-0340",
+    "han-0287",
+    "han-0262",
+    "han-0365"
+   ],
+   "tu": [
+    "tu-0459",
+    "tu-0415",
+    "tu-0346",
+    "tu-0393",
+    "tu-0399",
+    "tu-0354",
+    "tu-0464",
+    "tu-0406",
+    "tu-0328",
+    "tu-0409"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0061",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 51,
+   "capHsk": 3,
+   "chu": [
+    "han-0261",
+    "han-0260",
+    "han-0258",
+    "han-0271",
+    "han-0327"
+   ],
+   "tu": [
+    "tu-0875",
+    "tu-0982",
+    "tu-0589",
+    "tu-0675",
+    "tu-0942",
+    "tu-0583",
+    "tu-0506",
+    "tu-0517",
+    "tu-0974",
+    "tu-0732"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0048",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 52,
+   "capHsk": 3,
+   "chu": [
+    "han-0351",
+    "han-0370",
+    "han-0368",
+    "han-0314",
+    "han-0362"
+   ],
+   "tu": [
+    "tu-0587",
+    "tu-0681",
+    "tu-0657",
+    "tu-0684",
+    "tu-0941",
+    "tu-0883",
+    "tu-0627",
+    "tu-0798",
+    "tu-0987",
+    "tu-0645"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0068",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 53,
+   "capHsk": 3,
+   "chu": [
+    "han-0303",
+    "han-0250",
+    "han-0367",
+    "han-0269",
+    "han-0345"
+   ],
+   "tu": [
+    "tu-0544",
+    "tu-0594",
+    "tu-0967",
+    "tu-0832",
+    "tu-0819",
+    "tu-0984",
+    "tu-0769",
+    "tu-0878",
+    "tu-0757",
+    "tu-0835"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0059",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 54,
+   "capHsk": 3,
+   "chu": [
+    "han-0335",
+    "han-0353",
+    "han-0333",
+    "han-0298",
+    "han-0302"
+   ],
+   "tu": [
+    "tu-0745",
+    "tu-0723",
+    "tu-0653",
+    "tu-0884",
+    "tu-0829",
+    "tu-0922",
+    "tu-0815",
+    "tu-0538",
+    "tu-0683",
+    "tu-0635"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0070",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 55,
+   "capHsk": 3,
+   "chu": [
+    "han-0282",
+    "han-0361",
+    "han-0291",
+    "han-0247",
+    "han-0284"
+   ],
+   "tu": [
+    "tu-0915",
+    "tu-0836",
+    "tu-0809",
+    "tu-0572",
+    "tu-0882",
+    "tu-0924",
+    "tu-0559",
+    "tu-0935",
+    "tu-0626",
+    "tu-0774"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0056",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 56,
+   "capHsk": 3,
+   "chu": [
+    "han-0304",
+    "han-0257",
+    "han-0283",
+    "han-0337",
+    "han-0341"
+   ],
+   "tu": [
+    "tu-0646",
+    "tu-0929",
+    "tu-0625",
+    "tu-0968",
+    "tu-0919",
+    "tu-0993",
+    "tu-0823",
+    "tu-0605",
+    "tu-0966",
+    "tu-0546"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0054",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 57,
+   "capHsk": 3,
+   "chu": [
+    "han-0358",
+    "han-0318",
+    "han-0273",
+    "han-0326",
+    "han-0253"
+   ],
+   "tu": [
+    "tu-0613",
+    "tu-0939",
+    "tu-0901",
+    "tu-0537",
+    "tu-0926",
+    "tu-0876",
+    "tu-0928",
+    "tu-0943",
+    "tu-0981",
+    "tu-0764"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0069",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 58,
+   "capHsk": 3,
+   "chu": [
+    "han-0324",
+    "han-0359",
+    "han-0334",
+    "han-0352",
+    "han-0371"
+   ],
+   "tu": [
+    "tu-0636",
+    "tu-0997",
+    "tu-0851",
+    "tu-0990",
+    "tu-0940",
+    "tu-0775",
+    "tu-0584",
+    "tu-0880",
+    "tu-0597",
+    "tu-0618"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0065",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 59,
+   "capHsk": 3,
+   "chu": [
+    "han-0274",
+    "han-0265",
+    "han-0280",
+    "han-0339",
+    "han-0255"
+   ],
+   "tu": [
+    "tu-0518",
+    "tu-0659",
+    "tu-0854",
+    "tu-0614",
+    "tu-0678",
+    "tu-0685",
+    "tu-0869",
+    "tu-0813",
+    "tu-0717",
+    "tu-0528"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0066",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 60,
+   "capHsk": 3,
+   "chu": [
+    "han-0307",
+    "han-0272",
+    "han-0295",
+    "han-0330",
+    "han-0286"
+   ],
+   "tu": [
+    "tu-0954",
+    "tu-0827",
+    "tu-0687",
+    "tu-0615",
+    "tu-0863",
+    "tu-0963",
+    "tu-0523",
+    "tu-0737",
+    "tu-0708",
+    "tu-0671"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0067",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 61,
+   "capHsk": 3,
+   "chu": [
+    "han-0369",
+    "han-0357",
+    "han-0348",
+    "han-0332",
+    "han-0331"
+   ],
+   "tu": [
+    "tu-0844",
+    "tu-0655",
+    "tu-0696",
+    "tu-0554",
+    "tu-0633",
+    "tu-0574",
+    "tu-0590",
+    "tu-0906",
+    "tu-0667",
+    "tu-0520"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0053",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 62,
+   "capHsk": 3,
+   "chu": [
+    "han-0349",
+    "han-0310",
+    "han-0364",
+    "han-0275",
+    "han-0278"
+   ],
+   "tu": [
+    "tu-0808",
+    "tu-0753",
+    "tu-0692",
+    "tu-0839",
+    "tu-0536",
+    "tu-0790",
+    "tu-0628",
+    "tu-0899",
+    "tu-0913",
+    "tu-0688"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0051",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 63,
+   "capHsk": 3,
+   "chu": [
+    "han-0356",
+    "han-0346",
+    "han-0336",
+    "han-0316",
+    "han-0315"
+   ],
+   "tu": [
+    "tu-0771",
+    "tu-0979",
+    "tu-0509",
+    "tu-0904",
+    "tu-0748",
+    "tu-0985",
+    "tu-0705",
+    "tu-0831",
+    "tu-0507",
+    "tu-0694"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0058",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 64,
+   "capHsk": 3,
+   "chu": [
+    "han-0248",
+    "han-0259",
+    "han-0297",
+    "han-0279",
+    "han-0252"
+   ],
+   "tu": [
+    "tu-0802",
+    "tu-0504",
+    "tu-0639",
+    "tu-0988",
+    "tu-0714",
+    "tu-0713",
+    "tu-0661",
+    "tu-0721",
+    "tu-0638",
+    "tu-0934"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0055",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 65,
+   "capHsk": 3,
+   "chu": [
+    "han-0289",
+    "han-0256",
+    "han-0312",
+    "han-0360",
+    "han-0306"
+   ],
+   "tu": [
+    "tu-0511",
+    "tu-0712",
+    "tu-0682",
+    "tu-0706",
+    "tu-0818",
+    "tu-0631",
+    "tu-0853",
+    "tu-0805",
+    "tu-0843",
+    "tu-0526"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0060",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 66,
+   "capHsk": 3,
+   "chu": [
+    "han-0338",
+    "han-0276",
+    "han-0321",
+    "han-0319",
+    "han-0254"
+   ],
+   "tu": [
+    "tu-0838",
+    "tu-0603",
+    "tu-0787",
+    "tu-0620",
+    "tu-0770",
+    "tu-0562",
+    "tu-0564",
+    "tu-0786",
+    "tu-0767",
+    "tu-0930"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0062",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 67,
+   "capHsk": 3,
+   "chu": [
+    "han-0267",
+    "han-0264",
+    "han-0268",
+    "han-0320",
+    "han-0313"
+   ],
+   "tu": [
+    "tu-0960",
+    "tu-0720",
+    "tu-0938",
+    "tu-0755",
+    "tu-0740",
+    "tu-0689",
+    "tu-0965",
+    "tu-0779",
+    "tu-0551",
+    "tu-0912"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0052",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 68,
+   "capHsk": 3,
+   "chu": [
+    "han-0300",
+    "han-0366",
+    "han-0293",
+    "han-0263",
+    "han-0251"
+   ],
+   "tu": [
+    "tu-0923",
+    "tu-0651",
+    "tu-0857",
+    "tu-0695",
+    "tu-0743",
+    "tu-0887",
+    "tu-0629",
+    "tu-0606",
+    "tu-0719",
+    "tu-0995"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0057",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 69,
+   "capHsk": 3,
+   "chu": [
+    "han-0344",
+    "han-0350",
+    "han-0305",
+    "han-0329",
+    "han-0294"
+   ],
+   "tu": [
+    "tu-0730",
+    "tu-0522",
+    "tu-0983",
+    "tu-0896",
+    "tu-0676",
+    "tu-0701",
+    "tu-0785",
+    "tu-0722",
+    "tu-0976",
+    "tu-0558"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0049",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 70,
+   "capHsk": 3,
+   "chu": [
+    "han-0342",
+    "han-0299",
+    "han-0301",
+    "han-0323",
+    "han-0308"
+   ],
+   "tu": [
+    "tu-0933",
+    "tu-0549",
+    "tu-0937",
+    "tu-0994",
+    "tu-0598",
+    "tu-0846",
+    "tu-0697",
+    "tu-0951",
+    "tu-0660",
+    "tu-0547"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0050",
+   "nguPhapOnTap": false
+  },
+  {
+   "so": 71,
+   "capHsk": 3,
+   "chu": [
+    "han-0354",
+    "han-0249",
+    "han-0270",
+    "han-0277",
+    "han-0328"
+   ],
+   "tu": [
+    "tu-0856",
+    "tu-0580",
+    "tu-0666",
+    "tu-0826",
+    "tu-0980",
+    "tu-0535",
+    "tu-0640",
+    "tu-0894",
+    "tu-0952",
+    "tu-0841"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0004",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 72,
+   "capHsk": 3,
+   "chu": [
+    "han-0309",
+    "han-0343",
+    "han-0363",
+    "han-0311",
+    "han-0292"
+   ],
+   "tu": [
+    "tu-0693",
+    "tu-0900",
+    "tu-0998",
+    "tu-0860",
+    "tu-0656",
+    "tu-0557",
+    "tu-0953",
+    "tu-0862",
+    "tu-0679",
+    "tu-0969"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0009",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 73,
+   "capHsk": 3,
+   "chu": [
+    "han-0290",
+    "han-0325",
+    "han-0322",
+    "han-0347",
+    "han-0317"
+   ],
+   "tu": [
+    "tu-0586",
+    "tu-0849",
+    "tu-0784",
+    "tu-0921",
+    "tu-0978",
+    "tu-0575",
+    "tu-0703",
+    "tu-0873",
+    "tu-0816",
+    "tu-0541"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0003",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 74,
+   "capHsk": 3,
+   "chu": [
+    "han-0281",
+    "han-0285",
+    "han-0355",
+    "han-0266",
+    "han-0288"
+   ],
+   "tu": [
+    "tu-0945",
+    "tu-0648",
+    "tu-0898",
+    "tu-0641",
+    "tu-0539",
+    "tu-0834",
+    "tu-0797",
+    "tu-0746",
+    "tu-0704",
+    "tu-0510"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0011",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 75,
+   "capHsk": 3,
+   "chu": [
+    "han-0629",
+    "han-0424",
+    "han-0375",
+    "han-0383",
+    "han-0630"
+   ],
+   "tu": [
+    "tu-0525",
+    "tu-0601",
+    "tu-0747",
+    "tu-0789",
+    "tu-0600",
+    "tu-0903",
+    "tu-0532",
+    "tu-0804",
+    "tu-0563",
+    "tu-0621"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0021",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 76,
+   "capHsk": 3,
+   "chu": [
+    "han-0461",
+    "han-0627",
+    "han-0601",
+    "han-0539",
+    "han-0441"
+   ],
+   "tu": [
+    "tu-0519",
+    "tu-0893",
+    "tu-0892",
+    "tu-0691",
+    "tu-0855",
+    "tu-0776",
+    "tu-0975",
+    "tu-0833",
+    "tu-0616",
+    "tu-0647"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0024",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 77,
+   "capHsk": 3,
+   "chu": [
+    "han-0555",
+    "han-0389",
+    "han-0397",
+    "han-0412",
+    "han-0602"
+   ],
+   "tu": [
+    "tu-0577",
+    "tu-0850",
+    "tu-0795",
+    "tu-0542",
+    "tu-0700",
+    "tu-0736",
+    "tu-0550",
+    "tu-0936",
+    "tu-0588",
+    "tu-0766"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0006",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 78,
+   "capHsk": 3,
+   "chu": [
+    "han-0479",
+    "han-0434",
+    "han-0570",
+    "han-0409",
+    "han-0625"
+   ],
+   "tu": [
+    "tu-0576",
+    "tu-0662",
+    "tu-0571",
+    "tu-0918",
+    "tu-0654",
+    "tu-0715",
+    "tu-0623",
+    "tu-0868",
+    "tu-0579",
+    "tu-0861"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0005",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 79,
+   "capHsk": 3,
+   "chu": [
+    "han-0604",
+    "han-0404",
+    "han-0527",
+    "han-0643",
+    "han-0654"
+   ],
+   "tu": [
+    "tu-0524",
+    "tu-0595",
+    "tu-0725",
+    "tu-0917",
+    "tu-0707",
+    "tu-0947",
+    "tu-0508",
+    "tu-0596",
+    "tu-0543",
+    "tu-0817"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0019",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 80,
+   "capHsk": 3,
+   "chu": [
+    "han-0560",
+    "han-0645",
+    "han-0420",
+    "han-0427",
+    "han-0551"
+   ],
+   "tu": [
+    "tu-0718",
+    "tu-0916",
+    "tu-0744",
+    "tu-0516",
+    "tu-0891",
+    "tu-0514",
+    "tu-0568",
+    "tu-0555",
+    "tu-0552",
+    "tu-0749"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0002",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 81,
+   "capHsk": 3,
+   "chu": [
+    "han-0606",
+    "han-0597",
+    "han-0649",
+    "han-0398",
+    "han-0520"
+   ],
+   "tu": [
+    "tu-0731",
+    "tu-0890",
+    "tu-0669",
+    "tu-0830",
+    "tu-0871",
+    "tu-0593",
+    "tu-0768",
+    "tu-0972",
+    "tu-0556",
+    "tu-0540"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0007",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 82,
+   "capHsk": 3,
+   "chu": [
+    "han-0437",
+    "han-0495",
+    "han-0528",
+    "han-0382",
+    "han-0546"
+   ],
+   "tu": [
+    "tu-0859",
+    "tu-0632",
+    "tu-0698",
+    "tu-0710",
+    "tu-0599",
+    "tu-0530",
+    "tu-0970",
+    "tu-0521",
+    "tu-0611",
+    "tu-0677"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0001",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 83,
+   "capHsk": 3,
+   "chu": [
+    "han-0426",
+    "han-0402",
+    "han-0646",
+    "han-0416",
+    "han-0637"
+   ],
+   "tu": [
+    "tu-0711",
+    "tu-0570",
+    "tu-0852",
+    "tu-0842",
+    "tu-0566",
+    "tu-0610",
+    "tu-0821",
+    "tu-0674",
+    "tu-0950",
+    "tu-0642"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0008",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 84,
+   "capHsk": 3,
+   "chu": [
+    "han-0650",
+    "han-0564",
+    "han-0464",
+    "han-0429",
+    "han-0651"
+   ],
+   "tu": [
+    "tu-0772",
+    "tu-0840",
+    "tu-0837",
+    "tu-0634",
+    "tu-0879",
+    "tu-0907",
+    "tu-0959",
+    "tu-0608",
+    "tu-0690",
+    "tu-0515"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0010",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 85,
+   "capHsk": 3,
+   "chu": [
+    "han-0381",
+    "han-0401",
+    "han-0474",
+    "han-0428",
+    "han-0452"
+   ],
+   "tu": [
+    "tu-0895",
+    "tu-0864",
+    "tu-0792",
+    "tu-1000",
+    "tu-0848",
+    "tu-0609",
+    "tu-0565",
+    "tu-0881",
+    "tu-0814",
+    "tu-0650"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0017",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 86,
+   "capHsk": 3,
+   "chu": [
+    "han-0385",
+    "han-0586",
+    "han-0537",
+    "han-0468",
+    "han-0531"
+   ],
+   "tu": [
+    "tu-0501",
+    "tu-0727",
+    "tu-0553",
+    "tu-0680",
+    "tu-0946",
+    "tu-0865",
+    "tu-0503",
+    "tu-0602",
+    "tu-0867",
+    "tu-0630"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0016",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 87,
+   "capHsk": 3,
+   "chu": [
+    "han-0430",
+    "han-0605",
+    "han-0465",
+    "han-0458",
+    "han-0509"
+   ],
+   "tu": [
+    "tu-0781",
+    "tu-0977",
+    "tu-0760",
+    "tu-0773",
+    "tu-0845",
+    "tu-0971",
+    "tu-0820",
+    "tu-0955",
+    "tu-0992",
+    "tu-0751"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0022",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 88,
+   "capHsk": 3,
+   "chu": [
+    "han-0296",
+    "han-0575",
+    "han-0511",
+    "han-0480",
+    "han-0544"
+   ],
+   "tu": [
+    "tu-0585",
+    "tu-0758",
+    "tu-0803",
+    "tu-0734",
+    "tu-0665",
+    "tu-0962",
+    "tu-0529",
+    "tu-0902",
+    "tu-0932",
+    "tu-0822"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0028",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 89,
+   "capHsk": 3,
+   "chu": [
+    "han-0379",
+    "han-0582",
+    "han-0438",
+    "han-0443",
+    "han-0612"
+   ],
+   "tu": [
+    "tu-0709",
+    "tu-0569",
+    "tu-0874",
+    "tu-0752",
+    "tu-0741",
+    "tu-0649",
+    "tu-0592",
+    "tu-0716",
+    "tu-0949",
+    "tu-0956"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0018",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 90,
+   "capHsk": 3,
+   "chu": [
+    "han-0442",
+    "han-0449",
+    "han-0522",
+    "han-0507",
+    "han-0451"
+   ],
+   "tu": [
+    "tu-0925",
+    "tu-0888",
+    "tu-0996",
+    "tu-0811",
+    "tu-0548",
+    "tu-0788",
+    "tu-0663",
+    "tu-0762",
+    "tu-0777",
+    "tu-0761"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0026",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 91,
+   "capHsk": 3,
+   "chu": [
+    "han-0463",
+    "han-0609",
+    "han-0384",
+    "han-0608",
+    "han-0493"
+   ],
+   "tu": [
+    "tu-0794",
+    "tu-0533",
+    "tu-0765",
+    "tu-0783",
+    "tu-0986",
+    "tu-0927",
+    "tu-0702",
+    "tu-0739",
+    "tu-0756",
+    "tu-0643"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0023",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 92,
+   "capHsk": 3,
+   "chu": [
+    "han-0578",
+    "han-0374",
+    "han-0481",
+    "han-0593",
+    "han-0577"
+   ],
+   "tu": [
+    "tu-0810",
+    "tu-0989",
+    "tu-0828",
+    "tu-0905",
+    "tu-0886",
+    "tu-0591",
+    "tu-0527",
+    "tu-0733",
+    "tu-0759",
+    "tu-0729"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0020",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 93,
+   "capHsk": 3,
+   "chu": [
+    "han-0569",
+    "han-0460",
+    "han-0580",
+    "han-0405",
+    "han-0523"
+   ],
+   "tu": [
+    "tu-0724",
+    "tu-0735",
+    "tu-0897",
+    "tu-0957",
+    "tu-0958",
+    "tu-0824",
+    "tu-0944",
+    "tu-0800",
+    "tu-0780",
+    "tu-0793"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0025",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 94,
+   "capHsk": 3,
+   "chu": [
+    "han-0549",
+    "han-0415",
+    "han-0491",
+    "han-0566",
+    "han-0545"
+   ],
+   "tu": [
+    "tu-0847",
+    "tu-0885",
+    "tu-0763",
+    "tu-0872",
+    "tu-0889",
+    "tu-0911",
+    "tu-0664",
+    "tu-0726",
+    "tu-0534",
+    "tu-0578"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0027",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 95,
+   "capHsk": 3,
+   "chu": [
+    "han-0502",
+    "han-0501",
+    "han-0565",
+    "han-0394",
+    "han-0610"
+   ],
+   "tu": [
+    "tu-0778",
+    "tu-0973",
+    "tu-0673",
+    "tu-0582",
+    "tu-0644",
+    "tu-0604",
+    "tu-0812",
+    "tu-0914",
+    "tu-0560",
+    "tu-0561"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0031",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 96,
+   "capHsk": 3,
+   "chu": [
+    "han-0455",
+    "han-0372",
+    "han-0508",
+    "han-0431",
+    "han-0419"
+   ],
+   "tu": [
+    "tu-0908",
+    "tu-0799",
+    "tu-0573",
+    "tu-0796",
+    "tu-0581",
+    "tu-0505",
+    "tu-0801",
+    "tu-0612",
+    "tu-0658",
+    "tu-0807"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0039",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 97,
+   "capHsk": 3,
+   "chu": [
+    "han-0492",
+    "han-0655",
+    "han-0636",
+    "han-0567",
+    "han-0457"
+   ],
+   "tu": [
+    "tu-0858",
+    "tu-0624",
+    "tu-0791",
+    "tu-0999",
+    "tu-0513",
+    "tu-0686",
+    "tu-0991",
+    "tu-0512",
+    "tu-0806",
+    "tu-0909"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0040",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 98,
+   "capHsk": 3,
+   "chu": [
+    "han-0548",
+    "han-0478",
+    "han-0433",
+    "han-0494",
+    "han-0392"
+   ],
+   "tu": [
+    "tu-0931",
+    "tu-0910",
+    "tu-0619",
+    "tu-0545",
+    "tu-0567",
+    "tu-0622",
+    "tu-0668",
+    "tu-0877",
+    "tu-0502",
+    "tu-0782"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0032",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 99,
+   "capHsk": 3,
+   "chu": [
+    "han-0536",
+    "han-0447",
+    "han-0532",
+    "han-0635",
+    "han-0623"
+   ],
+   "tu": [
+    "tu-0742",
+    "tu-0607",
+    "tu-0964",
+    "tu-0617",
+    "tu-0652",
+    "tu-0728",
+    "tu-0961",
+    "tu-0738",
+    "tu-0825",
+    "tu-0948"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0043",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 100,
+   "capHsk": 3,
+   "chu": [
+    "han-0485",
+    "han-0484",
+    "han-0391",
+    "han-0598",
+    "han-0411"
+   ],
+   "tu": [
+    "tu-0920",
+    "tu-0750",
+    "tu-0870",
+    "tu-0531",
+    "tu-0637",
+    "tu-0670",
+    "tu-0672",
+    "tu-0866",
+    "tu-0699",
+    "tu-0754"
+   ],
+   "tuOnTap": false,
+   "nguPhap": "np-0044",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 101,
+   "capHsk": 3,
+   "chu": [
+    "han-0436",
+    "han-0506",
+    "han-0526",
+    "han-0574",
+    "han-0440"
+   ],
+   "tu": [
+    "tu-0646",
+    "tu-0638",
+    "tu-0841",
+    "tu-0710",
+    "tu-0760",
+    "tu-0643",
+    "tu-0637",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0037",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 102,
+   "capHsk": 3,
+   "chu": [
+    "han-0525",
+    "han-0600",
+    "han-0595",
+    "han-0524",
+    "han-0587"
+   ],
+   "tu": [
+    "tu-0929",
+    "tu-0862",
+    "tu-0893",
+    "tu-0986",
+    "tu-0643",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077",
+    "tu-0263"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0038",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 103,
+   "capHsk": 3,
+   "chu": [
+    "han-0408",
+    "han-0644",
+    "han-0469",
+    "han-0378",
+    "han-0621"
+   ],
+   "tu": [
+    "tu-0682",
+    "tu-0818",
+    "tu-0969",
+    "tu-0972",
+    "tu-0970",
+    "tu-0702",
+    "tu-0973",
+    "tu-0791",
+    "tu-0686",
+    "tu-0806"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0014",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 104,
+   "capHsk": 3,
+   "chu": [
+    "han-0618",
+    "han-0638",
+    "han-0562",
+    "han-0482",
+    "han-0406"
+   ],
+   "tu": [
+    "tu-0963",
+    "tu-0921",
+    "tu-0703",
+    "tu-0715",
+    "tu-0710",
+    "tu-0711",
+    "tu-0565",
+    "tu-0658",
+    "tu-0624",
+    "tu-0108"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0047",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 105,
+   "capHsk": 3,
+   "chu": [
+    "han-0590",
+    "han-0540",
+    "han-0403",
+    "han-0496",
+    "han-0617"
+   ],
+   "tu": [
+    "tu-0723",
+    "tu-0708",
+    "tu-0906",
+    "tu-0805",
+    "tu-0804",
+    "tu-1000",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0042",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 106,
+   "capHsk": 3,
+   "chu": [
+    "han-0626",
+    "han-0541",
+    "han-0486",
+    "han-0425",
+    "han-0512"
+   ],
+   "tu": [
+    "tu-0679",
+    "tu-0797",
+    "tu-0704",
+    "tu-0747",
+    "tu-0611",
+    "tu-0751",
+    "tu-0612",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0041",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 107,
+   "capHsk": 3,
+   "chu": [
+    "han-0456",
+    "han-0530",
+    "han-0400",
+    "han-0490",
+    "han-0533"
+   ],
+   "tu": [
+    "tu-0678",
+    "tu-0694",
+    "tu-0789",
+    "tu-0793",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077",
+    "tu-0263",
+    "tu-0200"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0015",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 108,
+   "capHsk": 3,
+   "chu": [
+    "han-0444",
+    "han-0483",
+    "han-0584",
+    "han-0647",
+    "han-0450"
+   ],
+   "tu": [
+    "tu-0712",
+    "tu-0855",
+    "tu-0975",
+    "tu-0662",
+    "tu-0707",
+    "tu-0516",
+    "tu-0970",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0034",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 109,
+   "capHsk": 3,
+   "chu": [
+    "han-0579",
+    "han-0476",
+    "han-0633",
+    "han-0393",
+    "han-0413"
+   ],
+   "tu": [
+    "tu-0693",
+    "tu-0953",
+    "tu-0850",
+    "tu-0700",
+    "tu-0550",
+    "tu-0588",
+    "tu-0956",
+    "tu-0670",
+    "tu-0108",
+    "tu-0186"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0045",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 110,
+   "capHsk": 3,
+   "chu": [
+    "han-0615",
+    "han-0616",
+    "han-0376",
+    "han-0624",
+    "han-0588"
+   ],
+   "tu": [
+    "tu-0922",
+    "tu-0849",
+    "tu-0918",
+    "tu-0868",
+    "tu-0932",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077",
+    "tu-0263"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0035",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 111,
+   "capHsk": 3,
+   "chu": [
+    "han-0594",
+    "han-0497",
+    "han-0614",
+    "han-0459",
+    "han-0559"
+   ],
+   "tu": [
+    "tu-0725",
+    "tu-0917",
+    "tu-0707",
+    "tu-0947",
+    "tu-0822",
+    "tu-0908",
+    "tu-0931",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0013",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 112,
+   "capHsk": 3,
+   "chu": [
+    "han-0377",
+    "han-0417",
+    "han-0547",
+    "han-0390",
+    "han-0439"
+   ],
+   "tu": [
+    "tu-0546",
+    "tu-0508",
+    "tu-0596",
+    "tu-0811",
+    "tu-0573",
+    "tu-0513",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0036",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 113,
+   "capHsk": 3,
+   "chu": [
+    "han-0653",
+    "han-0454",
+    "han-0613",
+    "han-0556",
+    "han-0591"
+   ],
+   "tu": [
+    "tu-0536",
+    "tu-0988",
+    "tu-0656",
+    "tu-0524",
+    "tu-0879",
+    "tu-0686",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0012",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 114,
+   "capHsk": 3,
+   "chu": [
+    "han-0517",
+    "han-0611",
+    "han-0505",
+    "han-0622",
+    "han-0432"
+   ],
+   "tu": [
+    "tu-0831",
+    "tu-0631",
+    "tu-0933",
+    "tu-0916",
+    "tu-0744",
+    "tu-0932",
+    "tu-0920",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0033",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 115,
+   "capHsk": 3,
+   "chu": [
+    "han-0554",
+    "han-0572",
+    "han-0596",
+    "han-0515",
+    "han-0500"
+   ],
+   "tu": [
+    "tu-0818",
+    "tu-0749",
+    "tu-0731",
+    "tu-0907",
+    "tu-0845",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077",
+    "tu-0263"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0046",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 116,
+   "capHsk": 3,
+   "chu": [
+    "han-0489",
+    "han-0648",
+    "han-0504",
+    "han-0620",
+    "han-0388"
+   ],
+   "tu": [
+    "tu-0683",
+    "tu-0985",
+    "tu-0530",
+    "tu-0503",
+    "tu-0534",
+    "tu-0742",
+    "tu-0531",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0030",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 117,
+   "capHsk": 3,
+   "chu": [
+    "han-0386",
+    "han-0652",
+    "han-0583",
+    "han-0576",
+    "han-0510"
+   ],
+   "tu": [
+    "tu-0757",
+    "tu-0511",
+    "tu-0521",
+    "tu-0852",
+    "tu-0842",
+    "tu-0920",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0029",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 118,
+   "capHsk": 3,
+   "chu": [
+    "han-0642",
+    "han-0585",
+    "han-0488",
+    "han-0423",
+    "han-0518"
+   ],
+   "tu": [
+    "tu-0627",
+    "tu-0863",
+    "tu-0610",
+    "tu-0642",
+    "tu-0756",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077",
+    "tu-0263"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0063",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 119,
+   "capHsk": 3,
+   "chu": [
+    "han-0558",
+    "han-0399",
+    "han-0410",
+    "han-0634",
+    "han-0571"
+   ],
+   "tu": [
+    "tu-0575",
+    "tu-0648",
+    "tu-0891",
+    "tu-0821",
+    "tu-0950",
+    "tu-0837",
+    "tu-0680",
+    "tu-0578",
+    "tu-0604",
+    "tu-0561"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0064",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 120,
+   "capHsk": 3,
+   "chu": [
+    "han-0538",
+    "han-0543",
+    "han-0589",
+    "han-0514",
+    "han-0466"
+   ],
+   "tu": [
+    "tu-0715",
+    "tu-0690",
+    "tu-0847",
+    "tu-0799",
+    "tu-0796",
+    "tu-0877",
+    "tu-0750",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0061",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 121,
+   "capHsk": 3,
+   "chu": [
+    "han-0414",
+    "han-0552",
+    "han-0380",
+    "han-0603",
+    "han-0534"
+   ],
+   "tu": [
+    "tu-0515",
+    "tu-0895",
+    "tu-0792",
+    "tu-0569",
+    "tu-0991",
+    "tu-0742",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0048",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 122,
+   "capHsk": 3,
+   "chu": [
+    "han-0521",
+    "han-0607",
+    "han-0473",
+    "han-0418",
+    "han-0422"
+   ],
+   "tu": [
+    "tu-0697",
+    "tu-0611",
+    "tu-0602",
+    "tu-0665",
+    "tu-0581",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077",
+    "tu-0263"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0068",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 123,
+   "capHsk": 3,
+   "chu": [
+    "han-0453",
+    "han-0592",
+    "han-0446",
+    "han-0373",
+    "han-0395"
+   ],
+   "tu": [
+    "tu-0633",
+    "tu-0713",
+    "tu-0650",
+    "tu-0501",
+    "tu-0553",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077",
+    "tu-0263"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0059",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 124,
+   "capHsk": 3,
+   "chu": [
+    "han-0462",
+    "han-0599",
+    "han-0448",
+    "han-0631",
+    "han-0470"
+   ],
+   "tu": [
+    "tu-0694",
+    "tu-0898",
+    "tu-0888",
+    "tu-0957",
+    "tu-0534",
+    "tu-0948",
+    "tu-0531",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0070",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 125,
+   "capHsk": 3,
+   "chu": [
+    "han-0513",
+    "han-0498",
+    "han-0557",
+    "han-0472",
+    "han-0573"
+   ],
+   "tu": [
+    "tu-0712",
+    "tu-0695",
+    "tu-0697",
+    "tu-0608",
+    "tu-0820",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077",
+    "tu-0263"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0056",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 126,
+   "capHsk": 3,
+   "chu": [
+    "han-0639",
+    "han-0445",
+    "han-0553",
+    "han-0516",
+    "han-0561"
+   ],
+   "tu": [
+    "tu-0962",
+    "tu-0752",
+    "tu-0897",
+    "tu-0812",
+    "tu-0560",
+    "tu-0754",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0054",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 127,
+   "capHsk": 3,
+   "chu": [
+    "han-0568",
+    "han-0487",
+    "han-0581",
+    "han-0641",
+    "han-0632"
+   ],
+   "tu": [
+    "tu-0913",
+    "tu-0857",
+    "tu-0647",
+    "tu-0669",
+    "tu-0716",
+    "tu-0761",
+    "tu-0591",
+    "tu-0858",
+    "tu-0108",
+    "tu-0186"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0069",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 128,
+   "capHsk": 3,
+   "chu": [
+    "han-0471",
+    "han-0387",
+    "han-0499",
+    "han-0529",
+    "han-0435"
+   ],
+   "tu": [
+    "tu-0786",
+    "tu-0693",
+    "tu-0571",
+    "tu-0533",
+    "tu-0733",
+    "tu-0699",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0065",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 129,
+   "capHsk": 3,
+   "chu": [
+    "han-0628",
+    "han-0519",
+    "han-0396",
+    "han-0619",
+    "han-0563"
+   ],
+   "tu": [
+    "tu-0944",
+    "tu-0560",
+    "tu-0505",
+    "tu-0825",
+    "tu-0948",
+    "tu-0531",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0066",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 130,
+   "capHsk": 3,
+   "chu": [
+    "han-0550",
+    "han-0475",
+    "han-0407",
+    "han-0503",
+    "han-0640"
+   ],
+   "tu": [
+    "tu-0903",
+    "tu-0570",
+    "tu-0741",
+    "tu-0886",
+    "tu-0911",
+    "tu-0637",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0067",
+   "nguPhapOnTap": true
+  },
+  {
+   "so": 131,
+   "capHsk": 3,
+   "chu": [
+    "han-0421",
+    "han-0535",
+    "han-0542",
+    "han-0467",
+    "han-0477"
+   ],
+   "tu": [
+    "tu-0089",
+    "tu-0802",
+    "tu-0558",
+    "tu-0608",
+    "tu-0794",
+    "tu-0108",
+    "tu-0186",
+    "tu-0271",
+    "tu-0077",
+    "tu-0263"
+   ],
+   "tuOnTap": true,
+   "nguPhap": "np-0053",
+   "nguPhapOnTap": true
+  }
+ ]
+}

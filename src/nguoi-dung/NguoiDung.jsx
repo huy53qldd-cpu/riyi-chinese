@@ -53,11 +53,11 @@ import {
   luuCaiDatMay,
 } from "./caiDat.js";
 import {
+  LO_TRINH_BAN_DAU,
   NGAY_TRONG,
   XOA,
-  chuanHoaMucTieu,
+  chuanHoaLoTrinh,
   chuoiNgay,
-  daLamTrongNgay,
   doDaiChuoi,
   ngayCanDon,
   noiChuoi,
@@ -81,7 +81,7 @@ const HANG_CHO_TRONG = () => ({
   caiDat: null,
   daHoc: {},
   tapViet: {},
-  mucTieu: null,
+  loTrinh: null,
   chuoi: null,
   nhatKy: {},
 });
@@ -93,7 +93,7 @@ function demThayDoi(lo) {
     Object.keys(lo.tapViet).length +
     Object.keys(lo.nhatKy).length +
     (lo.caiDat ? 1 : 0) +
-    (lo.mucTieu ? 1 : 0) +
+    (lo.loTrinh ? 1 : 0) +
     (lo.chuoi ? 1 : 0)
   );
 }
@@ -116,7 +116,7 @@ export function NguoiDungProvider({ children }) {
   const [caiDat, setCaiDat] = useState(docCaiDatMay);
   const [daHoc, setDaHoc] = useState({});
   const [tapViet, setTapViet] = useState({});
-  const [mucTieu, setMucTieu] = useState(() => chuanHoaMucTieu(null));
+  const [loTrinh, setLoTrinh] = useState(LO_TRINH_BAN_DAU);
   const [nhatKy, setNhatKy] = useState({});
   const [chuoi, setChuoi] = useState(null);
   // Tăng lên mỗi lần vừa đạt mục tiêu, để thanh trên chạy hiệu ứng mặt trời
@@ -127,7 +127,7 @@ export function NguoiDungProvider({ children }) {
   const nguoiRef = useRef(null);
   const caiDatRef = useRef(caiDat);
   const tapVietRef = useRef(tapViet);
-  const mucTieuRef = useRef(mucTieu);
+  const loTrinhRef = useRef(loTrinh);
   const nhatKyRef = useRef(nhatKy);
   const chuoiRef = useRef(chuoi);
   const choGhi = useRef(HANG_CHO_TRONG());
@@ -166,7 +166,7 @@ export function NguoiDungProvider({ children }) {
         caiDat: moi.caiDat ?? lo.caiDat,
         daHoc: { ...lo.daHoc, ...moi.daHoc },
         tapViet: mergeTapViet(lo.tapViet, moi.tapViet),
-        mucTieu: moi.mucTieu ?? lo.mucTieu,
+        loTrinh: moi.loTrinh ?? lo.loTrinh,
         chuoi: moi.chuoi ?? lo.chuoi,
         // Mỗi ngày lưu cả bản ghi đầy đủ, nên bản mới hơn thay hẳn bản cũ
         nhatKy: { ...lo.nhatKy, ...moi.nhatKy },
@@ -229,6 +229,8 @@ export function NguoiDungProvider({ children }) {
         setNhatKy({});
         chuoiRef.current = null;
         setChuoi(null);
+        loTrinhRef.current = LO_TRINH_BAN_DAU;
+        setLoTrinh(LO_TRINH_BAN_DAU);
         setTrangThai("khach");
         return;
       }
@@ -252,9 +254,9 @@ export function NguoiDungProvider({ children }) {
         setDaHoc(d.daHoc);
         setTapViet(d.tapViet);
 
-        const mt = chuanHoaMucTieu(d.mucTieu);
-        mucTieuRef.current = mt;
-        setMucTieu(mt);
+        const lt = chuanHoaLoTrinh(d.loTrinh);
+        loTrinhRef.current = lt;
+        setLoTrinh(lt);
         chuoiRef.current = d.chuoi;
         setChuoi(d.chuoi);
 
@@ -355,9 +357,9 @@ export function NguoiDungProvider({ children }) {
       const ngay = { ...cu, dung: { ...cu.dung }, sai: { ...cu.sai } };
       sua(ngay);
 
-      const mt = mucTieuRef.current;
       let cho = giayCho;
-      if (!ngay.dat && daLamTrongNgay(ngay, mt.loai) >= mt.soLuong) {
+      // Mục tiêu ngày (GĐ 10): học xong ít nhất một bài trong ngày
+      if (!ngay.dat && ngay.baiXong?.length > 0) {
         ngay.dat = true;
         const c = noiChuoi(chuoiRef.current, homNay);
         chuoiRef.current = c;
@@ -394,18 +396,30 @@ export function NguoiDungProvider({ children }) {
     [suaHomNay],
   );
 
-  /** Đổi mục tiêu ngày. Đổi xong mà đã đủ số thì tính là đạt luôn. */
-  const doiMucTieu = useCallback(
-    (moi) => {
+  /**
+   * Đánh dấu một bước của bài đang học là XONG (GĐ 10).
+   * Xong đủ `tongBuoc` bước thì bài được tính là học xong hôm nay (đạt mục tiêu
+   * ngày), và mở luôn bài tiếp theo.
+   */
+  const hoanThanhBuoc = useCallback(
+    (maBuoc, tongBuoc) => {
       if (!nguoiRef.current) return;
-      const mt = chuanHoaMucTieu(moi);
-      mucTieuRef.current = mt;
-      setMucTieu(mt);
-      if (sanSangGhi.current) {
-        choGhi.current.mucTieu = mt;
-        henGhi();
+      const lt = loTrinhRef.current;
+      if (lt.buoc.includes(maBuoc)) return;
+      let moi = { bai: lt.bai, buoc: [...lt.buoc, maBuoc] };
+      if (moi.buoc.length >= tongBuoc) {
+        const baiXong = lt.bai;
+        moi = { bai: lt.bai + 1, buoc: [] };
+        suaHomNay((ngay) => {
+          ngay.baiXong = [...(ngay.baiXong ?? []), baiXong];
+        });
       }
-      suaHomNay(() => {});
+      loTrinhRef.current = moi;
+      setLoTrinh(moi);
+      if (sanSangGhi.current) {
+        choGhi.current.loTrinh = moi;
+        henGhi(true, 10); // tiến độ bài học: ghi sớm cho khỏi mất
+      }
     },
     [henGhi, suaHomNay],
   );
@@ -474,18 +488,16 @@ export function NguoiDungProvider({ children }) {
   // Tiến độ hôm nay, dùng cho thanh trên và tab Mục tiêu
   const homNay = chuoiNgay();
   const ngayHomNay = nhatKy[homNay];
-  const daLam = daLamTrongNgay(ngayHomNay, mucTieu.loai);
   const datHomNay = Boolean(ngayHomNay?.dat);
   const doDai = doDaiChuoi(chuoi, homNay);
   const tienDoHomNay = useMemo(
     () => ({
-      loai: mucTieu.loai,
-      mucTieu: mucTieu.soLuong,
-      daLam,
+      bai: loTrinh.bai,
+      soBuocXong: loTrinh.buoc.length,
       dat: datHomNay,
       chuoi: doDai,
     }),
-    [mucTieu, daLam, datHomNay, doDai],
+    [loTrinh, datHomNay, doDai],
   );
 
   const giaTri = useMemo(
@@ -509,8 +521,8 @@ export function NguoiDungProvider({ children }) {
       danhDauDaHoc,
       ghiTapViet,
       ghiKetQua,
-      mucTieu,
-      doiMucTieu,
+      loTrinh,
+      hoanThanhBuoc,
       nhatKy,
       tienDoHomNay,
       lanVuaDat,
@@ -532,8 +544,8 @@ export function NguoiDungProvider({ children }) {
       danhDauDaHoc,
       ghiTapViet,
       ghiKetQua,
-      mucTieu,
-      doiMucTieu,
+      loTrinh,
+      hoanThanhBuoc,
       nhatKy,
       tienDoHomNay,
       lanVuaDat,

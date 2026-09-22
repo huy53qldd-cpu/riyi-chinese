@@ -13,7 +13,8 @@
 
    Khi hoàn thành một lần tập viết, kết quả (số lần, số nét sai) được ghi nhận cho
    người đã đăng nhập; chế độ khách không lưu. Viết xong mà không phải nhờ gợi ý
-   thì tính là làm ĐÚNG chữ đó (dùng cho mục tiêu ngày và Review).
+   thì tính là làm ĐÚNG chữ đó (ghi vào nhật ký; dùng cho bước Tập viết của
+   Bài hôm nay và cho Review).
    ============================================================================= */
 
 import { useEffect, useRef, useState } from "react";

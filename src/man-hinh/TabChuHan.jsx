@@ -163,7 +163,7 @@ export default function TabChuHan() {
           cacCach={[{ ma: "lat-the", nhan: "Trò chơi lật thẻ" }]}
           soMuc={hienThi.length}
           chon={() => setDangChoi(true)}
-          ghiChu={`Mỗi ván 10 chữ (20 thẻ), lấy từ ${hienThi.length} chữ đang hiện theo bộ lọc: ghép chữ Hán với nghĩa tiếng Nhật và tiếng Việt của nó. Mỗi cặp tìm được tính vào mục tiêu hôm nay.`}
+          ghiChu={`Mỗi ván 10 chữ (20 thẻ), lấy từ ${hienThi.length} chữ đang hiện theo bộ lọc: ghép chữ Hán với nghĩa tiếng Nhật và tiếng Việt của nó. Mục tiêu ngày chỉ tính khi học xong Bài hôm nay (bấm thanh trên cùng).`}
         />
       )}
 

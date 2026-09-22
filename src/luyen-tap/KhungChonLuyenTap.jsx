@@ -31,14 +31,14 @@ export default function KhungChonLuyenTap({ cacCach, soMuc, chon, ghiChu = null 
             className={kieu.nutChinh}
           >
             {/* Mã cách luyện (the, trac-nghiem, sap-xep...) cũng là tên hình */}
-            <BieuTuong ten={c.ma === "the" ? "the-ghi-nho" : c.ma} />
+            <BieuTuong ten={{ the: "the-ghi-nho", "lat-the": "tro-choi" }[c.ma] ?? c.ma} />
             {c.nhan}
           </button>
         ))}
       </div>
       <p className={kieu.chuNho}>
         {ghiChu ??
-          `Mỗi lượt 10 câu, lấy từ ${soMuc} mục đang hiện theo bộ lọc. Trả lời đúng được tính vào mục tiêu hôm nay, trả lời sai sẽ vào mục Review.`}
+          `Mỗi lượt 10 câu, lấy từ ${soMuc} mục đang hiện theo bộ lọc. Trả lời sai sẽ vào mục Review. Mục tiêu ngày chỉ tính khi học xong Bài hôm nay (bấm thanh trên cùng).`}
       </p>
     </div>
   );

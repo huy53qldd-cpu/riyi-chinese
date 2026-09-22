@@ -8,7 +8,8 @@
        (tiếng Nhật + tiếng Việt) thì hai thẻ ở lại mặt ngửa. Sai thì úp lại.
      - Lật hết 20 thẻ là xong: báo thời gian, số lượt lật, kỷ lục trên máy.
 
-   Mỗi cặp tìm được tính là 1 câu đúng cho mục tiêu hôm nay (nd.ghiKetQua).
+   Mỗi cặp tìm được ghi là 1 câu đúng vào nhật ký (nd.ghiKetQua). Là bước của
+   Bài hôm nay thì chơi xong mới tính bước đó xong (khiXong).
    Lật nhầm KHÔNG đưa vào Review, vì nhầm vị trí không có nghĩa là không thuộc từ.
 
    Chữ trên thẻ tự co cho vừa bề ngang thẻ (đơn vị cqw = % bề ngang thẻ), nên
@@ -64,8 +65,10 @@ function luuKyLuc(khoa, kyLuc) {
  * @param {Function} taoCap      Trả về danh sách cặp mới cho mỗi ván
  * @param {string}   khoaKyLuc   Tên để lưu kỷ lục riêng ("tu-vung", "chu-han")
  * @param {Function} quayLai
+ * @param {Function} khiXong     Gọi khi lật hết thẻ. Có hàm này nghĩa là game đang
+ *                               là một bước của Bài hôm nay: hết ván thì mời về bài.
  */
-export default function TroChoiLatThe({ tieuDe, taoCap, khoaKyLuc, quayLai }) {
+export default function TroChoiLatThe({ tieuDe, taoCap, khoaKyLuc, quayLai, khiXong = null }) {
   const nd = useNguoiDung();
   const [boThe, setBoThe] = useState(() => taoBoThe(taoCap()));
   const [giaiDoan, setGiaiDoan] = useState("xem-truoc"); // xem-truoc | choi | xong
@@ -112,8 +115,9 @@ export default function TroChoiLatThe({ tieuDe, taoCap, khoaKyLuc, quayLai }) {
       if (tot) luuKyLuc(khoaKyLuc, { soGiay: giay, soLuot: luot });
       setKetQua({ kyLucCu: cu, laKyLucMoi: tot });
       setGiaiDoan("xong");
+      khiXong?.();
     },
-    [khoaKyLuc],
+    [khoaKyLuc, khiXong],
   );
 
   function bamThe(viTri) {
@@ -129,7 +133,7 @@ export default function TroChoiLatThe({ tieuDe, taoCap, khoaKyLuc, quayLai }) {
     setSoLuot(luot);
     const [a, b] = moi.map((v) => boThe[v]);
     if (a.id === b.id && a.loai !== b.loai) {
-      // Đúng cặp: giữ mặt ngửa, tính 1 câu đúng cho mục tiêu hôm nay
+      // Đúng cặp: giữ mặt ngửa, ghi 1 câu đúng vào nhật ký
       const ghep = new Set(daGhep).add(a.id);
       setDaGhep(ghep);
       setDangMo([]);
@@ -205,18 +209,29 @@ export default function TroChoiLatThe({ tieuDe, taoCap, khoaKyLuc, quayLai }) {
           )}
           <p className={kieu.chuNho}>
             {nd.daDangNhap
-              ? `${tongCap} cặp đã được tính vào mục tiêu hôm nay.`
+              ? khiXong
+                ? "Đã xong bước này của Bài hôm nay."
+                : `Đã ghi lại ${tongCap} cặp bạn tìm được.`
               : "Bạn đang ở chế độ khách nên kết quả không được lưu."}
           </p>
           <div className="flex flex-wrap justify-center gap-2">
-            <button type="button" onClick={vanMoi} className={kieu.nutChinh}>
-              <BieuTuong ten="lam-lai" />
-              Chơi ván mới
-            </button>
-            <button type="button" onClick={quayLai} className={kieu.nutPhu}>
-              <BieuTuong ten="quay-lai" co={16} />
-              Quay lại
-            </button>
+            {khiXong ? (
+              <button type="button" onClick={quayLai} className={kieu.nutChinh}>
+                <BieuTuong ten="quay-lai" />
+                Về bài hôm nay
+              </button>
+            ) : (
+              <>
+                <button type="button" onClick={vanMoi} className={kieu.nutChinh}>
+                  <BieuTuong ten="lam-lai" />
+                  Chơi ván mới
+                </button>
+                <button type="button" onClick={quayLai} className={kieu.nutPhu}>
+                  <BieuTuong ten="quay-lai" co={16} />
+                  Quay lại
+                </button>
+              </>
+            )}
           </div>
         </div>
       )}

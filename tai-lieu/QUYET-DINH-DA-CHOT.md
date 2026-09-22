@@ -283,6 +283,8 @@ dùng được để kiểm tra font.
 
 ### GĐ 7 — quyết định và kết quả (2026-09-21)
 
+> **Lưu ý (GĐ 10):** luật mục tiêu tự chọn chữ Hán / từ / phút ở phần này đã được thay bằng "Bài hôm nay" (quyết định 18.17 – 18.20).
+
 Chủ dự án trả lời 4 câu hỏi trước GĐ 7:
 
 | # | Nội dung |
@@ -374,6 +376,10 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 18.14 | **Xác minh email**: tạo xong dùng ngay, app gửi email xác minh; Cài đặt nhắc và có nút gửi lại nếu chưa xác minh |
 | 18.15 | **Mật khẩu tối thiểu 8 ký tự**, không bắt buộc chữ hoa hay ký tự đặc biệt. **Đổi mật khẩu** trong Cài đặt: nhập mật khẩu hiện tại, mật khẩu mới, nhập lại; chỉ hiện với tài khoản email. Email đã dùng cho đăng nhập Google thì không tạo tài khoản mật khẩu trùng được, app báo bằng tiếng Việt |
 | 18.16 | **Trò chơi lật thẻ** (matching game) ở phần Luyện tập của tab **Từ vựng** và **Chữ Hán**: 10 mục = 20 thẻ, 4 cột × 5 hàng; thẻ Trung (chữ + pinyin) ghép với thẻ nghĩa (nghĩa Nhật + nghĩa Việt, chỉ lấy nghĩa đầu tiên). Đầu ván mở hết thẻ 3 giây rồi úp lại. Không cho hai mục trùng nghĩa vào cùng ván. Mỗi cặp tìm được = 1 câu đúng cho mục tiêu hôm nay; lật nhầm KHÔNG vào Review. Hết ván báo thời gian, số lượt lật, kỷ lục (lưu trên máy, riêng từng tab). Chữ trên thẻ tự co theo bề ngang thẻ nên không tràn ở mọi cỡ chữ |
+| 18.17 | **Luật mục tiêu mới cho cả app (thay mục tiêu tự chọn chữ Hán / từ / phút của GĐ 7):** mỗi ngày học một "Bài hôm nay" gồm **5 chữ Hán + 10 từ vựng + 1 điểm ngữ pháp**. Chỉ khi làm đủ các bước của cả 3 phần mới đạt mục tiêu ngày (và mới nối chuỗi ngày). Luyện tự do ở các tab vẫn ghi nhật ký và Review, nhưng không tính mục tiêu |
+| 18.18 | **Các bước của bài**, làm lần lượt trong từng phần (bước sau mở khi xong bước trước): Chữ Hán: Tập viết → Trò chơi lật thẻ; Từ vựng: Thẻ ghi nhớ → Trắc nghiệm → Điền từ → Trò chơi lật thẻ; Ngữ pháp: Sắp xếp câu → Chọn câu đúng (tổng 8 bước). Mỗi bước chỉ dùng mục của bài. **Trả lời sai thì mục đó được hỏi lại ở cuối lượt cho tới khi đúng**; mục sai vẫn vào Review. Bước nào bài không có câu hỏi phù hợp (ví dụ điểm np-0007 không có cặp câu sai/đúng) thì tính là xong luôn để bài không bị kẹt |
+| 18.19 | **Lộ trình dễ → khó** (`cong-cu/dung-lo-trinh.py` → `public/du-lieu/lo-trinh.json`, 131 bài): từ HSK 1 trước, trong mỗi cấp từ thông dụng trước (tần suất từ điển jieba, MIT); 10 từ/bài, không để hai từ viết giống nhau chung bài. 5 chữ Hán/bài lấy trong các từ ĐÃ HỌC, chữ HSK thấp và thông dụng trước. Ngữ pháp theo cấp, ưu tiên điểm có câu ví dụ dùng nhiều từ đã học. 1000 từ = 100 bài, 655 chữ = 131 bài: từ bài 101 phần từ vựng là ôn lại từ chứa chữ của bài; 70 điểm ngữ pháp: từ bài 71 là ôn lại. Học hết 131 bài thì quay vòng từ bài 1 để ôn |
+| 18.20 | **Tiến độ bài**: xong bài thì bài sau mở ngay (học trước được); nghỉ ngày nào thì hôm sau học tiếp bài đang dở, không dồn bài. Lưu trên Firestore ở trường mới `loTrinh` `{bai, buoc}` (đã thêm vào firestore.rules); ngày học xong bài ghi `baiXong` trong nhật ký. Tab Review: biểu đồ đổi thành "số từ trả lời đúng mỗi ngày" |
 
 ### Đang chờ chủ dự án
 

@@ -16,29 +16,32 @@
          }
        }
 
+   Từ GĐ 10 mỗi ngày còn có thêm `baiXong: [7]` = các bài học xong trong ngày.
+
+   MỤC TIÊU NGÀY (từ GĐ 10, quyết định 18.17): học xong "Bài hôm nay" (5 chữ
+   Hán + 10 từ + 1 ngữ pháp, làm đủ các bước). Không còn mục tiêu tự chọn
+   chữ Hán / từ / phút như GĐ 7.
+
    Quy ước đã chốt (xem QUYET-DINH-DA-CHOT.md, mục GĐ 7):
      - Một mục chỉ tính vào mục tiêu khi TRẢ LỜI ĐÚNG. Đúng nhiều lần trong
        ngày vẫn chỉ tính một.
      - Tuần chạy từ thứ Hai đến Chủ nhật.
    ============================================================================= */
 
-/** Ba loại mục tiêu người dùng chọn được. */
-export const LOAI_MUC_TIEU = {
-  "chu-han": { nhan: "Chữ Hán", donVi: "chữ", macDinh: 5, toiDa: 50 },
-  tu: { nhan: "Từ", donVi: "từ", macDinh: 10, toiDa: 100 },
-  phut: { nhan: "Phút", donVi: "phút", macDinh: 15, toiDa: 180 },
-};
+/**
+ * Tiến độ theo lộ trình bài học (GĐ 10), lưu trên Firestore ở trường `loTrinh`:
+ *   { bai: 7, buoc: ["tu-the", "chu-tap-viet"] }
+ *   bai  : số bài đang học (bắt đầu từ 1, tăng mãi; hết lộ trình thì quay vòng)
+ *   buoc : các bước ĐÃ XONG của bài đang học
+ */
+export const LO_TRINH_BAN_DAU = { bai: 1, buoc: [] };
 
-export const MUC_TIEU_MAC_DINH = { loai: "tu", soLuong: 10 };
-
-/** Giữ lại mục tiêu hợp lệ, chỗ nào sai thì dùng mặc định. */
-export function chuanHoaMucTieu(thu) {
-  const loai = LOAI_MUC_TIEU[thu?.loai] ? thu.loai : MUC_TIEU_MAC_DINH.loai;
-  const so = Math.round(Number(thu?.soLuong));
-  const toiDa = LOAI_MUC_TIEU[loai].toiDa;
+/** Giữ lại tiến độ hợp lệ, chỗ nào sai thì dùng giá trị ban đầu. */
+export function chuanHoaLoTrinh(thu) {
+  const bai = Math.round(Number(thu?.bai));
   return {
-    loai,
-    soLuong: so >= 1 && so <= toiDa ? so : LOAI_MUC_TIEU[loai].macDinh,
+    bai: bai >= 1 ? bai : 1,
+    buoc: Array.isArray(thu?.buoc) ? thu.buoc.filter((b) => typeof b === "string") : [],
   };
 }
 

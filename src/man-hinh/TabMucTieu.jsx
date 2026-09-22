@@ -1,63 +1,109 @@
 /* =============================================================================
-   TAB D — MỤC TIÊU HẰNG NGÀY (GIAI ĐOẠN 7)
+   TAB D — BÀI HÔM NAY (GĐ 10, thay cho "Mục tiêu hằng ngày" của GĐ 7)
    =============================================================================
 
-   Mở bằng cách bấm thanh "Mục tiêu hôm nay" ở trên cùng.
+   Mở bằng cách bấm thanh trên cùng.
 
-   - Mặt trời lớn: chưa đạt thì xám mờ, đạt mục tiêu thì toả sáng.
-   - Chuỗi ngày liên tiếp đạt mục tiêu (streak).
-   - Đặt mục tiêu: chọn MỘT trong ba loại (chữ Hán / từ / phút) và số lượng.
-   - Hôm nay đã làm được gì, và 7 ngày gần nhất có đạt không.
+   Mục tiêu ngày (quyết định 18.17 – 18.20): học xong "Bài hôm nay" gồm
+   5 chữ Hán + 10 từ vựng + 1 điểm ngữ pháp, lấy theo lộ trình dễ → khó
+   (public/du-lieu/lo-trinh.json). Mỗi phần làm lần lượt các bước (xem
+   src/luyen-tap/baiHoc.js); trả lời sai thì được hỏi lại tới khi đúng. Xong
+   hết các bước của cả 3 phần mới đạt mục tiêu ngày.
 
-   Cách tính (đã chốt với chủ dự án, xem nhatKy.js):
-     - Chữ Hán: số chữ tập viết xong mà không cần gợi ý
-     - Từ     : số từ trả lời đúng trong luyện tập (Tab C và Tab B)
-     - Phút   : thời gian app đang mở và có thao tác
+   Học xong bài thì bài tiếp theo mở ngay, muốn học trước thì học được. Nghỉ
+   ngày nào thì hôm sau học tiếp bài đang dở, không bị dồn bài.
 
    Chỉ dùng được khi đã đăng nhập.
    ============================================================================= */
 
-import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
-import {
-  LOAI_MUC_TIEU,
-  chuoiNgay,
-  congNgay,
-  daLamTrongNgay,
-  docNgay,
-} from "../nguoi-dung/nhatKy.js";
-import MatTroi from "../thanh-phan/MatTroi.jsx";
+import { useEffect, useMemo, useState } from "react";
+
+import { taiChuHan, taiLoTrinh, taiNguPhap, taiTuVung } from "../du-lieu/taiDuLieu.js";
+import { CAC_PHAN, TONG_BUOC, cauHoiChoBuoc, layBai, noiDungBai } from "../luyen-tap/baiHoc.js";
+import { capChuHan, capTuVung } from "../luyen-tap/capLatThe.js";
+import PhienLuyenTap from "../luyen-tap/PhienLuyenTap.jsx";
+import TroChoiLatThe from "../luyen-tap/TroChoiLatThe.jsx";
 import { kieu } from "../luyen-tap/tienIch.js";
+import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
+import { chuoiNgay, congNgay, docNgay } from "../nguoi-dung/nhatKy.js";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
+import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
+import MatTroi from "../thanh-phan/MatTroi.jsx";
 import { NutDangNhap } from "./CaiDat.jsx";
 
 const THU = ["CN", "T2", "T3", "T4", "T5", "T6", "T7"];
 
 export default function TabMucTieu({ quayLai }) {
   const nd = useNguoiDung();
+  const [du, setDu] = useState(null); // dữ liệu lộ trình + nội dung
+  const [loi, setLoi] = useState(false);
+  const [dangLam, setDangLam] = useState(null); // mã bước đang làm
+
+  useEffect(() => {
+    let conSong = true;
+    Promise.all([taiLoTrinh(), taiChuHan(), taiTuVung(), taiNguPhap()])
+      .then(([loTrinh, chuHan, tuVung, nguPhap]) => {
+        if (!conSong) return;
+        setDu({
+          loTrinh,
+          chuHan: new Map(chuHan.map((c) => [c.id, c])),
+          tuVung: { danhSach: tuVung.danhSach, map: new Map(tuVung.danhSach.map((t) => [t.id, t])) },
+          nguPhap: new Map(nguPhap.map((d) => [d.id, d])),
+        });
+      })
+      .catch(() => conSong && setLoi(true));
+    return () => {
+      conSong = false;
+    };
+  }, []);
+
+  const baiSo = nd.loTrinh.bai;
+  const bai = useMemo(() => (du ? layBai(du.loTrinh, baiSo) : null), [du, baiSo]);
+  const noiDung = useMemo(() => (bai ? noiDungBai(bai, du) : null), [bai, du]);
 
   if (!nd.daDangNhap) {
-    return <CanDangNhap tieuDe="Mục tiêu hôm nay" quayLai={quayLai} />;
+    return <CanDangNhap tieuDe="Bài hôm nay" quayLai={quayLai} />;
+  }
+
+  // --- Đang làm một bước ---
+  if (dangLam && noiDung) {
+    const buoc = CAC_PHAN.flatMap((p) => p.buoc).find((b) => b.ma === dangLam);
+    const xongBuoc = () => nd.hoanThanhBuoc(dangLam, TONG_BUOC);
+    const veBai = () => setDangLam(null);
+    if (buoc.laGame) {
+      return (
+        <TroChoiLatThe
+          tieuDe={`Bài ${bai.so}: ${buoc.nhan}`}
+          taoCap={() => (dangLam === "chu-lat-the" ? capChuHan(noiDung.chu) : capTuVung(noiDung.tu))}
+          khoaKyLuc={dangLam === "chu-lat-the" ? "chu-han" : "tu-vung"}
+          quayLai={veBai}
+          khiXong={xongBuoc}
+        />
+      );
+    }
+    return (
+      <PhienLuyenTap
+        tieuDe={`Bài ${bai.so}: ${buoc.nhan}`}
+        taoDanhSach={() => cauHoiChoBuoc(dangLam, noiDung, du)}
+        quayLai={veBai}
+        lamLaiKhiSai
+        khiXong={xongBuoc}
+      />
+    );
   }
 
   const td = nd.tienDoHomNay;
-  const loai = LOAI_MUC_TIEU[td.loai];
-  const tiLe = Math.min(1, td.daLam / td.mucTieu);
   const homNay = chuoiNgay();
   const ngayHomNay = nd.nhatKy[homNay];
-
-  function doiLoai(ma) {
-    nd.doiMucTieu({ loai: ma, soLuong: LOAI_MUC_TIEU[ma].macDinh });
-  }
-  function doiSo(buoc) {
-    nd.doiMucTieu({ ...nd.mucTieu, soLuong: nd.mucTieu.soLuong + buoc });
-  }
+  const baiVuaXong = ngayHomNay?.baiXong?.includes(baiSo - 1) ? baiSo - 1 : null;
+  const soBuocXong = nd.loTrinh.buoc.length;
 
   return (
     <section className="flex flex-col gap-5">
       <div>
         <button type="button" onClick={quayLai} className={kieu.nutPhu}>
           <BieuTuong ten="quay-lai" co={16} />
-            Quay lại
+          Quay lại
         </button>
       </div>
 
@@ -65,33 +111,71 @@ export default function TabMucTieu({ quayLai }) {
       <div className={`${kieu.khung} items-center gap-3 py-6 text-center`}>
         <MatTroi dat={td.dat} lanVuaDat={nd.lanVuaDat} rong={136} />
         <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-          {td.dat ? "Đã đạt mục tiêu hôm nay!" : "Mục tiêu hôm nay"}
+          {td.dat ? "Đã đạt mục tiêu hôm nay!" : "Bài hôm nay"}
         </h1>
-        <p className="m-0 text-[2.25rem] leading-none font-extrabold tabular-nums">
-          {td.daLam}
-          <span className="text-chu-mo text-[length:var(--co-chu-latin)] font-semibold">
-            {" "}/ {td.mucTieu} {loai.donVi}
-          </span>
-        </p>
+        {bai && (
+          <p className="m-0 text-[2rem] leading-none font-extrabold tabular-nums">
+            Bài {bai.so}
+            <span className="text-chu-mo text-[length:var(--co-chu-latin)] font-semibold">
+              {" "}· HSK {bai.capHsk}
+              {bai.vong > 1 ? ` · ôn vòng ${bai.vong}` : ""}
+            </span>
+          </p>
+        )}
         <div
           className="bg-nen-phu h-2 w-full max-w-xs overflow-hidden rounded-[var(--bo-goc-tron)]"
           role="progressbar"
-          aria-valuenow={td.daLam}
+          aria-valuenow={soBuocXong}
           aria-valuemin={0}
-          aria-valuemax={td.mucTieu}
-          aria-label="Tiến độ mục tiêu hôm nay"
+          aria-valuemax={TONG_BUOC}
+          aria-label="Số bước đã xong của bài"
         >
           <div
             className="bg-nhan h-full rounded-[var(--bo-goc-tron)] transition-[width] duration-500"
-            style={{ width: `${tiLe * 100}%` }}
+            style={{ width: `${(soBuocXong / TONG_BUOC) * 100}%` }}
           />
         </div>
+        <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] font-semibold">
+          Đã xong {soBuocXong}/{TONG_BUOC} bước
+        </p>
         <p className="m-0 text-[length:var(--co-chu-latin)] font-semibold">
           {td.chuoi > 0
             ? `Chuỗi ${td.chuoi} ngày liên tiếp đạt mục tiêu`
-            : "Đạt mục tiêu hôm nay để bắt đầu chuỗi ngày"}
+            : "Học xong bài hôm nay để bắt đầu chuỗi ngày"}
         </p>
       </div>
+
+      {baiVuaXong && (
+        <div className="bg-nhan-nhat flex flex-col gap-1 rounded-[var(--bo-goc)] p-4">
+          <p className="m-0 text-[length:var(--co-chu-latin)] font-bold">
+            Bạn vừa học xong bài {((baiVuaXong - 1) % (du?.loTrinh.baiHoc.length || 1)) + 1}!
+          </p>
+          <p className="m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+            Mục tiêu hôm nay đã đạt. Bài tiếp theo đã mở bên dưới: bạn có thể học
+            trước, hoặc để dành cho ngày mai.
+          </p>
+        </div>
+      )}
+
+      {loi && (
+        <p className="text-sai m-0 text-[length:var(--co-chu-latin-nho)]">
+          Không tải được bài học. Hãy kiểm tra mạng rồi mở lại.
+        </p>
+      )}
+      {!du && !loi && <p className={kieu.chuNho}>Đang tải bài học...</p>}
+
+      {/* --- Ba phần của bài --- */}
+      {noiDung &&
+        CAC_PHAN.map((phan) => (
+          <PhanBai
+            key={phan.ma}
+            phan={phan}
+            bai={bai}
+            noiDung={noiDung}
+            buocXong={nd.loTrinh.buoc}
+            batDau={setDangLam}
+          />
+        ))}
 
       {/* --- 7 ngày gần nhất --- */}
       <div className={kieu.khung}>
@@ -120,84 +204,98 @@ export default function TabMucTieu({ quayLai }) {
         </ol>
       </div>
 
-      {/* --- Hôm nay đã làm --- */}
-      <div className={kieu.khung}>
-        <p className={kieu.nhanTieuDe}>Hôm nay bạn đã</p>
-        <div className="grid grid-cols-3 gap-2 text-center">
-          {Object.entries(LOAI_MUC_TIEU).map(([ma, l]) => (
-            <div key={ma} className="bg-nen-phu rounded-[var(--bo-goc-nho)] px-2 py-3">
-              <p className="m-0 text-[1.5rem] leading-none font-extrabold tabular-nums">
-                {daLamTrongNgay(ngayHomNay, ma)}
-              </p>
-              <p className="text-chu-mo m-0 mt-1 text-[length:var(--co-chu-latin-nho)] font-semibold">
-                {ma === "phut" ? "phút học" : ma === "tu" ? "từ đúng" : "chữ viết đạt"}
-              </p>
-              <span className="sr-only">{l.nhan}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* --- Đặt mục tiêu --- */}
-      <div className={kieu.khung}>
-        <p className={kieu.nhanTieuDe}>Đặt mục tiêu mỗi ngày</p>
-        <div className="flex flex-wrap gap-2" role="group" aria-label="Loại mục tiêu">
-          {Object.entries(LOAI_MUC_TIEU).map(([ma, l]) => (
-            <button
-              key={ma}
-              type="button"
-              onClick={() => doiLoai(ma)}
-              aria-pressed={nd.mucTieu.loai === ma}
-              className={`rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold ${
-                nd.mucTieu.loai === ma
-                  ? "border-nhan bg-nhan text-chu-tren-nhan"
-                  : "border-vien bg-transparent"
-              }`}
-            >
-              {l.nhan}
-            </button>
-          ))}
-        </div>
-
-        <div className="mt-1 flex items-center gap-3">
-          <button
-            type="button"
-            onClick={() => doiSo(-1)}
-            disabled={nd.mucTieu.soLuong <= 1}
-            aria-label="Giảm mục tiêu"
-            className={`${kieu.nutPhu} h-11 w-11 p-0 text-xl`}
-          >
-            <BieuTuong ten="giam" co={20} />
-          </button>
-          <p className="m-0 min-w-24 text-center text-[length:var(--co-chu-latin)] font-bold tabular-nums">
-            {nd.mucTieu.soLuong} {loai.donVi}
-          </p>
-          <button
-            type="button"
-            onClick={() => doiSo(1)}
-            disabled={nd.mucTieu.soLuong >= loai.toiDa}
-            aria-label="Tăng mục tiêu"
-            className={`${kieu.nutPhu} h-11 w-11 p-0 text-xl`}
-          >
-            <BieuTuong ten="tang" co={20} />
-          </button>
-        </div>
-        <p className={kieu.chuNho}>
-          {nd.mucTieu.loai === "chu-han" &&
-            "Tính mỗi chữ Hán tập viết xong mà không cần gợi ý (Tab Chữ Hán, trang chi tiết)."}
-          {nd.mucTieu.loai === "tu" &&
-            "Tính mỗi từ trả lời đúng trong phần Luyện tập của tab Từ vựng và tab Đồng tự."}
-          {nd.mucTieu.loai === "phut" &&
-            "Tính thời gian app đang mở và bạn có thao tác. Để app mở rồi bỏ đi thì không tính."}{" "}
-          Một mục đúng nhiều lần trong ngày chỉ tính một lần.
-        </p>
-      </div>
+      <p className={kieu.chuNho}>
+        Mỗi ngày một bài: 5 chữ Hán, 10 từ vựng, 1 điểm ngữ pháp, xếp từ dễ đến
+        khó. Làm đủ các bước của cả ba phần mới đạt mục tiêu ngày. Trả lời sai
+        thì được hỏi lại cho tới khi đúng.
+      </p>
     </section>
   );
 }
 
 /* -----------------------------------------------------------------------------
-   Màn hình nhắc đăng nhập (dùng chung cho tab Mục tiêu và tab Review)
+   MỘT PHẦN CỦA BÀI: xem trước nội dung, rồi các bước làm lần lượt
+   ----------------------------------------------------------------------------- */
+function PhanBai({ phan, bai, noiDung, buocXong, batDau }) {
+  const soXong = phan.buoc.filter((b) => buocXong.includes(b.ma)).length;
+  const onTap = (phan.ma === "tu" && bai.tuOnTap) || (phan.ma === "np" && bai.nguPhapOnTap);
+  const tieuDe = {
+    chu: `${noiDung.chu.length} chữ Hán`,
+    tu: `${noiDung.tu.length} từ vựng`,
+    np: "1 điểm ngữ pháp",
+  }[phan.ma];
+
+  return (
+    <div className={`${kieu.khung} gap-3`}>
+      <div className="flex items-baseline justify-between gap-2">
+        <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
+          {tieuDe}
+          {onTap && (
+            <span className="text-chu-mo ml-2 text-[length:var(--co-chu-latin-nho)] font-semibold">
+              (ôn tập)
+            </span>
+          )}
+        </h2>
+        <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold whitespace-nowrap">
+          {soXong === phan.buoc.length ? "Đã xong" : `${soXong}/${phan.buoc.length} bước`}
+        </span>
+      </div>
+
+      {/* Xem trước nội dung: Trung → Nhật → Việt */}
+      {phan.ma === "chu" && (
+        <div className="flex flex-wrap gap-x-4 gap-y-1">
+          {noiDung.chu.map((c) => {
+            const am = c.amDoc.pinyin.find((a) => a.chinh) ?? c.amDoc.pinyin[0];
+            return <ChuTrung key={c.id} amTiet={[{ chu: c.gianThe, pinyin: am?.am ?? "" }]} />;
+          })}
+        </div>
+      )}
+      {phan.ma === "tu" && (
+        <div className="flex flex-wrap gap-x-4 gap-y-1">
+          {noiDung.tu.map((t) => (
+            <ChuTrung key={t.id} amTiet={ghepAmTiet(t.tu, t.pinyin)} />
+          ))}
+        </div>
+      )}
+      {phan.ma === "np" && noiDung.nguPhap && (
+        <p className="m-0 text-[length:var(--co-chu-latin)] font-semibold">{noiDung.nguPhap.ten}</p>
+      )}
+
+      {/* Các bước: làm lần lượt, bước sau mở khi xong bước trước */}
+      <ol className="m-0 flex list-none flex-col gap-2 p-0">
+        {phan.buoc.map((b, i) => {
+          const xong = buocXong.includes(b.ma);
+          const mo = i === 0 || buocXong.includes(phan.buoc[i - 1].ma);
+          return (
+            <li key={b.ma}>
+              <button
+                type="button"
+                onClick={() => batDau(b.ma)}
+                disabled={!mo}
+                className={`flex w-full items-center gap-3 rounded-[var(--bo-goc-nho)] border px-3 py-2.5 text-left text-[length:var(--co-chu-latin)] font-semibold transition-colors disabled:opacity-45 ${
+                  xong ? "border-dung" : mo ? "border-nhan" : "border-vien"
+                }`}
+              >
+                <BieuTuong ten={b.bieuTuong} />
+                <span className="min-w-0 flex-1">{b.nhan}</span>
+                <span
+                  className={`text-[length:var(--co-chu-latin-nho)] font-bold whitespace-nowrap ${
+                    xong ? "text-dung" : "text-chu-mo"
+                  }`}
+                >
+                  {xong ? "✓ Xong" : mo ? "Bắt đầu" : "Chưa mở"}
+                </span>
+              </button>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  );
+}
+
+/* -----------------------------------------------------------------------------
+   Màn hình nhắc đăng nhập (dùng chung cho tab Bài hôm nay và tab Review)
    ----------------------------------------------------------------------------- */
 export function CanDangNhap({ tieuDe, quayLai }) {
   const nd = useNguoiDung();

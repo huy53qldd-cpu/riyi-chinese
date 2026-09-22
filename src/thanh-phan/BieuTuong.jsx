@@ -67,7 +67,7 @@ const HINH = {
   "sap-xep": ListOrdered,
   "chon-cau": CircleCheck,
   "chon-nghia": Languages,
-  "lat-the": Gamepad2,
+  "tro-choi": Gamepad2, // trò chơi lật thẻ (khác nút "Lật thẻ" của thẻ ghi nhớ)
   // Tập viết chữ Hán: cây bút
   "tap-viet": PencilLine,
   "xem-mau": Eye,

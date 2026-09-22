@@ -6,12 +6,16 @@
    xong mới sang câu sau, cuối lượt hiện kết quả.
 
    Mỗi câu trả lời được ghi vào nhật ký qua nd.ghiKetQua:
-     - ĐÚNG thì tính vào mục tiêu hôm nay
+     - ĐÚNG/SAI đều ghi vào nhật ký; mục tiêu ngày tính theo Bài hôm nay (GĐ 10)
      - SAI thì mục đó sẽ hiện trong Review cuối tuần
    Chế độ khách vẫn luyện được nhưng không ghi gì.
+
+   Chế độ "hỏi lại đến khi đúng" (bước của Bài hôm nay, GĐ 10): câu nào sai thì
+   một câu MỚI cho cùng mục đó được thêm vào cuối lượt (câu hỏi phải có hàm
+   `taoLai`). Tới cuối lượt nghĩa là mọi mục đều đã đúng, khi đó gọi `khiXong`.
    ============================================================================= */
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
@@ -23,21 +27,45 @@ import BieuTuong from "../thanh-phan/BieuTuong.jsx";
  * @param {string}   tieuDe      Tên lượt luyện, ví dụ "Trắc nghiệm từ vựng"
  * @param {Function} taoDanhSach Hàm tạo danh sách câu hỏi (gọi lại khi làm lượt mới)
  * @param {Function} quayLai     Thoát khỏi lượt luyện
+ * @param {boolean}  lamLaiKhiSai Sai thì hỏi lại mục đó ở cuối lượt, đến khi đúng
+ * @param {Function} khiXong      Gọi MỘT lần khi làm xong lượt (dùng cho bước của bài học)
  */
-export default function PhienLuyenTap({ tieuDe, taoDanhSach, quayLai }) {
+export default function PhienLuyenTap({
+  tieuDe,
+  taoDanhSach,
+  quayLai,
+  lamLaiKhiSai = false,
+  khiXong = null,
+}) {
   const nd = useNguoiDung();
   const [danhSach, setDanhSach] = useState(taoDanhSach);
   const [viTri, setViTri] = useState(0);
   const [ketQua, setKetQua] = useState([]); // true/false theo từng câu
+  const daBaoXong = useRef(false);
 
   const cau = danhSach[viTri];
   const daTraLoi = ketQua.length > viTri;
   const xong = viTri >= danhSach.length;
 
+  // Báo xong đúng một lần. Ở bước của bài học, nếu bài không có câu hỏi phù hợp
+  // cho bước này (ví dụ điểm ngữ pháp không có cặp câu sai/đúng) thì tính là
+  // xong luôn, để bài không bị kẹt mãi.
+  useEffect(() => {
+    const coTheBao = danhSach.length > 0 || lamLaiKhiSai;
+    if (xong && coTheBao && khiXong && !daBaoXong.current) {
+      daBaoXong.current = true;
+      khiXong();
+    }
+  }, [xong, danhSach.length, khiXong, lamLaiKhiSai]);
+
   function traLoi(dung) {
     if (daTraLoi) return;
     if (!cau.tuGhiKetQua) nd.ghiKetQua(cau.id, dung);
     setKetQua((kq) => [...kq, dung]);
+    if (!dung && lamLaiKhiSai && cau.taoLai) {
+      const lai = cau.taoLai();
+      if (lai) setDanhSach((ds) => [...ds, { ...lai, taoLai: cau.taoLai, laHoiLai: true }]);
+    }
   }
 
   function lamLuotMoi() {
@@ -51,8 +79,37 @@ export default function PhienLuyenTap({ tieuDe, taoDanhSach, quayLai }) {
       <section className="flex flex-col gap-4">
         <ThanhDauPhien tieuDe={tieuDe} quayLai={quayLai} />
         <p className={kieu.chuNho}>
-          Chưa đủ dữ liệu để tạo câu hỏi cho mục này.
+          {lamLaiKhiSai
+            ? "Bài này chưa có câu hỏi phù hợp cho bước này, nên bước được tính là xong."
+            : "Chưa đủ dữ liệu để tạo câu hỏi cho mục này."}
         </p>
+        {lamLaiKhiSai && (
+          <button type="button" onClick={quayLai} className={`${kieu.nutChinh} self-start`}>
+            <BieuTuong ten="quay-lai" />
+            Về bài hôm nay
+          </button>
+        )}
+      </section>
+    );
+  }
+
+  if (xong && lamLaiKhiSai) {
+    const soSai = ketQua.filter((k) => !k).length;
+    return (
+      <section className="flex flex-col gap-4">
+        <ThanhDauPhien tieuDe={tieuDe} quayLai={quayLai} />
+        <div className={`${kieu.khung} items-center text-center`}>
+          <p className="m-0 text-[length:var(--co-chu-latin)] font-bold">Hoàn thành bước này!</p>
+          <p className={kieu.chuNho}>
+            {soSai === 0
+              ? "Đúng hết ngay lần đầu. Tuyệt vời!"
+              : `Có ${soSai} lần trả lời sai, đã được hỏi lại cho tới khi đúng. Các mục sai cũng đã vào mục Review.`}
+          </p>
+        </div>
+        <button type="button" onClick={quayLai} className={`${kieu.nutChinh} self-start`}>
+          <BieuTuong ten="quay-lai" />
+          Về bài hôm nay
+        </button>
       </section>
     );
   }
@@ -101,6 +158,12 @@ export default function PhienLuyenTap({ tieuDe, taoDanhSach, quayLai }) {
         tong={danhSach.length}
       />
 
+      {cau.laHoiLai && (
+        <p className="text-chu-mo m-0 flex items-center gap-1.5 text-[length:var(--co-chu-latin-nho)] font-semibold">
+          <BieuTuong ten="lam-lai" co={14} />
+          Hỏi lại mục bạn vừa trả lời sai
+        </p>
+      )}
       {/* key theo vị trí: sang câu mới thì mọi trạng thái của câu cũ bị xoá */}
       {cau.kieu === "chon" && <CauHoiChon key={viTri} cau={cau} traLoi={traLoi} />}
       {cau.kieu === "sap-xep" && <CauHoiSapXep key={viTri} cau={cau} traLoi={traLoi} />}

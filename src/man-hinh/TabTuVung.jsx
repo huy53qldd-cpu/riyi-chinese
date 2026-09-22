@@ -200,7 +200,7 @@ export default function TabTuVung() {
           cacCach={CACH_LUYEN}
           soMuc={hienThi.length}
           chon={setCachLuyen}
-          ghiChu={`Thẻ ghi nhớ, Trắc nghiệm, Điền từ: mỗi lượt 10 câu, lấy từ ${hienThi.length} từ đang hiện theo bộ lọc; đúng được tính vào mục tiêu hôm nay, sai vào mục Review. Trò chơi lật thẻ: 10 từ, 20 thẻ; mỗi cặp tìm được tính vào mục tiêu.`}
+          ghiChu={`Mỗi lượt 10 câu (trò chơi lật thẻ: 10 từ, 20 thẻ), lấy từ ${hienThi.length} từ đang hiện theo bộ lọc. Trả lời sai sẽ vào mục Review. Mục tiêu ngày chỉ tính khi học xong Bài hôm nay (bấm thanh trên cùng).`}
         />
       )}
 

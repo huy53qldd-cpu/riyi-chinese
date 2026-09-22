@@ -37,6 +37,7 @@ function khoaSoSanh(chuoi) {
 function chonCap(danhSach, doiMuc) {
   const daCoViet = new Set();
   const daCoNhat = new Set();
+  const daCoTrung = new Set(); // hai mục viết giống nhau (过 guò / guo) cũng không cho chung ván
   const ra = [];
   for (const muc of tronNgauNhien(danhSach)) {
     if (ra.length >= SO_CAP_MOI_VAN) break;
@@ -44,9 +45,11 @@ function chonCap(danhSach, doiMuc) {
     if (!cap.viet || !cap.nhat) continue;
     const kv = khoaSoSanh(cap.viet);
     const kn = khoaSoSanh(cap.nhat);
-    if (daCoViet.has(kv) || daCoNhat.has(kn)) continue;
+    const kt = cap.trung.map((a) => a.chu).join("");
+    if (daCoViet.has(kv) || daCoNhat.has(kn) || daCoTrung.has(kt)) continue;
     daCoViet.add(kv);
     daCoNhat.add(kn);
+    daCoTrung.add(kt);
     ra.push(cap);
   }
   return ra;

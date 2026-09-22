@@ -21,6 +21,7 @@
     "dung-dong-tu": "python cong-cu/dung-dong-tu.py",
     "dung-tu-vung": "python cong-cu/dung-tu-vung.py",
     "dung-ngu-phap": "python cong-cu/dung-ngu-phap.py",
+    "dung-lo-trinh": "python cong-cu/dung-lo-trinh.py",
     "trien-khai": "vite build && firebase deploy"
   },
   "dependencies": {

@@ -14,7 +14,7 @@
    Cả hai trạng thái đều có nút bánh răng để mở Cài đặt.
    ============================================================================= */
 
-import { LOAI_MUC_TIEU } from "../nguoi-dung/nhatKy.js";
+import { TONG_BUOC } from "../luyen-tap/baiHoc.js";
 import MatTroi from "./MatTroi.jsx";
 import BieuTuong from "./BieuTuong.jsx";
 
@@ -48,9 +48,9 @@ export default function ThanhTren({
   // -------------------------------------------------------------------------
   // ĐÃ ĐĂNG NHẬP — hiện mặt trời và tiến độ
   // -------------------------------------------------------------------------
-  const { daLam, mucTieu, dat, chuoi, loai } = tienDo;
-  const donVi = LOAI_MUC_TIEU[loai].donVi;
-  const tiLe = mucTieu > 0 ? Math.min(1, daLam / mucTieu) : 0;
+  // Mục tiêu ngày (GĐ 10): học xong Bài hôm nay, tiến độ tính theo số bước
+  const { bai, soBuocXong, dat, chuoi } = tienDo;
+  const tiLe = Math.min(1, soBuocXong / TONG_BUOC);
 
   return (
     <div
@@ -63,7 +63,7 @@ export default function ThanhTren({
       <button
         type="button"
         onClick={moMucTieu}
-        aria-label={`Mục tiêu hôm nay, đã làm ${daLam} trên ${mucTieu} ${donVi}${dat ? ", đã đạt" : ""}`}
+        aria-label={`Bài hôm nay: bài ${bai}, đã xong ${soBuocXong} trên ${TONG_BUOC} bước${dat ? ", đã đạt mục tiêu" : ""}`}
         className="flex min-w-0 flex-1 items-center gap-3 text-left"
       >
         {/* Mặt trời lấy từ logo Riyi: chưa đạt thì xám mờ, đạt rồi thì toả sáng */}
@@ -73,7 +73,7 @@ export default function ThanhTren({
           {/* Luôn một dòng. Chữ to (thanh kéo cỡ chữ) mà hết chỗ thì phần
               "· N ngày liền" bị rút gọn bằng dấu "…", tên mục tiêu giữ nguyên */}
           <div className="flex items-baseline gap-2 text-[length:var(--co-chu-latin-nho)] leading-tight font-bold whitespace-nowrap">
-            <span className="shrink-0">{dat ? "Đã đạt mục tiêu!" : "Mục tiêu hôm nay"}</span>
+            <span className="shrink-0">{dat ? "Đã đạt mục tiêu!" : "Bài hôm nay"}</span>
             {chuoi > 0 && (
               <span className="text-chu-mo min-w-0 truncate font-semibold">· {chuoi} ngày liền</span>
             )}
@@ -83,9 +83,9 @@ export default function ThanhTren({
           <div
             className="bg-nen-phu mt-1 h-1.5 w-full overflow-hidden rounded-[var(--bo-goc-tron)]"
             role="progressbar"
-            aria-valuenow={daLam}
+            aria-valuenow={soBuocXong}
             aria-valuemin={0}
-            aria-valuemax={mucTieu}
+            aria-valuemax={TONG_BUOC}
           >
             <div
               className="bg-nhan h-full rounded-[var(--bo-goc-tron)] transition-[width] duration-500"
@@ -95,7 +95,7 @@ export default function ThanhTren({
         </div>
 
         <div className="text-chu-mo shrink-0 text-[length:var(--co-chu-latin-nho)] font-semibold tabular-nums">
-          {daLam}/{mucTieu} {donVi}
+          Bài {bai} · {soBuocXong}/{TONG_BUOC}
         </div>
       </button>
       <NutCaiDat moCaiDat={moCaiDat} />

@@ -118,6 +118,18 @@ export async function taiNguPhap() {
   return ketQua.flatMap((tep) => tep.danhSach);
 }
 
+/**
+ * Tải lộ trình bài học (GĐ 10): danh sách bài, mỗi bài gồm mã 5 chữ Hán,
+ * 10 từ và 1 điểm ngữ pháp. Nội dung chi tiết vẫn lấy từ các file dữ liệu kia.
+ * @returns {Promise<{soBai: number, baiHoc: Array}>}
+ */
+export async function taiLoTrinh() {
+  const manifest = await taiJson("manifest.json");
+  const tep = manifest.tep["lo-trinh"];
+  if (!tep?.sanSang) return { soBai: 0, baiHoc: [] };
+  return taiJson(tep.duongDan, tep.phienBan);
+}
+
 /* -----------------------------------------------------------------------------
    KIỂM TRA VÀ CẬP NHẬT NỘI DUNG
    ----------------------------------------------------------------------------- */

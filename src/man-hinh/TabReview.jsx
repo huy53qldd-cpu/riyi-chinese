@@ -24,7 +24,6 @@ import {
 } from "../du-lieu/taiDuLieu.js";
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import {
-  LOAI_MUC_TIEU,
   SO_NGAY_GIU,
   chuoiNgay,
   congNgay,
@@ -135,8 +134,6 @@ export default function TabReview() {
     : 7;
   const tuanCuNhat = congNgay(tuanHienTai, -7 * SO_TUAN_XEM_LAI);
 
-  const loai = nd.mucTieu.loai;
-  const khoaBieuDo = { "chu-han": "chuHan", tu: "tu", phut: "phut" }[loai];
   const saiHien = tuan.saiNhieuNhat.slice(0, SO_MUC_SAI_HIEN);
 
   return (
@@ -197,17 +194,17 @@ export default function TabReview() {
       {/* --- Biểu đồ --- */}
       <div className={kieu.khung}>
         <p className={kieu.nhanTieuDe}>
-          Số {LOAI_MUC_TIEU[loai].donVi} mỗi ngày
+          Số từ trả lời đúng mỗi ngày
         </p>
         <BieuDoTuan
-          tuanNay={tuan.cacNgay.map((d) => d[khoaBieuDo])}
-          tuanTruoc={truoc.cacNgay.map((d) => d[khoaBieuDo])}
-          donVi={LOAI_MUC_TIEU[loai].donVi}
+          tuanNay={tuan.cacNgay.map((d) => d.tu)}
+          tuanTruoc={truoc.cacNgay.map((d) => d.tu)}
+          donVi="từ"
           soNgayDaQua={soNgayDaQua}
         />
         <p className={kieu.chuNho}>
-          Biểu đồ theo loại mục tiêu bạn đang đặt. Đổi loại mục tiêu ở thanh
-          "Mục tiêu hôm nay" trên cùng.
+          Số từ khác nhau trả lời đúng trong ngày (Bài hôm nay và luyện tập
+          tự do). Số ngày đạt mục tiêu = số ngày học xong Bài hôm nay.
         </p>
       </div>
 
