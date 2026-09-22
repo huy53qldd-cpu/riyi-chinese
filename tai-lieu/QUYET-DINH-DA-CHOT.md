@@ -392,6 +392,7 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 18.30 | **Chạm một ô**: phát ngay thanh 1 và mở khung 4 thanh (mā má mǎ mà, chỉ bật thanh có file) + nút "Nghe cả 4 thanh". Ô tiêu đề cũng bấm được: vần đứng một mình (a, ai, yi, wu, yu, ya…) và phụ âm đọc theo cách dạy (bo po mo fo, de te ne le, ge ke he, ji qi xi, zhi chi shi ri, zi ci si) |
 | 18.31 | **Thanh dưới 5 nút**: Phát âm · Chữ Hán · Từ vựng · Ngữ pháp · Khám phá. Tab "Đồng tự" đổi thành **Khám phá**, trong đó có: Đồng tự dị nghĩa (màn cũ), Review cuối tuần (chuyển vào từ thanh dưới), Thi thử HSK (hiện "Sắp có") |
 | 18.32 | **Quy tắc ô bảng pinyin**: j q x không ghép với u thường (ô để trống; ju/qu/xu là j q x + ü, nằm ở cột ü). Tên file âm thanh sau j q x y viết u (ju4.mp3, không phải jv4). Bảng hiện 380 ô có âm thanh thật. Cột phụ âm đứng yên khi kéo ngang bảng |
+| 18.33 | **Bỏ dòng ghi công âm thanh trên màn hình Phát âm**. Ghi công audio-cmn (Chen Wang, Hugo Lopez, CC BY-SA) chỉ nằm trong source: public/am-thanh/GIAY-PHEP.txt và cong-cu/tai-am-thanh.py |
 
 ### Đang chờ chủ dự án
 

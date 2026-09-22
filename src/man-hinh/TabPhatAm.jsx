@@ -279,10 +279,8 @@ export default function TabPhatAm() {
         </ul>
       </div>
 
-      <p className={kieu.chuNho}>
-        Âm thanh: bộ audio-cmn, giọng đọc Chen Wang (github.com/hugolpz/audio-cmn),
-        giấy phép CC BY-SA.
-      </p>
+      {/* Ghi công âm thanh (audio-cmn, Chen Wang, CC BY-SA) nằm trong source:
+          public/am-thanh/GIAY-PHEP.txt, không hiện trên màn hình (quyết định 18.33) */}
       <MucChuaKiemTra danhSach={CANG_KIEM_TRA} />
 
       {/* Khung chọn thanh cho ô vừa chạm */}
