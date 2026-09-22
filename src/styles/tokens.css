@@ -88,6 +88,10 @@
   --nguy-hiem-vua: #b8730d;
   --nguy-hiem-nang: #c0392b;
 
+  /* Ô âm tiết trong bảng pinyin (tab Phát âm): hồng nhạt như bảng mẫu của chủ
+     dự án. Ô tiêu đề dùng --nhan-nhat, ô trống dùng --nen-phu. */
+  --o-am-tiet: #f8d9e4;
+
   /* Nền tròn sau logo chữ G trên nút đăng nhập. Google yêu cầu chữ G đặt trên
      nền trắng ở MỌI theme, nên theme tối và hoa anh đào không đổi biến này. */
   --nen-logo-google: #ffffff;
@@ -133,6 +137,7 @@
    Bật bằng cách đặt data-theme="toi" lên thẻ <html>.
    ============================================================================= */
 :root[data-theme="toi"] {
+  --o-am-tiet: #4d3139;
   --nen: var(--goc-nau);
   --nen-phu: #3a2c25;
   --nen-noi: #3a2c25;
@@ -180,6 +185,7 @@
    Đổi màu ở đây thì nhớ sửa cả public/mat-mang.html (trang báo mất mạng).
    ============================================================================= */
 :root[data-theme="anh-dao"] {
+  --o-am-tiet: #f9dce6;
   --goc-hong: #e27493; /* hồng phấn đậm vừa: nút, mặt trời thành hoa, viền nhấn */
   --goc-hong-dam: #c95a7b;
   --goc-hong-nhat: #fcdde6;

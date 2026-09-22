@@ -53,6 +53,7 @@ import {
   Sun,
   SquarePen,
   Type,
+  Volume2,
   UserPlus,
   X,
 } from "lucide-react";
@@ -68,7 +69,9 @@ const HINH = {
   "sap-xep": ListOrdered,
   "chon-cau": CircleCheck,
   "chon-nghia": Languages,
-  "tro-choi": Gamepad2, // trò chơi lật thẻ (khác nút "Lật thẻ" của thẻ ghi nhớ)
+  "tro-choi": Gamepad2,
+  // Nghe phát âm (tab Phát âm)
+  "nghe": Volume2, // trò chơi lật thẻ (khác nút "Lật thẻ" của thẻ ghi nhớ)
   // Tập viết chữ Hán: cây bút
   "tap-viet": PencilLine,
   "xem-mau": Eye,

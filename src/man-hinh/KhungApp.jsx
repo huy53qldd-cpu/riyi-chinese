@@ -31,11 +31,11 @@ import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import { TAB } from "../thanh-phan/danhSachTab.jsx";
 import KiemTraFont from "./KiemTraFont.jsx";
 import TabChuHan from "./TabChuHan.jsx";
-import TabDongTu from "./TabDongTu.jsx";
 import TabNguPhap from "./TabNguPhap.jsx";
 import TabTuVung from "./TabTuVung.jsx";
 import TabMucTieu from "./TabMucTieu.jsx";
-import TabReview from "./TabReview.jsx";
+import TabKhamPha from "./TabKhamPha.jsx";
+import TabPhatAm from "./TabPhatAm.jsx";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 export default function KhungApp({ thoatKhoa }) {
@@ -70,16 +70,16 @@ export default function KhungApp({ thoatKhoa }) {
       <main className="px-5 pt-5">
         {tabDangMo === TAB.MUC_TIEU ? (
           <TabMucTieu quayLai={() => setTabDangMo(TAB.CHU_HAN)} />
+        ) : tabDangMo === TAB.PHAT_AM ? (
+          <TabPhatAm />
         ) : tabDangMo === TAB.CHU_HAN ? (
           <TabChuHan />
-        ) : tabDangMo === TAB.DONG_TU ? (
-          <TabDongTu />
         ) : tabDangMo === TAB.TU_VUNG ? (
           <TabTuVung />
         ) : tabDangMo === TAB.NGU_PHAP ? (
           <TabNguPhap />
         ) : (
-          <TabReview />
+          <TabKhamPha />
         )}
 
         {/* Ô kiểm tra font chỉ hiện ở tab đầu, là tiêu chí nghiệm thu GĐ 0 */}

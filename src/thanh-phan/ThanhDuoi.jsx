@@ -35,7 +35,7 @@ export default function ThanhDuoi({ tabDangMo, doiTab }) {
                 style={{ minHeight: "var(--cao-thanh-duoi)" }}
               >
                 <tab.Icon width="1.5rem" height="1.5rem" />
-                <span className="text-[0.6875rem] leading-tight font-semibold">
+                <span className="text-[0.6875rem] leading-tight font-semibold whitespace-nowrap">
                   {tab.nhan}
                 </span>
               </button>

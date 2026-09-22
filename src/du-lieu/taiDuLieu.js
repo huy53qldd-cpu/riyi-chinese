@@ -119,6 +119,17 @@ export async function taiNguPhap() {
 }
 
 /**
+ * Tải bảng pinyin của tab Phát âm (GĐ 10): 5 nhóm vần, chỉ gồm ô có âm thanh.
+ * @returns {Promise<{nhom: Array}>}
+ */
+export async function taiBangPinyin() {
+  const manifest = await taiJson("manifest.json");
+  const tep = manifest.tep["bang-pinyin"];
+  if (!tep?.sanSang) throw new Error("chua-co-bang-pinyin");
+  return taiJson(tep.duongDan, tep.phienBan);
+}
+
+/**
  * Tải lộ trình bài học (GĐ 10): danh sách bài, mỗi bài gồm mã 5 chữ Hán,
  * 10 từ và 1 điểm ngữ pháp. Nội dung chi tiết vẫn lấy từ các file dữ liệu kia.
  * @returns {Promise<{soBai: number, baiHoc: Array}>}

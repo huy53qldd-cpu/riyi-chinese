@@ -1,0 +1,5438 @@
+{
+ "loai": "bang-pinyin",
+ "phienBan": 1,
+ "nguon": "Bảng theo mẫu 18 bảng phiên âm của chủ dự án; chỉ gồm ô có file âm thanh trong bộ audio-cmn (CC BY-SA).",
+ "nhom": [
+  {
+   "ma": "don",
+   "nhan": "a o e i u ü",
+   "cot": [
+    {
+     "van": "a",
+     "o": {
+      "viet": "a",
+      "khoa": "a",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "o",
+     "o": {
+      "viet": "o",
+      "khoa": "o",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "e",
+     "o": {
+      "viet": "e",
+      "khoa": "e",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "i",
+     "o": {
+      "viet": "yi",
+      "khoa": "yi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "u",
+     "o": {
+      "viet": "wu",
+      "khoa": "wu",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ü",
+     "o": {
+      "viet": "yu",
+      "khoa": "yu",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    }
+   ],
+   "hang": [
+    {
+     "phuAm": "b",
+     "o": {
+      "viet": "bo",
+      "khoa": "bo",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "ba",
+       "khoa": "ba",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "bo",
+       "khoa": "bo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "bi",
+       "khoa": "bi",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "bu",
+       "khoa": "bu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "p",
+     "o": {
+      "viet": "po",
+      "khoa": "po",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "pa",
+       "khoa": "pa",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "po",
+       "khoa": "po",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "pi",
+       "khoa": "pi",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "pu",
+       "khoa": "pu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "m",
+     "o": {
+      "viet": "mo",
+      "khoa": "mo",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "ma",
+       "khoa": "ma",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "mo",
+       "khoa": "mo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "me",
+       "khoa": "me",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "mi",
+       "khoa": "mi",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "mu",
+       "khoa": "mu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "f",
+     "o": {
+      "viet": "fo",
+      "khoa": "fo",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "fa",
+       "khoa": "fa",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "fo",
+       "khoa": "fo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "fe",
+       "khoa": "fe",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "fu",
+       "khoa": "fu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "d",
+     "o": {
+      "viet": "de",
+      "khoa": "de",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "da",
+       "khoa": "da",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "de",
+       "khoa": "de",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "di",
+       "khoa": "di",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "du",
+       "khoa": "du",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "t",
+     "o": {
+      "viet": "te",
+      "khoa": "te",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "ta",
+       "khoa": "ta",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "te",
+       "khoa": "te",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ti",
+       "khoa": "ti",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "tu",
+       "khoa": "tu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "n",
+     "o": {
+      "viet": "ne",
+      "khoa": "ne",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "na",
+       "khoa": "na",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "ne",
+       "khoa": "ne",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ni",
+       "khoa": "ni",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nu",
+       "khoa": "nu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nü",
+       "khoa": "nv",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "l",
+     "o": {
+      "viet": "le",
+      "khoa": "le",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "la",
+       "khoa": "la",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lo",
+       "khoa": "lo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "le",
+       "khoa": "le",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "li",
+       "khoa": "li",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lu",
+       "khoa": "lu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lü",
+       "khoa": "lv",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "g",
+     "o": {
+      "viet": "ge",
+      "khoa": "ge",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "ga",
+       "khoa": "ga",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "ge",
+       "khoa": "ge",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "gu",
+       "khoa": "gu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "k",
+     "o": {
+      "viet": "ke",
+      "khoa": "ke",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "ka",
+       "khoa": "ka",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "ke",
+       "khoa": "ke",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "ku",
+       "khoa": "ku",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "h",
+     "o": {
+      "viet": "he",
+      "khoa": "he",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "ha",
+       "khoa": "ha",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "he",
+       "khoa": "he",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "hu",
+       "khoa": "hu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "j",
+     "o": {
+      "viet": "ji",
+      "khoa": "ji",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      null,
+      null,
+      {
+       "viet": "ji",
+       "khoa": "ji",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "ju",
+       "khoa": "ju",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "q",
+     "o": {
+      "viet": "qi",
+      "khoa": "qi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      null,
+      null,
+      {
+       "viet": "qi",
+       "khoa": "qi",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "qu",
+       "khoa": "qu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "x",
+     "o": {
+      "viet": "xi",
+      "khoa": "xi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      null,
+      null,
+      {
+       "viet": "xi",
+       "khoa": "xi",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "xu",
+       "khoa": "xu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "zh",
+     "o": {
+      "viet": "zhi",
+      "khoa": "zhi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "zha",
+       "khoa": "zha",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "zhe",
+       "khoa": "zhe",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhi",
+       "khoa": "zhi",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhu",
+       "khoa": "zhu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "ch",
+     "o": {
+      "viet": "chi",
+      "khoa": "chi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "cha",
+       "khoa": "cha",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "che",
+       "khoa": "che",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chi",
+       "khoa": "chi",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chu",
+       "khoa": "chu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "sh",
+     "o": {
+      "viet": "shi",
+      "khoa": "shi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "sha",
+       "khoa": "sha",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "she",
+       "khoa": "she",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shi",
+       "khoa": "shi",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shu",
+       "khoa": "shu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "r",
+     "o": {
+      "viet": "ri",
+      "khoa": "ri",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      null,
+      {
+       "viet": "re",
+       "khoa": "re",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ri",
+       "khoa": "ri",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ru",
+       "khoa": "ru",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "z",
+     "o": {
+      "viet": "zi",
+      "khoa": "zi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "za",
+       "khoa": "za",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "ze",
+       "khoa": "ze",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zi",
+       "khoa": "zi",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zu",
+       "khoa": "zu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "c",
+     "o": {
+      "viet": "ci",
+      "khoa": "ci",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "ca",
+       "khoa": "ca",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "ce",
+       "khoa": "ce",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ci",
+       "khoa": "ci",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "cu",
+       "khoa": "cu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "s",
+     "o": {
+      "viet": "si",
+      "khoa": "si",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "sa",
+       "khoa": "sa",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "se",
+       "khoa": "se",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "si",
+       "khoa": "si",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "su",
+       "khoa": "su",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    }
+   ]
+  },
+  {
+   "ma": "ghep",
+   "nhan": "ai ei ao ou an en ang eng ong",
+   "cot": [
+    {
+     "van": "ai",
+     "o": {
+      "viet": "ai",
+      "khoa": "ai",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ei",
+     "o": {
+      "viet": "ei",
+      "khoa": "ei",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ao",
+     "o": {
+      "viet": "ao",
+      "khoa": "ao",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ou",
+     "o": {
+      "viet": "ou",
+      "khoa": "ou",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "an",
+     "o": {
+      "viet": "an",
+      "khoa": "an",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "en",
+     "o": {
+      "viet": "en",
+      "khoa": "en",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ang",
+     "o": {
+      "viet": "ang",
+      "khoa": "ang",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "eng",
+     "o": {
+      "viet": "eng",
+      "khoa": "eng",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ong",
+     "o": null
+    }
+   ],
+   "hang": [
+    {
+     "phuAm": "b",
+     "o": {
+      "viet": "bo",
+      "khoa": "bo",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "bai",
+       "khoa": "bai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "bei",
+       "khoa": "bei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "bao",
+       "khoa": "bao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "ban",
+       "khoa": "ban",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ben",
+       "khoa": "ben",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "bang",
+       "khoa": "bang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "beng",
+       "khoa": "beng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "p",
+     "o": {
+      "viet": "po",
+      "khoa": "po",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "pai",
+       "khoa": "pai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "pei",
+       "khoa": "pei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "pao",
+       "khoa": "pao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "pou",
+       "khoa": "pou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "pan",
+       "khoa": "pan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "pen",
+       "khoa": "pen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "pang",
+       "khoa": "pang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "peng",
+       "khoa": "peng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "m",
+     "o": {
+      "viet": "mo",
+      "khoa": "mo",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "mai",
+       "khoa": "mai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "mei",
+       "khoa": "mei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "mao",
+       "khoa": "mao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "mou",
+       "khoa": "mou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "man",
+       "khoa": "man",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "men",
+       "khoa": "men",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "mang",
+       "khoa": "mang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "meng",
+       "khoa": "meng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "f",
+     "o": {
+      "viet": "fo",
+      "khoa": "fo",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "fei",
+       "khoa": "fei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "fou",
+       "khoa": "fou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "fan",
+       "khoa": "fan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "fen",
+       "khoa": "fen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "fang",
+       "khoa": "fang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "feng",
+       "khoa": "feng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "d",
+     "o": {
+      "viet": "de",
+      "khoa": "de",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "dai",
+       "khoa": "dai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "dei",
+       "khoa": "dei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "dao",
+       "khoa": "dao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "dou",
+       "khoa": "dou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "dan",
+       "khoa": "dan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "den",
+       "khoa": "den",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "dang",
+       "khoa": "dang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "deng",
+       "khoa": "deng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "dong",
+       "khoa": "dong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "t",
+     "o": {
+      "viet": "te",
+      "khoa": "te",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "tai",
+       "khoa": "tai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "tei",
+       "khoa": "tei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "tao",
+       "khoa": "tao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "tou",
+       "khoa": "tou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "tan",
+       "khoa": "tan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "tang",
+       "khoa": "tang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "teng",
+       "khoa": "teng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "tong",
+       "khoa": "tong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "n",
+     "o": {
+      "viet": "ne",
+      "khoa": "ne",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "nai",
+       "khoa": "nai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nei",
+       "khoa": "nei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nao",
+       "khoa": "nao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nou",
+       "khoa": "nou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nan",
+       "khoa": "nan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nen",
+       "khoa": "nen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nang",
+       "khoa": "nang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "neng",
+       "khoa": "neng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nong",
+       "khoa": "nong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "l",
+     "o": {
+      "viet": "le",
+      "khoa": "le",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "lai",
+       "khoa": "lai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lei",
+       "khoa": "lei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lao",
+       "khoa": "lao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lou",
+       "khoa": "lou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lan",
+       "khoa": "lan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "lang",
+       "khoa": "lang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "leng",
+       "khoa": "leng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "long",
+       "khoa": "long",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "g",
+     "o": {
+      "viet": "ge",
+      "khoa": "ge",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "gai",
+       "khoa": "gai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "gei",
+       "khoa": "gei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "gao",
+       "khoa": "gao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "gou",
+       "khoa": "gou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "gan",
+       "khoa": "gan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "gen",
+       "khoa": "gen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "gang",
+       "khoa": "gang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "geng",
+       "khoa": "geng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "gong",
+       "khoa": "gong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "k",
+     "o": {
+      "viet": "ke",
+      "khoa": "ke",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "kai",
+       "khoa": "kai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kei",
+       "khoa": "kei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kao",
+       "khoa": "kao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kou",
+       "khoa": "kou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kan",
+       "khoa": "kan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ken",
+       "khoa": "ken",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kang",
+       "khoa": "kang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "keng",
+       "khoa": "keng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kong",
+       "khoa": "kong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "h",
+     "o": {
+      "viet": "he",
+      "khoa": "he",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "hai",
+       "khoa": "hai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "hei",
+       "khoa": "hei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "hao",
+       "khoa": "hao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "hou",
+       "khoa": "hou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "han",
+       "khoa": "han",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "hen",
+       "khoa": "hen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "hang",
+       "khoa": "hang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "heng",
+       "khoa": "heng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "hong",
+       "khoa": "hong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "zh",
+     "o": {
+      "viet": "zhi",
+      "khoa": "zhi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "zhai",
+       "khoa": "zhai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhei",
+       "khoa": "zhei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhao",
+       "khoa": "zhao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhou",
+       "khoa": "zhou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhan",
+       "khoa": "zhan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhen",
+       "khoa": "zhen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhang",
+       "khoa": "zhang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zheng",
+       "khoa": "zheng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhong",
+       "khoa": "zhong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "ch",
+     "o": {
+      "viet": "chi",
+      "khoa": "chi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "chai",
+       "khoa": "chai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "chao",
+       "khoa": "chao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chou",
+       "khoa": "chou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chan",
+       "khoa": "chan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chen",
+       "khoa": "chen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chang",
+       "khoa": "chang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "cheng",
+       "khoa": "cheng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chong",
+       "khoa": "chong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "sh",
+     "o": {
+      "viet": "shi",
+      "khoa": "shi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "shai",
+       "khoa": "shai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shei",
+       "khoa": "shei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shao",
+       "khoa": "shao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shou",
+       "khoa": "shou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shan",
+       "khoa": "shan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shen",
+       "khoa": "shen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shang",
+       "khoa": "shang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "sheng",
+       "khoa": "sheng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "r",
+     "o": {
+      "viet": "ri",
+      "khoa": "ri",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      null,
+      {
+       "viet": "rao",
+       "khoa": "rao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "rou",
+       "khoa": "rou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ran",
+       "khoa": "ran",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ren",
+       "khoa": "ren",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "rang",
+       "khoa": "rang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "reng",
+       "khoa": "reng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "rong",
+       "khoa": "rong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "z",
+     "o": {
+      "viet": "zi",
+      "khoa": "zi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "zai",
+       "khoa": "zai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zei",
+       "khoa": "zei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zao",
+       "khoa": "zao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zou",
+       "khoa": "zou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zan",
+       "khoa": "zan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zen",
+       "khoa": "zen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zang",
+       "khoa": "zang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zeng",
+       "khoa": "zeng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zong",
+       "khoa": "zong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "c",
+     "o": {
+      "viet": "ci",
+      "khoa": "ci",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "cai",
+       "khoa": "cai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "cei",
+       "khoa": "cei",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "cao",
+       "khoa": "cao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "cou",
+       "khoa": "cou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "can",
+       "khoa": "can",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "cen",
+       "khoa": "cen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "cang",
+       "khoa": "cang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ceng",
+       "khoa": "ceng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "cong",
+       "khoa": "cong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "s",
+     "o": {
+      "viet": "si",
+      "khoa": "si",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "sai",
+       "khoa": "sai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "sao",
+       "khoa": "sao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "sou",
+       "khoa": "sou",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "san",
+       "khoa": "san",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "sen",
+       "khoa": "sen",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "sang",
+       "khoa": "sang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "seng",
+       "khoa": "seng",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "song",
+       "khoa": "song",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ma": "i",
+   "nhan": "ia ie ian iang iao iu in ing iong",
+   "cot": [
+    {
+     "van": "ia",
+     "o": {
+      "viet": "ya",
+      "khoa": "ya",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ie",
+     "o": {
+      "viet": "ye",
+      "khoa": "ye",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ian",
+     "o": {
+      "viet": "yan",
+      "khoa": "yan",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "iang",
+     "o": {
+      "viet": "yang",
+      "khoa": "yang",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "iao",
+     "o": {
+      "viet": "yao",
+      "khoa": "yao",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "iu",
+     "o": {
+      "viet": "you",
+      "khoa": "you",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "in",
+     "o": {
+      "viet": "yin",
+      "khoa": "yin",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ing",
+     "o": {
+      "viet": "ying",
+      "khoa": "ying",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "iong",
+     "o": {
+      "viet": "yong",
+      "khoa": "yong",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    }
+   ],
+   "hang": [
+    {
+     "phuAm": "b",
+     "o": {
+      "viet": "bo",
+      "khoa": "bo",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "bie",
+       "khoa": "bie",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "bian",
+       "khoa": "bian",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "biao",
+       "khoa": "biao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "bin",
+       "khoa": "bin",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "bing",
+       "khoa": "bing",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "p",
+     "o": {
+      "viet": "po",
+      "khoa": "po",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "pie",
+       "khoa": "pie",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "pian",
+       "khoa": "pian",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "piao",
+       "khoa": "piao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "pin",
+       "khoa": "pin",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ping",
+       "khoa": "ping",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "m",
+     "o": {
+      "viet": "mo",
+      "khoa": "mo",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "mie",
+       "khoa": "mie",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "mian",
+       "khoa": "mian",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "miao",
+       "khoa": "miao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "miu",
+       "khoa": "miu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "min",
+       "khoa": "min",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ming",
+       "khoa": "ming",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "d",
+     "o": {
+      "viet": "de",
+      "khoa": "de",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "dia",
+       "khoa": "dia",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "die",
+       "khoa": "die",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "dian",
+       "khoa": "dian",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "diao",
+       "khoa": "diao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "diu",
+       "khoa": "diu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "ding",
+       "khoa": "ding",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "t",
+     "o": {
+      "viet": "te",
+      "khoa": "te",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "tie",
+       "khoa": "tie",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "tian",
+       "khoa": "tian",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "tiao",
+       "khoa": "tiao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null,
+      {
+       "viet": "ting",
+       "khoa": "ting",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "n",
+     "o": {
+      "viet": "ne",
+      "khoa": "ne",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "nia",
+       "khoa": "nia",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nie",
+       "khoa": "nie",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nian",
+       "khoa": "nian",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "niang",
+       "khoa": "niang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "niao",
+       "khoa": "niao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "niu",
+       "khoa": "niu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nin",
+       "khoa": "nin",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ning",
+       "khoa": "ning",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "l",
+     "o": {
+      "viet": "le",
+      "khoa": "le",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "lia",
+       "khoa": "lia",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lie",
+       "khoa": "lie",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lian",
+       "khoa": "lian",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "liang",
+       "khoa": "liang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "liao",
+       "khoa": "liao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "liu",
+       "khoa": "liu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lin",
+       "khoa": "lin",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ling",
+       "khoa": "ling",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "j",
+     "o": {
+      "viet": "ji",
+      "khoa": "ji",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "jia",
+       "khoa": "jia",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "jie",
+       "khoa": "jie",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "jian",
+       "khoa": "jian",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "jiang",
+       "khoa": "jiang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "jiao",
+       "khoa": "jiao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "jiu",
+       "khoa": "jiu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "jin",
+       "khoa": "jin",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "jing",
+       "khoa": "jing",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "jiong",
+       "khoa": "jiong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "q",
+     "o": {
+      "viet": "qi",
+      "khoa": "qi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "qia",
+       "khoa": "qia",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "qie",
+       "khoa": "qie",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "qian",
+       "khoa": "qian",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "qiang",
+       "khoa": "qiang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "qiao",
+       "khoa": "qiao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "qiu",
+       "khoa": "qiu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "qin",
+       "khoa": "qin",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "qing",
+       "khoa": "qing",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "qiong",
+       "khoa": "qiong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "x",
+     "o": {
+      "viet": "xi",
+      "khoa": "xi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "xia",
+       "khoa": "xia",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "xie",
+       "khoa": "xie",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "xian",
+       "khoa": "xian",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "xiang",
+       "khoa": "xiang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "xiao",
+       "khoa": "xiao",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "xiu",
+       "khoa": "xiu",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "xin",
+       "khoa": "xin",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "xing",
+       "khoa": "xing",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "xiong",
+       "khoa": "xiong",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ma": "u",
+   "nhan": "ua uo uai ui uan un uang ueng",
+   "cot": [
+    {
+     "van": "ua",
+     "o": {
+      "viet": "wa",
+      "khoa": "wa",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "uo",
+     "o": {
+      "viet": "wo",
+      "khoa": "wo",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "uai",
+     "o": {
+      "viet": "wai",
+      "khoa": "wai",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ui",
+     "o": {
+      "viet": "wei",
+      "khoa": "wei",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "uan",
+     "o": {
+      "viet": "wan",
+      "khoa": "wan",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "un",
+     "o": {
+      "viet": "wen",
+      "khoa": "wen",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "uang",
+     "o": {
+      "viet": "wang",
+      "khoa": "wang",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ueng",
+     "o": {
+      "viet": "weng",
+      "khoa": "weng",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    }
+   ],
+   "hang": [
+    {
+     "phuAm": "d",
+     "o": {
+      "viet": "de",
+      "khoa": "de",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "duo",
+       "khoa": "duo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "dui",
+       "khoa": "dui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "duan",
+       "khoa": "duan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "dun",
+       "khoa": "dun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null
+     ]
+    },
+    {
+     "phuAm": "t",
+     "o": {
+      "viet": "te",
+      "khoa": "te",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "tuo",
+       "khoa": "tuo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "tui",
+       "khoa": "tui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "tuan",
+       "khoa": "tuan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "tun",
+       "khoa": "tun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null
+     ]
+    },
+    {
+     "phuAm": "n",
+     "o": {
+      "viet": "ne",
+      "khoa": "ne",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "nuo",
+       "khoa": "nuo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null,
+      {
+       "viet": "nuan",
+       "khoa": "nuan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "nun",
+       "khoa": "nun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null
+     ]
+    },
+    {
+     "phuAm": "l",
+     "o": {
+      "viet": "le",
+      "khoa": "le",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "luo",
+       "khoa": "luo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null,
+      {
+       "viet": "luan",
+       "khoa": "luan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lun",
+       "khoa": "lun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null
+     ]
+    },
+    {
+     "phuAm": "g",
+     "o": {
+      "viet": "ge",
+      "khoa": "ge",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "gua",
+       "khoa": "gua",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "guo",
+       "khoa": "guo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "guai",
+       "khoa": "guai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "gui",
+       "khoa": "gui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "guan",
+       "khoa": "guan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "gun",
+       "khoa": "gun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "guang",
+       "khoa": "guang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "k",
+     "o": {
+      "viet": "ke",
+      "khoa": "ke",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "kua",
+       "khoa": "kua",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kuo",
+       "khoa": "kuo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kuai",
+       "khoa": "kuai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kui",
+       "khoa": "kui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kuan",
+       "khoa": "kuan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kun",
+       "khoa": "kun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "kuang",
+       "khoa": "kuang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "h",
+     "o": {
+      "viet": "he",
+      "khoa": "he",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "hua",
+       "khoa": "hua",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "huo",
+       "khoa": "huo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "huai",
+       "khoa": "huai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "hui",
+       "khoa": "hui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "huan",
+       "khoa": "huan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "hun",
+       "khoa": "hun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "huang",
+       "khoa": "huang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "zh",
+     "o": {
+      "viet": "zhi",
+      "khoa": "zhi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "zhua",
+       "khoa": "zhua",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhuo",
+       "khoa": "zhuo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhuai",
+       "khoa": "zhuai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhui",
+       "khoa": "zhui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhuan",
+       "khoa": "zhuan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhun",
+       "khoa": "zhun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zhuang",
+       "khoa": "zhuang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "ch",
+     "o": {
+      "viet": "chi",
+      "khoa": "chi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "chua",
+       "khoa": "chua",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chuo",
+       "khoa": "chuo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chuai",
+       "khoa": "chuai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chui",
+       "khoa": "chui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chuan",
+       "khoa": "chuan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chun",
+       "khoa": "chun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "chuang",
+       "khoa": "chuang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "sh",
+     "o": {
+      "viet": "shi",
+      "khoa": "shi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "shua",
+       "khoa": "shua",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shuo",
+       "khoa": "shuo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shuai",
+       "khoa": "shuai",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shui",
+       "khoa": "shui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shuan",
+       "khoa": "shuan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shun",
+       "khoa": "shun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "shuang",
+       "khoa": "shuang",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "r",
+     "o": {
+      "viet": "ri",
+      "khoa": "ri",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "rua",
+       "khoa": "rua",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ruo",
+       "khoa": "ruo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "rui",
+       "khoa": "rui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "ruan",
+       "khoa": "ruan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "run",
+       "khoa": "run",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null
+     ]
+    },
+    {
+     "phuAm": "z",
+     "o": {
+      "viet": "zi",
+      "khoa": "zi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "zuo",
+       "khoa": "zuo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "zui",
+       "khoa": "zui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zuan",
+       "khoa": "zuan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "zun",
+       "khoa": "zun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null
+     ]
+    },
+    {
+     "phuAm": "c",
+     "o": {
+      "viet": "ci",
+      "khoa": "ci",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "cuo",
+       "khoa": "cuo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "cui",
+       "khoa": "cui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "cuan",
+       "khoa": "cuan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "cun",
+       "khoa": "cun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null
+     ]
+    },
+    {
+     "phuAm": "s",
+     "o": {
+      "viet": "si",
+      "khoa": "si",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      null,
+      {
+       "viet": "suo",
+       "khoa": "suo",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      {
+       "viet": "sui",
+       "khoa": "sui",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "suan",
+       "khoa": "suan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "sun",
+       "khoa": "sun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null
+     ]
+    }
+   ]
+  },
+  {
+   "ma": "v",
+   "nhan": "üe üan ün",
+   "cot": [
+    {
+     "van": "üe",
+     "o": {
+      "viet": "yue",
+      "khoa": "yue",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "üan",
+     "o": {
+      "viet": "yuan",
+      "khoa": "yuan",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "van": "ün",
+     "o": {
+      "viet": "yun",
+      "khoa": "yun",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    }
+   ],
+   "hang": [
+    {
+     "phuAm": "n",
+     "o": {
+      "viet": "ne",
+      "khoa": "ne",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "nüe",
+       "khoa": "nve",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null,
+      null
+     ]
+    },
+    {
+     "phuAm": "l",
+     "o": {
+      "viet": "le",
+      "khoa": "le",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "lüe",
+       "khoa": "lve",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "lüan",
+       "khoa": "lvan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      null
+     ]
+    },
+    {
+     "phuAm": "j",
+     "o": {
+      "viet": "ji",
+      "khoa": "ji",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "jue",
+       "khoa": "jue",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "juan",
+       "khoa": "juan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "jun",
+       "khoa": "jun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "q",
+     "o": {
+      "viet": "qi",
+      "khoa": "qi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "que",
+       "khoa": "que",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "quan",
+       "khoa": "quan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "qun",
+       "khoa": "qun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
+    {
+     "phuAm": "x",
+     "o": {
+      "viet": "xi",
+      "khoa": "xi",
+      "thanh": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "cacO": [
+      {
+       "viet": "xue",
+       "khoa": "xue",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "xuan",
+       "khoa": "xuan",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      },
+      {
+       "viet": "xun",
+       "khoa": "xun",
+       "thanh": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

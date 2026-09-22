@@ -1,17 +1,21 @@
 /* =============================================================================
-   DANH SÁCH 6 TAB CỦA KHOÁ 1
+   DANH SÁCH TAB CỦA KHOÁ 1
    =============================================================================
 
    Khai báo tab ở ĐÚNG MỘT CHỖ này. Thanh dưới, thanh trên và phần nội dung
    đều đọc từ đây, nên thêm/bớt/đổi tên tab chỉ sửa file này.
 
    Bố cục đã chốt:
-     - Tab "Mục tiêu hôm nay" nằm ở THANH TRÊN, chỉ hiện khi đã đăng nhập.
-     - 5 tab còn lại nằm ở THANH DƯỚI.
+     - "Bài hôm nay" nằm ở THANH TRÊN, chỉ hiện khi đã đăng nhập.
+     - THANH DƯỚI (GĐ 10, quyết định 18.31): Phát âm · Chữ Hán · Từ vựng ·
+       Ngữ pháp · Khám phá. Đồng tự dị nghĩa và Review cuối tuần nằm TRONG
+       Khám phá (sau này thêm Thi thử HSK).
    ============================================================================= */
 
 // Mã tab. Dùng hằng số thay vì gõ chuỗi để không gõ sai chính tả.
 export const TAB = {
+  PHAT_AM: "phat-am",
+  KHAM_PHA: "kham-pha",
   CHU_HAN: "chu-han",
   DONG_TU: "dong-tu",
   TU_VUNG: "tu-vung",
@@ -35,6 +39,27 @@ const thuocTinhChung = {
   strokeLinejoin: "round",
   "aria-hidden": true,
 };
+
+// Phát âm: cái loa và hai vòng sóng âm
+function IconPhatAm(props) {
+  return (
+    <svg {...thuocTinhChung} {...props}>
+      <path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4z" />
+      <path d="M15.5 9a4.2 4.2 0 0 1 0 6" />
+      <path d="M18.5 6.5a8 8 0 0 1 0 11" />
+    </svg>
+  );
+}
+
+// Khám phá: la bàn
+function IconKhamPha(props) {
+  return (
+    <svg {...thuocTinhChung} {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M15.5 8.5 13.4 13.4 8.5 15.5 10.6 10.6z" />
+    </svg>
+  );
+}
 
 // Tab A — Luyện chữ Hán: ô vuông kẻ ô như giấy tập viết chữ Hán (田字格)
 function IconChuHan(props) {
@@ -99,18 +124,18 @@ function IconReview(props) {
    ----------------------------------------------------------------------------- */
 export const TAB_THANH_DUOI = [
   {
+    ma: TAB.PHAT_AM,
+    nhan: "Phát âm",
+    nhanDay: "Phát âm tiếng Trung",
+    Icon: IconPhatAm,
+    moTa: "Bảng pinyin: chạm vào ô để nghe người bản xứ đọc đủ 4 thanh.",
+  },
+  {
     ma: TAB.CHU_HAN,
     nhan: "Chữ Hán",
     nhanDay: "Luyện chữ Hán",
     Icon: IconChuHan,
     moTa: "So sánh tự dạng Trung – Nhật – Phồn thể, âm đọc và thứ tự nét.",
-  },
-  {
-    ma: TAB.DONG_TU,
-    nhan: "Đồng tự",
-    nhanDay: "Đồng tự dị nghĩa",
-    Icon: IconDongTu,
-    moTa: "Từ viết giống nhau giữa tiếng Trung và tiếng Nhật nhưng nghĩa khác.",
   },
   {
     ma: TAB.TU_VUNG,
@@ -127,11 +152,37 @@ export const TAB_THANH_DUOI = [
     moTa: "Ngữ pháp tiếng Trung đối chiếu với cấu trúc tiếng Nhật đã quen.",
   },
   {
+    ma: TAB.KHAM_PHA,
+    nhan: "Khám phá",
+    nhanDay: "Khám phá",
+    Icon: IconKhamPha,
+    moTa: "Đồng tự dị nghĩa, Review cuối tuần, và các chức năng mở rộng.",
+  },
+];
+
+/**
+ * Các mục bên trong Khám phá. Mục chưa có (sapCo) hiện mờ, không bấm được.
+ * IconDongTu, IconReview dùng lại biểu tượng cũ của hai tab này.
+ */
+export const MUC_KHAM_PHA = [
+  {
+    ma: TAB.DONG_TU,
+    nhan: "Đồng tự dị nghĩa",
+    Icon: IconDongTu,
+    moTa: "Từ viết giống nhau giữa tiếng Trung và tiếng Nhật nhưng nghĩa khác.",
+  },
+  {
     ma: TAB.REVIEW,
-    nhan: "Review",
-    nhanDay: "Review cuối tuần",
+    nhan: "Review cuối tuần",
     Icon: IconReview,
     moTa: "Tổng kết tuần, các mục sai nhiều nhất và biểu đồ so với tuần trước.",
+  },
+  {
+    ma: "thi-thu",
+    nhan: "Thi thử HSK",
+    Icon: IconNguPhap,
+    moTa: "Làm bài thi thử theo dạng đề HSK.",
+    sapCo: true,
   },
 ];
 

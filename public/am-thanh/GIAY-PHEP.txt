@@ -1,0 +1,6 @@
+ÂM THANH ÂM TIẾT PINYIN — NGUỒN VÀ GIẤY PHÉP
+
+- am-tiet/ : bộ audio-cmn, https://github.com/hugolpz/audio-cmn
+  Giọng đọc: Chen Wang. Quản lý dự án: Hugo Lopez (PLIDAM, INALCO).
+  Giấy phép: CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0/).
+  Riyi chỉ đổi tên file cho thống nhất, không sửa nội dung âm thanh.

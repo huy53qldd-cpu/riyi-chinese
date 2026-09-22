@@ -1,5 +1,5 @@
 {
-  "phienBanDuLieu": 9,
+  "phienBanDuLieu": 10,
   "capNhatLuc": "2026-09-21",
   "ghiChu": "App đọc file này đầu tiên khi mở. Thấy phienBanDuLieu lớn hơn bản đang có thì tải lại dữ liệu và xoá cache cũ. GĐ 9: đủ 655 chữ Hán và 1000 từ vựng HSK 1-3 (bản nháp, còn cangKiemTra); 61 cặp đồng tự dị nghĩa và 70 điểm ngữ pháp HSK 1-3.",
   "nguon": {
@@ -19,7 +19,8 @@
     "ngu-phap-hsk1": { "duongDan": "ngu-phap-hsk1.json", "phienBan": 3, "soMuc": 24, "sanSang": true },
     "ngu-phap-hsk2": { "duongDan": "ngu-phap-hsk2.json", "phienBan": 3, "soMuc": 23, "sanSang": true },
     "ngu-phap-hsk3": { "duongDan": "ngu-phap-hsk3.json", "phienBan": 1, "soMuc": 23, "sanSang": true },
-    "lo-trinh": { "duongDan": "lo-trinh.json", "phienBan": 2, "soMuc": 131, "sanSang": true }
+    "lo-trinh": { "duongDan": "lo-trinh.json", "phienBan": 2, "soMuc": 131, "sanSang": true },
+    "bang-pinyin": { "duongDan": "bang-pinyin.json", "phienBan": 1, "soMuc": 5, "sanSang": true }
   },
   "tepMau": {
     "chu-han-mau": "mau/chu-han-mau.json",
