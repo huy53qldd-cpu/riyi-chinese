@@ -261,35 +261,29 @@ function PhanBai({ phan, bai, noiDung, buocXong, batDau }) {
         <p className="m-0 text-[length:var(--co-chu-latin)] font-semibold">{noiDung.nguPhap.ten}</p>
       )}
 
-      {/* Các bước: làm lần lượt, bước sau mở khi xong bước trước */}
-      <ol className="m-0 flex list-none flex-col gap-2 p-0">
+      {/* Các bước: làm lần lượt, bước sau mở khi xong bước trước. Cùng kiểu và
+          cùng cỡ với nút luyện tập ở tab Từ vựng (quyết định 18.23): bước
+          đang tới lượt là nút cam; bước đã xong viền xanh có dấu ✓; bước chưa
+          mở thì mờ và không bấm được. */}
+      <div className="flex flex-wrap gap-2">
         {phan.buoc.map((b, i) => {
           const xong = buocXong.includes(b.ma);
           const mo = i === 0 || buocXong.includes(phan.buoc[i - 1].ma);
           return (
-            <li key={b.ma}>
-              <button
-                type="button"
-                onClick={() => batDau(b.ma)}
-                disabled={!mo}
-                className={`flex w-full items-center gap-3 rounded-[var(--bo-goc-nho)] border px-3 py-2.5 text-left text-[length:var(--co-chu-latin)] font-semibold transition-colors disabled:opacity-45 ${
-                  xong ? "border-dung" : mo ? "border-nhan" : "border-vien"
-                }`}
-              >
-                <BieuTuong ten={b.bieuTuong} />
-                <span className="min-w-0 flex-1">{b.nhan}</span>
-                <span
-                  className={`text-[length:var(--co-chu-latin-nho)] font-bold whitespace-nowrap ${
-                    xong ? "text-dung" : "text-chu-mo"
-                  }`}
-                >
-                  {xong ? "✓ Xong" : mo ? "Bắt đầu" : "Chưa mở"}
-                </span>
-              </button>
-            </li>
+            <button
+              key={b.ma}
+              type="button"
+              onClick={() => batDau(b.ma)}
+              disabled={!mo}
+              aria-label={`${b.nhan}${xong ? ", đã xong" : mo ? "" : ", chưa mở"}`}
+              className={xong ? kieu.nutDaXong : kieu.nutChinh}
+            >
+              <BieuTuong ten={xong ? "kiem-tra" : b.bieuTuong} />
+              {b.nhan}
+            </button>
           );
         })}
-      </ol>
+      </div>
     </div>
   );
 }

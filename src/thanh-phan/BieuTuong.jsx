@@ -25,6 +25,7 @@ import {
   ChevronDown,
   ChevronLeft,
   ChevronRight,
+  ChevronUp,
   CircleCheck,
   Eye,
   EyeOff,
@@ -82,6 +83,7 @@ const HINH = {
   // Điều hướng
   "quay-lai": ArrowLeft,
   "xem-them": ChevronDown,
+  "thu-gon": ChevronUp,
   "truoc": ChevronLeft,
   "sau": ChevronRight,
   "doi-khoa": ArrowLeftRight,

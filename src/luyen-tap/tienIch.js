@@ -32,6 +32,9 @@ export function chonKhacNhau(nguon, soLuong, tru = []) {
 export const kieu = {
   nutChinh:
     "border-nhan bg-nhan text-chu-tren-nhan inline-flex items-center justify-center gap-2 rounded-[var(--bo-goc-tron)] border px-5 py-2.5 text-[length:var(--co-chu-latin)] font-bold disabled:opacity-40",
+  // Cùng kích thước nút chính nhưng viền xanh, nền trong: bước đã xong ở Bài hôm nay
+  nutDaXong:
+    "border-dung text-dung inline-flex items-center justify-center gap-2 rounded-[var(--bo-goc-tron)] border bg-transparent px-5 py-2.5 text-[length:var(--co-chu-latin)] font-bold",
   nutPhu:
     "border-vien inline-flex items-center justify-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold disabled:opacity-40",
   khung:
