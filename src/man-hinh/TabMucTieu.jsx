@@ -4,99 +4,46 @@
 
    Mở bằng cách bấm thanh trên cùng.
 
-   Mục tiêu ngày (quyết định 18.17 – 18.20): học xong "Bài hôm nay" gồm
-   5 chữ Hán + 10 từ vựng + 1 điểm ngữ pháp, lấy theo lộ trình dễ → khó
+   Mục tiêu ngày (quyết định 18.17 – 18.20, 18.24 – 18.27): học xong "Bài hôm
+   nay" gồm 5 chữ Hán + 10 từ vựng + 3 điểm ngữ pháp, lấy theo lộ trình dễ → khó
    (public/du-lieu/lo-trinh.json). Mỗi phần làm lần lượt các bước (xem
    src/luyen-tap/baiHoc.js); trả lời sai thì được hỏi lại tới khi đúng. Xong
    hết các bước của cả 3 phần mới đạt mục tiêu ngày.
 
-   Học xong bài thì bài tiếp theo mở ngay, muốn học trước thì học được. Nghỉ
-   ngày nào thì hôm sau học tiếp bài đang dở, không bị dồn bài.
+   Mỗi ngày một bài mới. Phần hôm qua còn thiếu được cộng thêm vào hôm nay
+   (luật trong baiHoc.js, hàm chuyenNgay). Xong bài rồi thì học trước được.
 
    Chỉ dùng được khi đã đăng nhập.
    ============================================================================= */
 
-import { useEffect, useMemo, useState } from "react";
-
-import { taiChuHan, taiLoTrinh, taiNguPhap, taiTuVung } from "../du-lieu/taiDuLieu.js";
-import { CAC_PHAN, TONG_BUOC, cauHoiChoBuoc, layBai, noiDungBai } from "../luyen-tap/baiHoc.js";
-import { capChuHan, capTuVung } from "../luyen-tap/capLatThe.js";
-import PhienLuyenTap from "../luyen-tap/PhienLuyenTap.jsx";
-import TroChoiLatThe from "../luyen-tap/TroChoiLatThe.jsx";
+import { CAC_PHAN, TONG_BUOC } from "../luyen-tap/baiHoc.js";
+import { NutNhiemVu, useBaiHomNay, useNhiemVu } from "../luyen-tap/NhiemVuHomNay.jsx";
 import { kieu } from "../luyen-tap/tienIch.js";
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import { chuoiNgay, congNgay, docNgay } from "../nguoi-dung/nhatKy.js";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
 import MatTroi from "../thanh-phan/MatTroi.jsx";
+import VanBanPha from "../thanh-phan/VanBanPha.jsx";
 import { NutDangNhap } from "./CaiDat.jsx";
 
 const THU = ["CN", "T2", "T3", "T4", "T5", "T6", "T7"];
 
 export default function TabMucTieu({ quayLai }) {
   const nd = useNguoiDung();
-  const [du, setDu] = useState(null); // dữ liệu lộ trình + nội dung
-  const [loi, setLoi] = useState(false);
-  const [dangLam, setDangLam] = useState(null); // mã bước đang làm
-
-  useEffect(() => {
-    let conSong = true;
-    Promise.all([taiLoTrinh(), taiChuHan(), taiTuVung(), taiNguPhap()])
-      .then(([loTrinh, chuHan, tuVung, nguPhap]) => {
-        if (!conSong) return;
-        setDu({
-          loTrinh,
-          chuHan: new Map(chuHan.map((c) => [c.id, c])),
-          tuVung: { danhSach: tuVung.danhSach, map: new Map(tuVung.danhSach.map((t) => [t.id, t])) },
-          nguPhap: new Map(nguPhap.map((d) => [d.id, d])),
-        });
-      })
-      .catch(() => conSong && setLoi(true));
-    return () => {
-      conSong = false;
-    };
-  }, []);
-
-  const baiSo = nd.loTrinh.bai;
-  const bai = useMemo(() => (du ? layBai(du.loTrinh, baiSo) : null), [du, baiSo]);
-  const noiDung = useMemo(() => (bai ? noiDungBai(bai, du) : null), [bai, du]);
+  const { loi, bai, noiDung, du } = useBaiHomNay();
+  const { batDau, manHinh } = useNhiemVu(noiDung, du, bai?.so);
 
   if (!nd.daDangNhap) {
     return <CanDangNhap tieuDe="Bài hôm nay" quayLai={quayLai} />;
   }
-
-  // --- Đang làm một bước ---
-  if (dangLam && noiDung) {
-    const buoc = CAC_PHAN.flatMap((p) => p.buoc).find((b) => b.ma === dangLam);
-    const xongBuoc = () => nd.hoanThanhBuoc(dangLam, TONG_BUOC);
-    const veBai = () => setDangLam(null);
-    if (buoc.laGame) {
-      return (
-        <TroChoiLatThe
-          tieuDe={`Bài ${bai.so}: ${buoc.nhan}`}
-          taoCap={() => (dangLam === "chu-lat-the" ? capChuHan(noiDung.chu) : capTuVung(noiDung.tu))}
-          khoaKyLuc={dangLam === "chu-lat-the" ? "chu-han" : "tu-vung"}
-          quayLai={veBai}
-          khiXong={xongBuoc}
-        />
-      );
-    }
-    return (
-      <PhienLuyenTap
-        tieuDe={`Bài ${bai.so}: ${buoc.nhan}`}
-        taoDanhSach={() => cauHoiChoBuoc(dangLam, noiDung, du)}
-        quayLai={veBai}
-        lamLaiKhiSai
-        khiXong={xongBuoc}
-      />
-    );
-  }
+  if (manHinh) return manHinh;
 
   const td = nd.tienDoHomNay;
   const homNay = chuoiNgay();
-  const ngayHomNay = nd.nhatKy[homNay];
-  const baiVuaXong = ngayHomNay?.baiXong?.includes(baiSo - 1) ? baiSo - 1 : null;
   const soBuocXong = nd.loTrinh.buoc.length;
+  const xongHet = soBuocXong >= TONG_BUOC;
+  const coThem = Boolean(noiDung && noiDung.them.size > 0);
 
   return (
     <section className="flex flex-col gap-5">
@@ -145,15 +92,30 @@ export default function TabMucTieu({ quayLai }) {
         </p>
       </div>
 
-      {baiVuaXong && (
+      {coThem && (
         <div className="bg-nhan-nhat flex flex-col gap-1 rounded-[var(--bo-goc)] p-4">
+          <p className="m-0 text-[length:var(--co-chu-latin)] font-bold">Hôm nay có phần ôn thêm</p>
+          <p className="m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+            Hôm qua còn phần chưa xong nên hôm nay được cộng thêm (có nhãn “ôn
+            thêm” bên dưới): chưa tập viết thì viết thêm 1 chữ, chưa chơi xong
+            thì trò chơi thêm 1 cặp thẻ, từ vựng và ngữ pháp chưa xong thì dồn
+            sang hôm nay.
+          </p>
+        </div>
+      )}
+
+      {xongHet && (
+        <div className="bg-nhan-nhat flex flex-col gap-2 rounded-[var(--bo-goc)] p-4">
           <p className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-            Bạn vừa học xong bài {((baiVuaXong - 1) % (du?.loTrinh.baiHoc.length || 1)) + 1}!
+            Bạn đã học xong bài hôm nay!
           </p>
           <p className="m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-            Mục tiêu hôm nay đã đạt. Bài tiếp theo đã mở bên dưới: bạn có thể học
-            trước, hoặc để dành cho ngày mai.
+            Ngày mai bài mới sẽ tự mở. Muốn học trước thì bấm nút dưới đây.
           </p>
+          <button type="button" onClick={nd.hocTruoc} className={`${kieu.nutChinh} self-start`}>
+            <BieuTuong ten="tiep-theo" />
+            Học trước bài tiếp theo
+          </button>
         </div>
       )}
 
@@ -162,19 +124,12 @@ export default function TabMucTieu({ quayLai }) {
           Không tải được bài học. Hãy kiểm tra mạng rồi mở lại.
         </p>
       )}
-      {!du && !loi && <p className={kieu.chuNho}>Đang tải bài học...</p>}
+      {!noiDung && !loi && <p className={kieu.chuNho}>Đang tải bài học...</p>}
 
       {/* --- Ba phần của bài --- */}
       {noiDung &&
         CAC_PHAN.map((phan) => (
-          <PhanBai
-            key={phan.ma}
-            phan={phan}
-            bai={bai}
-            noiDung={noiDung}
-            buocXong={nd.loTrinh.buoc}
-            batDau={setDangLam}
-          />
+          <PhanBai key={phan.ma} phan={phan} noiDung={noiDung} batDau={batDau} />
         ))}
 
       {/* --- 7 ngày gần nhất --- */}
@@ -205,37 +160,45 @@ export default function TabMucTieu({ quayLai }) {
       </div>
 
       <p className={kieu.chuNho}>
-        Mỗi ngày một bài: 5 chữ Hán, 10 từ vựng, 1 điểm ngữ pháp, xếp từ dễ đến
-        khó. Làm đủ các bước của cả ba phần mới đạt mục tiêu ngày. Trả lời sai
-        thì được hỏi lại cho tới khi đúng.
+        Mỗi ngày một bài mới: 5 chữ Hán, 10 từ vựng, 3 điểm ngữ pháp, xếp từ dễ
+        đến khó. Làm đủ các bước của cả ba phần mới đạt mục tiêu ngày. Trả lời
+        sai thì được hỏi lại cho tới khi đúng. Các nút luyện tập trong tab Chữ
+        Hán, Từ vựng, Ngữ pháp cũng chính là các bước này.
       </p>
     </section>
+  );
+}
+
+/** Nhãn nhỏ "ôn thêm" cho mục cộng thêm từ hôm qua. */
+export function NhanOnThem() {
+  return (
+    <span className="bg-nhan-nhat text-chu rounded-[var(--bo-goc-tron)] px-2 py-0.5 text-[length:0.6875rem] font-bold whitespace-nowrap">
+      ôn thêm
+    </span>
   );
 }
 
 /* -----------------------------------------------------------------------------
    MỘT PHẦN CỦA BÀI: xem trước nội dung, rồi các bước làm lần lượt
    ----------------------------------------------------------------------------- */
-function PhanBai({ phan, bai, noiDung, buocXong, batDau }) {
+function PhanBai({ phan, noiDung, batDau }) {
+  const nd = useNguoiDung();
+  const buocXong = nd.loTrinh.buoc;
   const soXong = phan.buoc.filter((b) => buocXong.includes(b.ma)).length;
-  const onTap = (phan.ma === "tu" && bai.tuOnTap) || (phan.ma === "np" && bai.nguPhapOnTap);
+  const cacChu = [
+    ...noiDung.chuViet,
+    ...noiDung.chuGame.filter((c) => !noiDung.chuViet.includes(c)),
+  ];
   const tieuDe = {
     chu: `${noiDung.chu.length} chữ Hán`,
     tu: `${noiDung.tu.length} từ vựng`,
-    np: "1 điểm ngữ pháp",
+    np: `${noiDung.np.length} điểm ngữ pháp`,
   }[phan.ma];
 
   return (
     <div className={`${kieu.khung} gap-3`}>
       <div className="flex items-baseline justify-between gap-2">
-        <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-          {tieuDe}
-          {onTap && (
-            <span className="text-chu-mo ml-2 text-[length:var(--co-chu-latin-nho)] font-semibold">
-              (ôn tập)
-            </span>
-          )}
-        </h2>
+        <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">{tieuDe}</h2>
         <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold whitespace-nowrap">
           {soXong === phan.buoc.length ? "Đã xong" : `${soXong}/${phan.buoc.length} bước`}
         </span>
@@ -243,47 +206,43 @@ function PhanBai({ phan, bai, noiDung, buocXong, batDau }) {
 
       {/* Xem trước nội dung: Trung → Nhật → Việt */}
       {phan.ma === "chu" && (
-        <div className="flex flex-wrap gap-x-4 gap-y-1">
-          {noiDung.chu.map((c) => {
+        <div className="flex flex-wrap items-end gap-x-4 gap-y-1">
+          {cacChu.map((c) => {
             const am = c.amDoc.pinyin.find((a) => a.chinh) ?? c.amDoc.pinyin[0];
-            return <ChuTrung key={c.id} amTiet={[{ chu: c.gianThe, pinyin: am?.am ?? "" }]} />;
+            return (
+              <span key={c.id} className="inline-flex flex-col items-center">
+                <ChuTrung amTiet={[{ chu: c.gianThe, pinyin: am?.am ?? "" }]} />
+                {noiDung.them.has(c.id) && <NhanOnThem />}
+              </span>
+            );
           })}
         </div>
       )}
       {phan.ma === "tu" && (
-        <div className="flex flex-wrap gap-x-4 gap-y-1">
+        <div className="flex flex-wrap items-end gap-x-4 gap-y-1">
           {noiDung.tu.map((t) => (
-            <ChuTrung key={t.id} amTiet={ghepAmTiet(t.tu, t.pinyin)} />
+            <span key={t.id} className="inline-flex flex-col items-center">
+              <ChuTrung amTiet={ghepAmTiet(t.tu, t.pinyin)} />
+              {noiDung.them.has(t.id) && <NhanOnThem />}
+            </span>
           ))}
         </div>
       )}
-      {phan.ma === "np" && noiDung.nguPhap && (
-        <p className="m-0 text-[length:var(--co-chu-latin)] font-semibold">{noiDung.nguPhap.ten}</p>
+      {phan.ma === "np" && (
+        <ul className="m-0 flex list-none flex-col gap-1 p-0">
+          {noiDung.np.map((d) => (
+            <li
+              key={d.id}
+              className="flex flex-wrap items-center gap-2 text-[length:var(--co-chu-latin)] font-semibold"
+            >
+              <VanBanPha noiDung={d.ten} />
+              {noiDung.them.has(d.id) && <NhanOnThem />}
+            </li>
+          ))}
+        </ul>
       )}
 
-      {/* Các bước: làm lần lượt, bước sau mở khi xong bước trước. Cùng kiểu và
-          cùng cỡ với nút luyện tập ở tab Từ vựng (quyết định 18.23): bước
-          đang tới lượt là nút cam; bước đã xong viền xanh có dấu ✓; bước chưa
-          mở thì mờ và không bấm được. */}
-      <div className="flex flex-wrap gap-2">
-        {phan.buoc.map((b, i) => {
-          const xong = buocXong.includes(b.ma);
-          const mo = i === 0 || buocXong.includes(phan.buoc[i - 1].ma);
-          return (
-            <button
-              key={b.ma}
-              type="button"
-              onClick={() => batDau(b.ma)}
-              disabled={!mo}
-              aria-label={`${b.nhan}${xong ? ", đã xong" : mo ? "" : ", chưa mở"}`}
-              className={xong ? kieu.nutDaXong : kieu.nutChinh}
-            >
-              <BieuTuong ten={xong ? "kiem-tra" : b.bieuTuong} />
-              {b.nhan}
-            </button>
-          );
-        })}
-      </div>
+      <NutNhiemVu maPhan={phan.ma} batDau={batDau} />
     </div>
   );
 }

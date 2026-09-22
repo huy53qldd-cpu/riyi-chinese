@@ -2,7 +2,8 @@
 """
 Công cụ DỰNG LỘ TRÌNH BÀI HỌC (GĐ 10, quyết định 18.17 – 18.20).
 
-Mỗi ngày học một "Bài hôm nay": 5 chữ Hán + 10 từ vựng + 1 điểm ngữ pháp.
+Mỗi ngày học một "Bài hôm nay": 5 chữ Hán + 10 từ vựng + 3 điểm ngữ pháp
+(từ 1 lên 3 điểm theo quyết định 18.24).
 File này xếp toàn bộ HSK 1–3 thành các bài theo thứ tự DỄ → KHÓ:
 
   TỪ VỰNG
@@ -22,7 +23,8 @@ File này xếp toàn bộ HSK 1–3 thành các bài theo thứ tự DỄ → K
   NGỮ PHÁP
     - Theo cấp HSK. Trong các điểm còn lại, chọn điểm có câu ví dụ dùng nhiều
       từ ĐÃ HỌC nhất (đếm theo cách chia mảnh câu tachTu).
-    - 70 điểm = 70 bài đầu; từ bài 71 là ÔN LẠI, lần lượt từ điểm học sớm nhất.
+    - 3 điểm mỗi bài: 70 điểm = 24 bài đầu (bài 24 có 1 điểm mới + 2 điểm ôn);
+      từ bài 25 là ÔN LẠI 3 điểm một bài, lần lượt từ điểm học sớm nhất.
 
 CÁCH CHẠY:
     npm run dung-lo-trinh
@@ -39,7 +41,7 @@ JIEBA = Path("cong-cu/nguon-mo/jieba-dict.txt")
 RA = DU_LIEU / "lo-trinh.json"
 NGAY = "2026-09-22"
 
-SO_TU, SO_CHU = 10, 5
+SO_TU, SO_CHU, SO_NGU_PHAP = 10, 5, 3
 
 
 def doc(ten):
@@ -129,7 +131,8 @@ def dung():
     con_diem = list(ngu_phap)
     thu_tu_diem = []  # điểm mới của từng bài (bài 1..70)
     da_hoc_tu = set()
-    for i in range(min(so_bai, len(ngu_phap))):
+    for k in range(len(ngu_phap)):
+        i = k // SO_NGU_PHAP  # bài thứ i (từ 0) nhận điểm thứ k
         if i < len(nhom_tu):
             da_hoc_tu.update(t["tu"] for t in nhom_tu[i])
         cap_bai = nhom_tu[min(i, len(nhom_tu) - 1)][0]["capHsk"]
@@ -162,27 +165,33 @@ def dung():
             tu_ids = [t["id"] for t in (co_chu + con)[:SO_TU]]
             cap = max(chu_theo_mat[c]["capHsk"] for c in chu_moi_bai[i])
             on_tu = True
-        if i < len(thu_tu_diem):
-            np_id, on_np = thu_tu_diem[i], False
-        else:
-            np_id, on_np = thu_tu_diem[(i - len(thu_tu_diem)) % len(thu_tu_diem)], True
+        # 3 điểm của bài: điểm mới nếu còn, thiếu thì lấy điểm ôn lần lượt từ đầu
+        np_ids, on_np = [], []
+        for j in range(SO_NGU_PHAP):
+            k = i * SO_NGU_PHAP + j
+            if k < len(thu_tu_diem):
+                np_ids.append(thu_tu_diem[k])
+                on_np.append(False)
+            else:
+                np_ids.append(thu_tu_diem[(k - len(thu_tu_diem)) % len(thu_tu_diem)])
+                on_np.append(True)
         bai_hoc.append({
             "so": so,
             "capHsk": cap,
             "chu": chu_ids,
             "tu": tu_ids,
             "tuOnTap": on_tu,
-            "nguPhap": np_id,
+            "nguPhap": np_ids,
             "nguPhapOnTap": on_np,
         })
 
     RA.write_text(
         json.dumps({
             "loai": "lo-trinh",
-            "phienBan": 1,
+            "phienBan": 2,
             "capNhatLuc": NGAY,
             "nguon": "Xếp từ HSK 1–3 (đại cương 2025-11) theo cấp và độ thông dụng (tần suất trong từ điển jieba, giấy phép MIT). Chữ Hán lấy từ chính các từ của bài; ngữ pháp theo cấp, ưu tiên điểm có câu ví dụ dùng từ đã học.",
-            "moiBai": {"chu": SO_CHU, "tu": SO_TU, "nguPhap": 1},
+            "moiBai": {"chu": SO_CHU, "tu": SO_TU, "nguPhap": SO_NGU_PHAP},
             "soBai": so_bai,
             "baiHoc": bai_hoc,
         }, ensure_ascii=False, indent=1) + "\n",
@@ -199,7 +208,7 @@ def dung():
             f"  Bài {b['so']:3} HSK{b['capHsk']}: "
             f"{' '.join(ten_chu[c] for c in b['chu'])} | "
             f"{' '.join(ten_tu[t] for t in b['tu'])}{' (ôn)' if b['tuOnTap'] else ''} | "
-            f"{ten_np[b['nguPhap']]}{' (ôn)' if b['nguPhapOnTap'] else ''}"
+            f"{' / '.join(ten_np[n][:18] + (' (ôn)' if o else '') for n, o in zip(b['nguPhap'], b['nguPhapOnTap']))}"
         )
     thieu_ts = [t["tu"] for t in tu_vung if tan_suat_tu(t["tu"], ts) == 0]
     print(f"Từ không có trong bảng tần suất (xếp cuối cấp): {len(thieu_ts)}: {' '.join(thieu_ts[:40])}")

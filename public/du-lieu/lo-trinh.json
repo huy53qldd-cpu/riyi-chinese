@@ -1,12 +1,12 @@
 {
  "loai": "lo-trinh",
- "phienBan": 1,
+ "phienBan": 2,
  "capNhatLuc": "2026-09-22",
  "nguon": "Xếp từ HSK 1–3 (đại cương 2025-11) theo cấp và độ thông dụng (tần suất trong từ điển jieba, giấy phép MIT). Chữ Hán lấy từ chính các từ của bài; ngữ pháp theo cấp, ưu tiên điểm có câu ví dụ dùng từ đã học.",
  "moiBai": {
   "chu": 5,
   "tu": 10,
-  "nguPhap": 1
+  "nguPhap": 3
  },
  "soBai": 131,
  "baiHoc": [
@@ -33,8 +33,16 @@
     "tu-0170"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0004",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0004",
+    "np-0008",
+    "np-0002"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 2,
@@ -59,8 +67,16 @@
     "tu-0043"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0009",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0009",
+    "np-0003",
+    "np-0021"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 3,
@@ -85,8 +101,16 @@
     "tu-0131"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0003",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0011",
+    "np-0016",
+    "np-0005"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 4,
@@ -111,8 +135,16 @@
     "tu-0123"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0011",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0022",
+    "np-0007",
+    "np-0010"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 5,
@@ -137,8 +169,16 @@
     "tu-0229"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0021",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0024",
+    "np-0023",
+    "np-0017"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 6,
@@ -163,8 +203,16 @@
     "tu-0209"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0024",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0006",
+    "np-0028",
+    "np-0001"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 7,
@@ -189,8 +237,16 @@
     "tu-0085"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0006",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0027",
+    "np-0019",
+    "np-0020"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 8,
@@ -215,8 +271,16 @@
     "tu-0249"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0005",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0025",
+    "np-0018",
+    "np-0026"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 9,
@@ -241,8 +305,16 @@
     "tu-0181"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0019",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0031",
+    "np-0040",
+    "np-0032"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 10,
@@ -267,8 +339,16 @@
     "tu-0278"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0002",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0015",
+    "np-0039",
+    "np-0014"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 11,
@@ -293,8 +373,16 @@
     "tu-0239"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0007",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0038",
+    "np-0045",
+    "np-0043"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 12,
@@ -319,8 +407,16 @@
     "tu-0053"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0001",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0037",
+    "np-0044",
+    "np-0047"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 13,
@@ -345,8 +441,16 @@
     "tu-0259"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0008",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0034",
+    "np-0035",
+    "np-0012"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 14,
@@ -371,8 +475,16 @@
     "tu-0046"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0010",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0033",
+    "np-0041",
+    "np-0036"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 15,
@@ -397,8 +509,16 @@
     "tu-0054"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0017",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0029",
+    "np-0042",
+    "np-0030"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 16,
@@ -423,8 +543,16 @@
     "tu-0095"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0016",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0046",
+    "np-0013",
+    "np-0064"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 17,
@@ -449,8 +577,16 @@
     "tu-0168"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0022",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0070",
+    "np-0069",
+    "np-0061"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 18,
@@ -475,8 +611,16 @@
     "tu-0057"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0028",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0068",
+    "np-0065",
+    "np-0066"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 19,
@@ -501,8 +645,16 @@
     "tu-0255"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0018",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0059",
+    "np-0063",
+    "np-0052"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 20,
@@ -527,8 +679,16 @@
     "tu-0214"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0026",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0058",
+    "np-0054",
+    "np-0062"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 21,
@@ -553,8 +713,16 @@
     "tu-0129"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0023",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0053",
+    "np-0056",
+    "np-0055"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 22,
@@ -579,8 +747,16 @@
     "tu-0047"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0020",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0067",
+    "np-0048",
+    "np-0050"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 23,
@@ -605,8 +781,16 @@
     "tu-0135"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0025",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0060",
+    "np-0049",
+    "np-0051"
+   ],
+   "nguPhapOnTap": [
+    false,
+    false,
+    false
+   ]
   },
   {
    "so": 24,
@@ -631,8 +815,16 @@
     "tu-0006"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0027",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0057",
+    "np-0004",
+    "np-0008"
+   ],
+   "nguPhapOnTap": [
+    false,
+    true,
+    true
+   ]
   },
   {
    "so": 25,
@@ -657,8 +849,16 @@
     "tu-0074"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0031",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0002",
+    "np-0009",
+    "np-0003"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 26,
@@ -683,8 +883,16 @@
     "tu-0176"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0039",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0021",
+    "np-0011",
+    "np-0016"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 27,
@@ -709,8 +917,16 @@
     "tu-0236"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0040",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0005",
+    "np-0022",
+    "np-0007"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 28,
@@ -735,8 +951,16 @@
     "tu-0127"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0032",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0010",
+    "np-0024",
+    "np-0023"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 29,
@@ -761,8 +985,16 @@
     "tu-0120"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0043",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0017",
+    "np-0006",
+    "np-0028"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 30,
@@ -787,8 +1019,16 @@
     "tu-0266"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0044",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0001",
+    "np-0027",
+    "np-0019"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 31,
@@ -813,8 +1053,16 @@
     "tu-0494"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0037",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0020",
+    "np-0025",
+    "np-0018"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 32,
@@ -839,8 +1087,16 @@
     "tu-0400"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0038",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0026",
+    "np-0031",
+    "np-0040"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 33,
@@ -865,8 +1121,16 @@
     "tu-0319"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0014",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0032",
+    "np-0015",
+    "np-0039"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 34,
@@ -891,8 +1155,16 @@
     "tu-0335"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0047",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0014",
+    "np-0038",
+    "np-0045"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 35,
@@ -917,8 +1189,16 @@
     "tu-0323"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0042",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0043",
+    "np-0037",
+    "np-0044"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 36,
@@ -943,8 +1223,16 @@
     "tu-0432"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0041",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0047",
+    "np-0034",
+    "np-0035"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 37,
@@ -969,8 +1257,16 @@
     "tu-0337"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0015",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0012",
+    "np-0033",
+    "np-0041"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 38,
@@ -995,8 +1291,16 @@
     "tu-0352"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0034",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0036",
+    "np-0029",
+    "np-0042"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 39,
@@ -1021,8 +1325,16 @@
     "tu-0381"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0045",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0030",
+    "np-0046",
+    "np-0013"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 40,
@@ -1047,8 +1359,16 @@
     "tu-0326"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0035",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0064",
+    "np-0070",
+    "np-0069"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 41,
@@ -1073,8 +1393,16 @@
     "tu-0307"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0013",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0061",
+    "np-0068",
+    "np-0065"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 42,
@@ -1099,8 +1427,16 @@
     "tu-0487"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0036",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0066",
+    "np-0059",
+    "np-0063"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 43,
@@ -1125,8 +1461,16 @@
     "tu-0310"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0012",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0052",
+    "np-0058",
+    "np-0054"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 44,
@@ -1151,8 +1495,16 @@
     "tu-0303"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0033",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0062",
+    "np-0053",
+    "np-0056"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 45,
@@ -1177,8 +1529,16 @@
     "tu-0470"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0046",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0055",
+    "np-0067",
+    "np-0048"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 46,
@@ -1203,8 +1563,16 @@
     "tu-0336"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0030",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0050",
+    "np-0060",
+    "np-0049"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 47,
@@ -1229,8 +1597,16 @@
     "tu-0302"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0029",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0051",
+    "np-0057",
+    "np-0004"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 48,
@@ -1255,8 +1631,16 @@
     "tu-0460"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0063",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0008",
+    "np-0002",
+    "np-0009"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 49,
@@ -1281,8 +1665,16 @@
     "tu-0435"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0064",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0003",
+    "np-0021",
+    "np-0011"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 50,
@@ -1307,8 +1699,16 @@
     "tu-0409"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0061",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0016",
+    "np-0005",
+    "np-0022"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 51,
@@ -1333,8 +1733,16 @@
     "tu-0732"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0048",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0007",
+    "np-0010",
+    "np-0024"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 52,
@@ -1359,8 +1767,16 @@
     "tu-0645"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0068",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0023",
+    "np-0017",
+    "np-0006"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 53,
@@ -1385,8 +1801,16 @@
     "tu-0835"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0059",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0028",
+    "np-0001",
+    "np-0027"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 54,
@@ -1411,8 +1835,16 @@
     "tu-0635"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0070",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0019",
+    "np-0020",
+    "np-0025"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 55,
@@ -1437,8 +1869,16 @@
     "tu-0774"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0056",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0018",
+    "np-0026",
+    "np-0031"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 56,
@@ -1463,8 +1903,16 @@
     "tu-0546"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0054",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0040",
+    "np-0032",
+    "np-0015"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 57,
@@ -1489,8 +1937,16 @@
     "tu-0764"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0069",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0039",
+    "np-0014",
+    "np-0038"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 58,
@@ -1515,8 +1971,16 @@
     "tu-0618"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0065",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0045",
+    "np-0043",
+    "np-0037"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 59,
@@ -1541,8 +2005,16 @@
     "tu-0528"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0066",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0044",
+    "np-0047",
+    "np-0034"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 60,
@@ -1567,8 +2039,16 @@
     "tu-0671"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0067",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0035",
+    "np-0012",
+    "np-0033"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 61,
@@ -1593,8 +2073,16 @@
     "tu-0520"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0053",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0041",
+    "np-0036",
+    "np-0029"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 62,
@@ -1619,8 +2107,16 @@
     "tu-0688"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0051",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0042",
+    "np-0030",
+    "np-0046"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 63,
@@ -1645,8 +2141,16 @@
     "tu-0694"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0058",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0013",
+    "np-0064",
+    "np-0070"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 64,
@@ -1671,8 +2175,16 @@
     "tu-0934"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0055",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0069",
+    "np-0061",
+    "np-0068"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 65,
@@ -1697,8 +2209,16 @@
     "tu-0526"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0060",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0065",
+    "np-0066",
+    "np-0059"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 66,
@@ -1723,8 +2243,16 @@
     "tu-0930"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0062",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0063",
+    "np-0052",
+    "np-0058"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 67,
@@ -1749,8 +2277,16 @@
     "tu-0912"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0052",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0054",
+    "np-0062",
+    "np-0053"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 68,
@@ -1775,8 +2311,16 @@
     "tu-0995"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0057",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0056",
+    "np-0055",
+    "np-0067"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 69,
@@ -1801,8 +2345,16 @@
     "tu-0558"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0049",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0048",
+    "np-0050",
+    "np-0060"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 70,
@@ -1827,8 +2379,16 @@
     "tu-0547"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0050",
-   "nguPhapOnTap": false
+   "nguPhap": [
+    "np-0049",
+    "np-0051",
+    "np-0057"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 71,
@@ -1853,8 +2413,16 @@
     "tu-0841"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0004",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0004",
+    "np-0008",
+    "np-0002"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 72,
@@ -1879,8 +2447,16 @@
     "tu-0969"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0009",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0009",
+    "np-0003",
+    "np-0021"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 73,
@@ -1905,8 +2481,16 @@
     "tu-0541"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0003",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0011",
+    "np-0016",
+    "np-0005"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 74,
@@ -1931,8 +2515,16 @@
     "tu-0510"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0011",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0022",
+    "np-0007",
+    "np-0010"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 75,
@@ -1957,8 +2549,16 @@
     "tu-0621"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0021",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0024",
+    "np-0023",
+    "np-0017"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 76,
@@ -1983,8 +2583,16 @@
     "tu-0647"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0024",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0006",
+    "np-0028",
+    "np-0001"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 77,
@@ -2009,8 +2617,16 @@
     "tu-0766"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0006",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0027",
+    "np-0019",
+    "np-0020"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 78,
@@ -2035,8 +2651,16 @@
     "tu-0861"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0005",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0025",
+    "np-0018",
+    "np-0026"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 79,
@@ -2061,8 +2685,16 @@
     "tu-0817"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0019",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0031",
+    "np-0040",
+    "np-0032"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 80,
@@ -2087,8 +2719,16 @@
     "tu-0749"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0002",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0015",
+    "np-0039",
+    "np-0014"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 81,
@@ -2113,8 +2753,16 @@
     "tu-0540"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0007",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0038",
+    "np-0045",
+    "np-0043"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 82,
@@ -2139,8 +2787,16 @@
     "tu-0677"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0001",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0037",
+    "np-0044",
+    "np-0047"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 83,
@@ -2165,8 +2821,16 @@
     "tu-0642"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0008",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0034",
+    "np-0035",
+    "np-0012"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 84,
@@ -2191,8 +2855,16 @@
     "tu-0515"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0010",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0033",
+    "np-0041",
+    "np-0036"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 85,
@@ -2217,8 +2889,16 @@
     "tu-0650"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0017",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0029",
+    "np-0042",
+    "np-0030"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 86,
@@ -2243,8 +2923,16 @@
     "tu-0630"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0016",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0046",
+    "np-0013",
+    "np-0064"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 87,
@@ -2269,8 +2957,16 @@
     "tu-0751"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0022",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0070",
+    "np-0069",
+    "np-0061"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 88,
@@ -2295,8 +2991,16 @@
     "tu-0822"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0028",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0068",
+    "np-0065",
+    "np-0066"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 89,
@@ -2321,8 +3025,16 @@
     "tu-0956"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0018",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0059",
+    "np-0063",
+    "np-0052"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 90,
@@ -2347,8 +3059,16 @@
     "tu-0761"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0026",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0058",
+    "np-0054",
+    "np-0062"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 91,
@@ -2373,8 +3093,16 @@
     "tu-0643"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0023",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0053",
+    "np-0056",
+    "np-0055"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 92,
@@ -2399,8 +3127,16 @@
     "tu-0729"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0020",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0067",
+    "np-0048",
+    "np-0050"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 93,
@@ -2425,8 +3161,16 @@
     "tu-0793"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0025",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0060",
+    "np-0049",
+    "np-0051"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 94,
@@ -2451,8 +3195,16 @@
     "tu-0578"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0027",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0057",
+    "np-0004",
+    "np-0008"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 95,
@@ -2477,8 +3229,16 @@
     "tu-0561"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0031",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0002",
+    "np-0009",
+    "np-0003"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 96,
@@ -2503,8 +3263,16 @@
     "tu-0807"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0039",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0021",
+    "np-0011",
+    "np-0016"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 97,
@@ -2529,8 +3297,16 @@
     "tu-0909"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0040",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0005",
+    "np-0022",
+    "np-0007"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 98,
@@ -2555,8 +3331,16 @@
     "tu-0782"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0032",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0010",
+    "np-0024",
+    "np-0023"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 99,
@@ -2581,8 +3365,16 @@
     "tu-0948"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0043",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0017",
+    "np-0006",
+    "np-0028"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 100,
@@ -2607,8 +3399,16 @@
     "tu-0754"
    ],
    "tuOnTap": false,
-   "nguPhap": "np-0044",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0001",
+    "np-0027",
+    "np-0019"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 101,
@@ -2633,8 +3433,16 @@
     "tu-0271"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0037",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0020",
+    "np-0025",
+    "np-0018"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 102,
@@ -2659,8 +3467,16 @@
     "tu-0263"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0038",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0026",
+    "np-0031",
+    "np-0040"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 103,
@@ -2685,8 +3501,16 @@
     "tu-0806"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0014",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0032",
+    "np-0015",
+    "np-0039"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 104,
@@ -2711,8 +3535,16 @@
     "tu-0108"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0047",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0014",
+    "np-0038",
+    "np-0045"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 105,
@@ -2737,8 +3569,16 @@
     "tu-0077"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0042",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0043",
+    "np-0037",
+    "np-0044"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 106,
@@ -2763,8 +3603,16 @@
     "tu-0271"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0041",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0047",
+    "np-0034",
+    "np-0035"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 107,
@@ -2789,8 +3637,16 @@
     "tu-0200"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0015",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0012",
+    "np-0033",
+    "np-0041"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 108,
@@ -2815,8 +3671,16 @@
     "tu-0271"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0034",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0036",
+    "np-0029",
+    "np-0042"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 109,
@@ -2841,8 +3705,16 @@
     "tu-0186"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0045",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0030",
+    "np-0046",
+    "np-0013"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 110,
@@ -2867,8 +3739,16 @@
     "tu-0263"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0035",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0064",
+    "np-0070",
+    "np-0069"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 111,
@@ -2893,8 +3773,16 @@
     "tu-0271"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0013",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0061",
+    "np-0068",
+    "np-0065"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 112,
@@ -2919,8 +3807,16 @@
     "tu-0077"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0036",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0066",
+    "np-0059",
+    "np-0063"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 113,
@@ -2945,8 +3841,16 @@
     "tu-0077"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0012",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0052",
+    "np-0058",
+    "np-0054"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 114,
@@ -2971,8 +3875,16 @@
     "tu-0271"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0033",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0062",
+    "np-0053",
+    "np-0056"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 115,
@@ -2997,8 +3909,16 @@
     "tu-0263"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0046",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0055",
+    "np-0067",
+    "np-0048"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 116,
@@ -3023,8 +3943,16 @@
     "tu-0271"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0030",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0050",
+    "np-0060",
+    "np-0049"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 117,
@@ -3049,8 +3977,16 @@
     "tu-0077"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0029",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0051",
+    "np-0057",
+    "np-0004"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 118,
@@ -3075,8 +4011,16 @@
     "tu-0263"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0063",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0008",
+    "np-0002",
+    "np-0009"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 119,
@@ -3101,8 +4045,16 @@
     "tu-0561"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0064",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0003",
+    "np-0021",
+    "np-0011"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 120,
@@ -3127,8 +4079,16 @@
     "tu-0271"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0061",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0016",
+    "np-0005",
+    "np-0022"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 121,
@@ -3153,8 +4113,16 @@
     "tu-0077"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0048",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0007",
+    "np-0010",
+    "np-0024"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 122,
@@ -3179,8 +4147,16 @@
     "tu-0263"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0068",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0023",
+    "np-0017",
+    "np-0006"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 123,
@@ -3205,8 +4181,16 @@
     "tu-0263"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0059",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0028",
+    "np-0001",
+    "np-0027"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 124,
@@ -3231,8 +4215,16 @@
     "tu-0271"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0070",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0019",
+    "np-0020",
+    "np-0025"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 125,
@@ -3257,8 +4249,16 @@
     "tu-0263"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0056",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0018",
+    "np-0026",
+    "np-0031"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 126,
@@ -3283,8 +4283,16 @@
     "tu-0077"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0054",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0040",
+    "np-0032",
+    "np-0015"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 127,
@@ -3309,8 +4317,16 @@
     "tu-0186"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0069",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0039",
+    "np-0014",
+    "np-0038"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 128,
@@ -3335,8 +4351,16 @@
     "tu-0077"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0065",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0045",
+    "np-0043",
+    "np-0037"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 129,
@@ -3361,8 +4385,16 @@
     "tu-0077"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0066",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0044",
+    "np-0047",
+    "np-0034"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 130,
@@ -3387,8 +4419,16 @@
     "tu-0077"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0067",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0035",
+    "np-0012",
+    "np-0033"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   },
   {
    "so": 131,
@@ -3413,8 +4453,16 @@
     "tu-0263"
    ],
    "tuOnTap": true,
-   "nguPhap": "np-0053",
-   "nguPhapOnTap": true
+   "nguPhap": [
+    "np-0041",
+    "np-0036",
+    "np-0029"
+   ],
+   "nguPhapOnTap": [
+    true,
+    true,
+    true
+   ]
   }
  ]
 }

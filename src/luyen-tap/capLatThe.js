@@ -55,25 +55,74 @@ function chonCap(danhSach, doiMuc) {
   return ra;
 }
 
-/** Cặp thẻ từ danh sách từ vựng (Tab Từ vựng). */
-export function capTuVung(danhSach) {
-  return chonCap(danhSach, (t) => ({
+/** Một từ vựng → một cặp thẻ. */
+function doiTu(t) {
+  return {
     id: t.id,
     trung: Array.from(t.tu).map((chu, i) => ({ chu, pinyin: t.pinyin?.[i] ?? "" })),
     nhat: nghiaNhatDau(t.nghiaNhat),
     viet: nghiaVietDau(t.nghiaViet),
-  }));
+  };
 }
 
-/** Cặp thẻ từ danh sách chữ Hán (Tab Chữ Hán): chữ giản thể + pinyin âm chính. */
+/** Một chữ Hán → một cặp thẻ: chữ giản thể + pinyin âm chính. */
+function doiChu(c) {
+  const am = c.amDoc?.pinyin?.find((a) => a.chinh) ?? c.amDoc?.pinyin?.[0];
+  return {
+    id: c.id,
+    trung: [{ chu: c.gianThe, pinyin: am?.am ?? "" }],
+    nhat: nghiaNhatDau(c.nghia?.nhat),
+    viet: nghiaVietDau(c.nghia?.viet),
+  };
+}
+
+/** Cặp thẻ từ danh sách từ vựng: chọn ngẫu nhiên tối đa 10 từ. */
+export function capTuVung(danhSach) {
+  return chonCap(danhSach, doiTu);
+}
+
+/** Cặp thẻ từ danh sách chữ Hán: chọn ngẫu nhiên tối đa 10 chữ. */
 export function capChuHan(danhSach) {
-  return chonCap(danhSach, (c) => {
-    const am = c.amDoc?.pinyin?.find((a) => a.chinh) ?? c.amDoc?.pinyin?.[0];
-    return {
-      id: c.id,
-      trung: [{ chu: c.gianThe, pinyin: am?.am ?? "" }],
-      nhat: nghiaNhatDau(c.nghia?.nhat),
-      viet: nghiaVietDau(c.nghia?.viet),
+  return chonCap(danhSach, doiChu);
+}
+
+/**
+ * Chia TOÀN BỘ mục thành các ván (GĐ 10, quyết định 18.25): dùng cho bước trò
+ * chơi của Bài hôm nay, vì mọi mục của bài đều phải có mặt trong trò chơi.
+ * Mỗi ván tối đa 10 cặp và không có hai mục trùng nghĩa hay trùng mặt chữ;
+ * mục nào trùng thì dời sang ván sau.
+ */
+function chiaVan(danhSach, doiMuc) {
+  const cacVan = [];
+  for (const muc of tronNgauNhien(danhSach)) {
+    const cap = doiMuc(muc);
+    if (!cap.viet || !cap.nhat) continue;
+    const khoa = {
+      viet: khoaSoSanh(cap.viet),
+      nhat: khoaSoSanh(cap.nhat),
+      trung: cap.trung.map((a) => a.chu).join(""),
     };
-  });
+    let van = cacVan.find(
+      (v) =>
+        v.cap.length < SO_CAP_MOI_VAN &&
+        !v.khoa.some((k) => k.viet === khoa.viet || k.nhat === khoa.nhat || k.trung === khoa.trung),
+    );
+    if (!van) {
+      van = { cap: [], khoa: [] };
+      cacVan.push(van);
+    }
+    van.cap.push(cap);
+    van.khoa.push(khoa);
+  }
+  return cacVan.map((v) => v.cap);
+}
+
+/** Các ván trò chơi cho toàn bộ từ vựng của bài. */
+export function vanTuVung(danhSach) {
+  return chiaVan(danhSach, doiTu);
+}
+
+/** Các ván trò chơi cho toàn bộ chữ Hán của bài. */
+export function vanChuHan(danhSach) {
+  return chiaVan(danhSach, doiChu);
 }

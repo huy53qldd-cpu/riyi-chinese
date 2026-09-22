@@ -1,9 +1,15 @@
 /* =============================================================================
-   TAB F — NGỮ PHÁP (GIAI ĐOẠN 5)
+   TAB F — NGỮ PHÁP
    =============================================================================
 
    Hai màn hình nhỏ trong một tab:
-     1. Danh sách điểm ngữ pháp, lọc theo cấp HSK
+     1. Danh sách (GĐ 10, quyết định 18.27):
+        - Trên cùng: 3 điểm ngữ pháp hôm nay (theo bài hôm nay; có thể thêm
+          điểm "ôn thêm" dồn từ hôm qua) và NHIỆM VỤ HÔM NAY: Sắp xếp câu →
+          Chọn câu đúng, dùng đúng các điểm hôm nay.
+        - Ba nút HSK 1 / HSK 2 / HSK 3, mỗi nút có thanh % điểm đã học.
+        - Nút "Xem toàn bộ ngữ pháp HSK N" mở danh sách đủ; điểm đã học có
+          viền nét đứt và mờ hơn.
      2. Chi tiết một điểm: công thức, giải thích, ví dụ, ĐỐI CHIẾU TIẾNG NHẬT,
         cảnh báo lỗi
 
@@ -12,39 +18,25 @@
    lệch đều lấy từ DỮ LIỆU, không viết cứng ở đây.
 
    Thứ tự nội dung: TRUNG → NHẬT → VIỆT.
-
-   Luyện tập (GĐ 7): sắp xếp trật tự từ (mảnh câu chia sẵn trong dữ liệu, trường
-   tachTu) và chọn câu đúng (lấy câu sai/đúng trong phần "Lỗi hay gặp").
    ============================================================================= */
 
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 
-import { taiNguPhap } from "../du-lieu/taiDuLieu.js";
-import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
-import ChuNhat from "../thanh-phan/ChuNhat.jsx";
-import NutDaHoc, { DauDaHoc } from "../thanh-phan/NutDaHoc.jsx";
-import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
-import VanBanPha from "../thanh-phan/VanBanPha.jsx";
-import KhungChonLuyenTap from "../luyen-tap/KhungChonLuyenTap.jsx";
-import PhienLuyenTap from "../luyen-tap/PhienLuyenTap.jsx";
 import {
-  cauHoiChonCauDung,
-  cauHoiSapXep,
-  taoLuot,
-} from "../luyen-tap/taoCauHoi.jsx";
+  KhungNhiemVu,
+  NutCapHsk,
+  tinhTienDoCap,
+  useBaiHomNay,
+  useNhiemVu,
+} from "../luyen-tap/NhiemVuHomNay.jsx";
+import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
-
-const CACH_LUYEN = [
-  { ma: "sap-xep", nhan: "Sắp xếp câu" },
-  { ma: "chon-cau", nhan: "Chọn câu đúng" },
-];
-
-const CAC_CAP = [
-  { ma: 0, nhan: "Tất cả" },
-  { ma: 1, nhan: "HSK 1" },
-  { ma: 2, nhan: "HSK 2" },
-  { ma: 3, nhan: "HSK 3" },
-];
+import ChuNhat from "../thanh-phan/ChuNhat.jsx";
+import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
+import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
+import NutDaHoc from "../thanh-phan/NutDaHoc.jsx";
+import VanBanPha from "../thanh-phan/VanBanPha.jsx";
+import { NhanOnThem } from "./TabMucTieu.jsx";
 
 // Nhãn cho từng loại cảnh báo lỗi (khai báo trong dữ liệu bằng mã)
 const LOAI_LOI = {
@@ -58,125 +50,115 @@ const nhanTieuDe =
   "text-chu-mo m-0 mb-1 text-[length:var(--co-chu-latin-nho)] font-bold uppercase tracking-wide";
 const khungMuc =
   "border-vien bg-nen-noi flex flex-col gap-2 rounded-[var(--bo-goc)] border p-4";
-const chip =
-  "rounded-[var(--bo-goc-tron)] border px-3.5 py-1.5 text-[length:var(--co-chu-latin-nho)] font-semibold transition-colors";
 
 export default function TabNguPhap() {
-  const [trangThai, setTrangThai] = useState("dang-tai"); // dang-tai | xong | loi
-  const [danhSach, setDanhSach] = useState([]);
-  const [cap, setCap] = useState(0);
+  const nd = useNguoiDung();
+  const { du, loi, bai, noiDung } = useBaiHomNay();
+  const { batDau, manHinh } = useNhiemVu(noiDung, du, bai?.so);
+  const [capChon, setCapChon] = useState(null); // null = cấp của điểm đầu tiên hôm nay
+  const [moToanBo, setMoToanBo] = useState(false);
   const [diemDangMo, setDiemDangMo] = useState(null);
-  const [cachLuyen, setCachLuyen] = useState(null);
 
-  useEffect(() => {
-    let conSong = true; // tránh cập nhật khi người dùng đã rời tab
-    taiNguPhap()
-      .then((ds) => {
-        if (!conSong) return;
-        setDanhSach(ds);
-        setTrangThai("xong");
-      })
-      .catch(() => conSong && setTrangThai("loi"));
-    return () => {
-      conSong = false;
-    };
-  }, []);
+  const danhSach = useMemo(() => du?.danhSachNguPhap ?? [], [du]);
+  const tienDoCap = useMemo(() => tinhTienDoCap(danhSach, nd.daHoc), [danhSach, nd.daHoc]);
 
+  if (manHinh) return manHinh;
   if (diemDangMo) {
-    return (
-      <ChiTietNguPhap diem={diemDangMo} quayLai={() => setDiemDangMo(null)} />
-    );
+    return <ChiTietNguPhap diem={diemDangMo} quayLai={() => setDiemDangMo(null)} />;
   }
 
-  const hienThi = danhSach.filter((d) => cap === 0 || d.capHsk === cap);
-
-  if (cachLuyen) {
-    // Mỗi câu ví dụ (hoặc mỗi cặp câu sai/đúng) là một câu hỏi
-    const cacCau =
-      cachLuyen === "sap-xep"
-        ? hienThi.flatMap((d) => d.viDu.map((vd) => () => cauHoiSapXep(d, vd)))
-        : hienThi.flatMap((d) =>
-            d.canhBaoLoi.map((cb) => () => cauHoiChonCauDung(d, cb)),
-          );
-    return (
-      <PhienLuyenTap
-        tieuDe={CACH_LUYEN.find((c) => c.ma === cachLuyen).nhan}
-        taoDanhSach={() => taoLuot(cacCau, (tao) => tao())}
-        quayLai={() => setCachLuyen(null)}
-      />
-    );
-  }
+  const cap = capChon ?? noiDung?.np[0]?.capHsk ?? 1;
+  const hienThi = danhSach.filter((d) => d.capHsk === cap);
 
   return (
     <section>
-      <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-        Ngữ pháp
-      </h1>
+      <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">Ngữ pháp</h1>
       <p className="text-chu-mo mt-1.5 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
         Mỗi điểm ngữ pháp được đối chiếu với cấu trúc tiếng Nhật, kèm chỗ hai
         bên khác nhau.
       </p>
 
-      {/* Bộ lọc cấp HSK */}
-      <div
-        className="mt-4 flex flex-wrap gap-2"
-        role="group"
-        aria-label="Lọc theo cấp HSK"
-      >
-        {CAC_CAP.map((c) => (
-          <button
-            key={c.ma}
-            type="button"
-            onClick={() => setCap(c.ma)}
-            aria-pressed={cap === c.ma}
-            className={`${chip} ${
-              cap === c.ma
-                ? "border-nhan bg-nhan text-chu-tren-nhan"
-                : "border-vien bg-transparent"
-            }`}
-          >
-            {c.nhan}
-          </button>
-        ))}
-      </div>
-
-      {trangThai === "dang-tai" && (
+      {!du && !loi && (
         <p className="text-chu-mo mt-5 text-[length:var(--co-chu-latin-nho)]">
           Đang tải danh sách...
         </p>
       )}
-
-      {trangThai === "loi" && (
+      {loi && (
         <p className="text-sai mt-5 text-[length:var(--co-chu-latin-nho)]">
-          Không tải được dữ liệu ngữ pháp. Hãy kiểm tra mạng rồi mở lại tab
-          này.
+          Không tải được dữ liệu ngữ pháp. Hãy kiểm tra mạng rồi mở lại tab này.
         </p>
       )}
 
-      {trangThai === "xong" && hienThi.length === 0 && (
-        <div className="border-vien bg-nen-phu mt-4 rounded-[var(--bo-goc)] border border-dashed p-6 text-center">
-          <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)]">
-            Chưa có điểm ngữ pháp nào ở cấp này.
-          </p>
+      {/* --- Ngữ pháp hôm nay --- */}
+      {noiDung && noiDung.np.length > 0 && (
+        <div className="mt-4">
+          <div className="flex items-baseline justify-between gap-2">
+            <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
+              {noiDung.np.length} điểm ngữ pháp hôm nay
+            </h2>
+            {bai && (
+              <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold">
+                Bài {bai.so}
+              </span>
+            )}
+          </div>
+          <ul className="m-0 mt-2 flex list-none flex-col gap-3 p-0">
+            {noiDung.np.map((d) => (
+              <li key={d.id}>
+                <TheNguPhap
+                  diem={d}
+                  onThem={noiDung.them.has(d.id)}
+                  moChiTiet={() => setDiemDangMo(d)}
+                />
+              </li>
+            ))}
+          </ul>
+          <KhungNhiemVu
+            maPhan="np"
+            batDau={batDau}
+            sanSang={Boolean(du)}
+            ghiChu="Hai bước dùng đúng các điểm ngữ pháp hôm nay ở trên. Xong cả hai mới tính là hoàn thành phần ngữ pháp; chưa xong thì các điểm này dồn sang ngày mai."
+          />
         </div>
       )}
 
-      {trangThai === "xong" && hienThi.length > 0 && (
-        <KhungChonLuyenTap
-          cacCach={CACH_LUYEN}
-          soMuc={hienThi.length}
-          chon={setCachLuyen}
-        />
+      {/* --- Ba nút cấp HSK, mỗi nút có thanh % đã học --- */}
+      {du && (
+        <NutCapHsk capChon={cap} chon={setCapChon} tienDo={tienDoCap} donVi="điểm ngữ pháp" />
       )}
 
-      {trangThai === "xong" && hienThi.length > 0 && (
-        <ul className="m-0 mt-4 flex list-none flex-col gap-3 p-0">
-          {hienThi.map((d) => (
-            <li key={d.id}>
-              <TheNguPhap diem={d} moChiTiet={() => setDiemDangMo(d)} />
-            </li>
-          ))}
-        </ul>
+      {du && hienThi.length > 0 && (
+        <button
+          type="button"
+          onClick={() => setMoToanBo((m) => !m)}
+          aria-expanded={moToanBo}
+          className="border-vien mt-4 inline-flex w-full items-center justify-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2.5 text-[length:var(--co-chu-latin-nho)] font-semibold"
+        >
+          <BieuTuong ten={moToanBo ? "thu-gon" : "xem-them"} co={16} />
+          {moToanBo
+            ? `Thu gọn danh sách HSK ${cap}`
+            : `Xem toàn bộ ngữ pháp HSK ${cap} (${hienThi.length} điểm)`}
+        </button>
+      )}
+
+      {du && moToanBo && (
+        <>
+          <p className="text-chu-mo mt-3 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+            Điểm đã học (phần ngữ pháp đã hoàn thành hoặc bạn tự đánh dấu) có
+            viền nét đứt và mờ hơn.
+          </p>
+          <ul className="m-0 mt-3 flex list-none flex-col gap-3 p-0">
+            {hienThi.map((d) => (
+              <li key={d.id}>
+                <TheNguPhap
+                  diem={d}
+                  daHoc={Boolean(nd.daHoc[d.id])}
+                  moChiTiet={() => setDiemDangMo(d)}
+                />
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </section>
   );
@@ -185,15 +167,20 @@ export default function TabNguPhap() {
 /* -----------------------------------------------------------------------------
    THẺ TRONG DANH SÁCH
    ----------------------------------------------------------------------------- */
-function TheNguPhap({ diem, moChiTiet }) {
+function TheNguPhap({ diem, moChiTiet, daHoc = false, onThem = false }) {
   return (
     <button
       type="button"
       onClick={moChiTiet}
-      className="border-vien bg-nen-noi active:bg-nhan-nhat flex w-full flex-col gap-1.5 rounded-[var(--bo-goc)] border px-4 py-3 text-left shadow-[0_1px_3px_var(--bong)] transition-colors"
+      className={`border-vien bg-nen-noi active:bg-nhan-nhat flex w-full flex-col gap-1.5 rounded-[var(--bo-goc)] border px-4 py-3 text-left transition-colors ${
+        daHoc ? "border-2 border-dashed opacity-55" : "shadow-[0_1px_3px_var(--bong)]"
+      }`}
     >
-      <span className="bg-nhan-nhat self-start rounded-[var(--bo-goc-tron)] px-2.5 py-0.5 text-[length:var(--co-chu-latin-nho)] font-bold">
-        HSK {diem.capHsk}
+      <span className="flex flex-wrap items-center gap-2">
+        <span className="bg-nhan-nhat rounded-[var(--bo-goc-tron)] px-2.5 py-0.5 text-[length:var(--co-chu-latin-nho)] font-bold">
+          HSK {diem.capHsk}
+        </span>
+        {onThem && <NhanOnThem />}
       </span>
       <p className="m-0 text-[length:var(--co-chu-latin)] leading-snug font-bold">
         <VanBanPha noiDung={diem.ten} />
@@ -201,7 +188,7 @@ function TheNguPhap({ diem, moChiTiet }) {
       <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-snug">
         <VanBanPha noiDung={diem.congThuc} />
       </p>
-      <DauDaHoc id={diem.id} />
+      {daHoc && <span className="sr-only">(đã học)</span>}
     </button>
   );
 }

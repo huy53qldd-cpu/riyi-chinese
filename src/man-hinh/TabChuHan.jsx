@@ -4,11 +4,13 @@
 
    Hai màn hình nhỏ trong một tab:
      1. Danh sách (GĐ 10, quyết định 18.21):
-        - Trên cùng: 5 chữ Hán hôm nay, theo bài đang học (lo-trinh.json)
+        - Trên cùng: 5 chữ Hán hôm nay (theo bài hôm nay, có thể thêm 1 chữ
+          "ôn thêm" do hôm qua chưa xong) và NHIỆM VỤ HÔM NAY: Tập viết, Trò
+          chơi lật thẻ. Đây chính là bước của Bài hôm nay (quyết định 18.26).
         - Ba nút HSK 1 / HSK 2 / HSK 3, mỗi nút có thanh % chữ đã học của cấp đó
         - Nút "Xem toàn bộ chữ Hán HSK N" mở danh sách đủ của cấp đang chọn.
-          Chữ ĐÃ HỌC (thuộc bài đã học xong, hoặc tự đánh dấu "Đã học") có
-          viền nét đứt và mờ hơn chữ chưa học.
+          Chữ ĐÃ HỌC (thuộc phần Chữ Hán đã hoàn thành của các ngày, hoặc tự
+          đánh dấu "Đã học") có viền nét đứt và mờ hơn chữ chưa học.
      2. Chi tiết một chữ (bấm vào thẻ để mở): 3 khung
           Khung 1: Giản thể (pinyin) · Kanji · Phồn thể
           Khung 2: Pinyin | Tiếng Nhật, rồi Hán Việt, nghĩa, số nét, bộ thủ
@@ -18,13 +20,15 @@
    mọi chữ Nhật đi qua <ChuNhat>, không viết chữ Hán trực tiếp ra màn hình.
    ============================================================================= */
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
-import { taiChuHan, taiLoTrinh } from "../du-lieu/taiDuLieu.js";
-import { layBai } from "../luyen-tap/baiHoc.js";
-import { capChuHan } from "../luyen-tap/capLatThe.js";
-import KhungChonLuyenTap from "../luyen-tap/KhungChonLuyenTap.jsx";
-import TroChoiLatThe from "../luyen-tap/TroChoiLatThe.jsx";
+import {
+  KhungNhiemVu,
+  NutCapHsk,
+  tinhTienDoCap,
+  useBaiHomNay,
+  useNhiemVu,
+} from "../luyen-tap/NhiemVuHomNay.jsx";
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
@@ -33,6 +37,7 @@ import KhungTapViet from "../thanh-phan/KhungTapViet.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import NutDaHoc from "../thanh-phan/NutDaHoc.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
+import { NhanOnThem } from "./TabMucTieu.jsx";
 
 // Nhãn so sánh tự dạng. Nhãn do người nhập liệu quyết định, không do code đoán.
 const NHAN_TU_DANG = {
@@ -44,8 +49,6 @@ const NHAN_TU_DANG = {
 
 // Danh sách dài (HSK 3 có 284 chữ): mỗi lần chỉ vẽ một phần, bấm "Xem thêm" để hiện tiếp
 const SO_THE_MOI_LAN = 60;
-
-const CAC_CAP = [1, 2, 3];
 
 /** Ô thay cho chữ Nhật khi tiếng Nhật không dùng chữ này. */
 function KhongCoChuNhat({ co }) {
@@ -69,73 +72,27 @@ function amChinh(danhSach = []) {
 
 export default function TabChuHan() {
   const nd = useNguoiDung();
-  const [trangThai, setTrangThai] = useState("dang-tai"); // dang-tai | xong | loi
-  const [danhSach, setDanhSach] = useState([]);
-  const [loTrinh, setLoTrinh] = useState(null);
+  const { du, loi, bai, noiDung } = useBaiHomNay();
+  const { batDau, manHinh } = useNhiemVu(noiDung, du, bai?.so);
   const [capChon, setCapChon] = useState(null); // null = cấp của bài hôm nay
   const [moToanBo, setMoToanBo] = useState(false);
   const [chuDangMo, setChuDangMo] = useState(null);
   const [soHien, setSoHien] = useState(SO_THE_MOI_LAN);
-  const [dangChoi, setDangChoi] = useState(false); // trò chơi lật thẻ
 
-  useEffect(() => {
-    let conSong = true; // tránh cập nhật khi người dùng đã rời tab
-    Promise.all([taiChuHan(), taiLoTrinh()])
-      .then(([ds, lt]) => {
-        if (!conSong) return;
-        setDanhSach(ds);
-        setLoTrinh(lt);
-        setTrangThai("xong");
-      })
-      .catch(() => conSong && setTrangThai("loi"));
-    return () => {
-      conSong = false;
-    };
-  }, []);
+  const danhSach = useMemo(() => du?.danhSachChu ?? [], [du]);
+  const tienDoCap = useMemo(() => tinhTienDoCap(danhSach, nd.daHoc), [danhSach, nd.daHoc]);
 
-  const theoId = useMemo(() => new Map(danhSach.map((c) => [c.id, c])), [danhSach]);
-
-  // 5 chữ của bài đang học
-  const baiHomNay = loTrinh ? layBai(loTrinh, nd.loTrinh.bai) : null;
-  const chuHomNay = baiHomNay ? baiHomNay.chu.map((id) => theoId.get(id)).filter(Boolean) : [];
-
-  // Chữ đã học: thuộc các bài đã học xong, hoặc tự đánh dấu "Đã học"
-  const daHoc = useMemo(() => {
-    const ra = new Set(Object.keys(nd.daHoc).filter((id) => nd.daHoc[id] && id.startsWith("han-")));
-    const bai = loTrinh?.baiHoc ?? [];
-    const soBaiXong = Math.min(nd.loTrinh.bai - 1, bai.length);
-    for (const b of bai.slice(0, soBaiXong)) for (const id of b.chu) ra.add(id);
-    return ra;
-  }, [nd.daHoc, nd.loTrinh.bai, loTrinh]);
-
-  // % chữ đã học của từng cấp
-  const tienDoCap = useMemo(() => {
-    const ra = {};
-    for (const cap of CAC_CAP) {
-      const cua = danhSach.filter((c) => c.capHsk === cap);
-      const da = cua.filter((c) => daHoc.has(c.id)).length;
-      ra[cap] = { tong: cua.length, da, phanTram: cua.length ? Math.round((da / cua.length) * 100) : 0 };
-    }
-    return ra;
-  }, [danhSach, daHoc]);
-
+  if (manHinh) return manHinh;
   if (chuDangMo) {
     return <ChiTietChuHan muc={chuDangMo} quayLai={() => setChuDangMo(null)} />;
   }
 
-  const cap = capChon ?? chuHomNay[0]?.capHsk ?? 1;
+  // Chữ hôm nay: chữ phải tập viết + chữ trong trò chơi (gồm chữ "ôn thêm")
+  const chuHomNay = noiDung
+    ? [...noiDung.chuViet, ...noiDung.chuGame.filter((c) => !noiDung.chuViet.includes(c))]
+    : [];
+  const cap = capChon ?? noiDung?.chu[0]?.capHsk ?? 1;
   const hienThi = danhSach.filter((m) => m.capHsk === cap);
-
-  if (dangChoi) {
-    return (
-      <TroChoiLatThe
-        tieuDe="Trò chơi lật thẻ"
-        taoCap={() => capChuHan(hienThi)}
-        khoaKyLuc="chu-han"
-        quayLai={() => setDangChoi(false)}
-      />
-    );
-  }
 
   function chonCap(c) {
     setCapChon(c);
@@ -146,82 +103,55 @@ export default function TabChuHan() {
     <section>
       <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">Luyện chữ Hán</h1>
 
-      {trangThai === "dang-tai" && (
+      {!du && !loi && (
         <p className="text-chu-mo mt-5 text-[length:var(--co-chu-latin-nho)]">
           Đang tải danh sách chữ Hán...
         </p>
       )}
-      {trangThai === "loi" && (
+      {loi && (
         <p className="text-sai mt-5 text-[length:var(--co-chu-latin-nho)]">
           Không tải được dữ liệu chữ Hán. Hãy kiểm tra mạng rồi mở lại tab này.
         </p>
       )}
 
-      {/* --- 5 chữ Hán hôm nay --- */}
-      {trangThai === "xong" && chuHomNay.length > 0 && (
+      {/* --- Chữ Hán hôm nay --- */}
+      {chuHomNay.length > 0 && (
         <div className="mt-4">
           <div className="flex items-baseline justify-between gap-2">
             <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-              {chuHomNay.length} chữ Hán hôm nay
+              {noiDung.chu.length} chữ Hán hôm nay
             </h2>
-            <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold">
-              Bài {baiHomNay.so}
-            </span>
+            {bai && (
+              <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold">
+                Bài {bai.so}
+              </span>
+            )}
           </div>
           <ul className="m-0 mt-2 grid list-none grid-cols-2 gap-3 p-0">
             {chuHomNay.map((muc) => (
               <li key={muc.id}>
-                <TheChuHan muc={muc} moChiTiet={() => setChuDangMo(muc)} />
+                <TheChuHan
+                  muc={muc}
+                  onThem={noiDung.them.has(muc.id)}
+                  moChiTiet={() => setChuDangMo(muc)}
+                />
               </li>
             ))}
           </ul>
+          <KhungNhiemVu
+            maPhan="chu"
+            batDau={batDau}
+            sanSang={Boolean(du)}
+            ghiChu="Viết xong và chơi xong trò chơi mới tính là hoàn thành phần chữ Hán. Chưa viết thì ngày mai phải viết thêm 1 chữ; chưa chơi xong thì trò chơi ngày mai thêm 2 thẻ."
+          />
         </div>
       )}
 
       {/* --- Ba nút cấp HSK, mỗi nút có thanh % đã học --- */}
-      {trangThai === "xong" && (
-        <div className="mt-5 grid grid-cols-3 gap-2" role="group" aria-label="Chọn cấp HSK">
-          {CAC_CAP.map((c) => {
-            const td = tienDoCap[c];
-            const chon = cap === c;
-            return (
-              <button
-                key={c}
-                type="button"
-                onClick={() => chonCap(c)}
-                aria-pressed={chon}
-                aria-label={`HSK ${c}, đã học ${td.da} trên ${td.tong} chữ, ${td.phanTram} phần trăm`}
-                className={`flex flex-col items-stretch gap-1.5 rounded-[var(--bo-goc)] border px-2.5 pt-2 pb-2.5 text-center transition-colors ${
-                  chon ? "border-nhan bg-nhan-nhat border-2" : "border-vien bg-nen-noi border-2"
-                }`}
-              >
-                <span className="text-[length:var(--co-chu-latin)] font-bold">HSK {c}</span>
-                <span className="bg-nen-phu h-1.5 w-full overflow-hidden rounded-[var(--bo-goc-tron)]">
-                  <span
-                    className="bg-nhan block h-full rounded-[var(--bo-goc-tron)]"
-                    style={{ width: `${td.phanTram}%` }}
-                  />
-                </span>
-                <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold tabular-nums">
-                  {td.phanTram}%
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      )}
-
-      {trangThai === "xong" && hienThi.length > 0 && (
-        <KhungChonLuyenTap
-          cacCach={[{ ma: "lat-the", nhan: "Trò chơi lật thẻ" }]}
-          soMuc={hienThi.length}
-          chon={() => setDangChoi(true)}
-          ghiChu={`Mỗi ván 10 chữ (20 thẻ), lấy từ ${hienThi.length} chữ HSK ${cap}: ghép chữ Hán với nghĩa tiếng Nhật và tiếng Việt của nó. Mục tiêu ngày chỉ tính khi học xong Bài hôm nay (bấm thanh trên cùng).`}
-        />
-      )}
+      {du && <NutCapHsk capChon={cap} chon={chonCap} tienDo={tienDoCap} donVi="chữ" />}
 
       {/* --- Xem toàn bộ chữ Hán của cấp đang chọn --- */}
-      {trangThai === "xong" && hienThi.length > 0 && (
+      {du && hienThi.length > 0 && (
         <button
           type="button"
           onClick={() => setMoToanBo((m) => !m)}
@@ -235,18 +165,18 @@ export default function TabChuHan() {
         </button>
       )}
 
-      {trangThai === "xong" && moToanBo && (
+      {du && moToanBo && (
         <>
           <p className="text-chu-mo mt-3 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-            Chữ đã học (thuộc bài đã học xong hoặc bạn tự đánh dấu) có viền nét
-            đứt và mờ hơn.
+            Chữ đã học (phần chữ Hán đã hoàn thành hoặc bạn tự đánh dấu) có viền
+            nét đứt và mờ hơn.
           </p>
           <ul className="m-0 mt-3 grid list-none grid-cols-2 gap-3 p-0">
             {hienThi.slice(0, soHien).map((muc) => (
               <li key={muc.id}>
                 <TheChuHan
                   muc={muc}
-                  daHoc={daHoc.has(muc.id)}
+                  daHoc={Boolean(nd.daHoc[muc.id])}
                   moChiTiet={() => setChuDangMo(muc)}
                 />
               </li>
@@ -272,7 +202,7 @@ export default function TabChuHan() {
    THẺ TRONG DANH SÁCH: chữ Trung + chữ Nhật cạnh nhau, nghĩa Việt phía dưới.
    Chữ đã học: viền nét đứt, mờ hơn.
    ----------------------------------------------------------------------------- */
-function TheChuHan({ muc, moChiTiet, daHoc = false }) {
+function TheChuHan({ muc, moChiTiet, daHoc = false, onThem = false }) {
   const pinyinChinh = amChinh(muc.amDoc.pinyin)?.am ?? "";
 
   return (
@@ -293,6 +223,7 @@ function TheChuHan({ muc, moChiTiet, daHoc = false }) {
       </div>
       {/* VIỆT */}
       <span className="text-[length:var(--co-chu-latin)] font-semibold">{muc.nghia.viet}</span>
+      {onThem && <NhanOnThem />}
       {daHoc && <span className="sr-only">(đã học)</span>}
     </button>
   );

@@ -67,10 +67,20 @@ function luuKyLuc(khoa, kyLuc) {
  * @param {Function} quayLai
  * @param {Function} khiXong     Gọi khi lật hết thẻ. Có hàm này nghĩa là game đang
  *                               là một bước của Bài hôm nay: hết ván thì mời về bài.
+ * @param {Array}    cacVan      (Bài hôm nay) Chia sẵn các ván, chơi lần lượt hết
+ *                               mới xong bước, để MỌI mục của bài đều có mặt.
  */
-export default function TroChoiLatThe({ tieuDe, taoCap, khoaKyLuc, quayLai, khiXong = null }) {
+export default function TroChoiLatThe({
+  tieuDe,
+  taoCap,
+  khoaKyLuc,
+  quayLai,
+  khiXong = null,
+  cacVan = null,
+}) {
   const nd = useNguoiDung();
-  const [boThe, setBoThe] = useState(() => taoBoThe(taoCap()));
+  const [vanSo, setVanSo] = useState(0);
+  const [boThe, setBoThe] = useState(() => taoBoThe(cacVan ? cacVan[0] ?? [] : taoCap()));
   const [giaiDoan, setGiaiDoan] = useState("xem-truoc"); // xem-truoc | choi | xong
   const [demXemTruoc, setDemXemTruoc] = useState(GIAY_XEM_TRUOC);
   const [dangMo, setDangMo] = useState([]); // vị trí 1–2 thẻ đang lật chưa ghép
@@ -138,10 +148,24 @@ export default function TroChoiLatThe({ tieuDe, taoCap, khoaKyLuc, quayLai, khiX
       setDaGhep(ghep);
       setDangMo([]);
       nd.ghiKetQua(a.id, true);
-      if (ghep.size === tongCap) ketThuc(luot, soGiay);
+      if (ghep.size === tongCap) {
+        // Còn ván sau thì dừng giữa chừng, chưa tính là xong bước
+        if (cacVan && vanSo < cacVan.length - 1) setGiaiDoan("het-van");
+        else ketThuc(luot, soGiay);
+      }
     } else {
       henUpLai.current = setTimeout(() => setDangMo([]), MS_UP_LAI);
     }
+  }
+
+  function sangVanSau() {
+    const v = vanSo + 1;
+    setVanSo(v);
+    setBoThe(taoBoThe(cacVan[v]));
+    setDangMo([]);
+    setDaGhep(new Set());
+    setDemXemTruoc(GIAY_XEM_TRUOC);
+    setGiaiDoan("xem-truoc");
   }
 
   function vanMoi() {
@@ -156,7 +180,7 @@ export default function TroChoiLatThe({ tieuDe, taoCap, khoaKyLuc, quayLai, khiX
     setGiaiDoan("xem-truoc");
   }
 
-  if (tongCap < 2) {
+  if (tongCap < (cacVan ? 1 : 2)) {
     return (
       <section className="flex flex-col gap-4">
         <p className={kieu.chuNho}>
@@ -180,6 +204,9 @@ export default function TroChoiLatThe({ tieuDe, taoCap, khoaKyLuc, quayLai, khiX
         </button>
         <h1 className="m-0 min-w-0 flex-1 truncate text-[length:var(--co-chu-latin)] font-bold">
           {tieuDe}
+          {cacVan && cacVan.length > 1 && (
+            <span className="text-chu-mo font-semibold"> · ván {vanSo + 1}/{cacVan.length}</span>
+          )}
         </h1>
         <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold tabular-nums whitespace-nowrap">
           {soLuot} lượt · {Math.floor(soGiay / 60)}:{String(soGiay % 60).padStart(2, "0")}
@@ -193,6 +220,18 @@ export default function TroChoiLatThe({ tieuDe, taoCap, khoaKyLuc, quayLai, khiX
             ? `Tìm cặp: chữ Trung với nghĩa của nó. Đã ghép ${daGhep.size}/${tongCap}.`
             : `Hoàn thành ${tongCap}/${tongCap} cặp!`}
       </p>
+
+      {giaiDoan === "het-van" && (
+        <div className={`${kieu.khung} items-center text-center`}>
+          <p className="m-0 text-[length:var(--co-chu-latin)] font-bold">
+            Xong ván {vanSo + 1}/{cacVan.length}!
+          </p>
+          <button type="button" onClick={sangVanSau} className={kieu.nutChinh}>
+            <BieuTuong ten="tiep-theo" />
+            Sang ván tiếp theo
+          </button>
+        </div>
+      )}
 
       {giaiDoan === "xong" && ketQua && (
         <div className={`${kieu.khung} items-center text-center`}>

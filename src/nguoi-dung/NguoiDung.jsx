@@ -45,6 +45,16 @@ import {
 import { docTenDaNho, nhoTen, quenTen } from "./nhoDangNhap.js";
 import { kiemTraDaXacMinh, taoTaiKhoan } from "../firebase/taiKhoanEmail.js";
 import { docTienDo, ghiLo } from "../firebase/luuTru.js";
+import { taiLoTrinh } from "../du-lieu/taiDuLieu.js";
+import {
+  TONG_BUOC,
+  chuyenNgay,
+  hocTruocBaiSau,
+  mucCuaPhan,
+  phanCuaBuoc,
+  phanDaXong,
+  taoMuc,
+} from "../luyen-tap/baiHoc.js";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
 import {
   apDungCaiDat,
@@ -117,6 +127,9 @@ export function NguoiDungProvider({ children }) {
   const [daHoc, setDaHoc] = useState({});
   const [tapViet, setTapViet] = useState({});
   const [loTrinh, setLoTrinh] = useState(LO_TRINH_BAN_DAU);
+  // Lộ trình bài học (lo-trinh.json) và ngày hôm nay (đổi khi qua nửa đêm)
+  const [duongLoTrinh, setDuongLoTrinh] = useState(null);
+  const [ngayHienTai, setNgayHienTai] = useState(chuoiNgay);
   const [nhatKy, setNhatKy] = useState({});
   const [chuoi, setChuoi] = useState(null);
   // Tăng lên mỗi lần vừa đạt mục tiêu, để thanh trên chạy hiệu ứng mặt trời
@@ -345,6 +358,19 @@ export function NguoiDungProvider({ children }) {
     [henGhi],
   );
 
+  /** Đánh dấu nhiều mục "đã học" một lần (khi xong một phần của bài hôm nay). */
+  const danhDauNhieu = useCallback(
+    (ids) => {
+      if (!nguoiRef.current || ids.length === 0) return;
+      setDaHoc((truoc) => ({ ...truoc, ...Object.fromEntries(ids.map((id) => [id, true])) }));
+      if (sanSangGhi.current) {
+        for (const id of ids) choGhi.current.daHoc[id] = true;
+        henGhi(true, 10);
+      }
+    },
+    [henGhi],
+  );
+
   /**
    * Sửa bản ghi của hôm nay trong nhật ký, rồi kiểm tra đã đạt mục tiêu chưa.
    * `sua` nhận bản sao của ngày hôm nay và sửa trực tiếp vào đó.
@@ -396,24 +422,9 @@ export function NguoiDungProvider({ children }) {
     [suaHomNay],
   );
 
-  /**
-   * Đánh dấu một bước của bài đang học là XONG (GĐ 10).
-   * Xong đủ `tongBuoc` bước thì bài được tính là học xong hôm nay (đạt mục tiêu
-   * ngày), và mở luôn bài tiếp theo.
-   */
-  const hoanThanhBuoc = useCallback(
-    (maBuoc, tongBuoc) => {
-      if (!nguoiRef.current) return;
-      const lt = loTrinhRef.current;
-      if (lt.buoc.includes(maBuoc)) return;
-      let moi = { bai: lt.bai, buoc: [...lt.buoc, maBuoc] };
-      if (moi.buoc.length >= tongBuoc) {
-        const baiXong = lt.bai;
-        moi = { bai: lt.bai + 1, buoc: [] };
-        suaHomNay((ngay) => {
-          ngay.baiXong = [...(ngay.baiXong ?? []), baiXong];
-        });
-      }
+  /** Đổi tiến độ bài học và hẹn ghi lên Firestore. */
+  const datLoTrinh = useCallback(
+    (moi) => {
       loTrinhRef.current = moi;
       setLoTrinh(moi);
       if (sanSangGhi.current) {
@@ -421,8 +432,84 @@ export function NguoiDungProvider({ children }) {
         henGhi(true, 10); // tiến độ bài học: ghi sớm cho khỏi mất
       }
     },
-    [henGhi, suaHomNay],
+    [henGhi],
   );
+
+  /**
+   * Đánh dấu một bước của bài hôm nay là XONG (GĐ 10, quyết định 18.26).
+   *  - Xong hết các bước của một PHẦN thì mọi mục của phần đó được đánh dấu
+   *    "đã học" (tính vào % ở tab và viền nét đứt trong danh sách).
+   *  - Xong hết 8 bước thì đạt mục tiêu ngày. Bài KHÔNG tự sang bài mới: bài
+   *    mới đến khi sang ngày (xem chuyenNgay trong baiHoc.js), hoặc khi người
+   *    dùng bấm "Học trước bài tiếp theo".
+   */
+  const hoanThanhBuoc = useCallback(
+    (maBuoc) => {
+      if (!nguoiRef.current) return;
+      const lt = loTrinhRef.current;
+      if (lt.buoc.includes(maBuoc)) return;
+      const buoc = [...lt.buoc, maBuoc];
+      const phan = phanCuaBuoc(maBuoc);
+      if (phan && phanDaXong(phan, buoc)) danhDauNhieu(mucCuaPhan(lt.muc, phan.ma));
+      if (buoc.length >= TONG_BUOC) {
+        suaHomNay((ngay) => {
+          ngay.baiXong = [...(ngay.baiXong ?? []), lt.bai];
+        });
+      }
+      datLoTrinh({ ...lt, buoc });
+    },
+    [danhDauNhieu, datLoTrinh, suaHomNay],
+  );
+
+  /** Học trước bài tiếp theo, chỉ khi đã xong hết bài hôm nay. */
+  const hocTruoc = useCallback(() => {
+    const lt = loTrinhRef.current;
+    if (!nguoiRef.current || !duongLoTrinh || lt.buoc.length < TONG_BUOC) return;
+    datLoTrinh(hocTruocBaiSau(lt, duongLoTrinh));
+  }, [datLoTrinh, duongLoTrinh]);
+
+  // ---------------------------------------------------------------------------
+  // LỘ TRÌNH BÀI HỌC VÀ LUẬT SANG NGÀY
+  // ---------------------------------------------------------------------------
+  useEffect(() => {
+    let conSong = true;
+    taiLoTrinh()
+      .then((d) => conSong && setDuongLoTrinh(d))
+      .catch(() => {});
+    return () => {
+      conSong = false;
+    };
+  }, []);
+
+  // Mở lại app hoặc để app mở qua nửa đêm: cập nhật "hôm nay"
+  useEffect(() => {
+    const kiemTra = () => setNgayHienTai(chuoiNgay());
+    const hen = setInterval(kiemTra, 60 * 1000);
+    document.addEventListener("visibilitychange", kiemTra);
+    return () => {
+      clearInterval(hen);
+      document.removeEventListener("visibilitychange", kiemTra);
+    };
+  }, []);
+
+  // Sang ngày mới (hoặc lần đầu có tiến độ): giao bài theo luật trong baiHoc.js
+  useEffect(() => {
+    if (trangThai !== "da-dang-nhap" || !duongLoTrinh) return;
+    const lt = loTrinhRef.current;
+    const moi = chuyenNgay(lt, duongLoTrinh, ngayHienTai);
+    if (moi === lt) return;
+    const { laDuLieuCu, ...luu } = moi;
+    // Tiến độ dạng cũ: coi mọi mục của các bài trước là đã học
+    if (laDuLieuCu && luu.bai > 1) {
+      const ids = [];
+      for (let b = 1; b < luu.bai; b += 1) {
+        const m = taoMuc(duongLoTrinh, b);
+        if (m) ids.push(...m.chu, ...m.tu, ...m.np);
+      }
+      danhDauNhieu([...new Set(ids)]);
+    }
+    datLoTrinh(luu);
+  }, [trangThai, duongLoTrinh, ngayHienTai, loTrinh, datLoTrinh, danhDauNhieu]);
 
   // ---------------------------------------------------------------------------
   // ĐẾM PHÚT HỌC
@@ -523,6 +610,11 @@ export function NguoiDungProvider({ children }) {
       ghiKetQua,
       loTrinh,
       hoanThanhBuoc,
+      hocTruoc,
+      duongLoTrinh,
+      // Mã các mục của hôm nay. Khách (chưa có tiến độ) thì là bài 1.
+      mucHomNay:
+        loTrinh.muc ?? (duongLoTrinh ? taoMuc(duongLoTrinh, loTrinh.bai) : null),
       nhatKy,
       tienDoHomNay,
       lanVuaDat,
@@ -546,6 +638,8 @@ export function NguoiDungProvider({ children }) {
       ghiKetQua,
       loTrinh,
       hoanThanhBuoc,
+      hocTruoc,
+      duongLoTrinh,
       nhatKy,
       tienDoHomNay,
       lanVuaDat,

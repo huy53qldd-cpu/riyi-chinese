@@ -1,221 +1,187 @@
 /* =============================================================================
-   TAB C — TỪ VỰNG (GIAI ĐOẠN 4)
+   TAB C — TỪ VỰNG
    =============================================================================
 
    Hai màn hình nhỏ trong một tab:
-     1. Danh sách từ, lọc theo cấp HSK và theo chủ đề
+     1. Danh sách (GĐ 10, quyết định 18.27):
+        - Trên cùng: 10 từ hôm nay (theo bài hôm nay; có thể thêm từ "ôn thêm"
+          dồn từ hôm qua) và NHIỆM VỤ HÔM NAY: Thẻ ghi nhớ → Trắc nghiệm →
+          Điền từ → Trò chơi lật thẻ. Cả 4 bước dùng ĐÚNG CÙNG các từ hôm nay.
+        - Ba nút HSK 1 / HSK 2 / HSK 3, mỗi nút có thanh % từ đã học.
+        - Nút "Xem toàn bộ từ vựng HSK N" mở danh sách đủ (có lọc chủ đề); từ
+          đã học có viền nét đứt và mờ hơn.
      2. Chi tiết một từ: từ loại, nghĩa, câu ví dụ
 
    Thứ tự nội dung luôn là TRUNG → NHẬT → VIỆT. Nhãn chủ đề nằm trong dữ liệu
    (danhMucChuDe), không viết cứng ở đây.
-
-   Luyện tập (GĐ 7): thẻ ghi nhớ, trắc nghiệm nghĩa, điền từ vào câu ví dụ.
-   Luyện trên đúng những từ đang hiện theo bộ lọc.
-
-   Chưa làm: nút loa (chưa chốt nguồn âm thanh).
    ============================================================================= */
 
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 
-import { taiTuVung } from "../du-lieu/taiDuLieu.js";
-import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
-import ChuNhat from "../thanh-phan/ChuNhat.jsx";
-import NutDaHoc, { DauDaHoc } from "../thanh-phan/NutDaHoc.jsx";
-import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
-import KhungChonLuyenTap from "../luyen-tap/KhungChonLuyenTap.jsx";
-import PhienLuyenTap from "../luyen-tap/PhienLuyenTap.jsx";
-import TroChoiLatThe from "../luyen-tap/TroChoiLatThe.jsx";
-import { capTuVung } from "../luyen-tap/capLatThe.js";
 import {
-  cauHoiDienTu,
-  cauHoiNghiaTu,
-  taoLuot,
-  theGhiNhoTu,
-} from "../luyen-tap/taoCauHoi.jsx";
+  KhungNhiemVu,
+  NutCapHsk,
+  tinhTienDoCap,
+  useBaiHomNay,
+  useNhiemVu,
+} from "../luyen-tap/NhiemVuHomNay.jsx";
+import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
+import ChuNhat from "../thanh-phan/ChuNhat.jsx";
+import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
+import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
+import NutDaHoc from "../thanh-phan/NutDaHoc.jsx";
+import { NhanOnThem } from "./TabMucTieu.jsx";
 
-// Ba cách luyện từ vựng
-const CACH_LUYEN = [
-  { ma: "the", nhan: "Thẻ ghi nhớ" },
-  { ma: "trac-nghiem", nhan: "Trắc nghiệm" },
-  { ma: "dien-tu", nhan: "Điền từ" },
-  { ma: "lat-the", nhan: "Trò chơi lật thẻ" },
-];
-
-const CAC_CAP = [
-  { ma: 0, nhan: "Tất cả" },
-  { ma: 1, nhan: "HSK 1" },
-  { ma: 2, nhan: "HSK 2" },
-  { ma: 3, nhan: "HSK 3" },
-];
+// Danh sách dài (HSK 3 có 500 từ): mỗi lần chỉ vẽ một phần
+const SO_THE_MOI_LAN = 40;
 
 const nhanTieuDe =
   "text-chu-mo m-0 mb-1 text-[length:var(--co-chu-latin-nho)] font-bold uppercase tracking-wide";
 const khungMuc =
   "border-vien bg-nen-noi flex flex-col gap-2 rounded-[var(--bo-goc)] border p-4";
-const chip =
-  "rounded-[var(--bo-goc-tron)] border px-3.5 py-1.5 text-[length:var(--co-chu-latin-nho)] font-semibold transition-colors";
 
 export default function TabTuVung() {
-  const [trangThai, setTrangThai] = useState("dang-tai"); // dang-tai | xong | loi
-  const [du, setDu] = useState({ danhMucChuDe: {}, danhSach: [] });
-  const [cap, setCap] = useState(0);
+  const nd = useNguoiDung();
+  const { du, loi, bai, noiDung } = useBaiHomNay();
+  const { batDau, manHinh } = useNhiemVu(noiDung, du, bai?.so);
+  const [capChon, setCapChon] = useState(null); // null = cấp của bài hôm nay
   const [chuDe, setChuDe] = useState("tat-ca");
+  const [moToanBo, setMoToanBo] = useState(false);
+  const [soHien, setSoHien] = useState(SO_THE_MOI_LAN);
   const [tuDangMo, setTuDangMo] = useState(null);
-  const [cachLuyen, setCachLuyen] = useState(null);
 
-  useEffect(() => {
-    let conSong = true; // tránh cập nhật khi người dùng đã rời tab
-    taiTuVung()
-      .then((d) => {
-        if (!conSong) return;
-        setDu(d);
-        setTrangThai("xong");
-      })
-      .catch(() => conSong && setTrangThai("loi"));
-    return () => {
-      conSong = false;
-    };
-  }, []);
+  const danhSach = useMemo(() => du?.tuVung.danhSach ?? [], [du]);
+  const tienDoCap = useMemo(() => tinhTienDoCap(danhSach, nd.daHoc), [danhSach, nd.daHoc]);
 
+  if (manHinh) return manHinh;
   if (tuDangMo) {
     return (
       <ChiTietTu
         muc={tuDangMo}
-        nhanChuDe={du.danhMucChuDe[tuDangMo.chuDe]}
+        nhanChuDe={du?.danhMucChuDe[tuDangMo.chuDe]}
         quayLai={() => setTuDangMo(null)}
       />
     );
   }
 
-  // Chỉ liệt kê những chủ đề thật sự có từ, sắp theo nhãn tiếng Việt
-  const cacChuDe = [...new Set(du.danhSach.map((t) => t.chuDe))].sort((a, b) =>
+  const cap = capChon ?? noiDung?.tu[0]?.capHsk ?? 1;
+  const cuaCap = danhSach.filter((t) => t.capHsk === cap);
+  // Chỉ liệt kê những chủ đề thật sự có từ ở cấp này, sắp theo nhãn tiếng Việt
+  const cacChuDe = [...new Set(cuaCap.map((t) => t.chuDe))].sort((a, b) =>
     (du.danhMucChuDe[a] ?? a).localeCompare(du.danhMucChuDe[b] ?? b, "vi"),
   );
-  const hienThi = du.danhSach.filter(
-    (t) =>
-      (cap === 0 || t.capHsk === cap) &&
-      (chuDe === "tat-ca" || t.chuDe === chuDe),
-  );
+  const hienThi = cuaCap.filter((t) => chuDe === "tat-ca" || t.chuDe === chuDe);
 
-  if (cachLuyen === "lat-the") {
-    return (
-      <TroChoiLatThe
-        tieuDe="Trò chơi lật thẻ"
-        taoCap={() => capTuVung(hienThi)}
-        khoaKyLuc="tu-vung"
-        quayLai={() => setCachLuyen(null)}
-      />
-    );
-  }
-
-  if (cachLuyen) {
-    // Đáp án nhiễu lấy từ TOÀN BỘ danh sách, để lọc hẹp vẫn đủ 4 lựa chọn
-    const tao = {
-      the: (t) => theGhiNhoTu(t),
-      "trac-nghiem": (t) => cauHoiNghiaTu(t, du.danhSach),
-      "dien-tu": (t) => cauHoiDienTu(t, du.danhSach),
-    }[cachLuyen];
-    return (
-      <PhienLuyenTap
-        tieuDe={CACH_LUYEN.find((c) => c.ma === cachLuyen).nhan}
-        taoDanhSach={() => taoLuot(hienThi, tao)}
-        quayLai={() => setCachLuyen(null)}
-      />
-    );
+  function chonCap(c) {
+    setCapChon(c);
+    setChuDe("tat-ca");
+    setSoHien(SO_THE_MOI_LAN);
   }
 
   return (
     <section>
-      <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-        Từ vựng
-      </h1>
-      <p className="text-chu-mo mt-1.5 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-        Từ vựng HSK theo đại cương chính thức. Mỗi từ có từ Nhật tương đương và
-        câu ví dụ.
-      </p>
+      <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">Từ vựng</h1>
 
-      {/* Bộ lọc cấp HSK */}
-      <div
-        className="mt-4 flex flex-wrap gap-2"
-        role="group"
-        aria-label="Lọc theo cấp HSK"
-      >
-        {CAC_CAP.map((c) => (
-          <button
-            key={c.ma}
-            type="button"
-            onClick={() => setCap(c.ma)}
-            aria-pressed={cap === c.ma}
-            className={`${chip} ${
-              cap === c.ma
-                ? "border-nhan bg-nhan text-chu-tren-nhan"
-                : "border-vien bg-transparent"
-            }`}
-          >
-            {c.nhan}
-          </button>
-        ))}
-      </div>
-
-      {/* Bộ lọc chủ đề: danh sách thả xuống vì có nhiều chủ đề */}
-      <label className="mt-3 flex items-center gap-2 text-[length:var(--co-chu-latin-nho)]">
-        <span className="text-chu-mo font-semibold">Chủ đề</span>
-        <select
-          value={chuDe}
-          onChange={(e) => setChuDe(e.target.value)}
-          className="border-vien bg-nen-noi rounded-[var(--bo-goc-nho)] border px-3 py-1.5 text-[length:var(--co-chu-latin-nho)] font-semibold"
-        >
-          <option value="tat-ca">Tất cả chủ đề</option>
-          {cacChuDe.map((ma) => (
-            <option key={ma} value={ma}>
-              {du.danhMucChuDe[ma] ?? ma}
-            </option>
-          ))}
-        </select>
-      </label>
-
-      {trangThai === "dang-tai" && (
+      {!du && !loi && (
         <p className="text-chu-mo mt-5 text-[length:var(--co-chu-latin-nho)]">
           Đang tải danh sách từ...
         </p>
       )}
-
-      {trangThai === "loi" && (
+      {loi && (
         <p className="text-sai mt-5 text-[length:var(--co-chu-latin-nho)]">
           Không tải được dữ liệu từ vựng. Hãy kiểm tra mạng rồi mở lại tab này.
         </p>
       )}
 
-      {trangThai === "xong" && hienThi.length === 0 && (
-        <div className="border-vien bg-nen-phu mt-4 rounded-[var(--bo-goc)] border border-dashed p-6 text-center">
-          <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)]">
-            Chưa có từ nào ở mục này.
-          </p>
-        </div>
-      )}
-
-      {trangThai === "xong" && hienThi.length > 0 && (
-        <KhungChonLuyenTap
-          cacCach={CACH_LUYEN}
-          soMuc={hienThi.length}
-          chon={setCachLuyen}
-          ghiChu={`Mỗi lượt 10 câu (trò chơi lật thẻ: 10 từ, 20 thẻ), lấy từ ${hienThi.length} từ đang hiện theo bộ lọc. Trả lời sai sẽ vào mục Review. Mục tiêu ngày chỉ tính khi học xong Bài hôm nay (bấm thanh trên cùng).`}
-        />
-      )}
-
-      {trangThai === "xong" && hienThi.length > 0 && (
-        <>
-          <p className="text-chu-mo mt-4 mb-0 text-[length:var(--co-chu-latin-nho)]">
-            {hienThi.length} từ
-          </p>
+      {/* --- Từ vựng hôm nay --- */}
+      {noiDung && noiDung.tu.length > 0 && (
+        <div className="mt-4">
+          <div className="flex items-baseline justify-between gap-2">
+            <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
+              {noiDung.tu.length} từ vựng hôm nay
+            </h2>
+            {bai && (
+              <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold">
+                Bài {bai.so}
+              </span>
+            )}
+          </div>
           <ul className="m-0 mt-2 flex list-none flex-col gap-3 p-0">
-            {hienThi.map((t) => (
+            {noiDung.tu.map((t) => (
               <li key={t.id}>
-                <TheTu muc={t} moChiTiet={() => setTuDangMo(t)} />
+                <TheTu muc={t} onThem={noiDung.them.has(t.id)} moChiTiet={() => setTuDangMo(t)} />
               </li>
             ))}
           </ul>
+          <KhungNhiemVu
+            maPhan="tu"
+            batDau={batDau}
+            sanSang={Boolean(du)}
+            ghiChu="Cả 4 bước dùng đúng các từ hôm nay ở trên. Xong cả 4 mới tính là hoàn thành phần từ vựng; chưa xong thì các từ này dồn sang ngày mai."
+          />
+        </div>
+      )}
+
+      {/* --- Ba nút cấp HSK, mỗi nút có thanh % đã học --- */}
+      {du && <NutCapHsk capChon={cap} chon={chonCap} tienDo={tienDoCap} donVi="từ" />}
+
+      {du && cuaCap.length > 0 && (
+        <button
+          type="button"
+          onClick={() => setMoToanBo((m) => !m)}
+          aria-expanded={moToanBo}
+          className="border-vien mt-4 inline-flex w-full items-center justify-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2.5 text-[length:var(--co-chu-latin-nho)] font-semibold"
+        >
+          <BieuTuong ten={moToanBo ? "thu-gon" : "xem-them"} co={16} />
+          {moToanBo
+            ? `Thu gọn danh sách HSK ${cap}`
+            : `Xem toàn bộ từ vựng HSK ${cap} (${cuaCap.length} từ)`}
+        </button>
+      )}
+
+      {du && moToanBo && (
+        <>
+          {/* Lọc chủ đề: danh sách thả xuống vì có nhiều chủ đề */}
+          <label className="mt-3 flex items-center gap-2 text-[length:var(--co-chu-latin-nho)]">
+            <span className="text-chu-mo font-semibold">Chủ đề</span>
+            <select
+              value={chuDe}
+              onChange={(e) => {
+                setChuDe(e.target.value);
+                setSoHien(SO_THE_MOI_LAN);
+              }}
+              className="border-vien bg-nen-noi rounded-[var(--bo-goc-nho)] border px-3 py-1.5 text-[length:var(--co-chu-latin-nho)] font-semibold"
+            >
+              <option value="tat-ca">Tất cả chủ đề</option>
+              {cacChuDe.map((ma) => (
+                <option key={ma} value={ma}>
+                  {du.danhMucChuDe[ma] ?? ma}
+                </option>
+              ))}
+            </select>
+          </label>
+          <p className="text-chu-mo mt-3 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+            {hienThi.length} từ. Từ đã học (phần từ vựng đã hoàn thành hoặc bạn tự
+            đánh dấu) có viền nét đứt và mờ hơn.
+          </p>
+          <ul className="m-0 mt-3 flex list-none flex-col gap-3 p-0">
+            {hienThi.slice(0, soHien).map((t) => (
+              <li key={t.id}>
+                <TheTu muc={t} daHoc={Boolean(nd.daHoc[t.id])} moChiTiet={() => setTuDangMo(t)} />
+              </li>
+            ))}
+          </ul>
+          {hienThi.length > soHien && (
+            <button
+              type="button"
+              onClick={() => setSoHien((n) => n + SO_THE_MOI_LAN)}
+              className="border-vien mt-4 inline-flex w-full items-center justify-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2.5 text-[length:var(--co-chu-latin-nho)] font-semibold"
+            >
+              <BieuTuong ten="xem-them" co={16} />
+              Xem thêm ({hienThi.length - soHien} từ nữa)
+            </button>
+          )}
         </>
       )}
     </section>
@@ -225,13 +191,20 @@ export default function TabTuVung() {
 /* -----------------------------------------------------------------------------
    THẺ TRONG DANH SÁCH: Trung → Nhật → nghĩa Việt
    ----------------------------------------------------------------------------- */
-function TheTu({ muc, moChiTiet }) {
+function TheTu({ muc, moChiTiet, daHoc = false, onThem = false }) {
   return (
     <button
       type="button"
       onClick={moChiTiet}
-      className="border-vien bg-nen-noi active:bg-nhan-nhat flex w-full flex-col gap-1 rounded-[var(--bo-goc)] border px-4 py-3 text-left shadow-[0_1px_3px_var(--bong)] transition-colors"
+      className={`border-vien bg-nen-noi active:bg-nhan-nhat flex w-full flex-col gap-1 rounded-[var(--bo-goc)] border px-4 py-3 text-left transition-colors ${
+        daHoc ? "border-2 border-dashed opacity-55" : "shadow-[0_1px_3px_var(--bong)]"
+      }`}
     >
+      {onThem && (
+        <span className="self-start">
+          <NhanOnThem />
+        </span>
+      )}
       {/* TRUNG */}
       <ChuTrung amTiet={ghepAmTiet(muc.tu, muc.pinyin)} />
       {/* NHẬT: hàng riêng vì có chuỗi dài, xếp cạnh chữ Trung sẽ ngắt dòng xấu */}
@@ -240,7 +213,7 @@ function TheTu({ muc, moChiTiet }) {
       <p className="m-0 text-[length:var(--co-chu-latin)] font-semibold">
         {muc.nghiaViet}
       </p>
-      <DauDaHoc id={muc.id} />
+      {daHoc && <span className="sr-only">(đã học)</span>}
     </button>
   );
 }

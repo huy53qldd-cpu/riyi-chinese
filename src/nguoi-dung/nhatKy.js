@@ -34,15 +34,37 @@
  *   bai  : số bài đang học (bắt đầu từ 1, tăng mãi; hết lộ trình thì quay vòng)
  *   buoc : các bước ĐÃ XONG của bài đang học
  */
-export const LO_TRINH_BAN_DAU = { bai: 1, buoc: [] };
+export const LO_TRINH_BAN_DAU = {
+  bai: 1,
+  buoc: [],
+  them: { chuViet: [], chuGame: [], tu: [], np: [] },
+};
 
-/** Giữ lại tiến độ hợp lệ, chỗ nào sai thì dùng giá trị ban đầu. */
+/**
+ * Giữ lại tiến độ hợp lệ, chỗ nào sai thì dùng giá trị ban đầu.
+ * Giữ cả ngày giao bài, danh sách mục hôm nay và phần cộng thêm (xem
+ * src/luyen-tap/baiHoc.js); thiếu thì để trống, luật sang ngày sẽ tự tạo lại.
+ */
 export function chuanHoaLoTrinh(thu) {
   const bai = Math.round(Number(thu?.bai));
-  return {
+  const ds = (x) => (Array.isArray(x) ? x.filter((v) => typeof v === "string") : []);
+  const ra = {
     bai: bai >= 1 ? bai : 1,
-    buoc: Array.isArray(thu?.buoc) ? thu.buoc.filter((b) => typeof b === "string") : [],
+    buoc: ds(thu?.buoc),
   };
+  if (typeof thu?.ngay === "string" && /^\d{4}-\d{2}-\d{2}$/.test(thu.ngay)) ra.ngay = thu.ngay;
+  const m = thu?.muc;
+  if (m && typeof m === "object") {
+    ra.muc = { chu: ds(m.chu), chuViet: ds(m.chuViet), chuGame: ds(m.chuGame), tu: ds(m.tu), np: ds(m.np) };
+  }
+  const t = thu?.them;
+  ra.them = {
+    chuViet: ds(t?.chuViet),
+    chuGame: ds(t?.chuGame),
+    tu: ds(t?.tu),
+    np: ds(t?.np),
+  };
+  return ra;
 }
 
 // -----------------------------------------------------------------------------
