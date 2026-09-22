@@ -395,6 +395,7 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 18.33 | **Bỏ dòng ghi công âm thanh trên màn hình Phát âm**. Ghi công audio-cmn (Chen Wang, Hugo Lopez, CC BY-SA) chỉ nằm trong source: public/am-thanh/GIAY-PHEP.txt và cong-cu/tai-am-thanh.py |
 | 18.34 | **Hiệu ứng ấn nút thanh**: khi bấm "Nghe cả 4 thanh" (hoặc bấm một thanh), nút thanh đang được đọc sáng màu nhấn và thu nhỏ nhẹ như đang bị ấn, lần lượt theo tiếng đọc. phatAm() nhận thêm tham số khiDoc(viTri) để báo âm đang đọc |
 | 18.35 | **Gỡ hai ô nghiệm thu GĐ 0** khỏi tab Chữ Hán: "Kiểm tra tự dạng Trung – Nhật" (KiemTraFont.jsx, đã xoá) và "Thử hiển thị ba thứ tiếng". Tab Chữ Hán chỉ còn: 5 chữ hôm nay, Nhiệm vụ hôm nay, nút HSK 1/2/3. Muốn đo lại tự dạng thì chạy python cong-cu/so-sanh-tu-dang.py |
+| 18.36 | **"N chữ Hán hôm nay" chỉ hiện ô vuông có chữ Hán**, một hàng 5 ô: KHÔNG pinyin, không chữ Nhật, không nghĩa (ngoại lệ có chủ ý của quy tắc "chữ Trung luôn có pinyin", do chủ dự án chốt). Bấm vào ô mới mở chi tiết (giải thích, tập viết). Chữ đã học: ô mờ đi, viền nét đứt. Danh sách "Xem toàn bộ" giữ thẻ cũ |
 
 ### Đang chờ chủ dự án
 

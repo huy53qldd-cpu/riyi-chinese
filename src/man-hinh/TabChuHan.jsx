@@ -7,6 +7,9 @@
         - Trên cùng: 5 chữ Hán hôm nay (theo bài hôm nay, có thể thêm 1 chữ
           "ôn thêm" do hôm qua chưa xong) và NHIỆM VỤ HÔM NAY: Tập viết, Trò
           chơi lật thẻ. Đây chính là bước của Bài hôm nay (quyết định 18.26).
+          Chữ hôm nay chỉ hiện một ô vuông có chữ Hán, KHÔNG pinyin, không
+          nghĩa (quyết định 18.36): bấm vào mới mở phần giải thích, tập viết.
+          Chữ đã học thì ô mờ đi, viền nét đứt.
         - Ba nút HSK 1 / HSK 2 / HSK 3, mỗi nút có thanh % chữ đã học của cấp đó
         - Nút "Xem toàn bộ chữ Hán HSK N" mở danh sách đủ của cấp đang chọn.
           Chữ ĐÃ HỌC (thuộc phần Chữ Hán đã hoàn thành của các ngày, hoặc tự
@@ -117,21 +120,15 @@ export default function TabChuHan() {
       {/* --- Chữ Hán hôm nay --- */}
       {chuHomNay.length > 0 && (
         <div className="mt-4">
-          <div className="flex items-baseline justify-between gap-2">
-            <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-              {noiDung.chu.length} chữ Hán hôm nay
-            </h2>
-            {bai && (
-              <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold">
-                Bài {bai.so}
-              </span>
-            )}
-          </div>
-          <ul className="m-0 mt-2 grid list-none grid-cols-2 gap-3 p-0">
+          <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
+            {noiDung.chu.length} chữ Hán hôm nay
+          </h2>
+          <ul className="m-0 mt-2 grid list-none grid-cols-5 gap-2 p-0">
             {chuHomNay.map((muc) => (
               <li key={muc.id}>
-                <TheChuHan
+                <OChuHomNay
                   muc={muc}
+                  daHoc={Boolean(nd.daHoc[muc.id])}
                   onThem={noiDung.them.has(muc.id)}
                   moChiTiet={() => setChuDangMo(muc)}
                 />
@@ -195,6 +192,26 @@ export default function TabChuHan() {
         </>
       )}
     </section>
+  );
+}
+
+/* -----------------------------------------------------------------------------
+   Ô CHỮ HÁN HÔM NAY: chỉ có chữ Hán (quyết định 18.36), bấm để mở chi tiết.
+   Chữ đã học: viền nét đứt, mờ hơn.
+   ----------------------------------------------------------------------------- */
+function OChuHomNay({ muc, moChiTiet, daHoc, onThem }) {
+  const moTa = [muc.nghia.viet, onThem && "ôn thêm", daHoc && "đã học"].filter(Boolean).join(", ");
+  return (
+    <button
+      type="button"
+      onClick={moChiTiet}
+      aria-label={`${muc.gianThe}: ${moTa}`}
+      className={`border-vien bg-nen-noi active:bg-nhan-nhat flex aspect-square w-full items-center justify-center rounded-[var(--bo-goc)] transition-colors ${
+        daHoc ? "border-2 border-dashed opacity-55" : "border shadow-[0_1px_3px_var(--bong)]"
+      }`}
+    >
+      <ChuTrung amTiet={[{ chu: muc.gianThe }]} hienPinyin={false} coRieng="1.75rem" />
+    </button>
   );
 }
 
