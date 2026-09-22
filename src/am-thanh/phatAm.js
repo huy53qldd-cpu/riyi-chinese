@@ -31,6 +31,7 @@ export const NGON_NGU = {
 let theAmThanh = null;
 let dangPhat = false;
 let luotHienTai = 0; // tăng mỗi lần phát mới, để lượt cũ đang đọc dở tự dừng
+let baoLuotTruoc = null; // hàm khiDoc của lượt đang phát, để báo nó dừng khi bị chen
 
 export function dangPhatAm() {
   return dangPhat;
@@ -71,13 +72,17 @@ function phatMotFile(duongDan) {
  * @param {string} noiDung   Âm tiết pinyin ("ma1", hoặc "ma1 ma2 ma3 ma4" để đọc
  *                           lần lượt), hoặc chữ cần đọc ("你好", "こんにちは").
  * @param {string} ngonNgu   NGON_NGU.AM_TIET, NGON_NGU.TRUNG hoặc NGON_NGU.NHAT.
+ * @param {(viTri: number|null) => void} [khiDoc]  Không bắt buộc. Được gọi với vị trí
+ *                           âm tiết (0, 1, 2…) lúc bắt đầu đọc âm đó, và với null khi
+ *                           đọc xong hoặc bị lượt phát khác chen ngang. Dùng để làm
+ *                           sáng nút đang được đọc.
  * @returns {Promise<{thanhCong: boolean, thongBao: string|null}>}
  *          thanhCong = false kèm thongBao tiếng Việt khi chưa phát được.
  *
  * Hàm LUÔN trả về kết quả chứ không ném lỗi ra ngoài, để một nút loa hỏng
  * không bao giờ làm sập cả màn hình đang học.
  */
-export async function phatAm(noiDung, ngonNgu = NGON_NGU.TRUNG) {
+export async function phatAm(noiDung, ngonNgu = NGON_NGU.TRUNG, khiDoc = null) {
   if (!noiDung || !String(noiDung).trim()) {
     return { thanhCong: false, thongBao: "Không có nội dung để phát âm." };
   }
@@ -92,10 +97,13 @@ export async function phatAm(noiDung, ngonNgu = NGON_NGU.TRUNG) {
   }
 
   const luot = ++luotHienTai;
+  baoLuotTruoc?.(null); // lượt cũ bị chen: tắt nút đang sáng của nó
+  baoLuotTruoc = khiDoc;
   dangPhat = true;
   try {
-    for (const am of cacAmTiet) {
+    for (const [viTri, am] of cacAmTiet.entries()) {
       if (luot !== luotHienTai) break; // đã có lượt phát mới chen vào
+      khiDoc?.(viTri);
       await phatMotFile(`/am-thanh/am-tiet/${am}.mp3`);
       // Nghỉ một chút giữa các thanh cho dễ nghe
       if (cacAmTiet.length > 1) await new Promise((r) => setTimeout(r, 250));
@@ -108,6 +116,10 @@ export async function phatAm(noiDung, ngonNgu = NGON_NGU.TRUNG) {
       thongBao: "Không phát được âm thanh. Hãy kiểm tra mạng và âm lượng rồi thử lại.",
     };
   } finally {
-    if (luot === luotHienTai) dangPhat = false;
+    if (luot === luotHienTai) {
+      dangPhat = false;
+      baoLuotTruoc = null;
+      khiDoc?.(null);
+    }
   }
 }

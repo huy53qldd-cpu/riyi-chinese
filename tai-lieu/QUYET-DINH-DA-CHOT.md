@@ -393,6 +393,7 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 18.31 | **Thanh dưới 5 nút**: Phát âm · Chữ Hán · Từ vựng · Ngữ pháp · Khám phá. Tab "Đồng tự" đổi thành **Khám phá**, trong đó có: Đồng tự dị nghĩa (màn cũ), Review cuối tuần (chuyển vào từ thanh dưới), Thi thử HSK (hiện "Sắp có") |
 | 18.32 | **Quy tắc ô bảng pinyin**: j q x không ghép với u thường (ô để trống; ju/qu/xu là j q x + ü, nằm ở cột ü). Tên file âm thanh sau j q x y viết u (ju4.mp3, không phải jv4). Bảng hiện 380 ô có âm thanh thật. Cột phụ âm đứng yên khi kéo ngang bảng |
 | 18.33 | **Bỏ dòng ghi công âm thanh trên màn hình Phát âm**. Ghi công audio-cmn (Chen Wang, Hugo Lopez, CC BY-SA) chỉ nằm trong source: public/am-thanh/GIAY-PHEP.txt và cong-cu/tai-am-thanh.py |
+| 18.34 | **Hiệu ứng ấn nút thanh**: khi bấm "Nghe cả 4 thanh" (hoặc bấm một thanh), nút thanh đang được đọc sáng màu nhấn và thu nhỏ nhẹ như đang bị ấn, lần lượt theo tiếng đọc. phatAm() nhận thêm tham số khiDoc(viTri) để báo âm đang đọc |
 
 ### Đang chờ chủ dự án
 

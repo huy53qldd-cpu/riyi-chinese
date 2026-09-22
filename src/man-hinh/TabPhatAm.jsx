@@ -137,8 +137,8 @@ export default function TabPhatAm() {
     };
   }, []);
 
-  async function nghe(noiDung) {
-    const kq = await phatAm(noiDung, NGON_NGU.AM_TIET);
+  async function nghe(noiDung, khiDoc) {
+    const kq = await phatAm(noiDung, NGON_NGU.AM_TIET, khiDoc);
     if (!kq.thanhCong && kq.thongBao) hienThongBao(kq.thongBao);
   }
 
@@ -343,6 +343,12 @@ function BangNhom({ nhom, chamO, oChon }) {
    ----------------------------------------------------------------------------- */
 function KhungChonThanh({ o, nghe, dong }) {
   const coThanh = (t) => o.thanh.includes(t);
+  // Thanh đang được đọc: nút đó hiện như đang bị ấn (cả khi bấm "Nghe cả 4 thanh")
+  const [thanhDangDoc, setThanhDangDoc] = useState(null);
+  const ngheCacThanh = (cacThanh) =>
+    nghe(cacThanh.map((t) => `${o.khoa}${t}`).join(" "), (viTri) =>
+      setThanhDangDoc(viTri === null ? null : cacThanh[viTri]),
+    );
   return (
     <div
       role="dialog"
@@ -366,18 +372,25 @@ function KhungChonThanh({ o, nghe, dong }) {
           <button
             key={t}
             type="button"
-            onClick={() => nghe(`${o.khoa}${t}`)}
+            onClick={() => ngheCacThanh([t])}
             disabled={!coThanh(t)}
-            className="bg-nhan-nhat flex flex-col items-center gap-0.5 rounded-[var(--bo-goc)] py-2.5 disabled:opacity-35"
+            aria-pressed={thanhDangDoc === t}
+            className={`flex flex-col items-center gap-0.5 rounded-[var(--bo-goc)] py-2.5 transition-[transform,background-color,color] duration-150 disabled:opacity-35 ${
+              thanhDangDoc === t ? "bg-nhan text-chu-tren-nhan scale-95" : "bg-nhan-nhat"
+            }`}
           >
             <span className="text-[length:1.25rem] font-bold">{danhDauThanh(o.viet, t)}</span>
-            <span className="text-chu-mo text-[length:0.6875rem] font-semibold">Thanh {t}</span>
+            <span
+              className={`text-[length:0.6875rem] font-semibold ${thanhDangDoc === t ? "" : "text-chu-mo"}`}
+            >
+              Thanh {t}
+            </span>
           </button>
         ))}
       </div>
       <button
         type="button"
-        onClick={() => nghe(o.thanh.map((t) => `${o.khoa}${t}`).join(" "))}
+        onClick={() => ngheCacThanh(o.thanh)}
         className={`${kieu.nutChinh} w-full`}
       >
         <BieuTuong ten="nghe" />
