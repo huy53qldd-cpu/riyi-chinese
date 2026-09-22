@@ -24,6 +24,8 @@ import NutDaHoc, { DauDaHoc } from "../thanh-phan/NutDaHoc.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import KhungChonLuyenTap from "../luyen-tap/KhungChonLuyenTap.jsx";
 import PhienLuyenTap from "../luyen-tap/PhienLuyenTap.jsx";
+import TroChoiLatThe from "../luyen-tap/TroChoiLatThe.jsx";
+import { capTuVung } from "../luyen-tap/capLatThe.js";
 import {
   cauHoiDienTu,
   cauHoiNghiaTu,
@@ -37,6 +39,7 @@ const CACH_LUYEN = [
   { ma: "the", nhan: "Thẻ ghi nhớ" },
   { ma: "trac-nghiem", nhan: "Trắc nghiệm" },
   { ma: "dien-tu", nhan: "Điền từ" },
+  { ma: "lat-the", nhan: "Trò chơi lật thẻ" },
 ];
 
 const CAC_CAP = [
@@ -94,6 +97,17 @@ export default function TabTuVung() {
       (cap === 0 || t.capHsk === cap) &&
       (chuDe === "tat-ca" || t.chuDe === chuDe),
   );
+
+  if (cachLuyen === "lat-the") {
+    return (
+      <TroChoiLatThe
+        tieuDe="Trò chơi lật thẻ"
+        taoCap={() => capTuVung(hienThi)}
+        khoaKyLuc="tu-vung"
+        quayLai={() => setCachLuyen(null)}
+      />
+    );
+  }
 
   if (cachLuyen) {
     // Đáp án nhiễu lấy từ TOÀN BỘ danh sách, để lọc hẹp vẫn đủ 4 lựa chọn
@@ -186,6 +200,7 @@ export default function TabTuVung() {
           cacCach={CACH_LUYEN}
           soMuc={hienThi.length}
           chon={setCachLuyen}
+          ghiChu={`Thẻ ghi nhớ, Trắc nghiệm, Điền từ: mỗi lượt 10 câu, lấy từ ${hienThi.length} từ đang hiện theo bộ lọc; đúng được tính vào mục tiêu hôm nay, sai vào mục Review. Trò chơi lật thẻ: 10 từ, 20 thẻ; mỗi cặp tìm được tính vào mục tiêu.`}
         />
       )}
 

@@ -57,10 +57,13 @@ export function tachFurigana(chuoi) {
  * @param {string}  noiDung  Chuỗi tiếng Nhật, có thể kèm furigana kiểu 漢字[かんじ]
  * @param {string}  co       "the" = rất to, "thuong" = cỡ chữ Hán trong câu,
  *                           "nho" = cỡ chữ Latin (dùng cho nghĩa, chú thích)
+ * @param {string}  coRieng  Cỡ chữ tự đặt (chuỗi CSS), thay cho `co`. Dùng khi
+ *                           phải co chữ cho vừa ô nhỏ (thẻ trò chơi lật thẻ).
  */
 export default function ChuNhat({
   noiDung = "",
   co = "thuong",
+  coRieng = null,
   className = "",
 }) {
   const manh = tachFurigana(noiDung);
@@ -69,11 +72,15 @@ export default function ChuNhat({
     the: "text-[length:var(--co-chu-han-the)] leading-[1.35]",
     thuong: "text-[length:var(--co-chu-han)] leading-[1.9]",
     nho: "text-[length:var(--co-chu-latin)] leading-[1.9]",
-  }[co];
+  }[coRieng ? "rieng" : co] ?? "leading-[1.7]";
 
   return (
     // lang="ja" là BẮT BUỘC — quyết định trình duyệt vẽ tự dạng Nhật hay Trung
-    <p lang="ja" className={`font-nhat m-0 ${coChu} ${className}`}>
+    <p
+      lang="ja"
+      className={`font-nhat m-0 ${coChu} ${className}`}
+      style={coRieng ? { fontSize: coRieng } : undefined}
+    >
       {manh.map((m, i) =>
         m.doc ? (
           <ruby key={i}>

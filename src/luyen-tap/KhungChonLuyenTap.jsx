@@ -14,7 +14,7 @@ import BieuTuong from "../thanh-phan/BieuTuong.jsx";
  * @param {number}   soMuc  Số mục đang hiện theo bộ lọc
  * @param {Function} chon   Gọi với mã cách luyện được chọn
  */
-export default function KhungChonLuyenTap({ cacCach, soMuc, chon }) {
+export default function KhungChonLuyenTap({ cacCach, soMuc, chon, ghiChu = null }) {
   return (
     <div className={`${kieu.khung} mt-4`}>
       <p className={`${kieu.nhanTieuDe} flex items-center gap-1.5`}>
@@ -37,8 +37,8 @@ export default function KhungChonLuyenTap({ cacCach, soMuc, chon }) {
         ))}
       </div>
       <p className={kieu.chuNho}>
-        Mỗi lượt 10 câu, lấy từ {soMuc} mục đang hiện theo bộ lọc. Trả lời đúng
-        được tính vào mục tiêu hôm nay, trả lời sai sẽ vào mục Review.
+        {ghiChu ??
+          `Mỗi lượt 10 câu, lấy từ ${soMuc} mục đang hiện theo bộ lọc. Trả lời đúng được tính vào mục tiêu hôm nay, trả lời sai sẽ vào mục Review.`}
       </p>
     </div>
   );

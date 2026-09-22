@@ -23,6 +23,9 @@ import KhungTapViet from "../thanh-phan/KhungTapViet.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
+import KhungChonLuyenTap from "../luyen-tap/KhungChonLuyenTap.jsx";
+import TroChoiLatThe from "../luyen-tap/TroChoiLatThe.jsx";
+import { capChuHan } from "../luyen-tap/capLatThe.js";
 
 // Nhãn so sánh tự dạng. Nhãn do người nhập liệu quyết định, không do code đoán.
 const NHAN_TU_DANG = {
@@ -68,6 +71,7 @@ export default function TabChuHan() {
   const [cap, setCap] = useState(0);
   const [chuDangMo, setChuDangMo] = useState(null);
   const [soHien, setSoHien] = useState(SO_THE_MOI_LAN);
+  const [dangChoi, setDangChoi] = useState(false); // trò chơi lật thẻ
 
   useEffect(() => {
     let conSong = true; // tránh cập nhật khi người dùng đã rời tab
@@ -90,6 +94,17 @@ export default function TabChuHan() {
   }
 
   const hienThi = danhSach.filter((m) => cap === 0 || m.capHsk === cap);
+
+  if (dangChoi) {
+    return (
+      <TroChoiLatThe
+        tieuDe="Trò chơi lật thẻ"
+        taoCap={() => capChuHan(hienThi)}
+        khoaKyLuc="chu-han"
+        quayLai={() => setDangChoi(false)}
+      />
+    );
+  }
 
   return (
     <section>
@@ -141,6 +156,15 @@ export default function TabChuHan() {
             Chưa có chữ nào ở cấp này.
           </p>
         </div>
+      )}
+
+      {trangThai === "xong" && hienThi.length > 0 && (
+        <KhungChonLuyenTap
+          cacCach={[{ ma: "lat-the", nhan: "Trò chơi lật thẻ" }]}
+          soMuc={hienThi.length}
+          chon={() => setDangChoi(true)}
+          ghiChu={`Mỗi ván 10 chữ (20 thẻ), lấy từ ${hienThi.length} chữ đang hiện theo bộ lọc: ghép chữ Hán với nghĩa tiếng Nhật và tiếng Việt của nó. Mỗi cặp tìm được tính vào mục tiêu hôm nay.`}
+        />
       )}
 
       {trangThai === "xong" && hienThi.length > 0 && (

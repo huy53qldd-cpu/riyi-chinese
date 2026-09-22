@@ -373,6 +373,7 @@ Claude làm theo bản yêu cầu và tự chọn chi tiết:
 | 18.13 | **Quên mật khẩu gửi link đặt mật khẩu mới** qua email, email bằng tiếng Việt. Không gửi lại mật khẩu cũ được (Firebase chỉ lưu dạng mã hoá một chiều). Để không lộ email nào đã có tài khoản, app luôn báo "nếu email có tài khoản thì đã gửi link" |
 | 18.14 | **Xác minh email**: tạo xong dùng ngay, app gửi email xác minh; Cài đặt nhắc và có nút gửi lại nếu chưa xác minh |
 | 18.15 | **Mật khẩu tối thiểu 8 ký tự**, không bắt buộc chữ hoa hay ký tự đặc biệt. **Đổi mật khẩu** trong Cài đặt: nhập mật khẩu hiện tại, mật khẩu mới, nhập lại; chỉ hiện với tài khoản email. Email đã dùng cho đăng nhập Google thì không tạo tài khoản mật khẩu trùng được, app báo bằng tiếng Việt |
+| 18.16 | **Trò chơi lật thẻ** (matching game) ở phần Luyện tập của tab **Từ vựng** và **Chữ Hán**: 10 mục = 20 thẻ, 4 cột × 5 hàng; thẻ Trung (chữ + pinyin) ghép với thẻ nghĩa (nghĩa Nhật + nghĩa Việt, chỉ lấy nghĩa đầu tiên). Đầu ván mở hết thẻ 3 giây rồi úp lại. Không cho hai mục trùng nghĩa vào cùng ván. Mỗi cặp tìm được = 1 câu đúng cho mục tiêu hôm nay; lật nhầm KHÔNG vào Review. Hết ván báo thời gian, số lượt lật, kỷ lục (lưu trên máy, riêng từng tab). Chữ trên thẻ tự co theo bề ngang thẻ nên không tràn ở mọi cỡ chữ |
 
 ### Đang chờ chủ dự án
 

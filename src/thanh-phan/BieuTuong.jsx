@@ -30,6 +30,7 @@ import {
   EyeOff,
   Flag,
   GalleryVerticalEnd,
+  Gamepad2,
   Info,
   KeyRound,
   Languages,
@@ -66,6 +67,7 @@ const HINH = {
   "sap-xep": ListOrdered,
   "chon-cau": CircleCheck,
   "chon-nghia": Languages,
+  "lat-the": Gamepad2,
   // Tập viết chữ Hán: cây bút
   "tap-viet": PencilLine,
   "xem-mau": Eye,

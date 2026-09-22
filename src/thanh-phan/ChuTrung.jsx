@@ -28,6 +28,9 @@ import VanBanPha from "./VanBanPha.jsx";
  * @param {boolean} hienPinyin  Cho ẩn pinyin khi làm bài kiểm tra. Mặc định hiện.
  * @param {string}  co          "the" = chữ rất to (thẻ chữ Hán đứng một mình),
  *                              "thuong" = cỡ chữ Hán trong câu.
+ * @param {string}  coRieng     Cỡ chữ tự đặt (chuỗi CSS, ví dụ "min(1.4rem, 20cqw)"),
+ *                              thay cho `co`. Dùng khi phải co chữ cho vừa ô nhỏ
+ *                              như thẻ trong trò chơi lật thẻ.
  * @param {string}  ghiChuBienDieu  Dòng chú thích nhỏ phía dưới, ví dụ:
  *                              "不 ở đây đọc thành bú vì đứng trước thanh 4."
  */
@@ -35,11 +38,13 @@ export default function ChuTrung({
   amTiet = [],
   hienPinyin = true,
   co = "thuong",
+  coRieng = null,
   ghiChuBienDieu = null,
   className = "",
 }) {
-  const coChu =
-    co === "the"
+  const coChu = coRieng
+    ? "leading-[1.7]"
+    : co === "the"
       ? "text-[length:var(--co-chu-han-the)] leading-[1.35]"
       : "text-[length:var(--co-chu-han)] leading-[1.9]";
 
@@ -49,7 +54,11 @@ export default function ChuTrung({
         lang="zh-CN" là BẮT BUỘC.
         Đây là thứ quyết định trình duyệt vẽ 直 theo kiểu Trung hay kiểu Nhật.
       */}
-      <p lang="zh-CN" className={`font-trung m-0 tracking-wide ${coChu}`}>
+      <p
+        lang="zh-CN"
+        className={`font-trung m-0 tracking-wide ${coChu}`}
+        style={coRieng ? { fontSize: coRieng } : undefined}
+      >
         {amTiet.map((muc, i) => {
           // Dấu câu và khoảng trắng: không bọc ruby, để không tạo khoảng hở lạ
           if (!muc.pinyin) {
