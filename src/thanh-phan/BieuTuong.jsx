@@ -56,6 +56,7 @@ import {
   Volume2,
   UserPlus,
   X,
+  Bell,
 } from "lucide-react";
 
 const HINH = {
@@ -71,7 +72,9 @@ const HINH = {
   "chon-nghia": Languages,
   "tro-choi": Gamepad2,
   // Nghe phát âm (tab Phát âm)
-  "nghe": Volume2, // trò chơi lật thẻ (khác nút "Lật thẻ" của thẻ ghi nhớ)
+  "nghe": Volume2,
+  // Thông báo nhắc học (Cài đặt)
+  "nhac-hoc": Bell,
   // Tập viết chữ Hán: cây bút
   "tap-viet": PencilLine,
   "xem-mau": Eye,

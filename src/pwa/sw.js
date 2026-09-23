@@ -56,6 +56,54 @@ self.addEventListener("message", (suKien) => {
   if (suKien.data === "bo-qua-cho") self.skipWaiting();
 });
 
+/* -----------------------------------------------------------------------------
+   THÔNG BÁO NHẮC HỌC (GĐ 11, quyết định 18.40)
+
+   Người gửi là GitHub Actions, 3 lần mỗi ngày (7h, 14h, 21h giờ Việt Nam).
+   Tin nhắn gửi dạng "data" (không phải "notification") nên chính service
+   worker này vẽ thông báo, và bấm vào thì mở đúng màn hình học hôm nay.
+   ----------------------------------------------------------------------------- */
+self.addEventListener("push", (suKien) => {
+  let tin = {};
+  try {
+    const goi = suKien.data?.json() ?? {};
+    tin = goi.data ?? goi;
+  } catch {
+    tin = { than: suKien.data?.text() ?? "" };
+  }
+  if (!tin.than && !tin.tieuDe) return;
+
+  suKien.waitUntil(
+    self.registration.showNotification(tin.tieuDe || "Riyi", {
+      body: tin.than || "",
+      icon: "/hinh/bieu-tuong-192.png",
+      badge: "/hinh/bieu-tuong-192.png",
+      lang: "vi",
+      tag: "riyi-nhac-hoc", // thông báo mới thay thông báo cũ, không dồn đống
+      data: { duongDan: tin.duongDan || "/" },
+    }),
+  );
+});
+
+// Bấm vào thông báo: đang mở app thì chuyển sang tab đó, chưa mở thì mở app
+self.addEventListener("notificationclick", (suKien) => {
+  suKien.notification.close();
+  const duongDan = suKien.notification.data?.duongDan || "/";
+  suKien.waitUntil(
+    (async () => {
+      const cacTab = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+      for (const tab of cacTab) {
+        if (new URL(tab.url).origin === self.location.origin) {
+          await tab.focus();
+          if ("navigate" in tab) await tab.navigate(duongDan).catch(() => {});
+          return;
+        }
+      }
+      await self.clients.openWindow(duongDan);
+    })(),
+  );
+});
+
 // Chỉ can thiệp khi MỞ TRANG (không đụng tới dữ liệu, ảnh, font...).
 // Có mạng thì tải bình thường từ mạng; mất mạng thì trả trang báo mất mạng.
 self.addEventListener("fetch", (suKien) => {

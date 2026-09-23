@@ -1,0 +1,378 @@
+{
+ "loai": "ngay-dac-biet",
+ "phienBan": 1,
+ "nguon": "Danh sách ngày lễ do chủ dự án đưa; ngày âm lịch và tiết khí quy đổi bằng thuật toán Hồ Ngọc Đức (cong-cu/lich_am.py), âm lịch Việt Nam theo UTC+7, Trung Quốc theo UTC+8.",
+ "cangKiemTra": "Bảng do máy quy đổi, chủ dự án cần rà lại trước khi dùng thật.",
+ "nam": [
+  2026,
+  2027
+ ],
+ "danhSach": [
+  {
+   "ngay": "2026-01-01",
+   "ten": "Tết Dương lịch",
+   "quocGia": "Việt Nam",
+   "cum": "năm mới khởi đầu"
+  },
+  {
+   "ngay": "2026-01-11",
+   "ten": "成人の日 (Ngày Thành nhân)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Thành nhân"
+  },
+  {
+   "ngay": "2026-02-10",
+   "ten": "Ngày ông Công ông Táo",
+   "quocGia": "Việt Nam",
+   "cum": "ngày tiễn Táo quân"
+  },
+  {
+   "ngay": "2026-02-11",
+   "ten": "建国記念の日 (Ngày Kiến quốc)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Kiến quốc"
+  },
+  {
+   "ngay": "2026-02-17",
+   "ten": "Tết Nguyên đán",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Tết"
+  },
+  {
+   "ngay": "2026-03-03",
+   "ten": "Rằm tháng Giêng",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Rằm"
+  },
+  {
+   "ngay": "2026-03-08",
+   "ten": "Ngày Quốc tế Phụ nữ",
+   "quocGia": "Việt Nam",
+   "cum": "ngày 8/3"
+  },
+  {
+   "ngay": "2026-03-20",
+   "ten": "春分の日 (Xuân phân)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Xuân phân"
+  },
+  {
+   "ngay": "2026-04-05",
+   "ten": "清明节 (Tiết Thanh Minh)",
+   "quocGia": "Trung Quốc",
+   "cum": "ngày Thanh Minh"
+  },
+  {
+   "ngay": "2026-04-26",
+   "ten": "Giỗ Tổ Hùng Vương",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Giỗ Tổ ý nghĩa"
+  },
+  {
+   "ngay": "2026-04-30",
+   "ten": "Ngày Giải phóng miền Nam",
+   "quocGia": "Việt Nam",
+   "cum": "ngày lễ"
+  },
+  {
+   "ngay": "2026-05-01",
+   "ten": "Ngày Quốc tế Lao động",
+   "quocGia": "Việt Nam",
+   "cum": "ngày nghỉ lễ"
+  },
+  {
+   "ngay": "2026-05-05",
+   "ten": "こどもの日 (Ngày Thiếu nhi)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Kodomo no hi"
+  },
+  {
+   "ngay": "2026-06-01",
+   "ten": "Ngày Quốc tế Thiếu nhi",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Thiếu nhi"
+  },
+  {
+   "ngay": "2026-06-19",
+   "ten": "Tết Đoan ngọ",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Đoan ngọ"
+  },
+  {
+   "ngay": "2026-07-07",
+   "ten": "七夕 (Tanabata)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Tanabata"
+  },
+  {
+   "ngay": "2026-08-13",
+   "ten": "お盆 (Obon)",
+   "quocGia": "Nhật Bản",
+   "cum": "mùa Obon"
+  },
+  {
+   "ngay": "2026-08-19",
+   "ten": "七夕 (Thất Tịch)",
+   "quocGia": "Trung Quốc",
+   "cum": "ngày Thất Tịch"
+  },
+  {
+   "ngay": "2026-08-27",
+   "ten": "Lễ Vu Lan",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Vu Lan"
+  },
+  {
+   "ngay": "2026-09-02",
+   "ten": "Ngày Quốc khánh",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Quốc khánh"
+  },
+  {
+   "ngay": "2026-09-10",
+   "ten": "教师节 (Ngày Nhà giáo)",
+   "quocGia": "Trung Quốc",
+   "cum": "ngày Nhà giáo"
+  },
+  {
+   "ngay": "2026-09-23",
+   "ten": "秋分の日 (Thu phân)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Thu phân"
+  },
+  {
+   "ngay": "2026-09-25",
+   "ten": "Tết Trung thu",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Trung thu"
+  },
+  {
+   "ngay": "2026-10-01",
+   "ten": "国庆节 (Quốc khánh)",
+   "quocGia": "Trung Quốc",
+   "cum": "ngày Quốc khánh"
+  },
+  {
+   "ngay": "2026-10-18",
+   "ten": "重阳节 (Tết Trùng Dương)",
+   "quocGia": "Trung Quốc",
+   "cum": "ngày Trùng Dương"
+  },
+  {
+   "ngay": "2026-10-20",
+   "ten": "Ngày Phụ nữ Việt Nam",
+   "quocGia": "Việt Nam",
+   "cum": "ngày 20/10"
+  },
+  {
+   "ngay": "2026-11-15",
+   "ten": "七五三 (Shichi-Go-San)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Shichi-Go-San"
+  },
+  {
+   "ngay": "2026-11-20",
+   "ten": "Ngày Nhà giáo Việt Nam",
+   "quocGia": "Việt Nam",
+   "cum": "ngày tri ân thầy cô"
+  },
+  {
+   "ngay": "2026-12-25",
+   "ten": "Ngày Giáng sinh",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Giáng sinh"
+  },
+  {
+   "ngay": "2026-12-31",
+   "ten": "大晦日 (Đêm giao thừa)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày cuối năm"
+  },
+  {
+   "ngay": "2027-01-01",
+   "ten": "Tết Dương lịch",
+   "quocGia": "Việt Nam",
+   "cum": "năm mới khởi đầu"
+  },
+  {
+   "ngay": "2027-01-10",
+   "ten": "成人の日 (Ngày Thành nhân)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Thành nhân"
+  },
+  {
+   "ngay": "2027-01-30",
+   "ten": "Ngày ông Công ông Táo",
+   "quocGia": "Việt Nam",
+   "cum": "ngày tiễn Táo quân"
+  },
+  {
+   "ngay": "2027-02-06",
+   "ten": "Tết Nguyên đán",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Tết"
+  },
+  {
+   "ngay": "2027-02-11",
+   "ten": "建国記念の日 (Ngày Kiến quốc)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Kiến quốc"
+  },
+  {
+   "ngay": "2027-02-20",
+   "ten": "Rằm tháng Giêng",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Rằm"
+  },
+  {
+   "ngay": "2027-03-03",
+   "ten": "ひな祭り (Lễ hội búp bê)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Hinamatsuri"
+  },
+  {
+   "ngay": "2027-03-08",
+   "ten": "Ngày Quốc tế Phụ nữ",
+   "quocGia": "Việt Nam",
+   "cum": "ngày 8/3"
+  },
+  {
+   "ngay": "2027-03-21",
+   "ten": "春分の日 (Xuân phân)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Xuân phân"
+  },
+  {
+   "ngay": "2027-04-05",
+   "ten": "清明节 (Tiết Thanh Minh)",
+   "quocGia": "Trung Quốc",
+   "cum": "ngày Thanh Minh"
+  },
+  {
+   "ngay": "2027-04-16",
+   "ten": "Giỗ Tổ Hùng Vương",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Giỗ Tổ ý nghĩa"
+  },
+  {
+   "ngay": "2027-04-30",
+   "ten": "Ngày Giải phóng miền Nam",
+   "quocGia": "Việt Nam",
+   "cum": "ngày lễ"
+  },
+  {
+   "ngay": "2027-05-01",
+   "ten": "Ngày Quốc tế Lao động",
+   "quocGia": "Việt Nam",
+   "cum": "ngày nghỉ lễ"
+  },
+  {
+   "ngay": "2027-05-05",
+   "ten": "こどもの日 (Ngày Thiếu nhi)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Kodomo no hi"
+  },
+  {
+   "ngay": "2027-06-01",
+   "ten": "Ngày Quốc tế Thiếu nhi",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Thiếu nhi"
+  },
+  {
+   "ngay": "2027-06-09",
+   "ten": "Tết Đoan ngọ",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Đoan ngọ"
+  },
+  {
+   "ngay": "2027-07-07",
+   "ten": "七夕 (Tanabata)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Tanabata"
+  },
+  {
+   "ngay": "2027-08-08",
+   "ten": "七夕 (Thất Tịch)",
+   "quocGia": "Trung Quốc",
+   "cum": "ngày Thất Tịch"
+  },
+  {
+   "ngay": "2027-08-13",
+   "ten": "お盆 (Obon)",
+   "quocGia": "Nhật Bản",
+   "cum": "mùa Obon"
+  },
+  {
+   "ngay": "2027-08-16",
+   "ten": "Lễ Vu Lan",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Vu Lan"
+  },
+  {
+   "ngay": "2027-09-02",
+   "ten": "Ngày Quốc khánh",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Quốc khánh"
+  },
+  {
+   "ngay": "2027-09-10",
+   "ten": "教师节 (Ngày Nhà giáo)",
+   "quocGia": "Trung Quốc",
+   "cum": "ngày Nhà giáo"
+  },
+  {
+   "ngay": "2027-09-15",
+   "ten": "Tết Trung thu",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Trung thu"
+  },
+  {
+   "ngay": "2027-09-23",
+   "ten": "秋分の日 (Thu phân)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Thu phân"
+  },
+  {
+   "ngay": "2027-10-01",
+   "ten": "国庆节 (Quốc khánh)",
+   "quocGia": "Trung Quốc",
+   "cum": "ngày Quốc khánh"
+  },
+  {
+   "ngay": "2027-10-08",
+   "ten": "重阳节 (Tết Trùng Dương)",
+   "quocGia": "Trung Quốc",
+   "cum": "ngày Trùng Dương"
+  },
+  {
+   "ngay": "2027-10-20",
+   "ten": "Ngày Phụ nữ Việt Nam",
+   "quocGia": "Việt Nam",
+   "cum": "ngày 20/10"
+  },
+  {
+   "ngay": "2027-11-15",
+   "ten": "七五三 (Shichi-Go-San)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày Shichi-Go-San"
+  },
+  {
+   "ngay": "2027-11-20",
+   "ten": "Ngày Nhà giáo Việt Nam",
+   "quocGia": "Việt Nam",
+   "cum": "ngày tri ân thầy cô"
+  },
+  {
+   "ngay": "2027-12-25",
+   "ten": "Ngày Giáng sinh",
+   "quocGia": "Việt Nam",
+   "cum": "ngày Giáng sinh"
+  },
+  {
+   "ngay": "2027-12-31",
+   "ten": "大晦日 (Đêm giao thừa)",
+   "quocGia": "Nhật Bản",
+   "cum": "ngày cuối năm"
+  }
+ ]
+}

@@ -38,6 +38,7 @@
      }
    ============================================================================= */
 
+import { CAC_PHAN } from "./cacBuoc.js";
 import { vanChuHan, vanTuVung } from "./capLatThe.js";
 import { cauHoiNgheChoChu } from "./cauHoiNghe.jsx";
 import {
@@ -50,42 +51,10 @@ import {
 } from "./taoCauHoi.jsx";
 import { tronNgauNhien } from "./tienIch.js";
 
-export const CAC_PHAN = [
-  {
-    ma: "chu",
-    nhan: "Chữ Hán",
-    buoc: [
-      { ma: "chu-tap-viet", nhan: "Tập viết", bieuTuong: "tap-viet" },
-      { ma: "chu-lat-the", nhan: "Trò chơi lật thẻ", bieuTuong: "tro-choi", laGame: true },
-    ],
-  },
-  {
-    ma: "tu",
-    nhan: "Từ vựng",
-    buoc: [
-      { ma: "tu-the", nhan: "Thẻ ghi nhớ", bieuTuong: "the-ghi-nho" },
-      { ma: "tu-trac-nghiem", nhan: "Trắc nghiệm", bieuTuong: "trac-nghiem" },
-      { ma: "tu-dien-tu", nhan: "Điền từ", bieuTuong: "dien-tu" },
-      { ma: "tu-lat-the", nhan: "Trò chơi lật thẻ", bieuTuong: "tro-choi", laGame: true },
-    ],
-  },
-  {
-    ma: "nghe",
-    nhan: "Luyện nghe",
-    buoc: [{ ma: "nghe-chon-am", nhan: "Luyện nghe", bieuTuong: "nghe" }],
-  },
-  {
-    ma: "np",
-    nhan: "Ngữ pháp",
-    buoc: [
-      { ma: "np-sap-xep", nhan: "Sắp xếp câu", bieuTuong: "sap-xep" },
-      { ma: "np-chon-cau", nhan: "Chọn câu đúng", bieuTuong: "chon-cau" },
-    ],
-  },
-];
-
-export const TONG_BUOC = CAC_PHAN.reduce((t, p) => t + p.buoc.length, 0);
-export const TAT_CA_BUOC = CAC_PHAN.flatMap((p) => p.buoc);
+// Khai báo các phần và bước nằm ở cacBuoc.js (chỉ có dữ liệu), để bộ gửi thông
+// báo chạy trên GitHub Actions dùng chung được, không sợ lệch số bước.
+export { TAT_CA_BUOC, TONG_BUOC } from "./cacBuoc.js";
+export { CAC_PHAN };
 
 // Trần cho phần dồn từ hôm qua, để bỏ nhiều ngày liền không bị dồn mãi
 const TOI_DA_TU = 20;

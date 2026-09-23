@@ -25,6 +25,8 @@
     "tai-am-thanh": "python cong-cu/tai-am-thanh.py",
     "tai-am-tu": "python cong-cu/tai-am-tu.py",
     "dung-bang-pinyin": "python cong-cu/dung-bang-pinyin.py",
+    "dung-ngay-dac-biet": "python cong-cu/dung-ngay-dac-biet.py",
+    "thu-thong-bao": "node --test cong-cu/thong-bao/thu.test.js",
     "trien-khai": "vite build && firebase deploy"
   },
   "dependencies": {

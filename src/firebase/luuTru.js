@@ -50,6 +50,8 @@ export async function docTienDo(uid) {
     loTrinh: d.loTrinh ?? null,
     nhatKy: d.nhatKy ?? {},
     chuoi: d.chuoi ?? null,
+    // Thông báo nhắc học: chỉ cần biết đang bật hay tắt (token do file riêng lo)
+    thongBaoBat: Boolean(d.thongBao?.bat),
   };
 }
 

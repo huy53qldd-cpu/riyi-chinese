@@ -1,0 +1,14 @@
+{
+  "name": "riyi-thong-bao",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Bộ gửi thông báo nhắc học của Riyi, chạy trên GitHub Actions (Firebase gói Spark không có Cloud Functions).",
+  "scripts": {
+    "gui": "node gui.js",
+    "thu": "node gui.js --thu"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.6.0"
+  }
+}

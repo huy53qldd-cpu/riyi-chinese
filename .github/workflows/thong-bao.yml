@@ -1,0 +1,58 @@
+# =============================================================================
+# GỬI THÔNG BÁO NHẮC HỌC (GĐ 11, quyết định 18.40)
+# =============================================================================
+# Firebase gói Spark không chạy được Cloud Functions, nên GitHub Actions đóng
+# vai người bấm nút gửi: mỗi ngày 3 lần theo giờ Việt Nam.
+#   7h  VN = 00:00 UTC
+#   14h VN = 07:00 UTC
+#   21h VN = 14:00 UTC
+# GitHub chạy cron theo giờ UTC và có thể trễ vài phút, đó là chuyện bình thường.
+#
+# CẦN: một GitHub Secret tên FIREBASE_SERVICE_ACCOUNT
+# (xem tai-lieu/HUONG-DAN-THONG-BAO.md, có hướng dẫn từng bước).
+# =============================================================================
+
+name: Thông báo nhắc học
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # 7h sáng giờ Việt Nam
+    - cron: "0 7 * * *" # 14h giờ Việt Nam
+    - cron: "0 14 * * *" # 21h giờ Việt Nam
+  # Cho phép bấm chạy tay để thử
+  workflow_dispatch:
+    inputs:
+      khung:
+        description: "Khung giờ muốn thử (7h, 14h hoặc 21h)"
+        required: false
+        default: "7h"
+      thu:
+        description: "Chỉ chạy thử, không gửi thật"
+        type: boolean
+        required: false
+        default: true
+
+jobs:
+  gui:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Cài thư viện gửi thông báo
+        working-directory: cong-cu/thong-bao
+        run: npm install --no-audit --no-fund
+
+      - name: Gửi
+        working-directory: cong-cu/thong-bao
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            node gui.js --khung "${{ inputs.khung }}" ${{ inputs.thu && '--thu' || '' }}
+          else
+            node gui.js
+          fi

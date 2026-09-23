@@ -132,6 +132,8 @@ export function NguoiDungProvider({ children }) {
   const [ngayHienTai, setNgayHienTai] = useState(chuoiNgay);
   const [nhatKy, setNhatKy] = useState({});
   const [chuoi, setChuoi] = useState(null);
+  // Thông báo nhắc học đang bật hay tắt (quyết định 18.40)
+  const [thongBaoBat, setThongBaoBat] = useState(false);
   // Tăng lên mỗi lần vừa đạt mục tiêu, để thanh trên chạy hiệu ứng mặt trời
   const [lanVuaDat, setLanVuaDat] = useState(0);
 
@@ -242,6 +244,7 @@ export function NguoiDungProvider({ children }) {
         setNhatKy({});
         chuoiRef.current = null;
         setChuoi(null);
+        setThongBaoBat(false);
         loTrinhRef.current = LO_TRINH_BAN_DAU;
         setLoTrinh(LO_TRINH_BAN_DAU);
         setTrangThai("khach");
@@ -272,6 +275,7 @@ export function NguoiDungProvider({ children }) {
         setLoTrinh(lt);
         chuoiRef.current = d.chuoi;
         setChuoi(d.chuoi);
+        setThongBaoBat(Boolean(d.thongBaoBat));
 
         // Dọn nhật ký quá cũ cho tài liệu khỏi phình
         const nk = { ...d.nhatKy };
@@ -592,6 +596,9 @@ export function NguoiDungProvider({ children }) {
       trangThai,
       nguoi,
       daDangNhap: trangThai === "da-dang-nhap",
+      thongBaoBat,
+      // Bật/tắt đã ghi thẳng lên Firestore, đây chỉ cập nhật lại màn hình
+      doiThongBao: setThongBaoBat,
       // Đang chờ Firebase kiểm tra, và máy này có người đăng nhập lần trước:
       // nhiều khả năng sắp vào lại được, nên KHÔNG hiện nút đăng nhập.
       dangKhoiPhuc: trangThai === "dang-kiem-tra" && Boolean(tenDaNho),
@@ -625,6 +632,7 @@ export function NguoiDungProvider({ children }) {
       trangThai,
       nguoi,
       tenDaNho,
+      thongBaoBat,
       caiDat,
       daHoc,
       tapViet,

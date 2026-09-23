@@ -14,6 +14,12 @@ import { useEffect, useState } from "react";
 import { capNhatNoiDung, phienBanNoiDung } from "../du-lieu/taiDuLieu.js";
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
+import {
+  batThongBao,
+  daCauHinhThongBao,
+  tatThongBao,
+  trinhDuyetHoTro,
+} from "../thong-bao/dangKyThongBao.js";
 import BieuTuong, { HoaAnhDao, LogoGoogle } from "../thanh-phan/BieuTuong.jsx";
 import ChuTrung from "../thanh-phan/ChuTrung.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
@@ -118,8 +124,74 @@ export default function CaiDat({ quayLai }) {
         )}
       </section>
 
+      <MucThongBao nd={nd} />
+
       <MucUngDung />
     </main>
+  );
+}
+
+/* -----------------------------------------------------------------------------
+   THÔNG BÁO NHẮC HỌC (GĐ 11, quyết định 18.40)
+   Mặc định TẮT. Bật thì trình duyệt hỏi quyền, rồi mỗi ngày nhắc 3 lần:
+   7h sáng chào ngày mới, 14h và 21h báo tiến độ hôm nay.
+   ----------------------------------------------------------------------------- */
+function MucThongBao({ nd }) {
+  const hienThongBao = useThongBao();
+  const [bat, setBat] = useState(false);
+  const [dangDoi, setDangDoi] = useState(false);
+
+  // Đọc trạng thái đã lưu trên Firestore của chính người đang đăng nhập
+  useEffect(() => {
+    setBat(Boolean(nd.thongBaoBat));
+  }, [nd.thongBaoBat]);
+
+  const hoTro = trinhDuyetHoTro() && daCauHinhThongBao();
+
+  async function doi(muonBat) {
+    setDangDoi(true);
+    const kq = muonBat ? await batThongBao(nd.nguoi?.uid) : await tatThongBao(nd.nguoi?.uid);
+    setDangDoi(false);
+    if (kq.thanhCong) {
+      setBat(muonBat);
+      nd.doiThongBao(muonBat);
+      hienThongBao(muonBat ? "Đã bật thông báo nhắc học." : "Đã tắt thông báo nhắc học.");
+    } else if (kq.thongBao) {
+      hienThongBao(kq.thongBao);
+    }
+  }
+
+  return (
+    <section className="border-vien bg-nen-noi flex flex-col gap-4 rounded-[var(--bo-goc)] border p-4">
+      <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">Thông báo nhắc học</h2>
+
+      {!nd.daDangNhap ? (
+        <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+          Hãy đăng nhập để nhận thông báo nhắc học.
+        </p>
+      ) : !trinhDuyetHoTro() ? (
+        <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+          Trình duyệt này chưa hỗ trợ thông báo nhắc học.
+        </p>
+      ) : !hoTro ? (
+        <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+          App chưa được cấu hình khoá thông báo. Xem tai-lieu/HUONG-DAN-THONG-BAO.md.
+        </p>
+      ) : (
+        <>
+          <CongTat
+            bieuTuong="nhac-hoc"
+            nhan="Nhắc học mỗi ngày"
+            moTa="7h sáng chào ngày mới, 14h và 21h nhắc tiến độ hôm nay."
+            bat={bat}
+            doi={dangDoi ? () => {} : doi}
+          />
+          <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+            Trên iPhone, phải cài Riyi vào màn hình chính thì mới nhận được thông báo.
+          </p>
+        </>
+      )}
+    </section>
   );
 }
 
