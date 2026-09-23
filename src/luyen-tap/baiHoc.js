@@ -139,6 +139,23 @@ export function hocTruocBaiSau(lt, duongLoTrinh) {
   return { bai, ngay: lt.ngay, buoc: [], muc: taoMuc(duongLoTrinh, bai), them: THEM_RONG() };
 }
 
+/** Số thứ tự bài ĐẦU TIÊN của một cấp HSK trong lộ trình. Không có thì null. */
+export function baiDauCapHsk(duongLoTrinh, capHsk) {
+  return duongLoTrinh?.baiHoc?.find((b) => b.capHsk === capHsk)?.so ?? null;
+}
+
+/**
+ * Đổi "mục tiêu đang hướng đến" sang cấp HSK khác (GĐ 12, quyết định 18.42):
+ * nhảy lộ trình tới bài đầu tiên của cấp đó rồi học tuần tự tiếp từ đó. Bỏ
+ * hết phần cộng thêm cũ (gắn với chữ của cấp trước, không còn liên quan).
+ * Không tìm được bài nào của cấp đó thì trả về nguyên `lt`.
+ */
+export function datMucTieuCap(lt, duongLoTrinh, capHsk) {
+  const bai = baiDauCapHsk(duongLoTrinh, capHsk);
+  if (!bai) return lt;
+  return { bai, ngay: lt.ngay, buoc: [], muc: taoMuc(duongLoTrinh, bai), them: THEM_RONG() };
+}
+
 /** Mã các mục thuộc một phần (để đánh dấu "đã học" khi xong phần đó). */
 export function mucCuaPhan(muc, maPhan) {
   if (!muc) return [];

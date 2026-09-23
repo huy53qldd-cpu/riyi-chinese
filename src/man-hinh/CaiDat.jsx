@@ -38,7 +38,7 @@ const CAC_GIAO_DIEN = [
 const kieuNutVien =
   "border-vien inline-flex items-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold";
 
-export default function CaiDat({ quayLai }) {
+export default function CaiDat({ quayLai, thoatKhoa }) {
   const nd = useNguoiDung();
 
   return (
@@ -139,6 +139,19 @@ export default function CaiDat({ quayLai }) {
       <MucThongBao nd={nd} />
 
       <MucUngDung />
+
+      {/* Đổi khoá học chuyển vào đây (quyết định 18.42), không còn ở dưới mỗi tab.
+          Chỉ hiện khi mở Cài đặt từ TRONG một khoá học (App.jsx không truyền prop này). */}
+      {thoatKhoa && (
+        <button
+          type="button"
+          onClick={thoatKhoa}
+          className={`${kieuNutVien} justify-center`}
+        >
+          <BieuTuong ten="doi-khoa" co={16} />
+          Đổi khoá học
+        </button>
+      )}
     </main>
   );
 }

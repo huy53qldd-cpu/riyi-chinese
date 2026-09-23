@@ -119,8 +119,9 @@ export function useNhiemVu(noiDung, du, soBai) {
 }
 
 /**
- * Các nút bước của một phần. Bước sau mở khi xong bước trước. Cùng kiểu và cỡ
- * với nút luyện tập cũ ở tab Từ vựng (quyết định 18.23).
+ * Các nút bước của một phần. GĐ 12 (quyết định 18.42): làm bước nào TRƯỚC
+ * cũng được, không bắt buộc theo thứ tự nữa — miễn xong hết các bước thì
+ * mục đó mới tính là đã học.
  */
 export function NutNhiemVu({ maPhan, batDau, sanSang = true }) {
   const nd = useNguoiDung();
@@ -128,16 +129,15 @@ export function NutNhiemVu({ maPhan, batDau, sanSang = true }) {
   const buocXong = nd.loTrinh.buoc;
   return (
     <div className="flex flex-wrap gap-2">
-      {phan.buoc.map((b, i) => {
+      {phan.buoc.map((b) => {
         const xong = buocXong.includes(b.ma);
-        const mo = sanSang && (i === 0 || buocXong.includes(phan.buoc[i - 1].ma));
         return (
           <button
             key={b.ma}
             type="button"
             onClick={() => batDau(b.ma)}
-            disabled={!mo}
-            aria-label={`${b.nhan}${xong ? ", đã xong" : mo ? "" : ", chưa mở"}`}
+            disabled={!sanSang}
+            aria-label={`${b.nhan}${xong ? ", đã xong" : ""}`}
             className={xong ? kieu.nutDaXong : kieu.nutChinh}
           >
             <BieuTuong ten={xong ? "kiem-tra" : b.bieuTuong} />
@@ -151,11 +151,19 @@ export function NutNhiemVu({ maPhan, batDau, sanSang = true }) {
 
 /**
  * Khung "Nhiệm vụ hôm nay" của một tab: tiêu đề, các nút bước, dòng ghi chú.
+ *
+ * `idsHomNay` (GĐ 12, quyết định 18.42): mã các mục hôm nay của phần này
+ * (ví dụ 5-6 chữ Hán, 10-20 từ). Có mảng này thì tiến độ hiện theo SỐ MỤC ĐÃ
+ * ĐƯỢC ĐÁNH DẤU "ĐÃ HỌC" (x/N, N tự tăng khi có mục cộng thêm từ hôm qua),
+ * không phải theo số bước nữa. Không truyền thì giữ cách đếm bước cũ (dùng
+ * cho phần Luyện nghe, chỉ có một bước, không có danh sách mục riêng).
  */
-export function KhungNhiemVu({ maPhan, batDau, ghiChu, sanSang = true }) {
+export function KhungNhiemVu({ maPhan, batDau, ghiChu, sanSang = true, idsHomNay = null }) {
   const nd = useNguoiDung();
   const phan = CAC_PHAN.find((p) => p.ma === maPhan);
-  const soXong = phan.buoc.filter((b) => nd.loTrinh.buoc.includes(b.ma)).length;
+  const soXongBuoc = phan.buoc.filter((b) => nd.loTrinh.buoc.includes(b.ma)).length;
+  const soDaHoc = idsHomNay ? idsHomNay.filter((id) => nd.daHoc[id]).length : null;
+  const daXong = idsHomNay ? soDaHoc === idsHomNay.length : soXongBuoc === phan.buoc.length;
   return (
     <div className={`${kieu.khung} mt-4`}>
       <div className="flex items-baseline justify-between gap-2">
@@ -163,8 +171,16 @@ export function KhungNhiemVu({ maPhan, batDau, ghiChu, sanSang = true }) {
           <BieuTuong ten="luyen-tap" co={16} />
           Nhiệm vụ hôm nay
         </p>
-        <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold whitespace-nowrap">
-          {soXong === phan.buoc.length ? "Đã xong" : `${soXong}/${phan.buoc.length} bước`}
+        <span
+          className={`rounded-[var(--bo-goc-tron)] px-2 py-0.5 text-[length:var(--co-chu-latin-nho)] font-bold whitespace-nowrap ${
+            daXong ? "text-dung bg-nhan-nhat" : "text-chu-mo bg-nen-phu"
+          }`}
+        >
+          {daXong
+            ? "Đã hoàn thành"
+            : idsHomNay
+              ? `${soDaHoc}/${idsHomNay.length}`
+              : `${soXongBuoc}/${phan.buoc.length} bước`}
         </span>
       </div>
       <NutNhiemVu maPhan={maPhan} batDau={batDau} sanSang={sanSang} />

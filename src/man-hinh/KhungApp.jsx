@@ -32,7 +32,6 @@ import TabTuVung from "./TabTuVung.jsx";
 import TabMucTieu from "./TabMucTieu.jsx";
 import TabKhamPha from "./TabKhamPha.jsx";
 import TabPhatAm from "./TabPhatAm.jsx";
-import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 
 export default function KhungApp({ thoatKhoa }) {
   const [tabDangMo, setTabDangMo] = useState(TAB.CHU_HAN);
@@ -42,7 +41,8 @@ export default function KhungApp({ thoatKhoa }) {
   const nd = useNguoiDung();
 
   if (dangMoCaiDat) {
-    return <CaiDat quayLai={() => setDangMoCaiDat(false)} />;
+    // "Đổi khoá học" chuyển vào đây (quyết định 18.42), không còn ở dưới mỗi tab
+    return <CaiDat quayLai={() => setDangMoCaiDat(false)} thoatKhoa={thoatKhoa} />;
   }
 
   return (
@@ -77,15 +77,6 @@ export default function KhungApp({ thoatKhoa }) {
         ) : (
           <TabKhamPha />
         )}
-
-        <button
-          type="button"
-          onClick={thoatKhoa}
-          className="border-vien mt-6 inline-flex items-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
-        >
-          <BieuTuong ten="doi-khoa" co={16} />
-          Đổi khoá học
-        </button>
       </main>
 
       <ThanhDuoi tabDangMo={tabDangMo} doiTab={setTabDangMo} />

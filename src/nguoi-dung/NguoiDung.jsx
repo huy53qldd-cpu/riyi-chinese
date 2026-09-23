@@ -49,6 +49,7 @@ import { taiLoTrinh } from "../du-lieu/taiDuLieu.js";
 import {
   TONG_BUOC,
   chuyenNgay,
+  datMucTieuCap,
   hocTruocBaiSau,
   mucCuaPhan,
   phanCuaBuoc,
@@ -472,6 +473,23 @@ export function NguoiDungProvider({ children }) {
     datLoTrinh(hocTruocBaiSau(lt, duongLoTrinh));
   }, [datLoTrinh, duongLoTrinh]);
 
+  /**
+   * Đổi mục tiêu đang hướng đến sang cấp HSK khác (GĐ 12, quyết định 18.42):
+   * nhảy lộ trình tới bài đầu tiên của cấp đó. Trả về true nếu đổi được, để
+   * màn hình biết mà hiện thông báo phù hợp.
+   */
+  const datMucTieu = useCallback(
+    (capHsk) => {
+      if (!nguoiRef.current || !duongLoTrinh) return false;
+      const lt = loTrinhRef.current;
+      const moi = datMucTieuCap(lt, duongLoTrinh, capHsk);
+      if (moi === lt) return false;
+      datLoTrinh(moi);
+      return true;
+    },
+    [datLoTrinh, duongLoTrinh],
+  );
+
   // ---------------------------------------------------------------------------
   // LỘ TRÌNH BÀI HỌC VÀ LUẬT SANG NGÀY
   // ---------------------------------------------------------------------------
@@ -618,6 +636,7 @@ export function NguoiDungProvider({ children }) {
       loTrinh,
       hoanThanhBuoc,
       hocTruoc,
+      datMucTieu,
       duongLoTrinh,
       // Mã các mục của hôm nay. Khách (chưa có tiến độ) thì là bài 1.
       mucHomNay:
@@ -647,6 +666,7 @@ export function NguoiDungProvider({ children }) {
       loTrinh,
       hoanThanhBuoc,
       hocTruoc,
+      datMucTieu,
       duongLoTrinh,
       nhatKy,
       tienDoHomNay,

@@ -49,6 +49,7 @@ import {
   Plus,
   RefreshCw,
   RotateCcw,
+  Search,
   Settings,
   Sparkles,
   Sun,
@@ -78,6 +79,8 @@ const HINH = {
   "nhac-hoc": Bell,
   // Hiệu ứng pháo hoa (theme Đèn lồng đỏ)
   "phao-hoa": Sparkles,
+  // Ô tìm kiếm (GĐ 12)
+  "tim-kiem": Search,
   // Tập viết chữ Hán: cây bút
   "tap-viet": PencilLine,
   "xem-mau": Eye,
