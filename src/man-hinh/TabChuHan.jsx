@@ -231,7 +231,10 @@ export default function TabChuHan() {
               <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
                 {noiDung.chu.length} chữ Hán hôm nay
               </h2>
-              <ul className="m-0 mt-2 flex list-none flex-wrap gap-2.5 p-0">
+              {/* mt/gap-y rộng hơn bình thường để chừa chỗ cho nhãn Đã học/Chưa
+                  học nổi lên trên mép ô (quyết định 18.43), không bị đè lên
+                  tiêu đề hay hàng ô phía trên */}
+              <ul className="m-0 mt-4 flex list-none flex-wrap gap-x-2.5 gap-y-4 p-0">
                 {chuHomNay.map((muc) => (
                   <li key={muc.id} className="w-[4.75rem]">
                     <OChuHan
@@ -329,20 +332,64 @@ export default function TabChuHan() {
 }
 
 /* -----------------------------------------------------------------------------
-   NÚT "BẮT ĐẦU HỌC NGAY": cố định phía trên thanh tab dưới, bấm hoặc quẹt
-   phải đều vào thẳng bước chưa xong (quyết định 18.42).
+   NÚT "BẮT ĐẦU HỌC NGAY" (quyết định 18.43): kiểu TRƯỢT như nút nhận cuộc gọi
+   iPhone. Núm tròn có mũi tên nằm ở đầu bên trái, kéo núm sang phải hết thanh
+   thì vào bài; buông giữa chừng thì núm tự bật về lại đầu. Bấm thẳng vào núm
+   (không kéo) cũng vào bài luôn, để vẫn bấm được bằng bàn phím / trình đọc
+   màn hình.
    ----------------------------------------------------------------------------- */
-function NutBatDauNgay({ batDau, maBuoc }) {
-  const xChamRef = useRef(null);
+const RONG_NUM = 48; // núm kéo hình tròn, khớp với h-12 w-12 bên dưới
+const NGUONG_KICH_HOAT = 0.78; // kéo qua 78% quãng đường thì coi như đã trượt xong
 
-  function khiCham(e) {
-    xChamRef.current = e.clientX;
+function NutBatDauNgay({ batDau, maBuoc }) {
+  const duongRayRef = useRef(null);
+  const doRef = useRef({ trai: 0, quangDuong: 1 });
+  const daKichHoatRef = useRef(false);
+  // Độ lệch xa nhất đã kéo trong lượt chạm này: dùng để phân biệt "bấm" (gần
+  // như không di chuyển) với "kéo dở chừng rồi buông" — trình duyệt vẫn bắn
+  // sự kiện click sau CẢ HAI trường hợp, nên phải tự phân biệt lấy.
+  const diChuyenToiDaRef = useRef(0);
+  const [x, setX] = useState(0);
+  const [dangKeo, setDangKeo] = useState(false);
+
+  function khiChamNum(e) {
+    const hop = duongRayRef.current.getBoundingClientRect();
+    // Trừ khoảng đệm 0.25rem (p-1) mỗi bên và bề rộng núm để ra quãng đường kéo được
+    const quangDuong = Math.max(hop.width - RONG_NUM - 8, 1);
+    doRef.current = { trai: hop.left, quangDuong };
+    daKichHoatRef.current = false;
+    diChuyenToiDaRef.current = 0;
+    setDangKeo(true);
+    e.currentTarget.setPointerCapture?.(e.pointerId);
   }
-  function khiThaTay(e) {
-    const xBatDau = xChamRef.current;
-    xChamRef.current = null;
-    // Quẹt phải ít nhất 48px thì cũng coi như bấm nút
-    if (xBatDau != null && e.clientX - xBatDau > 48) batDau(maBuoc);
+
+  function khiDiChuyen(e) {
+    if (!dangKeo) return;
+    const { trai, quangDuong } = doRef.current;
+    const moi = Math.min(Math.max(e.clientX - trai - RONG_NUM / 2, 0), quangDuong);
+    diChuyenToiDaRef.current = Math.max(diChuyenToiDaRef.current, moi);
+    setX(moi);
+    if (moi / quangDuong > NGUONG_KICH_HOAT && !daKichHoatRef.current) {
+      daKichHoatRef.current = true;
+      batDau(maBuoc);
+    }
+  }
+
+  function khiThaTay() {
+    setDangKeo(false);
+    // Chưa kéo đủ xa thì núm tự bật về lại đầu thanh
+    if (!daKichHoatRef.current) setX(0);
+  }
+
+  /**
+   * Sự kiện "click" của trình duyệt bắn ra sau MỌI lượt bấm-thả trên cùng một
+   * nút, dù đó là bấm thường, kéo hết quãng đường hay kéo dở chừng rồi buông.
+   * Chỉ coi là "bấm" (vào bài luôn) khi gần như KHÔNG di chuyển; kéo dở
+   * chừng thì bỏ qua, để núm đã tự bật về đầu không bị vào bài oan.
+   */
+  function khiBam() {
+    if (daKichHoatRef.current) return; // đã vào bài lúc đang kéo rồi
+    if (diChuyenToiDaRef.current < 8) batDau(maBuoc);
   }
 
   return (
@@ -350,23 +397,37 @@ function NutBatDauNgay({ batDau, maBuoc }) {
       className="fixed inset-x-0 z-40 px-4"
       style={{ bottom: "calc(var(--cao-thanh-duoi) + env(safe-area-inset-bottom) + 0.625rem)" }}
     >
-      <button
-        type="button"
-        onClick={() => batDau(maBuoc)}
-        onPointerDown={khiCham}
-        onPointerUp={khiThaTay}
-        aria-label="Bắt đầu học ngay. Có thể quẹt sang phải để vào bài."
-        className="border-nhan bg-nhan text-chu-tren-nhan mx-auto flex w-full max-w-md touch-pan-y items-center justify-center gap-2 rounded-[var(--bo-goc-tron)] border py-3.5 text-[length:var(--co-chu-latin)] font-bold shadow-[0_4px_16px_var(--bong)]"
+      <div
+        ref={duongRayRef}
+        className="border-nhan bg-nhan-nhat relative mx-auto flex h-14 w-full max-w-md items-center rounded-[var(--bo-goc-tron)] border-2 p-1 shadow-[0_4px_16px_var(--bong)]"
       >
-        Bắt đầu học ngay
-        <BieuTuong ten="sau" co={18} />
-      </button>
+        <span className="text-nhan pointer-events-none absolute inset-x-0 text-center text-[length:var(--co-chu-latin)] font-bold">
+          Bắt đầu học ngay
+        </span>
+        <button
+          type="button"
+          onClick={khiBam}
+          onPointerDown={khiChamNum}
+          onPointerMove={khiDiChuyen}
+          onPointerUp={khiThaTay}
+          onPointerCancel={khiThaTay}
+          aria-label="Bắt đầu học ngay. Trượt sang phải hoặc bấm để vào bài."
+          style={{
+            transform: `translateX(${x}px)`,
+            transition: dangKeo ? "none" : "transform 0.25s ease",
+          }}
+          className="border-nhan bg-nhan text-chu-tren-nhan relative z-10 flex h-12 w-12 shrink-0 touch-none items-center justify-center rounded-full border shadow-[0_2px_8px_var(--bong)]"
+        >
+          <BieuTuong ten="sau" co={22} />
+        </button>
+      </div>
     </div>
   );
 }
 
 /* -----------------------------------------------------------------------------
-   Ô CHỮ HÁN (quyết định 18.42): nhãn "Đã học"/"Chưa học" thay cho mờ + viền
+   Ô CHỮ HÁN (quyết định 18.42, nhãn góc sửa theo 18.43): nhãn "Đã học"/"Chưa
+   học" nổi ở góc trên-phải, đè lên viền ô (giống nhãn dán) thay cho mờ + viền
    nét đứt cũ. `hienPinyin` chỉ dùng cho ô cỡ lớn (chữ hôm nay); ô dày đặc
    (Xem toàn bộ, tìm kiếm) dùng `gonGang` — chấm màu nhỏ ở góc thay vì chữ, để
    không vỡ bố cục khi có hàng trăm ô.
@@ -382,7 +443,7 @@ function OChuHan({ muc, moChiTiet, daHoc = false, onThem = false, hienPinyin = f
       onClick={moChiTiet}
       aria-label={`${muc.gianThe}: ${moTa}`}
       className={`border-vien bg-nen-noi active:bg-nhan-nhat relative flex w-full flex-col items-center justify-center gap-0.5 rounded-[var(--bo-goc)] border shadow-[0_1px_3px_var(--bong)] transition-colors ${
-        gonGang ? "aspect-square" : "px-1.5 py-2"
+        gonGang ? "aspect-square" : "px-1.5 py-2.5"
       }`}
     >
       {gonGang ? (
@@ -392,7 +453,7 @@ function OChuHan({ muc, moChiTiet, daHoc = false, onThem = false, hienPinyin = f
         />
       ) : (
         <span
-          className={`rounded-[var(--bo-goc-tron)] bg-nen-phu px-1.5 py-0.5 text-[length:0.625rem] leading-none font-bold whitespace-nowrap ${
+          className={`absolute -top-2.5 right-1.5 z-10 rounded-[var(--bo-goc-tron)] bg-nen-phu px-2.5 py-1 text-[length:0.6875rem] leading-none font-bold whitespace-nowrap shadow-[0_2px_6px_var(--bong)] ${
             daHoc ? "text-dung" : "text-sai"
           }`}
         >
