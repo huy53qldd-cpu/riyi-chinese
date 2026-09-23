@@ -1,17 +1,19 @@
 /* =============================================================================
-   TAB F — NGỮ PHÁP
+   TAB F — NGỮ PHÁP (GĐ 12 đợt 2, quyết định 18.46 — nhân rộng khuôn mẫu tab
+   Chữ Hán sang đây, xem quyết định 18.42/18.45)
    =============================================================================
 
    Hai màn hình nhỏ trong một tab:
-     1. Danh sách (GĐ 10, quyết định 18.27):
-        - Trên cùng: 3 điểm ngữ pháp hôm nay (theo bài hôm nay; có thể thêm
-          điểm "ôn thêm" dồn từ hôm qua) và NHIỆM VỤ HÔM NAY: Sắp xếp câu →
-          Chọn câu đúng, dùng đúng các điểm hôm nay.
-        - Ba nút HSK 1 / HSK 2 / HSK 3, mỗi nút có thanh % điểm đã học.
-        - Nút "Xem toàn bộ ngữ pháp HSK N" mở danh sách đủ; điểm đã học có
-          viền nét đứt và mờ hơn.
+     1. Danh sách:
+        - Ô tìm kiếm (tên điểm / mẫu câu), tìm trên TẤT CẢ các cấp.
+        - 3-6 điểm ngữ pháp hôm nay: nhãn "Đã học"/"Chưa học" nổi ở góc ô.
+        - Nhiệm vụ hôm nay: 2 bước làm thứ tự nào cũng được.
+        - Nút "Bắt đầu học ngay" cố định phía trên thanh tab dưới.
+        - "Xem toàn bộ ngữ pháp HSK N" của cấp đang là mục tiêu.
+        - Ba nút HSK 1/2/3 ở CUỐI trang: bấm cấp khác sẽ hỏi lại rồi đổi mục
+          tiêu (nhảy lộ trình sang bài đầu tiên của cấp đó).
      2. Chi tiết một điểm: công thức, giải thích, ví dụ, ĐỐI CHIẾU TIẾNG NHẬT,
-        cảnh báo lỗi
+        cảnh báo lỗi. Rời trang mà điểm hôm nay CHƯA xong hết thì hỏi lại trước.
 
    Quy tắc dự án: luôn đối chiếu với cấu trúc tiếng Nhật. Không có cấu trúc trùng
    khít thì hiện dạng gần tương đương kèm nhãn và nói rõ chỗ lệch. Nhãn và chỗ
@@ -22,6 +24,7 @@
 
 import { useMemo, useState } from "react";
 
+import { CAC_PHAN } from "../luyen-tap/cacBuoc.js";
 import {
   KhungNhiemVu,
   NutCapHsk,
@@ -33,10 +36,11 @@ import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
+import HopThoaiXacNhan from "../thanh-phan/HopThoaiXacNhan.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import NutDaHoc from "../thanh-phan/NutDaHoc.jsx";
+import { useThongBao } from "../thanh-phan/ThongBao.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
-import { NhanOnThem } from "./TabMucTieu.jsx";
 
 // Nhãn cho từng loại cảnh báo lỗi (khai báo trong dữ liệu bằng mã)
 const LOAI_LOI = {
@@ -50,130 +54,271 @@ const nhanTieuDe =
   "text-chu-mo m-0 mb-1 text-[length:var(--co-chu-latin-nho)] font-bold uppercase tracking-wide";
 const khungMuc =
   "border-vien bg-nen-noi flex flex-col gap-2 rounded-[var(--bo-goc)] border p-4";
+const SO_KET_QUA_TIM_TOI_DA = 60;
+
+const PHAN_NP = CAC_PHAN.find((p) => p.ma === "np");
+
+/** Một điểm ngữ pháp có khớp từ khoá tìm không: theo tên hoặc mẫu câu (bỏ dấu markup {ja|...}). */
+function khopTimKiem(diem, tuKhoa) {
+  const q = tuKhoa.trim().toLowerCase();
+  if (!q) return true;
+  const bo = (s) => s.replace(/\{(zh|ja)\|([^}]+)\}/g, "$2").toLowerCase();
+  return bo(diem.ten).includes(q) || bo(diem.congThuc).includes(q);
+}
 
 export default function TabNguPhap() {
   const nd = useNguoiDung();
+  const hienThongBao = useThongBao();
   const { du, loi, bai, noiDung } = useBaiHomNay();
   const { batDau, manHinh } = useNhiemVu(noiDung, du, bai?.so);
-  const [capChon, setCapChon] = useState(null); // null = cấp của điểm đầu tiên hôm nay
   const [moToanBo, setMoToanBo] = useState(false);
   const [diemDangMo, setDiemDangMo] = useState(null);
+  const [timKiem, setTimKiem] = useState("");
+  const [capMuonDoi, setCapMuonDoi] = useState(null);
 
   const danhSach = useMemo(() => du?.danhSachNguPhap ?? [], [du]);
   const tienDoCap = useMemo(() => tinhTienDoCap(danhSach, nd.daHoc), [danhSach, nd.daHoc]);
 
   if (manHinh) return manHinh;
+
+  const npHomNay = noiDung?.np ?? [];
+  const chuaXongHomNay = npHomNay.filter((d) => !nd.daHoc[d.id]);
+
   if (diemDangMo) {
-    return <ChiTietNguPhap diem={diemDangMo} quayLai={() => setDiemDangMo(null)} />;
+    return (
+      <ChiTietNguPhap
+        diem={diemDangMo}
+        chuaXongHomNay={chuaXongHomNay}
+        quayLai={() => setDiemDangMo(null)}
+      />
+    );
   }
 
-  const cap = capChon ?? noiDung?.np[0]?.capHsk ?? 1;
-  const hienThi = danhSach.filter((d) => d.capHsk === cap);
+  const capHienTai = bai?.capHsk ?? 1;
+  const hienThi = danhSach.filter((d) => d.capHsk === capHienTai);
+  const ketQuaTim = timKiem.trim() ? danhSach.filter((d) => khopTimKiem(d, timKiem)) : null;
+
+  const buocKeTiep = PHAN_NP.buoc.find((b) => !nd.loTrinh.buoc.includes(b.ma));
+  const hienNutBatDau = Boolean(du && buocKeTiep && npHomNay.length > 0);
+
+  function chonCap(c) {
+    if (c === capHienTai) {
+      setMoToanBo((m) => !m);
+      return;
+    }
+    if (!nd.daDangNhap) {
+      hienThongBao("Đăng nhập để đổi mục tiêu trình độ.");
+      return;
+    }
+    setCapMuonDoi(c);
+  }
+
+  function xacNhanDoiCap() {
+    const cap = capMuonDoi;
+    setCapMuonDoi(null);
+    const ok = nd.datMucTieu(cap);
+    if (ok) {
+      setMoToanBo(false);
+      hienThongBao(`Đã đổi mục tiêu sang HSK ${cap}.`);
+    } else {
+      hienThongBao("Chưa đổi được mục tiêu. Hãy kiểm tra mạng rồi thử lại.");
+    }
+  }
 
   return (
-    <section>
-      <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">Ngữ pháp</h1>
-      <p className="text-chu-mo mt-1.5 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-        Mỗi điểm ngữ pháp được đối chiếu với cấu trúc tiếng Nhật, kèm chỗ hai
-        bên khác nhau.
-      </p>
+    <section className="flex flex-col gap-5" style={hienNutBatDau ? { paddingBottom: "5.5rem" } : undefined}>
+      <div>
+        <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">Ngữ pháp</h1>
+        <p className="text-chu-mo mt-1.5 mb-3 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+          Mỗi điểm ngữ pháp được đối chiếu với cấu trúc tiếng Nhật, kèm chỗ hai
+          bên khác nhau.
+        </p>
+
+        {/* --- Ô tìm kiếm (GĐ 12) --- */}
+        <div className="relative">
+          <BieuTuong
+            ten="tim-kiem"
+            co={18}
+            className="text-chu-mo pointer-events-none absolute top-1/2 left-3.5 -translate-y-1/2"
+          />
+          <input
+            type="search"
+            value={timKiem}
+            onChange={(e) => setTimKiem(e.target.value)}
+            placeholder="Tìm kiếm tên điểm, mẫu câu..."
+            aria-label="Tìm kiếm ngữ pháp"
+            className="border-vien bg-nen-noi w-full rounded-[var(--bo-goc-tron)] border py-2.5 pr-4 pl-10 text-[length:var(--co-chu-latin)]"
+          />
+        </div>
+      </div>
 
       {!du && !loi && (
-        <p className="text-chu-mo mt-5 text-[length:var(--co-chu-latin-nho)]">
-          Đang tải danh sách...
-        </p>
+        <p className="text-chu-mo text-[length:var(--co-chu-latin-nho)]">Đang tải danh sách...</p>
       )}
       {loi && (
-        <p className="text-sai mt-5 text-[length:var(--co-chu-latin-nho)]">
+        <p className="text-sai text-[length:var(--co-chu-latin-nho)]">
           Không tải được dữ liệu ngữ pháp. Hãy kiểm tra mạng rồi mở lại tab này.
         </p>
       )}
 
-      {/* --- Ngữ pháp hôm nay --- */}
-      {noiDung && noiDung.np.length > 0 && (
-        <div className="mt-4">
-          <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-            {noiDung.np.length} điểm ngữ pháp hôm nay
-          </h2>
-          <ul className="m-0 mt-2 flex list-none flex-col gap-2 p-0">
-            {noiDung.np.map((d) => (
+      {/* === TÌM KIẾM ĐANG BẬT === */}
+      {du && ketQuaTim && (
+        <div>
+          <p className="text-chu-mo m-0 mb-2 text-[length:var(--co-chu-latin-nho)]">
+            {ketQuaTim.length === 0
+              ? "Không tìm thấy điểm nào khớp."
+              : `${ketQuaTim.length} điểm khớp với "${timKiem.trim()}"`}
+          </p>
+          <ul className="m-0 flex list-none flex-col gap-2 p-0">
+            {ketQuaTim.slice(0, SO_KET_QUA_TIM_TOI_DA).map((d) => (
               <li key={d.id}>
-                <ONguPhap
-                  diem={d}
-                  onThem={noiDung.them.has(d.id)}
-                  moChiTiet={() => setDiemDangMo(d)}
-                />
+                <ONguPhap diem={d} daHoc={Boolean(nd.daHoc[d.id])} moChiTiet={() => setDiemDangMo(d)} />
               </li>
             ))}
           </ul>
-          <KhungNhiemVu
-            maPhan="np"
-            batDau={batDau}
-            sanSang={Boolean(du)}
-            ghiChu="Hai bước dùng đúng các điểm ngữ pháp hôm nay ở trên. Xong cả hai mới tính là hoàn thành phần ngữ pháp; chưa xong thì các điểm này dồn sang ngày mai."
-          />
+          {ketQuaTim.length > SO_KET_QUA_TIM_TOI_DA && (
+            <p className="text-chu-mo mt-2 mb-0 text-[length:var(--co-chu-latin-nho)]">
+              Còn {ketQuaTim.length - SO_KET_QUA_TIM_TOI_DA} điểm khác, gõ thêm để thu hẹp tìm kiếm.
+            </p>
+          )}
         </div>
       )}
 
-      {/* --- Ba nút cấp HSK, mỗi nút có thanh % đã học --- */}
-      {du && (
-        <NutCapHsk capChon={cap} chon={setCapChon} tienDo={tienDoCap} donVi="điểm ngữ pháp" />
-      )}
-
-      {du && hienThi.length > 0 && (
-        <button
-          type="button"
-          onClick={() => setMoToanBo((m) => !m)}
-          aria-expanded={moToanBo}
-          className="border-vien mt-4 inline-flex w-full items-center justify-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2.5 text-[length:var(--co-chu-latin-nho)] font-semibold"
-        >
-          <BieuTuong ten={moToanBo ? "thu-gon" : "xem-them"} co={16} />
-          {moToanBo
-            ? `Thu gọn danh sách HSK ${cap}`
-            : `Xem toàn bộ ngữ pháp HSK ${cap} (${hienThi.length} điểm)`}
-        </button>
-      )}
-
-      {du && moToanBo && (
+      {/* === KHÔNG TÌM KIẾM: bố cục thường === */}
+      {du && !ketQuaTim && (
         <>
-          <p className="text-chu-mo mt-3 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-            Bấm vào một điểm để xem giải thích và đối chiếu tiếng Nhật. Điểm đã
-            học (phần ngữ pháp đã hoàn thành hoặc bạn tự đánh dấu) có viền nét
-            đứt và mờ hơn.
-          </p>
-          <ul className="m-0 mt-3 flex list-none flex-col gap-2 p-0">
-            {hienThi.map((d) => (
-              <li key={d.id}>
-                <ONguPhap
-                  diem={d}
-                  daHoc={Boolean(nd.daHoc[d.id])}
-                  moChiTiet={() => setDiemDangMo(d)}
-                />
-              </li>
-            ))}
-          </ul>
+          {/* --- Ngữ pháp hôm nay --- */}
+          {npHomNay.length > 0 && (
+            <div>
+              <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
+                {npHomNay.length} điểm ngữ pháp hôm nay
+              </h2>
+              <ul className="m-0 mt-4 flex list-none flex-col gap-3 p-0">
+                {npHomNay.map((d) => (
+                  <li key={d.id}>
+                    <ONguPhap
+                      diem={d}
+                      daHoc={Boolean(nd.daHoc[d.id])}
+                      onThem={noiDung.them.has(d.id)}
+                      moChiTiet={() => setDiemDangMo(d)}
+                    />
+                  </li>
+                ))}
+              </ul>
+              <KhungNhiemVu
+                maPhan="np"
+                batDau={batDau}
+                sanSang={Boolean(du)}
+                idsHomNay={npHomNay.map((d) => d.id)}
+              />
+            </div>
+          )}
+
+          {/* --- Xem toàn bộ ngữ pháp của cấp đang là mục tiêu --- */}
+          {hienThi.length > 0 && (
+            <button
+              type="button"
+              onClick={() => setMoToanBo((m) => !m)}
+              aria-expanded={moToanBo}
+              className="border-vien inline-flex w-full items-center justify-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2.5 text-[length:var(--co-chu-latin-nho)] font-semibold"
+            >
+              <BieuTuong ten={moToanBo ? "thu-gon" : "xem-them"} co={16} />
+              {moToanBo
+                ? `Thu gọn danh sách HSK ${capHienTai}`
+                : `Xem toàn bộ ngữ pháp HSK ${capHienTai} (${hienThi.length} điểm)`}
+            </button>
+          )}
+
+          {moToanBo && (
+            <div>
+              <p className="text-chu-mo m-0 mb-3 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+                Bấm vào một điểm để xem giải thích và đối chiếu tiếng Nhật.
+              </p>
+              <ul className="m-0 flex list-none flex-col gap-2 p-0">
+                {hienThi.map((d) => (
+                  <li key={d.id}>
+                    <ONguPhap
+                      diem={d}
+                      daHoc={Boolean(nd.daHoc[d.id])}
+                      moChiTiet={() => setDiemDangMo(d)}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* --- Ba nút cấp HSK: đặt ở CUỐI trang --- */}
+          <NutCapHsk capChon={capHienTai} chon={chonCap} tienDo={tienDoCap} donVi="điểm ngữ pháp" />
         </>
+      )}
+
+      {hienNutBatDau && <NutBatDauNgay batDau={batDau} maBuoc={buocKeTiep.ma} />}
+
+      {capMuonDoi && (
+        <HopThoaiXacNhan
+          tieuDe={`Đổi mục tiêu sang HSK ${capMuonDoi}?`}
+          noiDung={
+            <p className="m-0">
+              Bài học hôm nay sẽ đổi sang chữ Hán, từ vựng và ngữ pháp của HSK {capMuonDoi}, bắt
+              đầu lại từ bài đầu tiên của cấp này. Điểm đã học trước đó vẫn được giữ nguyên.
+            </p>
+          }
+          nutXacNhan="Đổi mục tiêu"
+          nutHuy="Thôi"
+          khiXacNhan={xacNhanDoiCap}
+          khiHuy={() => setCapMuonDoi(null)}
+        />
       )}
     </section>
   );
 }
 
 /* -----------------------------------------------------------------------------
-   Ô NGỮ PHÁP (quyết định 18.38): mỗi điểm một ô kéo hết chiều ngang, chỉ có
-   mẫu câu ở trên và phần tiếng Việt ở dưới. Bấm vào mới hiện giải thích và
-   đối chiếu tiếng Nhật. Điểm đã học: viền nét đứt, mờ hơn.
+   NÚT "BẮT ĐẦU HỌC NGAY" (quyết định 18.45): nút bấm bình thường, lệch về
+   bên phải, cố định phía trên thanh tab dưới.
+   ----------------------------------------------------------------------------- */
+function NutBatDauNgay({ batDau, maBuoc }) {
+  return (
+    <div
+      className="fixed inset-x-0 z-40 flex justify-end px-4"
+      style={{ bottom: "calc(var(--cao-thanh-duoi) + env(safe-area-inset-bottom) + 0.625rem)" }}
+    >
+      <button
+        type="button"
+        onClick={() => batDau(maBuoc)}
+        className="border-nhan bg-nhan text-chu-tren-nhan inline-flex items-center gap-2 rounded-[var(--bo-goc-tron)] border py-3 pr-4 pl-5 text-[length:var(--co-chu-latin)] font-bold shadow-[0_4px_16px_var(--bong)]"
+      >
+        Bắt đầu học ngay
+        <BieuTuong ten="sau" co={18} />
+      </button>
+    </div>
+  );
+}
+
+/* -----------------------------------------------------------------------------
+   Ô NGỮ PHÁP (quyết định 18.42/18.46): mỗi điểm một ô kéo hết chiều ngang,
+   mẫu câu ở trên và tên tiếng Việt ở dưới. Nhãn "Đã học"/"Chưa học" nổi ở góc
+   trên-phải, đè lên viền ô, thay cho mờ + viền nét đứt cũ.
    ----------------------------------------------------------------------------- */
 function ONguPhap({ diem, moChiTiet, daHoc = false, onThem = false }) {
-  const moTa = [diem.ten, onThem && "ôn thêm", daHoc && "đã học"].filter(Boolean).join(", ");
+  const moTa = [diem.ten, onThem && "ôn thêm", daHoc ? "đã học" : "chưa học"]
+    .filter(Boolean)
+    .join(", ");
   return (
     <button
       type="button"
       onClick={moChiTiet}
       aria-label={moTa}
-      className={`border-vien bg-nen-noi active:bg-nhan-nhat flex w-full flex-col gap-1 rounded-[var(--bo-goc)] px-4 py-3 text-left transition-colors ${
-        daHoc ? "border-2 border-dashed opacity-55" : "border shadow-[0_1px_3px_var(--bong)]"
-      }`}
+      className="border-vien bg-nen-noi active:bg-nhan-nhat relative flex w-full flex-col gap-1 rounded-[var(--bo-goc)] border px-4 pt-4 pb-3 text-left shadow-[0_1px_3px_var(--bong)] transition-colors"
     >
+      <span
+        className={`bg-nen-phu absolute -top-2.5 right-3 z-10 rounded-[var(--bo-goc-tron)] px-2 py-0.5 text-[length:0.625rem] leading-none font-bold whitespace-nowrap shadow-[0_2px_6px_var(--bong)] ${
+          daHoc ? "text-dung" : "text-sai"
+        }`}
+      >
+        {daHoc ? "Đã học" : "Chưa học"}
+      </span>
       <p className="m-0 text-[length:var(--co-chu-latin)] leading-snug font-bold">
         <VanBanPha noiDung={diem.congThuc} />
       </p>
@@ -187,15 +332,21 @@ function ONguPhap({ diem, moChiTiet, daHoc = false, onThem = false }) {
 /* -----------------------------------------------------------------------------
    CHI TIẾT MỘT ĐIỂM NGỮ PHÁP
    ----------------------------------------------------------------------------- */
-function ChiTietNguPhap({ diem, quayLai }) {
+function ChiTietNguPhap({ diem, quayLai, chuaXongHomNay = [] }) {
   const dc = diem.doiChieuNhat;
+  const [canhBaoDong, setCanhBaoDong] = useState(false);
+
+  function yeuCauVeDanhSach() {
+    if (chuaXongHomNay.length > 0) setCanhBaoDong(true);
+    else quayLai();
+  }
 
   return (
     <section className="flex flex-col gap-5">
       <div>
         <button
           type="button"
-          onClick={quayLai}
+          onClick={yeuCauVeDanhSach}
           className="border-vien inline-flex items-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold"
         >
           <BieuTuong ten="quay-lai" co={16} />
@@ -280,6 +431,38 @@ function ChiTietNguPhap({ diem, quayLai }) {
       )}
 
       <MucChuaKiemTra danhSach={diem.cangKiemTra} />
+
+      {/* --- Cảnh báo rời trang khi điểm ngữ pháp hôm nay chưa xong --- */}
+      {canhBaoDong && (
+        <HopThoaiXacNhan
+          tieuDe="Chưa hoàn thành"
+          noiDung={
+            <>
+              <p className="m-0 mb-2">
+                Bạn chưa hoàn thành đối với điểm{" "}
+                {chuaXongHomNay.map((d, i) => (
+                  <span key={d.id}>
+                    {i > 0 && ", "}
+                    <VanBanPha noiDung={d.ten} />
+                  </span>
+                ))}
+                .
+              </p>
+              <p className="m-0">
+                Điểm ngữ pháp được tính là đã học khi bạn hoàn thành toàn bộ nhiệm vụ liên quan (
+                {PHAN_NP.buoc.map((b) => b.nhan).join(" và ")}).
+              </p>
+            </>
+          }
+          nutXacNhan="Quay lại danh sách"
+          nutHuy="Ở lại học tiếp"
+          khiXacNhan={() => {
+            setCanhBaoDong(false);
+            quayLai();
+          }}
+          khiHuy={() => setCanhBaoDong(false)}
+        />
+      )}
     </section>
   );
 }
