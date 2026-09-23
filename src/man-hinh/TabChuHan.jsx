@@ -85,13 +85,21 @@ function amChinh(danhSach = []) {
   return danhSach.find((a) => a.chinh) ?? danhSach[0] ?? null;
 }
 
-/** Một chữ có khớp từ khoá tìm không: theo giản thể, phồn thể, pinyin hoặc nghĩa Việt. */
+/** Bỏ dấu thanh khỏi một chuỗi pinyin (dùng tachThanh có sẵn), để tìm kiếm
+ * không bắt gõ đúng dấu (quyết định 18.47): gõ "cong" vẫn ra "cóng". */
+function boDauThanhPinyin(s) {
+  return tachThanh(s).am;
+}
+
+/** Một chữ có khớp từ khoá tìm không: theo giản thể, phồn thể, pinyin (không
+ * phân biệt dấu thanh) hoặc nghĩa Việt. */
 function khopTimKiem(muc, tuKhoa) {
   const q = tuKhoa.trim().toLowerCase();
   if (!q) return true;
   if (muc.gianThe.includes(tuKhoa) || muc.phonThe.includes(tuKhoa)) return true;
   if (muc.nghia.viet.toLowerCase().includes(q)) return true;
-  return muc.amDoc.pinyin.some((a) => a.am.toLowerCase().includes(q));
+  const qKhongDau = boDauThanhPinyin(q);
+  return muc.amDoc.pinyin.some((a) => boDauThanhPinyin(a.am.toLowerCase()).includes(qKhongDau));
 }
 
 export default function TabChuHan() {
