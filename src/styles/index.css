@@ -223,6 +223,160 @@ rt {
   display: none;
 }
 
+/* Theme đèn lồng đỏ (GĐ 11, quyết định 18.41), làm y như trên:
+   .tru-hinh-theme : chỉ hiện ở theme sáng/tối (mặt trời lấy từ logo, dấu sách)
+   .chi-den-long   : chỉ hiện ở theme đèn lồng đỏ (đèn lồng, hoa mai) */
+.chi-den-long {
+  display: none;
+}
+
+:root[data-theme="den-long"] .chi-den-long {
+  display: inline-flex;
+}
+
+:root[data-theme="den-long"] .tru-hinh-theme,
+:root[data-theme="anh-dao"] .tru-hinh-theme {
+  display: none;
+}
+
+/* -----------------------------------------------------------------------------
+   THEME ĐÈN LỒNG ĐỎ: KHUNG VÀ NÚT MÀU ĐỎ, VIỀN VÀNG (quyết định 18.41)
+
+   Ba theme kia dùng thẻ nền sáng, chữ đậm. Theme này thì NGƯỢC LẠI: thẻ màu đỏ
+   đèn lồng, chữ trong thẻ màu kem. Nền trang vẫn kem nên tiêu đề nằm ngoài thẻ
+   vẫn là chữ nâu đỏ đậm như thường.
+
+   Vì vậy chỉ ở theme này, vài lớp màu được vẽ lại cho hợp: chữ trong thẻ đổi
+   sang kem, màu nhấn trong thẻ đổi sang vàng (đỏ trên đỏ thì không thấy), viền
+   nút đổi sang vàng kim. Tất cả màu đều lấy từ tokens.css.
+   ----------------------------------------------------------------------------- */
+:root[data-theme="den-long"] .bg-nen-noi {
+  background-color: var(--goc-do);
+  border-color: var(--goc-vang);
+  color: var(--chu-tren-nhan);
+}
+
+/* Chữ phụ trong thẻ đỏ: kem ngả vàng cho dịu mắt nhưng vẫn đủ tương phản */
+:root[data-theme="den-long"] .bg-nen-noi .text-chu-mo {
+  color: var(--chu-mo-tren-do);
+}
+
+/* Chữ và hình màu nhấn (đỏ) nằm trong thẻ đỏ thì đổi sang vàng sáng.
+   Dùng --vang-chu-tren-do (4.7 : 1) chứ không phải vàng kim #f2c14e (3.5 : 1),
+   vì nhãn tab ở thanh dưới là chữ nhỏ, cần đủ 4.5 : 1. */
+:root[data-theme="den-long"] .bg-nen-noi .text-nhan {
+  color: var(--vang-chu-tren-do);
+}
+
+/* Pinyin và furigana (thẻ <rt>) trong thẻ đỏ cũng phải sáng lên theo */
+:root[data-theme="den-long"] .bg-nen-noi rt {
+  color: var(--chu-mo-tren-do);
+}
+
+/* Ô có nền SÁNG nằm trong thẻ đỏ (ô bảng pinyin, nhãn, thanh tiến độ): chữ
+   phải trở lại màu nâu đỏ đậm, nếu không sẽ là chữ kem trên nền kem. */
+:root[data-theme="den-long"] .bg-nen-noi .bg-nhan-nhat,
+:root[data-theme="den-long"] .bg-nen-noi .bg-nen-phu,
+:root[data-theme="den-long"] .bg-nen-noi [class*="o-am-tiet"] {
+  color: var(--chu);
+}
+
+:root[data-theme="den-long"] .bg-nen-noi .bg-nhan-nhat rt,
+:root[data-theme="den-long"] .bg-nen-noi .bg-nhan-nhat .text-chu-mo,
+:root[data-theme="den-long"] .bg-nen-noi .bg-nen-phu rt,
+:root[data-theme="den-long"] .bg-nen-noi .bg-nen-phu .text-chu-mo,
+:root[data-theme="den-long"] .bg-nen-noi [class*="o-am-tiet"] rt,
+:root[data-theme="den-long"] .bg-nen-noi [class*="o-am-tiet"] .text-chu-mo {
+  color: var(--chu-mo);
+}
+
+/* Báo đúng / sai trong thẻ đỏ: dùng bản sáng màu để nổi trên nền đỏ */
+:root[data-theme="den-long"] .bg-nen-noi .text-dung {
+  color: var(--dung-tren-do);
+}
+
+:root[data-theme="den-long"] .bg-nen-noi .text-sai {
+  color: var(--sai-tren-do);
+}
+
+:root[data-theme="den-long"] .bg-nen-noi .border-dung {
+  border-color: var(--dung-tren-do);
+}
+
+:root[data-theme="den-long"] .bg-nen-noi .border-sai {
+  border-color: var(--sai-tren-do);
+}
+
+/* Nút chính và các viền theo màu nhấn: viền vàng kim, để nút đỏ vẫn tách khỏi
+   thẻ đỏ phía sau. Bấm giữ thì viền sáng hơn (xem :active bên dưới). */
+:root[data-theme="den-long"] .border-nhan {
+  border-color: var(--goc-vang);
+}
+
+:root[data-theme="den-long"] .bg-nhan:active {
+  border-color: var(--goc-vang-sang);
+}
+
+/* Đường kẻ ngăn bên trong thẻ đỏ: vàng mờ, không dùng vàng đậm của nền kem */
+:root[data-theme="den-long"] .bg-nen-noi .border-vien {
+  border-color: rgba(242, 193, 78, 0.5);
+}
+
+/* Đèn lồng trang trí mờ ở góc trên bên phải, nằm dưới nội dung, không bắt bấm */
+:root[data-theme="den-long"] body {
+  background-color: transparent;
+}
+
+:root[data-theme="den-long"] body::before {
+  content: "";
+  position: fixed;
+  top: calc(var(--cao-thanh-tren) + 4px);
+  right: 10px;
+  width: 116px;
+  height: 116px;
+  background-color: var(--den-long-trang-tri);
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: -1;
+  -webkit-mask: url("/hinh/den-long-trang-tri.svg") no-repeat center / contain;
+  mask: url("/hinh/den-long-trang-tri.svg") no-repeat center / contain;
+}
+
+/* -----------------------------------------------------------------------------
+   RUNG NHẸ KHI TRẢ LỜI SAI (quyết định 18.41)
+   Ở theme đèn lồng đỏ, màu "sai" là tím chứ không phải đỏ (vì cả app đang đỏ),
+   nên thêm một cái rung ngắn để báo sai bằng chuyển động, không chỉ bằng màu.
+   Máy bật "Giảm chuyển động" thì không rung.
+   ----------------------------------------------------------------------------- */
+@keyframes riyi-rung {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(3px);
+  }
+}
+
+.rung-bao-sai {
+  animation: riyi-rung 0.32s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rung-bao-sai {
+    animation: none;
+  }
+}
+
 /* Vài cánh hoa trang trí mờ ở góc trên bên phải, nằm dưới mọi nội dung và
    không bắt được bấm. Hình cánh hoa vẽ bằng mặt nạ SVG, màu lấy từ tokens.css. */
 /* Nền do thẻ <html> tô, thân trang trong suốt để cánh hoa (z-index -1) nằm giữa

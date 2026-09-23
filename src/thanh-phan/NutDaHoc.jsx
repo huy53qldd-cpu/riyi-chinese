@@ -11,17 +11,20 @@
    ============================================================================= */
 
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
-import BieuTuong, { CanhHoa } from "./BieuTuong.jsx";
+import BieuTuong, { CanhHoa, HoaMai } from "./BieuTuong.jsx";
 
 /** Hình của "đã học": dấu sách ở theme sáng/tối, cánh hoa ở theme hoa anh đào. */
 function HinhDaHoc({ co }) {
   return (
     <>
-      <span className="tru-anh-dao inline-flex">
+      <span className="tru-hinh-theme inline-flex">
         <BieuTuong ten="da-hoc" co={co} />
       </span>
       <span className="chi-anh-dao">
         <CanhHoa co={co} />
+      </span>
+      <span className="chi-den-long">
+        <HoaMai co={co} />
       </span>
     </>
   );

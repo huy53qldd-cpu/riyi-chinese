@@ -20,18 +20,19 @@ import {
   tatThongBao,
   trinhDuyetHoTro,
 } from "../thong-bao/dangKyThongBao.js";
-import BieuTuong, { HoaAnhDao, LogoGoogle } from "../thanh-phan/BieuTuong.jsx";
+import BieuTuong, { DenLong, HoaAnhDao, LogoGoogle } from "../thanh-phan/BieuTuong.jsx";
 import ChuTrung from "../thanh-phan/ChuTrung.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import { CAC_CO_CHU } from "../nguoi-dung/caiDat.js";
 import ManTaiKhoanEmail, { ONhapMatKhau } from "./ManTaiKhoanEmail.jsx";
 import { doiMatKhau, guiLaiEmailXacMinh } from "../firebase/taiKhoanEmail.js";
 
-// Ba giao diện. Hình minh hoạ đi kèm để dễ nhận ra, màu thật nằm ở tokens.css.
+// Bốn giao diện. Hình minh hoạ đi kèm để dễ nhận ra, màu thật nằm ở tokens.css.
 const CAC_GIAO_DIEN = [
   { ma: "sang", nhan: "Sáng" },
   { ma: "toi", nhan: "Tối" },
   { ma: "anh-dao", nhan: "Hoa anh đào" },
+  { ma: "den-long", nhan: "Đèn lồng đỏ 🏮" },
 ];
 
 const kieuNutVien =
@@ -116,6 +117,17 @@ export default function CaiDat({ quayLai }) {
           dangChon={nd.caiDat.giaoDien}
           chon={(ma) => nd.doiCaiDat("giaoDien", ma)}
         />
+
+        {/* Pháo hoa chỉ có ở theme Đèn lồng đỏ nên công tắc cũng chỉ hiện ở đó */}
+        {nd.caiDat.giaoDien === "den-long" && (
+          <CongTat
+            bieuTuong="phao-hoa"
+            nhan="Hiệu ứng pháo hoa"
+            moTa="Bấm vào nút hoặc ô thì có pháo hoa nhỏ bung ra tại chỗ bấm."
+            bat={nd.caiDat.phaoHoa !== "tat"}
+            doi={(bat) => nd.doiCaiDat("phaoHoa", bat ? "bat" : "tat")}
+          />
+        )}
 
         {!nd.daDangNhap && (
           <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)]">
@@ -501,7 +513,7 @@ function ChonGiaoDien({ dangChon, chon }) {
           Màu nền và màu điểm nhấn của toàn bộ app.
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-2" role="radiogroup" aria-label="Giao diện">
+      <div className="grid grid-cols-2 gap-2" role="radiogroup" aria-label="Giao diện">
         {CAC_GIAO_DIEN.map((g) => {
           const chonRoi = dangChon === g.ma;
           return (
@@ -517,6 +529,8 @@ function ChonGiaoDien({ dangChon, chon }) {
             >
               {g.ma === "anh-dao" ? (
                 <HoaAnhDao co={22} />
+              ) : g.ma === "den-long" ? (
+                <DenLong co={22} />
               ) : (
                 <BieuTuong ten={`theme-${g.ma}`} co={22} />
               )}

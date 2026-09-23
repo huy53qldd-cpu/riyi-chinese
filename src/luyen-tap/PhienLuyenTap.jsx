@@ -259,7 +259,8 @@ function CauHoiChon({ cau, traLoi }) {
           const laChon = lc.khoa === daChon;
           let vien = "border-vien";
           if (daChon !== null && laDapAn) vien = "border-dung border-2";
-          else if (laChon) vien = "border-sai border-2";
+          // Chọn sai: viền + dấu ✗ + rung nhẹ một lần, không chỉ dựa vào màu
+          else if (laChon) vien = "border-sai border-2 rung-bao-sai";
           return (
             <li key={lc.khoa}>
               <button

@@ -22,6 +22,7 @@ import CaiDat from "./man-hinh/CaiDat.jsx";
 import KhungApp from "./man-hinh/KhungApp.jsx";
 import { NguoiDungProvider } from "./nguoi-dung/NguoiDung.jsx";
 import { KhoThongBao } from "./thanh-phan/ThongBao.jsx";
+import PhaoHoa from "./thanh-phan/PhaoHoa.jsx";
 import { DaiBanMoi, ManMatMang } from "./pwa/ThongBaoPwa.jsx";
 
 const MAN_HINH = {
@@ -54,7 +55,8 @@ export default function App() {
 
         {manHinh === MAN_HINH.CAI_DAT && <CaiDat quayLai={veChonKhoa} />}
 
-        {/* Hiện trên mọi màn hình: báo có bản app mới, báo mất mạng */}
+        {/* Hiện trên mọi màn hình: pháo hoa (theme Đèn lồng đỏ), báo bản mới, mất mạng */}
+        <PhaoHoa />
         <DaiBanMoi />
         <ManMatMang />
       </NguoiDungProvider>

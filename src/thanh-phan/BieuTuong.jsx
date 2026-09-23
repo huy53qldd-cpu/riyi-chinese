@@ -50,6 +50,7 @@ import {
   RefreshCw,
   RotateCcw,
   Settings,
+  Sparkles,
   Sun,
   SquarePen,
   Type,
@@ -75,6 +76,8 @@ const HINH = {
   "nghe": Volume2,
   // Thông báo nhắc học (Cài đặt)
   "nhac-hoc": Bell,
+  // Hiệu ứng pháo hoa (theme Đèn lồng đỏ)
+  "phao-hoa": Sparkles,
   // Tập viết chữ Hán: cây bút
   "tap-viet": PencilLine,
   "xem-mau": Eye,
@@ -161,6 +164,68 @@ export function HoaAnhDao({ co = 24, className = "" }) {
       ))}
       {/* Nhuỵ hoa: chấm nhỏ màu nền cho nổi bông hoa */}
       <circle cx="12" cy="12" r="1.6" fill="var(--nen-noi)" />
+    </svg>
+  );
+}
+
+/**
+ * Đèn lồng đỏ (theme Đèn lồng đỏ, quyết định 18.41): thay cho mặt trời mục tiêu
+ * và dùng làm hình trang trí. Vẽ bằng currentColor như mọi biểu tượng khác.
+ */
+export function DenLong({ co = 24, className = "" }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width={rem(co)}
+      height={rem(co)}
+      aria-hidden="true"
+      focusable="false"
+      className={className}
+    >
+      {/* Quai treo phía trên và tua rua phía dưới */}
+      <path
+        d="M12 1.5 V3.2 M12 19.6 V22.5"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        fill="none"
+      />
+      {/* Nắp trên và đáy dưới */}
+      <rect x="8.2" y="3" width="7.6" height="1.8" rx="0.9" fill="currentColor" />
+      <rect x="8.2" y="18.2" width="7.6" height="1.8" rx="0.9" fill="currentColor" />
+      {/* Thân đèn hình bầu */}
+      <path
+        d="M12 4.6 C17.2 4.6 19.4 7.6 19.4 11.5 C19.4 15.4 17.2 18.4 12 18.4 C6.8 18.4 4.6 15.4 4.6 11.5 C4.6 7.6 6.8 4.6 12 4.6 Z"
+        fill="currentColor"
+      />
+      {/* Hai múi dọc bằng màu nền, cho ra dáng đèn lồng giấy */}
+      <path
+        d="M9.1 5.3 C7.6 7 7.1 9.2 7.1 11.5 C7.1 13.8 7.6 16 9.1 17.7 M14.9 5.3 C16.4 7 16.9 9.2 16.9 11.5 C16.9 13.8 16.4 16 14.9 17.7"
+        stroke="var(--nen-noi)"
+        strokeWidth="1"
+        fill="none"
+        opacity="0.75"
+      />
+    </svg>
+  );
+}
+
+/** Hoa mai 5 cánh: dấu "đã học" ở theme Đèn lồng đỏ. */
+export function HoaMai({ co = 16, className = "" }) {
+  const canh = "M8 8 C6.2 6.3 5.9 3.6 7.3 2 C8.7 3.6 8.4 6.3 8 8 Z";
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      width={rem(co)}
+      height={rem(co)}
+      aria-hidden="true"
+      focusable="false"
+      className={`shrink-0 ${className}`}
+    >
+      {[0, 72, 144, 216, 288].map((goc) => (
+        <path key={goc} d={canh} fill="currentColor" transform={`rotate(${goc} 8 8)`} />
+      ))}
+      <circle cx="8" cy="8" r="1.4" fill="currentColor" />
     </svg>
   );
 }

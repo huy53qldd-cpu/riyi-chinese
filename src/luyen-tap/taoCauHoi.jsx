@@ -20,6 +20,7 @@
 import { ghepFurigana } from "../du-lieu/ghepFurigana.js";
 import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
+import NutLoa from "../thanh-phan/NutLoa.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
 import { chonKhacNhau, kieu, tronNgauNhien } from "./tienIch.js";
 

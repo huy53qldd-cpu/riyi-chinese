@@ -4,7 +4,10 @@
 
    Hai cài đặt:
      furigana : "bat" (mặc định) hoặc "tat"  — hiện/ẩn chữ nhỏ trên chữ Hán Nhật
-     giaoDien : "sang" (mặc định), "toi" hoặc "anh-dao" (hoa anh đào, GĐ 10)
+     giaoDien : "sang" (mặc định), "toi", "anh-dao" (hoa anh đào, GĐ 10) hoặc
+                "den-long" (đèn lồng đỏ, GĐ 11)
+     phaoHoa  : "bat" (mặc định) hoặc "tat" — hiệu ứng pháo hoa khi bấm, chỉ có
+                tác dụng ở theme đèn lồng đỏ (quyết định 18.41)
      coChu    : 5 nấc cỡ chữ, "vua" là mặc định (GĐ 10, xem CAC_CO_CHU)
 
    Cài đặt luôn được lưu TRÊN MÁY (localStorage), kể cả ở chế độ khách. Người đã
@@ -16,7 +19,12 @@
 
 const KHOA_MAY = "riyi-cai-dat";
 
-export const CAI_DAT_MAC_DINH = { furigana: "bat", giaoDien: "sang", coChu: "vua" };
+export const CAI_DAT_MAC_DINH = {
+  furigana: "bat",
+  giaoDien: "sang",
+  coChu: "vua",
+  phaoHoa: "bat",
+};
 
 /**
  * 5 nấc cỡ chữ, từ nhỏ đến lớn. `tiLe` là cỡ chữ gốc của cả trang (thẻ <html>);
@@ -36,7 +44,8 @@ export const CAC_CO_CHU = [
 
 const GIA_TRI_HOP_LE = {
   furigana: ["bat", "tat"],
-  giaoDien: ["sang", "toi", "anh-dao"],
+  giaoDien: ["sang", "toi", "anh-dao", "den-long"],
+  phaoHoa: ["bat", "tat"],
   coChu: CAC_CO_CHU.map((c) => c.ma),
 };
 

@@ -220,3 +220,85 @@
   /* Cánh hoa trang trí mờ ở góc màn hình */
   --canh-hoa-trang-tri: #f4a6bc;
 }
+
+/* =============================================================================
+   THEME ĐÈN LỒNG ĐỎ (GĐ 11, quyết định 18.41)
+   =============================================================================
+
+   Cảm hứng: đèn lồng ngày Tết và Trung thu. Khung và nút màu ĐỎ đèn lồng,
+   viền VÀNG kim, nền kem nhạt cho chữ Hán nhỏ và pinyin vẫn dễ đọc.
+   Bật bằng cách đặt data-theme="den-long" lên thẻ <html>.
+
+   Tương phản đã đo:
+     chữ chính trên nền        15.6 : 1
+     chữ phụ trên nền           8.5 : 1
+     chữ kem trên nút đỏ        5.5 : 1
+     báo sai (tím) trên thẻ     8.5 : 1
+     báo đúng (xanh lá)         5.2 : 1
+   Màu báo SAI đổi sang TÍM (không dùng đỏ) để không lẫn với màu đỏ của theme,
+   kèm dấu ✗ và rung nhẹ, không chỉ dựa vào màu.
+
+   Vàng #F2C14E chỉ đủ nổi khi đặt TRÊN NỀN ĐỎ. Viền của thẻ nằm trên nền kem
+   nên dùng vàng đậm hơn (--goc-vang-dam), nếu không gần như không thấy viền.
+   ============================================================================= */
+:root[data-theme="den-long"] {
+  --goc-do: #c8102e; /* đỏ đèn lồng: nút, khung, điểm nhấn */
+  --goc-do-dam: #a00c24; /* lúc bấm giữ */
+  --goc-do-nhat: #fbe3e7; /* nền mờ của màu nhấn */
+  --goc-vang: #f2c14e; /* vàng kim: viền trên nền đỏ */
+  --goc-vang-sang: #ffd97a; /* viền lúc bấm */
+  --goc-vang-dam: #c9922a; /* viền trên nền kem */
+  --goc-nau-do: #3a1013; /* nâu đỏ: chữ */
+
+  --nen: #fff6ec;
+  --nen-phu: #f7e7d3;
+  --nen-noi: #fffbf4;
+
+  --chu: var(--goc-nau-do);
+  --chu-mo: #6b3a3f;
+  --chu-tren-nhan: #fff6ec;
+
+  --nhan: var(--goc-do);
+  --nhan-dam: var(--goc-do-dam);
+  --nhan-nhat: var(--goc-do-nhat);
+
+  --vien: var(--goc-vang-dam);
+  --vien-dam: var(--goc-nau-do);
+
+  --mo-dan: rgba(58, 16, 19, 0.5);
+  --bong: rgba(58, 16, 19, 0.12);
+
+  /* Đèn lồng mục tiêu nằm TRÊN THẺ ĐỎ nên phải là vàng kim, đỏ trên đỏ sẽ chìm */
+  --mat-troi-chua-dat: #e8cfb8;
+  --mat-troi-dat: var(--goc-vang);
+
+  /* Báo đúng / sai: KHÔNG dùng đỏ cho "sai" vì cả app đang đỏ */
+  --dung: #1f7a4d;
+  --sai: #6b21a8;
+  --canh-bao: #8a5a00;
+
+  /* Biểu đồ tuần: đỏ và tím, phân biệt được cả khi mù màu đỏ */
+  --bieu-do-tuan-nay: var(--goc-do);
+  --bieu-do-tuan-truoc: #6b21a8;
+
+  --nguy-hiem-nhe: #1f7a4d;
+  --nguy-hiem-vua: #8a5a00;
+  --nguy-hiem-nang: #a00c24;
+
+  --o-am-tiet: #fbe0c8;
+
+  /* Màu chữ dùng TRONG thẻ đỏ (nền #c8102e). Đã đo tương phản:
+     kem 5.5 : 1 · chữ mờ 4.7 : 1 · vàng chữ 4.7 : 1 · đúng 4.9 : 1 · sai 5.0 : 1 */
+  --chu-mo-tren-do: #ffe0c8;
+  --vang-chu-tren-do: #ffe39b;
+  --dung-tren-do: #c8f5dc;
+  --sai-tren-do: #f6e6ff;
+
+  /* Đèn lồng trang trí mờ ở góc màn hình */
+  --den-long-trang-tri: #d8563f;
+
+  /* Pháo hoa khi bấm (quyết định 18.41): vàng, đỏ, cam */
+  --phao-hoa-1: #ffd24a;
+  --phao-hoa-2: #ff6b2c;
+  --phao-hoa-3: #e8253f;
+}

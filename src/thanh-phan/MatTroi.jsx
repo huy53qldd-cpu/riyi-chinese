@@ -12,7 +12,7 @@
    .chi-anh-dao trong index.css).
    ============================================================================= */
 
-import { HoaAnhDao } from "./BieuTuong.jsx";
+import { DenLong, HoaAnhDao } from "./BieuTuong.jsx";
 
 export default function MatTroi({ dat, lanVuaDat = 0, rong = 34, className = "" }) {
   const hieuUng = !dat
@@ -31,7 +31,7 @@ export default function MatTroi({ dat, lanVuaDat = 0, rong = 34, className = "" 
         width={rong}
         height={cao}
         style={{ width: `${rong / 16}rem`, height: "auto" }}
-        className={`mat-troi tru-anh-dao shrink-0 ${hieuUng} ${className}`}
+        className={`mat-troi tru-hinh-theme shrink-0 ${hieuUng} ${className}`}
       />
       {/* Theme hoa anh đào: bông hoa, cùng hiệu ứng xám / toả sáng / nảy lên.
           Hoa hình tròn nên lấy cỡ lớn hơn chiều cao mặt trời một chút. */}
@@ -40,6 +40,13 @@ export default function MatTroi({ dat, lanVuaDat = 0, rong = 34, className = "" 
         className={`mat-troi chi-anh-dao shrink-0 text-[var(--mat-troi-dat)] ${hieuUng} ${className}`}
       >
         <HoaAnhDao co={Math.round(cao * 1.3)} />
+      </span>
+      {/* Theme đèn lồng đỏ: chiếc đèn lồng, cùng hiệu ứng xám / toả sáng / nảy lên */}
+      <span
+        key={`den-${lanVuaDat}`}
+        className={`mat-troi chi-den-long shrink-0 text-[var(--mat-troi-dat)] ${hieuUng} ${className}`}
+      >
+        <DenLong co={Math.round(cao * 1.4)} />
       </span>
     </>
   );
