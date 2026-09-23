@@ -234,9 +234,9 @@ export default function TabChuHan() {
               {/* mt/gap-y rộng hơn bình thường để chừa chỗ cho nhãn Đã học/Chưa
                   học nổi lên trên mép ô (quyết định 18.43), không bị đè lên
                   tiêu đề hay hàng ô phía trên */}
-              <ul className="m-0 mt-4 flex list-none flex-wrap gap-x-2.5 gap-y-4 p-0">
+              <ul className="m-0 mt-4 flex list-none flex-wrap gap-x-3.5 gap-y-4 p-0">
                 {chuHomNay.map((muc) => (
-                  <li key={muc.id} className="w-[4.75rem]">
+                  <li key={muc.id} className="w-[5.25rem]">
                     <OChuHan
                       muc={muc}
                       daHoc={Boolean(nd.daHoc[muc.id])}
@@ -453,7 +453,7 @@ function OChuHan({ muc, moChiTiet, daHoc = false, onThem = false, hienPinyin = f
         />
       ) : (
         <span
-          className={`absolute -top-2.5 right-1.5 z-10 rounded-[var(--bo-goc-tron)] bg-nen-phu px-2.5 py-1 text-[length:0.6875rem] leading-none font-bold whitespace-nowrap shadow-[0_2px_6px_var(--bong)] ${
+          className={`bg-nen-phu absolute -top-2.5 -right-2 z-10 rounded-[var(--bo-goc-tron)] px-2 py-0.5 text-[length:0.625rem] leading-none font-bold whitespace-nowrap shadow-[0_2px_6px_var(--bong)] ${
             daHoc ? "text-dung" : "text-sai"
           }`}
         >
