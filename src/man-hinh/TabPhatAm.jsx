@@ -22,6 +22,7 @@ import { useEffect, useState } from "react";
 import { danhDauThanh } from "../am-thanh/dauThanh.js";
 import { NGON_NGU, phatAm } from "../am-thanh/phatAm.js";
 import { taiBangPinyin } from "../du-lieu/taiDuLieu.js";
+import { KhungNhiemVu, useBaiHomNay, useNhiemVu } from "../luyen-tap/NhiemVuHomNay.jsx";
 import { kieu } from "../luyen-tap/tienIch.js";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 import ChuTrung from "../thanh-phan/ChuTrung.jsx";
@@ -122,6 +123,8 @@ function hienAmTiet(khoa) {
 
 export default function TabPhatAm() {
   const hienThongBao = useThongBao();
+  const { du, bai, noiDung } = useBaiHomNay();
+  const { batDau, manHinh } = useNhiemVu(noiDung, du, bai?.so);
   const [bang, setBang] = useState(null);
   const [loi, setLoi] = useState(false);
   const [nhom, setNhom] = useState(0);
@@ -149,6 +152,7 @@ export default function TabPhatAm() {
   }
 
   const n = bang?.nhom[nhom];
+  if (manHinh) return manHinh;
 
   return (
     <section className="flex flex-col gap-5">
@@ -159,6 +163,19 @@ export default function TabPhatAm() {
           ô để nghe người bản xứ đọc, chọn thanh 1 đến 4 ở khung hiện ra.
         </p>
       </div>
+
+      {/* === LUYỆN NGHE: một bước của bài hôm nay (quyết định 18.39) === */}
+      {noiDung && noiDung.chu.length > 0 && (
+        <div>
+          <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">Luyện nghe hôm nay</h2>
+          <KhungNhiemVu
+            maPhan="nghe"
+            batDau={batDau}
+            sanSang={Boolean(du)}
+            ghiChu="Nghe người bản xứ đọc rồi chọn đúng âm và đúng thanh, lấy từ chính các chữ Hán của bài hôm nay. Sai thì hỏi lại đến khi đúng."
+          />
+        </div>
+      )}
 
       {/* === 1. BẢNG PINYIN === */}
       <div className={kieu.khung}>

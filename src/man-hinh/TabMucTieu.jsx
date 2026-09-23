@@ -192,6 +192,7 @@ function PhanBai({ phan, noiDung, batDau }) {
   const tieuDe = {
     chu: `${noiDung.chu.length} chữ Hán`,
     tu: `${noiDung.tu.length} từ vựng`,
+    nghe: "Luyện nghe",
     np: `${noiDung.np.length} điểm ngữ pháp`,
   }[phan.ma];
 
@@ -227,6 +228,12 @@ function PhanBai({ phan, noiDung, batDau }) {
             </span>
           ))}
         </div>
+      )}
+      {phan.ma === "nghe" && (
+        <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+          Nghe người bản xứ đọc rồi chọn đúng âm và đúng thanh, lấy từ chính các
+          chữ Hán hôm nay.
+        </p>
       )}
       {phan.ma === "np" && (
         <ul className="m-0 flex list-none flex-col gap-1 p-0">

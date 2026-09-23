@@ -19,6 +19,29 @@ const DAU = {
   ü: ["ǖ", "ǘ", "ǚ", "ǜ"],
 };
 
+/**
+ * Ngược lại của danhDauThanh: "hǎo" → { am: "hao", thanh: 3 }, "nǚ" → { am: "nv", thanh: 3 }.
+ * `am` viết đúng như TÊN FILE âm thanh (ü viết là v). Không có dấu thanh
+ * (thanh nhẹ) thì thanh = 0.
+ */
+export function tachThanh(pinyin) {
+  let thanh = 0;
+  const am = Array.from(String(pinyin).trim().toLowerCase())
+    .map((c) => {
+      for (const [goc, dau] of Object.entries(DAU)) {
+        const i = dau.indexOf(c);
+        if (i >= 0) {
+          thanh = i + 1;
+          return goc;
+        }
+      }
+      return c;
+    })
+    .join("")
+    .replace("ü", "v");
+  return { am, thanh };
+}
+
 export function danhDauThanh(amTiet, thanh) {
   if (!(thanh >= 1 && thanh <= 4)) return amTiet;
   const ky = Array.from(amTiet);

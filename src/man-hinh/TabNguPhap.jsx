@@ -92,20 +92,13 @@ export default function TabNguPhap() {
       {/* --- Ngữ pháp hôm nay --- */}
       {noiDung && noiDung.np.length > 0 && (
         <div className="mt-4">
-          <div className="flex items-baseline justify-between gap-2">
-            <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-              {noiDung.np.length} điểm ngữ pháp hôm nay
-            </h2>
-            {bai && (
-              <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold">
-                Bài {bai.so}
-              </span>
-            )}
-          </div>
-          <ul className="m-0 mt-2 flex list-none flex-col gap-3 p-0">
+          <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
+            {noiDung.np.length} điểm ngữ pháp hôm nay
+          </h2>
+          <ul className="m-0 mt-2 flex list-none flex-col gap-2 p-0">
             {noiDung.np.map((d) => (
               <li key={d.id}>
-                <TheNguPhap
+                <ONguPhap
                   diem={d}
                   onThem={noiDung.them.has(d.id)}
                   moChiTiet={() => setDiemDangMo(d)}
@@ -144,13 +137,14 @@ export default function TabNguPhap() {
       {du && moToanBo && (
         <>
           <p className="text-chu-mo mt-3 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-            Điểm đã học (phần ngữ pháp đã hoàn thành hoặc bạn tự đánh dấu) có
-            viền nét đứt và mờ hơn.
+            Bấm vào một điểm để xem giải thích và đối chiếu tiếng Nhật. Điểm đã
+            học (phần ngữ pháp đã hoàn thành hoặc bạn tự đánh dấu) có viền nét
+            đứt và mờ hơn.
           </p>
-          <ul className="m-0 mt-3 flex list-none flex-col gap-3 p-0">
+          <ul className="m-0 mt-3 flex list-none flex-col gap-2 p-0">
             {hienThi.map((d) => (
               <li key={d.id}>
-                <TheNguPhap
+                <ONguPhap
                   diem={d}
                   daHoc={Boolean(nd.daHoc[d.id])}
                   moChiTiet={() => setDiemDangMo(d)}
@@ -165,30 +159,27 @@ export default function TabNguPhap() {
 }
 
 /* -----------------------------------------------------------------------------
-   THẺ TRONG DANH SÁCH
+   Ô NGỮ PHÁP (quyết định 18.38): mỗi điểm một ô kéo hết chiều ngang, chỉ có
+   mẫu câu ở trên và phần tiếng Việt ở dưới. Bấm vào mới hiện giải thích và
+   đối chiếu tiếng Nhật. Điểm đã học: viền nét đứt, mờ hơn.
    ----------------------------------------------------------------------------- */
-function TheNguPhap({ diem, moChiTiet, daHoc = false, onThem = false }) {
+function ONguPhap({ diem, moChiTiet, daHoc = false, onThem = false }) {
+  const moTa = [diem.ten, onThem && "ôn thêm", daHoc && "đã học"].filter(Boolean).join(", ");
   return (
     <button
       type="button"
       onClick={moChiTiet}
-      className={`border-vien bg-nen-noi active:bg-nhan-nhat flex w-full flex-col gap-1.5 rounded-[var(--bo-goc)] border px-4 py-3 text-left transition-colors ${
-        daHoc ? "border-2 border-dashed opacity-55" : "shadow-[0_1px_3px_var(--bong)]"
+      aria-label={moTa}
+      className={`border-vien bg-nen-noi active:bg-nhan-nhat flex w-full flex-col gap-1 rounded-[var(--bo-goc)] px-4 py-3 text-left transition-colors ${
+        daHoc ? "border-2 border-dashed opacity-55" : "border shadow-[0_1px_3px_var(--bong)]"
       }`}
     >
-      <span className="flex flex-wrap items-center gap-2">
-        <span className="bg-nhan-nhat rounded-[var(--bo-goc-tron)] px-2.5 py-0.5 text-[length:var(--co-chu-latin-nho)] font-bold">
-          HSK {diem.capHsk}
-        </span>
-        {onThem && <NhanOnThem />}
-      </span>
       <p className="m-0 text-[length:var(--co-chu-latin)] leading-snug font-bold">
-        <VanBanPha noiDung={diem.ten} />
-      </p>
-      <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-snug">
         <VanBanPha noiDung={diem.congThuc} />
       </p>
-      {daHoc && <span className="sr-only">(đã học)</span>}
+      <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-snug">
+        <VanBanPha noiDung={diem.ten} />
+      </p>
     </button>
   );
 }

@@ -56,8 +56,10 @@ App học tiếng Trung (HSK 3.0, cấp 1-3) dành cho người Việt đã bi�
 - Tab ngữ pháp: luôn đối chiếu với cấu trúc tiếng Nhật. Nếu không có cấu trúc
   trùng khít thì đưa dạng gần tương đương kèm nhãn "gần tương đương, không trùng
   khít" và nói rõ chỗ lệch.
-- Phát âm: nút loa đã có nhưng CHƯA gắn nguồn âm thanh. Toàn bộ logic phát âm
-  phải nằm trong một hàm duy nhất ở một file riêng.
+- Phát âm: đã gắn nguồn âm thanh thật (bộ audio-cmn, giọng Chen Wang, CC BY-SA)
+  cho ÂM TIẾT pinyin và TỪ vựng; câu ví dụ và tiếng Nhật thì chưa có. Toàn bộ
+  logic phát âm phải nằm trong một hàm duy nhất ở một file riêng.
+  Từ chưa có ghi âm thì ẩn nút loa, không bao giờ để người học bấm vào nút câm.
 
 ## Cách viết code
 

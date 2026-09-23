@@ -13,6 +13,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
+import { taiDanhSachAmTiet } from "../am-thanh/phatAm.js";
 import { taiChuHan, taiNguPhap, taiTuVung } from "../du-lieu/taiDuLieu.js";
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
@@ -81,6 +82,13 @@ export function useNhiemVu(noiDung, du, soBai) {
   const nd = useNguoiDung();
   const [dangLam, setDangLam] = useState(null);
 
+  // Bước luyện nghe cần biết âm tiết nào có file tiếng trước khi ra câu hỏi,
+  // nên chờ tải xong danh sách rồi mới mở màn hình luyện tập.
+  async function batDau(maBuoc) {
+    if (maBuoc === "nghe-chon-am") await taiDanhSachAmTiet();
+    setDangLam(maBuoc);
+  }
+
   let manHinh = null;
   if (dangLam && noiDung && du) {
     const buoc = TAT_CA_BUOC.find((b) => b.ma === dangLam);
@@ -107,7 +115,7 @@ export function useNhiemVu(noiDung, du, soBai) {
       />
     );
   }
-  return { batDau: setDangLam, manHinh };
+  return { batDau, manHinh };
 }
 
 /**

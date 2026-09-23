@@ -7,12 +7,15 @@
    Mọi nút loa, mọi ô bảng pinyin đều gọi vào hàm phatAm() bên dưới. Muốn đổi
    nguồn âm thanh thì CHỈ SỬA FILE NÀY, không đụng vào màn hình nào.
 
-   NGUỒN ÂM THANH (GĐ 10, quyết định 18.28):
+   NGUỒN ÂM THANH (GĐ 10, quyết định 18.28 và 18.37):
      - Âm tiết pinyin: giọng người thật, bộ audio-cmn (Chen Wang, CC BY-SA),
        file public/am-thanh/am-tiet/<âm tiết, ü viết là v><thanh 1-4>.mp3,
        tải bằng npm run tai-am-thanh. Mỗi âm tiết đủ 4 thanh.
-     - Chữ Hán / tiếng Nhật: CHƯA gắn nguồn (bộ audio-cmn có sẵn 5.596 từ HSK,
-       sẽ gắn sau). Gọi với các ngôn ngữ này sẽ báo "đang được chuẩn bị".
+     - TỪ tiếng Trung: cũng bộ audio-cmn, file public/am-thanh/tu/<từ>.mp3,
+       tải bằng npm run tai-am-tu. KHÔNG phải từ nào cũng có ghi âm: danh sách
+       từ có tiếng nằm ở public/am-thanh/tu/danh-sach.json. Màn hình hỏi bằng
+       coAmTu() để ẨN nút loa ở từ chưa có, không để người học bấm vào bị câm.
+     - CÂU tiếng Trung và tiếng Nhật: CHƯA có nguồn, báo "đang được chuẩn bị".
    ============================================================================= */
 
 /**
@@ -35,6 +38,71 @@ let baoLuotTruoc = null; // hàm khiDoc của lượt đang phát, để báo n�
 
 export function dangPhatAm() {
   return dangPhat;
+}
+
+/* -----------------------------------------------------------------------------
+   DANH SÁCH TỪ CÓ GHI ÂM (public/am-thanh/tu/danh-sach.json)
+   Tải một lần cho cả app. Tải hỏng thì coi như chưa từ nào có tiếng, nút loa
+   ẩn đi chứ không báo lỗi giữa lúc đang học.
+   ----------------------------------------------------------------------------- */
+let tuCoAm = null; // Set các từ có file, null = chưa tải xong
+let loiHuaTuCoAm = null;
+
+export function taiDanhSachAmTu() {
+  if (!loiHuaTuCoAm) {
+    loiHuaTuCoAm = fetch("/am-thanh/tu/danh-sach.json")
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error("khong-tai-duoc"))))
+      .then((d) => {
+        tuCoAm = new Set(d.coFile ?? []);
+        return tuCoAm;
+      })
+      .catch(() => {
+        tuCoAm = new Set();
+        return tuCoAm;
+      });
+  }
+  return loiHuaTuCoAm;
+}
+
+/* Danh sách ÂM TIẾT có ghi âm (public/am-thanh/am-tiet/danh-sach.json), dùng
+   cho bài luyện nghe: chỉ hỏi những âm tiết chắc chắn phát ra tiếng. */
+let amTietCoAm = null; // Set dạng "hao3"
+let loiHuaAmTiet = null;
+
+export function taiDanhSachAmTiet() {
+  if (!loiHuaAmTiet) {
+    loiHuaAmTiet = fetch("/am-thanh/am-tiet/danh-sach.json")
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error("khong-tai-duoc"))))
+      .then((d) => {
+        amTietCoAm = new Set(d.coFile ?? []);
+        return amTietCoAm;
+      })
+      .catch(() => {
+        amTietCoAm = new Set();
+        return amTietCoAm;
+      });
+  }
+  return loiHuaAmTiet;
+}
+
+/** Âm tiết dạng "hao3" có file không? Chưa tải xong thì trả về null. */
+export function coAmTiet(khoa) {
+  if (!khoa) return false;
+  if (!amTietCoAm) {
+    taiDanhSachAmTiet();
+    return null;
+  }
+  return amTietCoAm.has(khoa);
+}
+
+/** Từ này có ghi âm không? Chưa tải xong danh sách thì trả về null. */
+export function coAmTu(tu) {
+  if (!tu) return false;
+  if (!tuCoAm) {
+    taiDanhSachAmTu();
+    return null;
+  }
+  return tuCoAm.has(String(tu).trim());
 }
 
 function layThe() {
@@ -87,8 +155,38 @@ export async function phatAm(noiDung, ngonNgu = NGON_NGU.TRUNG, khiDoc = null) {
     return { thanhCong: false, thongBao: "Không có nội dung để phát âm." };
   }
 
+  // Từ tiếng Trung: có file ghi âm thì phát, không có thì báo rõ là chưa có
+  if (ngonNgu === NGON_NGU.TRUNG) {
+    const tu = String(noiDung).trim();
+    await taiDanhSachAmTu();
+    if (!coAmTu(tu)) {
+      return { thanhCong: false, thongBao: "Từ này chưa có ghi âm." };
+    }
+    const luotTu = ++luotHienTai;
+    baoLuotTruoc?.(null);
+    baoLuotTruoc = khiDoc;
+    dangPhat = true;
+    try {
+      khiDoc?.(0);
+      await phatMotFile(`/am-thanh/tu/${encodeURIComponent(tu)}.mp3`);
+      return { thanhCong: true, thongBao: null };
+    } catch {
+      if (luotTu !== luotHienTai) return { thanhCong: true, thongBao: null };
+      return {
+        thanhCong: false,
+        thongBao: "Không phát được âm thanh. Hãy kiểm tra mạng và âm lượng rồi thử lại.",
+      };
+    } finally {
+      if (luotTu === luotHienTai) {
+        dangPhat = false;
+        baoLuotTruoc = null;
+        khiDoc?.(null);
+      }
+    }
+  }
+
   if (ngonNgu !== NGON_NGU.AM_TIET) {
-    return { thanhCong: false, thongBao: "Chức năng phát âm từ và câu đang được chuẩn bị." };
+    return { thanhCong: false, thongBao: "Chức năng phát âm câu và tiếng Nhật đang được chuẩn bị." };
   }
 
   const cacAmTiet = String(noiDung).trim().split(/\s+/);

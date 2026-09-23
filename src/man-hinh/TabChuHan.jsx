@@ -126,7 +126,7 @@ export default function TabChuHan() {
           <ul className="m-0 mt-2 grid list-none grid-cols-5 gap-2 p-0">
             {chuHomNay.map((muc) => (
               <li key={muc.id}>
-                <OChuHomNay
+                <OChuHan
                   muc={muc}
                   daHoc={Boolean(nd.daHoc[muc.id])}
                   onThem={noiDung.them.has(muc.id)}
@@ -165,13 +165,13 @@ export default function TabChuHan() {
       {du && moToanBo && (
         <>
           <p className="text-chu-mo mt-3 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-            Chữ đã học (phần chữ Hán đã hoàn thành hoặc bạn tự đánh dấu) có viền
-            nét đứt và mờ hơn.
+            Bấm vào một chữ để xem chi tiết. Chữ đã học (phần chữ Hán đã hoàn
+            thành hoặc bạn tự đánh dấu) có viền nét đứt và mờ hơn.
           </p>
-          <ul className="m-0 mt-3 grid list-none grid-cols-2 gap-3 p-0">
+          <ul className="m-0 mt-3 grid list-none grid-cols-5 gap-2 p-0">
             {hienThi.slice(0, soHien).map((muc) => (
               <li key={muc.id}>
-                <TheChuHan
+                <OChuHan
                   muc={muc}
                   daHoc={Boolean(nd.daHoc[muc.id])}
                   moChiTiet={() => setChuDangMo(muc)}
@@ -196,10 +196,11 @@ export default function TabChuHan() {
 }
 
 /* -----------------------------------------------------------------------------
-   Ô CHỮ HÁN HÔM NAY: chỉ có chữ Hán (quyết định 18.36), bấm để mở chi tiết.
+   Ô CHỮ HÁN: chỉ có chữ Hán (quyết định 18.36), bấm vào mới mở chi tiết.
+   Dùng cho cả chữ hôm nay lẫn danh sách toàn bộ của một cấp HSK.
    Chữ đã học: viền nét đứt, mờ hơn.
    ----------------------------------------------------------------------------- */
-function OChuHomNay({ muc, moChiTiet, daHoc, onThem }) {
+function OChuHan({ muc, moChiTiet, daHoc = false, onThem = false }) {
   const moTa = [muc.nghia.viet, onThem && "ôn thêm", daHoc && "đã học"].filter(Boolean).join(", ");
   return (
     <button
@@ -211,37 +212,6 @@ function OChuHomNay({ muc, moChiTiet, daHoc, onThem }) {
       }`}
     >
       <ChuTrung amTiet={[{ chu: muc.gianThe }]} hienPinyin={false} coRieng="1.75rem" />
-    </button>
-  );
-}
-
-/* -----------------------------------------------------------------------------
-   THẺ TRONG DANH SÁCH: chữ Trung + chữ Nhật cạnh nhau, nghĩa Việt phía dưới.
-   Chữ đã học: viền nét đứt, mờ hơn.
-   ----------------------------------------------------------------------------- */
-function TheChuHan({ muc, moChiTiet, daHoc = false, onThem = false }) {
-  const pinyinChinh = amChinh(muc.amDoc.pinyin)?.am ?? "";
-
-  return (
-    <button
-      type="button"
-      onClick={moChiTiet}
-      className={`border-vien bg-nen-noi active:bg-nhan-nhat flex w-full flex-col items-center gap-1 rounded-[var(--bo-goc)] border px-2 py-3 text-center transition-colors ${
-        daHoc
-          ? "border-2 border-dashed opacity-55"
-          : "shadow-[0_1px_3px_var(--bong)]"
-      }`}
-    >
-      <div className="flex items-end justify-center gap-4">
-        {/* TRUNG: giản thể kèm pinyin chính */}
-        <ChuTrung amTiet={[{ chu: muc.gianThe, pinyin: pinyinChinh }]} />
-        {/* NHẬT (có chữ Tiếng Nhật không dùng, ví dụ 爸, 吗) */}
-        {muc.tuDangNhat ? <ChuNhat noiDung={muc.tuDangNhat} /> : <KhongCoChuNhat />}
-      </div>
-      {/* VIỆT */}
-      <span className="text-[length:var(--co-chu-latin)] font-semibold">{muc.nghia.viet}</span>
-      {onThem && <NhanOnThem />}
-      {daHoc && <span className="sr-only">(đã học)</span>}
     </button>
   );
 }

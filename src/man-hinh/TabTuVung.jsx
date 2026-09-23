@@ -31,7 +31,7 @@ import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import NutDaHoc from "../thanh-phan/NutDaHoc.jsx";
-import { NhanOnThem } from "./TabMucTieu.jsx";
+import NutLoa from "../thanh-phan/NutLoa.jsx";
 
 // Danh sách dài (HSK 3 có 500 từ): mỗi lần chỉ vẽ một phần
 const SO_THE_MOI_LAN = 40;
@@ -97,20 +97,18 @@ export default function TabTuVung() {
       {/* --- Từ vựng hôm nay --- */}
       {noiDung && noiDung.tu.length > 0 && (
         <div className="mt-4">
-          <div className="flex items-baseline justify-between gap-2">
-            <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
-              {noiDung.tu.length} từ vựng hôm nay
-            </h2>
-            {bai && (
-              <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)] font-semibold">
-                Bài {bai.so}
-              </span>
-            )}
-          </div>
-          <ul className="m-0 mt-2 flex list-none flex-col gap-3 p-0">
+          <h2 className="m-0 text-[length:var(--co-chu-latin)] font-bold">
+            {noiDung.tu.length} từ vựng hôm nay
+          </h2>
+          <ul className="m-0 mt-2 flex list-none flex-wrap gap-2 p-0">
             {noiDung.tu.map((t) => (
               <li key={t.id}>
-                <TheTu muc={t} onThem={noiDung.them.has(t.id)} moChiTiet={() => setTuDangMo(t)} />
+                <OTu
+                  muc={t}
+                  daHoc={Boolean(nd.daHoc[t.id])}
+                  onThem={noiDung.them.has(t.id)}
+                  moChiTiet={() => setTuDangMo(t)}
+                />
               </li>
             ))}
           </ul>
@@ -162,13 +160,13 @@ export default function TabTuVung() {
             </select>
           </label>
           <p className="text-chu-mo mt-3 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-            {hienThi.length} từ. Từ đã học (phần từ vựng đã hoàn thành hoặc bạn tự
-            đánh dấu) có viền nét đứt và mờ hơn.
+            {hienThi.length} từ. Bấm vào một từ để xem chi tiết. Từ đã học (phần
+            từ vựng đã hoàn thành hoặc bạn tự đánh dấu) có viền nét đứt và mờ hơn.
           </p>
-          <ul className="m-0 mt-3 flex list-none flex-col gap-3 p-0">
+          <ul className="m-0 mt-3 flex list-none flex-wrap gap-2 p-0">
             {hienThi.slice(0, soHien).map((t) => (
               <li key={t.id}>
-                <TheTu muc={t} daHoc={Boolean(nd.daHoc[t.id])} moChiTiet={() => setTuDangMo(t)} />
+                <OTu muc={t} daHoc={Boolean(nd.daHoc[t.id])} moChiTiet={() => setTuDangMo(t)} />
               </li>
             ))}
           </ul>
@@ -189,31 +187,21 @@ export default function TabTuVung() {
 }
 
 /* -----------------------------------------------------------------------------
-   THẺ TRONG DANH SÁCH: Trung → Nhật → nghĩa Việt
+   Ô TỪ: chỉ có chữ Trung của từ (quyết định 18.38), bấm vào mới mở chi tiết.
+   Từ dài thì ô rộng ra, không cắt chữ. Từ đã học: viền nét đứt, mờ hơn.
    ----------------------------------------------------------------------------- */
-function TheTu({ muc, moChiTiet, daHoc = false, onThem = false }) {
+function OTu({ muc, moChiTiet, daHoc = false, onThem = false }) {
+  const moTa = [muc.nghiaViet, onThem && "ôn thêm", daHoc && "đã học"].filter(Boolean).join(", ");
   return (
     <button
       type="button"
       onClick={moChiTiet}
-      className={`border-vien bg-nen-noi active:bg-nhan-nhat flex w-full flex-col gap-1 rounded-[var(--bo-goc)] border px-4 py-3 text-left transition-colors ${
-        daHoc ? "border-2 border-dashed opacity-55" : "shadow-[0_1px_3px_var(--bong)]"
+      aria-label={`${muc.tu}: ${moTa}`}
+      className={`border-vien bg-nen-noi active:bg-nhan-nhat flex min-h-[3.5rem] items-center justify-center rounded-[var(--bo-goc)] px-3 py-2 transition-colors ${
+        daHoc ? "border-2 border-dashed opacity-55" : "border shadow-[0_1px_3px_var(--bong)]"
       }`}
     >
-      {onThem && (
-        <span className="self-start">
-          <NhanOnThem />
-        </span>
-      )}
-      {/* TRUNG */}
-      <ChuTrung amTiet={ghepAmTiet(muc.tu, muc.pinyin)} />
-      {/* NHẬT: hàng riêng vì có chuỗi dài, xếp cạnh chữ Trung sẽ ngắt dòng xấu */}
-      <ChuNhat noiDung={muc.nghiaNhat} />
-      {/* VIỆT */}
-      <p className="m-0 text-[length:var(--co-chu-latin)] font-semibold">
-        {muc.nghiaViet}
-      </p>
-      {daHoc && <span className="sr-only">(đã học)</span>}
+      <ChuTrung amTiet={[{ chu: muc.tu }]} hienPinyin={false} coRieng="1.75rem" />
     </button>
   );
 }
@@ -236,13 +224,17 @@ function ChiTietTu({ muc, nhanChuDe, quayLai }) {
       </div>
       <NutDaHoc id={muc.id} />
 
-      {/* Từ chính, cỡ lớn. Ghi chú biến điệu của từ hiện ngay dưới chữ. */}
+      {/* Từ chính, cỡ lớn. Ghi chú biến điệu của từ hiện ngay dưới chữ.
+          Nút loa chỉ hiện khi từ này có ghi âm thật (quyết định 18.37). */}
       <div className={khungMuc}>
-        <ChuTrung
-          co="the"
-          amTiet={ghepAmTiet(muc.tu, muc.pinyin)}
-          ghiChuBienDieu={muc.ghiChuBienDieu}
-        />
+        <div className="flex items-center justify-between gap-3">
+          <ChuTrung
+            co="the"
+            amTiet={ghepAmTiet(muc.tu, muc.pinyin)}
+            ghiChuBienDieu={muc.ghiChuBienDieu}
+          />
+          <NutLoa noiDung={muc.tu} anKhiChuaCoAm />
+        </div>
         <div className="flex flex-wrap items-center gap-2">
           <span className="bg-nhan-nhat rounded-[var(--bo-goc-tron)] px-3 py-1 text-[length:var(--co-chu-latin-nho)] font-bold">
             HSK {muc.capHsk}

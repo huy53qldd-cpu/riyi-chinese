@@ -3,13 +3,15 @@
    =============================================================================
 
    Mọi chỗ cần nghe phát âm đều dùng nút này. Nút gọi vào hàm phatAm() duy nhất
-   ở src/am-thanh/phatAm.js.
+   ở src/am-thanh/phatAm.js. Đổi nguồn âm thanh thì sửa phatAm.js, không sửa đây.
 
-   Hiện tại chưa có nguồn âm thanh nên bấm sẽ hiện thông báo tiếng Việt.
-   Khi nào gắn âm thanh thật, KHÔNG phải sửa file này — chỉ sửa phatAm.js.
+   TỪ CHƯA CÓ GHI ÂM thì nút TỰ ẨN (quyết định 18.37), để không ai bấm vào một
+   nút câm. Chỉ áp dụng cho từ tiếng Trung; các chỗ khác nút vẫn hiện như cũ.
    ============================================================================= */
 
-import { phatAm, NGON_NGU } from "../am-thanh/phatAm.js";
+import { useEffect, useState } from "react";
+
+import { coAmTu, NGON_NGU, phatAm, taiDanhSachAmTu } from "../am-thanh/phatAm.js";
 import { useThongBao } from "./ThongBao.jsx";
 
 export default function NutLoa({
@@ -17,8 +19,23 @@ export default function NutLoa({
   ngonNgu = NGON_NGU.TRUNG,
   co = 40,
   className = "",
+  // true: chỉ hiện nút khi từ này có ghi âm thật (dùng cho danh sách và chi tiết từ)
+  anKhiChuaCoAm = false,
 }) {
   const hienThongBao = useThongBao();
+  const [coAm, setCoAm] = useState(() => (anKhiChuaCoAm ? coAmTu(noiDung) : true));
+
+  useEffect(() => {
+    if (!anKhiChuaCoAm) return;
+    let conSong = true;
+    taiDanhSachAmTu().then(() => conSong && setCoAm(coAmTu(noiDung)));
+    return () => {
+      conSong = false;
+    };
+  }, [anKhiChuaCoAm, noiDung]);
+
+  // Chưa tải xong danh sách (null) cũng chưa hiện, để nút không nhấp nháy
+  if (anKhiChuaCoAm && !coAm) return null;
 
   async function khiBam() {
     const ketQua = await phatAm(noiDung, ngonNgu);

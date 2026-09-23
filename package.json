@@ -23,6 +23,7 @@
     "dung-ngu-phap": "python cong-cu/dung-ngu-phap.py",
     "dung-lo-trinh": "python cong-cu/dung-lo-trinh.py",
     "tai-am-thanh": "python cong-cu/tai-am-thanh.py",
+    "tai-am-tu": "python cong-cu/tai-am-tu.py",
     "dung-bang-pinyin": "python cong-cu/dung-bang-pinyin.py",
     "trien-khai": "vite build && firebase deploy"
   },

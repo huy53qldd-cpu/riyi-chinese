@@ -204,7 +204,11 @@ export function theGhiNhoTu(muc) {
     matTruoc: <ChuTrung co="the" amTiet={ghepAmTiet(muc.tu, muc.pinyin)} />,
     matSau: (
       <>
-        <ChuTrung amTiet={ghepAmTiet(muc.tu, muc.pinyin)} ghiChuBienDieu={muc.ghiChuBienDieu} />
+        {/* Nút loa chỉ hiện khi từ có ghi âm thật (quyết định 18.37) */}
+        <div className="flex items-center justify-between gap-3">
+          <ChuTrung amTiet={ghepAmTiet(muc.tu, muc.pinyin)} ghiChuBienDieu={muc.ghiChuBienDieu} />
+          <NutLoa noiDung={muc.tu} anKhiChuaCoAm />
+        </div>
         <ChuNhat noiDung={muc.nghiaNhat} />
         <p className="m-0 text-[length:var(--co-chu-latin)] font-semibold">
           {muc.nghiaViet}

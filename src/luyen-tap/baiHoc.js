@@ -6,9 +6,11 @@
    Mỗi ngày một bài mới: 5 chữ Hán + 10 từ vựng + 3 điểm ngữ pháp, theo lộ
    trình dễ → khó (public/du-lieu/lo-trinh.json). Mỗi phần có các bước:
 
-     Chữ Hán  : Tập viết → Trò chơi lật thẻ
-     Từ vựng  : Thẻ ghi nhớ → Trắc nghiệm → Điền từ → Trò chơi lật thẻ
-     Ngữ pháp : Sắp xếp câu → Chọn câu đúng
+     Chữ Hán   : Tập viết → Trò chơi lật thẻ
+     Từ vựng   : Thẻ ghi nhớ → Trắc nghiệm → Điền từ → Trò chơi lật thẻ
+     Luyện nghe: Nghe rồi chọn âm / chọn thanh (quyết định 18.39), dùng lại
+                 chính chữ Hán hôm nay nên KHÔNG có phần cộng thêm hôm sau
+     Ngữ pháp  : Sắp xếp câu → Chọn câu đúng
 
    Mọi bước của một phần dùng ĐÚNG CÙNG danh sách mục của hôm nay (10 từ ở cả 4
    bước từ vựng là cùng 10 từ). Trả lời sai thì hỏi lại tới khi đúng. Xong đủ
@@ -37,6 +39,7 @@
    ============================================================================= */
 
 import { vanChuHan, vanTuVung } from "./capLatThe.js";
+import { cauHoiNgheChoChu } from "./cauHoiNghe.jsx";
 import {
   cauHoiChonCauDung,
   cauHoiDienTu,
@@ -65,6 +68,11 @@ export const CAC_PHAN = [
       { ma: "tu-dien-tu", nhan: "Điền từ", bieuTuong: "dien-tu" },
       { ma: "tu-lat-the", nhan: "Trò chơi lật thẻ", bieuTuong: "tro-choi", laGame: true },
     ],
+  },
+  {
+    ma: "nghe",
+    nhan: "Luyện nghe",
+    buoc: [{ ma: "nghe-chon-am", nhan: "Luyện nghe", bieuTuong: "nghe" }],
   },
   {
     ma: "np",
@@ -167,6 +175,8 @@ export function mucCuaPhan(muc, maPhan) {
   if (!muc) return [];
   if (maPhan === "chu") return [...new Set([...muc.chuViet, ...muc.chuGame])];
   if (maPhan === "tu") return muc.tu;
+  // Luyện nghe dùng lại chính chữ Hán hôm nay nên không đánh dấu học thêm gì
+  if (maPhan === "nghe") return [];
   return muc.np;
 }
 
@@ -210,6 +220,10 @@ export function cauHoiChoBuoc(maBuoc, nd, du) {
       break;
     case "tu-dien-tu":
       ds = nd.tu.map((t) => coTaoLai(() => cauHoiDienTu(t, tatCaTu)));
+      break;
+    case "nghe-chon-am":
+      // Luyện nghe: chữ hôm nay, mỗi chữ một câu chọn âm và một câu chọn thanh
+      ds = cauHoiNgheChoChu(nd.chu).map((c) => ({ ...c, taoLai: () => c }));
       break;
     case "np-sap-xep":
       ds = nd.np.flatMap((d) => d.viDu.map((vd) => coTaoLai(() => cauHoiSapXep(d, vd))));
