@@ -17,6 +17,7 @@ import {
   CAU_14H,
   CAU_21H,
   khungGio,
+  ngayCuaKhung,
   ngayVietNam,
   phanTramTienDo,
   soanCho,
@@ -105,6 +106,15 @@ test("ranh giới ngày theo giờ Việt Nam", () => {
   assert.equal(ngayVietNam(new Date("2026-03-05T16:59:00Z")), "2026-03-05");
   // 00:01 ngày 6/3 giờ VN = 17:01 UTC ngày 5/3
   assert.equal(ngayVietNam(new Date("2026-03-05T17:01:00Z")), "2026-03-06");
+});
+
+test("GitHub chạy trễ vẫn lấy đúng ngày của khung giờ", () => {
+  // Khung 21h ngày 5/3 bị trễ tới 1h18 sáng 6/3 giờ VN (18:18 UTC ngày 5/3)
+  assert.equal(ngayCuaKhung("21h", new Date("2026-03-05T18:18:00Z")), "2026-03-05");
+  // Khung 7h trễ tới 10h51 cùng ngày: vẫn là ngày đó
+  assert.equal(ngayCuaKhung("7h", new Date("2026-03-06T03:51:00Z")), "2026-03-06");
+  // Khung 14h trễ tới 19h32: vẫn là ngày đó
+  assert.equal(ngayCuaKhung("14h", new Date("2026-03-06T12:32:00Z")), "2026-03-06");
 });
 
 test("khung giờ tính theo giờ Việt Nam", () => {

@@ -50,9 +50,18 @@ jobs:
         working-directory: cong-cu/thong-bao
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        # GitHub hay chạy cron TRỄ vài tiếng. Vì vậy không đoán khung giờ theo
+        # giờ hiện tại nữa, mà lấy theo CHÍNH lịch cron đã kích hoạt lần chạy
+        # này (quyết định 18.48): trễ bao lâu vẫn gửi đúng nội dung khung đó.
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             node gui.js --khung "${{ inputs.khung }}" ${{ inputs.thu && '--thu' || '' }}
           else
-            node gui.js
+            case "${{ github.event.schedule }}" in
+              "0 0 * * *")  KHUNG="7h" ;;
+              "0 7 * * *")  KHUNG="14h" ;;
+              "0 14 * * *") KHUNG="21h" ;;
+              *) echo "Lịch cron lạ: ${{ github.event.schedule }}"; exit 1 ;;
+            esac
+            node gui.js --khung "$KHUNG"
           fi

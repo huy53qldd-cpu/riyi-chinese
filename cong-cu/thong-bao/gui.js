@@ -22,7 +22,7 @@
 import { readFile } from "node:fs/promises";
 import { argv, env, exit } from "node:process";
 
-import { khungGio, ngayVietNam, soanCho } from "./soanThongBao.js";
+import { khungGio, ngayCuaKhung, soanCho } from "./soanThongBao.js";
 
 const BANG_NGAY_DAC_BIET = new URL("../../public/du-lieu/ngay-dac-biet.json", import.meta.url);
 
@@ -39,7 +39,9 @@ async function main() {
     console.log("Không phải khung giờ 7h / 14h / 21h (giờ Việt Nam), không gửi gì.");
     return;
   }
-  const ngay = thamSo("ngay") ?? ngayVietNam();
+  // Lần chạy có thể bị GitHub làm trễ: lấy đúng ngày của khung giờ, không lấy
+  // ngày lúc đang chạy (quyết định 18.48)
+  const ngay = thamSo("ngay") ?? ngayCuaKhung(khung);
   const bangNgay = JSON.parse(await readFile(BANG_NGAY_DAC_BIET, "utf8"));
 
   const chungChi = env.FIREBASE_SERVICE_ACCOUNT;

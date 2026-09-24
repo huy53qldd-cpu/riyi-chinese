@@ -127,6 +127,21 @@ export function soanCho(khung, { ngay, loTrinh, ngayDacBiet }) {
   return thongBaoTienDo(khung, phanTramTienDo(loTrinh, ngay));
 }
 
+const GIO_CUA_KHUNG = { "7h": 7, "14h": 14, "21h": 21 };
+
+/**
+ * Ngày (giờ VN) mà một khung giờ thuộc về, khi lần chạy bị GitHub làm trễ
+ * (quyết định 18.48). Ví dụ khung 21h ngày 5/3 trễ tới 1h sáng 6/3 thì vẫn là
+ * ngày 5/3: giờ hiện tại còn nhỏ hơn giờ của khung nghĩa là khung đó là của
+ * hôm qua.
+ */
+export function ngayCuaKhung(khung, luc = new Date()) {
+  const gioKhung = GIO_CUA_KHUNG[khung];
+  const gioVn = new Date(luc.getTime() + 7 * 60 * 60 * 1000).getUTCHours();
+  if (gioKhung == null || gioVn >= gioKhung) return ngayVietNam(luc);
+  return ngayVietNam(new Date(luc.getTime() - 24 * 60 * 60 * 1000));
+}
+
 /** Khung giờ ứng với thời điểm chạy (theo giờ Việt Nam). Không đúng giờ thì null. */
 export function khungGio(luc = new Date()) {
   const gioVn = new Date(luc.getTime() + 7 * 60 * 60 * 1000).getUTCHours();
