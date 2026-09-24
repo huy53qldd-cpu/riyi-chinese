@@ -15,6 +15,7 @@
    và các lớp .chi-anh-dao / .tru-anh-dao trong index.css).
    ============================================================================= */
 
+import { useId } from "react";
 import {
   ALargeSmall,
   ArrowLeft,
@@ -214,28 +215,51 @@ export function DenLong({ co = 24, className = "" }) {
 }
 
 /**
- * Vầng trăng rằm (theme Hoa Đăng Dạ Nguyệt, quyết định 18.49): thay cho mặt trời
- * mục tiêu. Mặt trăng tròn một màu (currentColor), vài vết mờ cho ra dáng trăng.
- * Vầng hào quang bên ngoài do lớp .vang-trang trong index.css vẽ.
+ * Vầng trăng rằm (theme Hoa Đăng Dạ Nguyệt, quyết định 18.49 → 18.51): thay cho
+ * mặt trời mục tiêu, vẽ theo ảnh mẫu của chủ dự án: đĩa tròn hổ phách sáng dần
+ * vào tâm, giữa có hình lưỡi liềm và chữ "RẰM" màu tối. Vầng hào quang bên
+ * ngoài do lớp .vang-trang trong index.css vẽ. Màu nằm ở tokens.css
+ * (--lantern-trang-*).
  */
 export function VangTrang({ co = 24, className = "" }) {
+  // Mỗi vầng trăng cần mã gradient riêng, vì một trang có thể có nhiều trăng
+  const ma = `trang-${useId().replace(/[^a-zA-Z0-9_-]/g, "")}`;
   return (
     <svg
-      viewBox="0 0 24 24"
+      viewBox="0 0 48 48"
       width={rem(co)}
       height={rem(co)}
       aria-hidden="true"
       focusable="false"
       className={className}
     >
-      <circle cx="12" cy="12" r="12" fill="currentColor" />
-      {/* Vết trên mặt trăng: màu nền nổi, rất mờ */}
-      <g fill="var(--nen-noi)" opacity="0.18">
-        <circle cx="8.6" cy="9" r="2.2" />
-        <circle cx="14.8" cy="14.6" r="2.8" />
-        <circle cx="15.6" cy="7.6" r="1.2" />
-        <circle cx="8.4" cy="15.4" r="1" />
-      </g>
+      <defs>
+        <radialGradient id={ma} cx="38%" cy="32%" r="72%">
+          <stop offset="0%" stopColor="var(--lantern-trang-tam)" />
+          <stop offset="45%" stopColor="var(--lantern-trang-giua)" />
+          <stop offset="80%" stopColor="var(--lantern-secondary)" />
+          <stop offset="100%" stopColor="var(--lantern-trang-ria)" />
+        </radialGradient>
+      </defs>
+      <circle cx="24" cy="24" r="24" fill={`url(#${ma})`} />
+      {/* Lưỡi liềm (hình trăng khuyết của bộ Lucide, thu nhỏ đặt lệch lên trên) */}
+      <path
+        transform="translate(14.4 8.9) scale(0.8)"
+        d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+        fill="var(--lantern-trang-chu)"
+      />
+      <text
+        x="24"
+        y="36"
+        textAnchor="middle"
+        fontSize="8"
+        fontWeight="800"
+        letterSpacing="0.6"
+        fill="var(--lantern-trang-chu)"
+        style={{ fontFamily: "var(--font-viet)" }}
+      >
+        RẰM
+      </text>
     </svg>
   );
 }

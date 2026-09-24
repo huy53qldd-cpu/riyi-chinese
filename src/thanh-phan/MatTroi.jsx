@@ -41,13 +41,15 @@ export default function MatTroi({ dat, lanVuaDat = 0, rong = 34, className = "" 
       >
         <HoaAnhDao co={Math.round(cao * 1.3)} />
       </span>
-      {/* Theme Hoa Đăng Dạ Nguyệt (quyết định 18.49): vầng trăng rằm có hào
-          quang, cùng hiệu ứng xám / toả sáng / nảy lên */}
+      {/* Theme Hoa Đăng Dạ Nguyệt (quyết định 18.49, 18.51): vầng trăng rằm có
+          hào quang, cùng hiệu ứng mờ / toả sáng / nảy lên. Trăng là nhân vật
+          chính của theme nên to hơn mặt trời: ở thanh trên (rong 34) trăng
+          cao 39px; ở chỗ vẽ to (Mục tiêu) thì 3/4 chiều rộng mặt trời. */}
       <span
         key={`trang-${lanVuaDat}`}
         className={`mat-troi chi-den-long vang-trang shrink-0 text-[var(--mat-troi-dat)] ${hieuUng} ${className}`}
       >
-        <VangTrang co={Math.round(cao * 1.3)} />
+        <VangTrang co={rong <= 40 ? Math.round(rong * 1.15) : Math.round(rong * 0.75)} />
       </span>
     </>
   );

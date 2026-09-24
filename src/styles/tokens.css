@@ -258,22 +258,27 @@
    đặt đã lưu của người dùng cũ không bị mất)
    =============================================================================
 
-   Cảm hứng: đêm hội đèn lồng dưới trăng rằm. Nền là bầu trời đêm ám đỏ, thẻ
-   đỏ sẫm có chiều sâu (gradient chéo), viền vàng rất mờ, ánh trăng vàng hắt
-   xuống từ góc trên. Nút hành động màu đỏ rực, chữ nhấn (pinyin, số liệu)
-   màu vàng trăng.
+   Cảm hứng: đêm hội đèn lồng Trung thu dưới trăng rằm. Bảng màu theo bảng
+   phối màu Stitch "Imperial Crimson Lantern" chủ dự án gửi (quyết định 18.51):
+     Primary   #DC2626  đỏ son: nút hành động, thân đèn lồng, ô chữ Hán
+     Secondary #F59E0B  vàng hổ phách: chữ nhấn, pinyin, số liệu, vầng trăng
+     Tertiary  #D97706  cam hổ phách đậm: viền trăng, điểm nhấn phụ
+     Neutral   #1C0A0A  nền đêm
+   Ô chữ Hán là những chiếc đèn lồng đỏ: gradient đỏ son xuống đỏ thẫm, chữ
+   Hán trắng ngà có quầng sáng như ánh nến bên trong.
 
-   KHÔNG dùng trắng thuần (#fff) ở đâu cả: chữ sáng nhất là trắng ngà ấm
-   #f5e6d3. Ngoại lệ duy nhất: nền tròn sau logo Google (Google bắt buộc).
+   KHÔNG dùng trắng thuần (#fff) ở đâu cả: chữ sáng nhất là trắng ngà ấm.
+   Ngoại lệ duy nhất: nền tròn sau logo Google (Google bắt buộc).
 
-   Tương phản đã đo (nơi khó nhất là thẻ sáng nhất #4a1414):
-     chữ chính  #f5e6d3   12.2 : 1
-     chữ phụ    #c9a385    6.5 : 1
-     vàng nhấn  #f5c563    9.3 : 1
-     chữ ngà trên nút đỏ   4.8 : 1   (chỗ đỏ sáng nhất của nút)
-     báo đúng   #8fe0b0    9.6 : 1
-     báo sai    #d9b8ff    8.7 : 1   (tím nhạt: không lẫn với đỏ của theme)
-     nút đỏ trên nền trang 3.1 : 1   (đủ nhận ra là một nút, còn có viền vàng)
+   Tương phản đã đo (nơi khó nhất là thẻ sáng nhất #3f1414):
+     chữ chính  #fbe9e1   13.5 : 1
+     chữ phụ    #d4aaa2    7.6 : 1
+     hổ phách   #f59e0b    7.4 : 1
+     báo đúng   #8fe0b0   10.2 : 1
+     báo sai    #d9b8ff    9.3 : 1   (tím nhạt: không lẫn với đỏ của theme)
+     chữ ngà #fff8f0 trên nút đỏ son #dc2626        4.6 : 1
+     pinyin #ffe7a0 trên ô đèn lồng (chỗ sáng nhất) 4.7 : 1
+     chữ Hán trên ô đèn lồng: chữ to, trên 4.3 : 1 (chữ to chỉ cần 3 : 1)
 
    Các màu có tên "lantern-*" là tên gọi chung để dùng xuyên suốt code (nối vào
    Tailwind ở index.css: bg-lantern-gold, text-lantern-text...). Các biến vai
@@ -281,31 +286,62 @@
    ============================================================================= */
 :root[data-theme="den-long"] {
   /* --- Bảng màu gốc của theme --- */
-  --lantern-bg-tren: #2b0a0a; /* bầu trời đêm ám đỏ, phía trên */
-  --lantern-bg-duoi: #1a0505; /* phía dưới, tối hơn */
-  --lantern-card-sang: #4a1414; /* góc sáng của thẻ */
-  --lantern-card-toi: #2e0a0a; /* góc tối của thẻ */
-  --lantern-gold: #f5c563; /* vàng trăng: pinyin, số liệu, biểu tượng nhấn */
-  --lantern-gold-bright: #ffd700; /* vàng sáng: điểm nhấn mạnh nhất */
-  --lantern-text: #f5e6d3; /* trắng ngà ấm: chữ Hán, tiêu đề, chữ chính */
-  --lantern-text-mo: #c9a385; /* chữ phụ: nghĩa, mô tả */
-  --lantern-cta-sang: #c41e1e; /* nút hành động, đầu gradient */
-  --lantern-cta-toi: #8b0000; /* nút hành động, cuối gradient */
-  --lantern-vien: rgba(245, 197, 99, 0.15); /* viền vàng rất mờ của thẻ */
-  --lantern-vien-ro: rgba(245, 197, 99, 0.45); /* viền vàng khi bấm / đang chọn */
-  --lantern-glow: rgba(245, 197, 99, 0.2); /* vầng hào quang ánh trăng */
+  /* 4 màu gốc của bảng Stitch */
+  --lantern-primary: #dc2626; /* đỏ son */
+  --lantern-secondary: #f59e0b; /* vàng hổ phách */
+  --lantern-tertiary: #d97706; /* cam hổ phách đậm */
+  --lantern-neutral: #1c0a0a; /* nền đêm */
+
+  --lantern-bg-tren: #2a0d0d; /* bầu trời đêm ám đỏ, phía trên */
+  --lantern-bg-duoi: var(--lantern-neutral); /* phía dưới, tối hơn */
+  --lantern-card-sang: #3f1414; /* góc sáng của thẻ */
+  --lantern-card-toi: #251010; /* góc tối của thẻ */
+  --lantern-gold: var(--lantern-secondary); /* hổ phách: pinyin, số liệu, biểu tượng nhấn */
+  --lantern-gold-bright: #fbbf24; /* hổ phách sáng: điểm nhấn mạnh nhất */
+  --lantern-text: #fbe9e1; /* trắng ngà hồng: tiêu đề, chữ chính */
+  --lantern-text-mo: #d4aaa2; /* chữ phụ: nghĩa, mô tả */
+  --lantern-cta-sang: var(--lantern-primary); /* nút hành động, đầu gradient */
+  --lantern-cta-toi: #991b1b; /* nút hành động, cuối gradient */
+  --lantern-chu-tren-do: #fff8f0; /* chữ trên nút đỏ (4.6 : 1 ở chỗ đỏ sáng nhất) */
+  --lantern-vien: rgba(245, 158, 11, 0.16); /* viền hổ phách rất mờ của thẻ */
+  --lantern-vien-ro: rgba(245, 158, 11, 0.5); /* viền hổ phách khi bấm / đang chọn */
+  --lantern-glow: rgba(245, 158, 11, 0.22); /* vầng hào quang ánh trăng */
+
+  /* Ô chữ Hán / ô từ = một chiếc đèn lồng đỏ (quyết định 18.51) */
+  --lantern-o-tren: #c81e1e; /* đỉnh ô: đỏ son (lùi nhẹ để pinyin đủ tương phản) */
+  --lantern-o-giua: #a51a1a;
+  --lantern-o-duoi: #6e1111; /* đáy ô: đỏ thẫm */
+  --lantern-o-vien: rgba(255, 176, 112, 0.35); /* viền ô: ánh cam nhạt */
+  --lantern-o-long: rgba(255, 122, 69, 0.3); /* đốm lửa nến giữa ô, sau chữ Hán */
+  --lantern-o-quang: rgba(220, 38, 38, 0.4); /* quầng đỏ toả ra quanh ô */
+  --lantern-o-chu: #fff4e6; /* chữ Hán trong ô: trắng ngà sáng */
+  --lantern-o-chu-quang: rgba(255, 214, 150, 0.8); /* quầng sáng sát chữ */
+  --lantern-o-chu-quang-xa: rgba(255, 120, 60, 0.6); /* quầng sáng lan rộng của chữ */
+  --lantern-o-pinyin: #ffe7a0; /* pinyin trong ô: vàng nhạt */
+
+  /* Vầng trăng rằm (quyết định 18.51): đĩa hổ phách, lưỡi liềm và chữ RẰM tối */
+  --lantern-trang-tam: #fde68a;
+  --lantern-trang-giua: #fbbf24;
+  --lantern-trang-ria: var(--lantern-tertiary);
+  --lantern-trang-chu: #2a0a0a; /* lưỡi liềm và chữ RẰM trên mặt trăng (8.5 : 1) */
+
+  /* Đèn lồng treo lắc lư dưới thanh trên */
+  --lantern-den-tim: #ffb347; /* lõi đèn sáng nhất */
+  --lantern-den-than: var(--lantern-primary);
+  --lantern-den-ria: #8b1010;
+  --lantern-den-quang: rgba(255, 90, 40, 0.45);
 
   /* Tiêu đề tiếng Việt dùng font có chân (Noto Serif, có đủ dấu tiếng Việt) */
   --font-tieu-de: "Noto Serif", Georgia, "Times New Roman", serif;
 
   /* --- Vai trò: component cũ dùng các biến này nên tự đổi theo --- */
   --nen: var(--lantern-bg-tren);
-  --nen-phu: #3a0e0e; /* nền vùng phụ, thanh tiến độ rỗng, ô trống */
+  --nen-phu: #3a1111; /* nền vùng phụ, thanh tiến độ rỗng, ô trống */
   --nen-noi: var(--lantern-card-toi); /* màu phẳng dự phòng; thẻ thật dùng gradient ở index.css */
 
   --chu: var(--lantern-text);
   --chu-mo: var(--lantern-text-mo);
-  --chu-tren-nhan: var(--lantern-text);
+  --chu-tren-nhan: var(--lantern-chu-tren-do);
   --nen-nut: var(--lantern-cta-toi); /* nút đỏ gradient, xem index.css */
 
   /* Màu nhấn là VÀNG TRĂNG (chữ nhấn, thanh tiến độ, viền đang chọn). Riêng
@@ -336,7 +372,7 @@
      đỏ vì cả theme đã đỏ), kèm dấu ✗ và rung nhẹ như trước. */
   --dung: #8fe0b0;
   --sai: #d9b8ff;
-  --canh-bao: #f0b35a;
+  --canh-bao: var(--lantern-gold-bright);
 
   --bieu-do-tuan-nay: var(--lantern-gold);
   --bieu-do-tuan-truoc: #d9b8ff;
