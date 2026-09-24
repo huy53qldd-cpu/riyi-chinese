@@ -62,8 +62,9 @@ export default function ChonKhoaHoc({ chonKhoa, moNangCap, moCaiDat }) {
       <header className="flex flex-col items-center pt-6 pb-10">
         <Logo rong={150} />
 
+        {/* Slogan (quyết định 18.53): gắn với mặt trời trong logo Riyi (日) */}
         <p className="text-chu-mo mt-4 mb-0 max-w-xs text-center text-[length:var(--co-chu-latin-nho)]">
-          Học tiếng Trung bằng vốn Hán tự tiếng Nhật bạn đã có
+          Mỗi ngày một bình minh mới.
         </p>
       </header>
 
