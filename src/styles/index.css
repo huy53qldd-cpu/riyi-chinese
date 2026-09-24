@@ -77,6 +77,8 @@
   --color-nhan: var(--nhan);
   --color-nhan-dam: var(--nhan-dam);
   --color-nhan-nhat: var(--nhan-nhat);
+  /* Chữ nhấn cỡ nhỏ (quyết định 18.50): dùng text-nhan-chu, KHÔNG dùng text-nhan */
+  --color-nhan-chu: var(--nhan-chu);
 
   --color-vien: var(--vien);
   --color-vien-dam: var(--vien-dam);
@@ -348,37 +350,15 @@ rt {
   transform: translateX(3px);
 }
 
-/* Ô CHỮ HÁN / Ô TỪ (lớp o-hoc): bo góc 18px, một HẠT CƯỜM vàng nhỏ ngay giữa
-   phía trên mỗi ô (như hạt trên dây đèn lồng), chạm hoặc rê chuột thì phóng
-   nhẹ và viền vàng sáng lên. */
+/* Ô CHỮ HÁN / Ô TỪ (lớp o-hoc): bo góc 18px, chạm hoặc rê chuột thì phóng nhẹ
+   và viền vàng sáng lên. Hạt cườm vàng phía trên mỗi ô nay CHÍNH LÀ đèn trạng
+   thái (quyết định 18.50): vàng sáng = chưa học, tối đi = đã học. */
 :root[data-theme="den-long"] .o-hoc {
   border-radius: 18px;
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease,
     border-color 0.15s ease;
-}
-
-:root[data-theme="den-long"] .o-hoc::before {
-  content: "";
-  position: absolute;
-  z-index: 20;
-  top: -4px;
-  left: 50%;
-  width: 7px;
-  height: 7px;
-  margin-left: -3.5px;
-  border-radius: 50%;
-  background: var(--lantern-gold);
-  box-shadow: 0 0 6px 1px rgba(245, 197, 99, 0.7);
-  pointer-events: none;
-}
-
-/* Ô có nhãn chữ Đã học/Chưa học (ô hôm nay): nhãn đủ rộng để phủ qua giữa ô,
-   nên hạt cườm nằm cao hơn, TRÊN nhãn, như hạt treo phía trên tấm thẻ. Ô dày
-   đặc (Xem toàn bộ, tìm kiếm) chỉ có chấm màu nhỏ nên hạt để sát mép như cũ. */
-:root[data-theme="den-long"] .o-hoc.co-nhan::before {
-  top: -15px;
 }
 
 :root[data-theme="den-long"] .o-hoc:hover,
@@ -388,6 +368,55 @@ rt {
   box-shadow:
     0 0 0 1px var(--lantern-vien-ro),
     0 0 16px rgba(245, 197, 99, 0.22);
+}
+
+/* -----------------------------------------------------------------------------
+   NÚT CÓ CHỮ (bg-nhan + text-chu-tren-nhan), mọi theme (quyết định 18.50)
+   Nền nút lấy --nen-nut chứ không lấy thẳng màu nhấn, vì ở theme Sáng/Tối
+   chữ kem trên cam thương hiệu chỉ đạt 3.06 : 1. Thanh tiến độ, mặt trời...
+   (chỉ có bg-nhan, không có chữ) vẫn giữ màu nhấn gốc.
+   ----------------------------------------------------------------------------- */
+.bg-nhan.text-chu-tren-nhan {
+  background-color: var(--nen-nut);
+  border-color: var(--nen-nut);
+}
+
+/* -----------------------------------------------------------------------------
+   ĐÈN TRẠNG THÁI TRÊN Ô (quyết định 18.50, mọi theme — xem DenTrangThai.jsx)
+   Một ngọn đèn tròn ở giữa mép trên ô: lõi màu, một đốm sáng nhỏ lệch trái
+   trên cho có khối, quầng sáng xung quanh như đang bật, và một vòng màu nền
+   mỏng để tách đèn khỏi viền ô. Màu từng theme nằm ở tokens.css.
+   ----------------------------------------------------------------------------- */
+.den-trang-thai {
+  position: absolute;
+  z-index: 10;
+  top: -5px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.den-trang-thai.chua-hoc {
+  background:
+    radial-gradient(circle at 35% 30%, rgba(255, 248, 230, 0.6) 0%, transparent 45%),
+    var(--den-chua-hoc);
+  box-shadow:
+    0 0 0 1.5px var(--nen),
+    0 0 6px 2px var(--den-chua-hoc-quang),
+    0 0 12px 3px var(--den-chua-hoc-quang);
+}
+
+.den-trang-thai.da-hoc {
+  background:
+    radial-gradient(circle at 35% 30%, rgba(255, 248, 230, 0.45) 0%, transparent 45%),
+    var(--den-da-hoc);
+  box-shadow:
+    0 0 0 1.5px var(--nen),
+    0 0 6px 2px var(--den-da-hoc-quang),
+    0 0 12px 3px var(--den-da-hoc-quang);
 }
 
 /* VẦNG TRĂNG (thay mặt trời mục tiêu): vầng hào quang nhiều lớp, mờ dần ra xa */

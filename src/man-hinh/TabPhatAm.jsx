@@ -321,14 +321,14 @@ function BangNhom({ nhom, chamO, oChon }) {
         type="button"
         onClick={() => chamO(o)}
         aria-label={`Nghe ${o.viet}`}
-        className={`${kieuO} ${laTieuDe ? "bg-nhan-nhat text-nhan font-bold" : "bg-[var(--o-am-tiet)]"} ${
+        className={`${kieuO} ${laTieuDe ? "bg-nhan-nhat text-nhan-chu font-bold" : "bg-[var(--o-am-tiet)]"} ${
           oChon?.khoa === o.khoa ? "ring-nhan ring-2" : ""
         } active:opacity-70`}
       >
         {nhan}
       </button>
     ) : (
-      <span className={`${kieuO} ${laTieuDe ? "bg-nhan-nhat text-nhan font-bold" : "bg-nen-phu"}`} aria-hidden={!laTieuDe}>
+      <span className={`${kieuO} ${laTieuDe ? "bg-nhan-nhat text-nhan-chu font-bold" : "bg-nen-phu"}`} aria-hidden={!laTieuDe}>
         {laTieuDe ? nhan : ""}
       </span>
     );

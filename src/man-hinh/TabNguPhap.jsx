@@ -6,7 +6,7 @@
    Hai màn hình nhỏ trong một tab:
      1. Danh sách:
         - Ô tìm kiếm (tên điểm / mẫu câu), tìm trên TẤT CẢ các cấp.
-        - 3-6 điểm ngữ pháp hôm nay: nhãn "Đã học"/"Chưa học" nổi ở góc ô.
+        - 3-6 điểm ngữ pháp hôm nay: ĐÈN trạng thái ở giữa mép trên ô (18.50).
         - Nhiệm vụ hôm nay: 2 bước làm thứ tự nào cũng được.
         - Nút "Bắt đầu học ngay" cố định phía trên thanh tab dưới.
         - "Xem toàn bộ ngữ pháp HSK N" của cấp đang là mục tiêu.
@@ -40,6 +40,7 @@ import HopThoaiXacNhan from "../thanh-phan/HopThoaiXacNhan.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import NutDaHoc from "../thanh-phan/NutDaHoc.jsx";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
+import DenTrangThai from "../thanh-phan/DenTrangThai.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
 
 // Nhãn cho từng loại cảnh báo lỗi (khai báo trong dữ liệu bằng mã)
@@ -298,8 +299,8 @@ function NutBatDauNgay({ batDau, maBuoc }) {
 
 /* -----------------------------------------------------------------------------
    Ô NGỮ PHÁP (quyết định 18.42/18.46): mỗi điểm một ô kéo hết chiều ngang,
-   mẫu câu ở trên và tên tiếng Việt ở dưới. Nhãn "Đã học"/"Chưa học" nổi ở góc
-   trên-phải, đè lên viền ô, thay cho mờ + viền nét đứt cũ.
+   mẫu câu ở trên và tên tiếng Việt ở dưới. ĐÈN trạng thái ở giữa mép trên ô
+   cho biết đã học hay chưa (quyết định 18.50, xem DenTrangThai.jsx).
    ----------------------------------------------------------------------------- */
 function ONguPhap({ diem, moChiTiet, daHoc = false, onThem = false }) {
   const moTa = [diem.ten, onThem && "ôn thêm", daHoc ? "đã học" : "chưa học"]
@@ -312,13 +313,7 @@ function ONguPhap({ diem, moChiTiet, daHoc = false, onThem = false }) {
       aria-label={moTa}
       className="border-vien bg-nen-noi active:bg-nhan-nhat relative flex w-full flex-col gap-1 rounded-[var(--bo-goc)] border px-4 pt-4 pb-3 text-left shadow-[0_1px_3px_var(--bong)] transition-colors"
     >
-      <span
-        className={`bg-nen-phu absolute -top-2.5 right-3 z-10 rounded-[var(--bo-goc-tron)] px-2 py-0.5 text-[length:0.625rem] leading-none font-bold whitespace-nowrap shadow-[0_2px_6px_var(--bong)] ${
-          daHoc ? "text-dung" : "text-sai"
-        }`}
-      >
-        {daHoc ? "Đã học" : "Chưa học"}
-      </span>
+      <DenTrangThai daHoc={daHoc} />
       <p className="m-0 text-[length:var(--co-chu-latin)] leading-snug font-bold">
         <VanBanPha noiDung={diem.congThuc} />
       </p>

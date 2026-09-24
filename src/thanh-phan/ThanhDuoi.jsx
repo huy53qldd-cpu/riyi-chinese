@@ -30,7 +30,7 @@ export default function ThanhDuoi({ tabDangMo, doiTab }) {
                 // aria-current cho trình đọc màn hình biết đang ở tab nào
                 aria-current={dangMo ? "page" : undefined}
                 className={`flex w-full flex-col items-center justify-center gap-1 bg-transparent px-1 pt-2 pb-1.5 transition-colors ${
-                  dangMo ? "text-nhan" : "text-chu-mo"
+                  dangMo ? "text-nhan-chu" : "text-chu-mo"
                 }`}
                 style={{ minHeight: "var(--cao-thanh-duoi)" }}
               >

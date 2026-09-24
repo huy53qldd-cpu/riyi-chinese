@@ -52,7 +52,7 @@ export default function NutLoa({
       // vì trình đọc tiếng Việt sẽ đọc sai.
       aria-label="Nghe phát âm"
       title="Nghe phát âm"
-      className={`border-vien text-nhan hover:bg-nhan-nhat active:bg-nhan-nhat inline-flex shrink-0 items-center justify-center rounded-[var(--bo-goc-tron)] border bg-transparent transition-colors ${className}`}
+      className={`border-vien text-nhan-chu hover:bg-nhan-nhat active:bg-nhan-nhat inline-flex shrink-0 items-center justify-center rounded-[var(--bo-goc-tron)] border bg-transparent transition-colors ${className}`}
       style={{ width: co, height: co }}
     >
       {/* Biểu tượng loa vẽ bằng SVG, không dùng ảnh, để đổi màu và phóng to

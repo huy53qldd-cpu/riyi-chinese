@@ -331,7 +331,7 @@ function TheBai({ the, ngua, ghepRoi, bam, soThuTu }) {
     >
       <span className={`the-lat-trong ${ngua ? "dang-ngua" : ""}`}>
         {/* Mặt úp */}
-        <span className="mat-the mat-up bg-nhan-nhat border-vien text-nhan flex items-center justify-center rounded-[var(--bo-goc-nho)] border">
+        <span className="mat-the mat-up bg-nhan-nhat border-vien text-nhan-chu flex items-center justify-center rounded-[var(--bo-goc-nho)] border">
           <img src="/hinh/mat-troi.png" alt="" className="tru-anh-dao w-1/2 opacity-80" />
           <span className="chi-anh-dao">
             <HoaAnhDao co={28} />

@@ -51,7 +51,7 @@ export default function TabKhamPha() {
               disabled={m.sapCo}
               className="border-vien bg-nen-noi active:bg-nhan-nhat flex w-full items-center gap-4 rounded-[var(--bo-goc)] border px-4 py-4 text-left shadow-[0_1px_3px_var(--bong)] transition-colors disabled:opacity-50 disabled:shadow-none"
             >
-              <span className="bg-nhan-nhat text-nhan flex h-12 w-12 shrink-0 items-center justify-center rounded-[var(--bo-goc)]">
+              <span className="bg-nhan-nhat text-nhan-chu flex h-12 w-12 shrink-0 items-center justify-center rounded-[var(--bo-goc)]">
                 <m.Icon width="1.75rem" height="1.75rem" />
               </span>
               <span className="flex min-w-0 flex-1 flex-col gap-0.5">

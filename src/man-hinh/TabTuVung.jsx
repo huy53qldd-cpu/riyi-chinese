@@ -6,7 +6,7 @@
    Hai màn hình nhỏ trong một tab:
      1. Danh sách:
         - Ô tìm kiếm (chữ Trung / pinyin / nghĩa Việt), tìm trên TẤT CẢ các cấp.
-        - 10-20 từ hôm nay: có pinyin phía trên, nhãn "Đã học"/"Chưa học" nổi
+        - 10-20 từ hôm nay: có pinyin phía trên, ĐÈN trạng thái (18.50) nổi
           ở góc ô (như chữ Hán).
         - Nhiệm vụ hôm nay: 4 bước làm thứ tự nào cũng được.
         - Nút "Bắt đầu học ngay" cố định phía trên thanh tab dưới.
@@ -40,6 +40,7 @@ import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import NutDaHoc from "../thanh-phan/NutDaHoc.jsx";
 import NutLoa from "../thanh-phan/NutLoa.jsx";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
+import DenTrangThai from "../thanh-phan/DenTrangThai.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
 
 // Danh sách dài (HSK 3 có 500 từ): mỗi lần chỉ vẽ một phần
@@ -335,10 +336,10 @@ function NutBatDauNgay({ batDau, maBuoc }) {
 }
 
 /* -----------------------------------------------------------------------------
-   Ô TỪ (quyết định 18.42/18.46): nhãn "Đã học"/"Chưa học" nổi ở góc trên-phải
-   thay cho mờ + viền nét đứt cũ. `hienPinyin` dùng cho ô cỡ lớn (từ hôm nay);
-   ô dày đặc (Xem toàn bộ, tìm kiếm) dùng `gonGang` — chấm màu nhỏ ở góc. Từ
-   dài thì ô rộng ra, không cắt chữ.
+   Ô TỪ (quyết định 18.42/18.46/18.50): ĐÈN trạng thái ở giữa mép trên ô (xem
+   DenTrangThai.jsx) cho biết đã học hay chưa. `hienPinyin` dùng cho ô cỡ lớn
+   (từ hôm nay); ô dày đặc (Xem toàn bộ, tìm kiếm) dùng `gonGang`, không có
+   pinyin. Từ dài thì ô rộng ra, không cắt chữ.
    ----------------------------------------------------------------------------- */
 function OTu({ muc, moChiTiet, daHoc = false, onThem = false, hienPinyin = false, gonGang = false }) {
   const moTa = [muc.nghiaViet, onThem && "ôn thêm", daHoc ? "đã học" : "chưa học"]
@@ -349,24 +350,11 @@ function OTu({ muc, moChiTiet, daHoc = false, onThem = false, hienPinyin = false
       type="button"
       onClick={moChiTiet}
       aria-label={`${muc.tu}: ${moTa}`}
-      className={`o-hoc ${gonGang ? "" : "co-nhan"} border-vien bg-nen-noi active:bg-nhan-nhat relative flex min-h-[3.5rem] flex-col items-center justify-center gap-0.5 rounded-[var(--bo-goc)] border px-3 py-2.5 shadow-[0_1px_3px_var(--bong)] transition-colors`}
+      className={`o-hoc border-vien bg-nen-noi active:bg-nhan-nhat relative flex min-h-[3.5rem] flex-col items-center justify-center gap-0.5 rounded-[var(--bo-goc)] border px-3 py-2.5 shadow-[0_1px_3px_var(--bong)] transition-colors`}
     >
-      {gonGang ? (
-        <span
-          aria-hidden="true"
-          className={`absolute top-1 right-1 h-2 w-2 rounded-full ${daHoc ? "bg-dung" : "bg-sai"}`}
-        />
-      ) : (
-        <span
-          className={`bg-nen-phu absolute -top-2.5 -right-2 z-10 rounded-[var(--bo-goc-tron)] px-2 py-0.5 text-[length:0.625rem] leading-none font-bold whitespace-nowrap shadow-[0_2px_6px_var(--bong)] ${
-            daHoc ? "text-dung" : "text-sai"
-          }`}
-        >
-          {daHoc ? "Đã học" : "Chưa học"}
-        </span>
-      )}
+      <DenTrangThai daHoc={daHoc} />
       {hienPinyin && (
-        <span className="text-nhan text-[length:0.6875rem] leading-none font-bold">
+        <span className="text-nhan-chu text-[length:0.6875rem] leading-none font-bold">
           {muc.pinyin.join(" ")}
         </span>
       )}
@@ -432,7 +420,7 @@ function ChiTietTu({ muc, nhanChuDe, quayLai, chuaXongHomNay = [] }) {
       <div className={khungMuc}>
         <p className={nhanTieuDe}>Nghĩa</p>
         <ChuNhat noiDung={muc.nghiaNhat} />
-        <p className="text-nhan m-0 text-[length:var(--co-chu-latin)] font-bold">
+        <p className="text-nhan-chu m-0 text-[length:var(--co-chu-latin)] font-bold">
           {muc.nghiaViet}
         </p>
         {muc.capPhu.length > 0 && (

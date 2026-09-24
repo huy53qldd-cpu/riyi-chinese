@@ -58,10 +58,25 @@
   --chu: var(--goc-nau); /* chữ chính */
   --chu-mo: var(--goc-nau-nhat); /* chữ phụ, chú thích, pinyin */
   --chu-tren-nhan: var(--goc-kem); /* chữ đặt trên nền cam */
+  /* Nền của NÚT có chữ (nút chính, nút đang chọn): cam cháy đậm hơn cam thương
+     hiệu một chút để chữ kem đạt 4.8 : 1 (trên cam #f0600f chỉ 3.06 : 1).
+     Cam thương hiệu vẫn dùng cho mặt trời, thanh tiến độ (quyết định 18.50).
+     Theme Tối dùng chung giá trị này. */
+  --nen-nut: #c2410c;
 
   --nhan: var(--goc-cam); /* màu nhấn: nút chính, mặt trời, thanh tiến độ */
   --nhan-dam: var(--goc-cam-dam); /* lúc bấm giữ */
   --nhan-nhat: var(--goc-cam-nhat); /* nền mờ của màu nhấn */
+  /* Chữ nhấn CỠ NHỎ (pinyin trên ô, nghĩa, tên tab đang mở...): cam cháy đậm
+     hơn cam thương hiệu, >= 4.8 : 1 trên mọi nền sáng (quyết định 18.50).
+     Cam thương hiệu --nhan (3.06 : 1) vẫn dùng cho nút, mặt trời, thanh tiến độ. */
+  --nhan-chu: #a63e07;
+  /* Đèn trạng thái trên ô chữ / ô từ / ô ngữ pháp (quyết định 18.50): chưa học
+     là đèn ĐỎ, đã học là đèn XANH, cả hai đều có quầng sáng như đang bật */
+  --den-chua-hoc: #e5383b;
+  --den-chua-hoc-quang: rgba(229, 56, 59, 0.55);
+  --den-da-hoc: #22c55e;
+  --den-da-hoc-quang: rgba(34, 197, 94, 0.55);
 
   --vien: #ddd0b8; /* đường kẻ, viền thẻ */
   --vien-dam: var(--goc-nau-nhat);
@@ -76,7 +91,7 @@
   /* Màu báo trạng thái. Giữ cùng tông ấm với thương hiệu, không dùng đỏ/xanh gắt. */
   --dung: #2f7d54;
   --sai: #c0392b;
-  --canh-bao: #b8730d;
+  --canh-bao: #8a5a00; /* 5.5 : 1 trên nền kem (#b8730d cũ chỉ 3.6 : 1) */
 
   /* Biểu đồ so sánh tuần ở tab Review. Đã chạy bộ kiểm tra màu (phân biệt được
      cả với người mù màu, đủ tương phản trên nền thẻ) cho cả hai theme. */
@@ -154,6 +169,8 @@
      chữ kem khoảng 10:1. */
   --nhan: var(--goc-cam);
   --nhan-nhat: #5a3322;
+  /* Chữ nhấn cỡ nhỏ trên nền tối: cam sáng hơn, >= 5.2 : 1 */
+  --nhan-chu: #ff9a5e;
 
   --vien: #4d3c33;
   --vien-dam: #6b5648;
@@ -201,10 +218,20 @@
   --chu: var(--goc-man);
   --chu-mo: #6b4a55;
   --chu-tren-nhan: var(--goc-man);
+  /* Nút hồng dùng chữ nâu mận đậm (5.0 : 1) nên giữ nguyên nền hồng */
+  --nen-nut: var(--nhan);
 
   --nhan: var(--goc-hong);
   --nhan-dam: var(--goc-hong-dam);
   --nhan-nhat: var(--goc-hong-nhat);
+  /* Chữ nhấn cỡ nhỏ: hồng đậm, >= 4.9 : 1 trên mọi nền của theme này (hồng
+     phấn #e27493 chỉ ~2.9 : 1, không đủ cho chữ nhỏ) */
+  --nhan-chu: #a8355a;
+  /* Đèn trạng thái (quyết định 18.50): chưa học = hồng sáng, đã học = hồng tối */
+  --den-chua-hoc: #ff5fa2;
+  --den-chua-hoc-quang: rgba(255, 95, 162, 0.6);
+  --den-da-hoc: #9c3d62;
+  --den-da-hoc-quang: rgba(156, 61, 98, 0.3);
 
   --vien: #f0cdd7;
   --vien-dam: #6b4a55;
@@ -279,12 +306,21 @@
   --chu: var(--lantern-text);
   --chu-mo: var(--lantern-text-mo);
   --chu-tren-nhan: var(--lantern-text);
+  --nen-nut: var(--lantern-cta-toi); /* nút đỏ gradient, xem index.css */
 
   /* Màu nhấn là VÀNG TRĂNG (chữ nhấn, thanh tiến độ, viền đang chọn). Riêng
      các NÚT (bg-nhan + text-chu-tren-nhan) được tô đỏ gradient ở index.css. */
   --nhan: var(--lantern-gold);
   --nhan-dam: var(--lantern-gold-bright);
   --nhan-nhat: #5a1f19; /* nền mờ của màu nhấn: nhãn, ô đang chọn */
+  /* Chữ nhấn (pinyin, nghĩa, số liệu): vàng trăng, 9.3 : 1 trên thẻ sáng nhất */
+  --nhan-chu: var(--lantern-gold);
+  /* Đèn trạng thái trên ô (quyết định 18.50): chưa học = vàng sáng như hạt
+     cườm, đã học = tối đi */
+  --den-chua-hoc: #ffd24a;
+  --den-chua-hoc-quang: rgba(255, 210, 74, 0.7);
+  --den-da-hoc: #6e5226;
+  --den-da-hoc-quang: rgba(110, 82, 38, 0.25);
 
   --vien: var(--lantern-vien);
   --vien-dam: var(--lantern-text-mo);

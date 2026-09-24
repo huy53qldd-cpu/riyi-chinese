@@ -101,7 +101,7 @@ export default function ChonKhoaHoc({ chonKhoa, moNangCap, moCaiDat }) {
                 {/* Nhãn trạng thái bên phải */}
                 {khoa.hoatDong ? (
                   <span
-                    className="text-nhan shrink-0 text-2xl leading-none"
+                    className="text-nhan-chu shrink-0 text-2xl leading-none"
                     aria-hidden="true"
                   >
                     →

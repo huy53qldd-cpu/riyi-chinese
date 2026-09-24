@@ -6,7 +6,7 @@
    Hai màn hình nhỏ trong một tab:
      1. Danh sách:
         - Ô tìm kiếm (chữ Hán / pinyin / nghĩa Việt), tìm trên TẤT CẢ các cấp.
-        - 5-6 chữ Hán hôm nay: có pinyin phía trên, nhãn "Đã học"/"Chưa học".
+        - 5-6 chữ Hán hôm nay: có pinyin phía trên, ĐÈN trạng thái ở mép trên ô (18.50).
         - Nhiệm vụ hôm nay: hai bước (Tập viết, Trò chơi) làm thứ tự nào cũng
           được — xong cả hai thì chữ mới tính là đã học.
         - Nút "Bắt đầu học ngay" CỐ ĐỊNH phía trên thanh tab dưới, bấm hoặc
@@ -48,6 +48,7 @@ import KhungTapViet from "../thanh-phan/KhungTapViet.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import NutDaHoc from "../thanh-phan/NutDaHoc.jsx";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
+import DenTrangThai from "../thanh-phan/DenTrangThai.jsx";
 import VanBanPha from "../thanh-phan/VanBanPha.jsx";
 import { NhanOnThem } from "./TabMucTieu.jsx";
 
@@ -363,11 +364,10 @@ function NutBatDauNgay({ batDau, maBuoc }) {
 }
 
 /* -----------------------------------------------------------------------------
-   Ô CHỮ HÁN (quyết định 18.42, nhãn góc sửa theo 18.43): nhãn "Đã học"/"Chưa
-   học" nổi ở góc trên-phải, đè lên viền ô (giống nhãn dán) thay cho mờ + viền
-   nét đứt cũ. `hienPinyin` chỉ dùng cho ô cỡ lớn (chữ hôm nay); ô dày đặc
-   (Xem toàn bộ, tìm kiếm) dùng `gonGang` — chấm màu nhỏ ở góc thay vì chữ, để
-   không vỡ bố cục khi có hàng trăm ô.
+   Ô CHỮ HÁN (quyết định 18.42, 18.50): một ngọn ĐÈN ở giữa mép trên ô cho biết
+   đã học hay chưa (xem DenTrangThai.jsx), thay cho nhãn chữ Đã học/Chưa học.
+   `hienPinyin` chỉ dùng cho ô cỡ lớn (chữ hôm nay); ô dày đặc (Xem toàn bộ,
+   tìm kiếm) dùng `gonGang`: ô vuông gọn, không có pinyin.
    ----------------------------------------------------------------------------- */
 function OChuHan({ muc, moChiTiet, daHoc = false, onThem = false, hienPinyin = false, gonGang = false }) {
   const moTa = [muc.nghia.viet, onThem && "ôn thêm", daHoc ? "đã học" : "chưa học"]
@@ -379,26 +379,13 @@ function OChuHan({ muc, moChiTiet, daHoc = false, onThem = false, hienPinyin = f
       type="button"
       onClick={moChiTiet}
       aria-label={`${muc.gianThe}: ${moTa}`}
-      className={`o-hoc ${gonGang ? "" : "co-nhan"} border-vien bg-nen-noi active:bg-nhan-nhat relative flex w-full flex-col items-center justify-center gap-0.5 rounded-[var(--bo-goc)] border shadow-[0_1px_3px_var(--bong)] transition-colors ${
+      className={`o-hoc border-vien bg-nen-noi active:bg-nhan-nhat relative flex w-full flex-col items-center justify-center gap-0.5 rounded-[var(--bo-goc)] border shadow-[0_1px_3px_var(--bong)] transition-colors ${
         gonGang ? "aspect-square" : "px-1.5 py-2.5"
       }`}
     >
-      {gonGang ? (
-        <span
-          aria-hidden="true"
-          className={`absolute top-1 right-1 h-2 w-2 rounded-full ${daHoc ? "bg-dung" : "bg-sai"}`}
-        />
-      ) : (
-        <span
-          className={`bg-nen-phu absolute -top-2.5 -right-2 z-10 rounded-[var(--bo-goc-tron)] px-2 py-0.5 text-[length:0.625rem] leading-none font-bold whitespace-nowrap shadow-[0_2px_6px_var(--bong)] ${
-            daHoc ? "text-dung" : "text-sai"
-          }`}
-        >
-          {daHoc ? "Đã học" : "Chưa học"}
-        </span>
-      )}
+      <DenTrangThai daHoc={daHoc} />
       {hienPinyin && pinyinChinh && (
-        <span className="text-nhan text-[length:0.6875rem] leading-none font-bold">{pinyinChinh}</span>
+        <span className="text-nhan-chu text-[length:0.6875rem] leading-none font-bold">{pinyinChinh}</span>
       )}
       <ChuTrung amTiet={[{ chu: muc.gianThe }]} hienPinyin={false} coRieng="1.75rem" />
       {onThem && <NhanOnThem />}
@@ -439,7 +426,7 @@ function NutNghePinyin({ pinyin, co = 32 }) {
       onClick={khiBam}
       aria-label="Nghe phát âm"
       title="Nghe phát âm"
-      className="border-vien text-nhan hover:bg-nhan-nhat active:bg-nhan-nhat inline-flex shrink-0 items-center justify-center rounded-full border bg-transparent transition-colors"
+      className="border-vien text-nhan-chu hover:bg-nhan-nhat active:bg-nhan-nhat inline-flex shrink-0 items-center justify-center rounded-full border bg-transparent transition-colors"
       style={{ width: co, height: co }}
     >
       <BieuTuong ten="nghe" co={Math.round(co * 0.5)} />
@@ -503,7 +490,7 @@ function ChiTietChuHan({ muc, quayLai, chuaXongHomNay = [] }) {
         <div className="grid grid-cols-3 items-end gap-2 text-center">
           <div className="flex flex-col items-center gap-1">
             <div className="flex items-center gap-1.5">
-              <span className="text-nhan text-[length:1.15rem] font-bold">{pinyinChinh}</span>
+              <span className="text-nhan-chu text-[length:1.15rem] font-bold">{pinyinChinh}</span>
               <NutNghePinyin pinyin={pinyinChinh} co={26} />
             </div>
             <ChuTrung co="the" amTiet={[{ chu: muc.gianThe }]} hienPinyin={false} />
@@ -601,7 +588,7 @@ function ChiTietChuHan({ muc, quayLai, chuaXongHomNay = [] }) {
           <div>
             <p className={nhanTieuDe}>Nghĩa</p>
             <ChuNhat noiDung={muc.nghia.nhat} />
-            <p className="text-nhan mt-1 mb-0 text-[length:var(--co-chu-latin)] font-bold">
+            <p className="text-nhan-chu mt-1 mb-0 text-[length:var(--co-chu-latin)] font-bold">
               {muc.nghia.viet}
             </p>
           </div>
@@ -615,7 +602,7 @@ function ChiTietChuHan({ muc, quayLai, chuaXongHomNay = [] }) {
               <div className="flex items-center gap-2">
                 <ChuTrung amTiet={[{ chu: muc.boThu, pinyin: muc.boThuPinyin?.[0] ?? "" }]} />
                 {tenBo && (
-                  <span className="text-nhan text-[length:var(--co-chu-latin)] font-bold">
+                  <span className="text-nhan-chu text-[length:var(--co-chu-latin)] font-bold">
                     ({tenBo})
                   </span>
                 )}
@@ -631,9 +618,9 @@ function ChiTietChuHan({ muc, quayLai, chuaXongHomNay = [] }) {
           <p className={nhanTieuDe}>Mẹo nhớ</p>
           <p className="m-0 text-[length:var(--co-chu-latin)] leading-relaxed">
             Chữ <VanBanPha noiDung={muc.gianThe} /> có {muc.soNet} nét, thuộc bộ{" "}
-            <VanBanPha noiDung={muc.boThu} /> (<span className="text-nhan font-bold">{tenBo}</span>).
-            Hãy liên tưởng bộ <span className="text-nhan font-bold">{tenBo}</span> với nghĩa{" "}
-            <span className="text-nhan font-bold">&ldquo;{muc.nghia.viet}&rdquo;</span> để nhớ chữ
+            <VanBanPha noiDung={muc.boThu} /> (<span className="text-nhan-chu font-bold">{tenBo}</span>).
+            Hãy liên tưởng bộ <span className="text-nhan-chu font-bold">{tenBo}</span> với nghĩa{" "}
+            <span className="text-nhan-chu font-bold">&ldquo;{muc.nghia.viet}&rdquo;</span> để nhớ chữ
             này dễ hơn.
           </p>
         </div>
