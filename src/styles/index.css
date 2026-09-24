@@ -46,6 +46,19 @@
   font-display: swap;
 }
 
+/* Tiêu đề tiếng Việt ở theme Hoa Đăng Dạ Nguyệt: font có chân, gợi không khí
+   truyền thống (quyết định 18.49). Chỉ có chữ Latin/tiếng Việt, không có chữ
+   Hán. Trình duyệt CHỈ tải file này khi có chữ dùng tới nó, tức là khi người
+   dùng chọn theme này; các theme khác không tốn thêm dung lượng. */
+@font-face {
+  font-family: "Noto Serif";
+  src: url("/fonts/noto-serif-subset.woff2") format("woff2");
+  font-weight: 400 900;
+  font-stretch: 62.5% 100%;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* -----------------------------------------------------------------------------
    NỐI BẢNG MÀU VÀO TAILWIND
    Sau khai báo này, trong giao diện có thể viết class kiểu bg-nen, text-chu,
@@ -75,6 +88,19 @@
   --color-nguy-hiem-nhe: var(--nguy-hiem-nhe);
   --color-nguy-hiem-vua: var(--nguy-hiem-vua);
   --color-nguy-hiem-nang: var(--nguy-hiem-nang);
+
+  /* Màu riêng của theme Hoa Đăng Dạ Nguyệt (quyết định 18.49): bg-lantern-gold,
+     text-lantern-text... Chỉ có giá trị khi đang dùng theme này. */
+  --color-lantern-bg-tren: var(--lantern-bg-tren);
+  --color-lantern-bg-duoi: var(--lantern-bg-duoi);
+  --color-lantern-card-sang: var(--lantern-card-sang);
+  --color-lantern-card-toi: var(--lantern-card-toi);
+  --color-lantern-gold: var(--lantern-gold);
+  --color-lantern-gold-bright: var(--lantern-gold-bright);
+  --color-lantern-text: var(--lantern-text);
+  --color-lantern-text-mo: var(--lantern-text-mo);
+  --color-lantern-cta-sang: var(--lantern-cta-sang);
+  --color-lantern-cta-toi: var(--lantern-cta-toi);
 
   --font-viet: var(--font-viet);
   --font-trung: var(--font-trung);
@@ -223,9 +249,9 @@ rt {
   display: none;
 }
 
-/* Theme đèn lồng đỏ (GĐ 11, quyết định 18.41), làm y như trên:
+/* Theme Hoa Đăng Dạ Nguyệt (mã "den-long", quyết định 18.41 → 18.49), làm y như trên:
    .tru-hinh-theme : chỉ hiện ở theme sáng/tối (mặt trời lấy từ logo, dấu sách)
-   .chi-den-long   : chỉ hiện ở theme đèn lồng đỏ (đèn lồng, hoa mai) */
+   .chi-den-long   : chỉ hiện ở theme Hoa Đăng Dạ Nguyệt (vầng trăng, hoa mai) */
 .chi-den-long {
   display: none;
 }
@@ -240,89 +266,22 @@ rt {
 }
 
 /* -----------------------------------------------------------------------------
-   THEME ĐÈN LỒNG ĐỎ: KHUNG VÀ NÚT MÀU ĐỎ, VIỀN VÀNG (quyết định 18.41)
-
-   Ba theme kia dùng thẻ nền sáng, chữ đậm. Theme này thì NGƯỢC LẠI: thẻ màu đỏ
-   đèn lồng, chữ trong thẻ màu kem. Nền trang vẫn kem nên tiêu đề nằm ngoài thẻ
-   vẫn là chữ nâu đỏ đậm như thường.
-
-   Vì vậy chỉ ở theme này, vài lớp màu được vẽ lại cho hợp: chữ trong thẻ đổi
-   sang kem, màu nhấn trong thẻ đổi sang vàng (đỏ trên đỏ thì không thấy), viền
-   nút đổi sang vàng kim. Tất cả màu đều lấy từ tokens.css.
+   THEME HOA ĐĂNG DẠ NGUYỆT: NỀN ĐÊM, ÁNH TRĂNG, THẺ CÓ CHIỀU SÂU (quyết định 18.49)
+   Màu nằm hết ở tokens.css (các biến --lantern-*); ở đây chỉ ghép thành hiệu ứng.
    ----------------------------------------------------------------------------- */
-:root[data-theme="den-long"] .bg-nen-noi {
-  background-color: var(--goc-do);
-  border-color: var(--goc-vang);
-  color: var(--chu-tren-nhan);
+
+/* Tiêu đề tiếng Việt dùng font có chân cho không khí truyền thống. Chữ Hán
+   trong tiêu đề vẫn là Noto Sans SC vì nó nằm trong thẻ có lớp font-trung. */
+:root[data-theme="den-long"] h1,
+:root[data-theme="den-long"] h2 {
+  font-family: var(--font-tieu-de);
+  letter-spacing: 0.01em;
 }
 
-/* Chữ phụ trong thẻ đỏ: kem ngả vàng cho dịu mắt nhưng vẫn đủ tương phản */
-:root[data-theme="den-long"] .bg-nen-noi .text-chu-mo {
-  color: var(--chu-mo-tren-do);
-}
-
-/* Chữ và hình màu nhấn (đỏ) nằm trong thẻ đỏ thì đổi sang vàng sáng.
-   Dùng --vang-chu-tren-do (4.7 : 1) chứ không phải vàng kim #f2c14e (3.5 : 1),
-   vì nhãn tab ở thanh dưới là chữ nhỏ, cần đủ 4.5 : 1. */
-:root[data-theme="den-long"] .bg-nen-noi .text-nhan {
-  color: var(--vang-chu-tren-do);
-}
-
-/* Pinyin và furigana (thẻ <rt>) trong thẻ đỏ cũng phải sáng lên theo */
-:root[data-theme="den-long"] .bg-nen-noi rt {
-  color: var(--chu-mo-tren-do);
-}
-
-/* Ô có nền SÁNG nằm trong thẻ đỏ (ô bảng pinyin, nhãn, thanh tiến độ): chữ
-   phải trở lại màu nâu đỏ đậm, nếu không sẽ là chữ kem trên nền kem. */
-:root[data-theme="den-long"] .bg-nen-noi .bg-nhan-nhat,
-:root[data-theme="den-long"] .bg-nen-noi .bg-nen-phu,
-:root[data-theme="den-long"] .bg-nen-noi [class*="o-am-tiet"] {
-  color: var(--chu);
-}
-
-:root[data-theme="den-long"] .bg-nen-noi .bg-nhan-nhat rt,
-:root[data-theme="den-long"] .bg-nen-noi .bg-nhan-nhat .text-chu-mo,
-:root[data-theme="den-long"] .bg-nen-noi .bg-nen-phu rt,
-:root[data-theme="den-long"] .bg-nen-noi .bg-nen-phu .text-chu-mo,
-:root[data-theme="den-long"] .bg-nen-noi [class*="o-am-tiet"] rt,
-:root[data-theme="den-long"] .bg-nen-noi [class*="o-am-tiet"] .text-chu-mo {
-  color: var(--chu-mo);
-}
-
-/* Báo đúng / sai trong thẻ đỏ: dùng bản sáng màu để nổi trên nền đỏ */
-:root[data-theme="den-long"] .bg-nen-noi .text-dung {
-  color: var(--dung-tren-do);
-}
-
-:root[data-theme="den-long"] .bg-nen-noi .text-sai {
-  color: var(--sai-tren-do);
-}
-
-:root[data-theme="den-long"] .bg-nen-noi .border-dung {
-  border-color: var(--dung-tren-do);
-}
-
-:root[data-theme="den-long"] .bg-nen-noi .border-sai {
-  border-color: var(--sai-tren-do);
-}
-
-/* Nút chính và các viền theo màu nhấn: viền vàng kim, để nút đỏ vẫn tách khỏi
-   thẻ đỏ phía sau. Bấm giữ thì viền sáng hơn (xem :active bên dưới). */
-:root[data-theme="den-long"] .border-nhan {
-  border-color: var(--goc-vang);
-}
-
-:root[data-theme="den-long"] .bg-nhan:active {
-  border-color: var(--goc-vang-sang);
-}
-
-/* Đường kẻ ngăn bên trong thẻ đỏ: vàng mờ, không dùng vàng đậm của nền kem */
-:root[data-theme="den-long"] .bg-nen-noi .border-vien {
-  border-color: rgba(242, 193, 78, 0.5);
-}
-
-/* Đèn lồng trang trí mờ ở góc trên bên phải, nằm dưới nội dung, không bắt bấm */
+/* Bầu trời đêm ám đỏ + ánh trăng hắt xuống từ góc trên. Vẽ bằng một lớp cố
+   định nằm DƯỚI mọi nội dung, không bắt bấm. Ánh sáng dùng gradient toả tròn
+   (vốn đã mờ dần) thay cho filter: blur(), vì blur một lớp to cả màn hình rất
+   nặng với điện thoại yếu mà nhìn gần như giống hệt. */
 :root[data-theme="den-long"] body {
   background-color: transparent;
 }
@@ -330,16 +289,172 @@ rt {
 :root[data-theme="den-long"] body::before {
   content: "";
   position: fixed;
-  top: calc(var(--cao-thanh-tren) + 4px);
-  right: 10px;
-  width: 116px;
-  height: 116px;
-  background-color: var(--den-long-trang-tri);
-  opacity: 0.25;
-  pointer-events: none;
+  inset: 0;
   z-index: -1;
-  -webkit-mask: url("/hinh/den-long-trang-tri.svg") no-repeat center / contain;
-  mask: url("/hinh/den-long-trang-tri.svg") no-repeat center / contain;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 65% 38% at 88% -4%, var(--lantern-glow), transparent 70%),
+    radial-gradient(ellipse 55% 32% at 8% 0%, rgba(255, 140, 50, 0.13), transparent 70%),
+    radial-gradient(ellipse 80% 45% at 55% 14%, rgba(245, 197, 99, 0.07), transparent 75%),
+    linear-gradient(180deg, var(--lantern-bg-tren), var(--lantern-bg-duoi));
+}
+
+/* Thẻ không phải đỏ phẳng: gradient chéo tạo độ nổi, thêm một lớp sáng mờ ở
+   góc trên trái như ánh trăng chiếu vào, viền vàng rất mờ. */
+:root[data-theme="den-long"] .bg-nen-noi {
+  background-color: var(--lantern-card-toi);
+  background-image:
+    linear-gradient(145deg, rgba(255, 226, 170, 0.07) 0%, transparent 38%),
+    linear-gradient(145deg, var(--lantern-card-sang), var(--lantern-card-toi));
+}
+
+:root[data-theme="den-long"] .bg-nen-noi.border-vien,
+:root[data-theme="den-long"] .bg-nen-noi .border-vien {
+  border-color: var(--lantern-vien);
+}
+
+/* Nút viền (Xem toàn bộ, Về danh sách...): viền vàng rõ hơn viền thẻ một chút
+   để vẫn nhận ra là nút bấm được trên nền tối */
+:root[data-theme="den-long"] button.border-vien,
+:root[data-theme="den-long"] input.border-vien,
+:root[data-theme="den-long"] select.border-vien {
+  border-color: rgba(245, 197, 99, 0.3);
+}
+
+/* NÚT HÀNH ĐỘNG (mọi nút bg-nhan + text-chu-tren-nhan): đỏ rực có gradient,
+   viền vàng. Màu nhấn chung của theme là vàng trăng, nên chỉ riêng nút mới
+   được tô đỏ ở đây; thanh tiến độ (chỉ có bg-nhan) vẫn là vàng. */
+:root[data-theme="den-long"] .bg-nhan.text-chu-tren-nhan {
+  background-color: var(--lantern-cta-toi);
+  background-image: linear-gradient(135deg, var(--lantern-cta-sang), var(--lantern-cta-toi));
+  border-color: var(--lantern-vien-ro);
+  box-shadow: 0 4px 14px rgba(196, 30, 30, 0.35);
+}
+
+:root[data-theme="den-long"] .bg-nhan.text-chu-tren-nhan:hover,
+:root[data-theme="den-long"] .bg-nhan.text-chu-tren-nhan:active {
+  border-color: var(--lantern-gold);
+  box-shadow:
+    0 4px 16px rgba(196, 30, 30, 0.45),
+    0 0 12px rgba(245, 197, 99, 0.25);
+}
+
+/* Mũi tên ở cuối nút (ví dụ "Bắt đầu học ngay →") nhích sang phải khi rê chuột */
+:root[data-theme="den-long"] .bg-nhan.text-chu-tren-nhan > svg:last-child {
+  transition: transform 0.2s ease;
+}
+
+:root[data-theme="den-long"] .bg-nhan.text-chu-tren-nhan:hover > svg:last-child {
+  transform: translateX(3px);
+}
+
+/* Ô CHỮ HÁN / Ô TỪ (lớp o-hoc): bo góc 18px, một HẠT CƯỜM vàng nhỏ ngay giữa
+   phía trên mỗi ô (như hạt trên dây đèn lồng), chạm hoặc rê chuột thì phóng
+   nhẹ và viền vàng sáng lên. */
+:root[data-theme="den-long"] .o-hoc {
+  border-radius: 18px;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+:root[data-theme="den-long"] .o-hoc::before {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: -4px;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  margin-left: -3.5px;
+  border-radius: 50%;
+  background: var(--lantern-gold);
+  box-shadow: 0 0 6px 1px rgba(245, 197, 99, 0.7);
+  pointer-events: none;
+}
+
+/* Ô có nhãn chữ Đã học/Chưa học (ô hôm nay): nhãn đủ rộng để phủ qua giữa ô,
+   nên hạt cườm nằm cao hơn, TRÊN nhãn, như hạt treo phía trên tấm thẻ. Ô dày
+   đặc (Xem toàn bộ, tìm kiếm) chỉ có chấm màu nhỏ nên hạt để sát mép như cũ. */
+:root[data-theme="den-long"] .o-hoc.co-nhan::before {
+  top: -15px;
+}
+
+:root[data-theme="den-long"] .o-hoc:hover,
+:root[data-theme="den-long"] .o-hoc:active {
+  transform: scale(1.03);
+  border-color: var(--lantern-vien-ro);
+  box-shadow:
+    0 0 0 1px var(--lantern-vien-ro),
+    0 0 16px rgba(245, 197, 99, 0.22);
+}
+
+/* VẦNG TRĂNG (thay mặt trời mục tiêu): vầng hào quang nhiều lớp, mờ dần ra xa */
+.vang-trang {
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--lantern-glow) 0%, transparent 70%);
+  box-shadow:
+    0 0 20px rgba(245, 197, 99, 0.45),
+    0 0 40px rgba(245, 197, 99, 0.25),
+    0 0 60px rgba(245, 197, 99, 0.12);
+}
+
+/* Chưa đạt mục tiêu: trăng mờ, KHÔNG có hào quang (bộ lọc xám sẽ biến quầng
+   vàng thành một vòng tối quanh trăng, trông như bị bẩn). Đạt rồi mới sáng. */
+.vang-trang.mat-troi-chua-dat {
+  background: none;
+  box-shadow: none;
+}
+
+/* ĐÈN LỒNG TREO dưới thanh trên (chỉ theme này): lắc nhẹ như gió thổi, mỗi
+   chiếc lệch nhịp nhau; đốm nến bên trong sáng tối nhẹ. Không bắt bấm. */
+.den-long-treo {
+  display: none;
+}
+
+:root[data-theme="den-long"] .den-long-treo {
+  display: block;
+}
+
+.den-long-treo .chiec {
+  transform-origin: top center;
+  animation: den-long-lac 3.6s ease-in-out infinite alternate;
+}
+
+.den-long-treo .nen-den {
+  animation: den-long-nen 2.2s ease-in-out infinite alternate;
+}
+
+@keyframes den-long-lac {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes den-long-nen {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Máy bật "Giảm chuyển động": đèn đứng yên, ô không phóng to */
+@media (prefers-reduced-motion: reduce) {
+  .den-long-treo .chiec,
+  .den-long-treo .nen-den {
+    animation: none;
+  }
+
+  :root[data-theme="den-long"] .o-hoc:hover,
+  :root[data-theme="den-long"] .o-hoc:active {
+    transform: none;
+  }
 }
 
 /* -----------------------------------------------------------------------------

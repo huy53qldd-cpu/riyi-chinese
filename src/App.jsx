@@ -55,7 +55,7 @@ export default function App() {
 
         {manHinh === MAN_HINH.CAI_DAT && <CaiDat quayLai={veChonKhoa} />}
 
-        {/* Hiện trên mọi màn hình: pháo hoa (theme Đèn lồng đỏ), báo bản mới, mất mạng */}
+        {/* Hiện trên mọi màn hình: pháo hoa (theme Hoa Đăng Dạ Nguyệt), báo bản mới, mất mạng */}
         <PhaoHoa />
         <DaiBanMoi />
         <ManMatMang />

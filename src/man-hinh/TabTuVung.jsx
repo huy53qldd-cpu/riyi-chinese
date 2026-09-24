@@ -349,7 +349,7 @@ function OTu({ muc, moChiTiet, daHoc = false, onThem = false, hienPinyin = false
       type="button"
       onClick={moChiTiet}
       aria-label={`${muc.tu}: ${moTa}`}
-      className={`border-vien bg-nen-noi active:bg-nhan-nhat relative flex min-h-[3.5rem] flex-col items-center justify-center gap-0.5 rounded-[var(--bo-goc)] border px-3 py-2.5 shadow-[0_1px_3px_var(--bong)] transition-colors`}
+      className={`o-hoc ${gonGang ? "" : "co-nhan"} border-vien bg-nen-noi active:bg-nhan-nhat relative flex min-h-[3.5rem] flex-col items-center justify-center gap-0.5 rounded-[var(--bo-goc)] border px-3 py-2.5 shadow-[0_1px_3px_var(--bong)] transition-colors`}
     >
       {gonGang ? (
         <span

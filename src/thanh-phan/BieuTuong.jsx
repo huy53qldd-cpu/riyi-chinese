@@ -77,7 +77,7 @@ const HINH = {
   "nghe": Volume2,
   // Thông báo nhắc học (Cài đặt)
   "nhac-hoc": Bell,
-  // Hiệu ứng pháo hoa (theme Đèn lồng đỏ)
+  // Hiệu ứng pháo hoa (theme Hoa Đăng Dạ Nguyệt)
   "phao-hoa": Sparkles,
   // Ô tìm kiếm (GĐ 12)
   "tim-kiem": Search,
@@ -213,7 +213,34 @@ export function DenLong({ co = 24, className = "" }) {
   );
 }
 
-/** Hoa mai 5 cánh: dấu "đã học" ở theme Đèn lồng đỏ. */
+/**
+ * Vầng trăng rằm (theme Hoa Đăng Dạ Nguyệt, quyết định 18.49): thay cho mặt trời
+ * mục tiêu. Mặt trăng tròn một màu (currentColor), vài vết mờ cho ra dáng trăng.
+ * Vầng hào quang bên ngoài do lớp .vang-trang trong index.css vẽ.
+ */
+export function VangTrang({ co = 24, className = "" }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width={rem(co)}
+      height={rem(co)}
+      aria-hidden="true"
+      focusable="false"
+      className={className}
+    >
+      <circle cx="12" cy="12" r="12" fill="currentColor" />
+      {/* Vết trên mặt trăng: màu nền nổi, rất mờ */}
+      <g fill="var(--nen-noi)" opacity="0.18">
+        <circle cx="8.6" cy="9" r="2.2" />
+        <circle cx="14.8" cy="14.6" r="2.8" />
+        <circle cx="15.6" cy="7.6" r="1.2" />
+        <circle cx="8.4" cy="15.4" r="1" />
+      </g>
+    </svg>
+  );
+}
+
+/** Hoa mai 5 cánh: dấu "đã học" ở theme Hoa Đăng Dạ Nguyệt. */
 export function HoaMai({ co = 16, className = "" }) {
   const canh = "M8 8 C6.2 6.3 5.9 3.6 7.3 2 C8.7 3.6 8.4 6.3 8 8 Z";
   return (

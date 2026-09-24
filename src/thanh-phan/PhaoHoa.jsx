@@ -2,7 +2,7 @@
    PHÁO HOA KHI BẤM (GĐ 11, quyết định 18.41)
    =============================================================================
 
-   Chỉ chạy ở theme "Đèn lồng đỏ". Bấm vào nút hay ô bấm được thì một chùm pháo
+   Chỉ chạy ở theme "Hoa Đăng Dạ Nguyệt" (mã den-long). Bấm vào nút hay ô bấm được thì một chùm pháo
    hoa nhỏ bung ra ĐÚNG chỗ ngón tay chạm; xong mục tiêu ngày thì bắn một chùm
    lớn ở giữa màn hình.
 

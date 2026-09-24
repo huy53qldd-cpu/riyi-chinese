@@ -25,6 +25,7 @@ import CaiDat from "./CaiDat.jsx";
 import { useNguoiDung } from "../nguoi-dung/NguoiDung.jsx";
 import ThanhTren from "../thanh-phan/ThanhTren.jsx";
 import ThanhDuoi from "../thanh-phan/ThanhDuoi.jsx";
+import DenLongTreo from "../thanh-phan/DenLongTreo.jsx";
 import { TAB } from "../thanh-phan/danhSachTab.jsx";
 import TabChuHan from "./TabChuHan.jsx";
 import TabNguPhap from "./TabNguPhap.jsx";
@@ -78,6 +79,9 @@ export default function KhungApp({ thoatKhoa }) {
           <TabKhamPha />
         )}
       </main>
+
+      {/* Đèn lồng treo lắc lư dưới thanh trên, chỉ hiện ở theme Hoa Đăng Dạ Nguyệt */}
+      <DenLongTreo />
 
       <ThanhDuoi tabDangMo={tabDangMo} doiTab={setTabDangMo} />
     </div>

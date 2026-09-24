@@ -32,7 +32,7 @@ const CAC_GIAO_DIEN = [
   { ma: "sang", nhan: "Sáng" },
   { ma: "toi", nhan: "Tối" },
   { ma: "anh-dao", nhan: "Hoa anh đào" },
-  { ma: "den-long", nhan: "Đèn lồng đỏ 🏮" },
+  { ma: "den-long", nhan: "Hoa Đăng Dạ Nguyệt 🏮" },
 ];
 
 const kieuNutVien =
@@ -118,7 +118,7 @@ export default function CaiDat({ quayLai, thoatKhoa }) {
           chon={(ma) => nd.doiCaiDat("giaoDien", ma)}
         />
 
-        {/* Pháo hoa chỉ có ở theme Đèn lồng đỏ nên công tắc cũng chỉ hiện ở đó */}
+        {/* Pháo hoa chỉ có ở theme Hoa Đăng Dạ Nguyệt nên công tắc cũng chỉ hiện ở đó */}
         {nd.caiDat.giaoDien === "den-long" && (
           <CongTat
             bieuTuong="phao-hoa"

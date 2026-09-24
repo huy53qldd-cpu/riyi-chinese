@@ -379,7 +379,7 @@ function OChuHan({ muc, moChiTiet, daHoc = false, onThem = false, hienPinyin = f
       type="button"
       onClick={moChiTiet}
       aria-label={`${muc.gianThe}: ${moTa}`}
-      className={`border-vien bg-nen-noi active:bg-nhan-nhat relative flex w-full flex-col items-center justify-center gap-0.5 rounded-[var(--bo-goc)] border shadow-[0_1px_3px_var(--bong)] transition-colors ${
+      className={`o-hoc ${gonGang ? "" : "co-nhan"} border-vien bg-nen-noi active:bg-nhan-nhat relative flex w-full flex-col items-center justify-center gap-0.5 rounded-[var(--bo-goc)] border shadow-[0_1px_3px_var(--bong)] transition-colors ${
         gonGang ? "aspect-square" : "px-1.5 py-2.5"
       }`}
     >

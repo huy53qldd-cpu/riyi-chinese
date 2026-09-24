@@ -12,7 +12,7 @@
    .chi-anh-dao trong index.css).
    ============================================================================= */
 
-import { DenLong, HoaAnhDao } from "./BieuTuong.jsx";
+import { HoaAnhDao, VangTrang } from "./BieuTuong.jsx";
 
 export default function MatTroi({ dat, lanVuaDat = 0, rong = 34, className = "" }) {
   const hieuUng = !dat
@@ -41,12 +41,13 @@ export default function MatTroi({ dat, lanVuaDat = 0, rong = 34, className = "" 
       >
         <HoaAnhDao co={Math.round(cao * 1.3)} />
       </span>
-      {/* Theme đèn lồng đỏ: chiếc đèn lồng, cùng hiệu ứng xám / toả sáng / nảy lên */}
+      {/* Theme Hoa Đăng Dạ Nguyệt (quyết định 18.49): vầng trăng rằm có hào
+          quang, cùng hiệu ứng xám / toả sáng / nảy lên */}
       <span
-        key={`den-${lanVuaDat}`}
-        className={`mat-troi chi-den-long shrink-0 text-[var(--mat-troi-dat)] ${hieuUng} ${className}`}
+        key={`trang-${lanVuaDat}`}
+        className={`mat-troi chi-den-long vang-trang shrink-0 text-[var(--mat-troi-dat)] ${hieuUng} ${className}`}
       >
-        <DenLong co={Math.round(cao * 1.4)} />
+        <VangTrang co={Math.round(cao * 1.3)} />
       </span>
     </>
   );

@@ -106,6 +106,9 @@
   --font-viet: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-trung: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   --font-nhat: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  /* Tiêu đề tiếng Việt: mặc định giống chữ thường; theme Hoa Đăng Dạ Nguyệt
+     đổi sang font có chân (xem cuối file) */
+  --font-tieu-de: var(--font-viet);
 
   /* ---------------------------------------------------------------------------
      CỠ CHỮ
@@ -221,83 +224,94 @@
   --canh-hoa-trang-tri: #f4a6bc;
 }
 
+
 /* =============================================================================
-   THEME ĐÈN LỒNG ĐỎ (GĐ 11, quyết định 18.41)
+   THEME HOA ĐĂNG DẠ NGUYỆT (GĐ 12, quyết định 18.49 — thay cho theme "Đèn lồng
+   đỏ" nền kem của quyết định 18.41; vẫn dùng mã data-theme="den-long" để cài
+   đặt đã lưu của người dùng cũ không bị mất)
    =============================================================================
 
-   Cảm hứng: đèn lồng ngày Tết và Trung thu. Khung và nút màu ĐỎ đèn lồng,
-   viền VÀNG kim, nền kem nhạt cho chữ Hán nhỏ và pinyin vẫn dễ đọc.
-   Bật bằng cách đặt data-theme="den-long" lên thẻ <html>.
+   Cảm hứng: đêm hội đèn lồng dưới trăng rằm. Nền là bầu trời đêm ám đỏ, thẻ
+   đỏ sẫm có chiều sâu (gradient chéo), viền vàng rất mờ, ánh trăng vàng hắt
+   xuống từ góc trên. Nút hành động màu đỏ rực, chữ nhấn (pinyin, số liệu)
+   màu vàng trăng.
 
-   Tương phản đã đo:
-     chữ chính trên nền        15.6 : 1
-     chữ phụ trên nền           8.5 : 1
-     chữ kem trên nút đỏ        5.5 : 1
-     báo sai (tím) trên thẻ     8.5 : 1
-     báo đúng (xanh lá)         5.2 : 1
-   Màu báo SAI đổi sang TÍM (không dùng đỏ) để không lẫn với màu đỏ của theme,
-   kèm dấu ✗ và rung nhẹ, không chỉ dựa vào màu.
+   KHÔNG dùng trắng thuần (#fff) ở đâu cả: chữ sáng nhất là trắng ngà ấm
+   #f5e6d3. Ngoại lệ duy nhất: nền tròn sau logo Google (Google bắt buộc).
 
-   Vàng #F2C14E chỉ đủ nổi khi đặt TRÊN NỀN ĐỎ. Viền của thẻ nằm trên nền kem
-   nên dùng vàng đậm hơn (--goc-vang-dam), nếu không gần như không thấy viền.
+   Tương phản đã đo (nơi khó nhất là thẻ sáng nhất #4a1414):
+     chữ chính  #f5e6d3   12.2 : 1
+     chữ phụ    #c9a385    6.5 : 1
+     vàng nhấn  #f5c563    9.3 : 1
+     chữ ngà trên nút đỏ   4.8 : 1   (chỗ đỏ sáng nhất của nút)
+     báo đúng   #8fe0b0    9.6 : 1
+     báo sai    #d9b8ff    8.7 : 1   (tím nhạt: không lẫn với đỏ của theme)
+     nút đỏ trên nền trang 3.1 : 1   (đủ nhận ra là một nút, còn có viền vàng)
+
+   Các màu có tên "lantern-*" là tên gọi chung để dùng xuyên suốt code (nối vào
+   Tailwind ở index.css: bg-lantern-gold, text-lantern-text...). Các biến vai
+   trò (--nen, --chu, --nhan...) trỏ vào chúng, nên component cũ tự đổi màu.
    ============================================================================= */
 :root[data-theme="den-long"] {
-  --goc-do: #c8102e; /* đỏ đèn lồng: nút, khung, điểm nhấn */
-  --goc-do-dam: #a00c24; /* lúc bấm giữ */
-  --goc-do-nhat: #fbe3e7; /* nền mờ của màu nhấn */
-  --goc-vang: #f2c14e; /* vàng kim: viền trên nền đỏ */
-  --goc-vang-sang: #ffd97a; /* viền lúc bấm */
-  --goc-vang-dam: #c9922a; /* viền trên nền kem */
-  --goc-nau-do: #3a1013; /* nâu đỏ: chữ */
+  /* --- Bảng màu gốc của theme --- */
+  --lantern-bg-tren: #2b0a0a; /* bầu trời đêm ám đỏ, phía trên */
+  --lantern-bg-duoi: #1a0505; /* phía dưới, tối hơn */
+  --lantern-card-sang: #4a1414; /* góc sáng của thẻ */
+  --lantern-card-toi: #2e0a0a; /* góc tối của thẻ */
+  --lantern-gold: #f5c563; /* vàng trăng: pinyin, số liệu, biểu tượng nhấn */
+  --lantern-gold-bright: #ffd700; /* vàng sáng: điểm nhấn mạnh nhất */
+  --lantern-text: #f5e6d3; /* trắng ngà ấm: chữ Hán, tiêu đề, chữ chính */
+  --lantern-text-mo: #c9a385; /* chữ phụ: nghĩa, mô tả */
+  --lantern-cta-sang: #c41e1e; /* nút hành động, đầu gradient */
+  --lantern-cta-toi: #8b0000; /* nút hành động, cuối gradient */
+  --lantern-vien: rgba(245, 197, 99, 0.15); /* viền vàng rất mờ của thẻ */
+  --lantern-vien-ro: rgba(245, 197, 99, 0.45); /* viền vàng khi bấm / đang chọn */
+  --lantern-glow: rgba(245, 197, 99, 0.2); /* vầng hào quang ánh trăng */
 
-  --nen: #fff6ec;
-  --nen-phu: #f7e7d3;
-  --nen-noi: #fffbf4;
+  /* Tiêu đề tiếng Việt dùng font có chân (Noto Serif, có đủ dấu tiếng Việt) */
+  --font-tieu-de: "Noto Serif", Georgia, "Times New Roman", serif;
 
-  --chu: var(--goc-nau-do);
-  --chu-mo: #6b3a3f;
-  --chu-tren-nhan: #fff6ec;
+  /* --- Vai trò: component cũ dùng các biến này nên tự đổi theo --- */
+  --nen: var(--lantern-bg-tren);
+  --nen-phu: #3a0e0e; /* nền vùng phụ, thanh tiến độ rỗng, ô trống */
+  --nen-noi: var(--lantern-card-toi); /* màu phẳng dự phòng; thẻ thật dùng gradient ở index.css */
 
-  --nhan: var(--goc-do);
-  --nhan-dam: var(--goc-do-dam);
-  --nhan-nhat: var(--goc-do-nhat);
+  --chu: var(--lantern-text);
+  --chu-mo: var(--lantern-text-mo);
+  --chu-tren-nhan: var(--lantern-text);
 
-  --vien: var(--goc-vang-dam);
-  --vien-dam: var(--goc-nau-do);
+  /* Màu nhấn là VÀNG TRĂNG (chữ nhấn, thanh tiến độ, viền đang chọn). Riêng
+     các NÚT (bg-nhan + text-chu-tren-nhan) được tô đỏ gradient ở index.css. */
+  --nhan: var(--lantern-gold);
+  --nhan-dam: var(--lantern-gold-bright);
+  --nhan-nhat: #5a1f19; /* nền mờ của màu nhấn: nhãn, ô đang chọn */
 
-  --mo-dan: rgba(58, 16, 19, 0.5);
-  --bong: rgba(58, 16, 19, 0.12);
+  --vien: var(--lantern-vien);
+  --vien-dam: var(--lantern-text-mo);
 
-  /* Đèn lồng mục tiêu nằm TRÊN THẺ ĐỎ nên phải là vàng kim, đỏ trên đỏ sẽ chìm */
-  --mat-troi-chua-dat: #e8cfb8;
-  --mat-troi-dat: var(--goc-vang);
+  --mo-dan: rgba(10, 2, 2, 0.7);
+  --bong: rgba(0, 0, 0, 0.45);
 
-  /* Báo đúng / sai: KHÔNG dùng đỏ cho "sai" vì cả app đang đỏ */
-  --dung: #1f7a4d;
-  --sai: #6b21a8;
-  --canh-bao: #8a5a00;
+  /* Vầng trăng mục tiêu: chưa đạt thì mờ, đạt rồi thì sáng vàng */
+  --mat-troi-chua-dat: #8a6a55;
+  --mat-troi-dat: var(--lantern-gold);
 
-  /* Biểu đồ tuần: đỏ và tím, phân biệt được cả khi mù màu đỏ */
-  --bieu-do-tuan-nay: var(--goc-do);
-  --bieu-do-tuan-truoc: #6b21a8;
+  /* Báo đúng / sai: bản SÁNG để nổi trên nền tối. "Sai" vẫn là tím (không dùng
+     đỏ vì cả theme đã đỏ), kèm dấu ✗ và rung nhẹ như trước. */
+  --dung: #8fe0b0;
+  --sai: #d9b8ff;
+  --canh-bao: #f0b35a;
 
-  --nguy-hiem-nhe: #1f7a4d;
-  --nguy-hiem-vua: #8a5a00;
-  --nguy-hiem-nang: #a00c24;
+  --bieu-do-tuan-nay: var(--lantern-gold);
+  --bieu-do-tuan-truoc: #d9b8ff;
 
-  --o-am-tiet: #fbe0c8;
+  --nguy-hiem-nhe: #8fe0b0;
+  --nguy-hiem-vua: #f0b35a;
+  --nguy-hiem-nang: #ff9a8a;
 
-  /* Màu chữ dùng TRONG thẻ đỏ (nền #c8102e). Đã đo tương phản:
-     kem 5.5 : 1 · chữ mờ 4.7 : 1 · vàng chữ 4.7 : 1 · đúng 4.9 : 1 · sai 5.0 : 1 */
-  --chu-mo-tren-do: #ffe0c8;
-  --vang-chu-tren-do: #ffe39b;
-  --dung-tren-do: #c8f5dc;
-  --sai-tren-do: #f6e6ff;
+  --o-am-tiet: #5a1a1a; /* ô âm tiết trong bảng pinyin */
 
-  /* Đèn lồng trang trí mờ ở góc màn hình */
-  --den-long-trang-tri: #d8563f;
-
-  /* Pháo hoa khi bấm (quyết định 18.41): vàng, đỏ, cam */
+  /* Pháo hoa khi bấm (quyết định 18.41): vàng, đỏ, cam — nổi rõ trên nền đêm */
   --phao-hoa-1: #ffd24a;
   --phao-hoa-2: #ff6b2c;
   --phao-hoa-3: #e8253f;

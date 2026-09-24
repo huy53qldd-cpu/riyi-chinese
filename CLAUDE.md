@@ -25,7 +25,9 @@ App học tiếng Trung (HSK 3.0, cấp 1-3) dành cho người Việt đã bi�
 - Chữ Hán tiếng Nhật có furigana, có nút bật/tắt trong Cài đặt, mặc định BẬT.
 - Pinyin hiển thị thanh điệu GỐC, không hiển thị thanh sau biến điệu.
 - Font: Noto Sans SC cho tiếng Trung, Noto Sans JP cho tiếng Nhật. Không dùng
-  chung một font.
+  chung một font. Riêng theme Hoa Đăng Dạ Nguyệt: TIÊU ĐỀ TIẾNG VIỆT (h1, h2)
+  dùng Noto Serif (font có chân, không có chữ Hán); chữ Hán vẫn là Noto Sans SC
+  (quyết định 18.49).
 - BẮT BUỘC gắn lang="zh-CN" cho đoạn tiếng Trung, lang="ja" cho đoạn tiếng Nhật.
 - Font phải subset theo ký tự thực dùng, không tải font CJK bản đầy đủ.
 - Cỡ chữ Hán lớn hơn chữ Latin.

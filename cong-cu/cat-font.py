@@ -214,6 +214,8 @@ def main():
     # Nunito chỉ dùng cho chữ Việt và pinyin, không cần chữ Hán và kana
     bo_latin = {c for c in bo if not HAN.match(c) and not KANA.match(c)}
     cat("nunito.ttf", "nunito-subset.woff2", bo_latin, "Nunito")
+    # Font có chân cho tiêu đề tiếng Việt, theme Hoa Đăng Dạ Nguyệt (quyết định 18.49)
+    cat("noto-serif.ttf", "noto-serif-subset.woff2", bo_latin, "Noto Serif")
 
     print()
     print("Xong. Font da nam trong public/fonts/")

@@ -26,6 +26,8 @@ DANH_SACH = [
     ("notosanssc/NotoSansSC%5Bwght%5D.ttf", "noto-sans-sc.ttf", "Noto Sans SC (tiếng Trung)"),
     ("notosansjp/NotoSansJP%5Bwght%5D.ttf", "noto-sans-jp.ttf", "Noto Sans JP (tiếng Nhật)"),
     ("nunito/Nunito%5Bwght%5D.ttf", "nunito.ttf", "Nunito (tiếng Việt và pinyin)"),
+    # Font có chân cho tiêu đề tiếng Việt ở theme Hoa Đăng Dạ Nguyệt (quyết định 18.49)
+    ("notoserif/NotoSerif%5Bwdth,wght%5D.ttf", "noto-serif.ttf", "Noto Serif (tiêu đề tiếng Việt)"),
 ]
 
 
