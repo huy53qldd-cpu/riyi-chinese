@@ -28,7 +28,15 @@ const CO_KHUNG = 280; // cạnh khung vuông, tính theo pixel
 
 /** Đọc một màu từ bảng màu (tokens.css) để không viết màu trực tiếp ở đây. */
 function docMau(ten) {
-  return getComputedStyle(document.documentElement).getPropertyValue(ten).trim();
+  // Đọc qua một thẻ tạm để trình duyệt tự giải các biến lồng nhau
+  // (ví dụ --vien: var(--lantern-vien)) ra một màu rgb()/rgba() cụ thể mà
+  // HanziWriter đọc được.
+  const tam = document.createElement("span");
+  tam.style.color = `var(${ten})`;
+  document.body.appendChild(tam);
+  const mau = getComputedStyle(tam).color;
+  tam.remove();
+  return mau;
 }
 
 /**
@@ -71,7 +79,7 @@ export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong }) {
       strokeAnimationSpeed: 1.2,
       delayBetweenStrokes: 250,
       strokeColor: docMau("--chu"),
-      outlineColor: docMau("--vien"),
+      outlineColor: docMau("--net-goi-y"), // khung mờ của chữ (tokens.css)
       drawingColor: docMau("--nhan"),
       highlightColor: docMau("--nhan"),
     });

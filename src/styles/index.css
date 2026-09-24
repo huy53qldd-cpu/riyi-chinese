@@ -221,6 +221,16 @@ rt {
   display: block;
 }
 
+/* Theme Hoa Đăng Dạ Nguyệt nền đêm: dùng logo chữ kem như theme Tối
+   (quyết định 18.52; trước đó lỡ dùng logo chữ đen, chữ Riyi biến mất) */
+:root[data-theme="den-long"] .logo-sang {
+  display: none;
+}
+
+:root[data-theme="den-long"] .logo-toi {
+  display: block;
+}
+
 .logo-anh-dao {
   display: none;
 }

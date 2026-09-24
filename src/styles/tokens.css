@@ -79,6 +79,9 @@
   --den-da-hoc-quang: rgba(34, 197, 94, 0.55);
 
   --vien: #ddd0b8; /* đường kẻ, viền thẻ */
+  /* Khung mờ của chữ trong ô tập viết (gợi ý nền để tô theo). Mặc định là màu
+     viền; theme nào có viền quá mờ thì đặt riêng (quyết định 18.52). */
+  --net-goi-y: var(--vien);
   --vien-dam: var(--goc-nau-nhat);
 
   --mo-dan: rgba(42, 31, 26, 0.45); /* lớp phủ mờ sau hộp thoại */
@@ -359,6 +362,9 @@
   --den-da-hoc-quang: rgba(110, 82, 38, 0.25);
 
   --vien: var(--lantern-vien);
+  /* Viền thẻ ở theme này chỉ đậm 16% nên khung chữ tập viết gần như vô hình:
+     dùng màu nâu đỏ đặc, thấy rõ trên thẻ tối mà vẫn nhạt hơn nét viết */
+  --net-goi-y: #7a4436;
   --vien-dam: var(--lantern-text-mo);
 
   --mo-dan: rgba(10, 2, 2, 0.7);
