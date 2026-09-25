@@ -20,6 +20,9 @@ import {
   tatThongBao,
   trinhDuyetHoTro,
 } from "../thong-bao/dangKyThongBao.js";
+import { guiThongBaoToanBo } from "../thong-bao/guiThongBaoToanBo.js";
+import { GIOI_HAN_THONG_BAO, laQuanTri } from "../thong-bao/quanTri.js";
+import HopThoaiXacNhan from "../thanh-phan/HopThoaiXacNhan.jsx";
 import BieuTuong, { DenLong, HoaAnhDao, LogoGoogle } from "../thanh-phan/BieuTuong.jsx";
 import ChuTrung from "../thanh-phan/ChuTrung.jsx";
 import ChuNhat from "../thanh-phan/ChuNhat.jsx";
@@ -138,6 +141,10 @@ export default function CaiDat({ quayLai, thoatKhoa }) {
 
       <MucThongBao nd={nd} />
 
+      {/* Chỉ tài khoản quản trị mới thấy (quyết định 18.56). Máy chủ vẫn tự
+          kiểm tra lại quyền khi gửi, không tin vào việc ẩn/hiện ở đây. */}
+      {laQuanTri(nd.nguoi?.uid) && <MucQuanTriThongBao />}
+
       <MucUngDung />
 
       {/* Đổi khoá học chuyển vào đây (quyết định 18.42), không còn ở dưới mỗi tab.
@@ -215,6 +222,118 @@ function MucThongBao({ nd }) {
             Trên iPhone, phải cài Riyi vào màn hình chính thì mới nhận được thông báo.
           </p>
         </>
+      )}
+    </section>
+  );
+}
+
+/* -----------------------------------------------------------------------------
+   QUẢN TRỊ: GỬI THÔNG BÁO CHO MỌI NGƯỜI (quyết định 18.56)
+   Soạn tiêu đề (bỏ trống thì là "Riyi") và nội dung, bấm Gửi thì hỏi lại một
+   lần (vì gửi tới tất cả, không thu hồi được), rồi máy chủ gửi ngay tới mọi
+   người đã bật thông báo nhắc học.
+   ----------------------------------------------------------------------------- */
+const kieuONhapQuanTri =
+  "border-vien bg-nen text-chu w-full rounded-[var(--bo-goc-nho)] border px-3 py-2.5 text-[length:max(16px,var(--co-chu-latin))] outline-none focus:border-[var(--nhan)] focus:ring-2 focus:ring-[var(--nhan-nhat)]";
+
+function MucQuanTriThongBao() {
+  const hienThongBao = useThongBao();
+  const [tieuDe, setTieuDe] = useState("");
+  const [than, setThan] = useState("");
+  const [hoiLai, setHoiLai] = useState(false);
+  const [dangGui, setDangGui] = useState(false);
+
+  const tieuDeGui = tieuDe.trim() || "Riyi";
+  const thanGui = than.trim();
+
+  async function gui() {
+    setHoiLai(false);
+    setDangGui(true);
+    const kq = await guiThongBaoToanBo(tieuDeGui, thanGui);
+    setDangGui(false);
+    if (!kq.thanhCong) {
+      hienThongBao(kq.thongBao, 5);
+      return;
+    }
+    const { soNguoi, daGui } = kq.ketQua;
+    hienThongBao(
+      soNguoi === 0
+        ? "Chưa có ai bật thông báo nên chưa gửi tới ai."
+        : `Đã gửi tới ${daGui} thiết bị của ${soNguoi} người.`,
+      5,
+    );
+    setTieuDe("");
+    setThan("");
+  }
+
+  return (
+    <section className="border-vien bg-nen-noi flex flex-col gap-3 rounded-[var(--bo-goc)] border p-4">
+      <h2 className="m-0 flex items-center gap-2 text-[length:var(--co-chu-latin)] font-bold">
+        <BieuTuong ten="gui-thong-bao" co={20} />
+        Gửi thông báo cho mọi người
+      </h2>
+      <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+        Chỉ tài khoản quản trị thấy mục này. Thông báo tới ngay mọi người đã bật
+        thông báo nhắc học; người chưa bật thông báo thì không nhận được.
+      </p>
+
+      <label className="flex flex-col gap-1.5">
+        <span className="text-[length:var(--co-chu-latin-nho)] font-semibold">Tiêu đề</span>
+        <input
+          type="text"
+          value={tieuDe}
+          onChange={(e) => setTieuDe(e.target.value)}
+          maxLength={GIOI_HAN_THONG_BAO.tieuDe}
+          placeholder="Riyi"
+          className={kieuONhapQuanTri}
+        />
+      </label>
+
+      <label className="flex flex-col gap-1.5">
+        <span className="flex justify-between text-[length:var(--co-chu-latin-nho)] font-semibold">
+          Nội dung
+          <span className="text-chu-mo font-normal tabular-nums">
+            {than.length}/{GIOI_HAN_THONG_BAO.than}
+          </span>
+        </span>
+        <textarea
+          value={than}
+          onChange={(e) => setThan(e.target.value)}
+          maxLength={GIOI_HAN_THONG_BAO.than}
+          rows={4}
+          placeholder="Ví dụ: Riyi vừa có bài học mới, vào học ngay nhé!"
+          className={`${kieuONhapQuanTri} resize-y`}
+        />
+      </label>
+
+      <button
+        type="button"
+        onClick={() => setHoiLai(true)}
+        disabled={!thanGui || dangGui}
+        className="border-nhan bg-nhan text-chu-tren-nhan inline-flex items-center gap-1.5 self-start rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold disabled:opacity-45"
+      >
+        <BieuTuong ten="gui-thong-bao" co={16} />
+        {dangGui ? "Đang gửi..." : "Gửi cho mọi người"}
+      </button>
+
+      {hoiLai && (
+        <HopThoaiXacNhan
+          tieuDe="Gửi thông báo cho mọi người?"
+          noiDung={
+            <>
+              <p className="m-0 mb-2">
+                Thông báo này sẽ tới ngay mọi người đã bật thông báo, gửi rồi thì
+                không thu hồi được:
+              </p>
+              <p className="m-0 font-bold">{tieuDeGui}</p>
+              <p className="m-0 whitespace-pre-line">{thanGui}</p>
+            </>
+          }
+          nutXacNhan="Gửi ngay"
+          nutHuy="Để sau"
+          khiXacNhan={gui}
+          khiHuy={() => setHoiLai(false)}
+        />
       )}
     </section>
   );

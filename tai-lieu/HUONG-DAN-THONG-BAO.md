@@ -11,10 +11,18 @@ Sau khi làm xong, mỗi ngày app sẽ gửi 3 thông báo theo giờ Việt Na
 | 14h | "Riyi – Tiến độ hôm nay: ...%" kèm câu động viên theo mức % |
 | 21h | Như 14h nhưng theo chủ đề "điều học trước khi ngủ sẽ theo bạn vào giấc mơ" |
 
-**Vì sao phải làm mấy bước này?** Firebase gói Spark (miễn phí) không chạy được
-Cloud Functions, nên người "bấm nút gửi" đúng giờ là GitHub Actions. Nó cần
-chìa khoá để thay mặt app gửi thông báo — chìa khoá đó chính là hai thứ ta lấy
-ở bước 1 và bước 2. Tất cả đều miễn phí, không cần gắn thẻ tín dụng.
+> **CẬP NHẬT (quyết định 18.56).** GitHub Actions hay chạy trễ 3–5 tiếng nên
+> thông báo tới sai giờ (có hôm 1 giờ sáng). Chủ dự án đã chọn nâng Firebase lên
+> **gói Blaze** để dùng **Cloud Functions**: gửi ĐÚNG giờ 7h / 14h / 21h, và tài
+> khoản quản trị gửi được thông báo tự soạn bất kỳ lúc nào (Cài đặt → "Gửi
+> thông báo cho mọi người"). Lịch tự chạy trên GitHub đã bỏ; bước 2–3 bên dưới
+> (service account, GitHub Secret) nay chỉ cần cho công cụ chạy thử bằng tay.
+> Xem mục **"Nâng gói Blaze và đưa hàm lên máy chủ"** ở cuối tài liệu.
+
+**Vì sao phải làm mấy bước này?** (Viết lúc còn gói Spark.) Firebase gói Spark
+(miễn phí) không chạy được Cloud Functions, nên người "bấm nút gửi" đúng giờ là
+GitHub Actions. Nó cần chìa khoá để thay mặt app gửi thông báo — chìa khoá đó
+chính là hai thứ ta lấy ở bước 1 và bước 2.
 
 ---
 
@@ -128,3 +136,36 @@ Muốn thêm năm 2028 trở đi: sửa dòng `NAM = [2026, 2027]` trong
 
 Thông báo đã gửi mà người dùng gỡ app hoặc chặn quyền thì mã thiết bị hỏng;
 bộ gửi tự xoá mã đó, không cần làm gì.
+
+---
+
+## Nâng gói Blaze và đưa hàm lên máy chủ (quyết định 18.56)
+
+Chỉ làm MỘT lần.
+
+1. Mở https://console.firebase.google.com/project/riyi-chinese/usage/details
+2. Bấm **Modify plan** (hoặc "Upgrade") → chọn **Blaze (Pay as you go)**.
+3. Chọn hoặc tạo tài khoản thanh toán Google Cloud, nhập thẻ.
+4. Khi Firebase hỏi **ngân sách (budget)**, đặt mức thấp, ví dụ **1 USD** hoặc
+   **25.000 đ**: vượt mức là Google gửi email cảnh báo. (Cảnh báo chứ không
+   tự dừng, nhưng với số người dùng hiện tại gần như không tốn gì: Cloud
+   Functions và Cloud Scheduler đều có phần miễn phí hằng tháng lớn hơn nhiều
+   so với nhu cầu của Riyi.)
+5. Báo Claude. Claude chạy `npm run trien-khai-ham` để đưa 4 hàm lên máy chủ
+   (vùng Singapore, gần Việt Nam nhất):
+
+| Hàm | Việc |
+|-----|------|
+| `nhacHoc7h`, `nhacHoc14h`, `nhacHoc21h` | Gửi nhắc học đúng giờ Việt Nam |
+| `guiThongBaoToanBo` | Nút "Gửi cho mọi người" trong Cài đặt (chỉ tài khoản quản trị) |
+
+Lần deploy đầu, Firebase tự bật các dịch vụ Google Cloud cần thiết (Cloud
+Functions, Cloud Build, Artifact Registry, Cloud Run, Cloud Scheduler), có thể mất
+vài phút.
+
+**Ai là quản trị?** Chỉ tài khoản Google của chủ dự án, ghi trong code
+bằng mã tài khoản (UID) ở `src/thong-bao/quanTri.js`. Máy chủ tự kiểm tra lại
+mã này mỗi lần gửi, nên người khác có sửa app cũng không gửi được.
+
+**Ai nhận được?** Mọi người ĐÃ BẬT "Nhắc học mỗi ngày" trong Cài đặt. Người chưa
+bật (chưa cho phép thông báo trên máy) thì trình duyệt không cho gửi tới họ.

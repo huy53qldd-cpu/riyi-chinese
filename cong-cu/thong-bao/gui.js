@@ -2,9 +2,10 @@
    GỬI THÔNG BÁO NHẮC HỌC (GĐ 11, quyết định 18.40)
    =============================================================================
 
-   Firebase gói Spark KHÔNG chạy được Cloud Functions, nên người bấm nút "gửi"
-   là GitHub Actions: mỗi ngày chạy 3 lần (7h, 14h, 21h giờ Việt Nam), đọc
-   Firestore rồi gửi qua Firebase Cloud Messaging. Toàn bộ đều miễn phí.
+   TỪ QUYẾT ĐỊNH 18.56: việc gửi hằng ngày do Cloud Functions làm, đúng giờ
+   (functions/index.js). File này chỉ còn là CÔNG CỤ THỬ chạy tay trên máy hoặc
+   qua nút "Run workflow" của GitHub Actions (đã bỏ lịch tự chạy). Nó đọc
+   Firestore rồi gửi qua Firebase Cloud Messaging, cùng nội dung với máy chủ.
 
    CẦN HAI BÍ MẬT (GitHub Secrets), xem tai-lieu/HUONG-DAN-THONG-BAO.md:
      FIREBASE_SERVICE_ACCOUNT  nội dung file JSON của service account

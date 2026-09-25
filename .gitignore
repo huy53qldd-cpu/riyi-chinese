@@ -49,3 +49,6 @@ cong-cu/nguon-mo/
 
 # --- Bộ nét chữ Nhật KanjiVG tải về (273 MB, chỉ để công cụ đọc) ---
 kanji_kakijun/
+
+# --- Bản chép tự sinh cho Cloud Functions (functions/chuanBi.js), sinh lại mỗi lần deploy ---
+functions/chung/

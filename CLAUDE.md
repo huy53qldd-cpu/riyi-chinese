@@ -15,7 +15,10 @@ App học tiếng Trung (HSK 3.0, cấp 1-3) dành cho người Việt đã bi�
 ## Nền tảng (không được đổi)
 
 - Vite + React + Tailwind CSS
-- Firebase: Authentication (CHỈ Google Sign-In), Firestore, Hosting. Gói Spark.
+- Firebase: Authentication (CHỈ Google Sign-In), Firestore, Hosting, Cloud Functions.
+  Gói Blaze (đổi từ Spark ở quyết định 18.56, CHỈ để chạy Cloud Functions gửi
+  thông báo đúng giờ và cho quản trị gửi thông báo tức thì; không dùng thêm dịch
+  vụ trả phí nào khác nếu chủ dự án chưa đồng ý).
 - PWA cài được vào màn hình chính. KHÔNG làm chức năng chạy offline.
 
 ## Nguyên tắc hiển thị (bắt buộc, mọi màn hình)

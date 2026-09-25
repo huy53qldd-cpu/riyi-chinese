@@ -76,8 +76,9 @@ self.addEventListener("push", (suKien) => {
   suKien.waitUntil(
     self.registration.showNotification(tin.tieuDe || "Riyi", {
       body: tin.than || "",
-      icon: "/hinh/bieu-tuong-192.png",
-      badge: "/hinh/bieu-tuong-192.png",
+      // Biểu tượng app (trước đây trỏ nhầm file bieu-tuong-192.png không có thật)
+      icon: "/hinh/icon-192.png",
+      badge: "/hinh/icon-192.png",
       lang: "vi",
       tag: "riyi-nhac-hoc", // thông báo mới thay thông báo cũ, không dồn đống
       data: { duongDan: tin.duongDan || "/" },

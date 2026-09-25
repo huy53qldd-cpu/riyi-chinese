@@ -60,6 +60,7 @@ import {
   UserPlus,
   X,
   Bell,
+  Megaphone,
 } from "lucide-react";
 
 const HINH = {
@@ -78,6 +79,8 @@ const HINH = {
   "nghe": Volume2,
   // Thông báo nhắc học (Cài đặt)
   "nhac-hoc": Bell,
+  // Quản trị gửi thông báo cho mọi người (Cài đặt, quyết định 18.56)
+  "gui-thong-bao": Megaphone,
   // Hiệu ứng pháo hoa (theme Hoa Đăng Dạ Nguyệt)
   "phao-hoa": Sparkles,
   // Ô tìm kiếm (GĐ 12)
