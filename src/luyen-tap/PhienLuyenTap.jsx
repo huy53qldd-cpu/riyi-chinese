@@ -22,6 +22,7 @@ import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
 import KhungTapViet from "../thanh-phan/KhungTapViet.jsx";
 import { kieu } from "./tienIch.js";
 import BieuTuong from "../thanh-phan/BieuTuong.jsx";
+import NutChuyenChu from "../thanh-phan/NutChuyenChu.jsx";
 
 /**
  * @param {string}   tieuDe      Tên lượt luyện, ví dụ "Trắc nghiệm từ vựng"
@@ -192,33 +193,6 @@ export default function PhienLuyenTap({
         </button>
       )}
     </section>
-  );
-}
-
-/* -----------------------------------------------------------------------------
-   NÚT CHUYỂN CHỮ CỦA BƯỚC TẬP VIẾT (quyết định 18.54)
-   Nằm bên phải thanh cố định phía trên thanh tab dưới (KhungTapViet vẽ thanh
-   đó), đúng chỗ nút "Bắt đầu học ngay". Còn chữ sau thì là "Chuyển chữ tiếp
-   theo" (màu nút hành động); chữ cuối là "Hoàn thành" với màu khác (lớp
-   .nut-hoan-thanh ở index.css). Viết xong chữ hiện tại mới bấm được, để bước
-   Tập viết vẫn tính đúng từng chữ. Bước học có "hỏi lại khi sai": chữ phải nhờ
-   gợi ý được thêm vào cuối, nên nút tự đổi từ "Hoàn thành" về "Chuyển chữ
-   tiếp theo" khi cần.
-   ----------------------------------------------------------------------------- */
-function NutChuyenChu({ conCau, daViet, chuyen }) {
-  return (
-    <button
-      type="button"
-      onClick={chuyen}
-      disabled={!daViet}
-      title={daViet ? undefined : "Viết xong chữ này để chuyển tiếp"}
-      className={`inline-flex items-center gap-2 rounded-[var(--bo-goc-tron)] border py-3 pr-4 pl-5 text-[length:var(--co-chu-latin)] font-bold shadow-[0_4px_16px_var(--bong)] disabled:opacity-45 ${
-        conCau ? "border-nhan bg-nhan text-chu-tren-nhan" : "nut-hoan-thanh"
-      }`}
-    >
-      {conCau ? "Chuyển chữ tiếp theo" : "Hoàn thành"}
-      <BieuTuong ten={conCau ? "sau" : "kiem-tra"} co={18} />
-    </button>
   );
 }
 
@@ -497,6 +471,8 @@ function CauTapViet({ cau, traLoi, nutChuyen }) {
           traLoi(dung);
         }}
       />
+      {/* Chừa chỗ cuối trang để thanh cố định không che nội dung khi cuộn */}
+      <div className="h-16" aria-hidden="true" />
     </>
   );
 }

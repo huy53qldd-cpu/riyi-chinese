@@ -203,8 +203,8 @@ export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong, nutChuyen =
 
       {nutChuyen ? (
         <>
-          {/* Chừa chỗ cuối trang để thanh cố định không che nội dung khi cuộn */}
-          <div className="h-16" aria-hidden="true" />
+          {/* Thanh cố định. Trang cha tự chừa chỗ ở CUỐI trang (khoảng h-16)
+              để thanh này không che nội dung khi cuộn xuống hết. */}
           <div
             className="fixed inset-x-0 z-40 flex items-center justify-between gap-2 px-4"
             style={{ bottom: "calc(var(--cao-thanh-duoi) + env(safe-area-inset-bottom) + 0.625rem)" }}

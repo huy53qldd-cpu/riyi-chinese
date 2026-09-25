@@ -45,6 +45,7 @@ import ChuNhat from "../thanh-phan/ChuNhat.jsx";
 import ChuTrung, { ghepAmTiet } from "../thanh-phan/ChuTrung.jsx";
 import HopThoaiXacNhan from "../thanh-phan/HopThoaiXacNhan.jsx";
 import KhungTapViet from "../thanh-phan/KhungTapViet.jsx";
+import NutChuyenChu from "../thanh-phan/NutChuyenChu.jsx";
 import MucChuaKiemTra from "../thanh-phan/MucChuaKiemTra.jsx";
 import NutDaHoc from "../thanh-phan/NutDaHoc.jsx";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
@@ -109,7 +110,15 @@ export default function TabChuHan() {
   const { du, loi, bai, noiDung } = useBaiHomNay();
   const { batDau, manHinh } = useNhiemVu(noiDung, du, bai?.so);
   const [moToanBo, setMoToanBo] = useState(false);
+  // Chữ đang mở trang chi tiết, cùng DANH SÁCH đã mở nó (chữ hôm nay, toàn
+  // bộ chữ của cấp, hay kết quả tìm kiếm), để nút "Chuyển chữ tiếp theo" đi
+  // đúng thứ tự của danh sách đó (quyết định 18.55)
   const [chuDangMo, setChuDangMo] = useState(null);
+  const [dsDangMo, setDsDangMo] = useState([]);
+  function moChu(muc, ds) {
+    setChuDangMo(muc);
+    setDsDangMo(ds);
+  }
   const [soHien, setSoHien] = useState(SO_THE_MOI_LAN);
   const [timKiem, setTimKiem] = useState("");
   // Đang chờ xác nhận đổi mục tiêu sang cấp này (null = không hỏi gì)
@@ -127,11 +136,23 @@ export default function TabChuHan() {
   const chuaXongHomNay = chuHomNay.filter((c) => !nd.daHoc[c.id]);
 
   if (chuDangMo) {
+    const viTri = dsDangMo.findIndex((c) => c.id === chuDangMo.id);
+    const chuSau = viTri >= 0 ? (dsDangMo[viTri + 1] ?? null) : null;
     return (
       <ChiTietChuHan
+        key={chuDangMo.id}
         muc={chuDangMo}
         chuaXongHomNay={chuaXongHomNay}
         quayLai={() => setChuDangMo(null)}
+        conChuSau={Boolean(chuSau)}
+        chuyenChu={() => {
+          if (chuSau) {
+            setChuDangMo(chuSau);
+            window.scrollTo(0, 0);
+          } else {
+            setChuDangMo(null);
+          }
+        }}
       />
     );
   }
@@ -218,7 +239,7 @@ export default function TabChuHan() {
                   muc={muc}
                   daHoc={Boolean(nd.daHoc[muc.id])}
                   gonGang
-                  moChiTiet={() => setChuDangMo(muc)}
+                  moChiTiet={() => moChu(muc, ketQuaTim)}
                 />
               </li>
             ))}
@@ -251,7 +272,7 @@ export default function TabChuHan() {
                       daHoc={Boolean(nd.daHoc[muc.id])}
                       onThem={noiDung.them.has(muc.id)}
                       hienPinyin
-                      moChiTiet={() => setChuDangMo(muc)}
+                      moChiTiet={() => moChu(muc, chuHomNay)}
                     />
                   </li>
                 ))}
@@ -292,7 +313,7 @@ export default function TabChuHan() {
                       muc={muc}
                       daHoc={Boolean(nd.daHoc[muc.id])}
                       gonGang
-                      moChiTiet={() => setChuDangMo(muc)}
+                      moChiTiet={() => moChu(muc, hienThi)}
                     />
                   </li>
                 ))}
@@ -445,12 +466,14 @@ function NutNghePinyin({ pinyin, co = 32 }) {
    ----------------------------------------------------------------------------- */
 const kieuKhung = "border-vien bg-nen-noi rounded-[var(--bo-goc-lon)] border p-4";
 
-function ChiTietChuHan({ muc, quayLai, chuaXongHomNay = [] }) {
+function ChiTietChuHan({ muc, quayLai, chuaXongHomNay = [], conChuSau = false, chuyenChu }) {
   const { amDoc, soSanhTuDang: ss } = muc;
   const pinyinChinh = amChinh(amDoc.pinyin)?.am ?? "";
   // Tập viết chữ giản thể (Trung) hay chữ Nhật: hai bộ nét có thứ tự khác nhau
   const [boViet, setBoViet] = useState("trung");
   const [canhBaoDong, setCanhBaoDong] = useState(false);
+  // Đã viết xong chữ này chưa (Trung hay Nhật đều tính), để mở nút chuyển chữ
+  const [daViet, setDaViet] = useState(false);
   const coTiengNhat = amDoc.amOn.length > 0 || amDoc.amKun.length > 0;
   const tenBo = tenBoThu(muc.boThu);
 
@@ -649,15 +672,23 @@ function ChiTietChuHan({ muc, quayLai, chuaXongHomNay = [] }) {
               </button>
             ))}
         </div>
+        {/* Viết xong mới bấm được nút chuyển chữ (quyết định 18.55). Chữ cuối
+            của danh sách thì nút là "Hoàn thành": về thẳng danh sách, không
+            hỏi lại "Chưa hoàn thành" vì người học vừa đi hết lượt. */}
         <KhungTapViet
           idChu={muc.id}
           chu={boViet === "trung" ? muc.gianThe : muc.tuDangNhat}
           ngonNgu={boViet}
+          khiXong={() => setDaViet(true)}
+          nutChuyen={<NutChuyenChu conCau={conChuSau} daViet={daViet} chuyen={chuyenChu} />}
         />
       </div>
 
       {/* --- Mục chưa được người kiểm tra, hiện ra để chủ dự án rà lại --- */}
       <MucChuaKiemTra danhSach={meoNhoCangKiemTra} />
+
+      {/* Chừa chỗ cuối trang cho thanh tập viết cố định (quyết định 18.55) */}
+      <div className="h-16" aria-hidden="true" />
 
       {/* --- Cảnh báo rời trang khi chữ hôm nay chưa xong (quyết định 18.42) --- */}
       {canhBaoDong && (
