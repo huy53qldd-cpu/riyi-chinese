@@ -3,9 +3,12 @@
    =============================================================================
 
    Dùng thư viện HanziWriter để:
-     - Xem mẫu: chữ tự vẽ lại từng nét theo đúng thứ tự
-     - Tập viết: người dùng vẽ từng nét bằng ngón tay, viết sai nhiều lần thì
-       thư viện gợi ý nét đúng
+     - Tập viết: VÀO LÀ VIẾT ĐƯỢC NGAY (quyết định 18.54), chữ hiện mờ sẵn trong
+       khung để tô theo, không phải bấm nút "Tập viết" nữa. Người dùng vẽ từng
+       nét bằng ngón tay, viết sai nhiều lần thì thư viện gợi ý nét đúng
+     - Xem mẫu: chữ tự vẽ lại từng nét theo đúng thứ tự, vẽ xong thì tự quay
+       về chế độ viết
+     - Viết lại: xoá nét đã viết, viết lại từ đầu
 
    Dữ liệu nét nằm trong public/du-lieu/net-viet/ (do npm run dung-net-viet tạo):
      trung/<chữ>.json  nét của chữ giản thể
@@ -44,15 +47,25 @@ function docMau(ten) {
  * @param {string} chu       Chữ cần tập viết
  * @param {string} ngonNgu   "trung" hoặc "nhat", quyết định dùng bộ nét nào
  * @param {Function} [khiXong]  Gọi khi viết xong, nhận true nếu KHÔNG cần gợi ý
+ * @param {ReactNode} [nutChuyen] Nút chuyển chữ của bước Tập viết (quyết định
+ *   18.54). Có nút này thì Xem mẫu / Viết lại thu thành 2 nút tròn chỉ có biểu
+ *   tượng, cùng nút chuyển nằm trên một thanh CỐ ĐỊNH phía trên thanh tab dưới
+ *   (nút chuyển bên phải), để không nút nào che nút nào trên màn hình thấp.
  */
-export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong }) {
+export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong, nutChuyen = null }) {
   const nd = useNguoiDung();
   const oVe = useRef(null);
   const nguoiViet = useRef(null);
   const daCanGoiY = useRef(false); // có nét nào sai tới mức hiện gợi ý chưa
-  // Trạng thái: cho-du-lieu | san-sang | dang-xem | dang-tap | xong | khong-co
+  // Trạng thái: cho-du-lieu | dang-xem | dang-tap | xong | khong-co
   const [trangThai, setTrangThai] = useState("cho-du-lieu");
   const [thongBao, setThongBao] = useState("");
+  // Hàm tapViet của lần vẽ mới nhất, để khi tải xong nét (xảy ra sau) thì gọi
+  // đúng bản đang dùng props mới nhất
+  const tapVietMoiNhat = useRef(null);
+  useEffect(() => {
+    tapVietMoiNhat.current = tapViet;
+  });
 
   useEffect(() => {
     const oChua = oVe.current;
@@ -72,9 +85,11 @@ export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong }) {
           .then(khiXong)
           .catch(khiLoi);
       },
-      onLoadCharDataSuccess: () => conSong && setTrangThai("san-sang"),
+      // Tải xong nét thì vào chế độ viết luôn
+      onLoadCharDataSuccess: () => conSong && tapVietMoiNhat.current?.(),
       onLoadCharDataError: () => conSong && setTrangThai("khong-co"),
-      showOutline: true, // khung mờ của chữ, là "gợi ý" nền
+      showCharacter: false, // không hiện chữ đậm lúc mở, chỉ hiện khung mờ
+      showOutline: true, // khung mờ của chữ, là "gợi ý" nền để tô theo
       showHintAfterMisses: 3, // viết sai 3 lần một nét thì gợi ý nét đúng
       strokeAnimationSpeed: 1.2,
       delayBetweenStrokes: 250,
@@ -100,15 +115,14 @@ export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong }) {
     setTrangThai("dang-xem");
     setThongBao("Đang vẽ mẫu, nhìn thứ tự và hướng từng nét.");
     nguoi.animateCharacter({
-      onComplete: () => {
-        setTrangThai("san-sang");
-        setThongBao("");
-      },
+      // Vẽ mẫu xong thì tự quay về chế độ viết
+      onComplete: () => nguoiViet.current && tapVietMoiNhat.current?.(),
     });
   }
 
   function tapViet() {
     const nguoi = nguoiViet.current;
+    if (!nguoi) return;
     setTrangThai("dang-tap");
     setThongBao("Dùng ngón tay viết nét đầu tiên.");
     daCanGoiY.current = false;
@@ -147,6 +161,10 @@ export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong }) {
   const rangBuoc = trangThai === "cho-du-lieu" || khongCo;
   const nutChung =
     "inline-flex items-center gap-1.5 rounded-[var(--bo-goc-tron)] border px-4 py-2 text-[length:var(--co-chu-latin-nho)] font-semibold disabled:opacity-40";
+  // Nút tròn chỉ có biểu tượng, trên thanh cố định (có nền để nổi trên nội dung)
+  const nutTron =
+    "border-vien bg-nen-noi inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full border shadow-[0_4px_16px_var(--bong)] disabled:opacity-40";
+  const tat = rangBuoc || trangThai === "dang-xem";
 
   return (
     <div className="flex flex-col items-center gap-3">
@@ -183,28 +201,38 @@ export default function KhungTapViet({ idChu, chu, ngonNgu, khiXong }) {
         </p>
       )}
 
-      <div className="flex gap-2">
-        <button
-          type="button"
-          onClick={xemMau}
-          disabled={rangBuoc || trangThai === "dang-xem"}
-          className={`border-vien ${nutChung}`}
-        >
-          <BieuTuong ten="xem-mau" co={16} />
-          Xem mẫu
-        </button>
-        <button
-          type="button"
-          onClick={tapViet}
-          disabled={rangBuoc || trangThai === "dang-xem"}
-          className={`border-nhan bg-nhan text-chu-tren-nhan ${nutChung}`}
-        >
-          <BieuTuong ten="tap-viet" co={16} />
-          {trangThai === "dang-tap" || trangThai === "xong"
-            ? "Viết lại"
-            : "Tập viết"}
-        </button>
-      </div>
+      {nutChuyen ? (
+        <>
+          {/* Chừa chỗ cuối trang để thanh cố định không che nội dung khi cuộn */}
+          <div className="h-16" aria-hidden="true" />
+          <div
+            className="fixed inset-x-0 z-40 flex items-center justify-between gap-2 px-4"
+            style={{ bottom: "calc(var(--cao-thanh-duoi) + env(safe-area-inset-bottom) + 0.625rem)" }}
+          >
+            <div className="flex gap-2">
+              <button type="button" onClick={xemMau} disabled={tat} aria-label="Xem mẫu" title="Xem mẫu" className={nutTron}>
+                <BieuTuong ten="xem-mau" co={20} />
+              </button>
+              <button type="button" onClick={tapViet} disabled={tat} aria-label="Viết lại" title="Viết lại" className={nutTron}>
+                <BieuTuong ten="lam-lai" co={20} />
+              </button>
+            </div>
+            {nutChuyen}
+          </div>
+        </>
+      ) : (
+        <div className="flex gap-2">
+          <button type="button" onClick={xemMau} disabled={tat} className={`border-vien ${nutChung}`}>
+            <BieuTuong ten="xem-mau" co={16} />
+            Xem mẫu
+          </button>
+          {/* Nút phụ (viền): vào là viết được ngay, nút này chỉ để viết lại */}
+          <button type="button" onClick={tapViet} disabled={tat} className={`border-vien ${nutChung}`}>
+            <BieuTuong ten="lam-lai" co={16} />
+            Viết lại
+          </button>
+        </div>
+      )}
     </div>
   );
 }

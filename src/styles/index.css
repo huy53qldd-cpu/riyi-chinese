@@ -415,6 +415,22 @@ rt {
   border-color: var(--nen-nut);
 }
 
+/* NÚT "HOÀN THÀNH" ở chữ cuối của bước Tập viết (quyết định 18.54): màu khác
+   nút hành động thường. Theme Hoa Đăng: vàng trăng gradient xuống hổ phách. */
+.nut-hoan-thanh {
+  background-color: var(--nen-nut-xong);
+  border-color: var(--nen-nut-xong);
+  color: var(--chu-tren-nut-xong);
+}
+
+:root[data-theme="den-long"] .nut-hoan-thanh {
+  background-image: linear-gradient(135deg, var(--lantern-gold-bright), var(--lantern-tertiary));
+  border-color: var(--lantern-trang-tam);
+  box-shadow:
+    0 4px 16px rgba(245, 158, 11, 0.4),
+    0 0 12px rgba(253, 230, 138, 0.3);
+}
+
 /* -----------------------------------------------------------------------------
    ĐÈN TRẠNG THÁI TRÊN Ô (quyết định 18.50, mọi theme — xem DenTrangThai.jsx)
    Một ngọn đèn tròn ở giữa mép trên ô: lõi màu, một đốm sáng nhỏ lệch trái

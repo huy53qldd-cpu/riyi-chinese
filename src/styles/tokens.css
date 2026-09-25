@@ -63,6 +63,11 @@
      Cam thương hiệu vẫn dùng cho mặt trời, thanh tiến độ (quyết định 18.50).
      Theme Tối dùng chung giá trị này. */
   --nen-nut: #c2410c;
+  /* Nút "Hoàn thành" ở chữ cuối của bước Tập viết (quyết định 18.54): màu KHÁC
+     nút hành động thường để người học biết đây là bước kết thúc. Xanh lá, chữ
+     kem 4.8 : 1; theme Sáng, Tối, Hoa anh đào dùng chung. */
+  --nen-nut-xong: #15803d;
+  --chu-tren-nut-xong: #fffaf0;
 
   --nhan: var(--goc-cam); /* màu nhấn: nút chính, mặt trời, thanh tiến độ */
   --nhan-dam: var(--goc-cam-dam); /* lúc bấm giữ */
@@ -346,6 +351,10 @@
   --chu-mo: var(--lantern-text-mo);
   --chu-tren-nhan: var(--lantern-chu-tren-do);
   --nen-nut: var(--lantern-cta-toi); /* nút đỏ gradient, xem index.css */
+  /* Nút "Hoàn thành": vàng trăng (gradient ở index.css), chữ nâu đêm 5.8 : 1
+     ở chỗ tối nhất, khác hẳn nút đỏ */
+  --nen-nut-xong: var(--lantern-gold-bright);
+  --chu-tren-nut-xong: var(--lantern-trang-chu);
 
   /* Màu nhấn là VÀNG TRĂNG (chữ nhấn, thanh tiến độ, viền đang chọn). Riêng
      các NÚT (bg-nhan + text-chu-tren-nhan) được tô đỏ gradient ở index.css. */
