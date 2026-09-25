@@ -27,8 +27,7 @@
     "dung-bang-pinyin": "python cong-cu/dung-bang-pinyin.py",
     "dung-ngay-dac-biet": "python cong-cu/dung-ngay-dac-biet.py",
     "thu-thong-bao": "node --test cong-cu/thong-bao/thu.test.js",
-    "trien-khai": "vite build && firebase deploy --only hosting,firestore",
-    "trien-khai-ham": "firebase deploy --only functions"
+    "trien-khai": "vite build && firebase deploy --only hosting,firestore"
   },
   "dependencies": {
     "firebase": "^12.19.0",

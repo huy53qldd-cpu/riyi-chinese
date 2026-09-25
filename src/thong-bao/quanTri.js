@@ -7,9 +7,9 @@
 
    File này dùng ở hai nơi:
      - App (CaiDat.jsx): chỉ để QUYẾT ĐỊNH CÓ HIỆN khung gửi thông báo hay không.
-     - Máy chủ (functions/index.js, được chép sang khi deploy): KIỂM TRA QUYỀN
-       THẬT SỰ. Ai sửa app để hiện khung này lên cũng không gửi được, vì máy
-       chủ tự kiểm tra lại mã tài khoản của người gọi.
+     - KIỂM TRA QUYỀN THẬT SỰ nằm ở firestore.rules (hàng chờ thongBaoCho): mã
+       UID ở đó PHẢI TRÙNG mã dưới đây. Ai sửa app để hiện khung này lên cũng
+       không gửi được, vì Firestore chặn ghi của mọi tài khoản khác.
    ============================================================================= */
 
 export const UID_QUAN_TRI = "NGEhCGlJnwXQTJpgDH5bMPNPgwT2";

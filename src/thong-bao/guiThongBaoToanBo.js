@@ -1,41 +1,79 @@
 /* =============================================================================
-   QUẢN TRỊ GỬI THÔNG BÁO CHO MỌI NGƯỜI (quyết định 18.56)
+   QUẢN TRỊ GỬI THÔNG BÁO CHO MỌI NGƯỜI (quyết định 18.56, 18.57)
    =============================================================================
 
-   Gọi hàm máy chủ guiThongBaoToanBo (functions/index.js). App KHÔNG tự gửi
-   được, vì gửi thông báo cần khoá bí mật chỉ nằm trên máy chủ. Máy chủ cũng tự
-   kiểm tra người gọi có phải tài khoản quản trị không.
+   App KHÔNG tự gửi được, vì gửi thông báo cần khoá bí mật chỉ nằm trên GitHub.
+   Nên app chỉ CẤT thông báo vào hàng chờ Firestore: thongBaoCho/{tự sinh} =
+   { tieuDe, than, taoLuc, trangThai: "cho" }. Cứ 5 phút cron-job.org gọi
+   GitHub chạy cong-cu/thong-bao/gui.js, file đó gửi đi rồi đổi trangThai
+   thành "da-gui" kèm kết quả. Vì vậy tin tới máy mọi người sau khoảng 1–6 phút.
+
+   Chỉ tài khoản quản trị ghi / đọc được hàng chờ: firestore.rules chặn mọi
+   tài khoản khác, dù ai sửa app cho hiện khung gửi cũng vô ích.
    ============================================================================= */
 
 import { layDichVu } from "../firebase/khoiTao.js";
 
-// Phải trùng vùng của hàm trên máy chủ (functions/index.js, setGlobalOptions)
-const VUNG_MAY_CHU = "asia-southeast1";
+const HANG_CHO = "thongBaoCho";
 
 /**
- * @returns {Promise<{thanhCong: boolean, ketQua?: {soNguoi: number, daGui: number, hong: number, loi: number}, thongBao?: string}>}
+ * Cất một thông báo vào hàng chờ.
+ * @returns {Promise<{thanhCong: boolean, thongBao?: string}>}
  */
 export async function guiThongBaoToanBo(tieuDe, than) {
   try {
-    await layDichVu(); // bảo đảm app Firebase đã khởi tạo
-    const [{ getApp }, { getFunctions, httpsCallable }] = await Promise.all([
-      import("firebase/app"),
-      import("firebase/functions"),
+    const [{ db }, { addDoc, collection, serverTimestamp }] = await Promise.all([
+      layDichVu(),
+      import("firebase/firestore"),
     ]);
-    const goiHam = httpsCallable(getFunctions(getApp(), VUNG_MAY_CHU), "guiThongBaoToanBo");
-    const { data } = await goiHam({ tieuDe, than });
-    return { thanhCong: true, ketQua: data };
+    await addDoc(collection(db, HANG_CHO), {
+      tieuDe,
+      than,
+      taoLuc: serverTimestamp(),
+      trangThai: "cho",
+    });
+    return { thanhCong: true };
   } catch (loi) {
-    const ma = String(loi?.code ?? "");
-    if (ma.endsWith("permission-denied")) {
+    if (String(loi?.code ?? "").endsWith("permission-denied")) {
       return { thanhCong: false, thongBao: "Chỉ tài khoản quản trị mới được gửi thông báo." };
-    }
-    if (ma.endsWith("invalid-argument")) {
-      return { thanhCong: false, thongBao: "Nội dung chưa hợp lệ: không được trống và không quá dài." };
-    }
-    if (ma.endsWith("not-found") || ma.endsWith("internal") || ma.endsWith("unimplemented")) {
-      return { thanhCong: false, thongBao: "Máy chủ gửi thông báo chưa sẵn sàng. Hãy thử lại sau." };
     }
     return { thanhCong: false, thongBao: "Chưa gửi được. Hãy kiểm tra mạng rồi thử lại." };
   }
+}
+
+/**
+ * Theo dõi 5 thông báo quản trị gần nhất (đang chờ hay đã gửi, gửi tới bao
+ * nhiêu thiết bị). Trả về hàm huỷ theo dõi.
+ * @param {(ds: Array<{id: string, tieuDe: string, than: string, trangThai: string, taoLuc: Date|null, ketQua?: object}>) => void} khiDoi
+ */
+export function theoDoiThongBaoGanDay(khiDoi) {
+  let huy = () => {};
+  let daHuy = false;
+  (async () => {
+    try {
+      const [{ db }, { collection, limit, onSnapshot, orderBy, query }] = await Promise.all([
+        layDichVu(),
+        import("firebase/firestore"),
+      ]);
+      if (daHuy) return;
+      huy = onSnapshot(
+        query(collection(db, HANG_CHO), orderBy("taoLuc", "desc"), limit(5)),
+        (anh) =>
+          khiDoi(
+            anh.docs.map((d) => ({
+              id: d.id,
+              ...d.data(),
+              taoLuc: d.get("taoLuc")?.toDate?.() ?? null,
+            })),
+          ),
+        () => khiDoi([]),
+      );
+    } catch {
+      khiDoi([]);
+    }
+  })();
+  return () => {
+    daHuy = true;
+    huy();
+  };
 }

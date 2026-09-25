@@ -1,67 +1,76 @@
 # =============================================================================
-# GỬI THÔNG BÁO NHẮC HỌC (GĐ 11, quyết định 18.40)
+# GỬI THÔNG BÁO (quyết định 18.40, 18.57)
 # =============================================================================
-# Firebase gói Spark không chạy được Cloud Functions, nên GitHub Actions đóng
-# vai người bấm nút gửi: mỗi ngày 3 lần theo giờ Việt Nam.
-#   7h  VN = 00:00 UTC
-#   14h VN = 07:00 UTC
-#   21h VN = 14:00 UTC
-# GitHub chạy cron theo giờ UTC và có thể trễ vài phút, đó là chuyện bình thường.
+# KHÔNG dùng lịch cron của GitHub nữa: GitHub hay chạy trễ 3–5 tiếng (có hôm
+# nhắc 21h tới lúc 1 giờ sáng). Thay vào đó, dịch vụ miễn phí cron-job.org cứ
+# 5 phút gọi GitHub API "chạy workflow này" một lần (không kèm tham số, nên
+# viec = tu-dong). Mỗi lần chạy, cong-cu/thong-bao/gui.js sẽ:
+#   1. gửi các thông báo quản trị đang chờ (soạn trong Cài đặt của app),
+#   2. gửi nhắc học 7h / 14h / 21h nếu khung đó vừa tới mà chưa gửi.
 #
-# CẦN: một GitHub Secret tên FIREBASE_SERVICE_ACCOUNT
-# (xem tai-lieu/HUONG-DAN-THONG-BAO.md, có hướng dẫn từng bước).
+# Cách cài cron-job.org: tai-lieu/HUONG-DAN-THONG-BAO.md, mục "cron-job.org".
+# CẦN GitHub Secret FIREBASE_SERVICE_ACCOUNT (cũng có trong hướng dẫn).
+#
+# Vẫn bấm chạy tay được (tab Actions → Run workflow) để thử một khung giờ.
 # =============================================================================
 
 name: Thông báo nhắc học
 
 on:
+  # DỰ PHÒNG: lịch của GitHub (hay trễ, có khi bỏ lượt) chạy 20 phút một lần,
+  # cùng việc tu-dong. Không sợ gửi trùng vì gui.js ghi lại khung đã gửi; chạy
+  # trễ quá 2 tiếng so với khung thì tự bỏ qua. Tránh phút 0 vì GitHub đông nhất.
   schedule:
-    - cron: "0 0 * * *" # 7h sáng giờ Việt Nam
-    - cron: "0 7 * * *" # 14h giờ Việt Nam
-    - cron: "0 14 * * *" # 21h giờ Việt Nam
-  # Cho phép bấm chạy tay để thử
+    - cron: "3,23,43 * * * *"
   workflow_dispatch:
     inputs:
+      viec:
+        description: "tu-dong = việc của cron-job.org; khung = gửi ngay một khung nhắc học"
+        required: false
+        default: "tu-dong"
       khung:
-        description: "Khung giờ muốn thử (7h, 14h hoặc 21h)"
+        description: "Khi viec = khung: 7h, 14h hoặc 21h"
         required: false
         default: "7h"
       thu:
         description: "Chỉ chạy thử, không gửi thật"
         type: boolean
         required: false
-        default: true
+        default: false
+
+# Không cho hai lần chạy chồng nhau (lần sau đợi lần trước xong), để một thông
+# báo không bị gửi hai lần
+concurrency:
+  group: thong-bao
+  cancel-in-progress: false
 
 jobs:
   gui:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: npm
+          cache-dependency-path: cong-cu/thong-bao/package-lock.json
 
       - name: Cài thư viện gửi thông báo
         working-directory: cong-cu/thong-bao
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
 
       - name: Gửi
         working-directory: cong-cu/thong-bao
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-        # GitHub hay chạy cron TRỄ vài tiếng. Vì vậy không đoán khung giờ theo
-        # giờ hiện tại nữa, mà lấy theo CHÍNH lịch cron đã kích hoạt lần chạy
-        # này (quyết định 18.48): trễ bao lâu vẫn gửi đúng nội dung khung đó.
+          VIEC: ${{ inputs.viec }}
+          KHUNG: ${{ inputs.khung }}
+          THU: ${{ inputs.thu && '--thu' || '' }}
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            node gui.js --khung "${{ inputs.khung }}" ${{ inputs.thu && '--thu' || '' }}
+          if [ "$VIEC" = "khung" ]; then
+            node gui.js --khung "$KHUNG" $THU
           else
-            case "${{ github.event.schedule }}" in
-              "0 0 * * *")  KHUNG="7h" ;;
-              "0 7 * * *")  KHUNG="14h" ;;
-              "0 14 * * *") KHUNG="21h" ;;
-              *) echo "Lịch cron lạ: ${{ github.event.schedule }}"; exit 1 ;;
-            esac
-            node gui.js --khung "$KHUNG"
+            node gui.js --tu-dong $THU
           fi

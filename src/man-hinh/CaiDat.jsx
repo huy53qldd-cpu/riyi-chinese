@@ -20,7 +20,7 @@ import {
   tatThongBao,
   trinhDuyetHoTro,
 } from "../thong-bao/dangKyThongBao.js";
-import { guiThongBaoToanBo } from "../thong-bao/guiThongBaoToanBo.js";
+import { guiThongBaoToanBo, theoDoiThongBaoGanDay } from "../thong-bao/guiThongBaoToanBo.js";
 import { GIOI_HAN_THONG_BAO, laQuanTri } from "../thong-bao/quanTri.js";
 import HopThoaiXacNhan from "../thanh-phan/HopThoaiXacNhan.jsx";
 import BieuTuong, { DenLong, HoaAnhDao, LogoGoogle } from "../thanh-phan/BieuTuong.jsx";
@@ -228,10 +228,11 @@ function MucThongBao({ nd }) {
 }
 
 /* -----------------------------------------------------------------------------
-   QUẢN TRỊ: GỬI THÔNG BÁO CHO MỌI NGƯỜI (quyết định 18.56)
+   QUẢN TRỊ: GỬI THÔNG BÁO CHO MỌI NGƯỜI (quyết định 18.56, 18.57)
    Soạn tiêu đề (bỏ trống thì là "Riyi") và nội dung, bấm Gửi thì hỏi lại một
-   lần (vì gửi tới tất cả, không thu hồi được), rồi máy chủ gửi ngay tới mọi
-   người đã bật thông báo nhắc học.
+   lần (vì gửi tới tất cả, không thu hồi được), rồi cất vào hàng chờ; GitHub
+   gửi đi trong vòng vài phút (cron-job.org gọi 5 phút một lần). Bên dưới hiện
+   5 thông báo gần nhất: đang chờ hay đã gửi tới bao nhiêu thiết bị.
    ----------------------------------------------------------------------------- */
 const kieuONhapQuanTri =
   "border-vien bg-nen text-chu w-full rounded-[var(--bo-goc-nho)] border px-3 py-2.5 text-[length:max(16px,var(--co-chu-latin))] outline-none focus:border-[var(--nhan)] focus:ring-2 focus:ring-[var(--nhan-nhat)]";
@@ -242,6 +243,10 @@ function MucQuanTriThongBao() {
   const [than, setThan] = useState("");
   const [hoiLai, setHoiLai] = useState(false);
   const [dangGui, setDangGui] = useState(false);
+  const [ganDay, setGanDay] = useState([]);
+
+  // Theo dõi trực tiếp: GitHub gửi xong là dòng "Đang chờ" tự đổi thành "Đã gửi"
+  useEffect(() => theoDoiThongBaoGanDay(setGanDay), []);
 
   const tieuDeGui = tieuDe.trim() || "Riyi";
   const thanGui = than.trim();
@@ -255,13 +260,7 @@ function MucQuanTriThongBao() {
       hienThongBao(kq.thongBao, 5);
       return;
     }
-    const { soNguoi, daGui } = kq.ketQua;
-    hienThongBao(
-      soNguoi === 0
-        ? "Chưa có ai bật thông báo nên chưa gửi tới ai."
-        : `Đã gửi tới ${daGui} thiết bị của ${soNguoi} người.`,
-      5,
-    );
+    hienThongBao("Đã đưa vào hàng chờ. Thông báo sẽ tới máy mọi người trong vài phút.", 5);
     setTieuDe("");
     setThan("");
   }
@@ -273,8 +272,9 @@ function MucQuanTriThongBao() {
         Gửi thông báo cho mọi người
       </h2>
       <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-        Chỉ tài khoản quản trị thấy mục này. Thông báo tới ngay mọi người đã bật
-        thông báo nhắc học; người chưa bật thông báo thì không nhận được.
+        Chỉ tài khoản quản trị thấy mục này. Thông báo tới mọi người đã bật
+        thông báo nhắc học sau khoảng 1–6 phút; người chưa bật thông báo thì
+        không nhận được.
       </p>
 
       <label className="flex flex-col gap-1.5">
@@ -316,14 +316,38 @@ function MucQuanTriThongBao() {
         {dangGui ? "Đang gửi..." : "Gửi cho mọi người"}
       </button>
 
+      {ganDay.length > 0 && (
+        <div className="flex flex-col gap-2">
+          <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] font-semibold">
+            Gửi gần đây
+          </p>
+          <ul className="m-0 flex list-none flex-col gap-2 p-0">
+            {ganDay.map((tb) => (
+              <li
+                key={tb.id}
+                className="border-vien rounded-[var(--bo-goc-nho)] border px-3 py-2 text-[length:var(--co-chu-latin-nho)]"
+              >
+                <p className="m-0 font-bold">{tb.tieuDe}</p>
+                <p className="m-0 line-clamp-2">{tb.than}</p>
+                <p className="text-chu-mo m-0 mt-1">
+                  {tb.taoLuc?.toLocaleString("vi-VN", { dateStyle: "short", timeStyle: "short" })}
+                  {" · "}
+                  <TrangThaiGui tb={tb} />
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {hoiLai && (
         <HopThoaiXacNhan
           tieuDe="Gửi thông báo cho mọi người?"
           noiDung={
             <>
               <p className="m-0 mb-2">
-                Thông báo này sẽ tới ngay mọi người đã bật thông báo, gửi rồi thì
-                không thu hồi được:
+                Thông báo này sẽ tới mọi người đã bật thông báo trong vài phút,
+                gửi rồi thì không thu hồi được:
               </p>
               <p className="m-0 font-bold">{tieuDeGui}</p>
               <p className="m-0 whitespace-pre-line">{thanGui}</p>
@@ -336,6 +360,23 @@ function MucQuanTriThongBao() {
         />
       )}
     </section>
+  );
+}
+
+/** Trạng thái một thông báo quản trị: đang chờ / đang gửi / đã gửi tới bao nhiêu máy. */
+function TrangThaiGui({ tb }) {
+  if (tb.trangThai === "da-gui") {
+    const { soNguoi = 0, daGui = 0 } = tb.ketQua ?? {};
+    return (
+      <span className="text-dung font-semibold">
+        ✓ Đã gửi tới {daGui} thiết bị của {soNguoi} người
+      </span>
+    );
+  }
+  return (
+    <span className="text-canh-bao font-semibold">
+      {tb.trangThai === "dang-gui" ? "Đang gửi..." : "Đang chờ gửi (vài phút)"}
+    </span>
   );
 }
 

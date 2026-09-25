@@ -28,7 +28,29 @@ service cloud.firestore {
         && (!('nhatKy' in request.resource.data) || request.resource.data.nhatKy.size() <= 120);
     }
 
-    // Chặn tất cả nơi còn lại
+    // Hàng chờ thông báo QUẢN TRỊ (quyết định 18.57). DUY NHẤT tài khoản quản
+    // trị được đọc và tạo; mã này phải trùng UID_QUAN_TRI trong
+    // src/thong-bao/quanTri.js. Chỉ được tạo mới ở trạng thái "cho", đúng 4
+    // trường, độ dài giới hạn; KHÔNG ai sửa/xoá được từ app. Việc đổi trạng
+    // thái sang "da-gui" do GitHub Actions làm bằng khoá quản trị (bỏ qua luật).
+    match /thongBaoCho/{ma} {
+      allow read: if request.auth != null
+        && request.auth.uid == 'NGEhCGlJnwXQTJpgDH5bMPNPgwT2';
+
+      allow create: if request.auth != null
+        && request.auth.uid == 'NGEhCGlJnwXQTJpgDH5bMPNPgwT2'
+        && request.resource.data.keys().hasOnly(['tieuDe', 'than', 'taoLuc', 'trangThai'])
+        && request.resource.data.tieuDe is string
+        && request.resource.data.tieuDe.size() >= 1
+        && request.resource.data.tieuDe.size() <= 60
+        && request.resource.data.than is string
+        && request.resource.data.than.size() >= 1
+        && request.resource.data.than.size() <= 300
+        && request.resource.data.trangThai == 'cho'
+        && request.resource.data.taoLuc == request.time;
+    }
+
+    // Chặn tất cả nơi còn lại (kể cả heThong/nhacHoc: chỉ GitHub Actions ghi)
     match /{tatCa=**} {
       allow read, write: if false;
     }

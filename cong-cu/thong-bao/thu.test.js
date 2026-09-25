@@ -16,6 +16,7 @@ import {
   cauTheoMuc,
   CAU_14H,
   CAU_21H,
+  khungDenHan,
   khungGio,
   ngayCuaKhung,
   ngayVietNam,
@@ -122,4 +123,31 @@ test("khung giờ tính theo giờ Việt Nam", () => {
   assert.equal(khungGio(new Date("2026-03-05T07:05:00Z")), "14h"); // 14h05 VN
   assert.equal(khungGio(new Date("2026-03-05T14:05:00Z")), "21h"); // 21h05 VN
   assert.equal(khungGio(new Date("2026-03-05T03:00:00Z")), null); // 10h VN
+});
+
+test("cron-job.org gọi 5 phút một lần: gửi đúng một lần mỗi khung", () => {
+  // 7h03 VN (00:03 UTC), chưa gửi gì: tới hạn khung 7h
+  assert.deepEqual(khungDenHan(new Date("2026-03-05T00:03:00Z"), {}), {
+    khung: "7h",
+    ngay: "2026-03-05",
+    khoa: "2026-03-05-7h",
+  });
+  // Lần gọi 5 phút sau thấy đã gửi rồi thì bỏ qua
+  assert.equal(khungDenHan(new Date("2026-03-05T00:08:00Z"), { "2026-03-05-7h": true }), null);
+  // 6h58 VN: chưa tới 7h
+  assert.equal(khungDenHan(new Date("2026-03-04T23:58:00Z"), {}), null);
+  // 14h01 và 21h00 VN
+  assert.equal(khungDenHan(new Date("2026-03-05T07:01:00Z"), {}).khung, "14h");
+  assert.equal(khungDenHan(new Date("2026-03-05T14:00:00Z"), {}).khung, "21h");
+  // 21h ngày hôm qua đã gửi KHÔNG làm 21h hôm nay bị bỏ qua
+  assert.equal(khungDenHan(new Date("2026-03-05T14:00:00Z"), { "2026-03-04-21h": true }).khung, "21h");
+});
+
+test("hẹn giờ ngừng lâu thì không gửi nhắc học trễ quá 2 tiếng", () => {
+  // 8h59 VN vẫn còn trong cửa sổ của 7h
+  assert.equal(khungDenHan(new Date("2026-03-05T01:59:00Z"), {}).khung, "7h");
+  // 9h00 VN: quá 2 tiếng, bỏ khung 7h
+  assert.equal(khungDenHan(new Date("2026-03-05T02:00:00Z"), {}), null);
+  // 23h30 VN: quá cửa sổ 21h
+  assert.equal(khungDenHan(new Date("2026-03-05T16:30:00Z"), {}), null);
 });

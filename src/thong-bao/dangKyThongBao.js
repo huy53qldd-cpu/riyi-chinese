@@ -3,9 +3,9 @@
    =============================================================================
 
    Ba khung giờ mỗi ngày: 7h, 14h, 21h (giờ Việt Nam). Người gửi KHÔNG phải app
-   mà là Cloud Functions trên máy chủ (functions/index.js, quyết định 18.56;
-   trước đó là GitHub Actions nhưng hay trễ vài tiếng). Quản trị còn gửi được
-   thông báo tự soạn bất kỳ lúc nào (Cài đặt → Gửi thông báo cho mọi người).
+   mà là GitHub Actions (cong-cu/thong-bao/gui.js), được cron-job.org gọi 5 phút
+   một lần nên gửi đúng giờ (quyết định 18.57). Quản trị còn gửi được thông
+   báo tự soạn bất kỳ lúc nào (Cài đặt → Gửi thông báo cho mọi người).
 
    Việc của file này chỉ gồm:
      1. Xin quyền hiện thông báo của trình duyệt.

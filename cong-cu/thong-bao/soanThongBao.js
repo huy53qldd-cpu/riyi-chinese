@@ -142,6 +142,33 @@ export function ngayCuaKhung(khung, luc = new Date()) {
   return ngayVietNam(new Date(luc.getTime() - 24 * 60 * 60 * 1000));
 }
 
+/**
+ * Quá bao nhiêu giờ sau giờ của khung thì THÔI không gửi nữa (quyết định
+ * 18.57): lỡ dịch vụ hẹn giờ ngừng lâu thì không để nhắc "7h" tới lúc trưa.
+ */
+export const CUA_SO_GUI_GIO = 2;
+
+/**
+ * Khung nhắc học ĐANG TỚI HẠN mà chưa gửi, hoặc null (quyết định 18.57).
+ * cron-job.org gọi GitHub 5 phút một lần; lần gọi đầu tiên sau 7h / 14h / 21h
+ * (trong vòng CUA_SO_GUI_GIO giờ) sẽ gửi khung đó, các lần sau thấy đã gửi
+ * rồi thì bỏ qua.
+ * @param {Date} luc  Thời điểm đang chạy
+ * @param {Record<string, unknown>} daGui  Các khung đã gửi, khoá "YYYY-MM-DD-7h"
+ * @returns {{khung: string, ngay: string, khoa: string} | null}
+ */
+export function khungDenHan(luc, daGui = {}) {
+  const ngay = ngayVietNam(luc);
+  const gioVn = new Date(luc.getTime() + 7 * 60 * 60 * 1000).getUTCHours();
+  for (const [khung, gio] of Object.entries(GIO_CUA_KHUNG)) {
+    const khoa = `${ngay}-${khung}`;
+    if (gioVn >= gio && gioVn < gio + CUA_SO_GUI_GIO && !daGui[khoa]) {
+      return { khung, ngay, khoa };
+    }
+  }
+  return null;
+}
+
 /** Khung giờ ứng với thời điểm chạy (theo giờ Việt Nam). Không đúng giờ thì null. */
 export function khungGio(luc = new Date()) {
   const gioVn = new Date(luc.getTime() + 7 * 60 * 60 * 1000).getUTCHours();
