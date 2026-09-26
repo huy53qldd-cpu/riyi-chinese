@@ -49,6 +49,7 @@ export function baiLamMoi() {
     traLoi: {},
     nghe: { daBatDau: false, xong: false },
     docBatDau: null,
+    phu: {}, // trạng thái phụ từng câu (HSK 6 缩写: lúc bắt đầu đọc, đã ẩn bài)
     ketQua: null,
   };
 }
@@ -79,30 +80,66 @@ export function xoaBaiLam(ma) {
 }
 
 /* -----------------------------------------------------------------------------
-   Chấm điểm theo thang HSK: mỗi câu đúng được `diemMoiCau` (HSK 1: 5 điểm,
-   mỗi phần 20 câu = 100 điểm, cả đề 200), đạt khi tổng ≥ `diemDat` (HSK 1: 120)
+   CHẤM ĐIỂM (quyết định 18.59, 18.61)
+   - Mỗi phần Nghe / Đọc quy về thang 100 theo tỉ lệ câu đúng (HSK 1: 20 câu
+     → mỗi câu 5 điểm, y như trước).
+   - TỔNG ĐIỂM CHỈ TÍNH NGHE + ĐỌC (thang 200), đạt khi ≥ 120 (60%). Phần Viết
+     (HSK 3–6) chấm riêng những câu chấm được (sắp xếp câu, điền chữ), KHÔNG
+     cộng vào tổng; câu viết tự do không chấm.
    ----------------------------------------------------------------------------- */
+const BO_DAU = /[\s，。？！、；：,.?!;:“”"'‘’…—《》（）()]/g;
+
+/** Câu này có chấm tự động được không (viết tự do thì không). */
+export function coCham(nhom, cau) {
+  return cau.dapAn != null && !["viet-hinh", "viet-van", "viet-tom-tat"].includes(nhom.kieu);
+}
+
+/** Câu sắp xếp từ: các mảnh đã bấm ghép thành câu. */
+export function cauDaXep(cau, gt) {
+  return Array.isArray(gt) ? gt.map((i) => cau.manh[i]).join("") : "";
+}
+
+/** Câu trả lời có đúng không. */
+export function traLoiDung(nhom, cau, gt) {
+  if (gt == null || gt === "" || (Array.isArray(gt) && gt.length === 0)) return false;
+  if (nhom.kieu === "sap-xep-tu") {
+    if (gt.length !== cau.manh.length) return false;
+    const xep = cauDaXep(cau, gt).replace(BO_DAU, "");
+    return cau.dapAn.some((d) => d.replace(BO_DAU, "") === xep);
+  }
+  if (nhom.kieu === "dien-chu") return String(gt).trim() === cau.dapAn;
+  return gt === cau.dapAn;
+}
+
 export function chamDiem(de, traLoi) {
-  const ra = { phan: {}, tong: 0 };
+  const ra = { phan: {}, tong: 0, tongToiDa: 0 };
   for (const phan of de.phan) {
     let dung = 0;
     let soCau = 0;
+    let khongCham = 0;
     for (const nhom of phan.nhom) {
       for (const cau of nhom.cau) {
+        if (!coCham(nhom, cau)) {
+          khongCham += 1;
+          continue;
+        }
         soCau += 1;
-        if (traLoi[cau.so] === cau.dapAn) dung += 1;
+        if (traLoiDung(nhom, cau, traLoi[cau.so])) dung += 1;
       }
     }
-    const diem = dung * de.diemMoiCau;
-    ra.phan[phan.ma] = { dung, soCau, diem, diemToiDa: soCau * de.diemMoiCau };
-    ra.tong += diem;
+    const diem = soCau ? Math.round((dung / soCau) * 100) : 0;
+    ra.phan[phan.ma] = { dung, soCau, khongCham, diem, diemToiDa: 100 };
+    if (phan.ma === "nghe" || phan.ma === "doc") {
+      ra.tong += diem;
+      ra.tongToiDa += 100;
+    }
   }
-  ra.tongToiDa = Object.values(ra.phan).reduce((t, p) => t + p.diemToiDa, 0);
-  ra.dat = ra.tong >= de.diemDat;
+  ra.dat = ra.tong >= (de.diemDat ?? 120);
   return ra;
 }
 
-/** Số câu chưa trả lời trong một phần. */
+/** Số câu chưa làm trong một phần (kể cả câu viết). */
 export function soCauBoTrong(phan, traLoi) {
-  return phan.nhom.reduce((t, n) => t + n.cau.filter((c) => traLoi[c.so] == null).length, 0);
+  const trong = (gt) => gt == null || gt === "" || (Array.isArray(gt) && gt.length === 0);
+  return phan.nhom.reduce((t, n) => t + n.cau.filter((c) => trong(traLoi[c.so])).length, 0);
 }

@@ -97,8 +97,9 @@ export default function ThiThu() {
       <div>
         <h1 className="m-0 text-[length:var(--co-chu-latin)] font-bold">Thi thử HSK</h1>
         <p className="text-chu-mo mt-1.5 mb-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
-          Đề thi thật của các kỳ HSK trước, làm đúng như đi thi: phần Nghe chỉ nghe một
-          lần, phần Đọc có giờ.
+          Đề thi thật của các kỳ HSK trước, làm đúng như đi thi: phần Nghe nghe một mạch,
+          phần Đọc (và Viết) có giờ. Tổng điểm chỉ tính Nghe + Đọc (thang 200, đạt từ
+          120); phần Viết chấm riêng, không cộng vào tổng.
           {!uid && " Bạn đang ở chế độ khách: làm được nhưng điểm không được lưu."}
         </p>
       </div>
@@ -107,11 +108,16 @@ export default function ThiThu() {
       {!ds && !loi && <p className={kieu.chuNho}>Đang tải danh sách đề...</p>}
 
       <ul className="m-0 flex list-none flex-col gap-3 p-0">
-        {(ds ?? []).map((de) => {
+        {(ds ?? []).map((de, i) => {
           const dangDo = docBaiLam(de.ma);
           const kq = ketQua[de.ma];
+          const phut = de.phut ?? { doc: 17 };
           return (
             <li key={de.ma}>
+              {/* Tiêu đề cấp khi sang cấp mới */}
+              {(i === 0 || ds[i - 1].cap !== de.cap) && (
+                <h2 className="mt-2 mb-2 text-[length:var(--co-chu-latin)] font-bold">HSK {de.cap}</h2>
+              )}
               <button
                 type="button"
                 onClick={() => setDangLam(de)}
@@ -124,7 +130,7 @@ export default function ThiThu() {
                 <span className="flex min-w-0 flex-1 flex-col gap-0.5">
                   <span className="text-[length:var(--co-chu-latin)] font-bold">Đề {de.ma}</span>
                   <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)]">
-                    {de.soCau ?? 40} câu · Nghe khoảng 15 phút · Đọc 17 phút
+                    {de.soCau ?? 40} câu · Đọc {phut.doc} phút{phut.viet ? ` · Viết ${phut.viet} phút` : ""}
                   </span>
                   {dangDo && !dangDo.ketQua && (
                     <span className="text-canh-bao text-[length:var(--co-chu-latin-nho)] font-semibold">
@@ -175,9 +181,13 @@ function LamBai({ thongTin, ketQuaCu, quayLai, khiLuuDiem }) {
 
   const chon = (so, gt) => setBai((b) => ({ ...b, traLoi: { ...b.traLoi, [so]: gt } }));
   const capNhatNghe = (thay) => setBai((b) => ({ ...b, nghe: { ...b.nghe, ...thay } }));
+  // Trạng thái phụ của từng câu (HSK 6 缩写: lúc bắt đầu đọc, đã ẩn bài chưa)
+  const capNhatPhu = (so, thay) =>
+    setBai((b) => ({ ...b, phu: { ...b.phu, [so]: { ...b.phu?.[so], ...thay } } }));
 
   function sangTrang(trang) {
-    setBai((b) => ({ ...b, trang, docBatDau: trang === 1 && !b.docBatDau ? Date.now() : b.docBatDau }));
+    // Đồng hồ bắt đầu khi vào phần Đọc lần đầu, chạy chung cho Đọc + Viết
+    setBai((b) => ({ ...b, trang, docBatDau: trang >= 1 && !b.docBatDau ? Date.now() : b.docBatDau }));
     window.scrollTo(0, 0);
   }
 
@@ -193,6 +203,7 @@ function LamBai({ thongTin, ketQuaCu, quayLai, khiLuuDiem }) {
       doc: diem.phan.doc.diem,
       tong: diem.tong,
       dat: diem.dat,
+      ...(diem.phan.viet?.soCau ? { viet: { dung: diem.phan.viet.dung, soCau: diem.phan.viet.soCau } } : {}),
       luc: new Date().toISOString(),
     };
     setBai((b) => ({ ...b, ketQua: luu }));
@@ -262,6 +273,7 @@ function LamBai({ thongTin, ketQuaCu, quayLai, khiLuuDiem }) {
                   chon={() => {}}
                   xemLai
                   loiNghe={de.loiNghe}
+                  phu={bai.phu}
                 />
               ))}
             </div>
@@ -282,8 +294,9 @@ function LamBai({ thongTin, ketQuaCu, quayLai, khiLuuDiem }) {
             {diem.dat ? "✓ Đạt" : "✗ Chưa đạt"}
             <span className="text-chu-mo font-semibold"> (cần {de.diemDat} điểm)</span>
           </p>
+          <p className={`${kieu.chuNho} font-semibold`}>Tổng điểm chỉ tính Nghe + Đọc (mỗi phần 100 điểm).</p>
           <div className="mt-2 grid w-full grid-cols-2 gap-2">
-            {de.phan.map((phan) => {
+            {de.phan.filter((phan) => phan.ma !== "viet").map((phan) => {
               const p = diem.phan[phan.ma];
               return (
                 <div key={phan.ma} className="bg-nen-phu rounded-[var(--bo-goc-nho)] px-3 py-2">
@@ -300,6 +313,17 @@ function LamBai({ thongTin, ketQuaCu, quayLai, khiLuuDiem }) {
               );
             })}
           </div>
+          {diem.phan.viet && (
+            <div className="bg-nen-phu w-full rounded-[var(--bo-goc-nho)] px-3 py-2 text-left">
+              <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] font-semibold">
+                Viết (không tính vào tổng)
+              </p>
+              <p className="m-0 text-[length:var(--co-chu-latin-nho)]">
+                {diem.phan.viet.soCau > 0 && `Đúng ${diem.phan.viet.dung}/${diem.phan.viet.soCau} câu chấm được. `}
+                {diem.phan.viet.khongCham > 0 && `${diem.phan.viet.khongCham} câu viết tự do không chấm, xem lại để tự so với bài.`}
+              </p>
+            </div>
+          )}
           <p className={`${kieu.chuNho} mt-1`}>
             {!nd.daDangNhap
               ? "Bạn đang ở chế độ khách nên điểm không được lưu."
@@ -340,6 +364,11 @@ function LamBai({ thongTin, ketQuaCu, quayLai, khiLuuDiem }) {
   const phan = de.phan[bai.trang];
   const laNghe = phan.ma === "nghe";
   const coTheSangDoc = bai.nghe.xong || loiAmThanh;
+  const trangCuoi = bai.trang === de.phan.length - 1;
+  const phanSau = de.phan[bai.trang + 1];
+  const phanTruoc = de.phan[bai.trang - 1];
+  // Đọc + Viết dùng chung MỘT đồng hồ (tổng thời gian của hai phần)
+  const phutConLai = de.phan.slice(1).reduce((t, p) => t + (p.thoiGianPhut ?? 0), 0);
   const boTrong = de.phan.reduce((t, p) => t + soCauBoTrong(p, bai.traLoi), 0);
 
   return (
@@ -362,7 +391,7 @@ function LamBai({ thongTin, ketQuaCu, quayLai, khiLuuDiem }) {
         {bai.docBatDau && (
           <DongHoDoc
             batDau={bai.docBatDau}
-            phut={de.phan.find((p) => p.ma === "doc").thoiGianPhut}
+            phut={phutConLai}
             hetGio={() => nopMoiNhat.current()}
           />
         )}
@@ -387,37 +416,39 @@ function LamBai({ thongTin, ketQuaCu, quayLai, khiLuuDiem }) {
           nhom={nhom}
           traLoi={bai.traLoi}
           chon={chon}
+          phu={bai.phu}
+          capNhatPhu={capNhatPhu}
         />
       ))}
 
       {/* Nút cuối trang */}
       <div className="border-vien flex flex-col gap-3 border-t pt-5">
-        {laNghe ? (
+        {trangCuoi ? (
+          <button type="button" onClick={() => setHoiNop(true)} className={`${kieu.nutChinh} self-stretch`}>
+            <BieuTuong ten="kiem-tra" />
+            Nộp bài
+          </button>
+        ) : (
           <>
             <button
               type="button"
-              onClick={() => sangTrang(1)}
-              disabled={!coTheSangDoc}
+              onClick={() => sangTrang(bai.trang + 1)}
+              disabled={laNghe && !coTheSangDoc}
               className={`${kieu.nutChinh} self-stretch`}
             >
-              Sang phần Đọc hiểu
+              Sang phần {phanSau.tenViet}
               <BieuTuong ten="sau" />
             </button>
-            {!coTheSangDoc && (
+            {laNghe && !coTheSangDoc && (
               <p className={`${kieu.chuNho} text-center`}>Nghe hết bài nghe thì mới sang phần Đọc được.</p>
             )}
           </>
-        ) : (
-          <>
-            <button type="button" onClick={() => setHoiNop(true)} className={`${kieu.nutChinh} self-stretch`}>
-              <BieuTuong ten="kiem-tra" />
-              Nộp bài
-            </button>
-            <button type="button" onClick={() => sangTrang(0)} className={`${kieu.nutPhu} self-start`}>
-              <BieuTuong ten="quay-lai" co={16} />
-              Quay lại phần Nghe (sửa đáp án)
-            </button>
-          </>
+        )}
+        {phanTruoc && (
+          <button type="button" onClick={() => sangTrang(bai.trang - 1)} className={`${kieu.nutPhu} self-start`}>
+            <BieuTuong ten="quay-lai" co={16} />
+            Quay lại phần {phanTruoc.tenViet} (sửa đáp án)
+          </button>
         )}
       </div>
 
@@ -441,9 +472,9 @@ function LamBai({ thongTin, ketQuaCu, quayLai, khiLuuDiem }) {
   );
 }
 
-/** Tiêu đề một phần thi, đúng như đề: 一、听力 / 二、阅读. */
+/** Tiêu đề một phần thi, đúng như đề: 一、听力 / 二、阅读 / 三、书写. */
 function TieuDePhan({ phan, diem }) {
-  const so = phan.ma === "nghe" ? "一" : "二";
+  const so = { nghe: "一", doc: "二", viet: "三" }[phan.ma];
   return (
     <header className="flex flex-col items-center gap-1 text-center">
       <h2 className="m-0 text-[length:1.5rem] font-bold tracking-[0.35em]">
@@ -482,7 +513,7 @@ function DongHoDoc({ batDau, phut, hetGio }) {
     <span
       className={`ml-auto flex items-center gap-1.5 font-bold tabular-nums ${sapHet ? "text-sai" : ""}`}
       role="timer"
-      aria-label={`Phần Đọc còn ${Math.ceil(conLai / 60)} phút`}
+      aria-label={`Thời gian làm bài còn ${Math.ceil(conLai / 60)} phút`}
     >
       <BieuTuong ten="dong-ho" co={16} />
       {phutGiay(conLai)}

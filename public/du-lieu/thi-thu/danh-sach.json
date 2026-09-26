@@ -4,27 +4,322 @@
   {
    "ma": "H10901",
    "cap": 1,
-   "version": 1
+   "version": 1,
+   "soCau": 40,
+   "phut": {
+    "nghe": null,
+    "doc": 17
+   }
   },
   {
    "ma": "H10902",
    "cap": 1,
-   "version": 1
+   "version": 1,
+   "soCau": 40,
+   "phut": {
+    "nghe": null,
+    "doc": 17
+   }
   },
   {
    "ma": "H11003",
    "cap": 1,
-   "version": 1
+   "version": 1,
+   "soCau": 40,
+   "phut": {
+    "nghe": null,
+    "doc": 17
+   }
   },
   {
    "ma": "H11004",
    "cap": 1,
-   "version": 1
+   "version": 1,
+   "soCau": 40,
+   "phut": {
+    "nghe": null,
+    "doc": 17
+   }
   },
   {
    "ma": "H11005",
    "cap": 1,
-   "version": 1
+   "version": 1,
+   "soCau": 40,
+   "phut": {
+    "nghe": null,
+    "doc": 17
+   }
+  },
+  {
+   "ma": "H20901",
+   "cap": 2,
+   "version": 1,
+   "soCau": 60,
+   "phut": {
+    "nghe": null,
+    "doc": 22
+   }
+  },
+  {
+   "ma": "H20902",
+   "cap": 2,
+   "version": 1,
+   "soCau": 60,
+   "phut": {
+    "nghe": null,
+    "doc": 22
+   }
+  },
+  {
+   "ma": "H21003",
+   "cap": 2,
+   "version": 1,
+   "soCau": 60,
+   "phut": {
+    "nghe": null,
+    "doc": 22
+   }
+  },
+  {
+   "ma": "H21004",
+   "cap": 2,
+   "version": 1,
+   "soCau": 60,
+   "phut": {
+    "nghe": null,
+    "doc": 22
+   }
+  },
+  {
+   "ma": "H21005",
+   "cap": 2,
+   "version": 1,
+   "soCau": 60,
+   "phut": {
+    "nghe": null,
+    "doc": 22
+   }
+  },
+  {
+   "ma": "H31001",
+   "cap": 3,
+   "version": 1,
+   "soCau": 80,
+   "phut": {
+    "nghe": null,
+    "doc": 30,
+    "viet": 15
+   }
+  },
+  {
+   "ma": "H31002",
+   "cap": 3,
+   "version": 1,
+   "soCau": 80,
+   "phut": {
+    "nghe": null,
+    "doc": 30,
+    "viet": 15
+   }
+  },
+  {
+   "ma": "H31003",
+   "cap": 3,
+   "version": 1,
+   "soCau": 80,
+   "phut": {
+    "nghe": null,
+    "doc": 30,
+    "viet": 15
+   }
+  },
+  {
+   "ma": "H31004",
+   "cap": 3,
+   "version": 1,
+   "soCau": 80,
+   "phut": {
+    "nghe": null,
+    "doc": 30,
+    "viet": 15
+   }
+  },
+  {
+   "ma": "H31005",
+   "cap": 3,
+   "version": 1,
+   "soCau": 80,
+   "phut": {
+    "nghe": null,
+    "doc": 30,
+    "viet": 15
+   }
+  },
+  {
+   "ma": "H41001",
+   "cap": 4,
+   "version": 1,
+   "soCau": 100,
+   "phut": {
+    "nghe": null,
+    "doc": 40,
+    "viet": 25
+   }
+  },
+  {
+   "ma": "H41002",
+   "cap": 4,
+   "version": 1,
+   "soCau": 100,
+   "phut": {
+    "nghe": null,
+    "doc": 40,
+    "viet": 25
+   }
+  },
+  {
+   "ma": "H41003",
+   "cap": 4,
+   "version": 1,
+   "soCau": 100,
+   "phut": {
+    "nghe": null,
+    "doc": 40,
+    "viet": 25
+   }
+  },
+  {
+   "ma": "H41004",
+   "cap": 4,
+   "version": 1,
+   "soCau": 100,
+   "phut": {
+    "nghe": null,
+    "doc": 40,
+    "viet": 25
+   }
+  },
+  {
+   "ma": "H41005",
+   "cap": 4,
+   "version": 1,
+   "soCau": 100,
+   "phut": {
+    "nghe": null,
+    "doc": 40,
+    "viet": 25
+   }
+  },
+  {
+   "ma": "H51001",
+   "cap": 5,
+   "version": 1,
+   "soCau": 100,
+   "phut": {
+    "nghe": null,
+    "doc": 45,
+    "viet": 40
+   }
+  },
+  {
+   "ma": "H51002",
+   "cap": 5,
+   "version": 1,
+   "soCau": 100,
+   "phut": {
+    "nghe": null,
+    "doc": 45,
+    "viet": 40
+   }
+  },
+  {
+   "ma": "H51003",
+   "cap": 5,
+   "version": 1,
+   "soCau": 100,
+   "phut": {
+    "nghe": null,
+    "doc": 45,
+    "viet": 40
+   }
+  },
+  {
+   "ma": "H51004",
+   "cap": 5,
+   "version": 1,
+   "soCau": 100,
+   "phut": {
+    "nghe": null,
+    "doc": 45,
+    "viet": 40
+   }
+  },
+  {
+   "ma": "H51005",
+   "cap": 5,
+   "version": 1,
+   "soCau": 100,
+   "phut": {
+    "nghe": null,
+    "doc": 45,
+    "viet": 40
+   }
+  },
+  {
+   "ma": "H61001",
+   "cap": 6,
+   "version": 1,
+   "soCau": 101,
+   "phut": {
+    "nghe": null,
+    "doc": 50,
+    "viet": 45
+   }
+  },
+  {
+   "ma": "H61002",
+   "cap": 6,
+   "version": 1,
+   "soCau": 101,
+   "phut": {
+    "nghe": null,
+    "doc": 50,
+    "viet": 45
+   }
+  },
+  {
+   "ma": "H61003",
+   "cap": 6,
+   "version": 1,
+   "soCau": 101,
+   "phut": {
+    "nghe": null,
+    "doc": 50,
+    "viet": 45
+   }
+  },
+  {
+   "ma": "H61004",
+   "cap": 6,
+   "version": 1,
+   "soCau": 101,
+   "phut": {
+    "nghe": null,
+    "doc": 50,
+    "viet": 45
+   }
+  },
+  {
+   "ma": "H61005",
+   "cap": 6,
+   "version": 1,
+   "soCau": 101,
+   "phut": {
+    "nghe": null,
+    "doc": 50,
+    "viet": 45
+   }
   }
  ]
 }
