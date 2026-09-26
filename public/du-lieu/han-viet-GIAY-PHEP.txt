@@ -1,0 +1,6 @@
+ÂM HÁN VIỆT VÀ MẸO NHỚ CHỮ HÁN — NGUỒN VÀ GIẤY PHÉP
+
+Data from the Kai Hanzi HSK × Sino-Vietnamese dataset, CC BY 4.0.
+https://github.com/binhbuithithanh/hanzi-sino-vietnamese (nguồn gốc: https://kaihanzi.com/chu)
+Giấy phép: https://creativecommons.org/licenses/by/4.0/
+Riyi chỉ lọc ra chữ HSK 1–3 có trong app và viết thường âm Hán Việt; không sửa nội dung.
