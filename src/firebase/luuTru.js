@@ -50,8 +50,9 @@ export async function docTienDo(uid) {
     loTrinh: d.loTrinh ?? null,
     nhatKy: d.nhatKy ?? {},
     chuoi: d.chuoi ?? null,
-    // Thông báo nhắc học: chỉ cần biết đang bật hay tắt (token do file riêng lo)
-    thongBaoBat: Boolean(d.thongBao?.bat),
+    // Thông báo nhắc học: chỉ cần biết đang bật hay tắt (token do file riêng lo).
+    // MẶC ĐỊNH BẬT (quyết định 18.58): chỉ tắt khi người học đã tự tắt (bat = false).
+    thongBaoBat: d.thongBao?.bat !== false,
   };
 }
 

@@ -24,6 +24,7 @@ import { NguoiDungProvider } from "./nguoi-dung/NguoiDung.jsx";
 import { KhoThongBao } from "./thanh-phan/ThongBao.jsx";
 import PhaoHoa from "./thanh-phan/PhaoHoa.jsx";
 import { DaiBanMoi, ManMatMang } from "./pwa/ThongBaoPwa.jsx";
+import HoiQuyenThongBao from "./thong-bao/HoiQuyenThongBao.jsx";
 
 const MAN_HINH = {
   CHON_KHOA: "chon-khoa-hoc",
@@ -59,6 +60,8 @@ export default function App() {
         <PhaoHoa />
         <DaiBanMoi />
         <ManMatMang />
+        {/* Thông báo mặc định bật: hỏi quyền lần đầu, tự đăng ký lại (18.58) */}
+        <HoiQuyenThongBao />
       </NguoiDungProvider>
     </KhoThongBao>
   );

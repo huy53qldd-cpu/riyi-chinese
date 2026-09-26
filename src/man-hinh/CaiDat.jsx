@@ -17,6 +17,7 @@ import { useThongBao } from "../thanh-phan/ThongBao.jsx";
 import {
   batThongBao,
   daCauHinhThongBao,
+  quyenHienTai,
   tatThongBao,
   trinhDuyetHoTro,
 } from "../thong-bao/dangKyThongBao.js";
@@ -173,9 +174,10 @@ function MucThongBao({ nd }) {
   const [bat, setBat] = useState(false);
   const [dangDoi, setDangDoi] = useState(false);
 
-  // Đọc trạng thái đã lưu trên Firestore của chính người đang đăng nhập
+  // Công tắc chỉ BẬT khi tài khoản không tự tắt (mặc định bật, quyết định 18.58)
+  // VÀ máy này đã cho phép thông báo; chưa cho phép thì máy này chưa nhận được
   useEffect(() => {
-    setBat(Boolean(nd.thongBaoBat));
+    setBat(Boolean(nd.thongBaoBat) && quyenHienTai() === "granted");
   }, [nd.thongBaoBat]);
 
   const hoTro = trinhDuyetHoTro() && daCauHinhThongBao();
@@ -214,10 +216,16 @@ function MucThongBao({ nd }) {
           <CongTat
             bieuTuong="nhac-hoc"
             nhan="Nhắc học mỗi ngày"
-            moTa="7h sáng chào ngày mới, 14h và 21h nhắc tiến độ hôm nay."
+            moTa="Mặc định bật. 7h sáng chào ngày mới, 14h và 21h nhắc tiến độ hôm nay."
             bat={bat}
             doi={dangDoi ? () => {} : doi}
           />
+          {quyenHienTai() === "denied" && (
+            <p className="text-canh-bao m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed font-semibold">
+              Máy này đang chặn thông báo của Riyi. Hãy mở cài đặt của trình duyệt
+              hoặc điện thoại, cho phép thông báo cho Riyi, rồi bật lại ở đây.
+            </p>
+          )}
           <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
             Trên iPhone, phải cài Riyi vào màn hình chính thì mới nhận được thông báo.
           </p>

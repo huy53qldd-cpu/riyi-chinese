@@ -14,6 +14,15 @@
         Một người có thể mở app trên nhiều máy nên lưu nhiều token.
      3. Tắt thông báo: xoá token của máy này, đặt bat = false.
 
+   MẶC ĐỊNH BẬT (quyết định 18.58): người học chưa từng tắt thì coi như bật.
+     - Lần đầu mở app trên một máy, HoiQuyenThongBao.jsx hỏi "Cho phép Riyi gửi
+       thông báo?" (trình duyệt, nhất là iPhone, chỉ cho bật hộp xin quyền sau
+       một lần BẤM của người dùng, nên không tự bật lên được). Chỉ hỏi một lần
+       mỗi máy (daHoiQuyenMayNay / ghiDaHoiQuyen).
+     - Mỗi lần mở app, nếu máy đã cho phép và người học không tắt, app tự lưu
+       mã thiết bị (dangKyLaiNeuCan). Mã có thể đổi theo thời gian; chỉ ghi lên
+       Firestore khi mã khác lần trước (nhớ trong localStorage) cho đỡ tốn.
+
    ĐIỀU KIỆN:
      - Phải đăng nhập (chế độ khách không lưu gì trên Firestore).
      - Phải có VITE_VAPID_KEY trong .env (xem tai-lieu/HUONG-DAN-THONG-BAO.md).
@@ -24,6 +33,88 @@
 import { layDichVu } from "../firebase/khoiTao.js";
 
 const VAPID = import.meta.env.VITE_VAPID_KEY;
+
+// localStorage: đã hỏi quyền trên máy này chưa; mã thiết bị đã lưu lần trước
+const KHOA_DA_HOI = "riyi-da-hoi-thong-bao";
+const KHOA_TOKEN = "riyi-token-thong-bao";
+
+function docMay(khoa) {
+  try {
+    return localStorage.getItem(khoa);
+  } catch {
+    return null;
+  }
+}
+
+function ghiMay(khoa, giaTri) {
+  try {
+    if (giaTri == null) localStorage.removeItem(khoa);
+    else localStorage.setItem(khoa, giaTri);
+  } catch {
+    // Trình duyệt chặn bộ nhớ (chế độ riêng tư...): bỏ qua, chỉ là hỏi lại lần sau
+  }
+}
+
+/** Đã hỏi quyền thông báo trên máy này chưa (dù người dùng chọn gì). */
+export function daHoiQuyenMayNay() {
+  return docMay(KHOA_DA_HOI) === "1";
+}
+
+export function ghiDaHoiQuyen() {
+  ghiMay(KHOA_DA_HOI, "1");
+}
+
+/** Xin quyền hiện thông báo. PHẢI gọi ngay trong lúc người dùng bấm nút. */
+export async function xinQuyen() {
+  if (!trinhDuyetHoTro()) return "denied";
+  try {
+    return await Notification.requestPermission();
+  } catch {
+    return Notification.permission;
+  }
+}
+
+/**
+ * Lấy mã thiết bị và lưu lên Firestore, đánh dấu bat = true. Mã giống hệt lần
+ * trước (cùng tài khoản) thì không ghi lại. Ném lỗi nếu hỏng.
+ */
+async function luuTokenMayNay(uid, batBuocGhi) {
+  const dangKy = await navigator.serviceWorker.ready;
+  const { messaging, getToken } = await layMessaging();
+  const token = await getToken(messaging, {
+    vapidKey: VAPID,
+    serviceWorkerRegistration: dangKy,
+  });
+  if (!token) throw new Error("khong-co-token");
+  const daLuu = `${uid}|${token}`;
+  if (!batBuocGhi && docMay(KHOA_TOKEN) === daLuu) return;
+  const [{ doc, setDoc, serverTimestamp }, { db }] = await Promise.all([
+    import("firebase/firestore"),
+    layDichVu(),
+  ]);
+  await setDoc(
+    doc(db, "nguoiDung", uid),
+    { thongBao: { bat: true, token: { [token]: true }, capNhatLuc: serverTimestamp() } },
+    { merge: true },
+  );
+  ghiMay(KHOA_TOKEN, daLuu);
+}
+
+/**
+ * Gọi mỗi lần mở app (quyết định 18.58): máy đã cho phép thông báo và người học
+ * không tắt thì lặng lẽ lưu mã thiết bị. Không hỏi quyền, không báo lỗi.
+ * @returns {Promise<boolean>} true nếu máy này đang nhận được thông báo
+ */
+export async function dangKyLaiNeuCan(uid) {
+  if (!uid || !trinhDuyetHoTro() || !daCauHinhThongBao()) return false;
+  if (Notification.permission !== "granted") return false;
+  try {
+    await luuTokenMayNay(uid, false);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 /** Trình duyệt này có hỗ trợ thông báo đẩy không. */
 export function trinhDuyetHoTro() {
@@ -78,24 +169,9 @@ export async function batThongBao(uid) {
   }
 
   try {
-    const dangKy = await navigator.serviceWorker.ready;
-    const { messaging, getToken } = await layMessaging();
-    const token = await getToken(messaging, {
-      vapidKey: VAPID,
-      serviceWorkerRegistration: dangKy,
-    });
-    if (!token) {
-      return { thanhCong: false, thongBao: "Không lấy được mã thiết bị. Hãy thử lại sau." };
-    }
-    const [{ doc, setDoc, serverTimestamp }, { db }] = await Promise.all([
-      import("firebase/firestore"),
-      layDichVu(),
-    ]);
-    await setDoc(
-      doc(db, "nguoiDung", uid),
-      { thongBao: { bat: true, token: { [token]: true }, capNhatLuc: serverTimestamp() } },
-      { merge: true },
-    );
+    // Bấm bật trong Cài đặt thì luôn ghi, kể cả khi mã giống lần trước (vì có
+    // thể lần trước đã tắt, bat đang là false)
+    await luuTokenMayNay(uid, true);
     return { thanhCong: true, thongBao: null };
   } catch {
     return {
@@ -121,6 +197,7 @@ export async function tatThongBao(uid) {
       await deleteToken(messaging).catch(() => {});
     }
     await setDoc(doc(db, "nguoiDung", uid), { thongBao: { bat: false } }, { merge: true });
+    ghiMay(KHOA_TOKEN, null);
     if (token) {
       await updateDoc(doc(db, "nguoiDung", uid), {
         [`thongBao.token.${token}`]: deleteField(),
