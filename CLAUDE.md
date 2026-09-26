@@ -9,8 +9,15 @@ Việc nào đã có trong file đó thì KHÔNG hỏi lại. Chốt thêm quy�
 ghi bổ sung vào đó rồi commit, đừng để quyết định chỉ nằm trong cửa sổ trò
 chuyện vì cửa sổ đó không đi theo sang máy khác.
 
-App học tiếng Trung (HSK 3.0, cấp 1-3) dành cho người Việt đã biết tiếng Nhật
-(trình độ N4-N1). Chủ dự án KHÔNG BIẾT LẬP TRÌNH.
+App học tiếng Trung HSK cấp 1-3, gồm 2 phần:
+  - Phần 1: cho người Việt đã biết tiếng Nhật (trình độ N4-N1).
+  - Phần 2 (đang lập kế hoạch): cho người Việt chưa biết gì về tiếng Trung.
+Chủ dự án KHÔNG BIẾT LẬP TRÌNH.
+
+CHUẨN NỘI DUNG của CẢ HAI PHẦN: 新版HSK考试大纲 (đại cương thi HSK bản mới,
+công bố 11/2025, áp dụng từ 7/2026): cấp 1/2/3 = 300/200/500 từ, 246/125/284
+chữ. KHÔNG dùng bộ tiêu chuẩn 2021 (500/772/973 từ) dù hay được gọi là
+"HSK 3.0" (quyết định 3.2, 18.63).
 
 ## Nền tảng (không được đổi)
 
