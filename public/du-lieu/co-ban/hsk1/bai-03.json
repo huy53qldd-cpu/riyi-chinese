@@ -1,0 +1,937 @@
+{
+ "loai": "bai-co-ban",
+ "version": 1,
+ "cap": 1,
+ "bai": 3,
+ "capNhatLuc": "2026-09-26",
+ "nguon": "HSK标准教程 1 (HSK Standard Course 1), bài 3: hội thoại, âm thanh, bài tập chọn lọc.",
+ "ten": {
+  "trung": "你叫什么名字",
+  "pinyin": [
+   "nǐ",
+   "jiào",
+   "shén",
+   "me",
+   "míng",
+   "zi"
+  ],
+  "viet": "Bạn tên là gì"
+ },
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": [
+   "khoi-dong-A",
+   "khoi-dong-B",
+   "khoi-dong-C",
+   "khoi-dong-D",
+   "khoi-dong-E",
+   "khoi-dong-F"
+  ],
+  "tu": [
+   {
+    "trung": "中国",
+    "pinyin": [
+     "Zhōng",
+     "guó"
+    ],
+    "dapAn": "C"
+   },
+   {
+    "trung": "美国",
+    "pinyin": [
+     "Měi",
+     "guó"
+    ],
+    "dapAn": "D"
+   },
+   {
+    "trung": "中国人",
+    "pinyin": [
+     "Zhōng",
+     "guó",
+     "rén"
+    ],
+    "dapAn": "F"
+   },
+   {
+    "trung": "美国人",
+    "pinyin": [
+     "Měi",
+     "guó",
+     "rén"
+    ],
+    "dapAn": "E"
+   },
+   {
+    "trung": "老师",
+    "pinyin": [
+     "lǎo",
+     "shī"
+    ],
+    "dapAn": "A"
+   },
+   {
+    "trung": "学生",
+    "pinyin": [
+     "xué",
+     "sheng"
+    ],
+    "dapAn": "B"
+   }
+  ]
+ },
+ "hoiThoai": [
+  {
+   "so": 1,
+   "am": "03-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": {
+    "trung": "在学校",
+    "pinyin": [
+     "zài",
+     "xué",
+     "xiào"
+    ],
+    "viet": "Ở trường"
+   },
+   "cau": [
+    {
+     "trung": "你叫什么名字？",
+     "pinyin": [
+      "nǐ",
+      "jiào",
+      "shén",
+      "me",
+      "míng",
+      "zi",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Bạn tên là gì?"
+    },
+    {
+     "trung": "我叫李月。",
+     "pinyin": [
+      "wǒ",
+      "jiào",
+      "Lǐ",
+      "Yuè",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Tôi tên là Lý Nguyệt."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "叫",
+     "pinyin": [
+      "jiào"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0088",
+     "capHsk": 1,
+     "viet": "gọi; tên là"
+    },
+    {
+     "trung": "什么",
+     "pinyin": [
+      "shén",
+      "me"
+     ],
+     "tuLoai": "đại từ",
+     "idTuVung": "tu-0183",
+     "capHsk": 1,
+     "viet": "gì, cái gì"
+    },
+    {
+     "trung": "名字",
+     "pinyin": [
+      "míng",
+      "zi"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0130",
+     "capHsk": 1,
+     "viet": "tên"
+    },
+    {
+     "trung": "我",
+     "pinyin": [
+      "wǒ"
+     ],
+     "tuLoai": "đại từ",
+     "idTuVung": "tu-0221",
+     "capHsk": 1,
+     "viet": "tôi"
+    }
+   ],
+   "tenRieng": [
+    {
+     "trung": "李月",
+     "pinyin": [
+      "Lǐ",
+      "Yuè"
+     ],
+     "viet": "Lý Nguyệt (tên người)"
+    }
+   ]
+  },
+  {
+   "so": 2,
+   "am": "03-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": {
+    "trung": "在教室",
+    "pinyin": [
+     "zài",
+     "jiào",
+     "shì"
+    ],
+    "viet": "Trong lớp học"
+   },
+   "cau": [
+    {
+     "trung": "你是老师吗？",
+     "pinyin": [
+      "nǐ",
+      "shì",
+      "lǎo",
+      "shī",
+      "ma",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Bạn là giáo viên à?"
+    },
+    {
+     "trung": "我不是老师，我是学生。",
+     "pinyin": [
+      "wǒ",
+      "bù",
+      "shì",
+      "lǎo",
+      "shī",
+      "",
+      "wǒ",
+      "shì",
+      "xué",
+      "sheng",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (是).",
+     "nguoi": "B",
+     "viet": "Tôi không phải giáo viên, tôi là học sinh."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "是",
+     "pinyin": [
+      "shì"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0186",
+     "capHsk": 1,
+     "viet": "là; vâng, đúng"
+    },
+    {
+     "trung": "老师",
+     "pinyin": [
+      "lǎo",
+      "shī"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0107",
+     "capHsk": 1,
+     "viet": "thầy giáo, cô giáo"
+    },
+    {
+     "trung": "吗",
+     "pinyin": [
+      "ma"
+     ],
+     "tuLoai": "trợ từ",
+     "idTuVung": "tu-0114",
+     "capHsk": 1,
+     "viet": "(trợ từ nghi vấn cuối câu) … không?"
+    },
+    {
+     "trung": "学生",
+     "pinyin": [
+      "xué",
+      "sheng"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0249",
+     "capHsk": 1,
+     "viet": "học sinh, sinh viên"
+    }
+   ]
+  },
+  {
+   "so": 3,
+   "am": "03-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": {
+    "trung": "在学校",
+    "pinyin": [
+     "zài",
+     "xué",
+     "xiào"
+    ],
+    "viet": "Ở trường"
+   },
+   "cau": [
+    {
+     "trung": "你是中国人吗？",
+     "pinyin": [
+      "nǐ",
+      "shì",
+      "Zhōng",
+      "guó",
+      "rén",
+      "ma",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Bạn là người Trung Quốc à?"
+    },
+    {
+     "trung": "我不是中国人，我是美国人。",
+     "pinyin": [
+      "wǒ",
+      "bù",
+      "shì",
+      "Zhōng",
+      "guó",
+      "rén",
+      "",
+      "wǒ",
+      "shì",
+      "Měi",
+      "guó",
+      "rén",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (是).",
+     "nguoi": "B",
+     "viet": "Tôi không phải người Trung Quốc, tôi là người Mỹ."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "人",
+     "pinyin": [
+      "rén"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0170",
+     "capHsk": 1,
+     "viet": "người"
+    }
+   ],
+   "tenRieng": [
+    {
+     "trung": "中国",
+     "pinyin": [
+      "Zhōng",
+      "guó"
+     ],
+     "tuLoai": "Trung Quốc",
+     "idTuVung": "tu-0289",
+     "capHsk": 1,
+     "viet": "Trung Quốc"
+    },
+    {
+     "trung": "美国",
+     "pinyin": [
+      "Měi",
+      "guó"
+     ],
+     "viet": "Mỹ"
+    }
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": {
+    "trung": "疑问代词“什么”",
+    "viet": "Đại từ nghi vấn 什么"
+   },
+   "giaiThich": "什么 dùng trong câu hỏi, đứng làm tân ngữ một mình hoặc đi cùng danh từ phía sau.",
+   "viDu": [
+    {
+     "trung": "你叫什么名字？",
+     "pinyin": [
+      "nǐ",
+      "jiào",
+      "shén",
+      "me",
+      "míng",
+      "zi",
+      ""
+     ],
+     "viet": "Bạn tên là gì?"
+    },
+    {
+     "trung": "这是什么？",
+     "pinyin": [
+      "zhè",
+      "shì",
+      "shén",
+      "me",
+      ""
+     ],
+     "viet": "Đây là cái gì?"
+    },
+    {
+     "trung": "这是什么书？",
+     "pinyin": [
+      "zhè",
+      "shì",
+      "shén",
+      "me",
+      "shū",
+      ""
+     ],
+     "viet": "Đây là sách gì?"
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "“是”字句",
+    "viet": "Câu chữ 是"
+   },
+   "mau": "Chủ ngữ + (不)是 + danh từ",
+   "giaiThich": "Câu dùng 是 để nói ai/cái gì là gì hoặc thuộc về cái gì. Phủ định: thêm 不 trước 是.",
+   "viDu": [
+    {
+     "trung": "李月是老师。",
+     "pinyin": [
+      "Lǐ",
+      "Yuè",
+      "shì",
+      "lǎo",
+      "shī",
+      ""
+     ],
+     "viet": "Lý Nguyệt là giáo viên."
+    },
+    {
+     "trung": "我是美国人。",
+     "pinyin": [
+      "wǒ",
+      "shì",
+      "Měi",
+      "guó",
+      "rén",
+      ""
+     ],
+     "viet": "Tôi là người Mỹ."
+    },
+    {
+     "trung": "我不是老师。",
+     "pinyin": [
+      "wǒ",
+      "bù",
+      "shì",
+      "lǎo",
+      "shī",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (是).",
+     "viet": "Tôi không phải giáo viên."
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "用“吗”的疑问句",
+    "viet": "Câu hỏi với 吗"
+   },
+   "mau": "Chủ ngữ + động từ + danh từ + 吗？",
+   "giaiThich": "Thêm trợ từ 吗 vào cuối câu trần thuật thì thành câu hỏi (có/không).",
+   "viDu": [
+    {
+     "trung": "你是美国人吗？",
+     "pinyin": [
+      "nǐ",
+      "shì",
+      "Měi",
+      "guó",
+      "rén",
+      "ma",
+      ""
+     ],
+     "viet": "Bạn là người Mỹ à?"
+    },
+    {
+     "trung": "你是中国人吗？",
+     "pinyin": [
+      "nǐ",
+      "shì",
+      "Zhōng",
+      "guó",
+      "rén",
+      "ma",
+      ""
+     ],
+     "viet": "Bạn là người Trung Quốc à?"
+    },
+    {
+     "trung": "你是老师吗？",
+     "pinyin": [
+      "nǐ",
+      "shì",
+      "lǎo",
+      "shī",
+      "ma",
+      ""
+     ],
+     "viet": "Bạn là giáo viên à?"
+    }
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo thực tế của bạn",
+   "cau": [
+    {
+     "trung": "你叫什么名字？",
+     "pinyin": [
+      "nǐ",
+      "jiào",
+      "shén",
+      "me",
+      "míng",
+      "zi",
+      ""
+     ]
+    },
+    {
+     "trung": "你是中国人吗？",
+     "pinyin": [
+      "nǐ",
+      "shì",
+      "Zhōng",
+      "guó",
+      "rén",
+      "ma",
+      ""
+     ]
+    },
+    {
+     "trung": "你是美国人吗？",
+     "pinyin": [
+      "nǐ",
+      "shì",
+      "Měi",
+      "guó",
+      "rén",
+      "ma",
+      ""
+     ]
+    },
+    {
+     "trung": "你是老师吗？",
+     "pinyin": [
+      "nǐ",
+      "shì",
+      "lǎo",
+      "shī",
+      "ma",
+      ""
+     ]
+    },
+    {
+     "trung": "你是学生吗？",
+     "pinyin": [
+      "nǐ",
+      "shì",
+      "xué",
+      "sheng",
+      "ma",
+      ""
+     ]
+    }
+   ]
+  },
+  {
+   "loai": "mo-ta-anh",
+   "tieuDe": "Nhìn ảnh, điền vào chỗ trống",
+   "cau": [
+    {
+     "trung": "他叫乔丹，他是___人。",
+     "pinyin": [
+      "tā",
+      "jiào",
+      "Qiáo",
+      "dān",
+      "",
+      "tā",
+      "shì",
+      "___",
+      "",
+      "",
+      "rén",
+      ""
+     ],
+     "dapAn": [
+      "美国"
+     ]
+    },
+    {
+     "trung": "他叫姚明，他是___人。",
+     "pinyin": [
+      "tā",
+      "jiào",
+      "Yáo",
+      "Míng",
+      "",
+      "tā",
+      "shì",
+      "___",
+      "",
+      "",
+      "rén",
+      ""
+     ],
+     "dapAn": [
+      "中国"
+     ]
+    }
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "phan-biet",
+   "tieuDe": "Phân biệt thanh mẫu j q x",
+   "hinh": [
+    "mieng-j",
+    "mieng-q",
+    "mieng-x"
+   ],
+   "giaiThich": "j, q, x: mặt lưỡi chạm ngạc cứng khi phát j, q; j không bật hơi mạnh, q bật hơi mạnh. Phát x thì mặt lưỡi đến gần ngạc cứng nhưng không chạm, luôn chừa một khe hở."
+  },
+  {
+   "loai": "doc-am",
+   "am": "03-4",
+   "tieuDe": "Nghe và đọc theo, chú ý thanh mẫu",
+   "amTiet": [
+    "xiūxi",
+    "jījí",
+    "jīqì",
+    "xiǎoqū",
+    "xīngqī",
+    "xiāngjiāo",
+    "xìngqù",
+    "jìxù"
+   ]
+  },
+  {
+   "loai": "phan-biet",
+   "tieuDe": "Phân biệt thanh mẫu z c s",
+   "hinh": [
+    "mieng-z",
+    "mieng-c",
+    "mieng-s"
+   ],
+   "giaiThich": "z, c, s: đầu lưỡi chạm mặt sau răng trên rồi mở ngay thành khe hở khi phát z, c; z không bật hơi mạnh, c bật hơi rõ. Phát s thì đầu lưỡi không chạm răng trên, chừa khe cho hơi đi ra."
+  },
+  {
+   "loai": "doc-am",
+   "am": "03-5",
+   "tieuDe": "Nghe và đọc theo, chú ý thanh mẫu",
+   "amTiet": [
+    "xǐ zǎo",
+    "dǎsǎo",
+    "sān cì",
+    "zìjǐ",
+    "zuótiān",
+    "zǎoshang",
+    "cāochǎng",
+    "Hànzì"
+   ]
+  },
+  {
+   "loai": "phan-biet",
+   "tieuDe": "Phân biệt vận mẫu i u ü",
+   "hinh": [
+    "mieng-i",
+    "mieng-u",
+    "mieng-v"
+   ],
+   "giaiThich": "i và ü cùng vị trí lưỡi, khác hình môi: i môi dẹt, ü môi tròn. Tập: phát i rồi giữ nguyên lưỡi, tròn môi lại là ra ü. u và ü đều tròn môi, nhưng ü lưỡi ở phía trước (đầu lưỡi tì mặt sau răng dưới), còn u lưỡi rút về phía sau."
+  },
+  {
+   "loai": "bien-dieu-bu",
+   "am": "03-6",
+   "tieuDe": "Biến điệu của 不",
+   "giaiThich": "不 đứng trước thanh 1, 2, 3 thì giữ thanh 4 (bù). Đứng trước thanh 4 thì đọc thành thanh 2 (bú).",
+   "giuNguyen": [
+    {
+     "trung": "不吃",
+     "pinyin": [
+      "bù",
+      "chī"
+     ],
+     "viet": "không ăn"
+    },
+    {
+     "trung": "不行",
+     "pinyin": [
+      "bù",
+      "xíng"
+     ],
+     "viet": "không được"
+    },
+    {
+     "trung": "不好",
+     "pinyin": [
+      "bù",
+      "hǎo"
+     ],
+     "viet": "không tốt"
+    },
+    {
+     "trung": "不喝",
+     "pinyin": [
+      "bù",
+      "hē"
+     ],
+     "viet": "không uống"
+    },
+    {
+     "trung": "不能",
+     "pinyin": [
+      "bù",
+      "néng"
+     ],
+     "viet": "không thể"
+    },
+    {
+     "trung": "不想",
+     "pinyin": [
+      "bù",
+      "xiǎng"
+     ],
+     "viet": "không muốn"
+    }
+   ],
+   "doiThanh2": [
+    {
+     "trung": "不会",
+     "pinyin": [
+      "bù",
+      "huì"
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (会).",
+     "viet": "không biết (làm)"
+    },
+    {
+     "trung": "不是",
+     "pinyin": [
+      "bù",
+      "shì"
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (是).",
+     "viet": "không phải"
+    },
+    {
+     "trung": "不看",
+     "pinyin": [
+      "bù",
+      "kàn"
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (看).",
+     "viet": "không xem"
+    }
+   ]
+  },
+  {
+   "loai": "quy-tac",
+   "tieuDe": "ü ghép với j q x",
+   "giaiThich": "ü và vận mẫu bắt đầu bằng ü ghép với j, q, x thì bỏ hai chấm: ju, qu, xu. Ghép với l, n thì vẫn giữ: lü, nü."
+  },
+  {
+   "loai": "doc-am",
+   "am": "03-7",
+   "tieuDe": "Nghe và đọc theo, chú ý cách viết và cách đọc ü",
+   "amTiet": [
+    "ü üe üan ün",
+    "ju jue juan jun",
+    "qu que quan qun",
+    "xu xue xuan xun"
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [
+   {
+    "net": "𠃌",
+    "ten": "横折钩",
+    "pinyin": "héngzhégōu",
+    "viet": "ngang gập móc",
+    "viDu": [
+     "门",
+     "月"
+    ]
+   },
+   {
+    "net": "㇃",
+    "ten": "卧钩",
+    "pinyin": "wògōu",
+    "viet": "móc nằm",
+    "viDu": [
+     "心",
+     "您"
+    ]
+   }
+  ],
+  "chuDocThe": [
+   {
+    "trung": "月",
+    "pinyin": [
+     "yuè"
+    ],
+    "giaiThich": "Chỉ mặt trăng."
+   },
+   {
+    "trung": "心",
+    "pinyin": [
+     "xīn"
+    ],
+    "giaiThich": "Chỉ quả tim."
+   },
+   {
+    "trung": "中",
+    "pinyin": [
+     "zhōng"
+    ],
+    "giaiThich": "Nghĩa gốc là lá cờ tung bay; nay chỉ phương vị, nghĩa là ở giữa."
+   },
+   {
+    "trung": "人",
+    "pinyin": [
+     "rén"
+    ],
+    "giaiThich": "Trông như một người đứng thẳng."
+   }
+  ],
+  "butThuan": [
+   {
+    "quyTac": "先横后竖",
+    "viet": "Ngang trước, sổ sau",
+    "viDu": [
+     "十",
+     "工"
+    ]
+   },
+   {
+    "quyTac": "先撇后捺",
+    "viet": "Phẩy trước, mác sau",
+    "viDu": [
+     "八",
+     "人"
+    ]
+   }
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Giới thiệu bản thân",
+  "viDu": [
+   {
+    "trung": "我叫李月，我是中国人，我是老师。",
+    "pinyin": [
+     "wǒ",
+     "jiào",
+     "Lǐ",
+     "Yuè",
+     "",
+     "wǒ",
+     "shì",
+     "Zhōng",
+     "guó",
+     "rén",
+     "",
+     "wǒ",
+     "shì",
+     "lǎo",
+     "shī",
+     ""
+    ],
+    "nguoi": "A",
+    "viet": "Tôi tên là Lý Nguyệt, tôi là người Trung Quốc, tôi là giáo viên."
+   },
+   {
+    "trung": "我叫大卫，我是美国人，我是学生。",
+    "pinyin": [
+     "wǒ",
+     "jiào",
+     "Dà",
+     "wèi",
+     "",
+     "wǒ",
+     "shì",
+     "Měi",
+     "guó",
+     "rén",
+     "",
+     "wǒ",
+     "shì",
+     "xué",
+     "sheng",
+     ""
+    ],
+    "nguoi": "B",
+    "viet": "Tôi tên là David, tôi là người Mỹ, tôi là học sinh."
+   }
+  ]
+ },
+ "tuBoSung2025": [
+  {
+   "trung": "中文",
+   "pinyin": [
+    "zhōng",
+    "wén"
+   ],
+   "idTuVung": "tu-0290",
+   "capHsk": 1,
+   "viet": "tiếng Trung"
+  },
+  {
+   "trung": "男",
+   "pinyin": [
+    "nán"
+   ],
+   "idTuVung": "tu-0138",
+   "capHsk": 1,
+   "viet": "nam, đàn ông"
+  },
+  {
+   "trung": "女",
+   "pinyin": [
+    "nǚ"
+   ],
+   "idTuVung": "tu-0152",
+   "capHsk": 1,
+   "viet": "nữ, đàn bà"
+  }
+ ],
+ "nguPhapHsk": [
+  "np-0001",
+  "np-0016",
+  "np-0006"
+ ],
+ "canKiemTra": [
+  "Bản dịch tiếng Việt của hội thoại, ví dụ, giải thích là bản nháp của Claude, chưa có người duyệt.",
+  "Pinyin chép tay từ sách (đã đối chiếu tự động với từ điển); ghi chú biến điệu do máy sinh theo quy tắc.",
+  "Đáp án phần khởi động do Claude suy từ ảnh (sách không in đáp án)."
+ ]
+}

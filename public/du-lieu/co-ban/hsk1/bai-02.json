@@ -1,0 +1,530 @@
+{
+ "loai": "bai-co-ban",
+ "version": 1,
+ "cap": 1,
+ "bai": 2,
+ "capNhatLuc": "2026-09-26",
+ "nguon": "HSK标准教程 1 (HSK Standard Course 1), bài 2: hội thoại, âm thanh, bài tập chọn lọc.",
+ "ten": {
+  "trung": "谢谢你",
+  "pinyin": [
+   "xiè",
+   "xie",
+   "nǐ"
+  ],
+  "viet": "Cảm ơn bạn"
+ },
+ "hoiThoai": [
+  {
+   "so": 1,
+   "am": "02-1",
+   "anh": "hoi-thoai-1",
+   "cau": [
+    {
+     "trung": "谢谢！",
+     "pinyin": [
+      "xiè",
+      "xie",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Cảm ơn!"
+    },
+    {
+     "trung": "不谢！",
+     "pinyin": [
+      "bù",
+      "xiè",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (谢).",
+     "nguoi": "B",
+     "viet": "Không có gì!"
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "谢谢",
+     "pinyin": [
+      "xiè",
+      "xie"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0240",
+     "capHsk": 1,
+     "viet": "cảm ơn"
+    },
+    {
+     "trung": "不",
+     "pinyin": [
+      "bù"
+     ],
+     "tuLoai": "phó từ",
+     "idTuVung": "tu-0013",
+     "capHsk": 1,
+     "viet": "không"
+    }
+   ]
+  },
+  {
+   "so": 2,
+   "am": "02-2",
+   "anh": "hoi-thoai-2",
+   "cau": [
+    {
+     "trung": "谢谢你！",
+     "pinyin": [
+      "xiè",
+      "xie",
+      "nǐ",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Cảm ơn bạn!"
+    },
+    {
+     "trung": "不客气！",
+     "pinyin": [
+      "bù",
+      "kè",
+      "qi",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (客).",
+     "nguoi": "B",
+     "viet": "Không có gì! (đừng khách sáo)"
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "不客气",
+     "pinyin": [
+      "bù",
+      "kè",
+      "qi"
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (客).",
+     "idTuVung": "tu-0014",
+     "capHsk": 1,
+     "viet": "đừng khách sáo; không có gì"
+    }
+   ]
+  },
+  {
+   "so": 3,
+   "am": "02-3",
+   "anh": "hoi-thoai-3",
+   "cau": [
+    {
+     "trung": "再见！",
+     "pinyin": [
+      "zài",
+      "jiàn",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Tạm biệt!"
+    },
+    {
+     "trung": "再见！",
+     "pinyin": [
+      "zài",
+      "jiàn",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Tạm biệt!"
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "再见",
+     "pinyin": [
+      "zài",
+      "jiàn"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0272",
+     "capHsk": 1,
+     "viet": "tạm biệt, hẹn gặp lại"
+    }
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "bang-am",
+   "am": "02-4",
+   "tieuDe": "Thanh mẫu và vận mẫu (2)",
+   "thanhMau": [
+    "zh ch sh r",
+    "z c s"
+   ],
+   "vanMau": [
+    "ou iou(iu)",
+    "an ian uan üan",
+    "en in uen(un) ün",
+    "ang iang uang",
+    "eng ing ueng",
+    "ong iong"
+   ]
+  },
+  {
+   "loai": "doc-hinh",
+   "am": "02-5",
+   "tieuDe": "Nhìn tranh, đọc từ một âm tiết",
+   "tu": [
+    "sān",
+    "shān",
+    "zhōng",
+    "yáng",
+    "líng",
+    "cài",
+    "shǒu",
+    "xióng",
+    "yún",
+    "xīng",
+    "yuán",
+    "rén",
+    "chuán",
+    "chuáng",
+    "chī",
+    "rè"
+   ],
+   "hinh": [
+    "am-02-5-1",
+    "am-02-5-2",
+    "am-02-5-3",
+    "am-02-5-4",
+    "am-02-5-5",
+    "am-02-5-6",
+    "am-02-5-7",
+    "am-02-5-8",
+    "am-02-5-9",
+    "am-02-5-10",
+    "am-02-5-11",
+    "am-02-5-12",
+    "am-02-5-13",
+    "am-02-5-14",
+    "am-02-5-15",
+    "am-02-5-16"
+   ]
+  },
+  {
+   "loai": "doc-hinh",
+   "am": "02-6",
+   "tieuDe": "Nhìn tranh, đọc từ hai âm tiết",
+   "tu": [
+    "bīngxiāng",
+    "jīdàn",
+    "sījī",
+    "zúqiú",
+    "jīchǎng",
+    "pá shān",
+    "shǒubiǎo",
+    "xióngmāo"
+   ],
+   "hinh": [
+    "am-02-6-1",
+    "am-02-6-2",
+    "am-02-6-3",
+    "am-02-6-4",
+    "am-02-6-5",
+    "am-02-6-6",
+    "am-02-6-7",
+    "am-02-6-8"
+   ]
+  },
+  {
+   "loai": "thanh-nhe",
+   "tieuDe": "Thanh nhẹ",
+   "giaiThich": "Ngoài 4 thanh còn có một thanh đọc vừa ngắn vừa nhẹ, gọi là thanh nhẹ (轻声). Thanh nhẹ không ghi dấu.",
+   "viDu": [
+    {
+     "trung": "妈妈",
+     "pinyin": [
+      "mā",
+      "ma"
+     ],
+     "viet": "mẹ"
+    },
+    {
+     "trung": "爷爷",
+     "pinyin": [
+      "yé",
+      "ye"
+     ],
+     "viet": "ông nội"
+    },
+    {
+     "trung": "奶奶",
+     "pinyin": [
+      "nǎi",
+      "nai"
+     ],
+     "viet": "bà nội"
+    },
+    {
+     "trung": "爸爸",
+     "pinyin": [
+      "bà",
+      "ba"
+     ],
+     "viet": "bố"
+    }
+   ],
+   "hinh": [
+    "thanh-nhe-1",
+    "thanh-nhe-2",
+    "thanh-nhe-3",
+    "thanh-nhe-4"
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "am": "02-7",
+   "tieuDe": "Đọc, chú ý thanh nhẹ",
+   "amTiet": [
+    "zhuōzi",
+    "fángzi",
+    "yǐzi",
+    "guìzi",
+    "tāmen",
+    "rénmen",
+    "wǒmen",
+    "dìdi",
+    "yīfu",
+    "érzi",
+    "xǐhuan",
+    "rènshi",
+    "xiānsheng",
+    "péngyou",
+    "wǎnshang",
+    "piàoliang"
+   ]
+  },
+  {
+   "loai": "quy-tac",
+   "tieuDe": "Quy tắc ghi dấu thanh",
+   "giaiThich": "Dấu thanh đặt trên nguyên âm. Vận mẫu có từ hai nguyên âm trở lên thì dấu đặt trên nguyên âm mở miệng to hơn, theo thứ tự a, o, e, i, u, ü. Ngoại lệ: iu (viết tắt của iou) đặt dấu trên u. Thanh nhẹ không ghi dấu."
+  },
+  {
+   "loai": "doc-am",
+   "am": "02-8",
+   "tieuDe": "Đọc, chú ý vị trí dấu thanh",
+   "amTiet": [
+    "xuéxiào",
+    "bāng máng",
+    "lánqiú",
+    "nǚ'ér",
+    "yóu yǒng",
+    "shǒubiǎo",
+    "zhōngyú",
+    "gōngsī",
+    "shíjiān",
+    "shēntǐ",
+    "kǎoshì",
+    "guójiā",
+    "bàozhǐ",
+    "hǎochī",
+    "xièxie",
+    "kèqi"
+   ]
+  },
+  {
+   "loai": "quy-tac",
+   "tieuDe": "Viết tắt vận mẫu",
+   "giaiThich": "iou, uei, uen đứng sau thanh mẫu thì viết tắt thành iu, ui, un. Ví dụ: niu, gui, lun."
+  },
+  {
+   "loai": "doc-am",
+   "am": "02-9",
+   "tieuDe": "Đọc, chú ý vận mẫu viết tắt",
+   "amTiet": [
+    "xiūxi",
+    "shuì jiào",
+    "lúnchuán",
+    "niúnǎi",
+    "píjiǔ",
+    "ángguì",
+    "liúyán",
+    "kāi huì",
+    "tǎolùn",
+    "zúqiú",
+    "Lúndūn",
+    "shīrùn",
+    "cánkuì",
+    "shuǐguǒ",
+    "táozuì",
+    "shùnlì"
+   ]
+  }
+ ],
+ "cumTuLop": {
+  "am": "02-10",
+  "cau": [
+   {
+    "trung": "打开书。",
+    "pinyin": [
+     "dǎ",
+     "kāi",
+     "shū",
+     ""
+    ],
+    "viet": "Mở sách ra."
+   },
+   {
+    "trung": "请大声读。",
+    "pinyin": [
+     "qǐng",
+     "dà",
+     "shēng",
+     "dú",
+     ""
+    ],
+    "viet": "Hãy đọc to lên."
+   },
+   {
+    "trung": "再读一遍。",
+    "pinyin": [
+     "zài",
+     "dú",
+     "yī",
+     "biàn",
+     ""
+    ],
+    "ghiChuBienDieu": "一 đọc thành yí vì đứng trước thanh 4 (遍).",
+    "viet": "Đọc lại một lần nữa."
+   },
+   {
+    "trung": "一起读。",
+    "pinyin": [
+     "yī",
+     "qǐ",
+     "dú",
+     ""
+    ],
+    "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (起).",
+    "viet": "Cùng đọc."
+   },
+   {
+    "trung": "有问题吗？",
+    "pinyin": [
+     "yǒu",
+     "wèn",
+     "tí",
+     "ma",
+     ""
+    ],
+    "viet": "Có câu hỏi nào không?"
+   }
+  ]
+ },
+ "chuHan": {
+  "net": [
+   {
+    "net": "𠃍",
+    "ten": "横折",
+    "pinyin": "héngzhé",
+    "viet": "ngang gập",
+    "viDu": [
+     "口",
+     "日"
+    ]
+   },
+   {
+    "net": "𠃊",
+    "ten": "竖折",
+    "pinyin": "shùzhé",
+    "viet": "sổ gập",
+    "viDu": [
+     "山",
+     "出"
+    ]
+   },
+   {
+    "net": "亅",
+    "ten": "竖钩",
+    "pinyin": "shùgōu",
+    "viet": "sổ móc",
+    "viDu": [
+     "丁",
+     "小"
+    ]
+   }
+  ],
+  "chuDocThe": [
+   {
+    "trung": "口",
+    "pinyin": [
+     "kǒu"
+    ],
+    "giaiThich": "Nghĩa gốc là cái miệng; chữ trông như cái miệng đang mở."
+   },
+   {
+    "trung": "见",
+    "pinyin": [
+     "jiàn"
+    ],
+    "giaiThich": "Chữ phồn thể 見 trên là 目 (mắt), dưới là 人 (người): mở mắt ra nhìn."
+   },
+   {
+    "trung": "山",
+    "pinyin": [
+     "shān"
+    ],
+    "giaiThich": "Trông như dãy núi nhấp nhô, nghĩa là núi."
+   },
+   {
+    "trung": "小",
+    "pinyin": [
+     "xiǎo"
+    ],
+    "giaiThich": "Vốn trông như những hạt cát nhỏ; nay nghĩa là nhỏ, trái nghĩa với 大."
+   },
+   {
+    "trung": "不",
+    "pinyin": [
+     "bù"
+    ],
+    "giaiThich": "Vốn chỉ một loại công cụ; nay là phó từ phủ định."
+   }
+  ]
+ },
+ "tuBoSung2025": [
+  {
+   "trung": "请问",
+   "pinyin": [
+    "qǐng",
+    "wèn"
+   ],
+   "idTuVung": "tu-0166",
+   "capHsk": 1,
+   "viet": "xin hỏi, cho tôi hỏi"
+  },
+  {
+   "trung": "问题",
+   "pinyin": [
+    "wèn",
+    "tí"
+   ],
+   "idTuVung": "tu-0220",
+   "capHsk": 1,
+   "viet": "vấn đề; câu hỏi"
+  },
+  {
+   "trung": "再",
+   "pinyin": [
+    "zài"
+   ],
+   "idTuVung": "tu-0270",
+   "capHsk": 1,
+   "viet": "lại, nữa; rồi mới"
+  }
+ ],
+ "nguPhapHsk": [],
+ "canKiemTra": [
+  "Bản dịch tiếng Việt của hội thoại, ví dụ, giải thích là bản nháp của Claude, chưa có người duyệt.",
+  "Pinyin chép tay từ sách (đã đối chiếu tự động với từ điển); ghi chú biến điệu do máy sinh theo quy tắc."
+ ]
+}

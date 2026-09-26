@@ -1,0 +1,1143 @@
+{
+ "loai": "bai-co-ban",
+ "version": 1,
+ "cap": 1,
+ "bai": 5,
+ "capNhatLuc": "2026-09-26",
+ "nguon": "HSK标准教程 1 (HSK Standard Course 1), bài 5: hội thoại, âm thanh, bài tập chọn lọc.",
+ "ten": {
+  "trung": "她女儿今年二十岁",
+  "pinyin": [
+   "tā",
+   "nǚ",
+   "ér",
+   "jīn",
+   "nián",
+   "èr",
+   "shí",
+   "suì"
+  ],
+  "viet": "Con gái cô ấy năm nay hai mươi tuổi"
+ },
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": [
+   "khoi-dong-A",
+   "khoi-dong-B",
+   "khoi-dong-C",
+   "khoi-dong-D",
+   "khoi-dong-E",
+   "khoi-dong-F"
+  ],
+  "tu": [
+   {
+    "trung": "六口人",
+    "pinyin": [
+     "liù",
+     "kǒu",
+     "rén"
+    ],
+    "dapAn": "B"
+   },
+   {
+    "trung": "家",
+    "pinyin": [
+     "jiā"
+    ],
+    "dapAn": "C"
+   },
+   {
+    "trung": "女儿",
+    "pinyin": [
+     "nǚ",
+     "ér"
+    ],
+    "dapAn": "A"
+   },
+   {
+    "trung": "学生",
+    "pinyin": [
+     "xué",
+     "sheng"
+    ],
+    "dapAn": "E"
+   },
+   {
+    "trung": "70岁",
+    "pinyin": [
+     "qīshí",
+     "",
+     "suì"
+    ],
+    "dapAn": "F"
+   },
+   {
+    "trung": "20岁",
+    "pinyin": [
+     "èrshí",
+     "",
+     "suì"
+    ],
+    "dapAn": "D"
+   }
+  ]
+ },
+ "hoiThoai": [
+  {
+   "so": 1,
+   "am": "05-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": {
+    "trung": "在学校",
+    "pinyin": [
+     "zài",
+     "xué",
+     "xiào"
+    ],
+    "viet": "Ở trường"
+   },
+   "cau": [
+    {
+     "trung": "你家有几口人？",
+     "pinyin": [
+      "nǐ",
+      "jiā",
+      "yǒu",
+      "jǐ",
+      "kǒu",
+      "rén",
+      ""
+     ],
+     "ghiChuBienDieu": "有几口: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+     "nguoi": "A",
+     "viet": "Nhà bạn có mấy người?"
+    },
+    {
+     "trung": "我家有三口人。",
+     "pinyin": [
+      "wǒ",
+      "jiā",
+      "yǒu",
+      "sān",
+      "kǒu",
+      "rén",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Nhà tôi có ba người."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "家",
+     "pinyin": [
+      "jiā"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0085",
+     "capHsk": 1,
+     "viet": "nhà, gia đình"
+    },
+    {
+     "trung": "有",
+     "pinyin": [
+      "yǒu"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0263",
+     "capHsk": 1,
+     "viet": "có"
+    },
+    {
+     "trung": "口",
+     "pinyin": [
+      "kǒu"
+     ],
+     "tuLoai": "lượng từ",
+     "boSung": true,
+     "idTuVung": "tu-0104",
+     "capHsk": 1,
+     "viet": "miệng; (lượng từ) người trong gia đình"
+    }
+   ]
+  },
+  {
+   "so": 2,
+   "am": "05-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": {
+    "trung": "在办公室",
+    "pinyin": [
+     "zài",
+     "bàn",
+     "gōng",
+     "shì"
+    ],
+    "viet": "Ở văn phòng"
+   },
+   "cau": [
+    {
+     "trung": "你女儿几岁了？",
+     "pinyin": [
+      "nǐ",
+      "nǚ",
+      "ér",
+      "jǐ",
+      "suì",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (女).",
+     "nguoi": "A",
+     "viet": "Con gái bạn mấy tuổi rồi?"
+    },
+    {
+     "trung": "她今年四岁了。",
+     "pinyin": [
+      "tā",
+      "jīn",
+      "nián",
+      "sì",
+      "suì",
+      "le",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Năm nay cháu bốn tuổi rồi."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "女儿",
+     "pinyin": [
+      "nǚ",
+      "ér"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0153",
+     "capHsk": 1,
+     "viet": "con gái"
+    },
+    {
+     "trung": "几",
+     "pinyin": [
+      "jǐ"
+     ],
+     "tuLoai": "đại từ",
+     "idTuVung": "tu-0084",
+     "capHsk": 1,
+     "viet": "mấy, bao nhiêu (số nhỏ)"
+    },
+    {
+     "trung": "岁",
+     "pinyin": [
+      "suì"
+     ],
+     "tuLoai": "lượng từ",
+     "idTuVung": "tu-0199",
+     "capHsk": 1,
+     "viet": "tuổi"
+    },
+    {
+     "trung": "了",
+     "pinyin": [
+      "le"
+     ],
+     "tuLoai": "trợ từ",
+     "idTuVung": "tu-0108",
+     "capHsk": 1,
+     "viet": "(trợ từ) đã…, rồi (hoàn thành, thay đổi)"
+    },
+    {
+     "trung": "今年",
+     "pinyin": [
+      "jīn",
+      "nián"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0093",
+     "capHsk": 1,
+     "viet": "năm nay"
+    }
+   ]
+  },
+  {
+   "so": 3,
+   "am": "05-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": {
+    "trung": "在办公室",
+    "pinyin": [
+     "zài",
+     "bàn",
+     "gōng",
+     "shì"
+    ],
+    "viet": "Ở văn phòng"
+   },
+   "cau": [
+    {
+     "trung": "李老师多大了？",
+     "pinyin": [
+      "Lǐ",
+      "lǎo",
+      "shī",
+      "duō",
+      "dà",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "李 đọc thành thanh 2 khi đứng trước thanh 3 (老).",
+     "nguoi": "A",
+     "viet": "Cô Lý bao nhiêu tuổi rồi?"
+    },
+    {
+     "trung": "她今年50岁了。",
+     "pinyin": [
+      "tā",
+      "jīn",
+      "nián",
+      "wǔshí",
+      "",
+      "suì",
+      "le",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Năm nay cô ấy 50 tuổi rồi."
+    },
+    {
+     "trung": "她女儿呢？",
+     "pinyin": [
+      "tā",
+      "nǚ",
+      "ér",
+      "ne",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Còn con gái cô ấy?"
+    },
+    {
+     "trung": "她女儿今年20岁。",
+     "pinyin": [
+      "tā",
+      "nǚ",
+      "ér",
+      "jīn",
+      "nián",
+      "èrshí",
+      "",
+      "suì",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Con gái cô ấy năm nay 20 tuổi."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "多",
+     "pinyin": [
+      "duō"
+     ],
+     "tuLoai": "phó từ",
+     "idTuVung": "tu-0045",
+     "capHsk": 1,
+     "viet": "nhiều"
+    },
+    {
+     "trung": "大",
+     "pinyin": [
+      "dà"
+     ],
+     "tuLoai": "tính từ",
+     "idTuVung": "tu-0024",
+     "capHsk": 1,
+     "viet": "to, lớn"
+    }
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": {
+    "trung": "疑问代词“几”",
+    "viet": "Đại từ nghi vấn 几"
+   },
+   "giaiThich": "几 dùng để hỏi số lượng, thường là số dưới 10.",
+   "viDu": [
+    {
+     "trung": "你有几个汉语老师？",
+     "pinyin": [
+      "nǐ",
+      "yǒu",
+      "jǐ",
+      "ge",
+      "Hàn",
+      "yǔ",
+      "lǎo",
+      "shī",
+      ""
+     ],
+     "ghiChuBienDieu": "你有几: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu. 语 đọc thành thanh 2 khi đứng trước thanh 3 (老).",
+     "viet": "Bạn có mấy giáo viên tiếng Trung?"
+    },
+    {
+     "trung": "李老师家有几口人？",
+     "pinyin": [
+      "Lǐ",
+      "lǎo",
+      "shī",
+      "jiā",
+      "yǒu",
+      "jǐ",
+      "kǒu",
+      "rén",
+      ""
+     ],
+     "ghiChuBienDieu": "李 đọc thành thanh 2 khi đứng trước thanh 3 (老). 有几口: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+     "viet": "Nhà cô Lý có mấy người?"
+    },
+    {
+     "trung": "你女儿几岁了？",
+     "pinyin": [
+      "nǐ",
+      "nǚ",
+      "ér",
+      "jǐ",
+      "suì",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (女).",
+     "viet": "Con gái bạn mấy tuổi rồi?"
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "百以内的数字",
+    "viet": "Số đếm dưới 100"
+   },
+   "giaiThich": "Số chục = số hàng chục + 十, rồi thêm số hàng đơn vị: 19 = 十九, 23 = 二十三, 56 = 五十六, 88 = 八十八, 99 = 九十九.",
+   "viDu": [
+    {
+     "trung": "十九",
+     "pinyin": [
+      "shí",
+      "jiǔ"
+     ],
+     "viet": "19"
+    },
+    {
+     "trung": "二十三",
+     "pinyin": [
+      "èr",
+      "shí",
+      "sān"
+     ],
+     "viet": "23"
+    },
+    {
+     "trung": "五十六",
+     "pinyin": [
+      "wǔ",
+      "shí",
+      "liù"
+     ],
+     "viet": "56"
+    },
+    {
+     "trung": "八十八",
+     "pinyin": [
+      "bā",
+      "shí",
+      "bā"
+     ],
+     "viet": "88"
+    },
+    {
+     "trung": "九十九",
+     "pinyin": [
+      "jiǔ",
+      "shí",
+      "jiǔ"
+     ],
+     "viet": "99"
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "“了”表变化",
+    "viet": "了 chỉ sự thay đổi"
+   },
+   "giaiThich": "了 đặt cuối câu chỉ sự thay đổi hoặc một tình huống mới xuất hiện.",
+   "viDu": [
+    {
+     "trung": "李老师今年50岁了。",
+     "pinyin": [
+      "Lǐ",
+      "lǎo",
+      "shī",
+      "jīn",
+      "nián",
+      "wǔshí",
+      "",
+      "suì",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "李 đọc thành thanh 2 khi đứng trước thanh 3 (老).",
+     "viet": "Cô Lý năm nay 50 tuổi rồi."
+    },
+    {
+     "trung": "我朋友的女儿今年四岁了。",
+     "pinyin": [
+      "wǒ",
+      "péng",
+      "you",
+      "de",
+      "nǚ",
+      "ér",
+      "jīn",
+      "nián",
+      "sì",
+      "suì",
+      "le",
+      ""
+     ],
+     "viet": "Con gái bạn tôi năm nay bốn tuổi rồi."
+    },
+    {
+     "trung": "你女儿几岁了？",
+     "pinyin": [
+      "nǐ",
+      "nǚ",
+      "ér",
+      "jǐ",
+      "suì",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (女).",
+     "viet": "Con gái bạn mấy tuổi rồi?"
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "“多+大”表示疑问",
+    "viet": "Hỏi tuổi với 多 + 大"
+   },
+   "giaiThich": "多大 dùng để hỏi tuổi.",
+   "viDu": [
+    {
+     "trung": "你多大了？",
+     "pinyin": [
+      "nǐ",
+      "duō",
+      "dà",
+      "le",
+      ""
+     ],
+     "viet": "Bạn bao nhiêu tuổi rồi?"
+    },
+    {
+     "trung": "你女儿今年多大了？",
+     "pinyin": [
+      "nǐ",
+      "nǚ",
+      "ér",
+      "jīn",
+      "nián",
+      "duō",
+      "dà",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (女).",
+     "viet": "Con gái bạn năm nay bao nhiêu tuổi rồi?"
+    },
+    {
+     "trung": "李老师多大了？",
+     "pinyin": [
+      "Lǐ",
+      "lǎo",
+      "shī",
+      "duō",
+      "dà",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "李 đọc thành thanh 2 khi đứng trước thanh 3 (老).",
+     "viet": "Cô Lý bao nhiêu tuổi rồi?"
+    }
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo thực tế của bạn",
+   "cau": [
+    {
+     "trung": "你家有几口人？",
+     "pinyin": [
+      "nǐ",
+      "jiā",
+      "yǒu",
+      "jǐ",
+      "kǒu",
+      "rén",
+      ""
+     ],
+     "ghiChuBienDieu": "有几口: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu."
+    },
+    {
+     "trung": "你今年多大了？",
+     "pinyin": [
+      "nǐ",
+      "jīn",
+      "nián",
+      "duō",
+      "dà",
+      "le",
+      ""
+     ]
+    },
+    {
+     "trung": "你的汉语老师今年多大了？",
+     "pinyin": [
+      "nǐ",
+      "de",
+      "Hàn",
+      "yǔ",
+      "lǎo",
+      "shī",
+      "jīn",
+      "nián",
+      "duō",
+      "dà",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "语 đọc thành thanh 2 khi đứng trước thanh 3 (老)."
+    },
+    {
+     "trung": "你的中国朋友家有几口人？",
+     "pinyin": [
+      "nǐ",
+      "de",
+      "Zhōng",
+      "guó",
+      "péng",
+      "you",
+      "jiā",
+      "yǒu",
+      "jǐ",
+      "kǒu",
+      "rén",
+      ""
+     ],
+     "ghiChuBienDieu": "有几口: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu."
+    },
+    {
+     "trung": "你的中国朋友今年多大了？",
+     "pinyin": [
+      "nǐ",
+      "de",
+      "Zhōng",
+      "guó",
+      "péng",
+      "you",
+      "jīn",
+      "nián",
+      "duō",
+      "dà",
+      "le",
+      ""
+     ]
+    }
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "er-hoa",
+   "am": "05-4",
+   "tieuDe": "Âm cuốn lưỡi (儿化)",
+   "giaiThich": "儿 có thể ghép với âm tiết đứng trước thành một âm tiết cuốn lưỡi. Chữ Hán viết 'chữ + 儿', pinyin thêm 'r' vào sau.",
+   "viDu": [
+    [
+     "小孩儿",
+     "xiǎoháir",
+     "đứa trẻ"
+    ],
+    [
+     "小鸟儿",
+     "xiǎo niǎor",
+     "con chim nhỏ"
+    ],
+    [
+     "饭馆儿",
+     "fànguǎnr",
+     "quán ăn"
+    ],
+    [
+     "香水儿",
+     "xiāngshuǐr",
+     "nước hoa"
+    ]
+   ],
+   "hinh": [
+    "er-hoa-1",
+    "er-hoa-2",
+    "er-hoa-3",
+    "er-hoa-4"
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "am": "05-5",
+   "tieuDe": "Có i và không có i",
+   "amTiet": [
+    "a ia",
+    "e ie",
+    "ao iao",
+    "ou iou(iu)",
+    "an ian",
+    "ang iang",
+    "ong iong"
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "am": "05-6",
+   "tieuDe": "Có u và không có u",
+   "amTiet": [
+    "a ua",
+    "ai uai",
+    "ei uei(ui)",
+    "an uan",
+    "en uen(un)",
+    "ang uang",
+    "eng ueng"
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "am": "05-7",
+   "tieuDe": "Có ü và không có ü",
+   "amTiet": [
+    "e üe",
+    "an üan",
+    "en ün"
+   ]
+  },
+  {
+   "loai": "quy-tac",
+   "tieuDe": "Âm bật hơi và không bật hơi",
+   "giaiThich": "Các cặp b–p, d–t, g–k, j–q, z–c, zh–ch: âm đứng trước không bật hơi, âm đứng sau bật hơi."
+  },
+  {
+   "loai": "doc-am",
+   "am": "05-8",
+   "tieuDe": "Bật hơi và không bật hơi",
+   "amTiet": [
+    "b p",
+    "d t",
+    "g k",
+    "j q",
+    "z c",
+    "zh ch"
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "am": "05-9",
+   "tieuDe": "Nghe và đọc theo, chú ý thanh mẫu",
+   "amTiet": [
+    "bàng pàng",
+    "dù tù",
+    "gǒu kǒu",
+    "jī qī",
+    "zì cì",
+    "zhuō chē"
+   ]
+  },
+  {
+   "loai": "quy-tac",
+   "tieuDe": "Dấu cách âm (')",
+   "giaiThich": "Âm tiết bắt đầu bằng a, o, e đứng sau âm tiết khác thì dùng dấu cách âm (') để khỏi nhầm ranh giới âm tiết, ví dụ pí'ǎo (皮袄)."
+  },
+  {
+   "loai": "doc-am",
+   "am": "05-10",
+   "tieuDe": "Có và không có dấu cách âm",
+   "amTiet": [
+    "piāo pí'ǎo",
+    "xiān Xī'ān",
+    "jiē jī'è",
+    "jiāng jī'áng",
+    "fānàn fān'àn",
+    "fǎngǎn fāng'àn"
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [
+   {
+    "net": "㇇",
+    "ten": "横撇",
+    "pinyin": "héngpiě",
+    "viet": "ngang phẩy",
+    "viDu": [
+     "水",
+     "又"
+    ]
+   },
+   {
+    "net": "𡿨",
+    "ten": "撇点",
+    "pinyin": "piědiǎn",
+    "viet": "phẩy chấm",
+    "viDu": [
+     "女",
+     "好"
+    ]
+   }
+  ],
+  "chuDocThe": [
+   {
+    "trung": "水",
+    "pinyin": [
+     "shuǐ"
+    ],
+    "giaiThich": "Trông như dòng suối trong khe núi, chỉ dòng nước chảy."
+   },
+   {
+    "trung": "女",
+    "pinyin": [
+     "nǚ"
+    ],
+    "giaiThich": "Trông như người phụ nữ quỳ trên đất, nghĩa là phụ nữ."
+   },
+   {
+    "trung": "了",
+    "pinyin": [
+     "le"
+    ],
+    "giaiThich": "Vốn vẽ em bé đã chào đời (đầu hướng lên); nay là hư từ."
+   },
+   {
+    "trung": "大",
+    "pinyin": [
+     "dà"
+    ],
+    "giaiThich": "Vốn là người đứng dang tay dang chân; nay nghĩa là to, trái nghĩa với 小."
+   }
+  ],
+  "butThuan": [
+   {
+    "quyTac": "先外后内",
+    "viet": "Ngoài trước, trong sau",
+    "viDu": [
+     "四",
+     "国"
+    ]
+   },
+   {
+    "quyTac": "先中间后两边",
+    "viet": "Giữa trước, hai bên sau",
+    "viDu": [
+     "小",
+     "水"
+    ]
+   }
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Giới thiệu gia đình",
+  "viDu": [
+   {
+    "trung": "你家有几口人？",
+    "pinyin": [
+     "nǐ",
+     "jiā",
+     "yǒu",
+     "jǐ",
+     "kǒu",
+     "rén",
+     ""
+    ],
+    "ghiChuBienDieu": "有几口: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+    "nguoi": "A",
+    "viet": "Nhà bạn có mấy người?"
+   },
+   {
+    "trung": "你爸爸今年多大了？",
+    "pinyin": [
+     "nǐ",
+     "bà",
+     "ba",
+     "jīn",
+     "nián",
+     "duō",
+     "dà",
+     "le",
+     ""
+    ],
+    "nguoi": "A",
+    "viet": "Bố bạn năm nay bao nhiêu tuổi rồi?"
+   }
+  ],
+  "tuBoSung": [
+   {
+    "trung": "爷爷",
+    "pinyin": [
+     "yé",
+     "ye"
+    ],
+    "tuLoai": "ông nội",
+    "idTuVung": "tu-0470",
+    "capHsk": 2,
+    "viet": "ông nội"
+   },
+   {
+    "trung": "奶奶",
+    "pinyin": [
+     "nǎi",
+     "nai"
+    ],
+    "tuLoai": "bà nội",
+    "idTuVung": "tu-0407",
+    "capHsk": 2,
+    "viet": "bà nội"
+   },
+   {
+    "trung": "爸爸",
+    "pinyin": [
+     "bà",
+     "ba"
+    ],
+    "tuLoai": "bố",
+    "idTuVung": "tu-0004",
+    "capHsk": 1,
+    "viet": "bố, ba, cha"
+   },
+   {
+    "trung": "妈妈",
+    "pinyin": [
+     "mā",
+     "ma"
+    ],
+    "tuLoai": "mẹ",
+    "idTuVung": "tu-0117",
+    "capHsk": 1,
+    "viet": "mẹ, má"
+   },
+   {
+    "trung": "哥哥",
+    "pinyin": [
+     "gē",
+     "ge"
+    ],
+    "tuLoai": "anh trai",
+    "idTuVung": "tu-0060",
+    "capHsk": 1,
+    "viet": "anh trai"
+   },
+   {
+    "trung": "姐姐",
+    "pinyin": [
+     "jiě",
+     "jie"
+    ],
+    "tuLoai": "chị gái",
+    "idTuVung": "tu-0092",
+    "capHsk": 1,
+    "viet": "chị gái"
+   },
+   {
+    "trung": "弟弟",
+    "pinyin": [
+     "dì",
+     "di"
+    ],
+    "tuLoai": "em trai",
+    "idTuVung": "tu-0039",
+    "capHsk": 1,
+    "viet": "em trai"
+   },
+   {
+    "trung": "妹妹",
+    "pinyin": [
+     "mèi",
+     "mei"
+    ],
+    "tuLoai": "em gái",
+    "idTuVung": "tu-0121",
+    "capHsk": 1,
+    "viet": "em gái"
+   }
+  ]
+ },
+ "vanHoa": {
+  "tieuDe": {
+   "trung": "中国人对年龄的询问方法",
+   "viet": "Cách người Trung Quốc hỏi tuổi"
+  },
+  "noiDung": "Trong văn hóa truyền thống Trung Quốc, tuổi tác không bị coi là chuyện riêng tư, thường được hỏi trong giao tiếp. Nhưng hỏi tuổi người khác nhau thì cách nói khác nhau: trẻ dưới 10 tuổi hỏi 你今年几岁了？; người trẻ hoặc người trạc tuổi mình hỏi 你今年多大了？; để tỏ lòng kính trọng, hỏi người lớn tuổi nhất định phải dùng 您今年多大年纪了？",
+  "cau": [
+   {
+    "trung": "你今年几岁了？",
+    "pinyin": [
+     "nǐ",
+     "jīn",
+     "nián",
+     "jǐ",
+     "suì",
+     "le",
+     ""
+    ]
+   },
+   {
+    "trung": "你今年多大了？",
+    "pinyin": [
+     "nǐ",
+     "jīn",
+     "nián",
+     "duō",
+     "dà",
+     "le",
+     ""
+    ]
+   },
+   {
+    "trung": "您今年多大年纪了？",
+    "pinyin": [
+     "nín",
+     "jīn",
+     "nián",
+     "duō",
+     "dà",
+     "nián",
+     "jì",
+     "le",
+     ""
+    ]
+   }
+  ]
+ },
+ "tuBoSung2025": [
+  {
+   "trung": "零",
+   "pinyin": [
+    "líng"
+   ],
+   "idTuVung": "tu-0112",
+   "capHsk": 1,
+   "viet": "số không, linh (số 0)"
+  },
+  {
+   "trung": "两",
+   "pinyin": [
+    "liǎng"
+   ],
+   "idTuVung": "tu-0111",
+   "capHsk": 1,
+   "viet": "hai; cả hai"
+  },
+  {
+   "trung": "百",
+   "pinyin": [
+    "bǎi"
+   ],
+   "idTuVung": "tu-0005",
+   "capHsk": 1,
+   "viet": "trăm"
+  },
+  {
+   "trung": "千",
+   "pinyin": [
+    "qiān"
+   ],
+   "idTuVung": "tu-0163",
+   "capHsk": 1,
+   "viet": "nghìn"
+  },
+  {
+   "trung": "哥哥",
+   "pinyin": [
+    "gē",
+    "ge"
+   ],
+   "idTuVung": "tu-0060",
+   "capHsk": 1,
+   "viet": "anh trai"
+  },
+  {
+   "trung": "姐姐",
+   "pinyin": [
+    "jiě",
+    "jie"
+   ],
+   "idTuVung": "tu-0092",
+   "capHsk": 1,
+   "viet": "chị gái"
+  },
+  {
+   "trung": "弟弟",
+   "pinyin": [
+    "dì",
+    "di"
+   ],
+   "idTuVung": "tu-0039",
+   "capHsk": 1,
+   "viet": "em trai"
+  },
+  {
+   "trung": "妹妹",
+   "pinyin": [
+    "mèi",
+    "mei"
+   ],
+   "idTuVung": "tu-0121",
+   "capHsk": 1,
+   "viet": "em gái"
+  },
+  {
+   "trung": "孩子",
+   "pinyin": [
+    "hái",
+    "zi"
+   ],
+   "idTuVung": "tu-0068",
+   "capHsk": 1,
+   "viet": "trẻ con, con cái"
+  },
+  {
+   "trung": "家人",
+   "pinyin": [
+    "jiā",
+    "rén"
+   ],
+   "idTuVung": "tu-0090",
+   "capHsk": 1,
+   "viet": "người nhà, gia đình"
+  }
+ ],
+ "nguPhapHsk": [
+  "np-0026",
+  "np-0003",
+  "np-0018",
+  "np-0006"
+ ],
+ "canKiemTra": [
+  "Bản dịch tiếng Việt của hội thoại, ví dụ, giải thích là bản nháp của Claude, chưa có người duyệt.",
+  "Pinyin chép tay từ sách (đã đối chiếu tự động với từ điển); ghi chú biến điệu do máy sinh theo quy tắc.",
+  "Đáp án phần khởi động do Claude suy từ ảnh (sách không in đáp án)."
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "_ghiChu": "Mục lục khóa Tiếng Trung cơ bản cấp 1 (quyết định 18.65). Tên bài theo HSK标准教程1; tên tiếng Việt là bản nháp.",
+ "loai": "muc-luc-co-ban",
+ "version": 1,
+ "cap": 1,
+ "chang": [
+  { "ten": "Chặng 1: Làm quen", "bai": [0, 1, 2, 3, 4, 5] },
+  { "ten": "Chặng 2: Cuộc sống hằng ngày", "bai": [6, 7, 8, 9, 10] },
+  { "ten": "Chặng 3: Kể chuyện", "bai": [11, 12, 13, 14, 15] }
+ ],
+ "bai": [
+  { "so": 0, "trung": "", "viet": "Bài 0: Thanh điệu và cách học", "soBuoi": 2 },
+  { "so": 1, "trung": "你好", "viet": "Xin chào", "soBuoi": 6 },
+  { "so": 2, "trung": "谢谢你", "viet": "Cảm ơn bạn", "soBuoi": 6 },
+  { "so": 3, "trung": "你叫什么名字", "viet": "Bạn tên là gì", "soBuoi": 6 },
+  { "so": 4, "trung": "她是我的汉语老师", "viet": "Cô ấy là giáo viên tiếng Trung của tôi", "soBuoi": 6 },
+  { "so": 5, "trung": "她女儿今年二十岁", "viet": "Con gái cô ấy năm nay hai mươi tuổi", "soBuoi": 6 },
+  { "so": 6, "trung": "我会说汉语", "viet": "Tôi biết nói tiếng Trung", "soBuoi": 6 },
+  { "so": 7, "trung": "今天几号", "viet": "Hôm nay ngày mấy", "soBuoi": 6 },
+  { "so": 8, "trung": "我想喝茶", "viet": "Tôi muốn uống trà", "soBuoi": 6 },
+  { "so": 9, "trung": "你儿子在哪儿工作", "viet": "Con trai bạn làm việc ở đâu", "soBuoi": 6 },
+  { "so": 10, "trung": "我能坐这儿吗", "viet": "Tôi ngồi đây được không", "soBuoi": 6 },
+  { "so": 11, "trung": "现在几点", "viet": "Bây giờ là mấy giờ", "soBuoi": 6 },
+  { "so": 12, "trung": "明天天气怎么样", "viet": "Thời tiết ngày mai thế nào", "soBuoi": 6 },
+  { "so": 13, "trung": "他在学做中国菜呢", "viet": "Anh ấy đang học nấu món Trung Quốc", "soBuoi": 6 },
+  { "so": 14, "trung": "她买了不少衣服", "viet": "Cô ấy đã mua khá nhiều quần áo", "soBuoi": 6 },
+  { "so": 15, "trung": "我是坐飞机来的", "viet": "Tôi đến bằng máy bay", "soBuoi": 6 }
+ ]
+}

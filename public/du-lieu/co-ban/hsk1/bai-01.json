@@ -1,0 +1,605 @@
+{
+ "loai": "bai-co-ban",
+ "version": 1,
+ "cap": 1,
+ "bai": 1,
+ "capNhatLuc": "2026-09-26",
+ "nguon": "HSK标准教程 1 (HSK Standard Course 1), bài 1: hội thoại, âm thanh, bài tập chọn lọc.",
+ "ten": {
+  "trung": "你好",
+  "pinyin": [
+   "nǐ",
+   "hǎo"
+  ],
+  "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (好).",
+  "viet": "Xin chào"
+ },
+ "hoiThoai": [
+  {
+   "so": 1,
+   "am": "01-1",
+   "anh": "hoi-thoai-1",
+   "cau": [
+    {
+     "trung": "你好！",
+     "pinyin": [
+      "nǐ",
+      "hǎo",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (好).",
+     "nguoi": "A",
+     "viet": "Chào bạn!"
+    },
+    {
+     "trung": "你好！",
+     "pinyin": [
+      "nǐ",
+      "hǎo",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (好).",
+     "nguoi": "B",
+     "viet": "Chào bạn!"
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "你",
+     "pinyin": [
+      "nǐ"
+     ],
+     "tuLoai": "đại từ",
+     "idTuVung": "tu-0146",
+     "capHsk": 1,
+     "viet": "bạn, anh, chị (ngôi thứ hai)"
+    },
+    {
+     "trung": "好",
+     "pinyin": [
+      "hǎo"
+     ],
+     "tuLoai": "tính từ",
+     "idTuVung": "tu-0072",
+     "capHsk": 1,
+     "viet": "tốt, hay, khoẻ"
+    }
+   ]
+  },
+  {
+   "so": 2,
+   "am": "01-2",
+   "anh": "hoi-thoai-2",
+   "cau": [
+    {
+     "trung": "您好！",
+     "pinyin": [
+      "nín",
+      "hǎo",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Chào ông/bà! (lịch sự)"
+    },
+    {
+     "trung": "你们好！",
+     "pinyin": [
+      "nǐ",
+      "men",
+      "hǎo",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Chào các bạn!"
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "您",
+     "pinyin": [
+      "nín"
+     ],
+     "tuLoai": "đại từ",
+     "boSung": true,
+     "idTuVung": "tu-0150",
+     "capHsk": 1,
+     "viet": "ngài, ông, bà (cách gọi lịch sự của 你)"
+    },
+    {
+     "trung": "你们",
+     "pinyin": [
+      "nǐ",
+      "men"
+     ],
+     "tuLoai": "đại từ",
+     "idTuVung": "tu-0149",
+     "capHsk": 1,
+     "viet": "các bạn"
+    }
+   ]
+  },
+  {
+   "so": 3,
+   "am": "01-3",
+   "anh": "hoi-thoai-3",
+   "cau": [
+    {
+     "trung": "对不起！",
+     "pinyin": [
+      "duì",
+      "bu",
+      "qǐ",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Xin lỗi!"
+    },
+    {
+     "trung": "没关系！",
+     "pinyin": [
+      "méi",
+      "guān",
+      "xi",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Không sao!"
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "对不起",
+     "pinyin": [
+      "duì",
+      "bu",
+      "qǐ"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0044",
+     "capHsk": 1,
+     "viet": "xin lỗi"
+    },
+    {
+     "trung": "没关系",
+     "pinyin": [
+      "méi",
+      "guān",
+      "xi"
+     ],
+     "idTuVung": "tu-0120",
+     "capHsk": 1,
+     "viet": "không sao, không có gì"
+    }
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "bang-am",
+   "am": "01-4",
+   "tieuDe": "Thanh mẫu và vận mẫu (1)",
+   "thanhMau": [
+    "b p m f",
+    "d t n l",
+    "g k h",
+    "j q x"
+   ],
+   "vanMau": [
+    "i u ü er",
+    "a ia ua",
+    "o uo",
+    "e ie üe",
+    "ai uai",
+    "ei uei(ui)",
+    "ao iao"
+   ]
+  },
+  {
+   "loai": "thanh-dieu",
+   "tieuDe": "Bốn thanh điệu",
+   "giaiThich": "Tiếng Trung có 4 thanh cơ bản: thanh 1 (55), thanh 2 (35), thanh 3 (214), thanh 4 (51). Thanh điệu phân biệt nghĩa.",
+   "viDu": [
+    {
+     "trung": "妈",
+     "pinyin": [
+      "mā"
+     ],
+     "viet": "mẹ"
+    },
+    {
+     "trung": "麻",
+     "pinyin": [
+      "má"
+     ],
+     "viet": "cây gai (lấy sợi)"
+    },
+    {
+     "trung": "马",
+     "pinyin": [
+      "mǎ"
+     ],
+     "viet": "ngựa"
+    },
+    {
+     "trung": "骂",
+     "pinyin": [
+      "mà"
+     ],
+     "viet": "mắng"
+    }
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "am": "01-5",
+   "tieuDe": "Đọc, chú ý thanh điệu",
+   "amTiet": [
+    "ā á ǎ à",
+    "ō ó ǒ ò",
+    "ē é ě è",
+    "ī í ǐ ì",
+    "ū ú ǔ ù",
+    "ǖ ǘ ǚ ǜ"
+   ]
+  },
+  {
+   "loai": "cau-tao-am-tiet",
+   "tieuDe": "Âm tiết tiếng Trung",
+   "giaiThich": "Âm tiết thường gồm thanh mẫu + vận mẫu + thanh điệu; thường một chữ Hán là một âm tiết. Có thể không có thanh mẫu nhưng bắt buộc có vận mẫu và thanh điệu.",
+   "viDu": [
+    [
+     "māo",
+     "猫",
+     "m",
+     "ao",
+     1
+    ],
+    [
+     "yú",
+     "鱼",
+     "",
+     "ü",
+     2
+    ],
+    [
+     "jiě",
+     "姐",
+     "j",
+     "ie",
+     3
+    ],
+    [
+     "èr",
+     "二",
+     "",
+     "er",
+     4
+    ]
+   ],
+   "luuY": "i và ü đứng một mình thì thêm y phía trước, ü bỏ hai chấm; u đứng một mình thì thêm w phía trước."
+  },
+  {
+   "loai": "doc-hinh",
+   "am": "01-6",
+   "tieuDe": "Nhìn tranh, đọc từ một âm tiết",
+   "tu": [
+    "yī",
+    "wǔ",
+    "yú",
+    "ěr",
+    "bǐ",
+    "māo",
+    "dǎo",
+    "huā",
+    "jī",
+    "qī",
+    "xié",
+    "xuě"
+   ],
+   "hinh": [
+    "am-01-6-1",
+    "am-01-6-2",
+    "am-01-6-3",
+    "am-01-6-4",
+    "am-01-6-5",
+    "am-01-6-6",
+    "am-01-6-7",
+    "am-01-6-8",
+    "am-01-6-9",
+    "am-01-6-10",
+    "am-01-6-11",
+    "am-01-6-12"
+   ]
+  },
+  {
+   "loai": "doc-hinh",
+   "am": "01-7",
+   "tieuDe": "Nhìn tranh, đọc từ hai âm tiết",
+   "tu": [
+    "kāfēi",
+    "kělè",
+    "kǎoyā",
+    "huǒguō",
+    "dìtú",
+    "fēijī",
+    "máobǐ",
+    "ěrjī"
+   ],
+   "hinh": [
+    "am-01-7-1",
+    "am-01-7-2",
+    "am-01-7-3",
+    "am-01-7-4",
+    "am-01-7-5",
+    "am-01-7-6",
+    "am-01-7-7",
+    "am-01-7-8"
+   ]
+  },
+  {
+   "loai": "bien-dieu",
+   "tieuDe": "Hai thanh 3 đi liền nhau",
+   "giaiThich": "Hai âm tiết thanh 3 đọc liền nhau thì âm tiết đầu đọc thành thanh 2 (3+3 → 2+3), ví dụ nǐ + hǎo đọc là ní hǎo. Nhưng khi viết pinyin vẫn ghi thanh gốc.",
+   "viDu": [
+    [
+     "你",
+     "nǐ",
+     "好",
+     "hǎo",
+     "ní hǎo"
+    ],
+    [
+     "可",
+     "kě",
+     "以",
+     "yǐ",
+     "ké yǐ"
+    ],
+    [
+     "辅",
+     "fǔ",
+     "导",
+     "dǎo",
+     "fú dǎo"
+    ]
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "am": "01-8",
+   "tieuDe": "Đọc, chú ý hai thanh 3 liền nhau",
+   "amTiet": [
+    "nǐ hǎo",
+    "kěyǐ",
+    "fǔdǎo",
+    "xiǎojiě",
+    "kǒuyǔ",
+    "yǔfǎ",
+    "Fǎyǔ",
+    "tǎo hǎo",
+    "liǎojiě",
+    "yǒuhǎo",
+    "yǔsǎn",
+    "shǒubiǎo"
+   ]
+  }
+ ],
+ "cumTuLop": {
+  "am": "01-9",
+  "cau": [
+   {
+    "trung": "上课！",
+    "pinyin": [
+     "shàng",
+     "kè",
+     ""
+    ],
+    "viet": "Vào học!"
+   },
+   {
+    "trung": "下课！",
+    "pinyin": [
+     "xià",
+     "kè",
+     ""
+    ],
+    "viet": "Tan học!"
+   },
+   {
+    "trung": "现在休息！",
+    "pinyin": [
+     "xiàn",
+     "zài",
+     "xiū",
+     "xi",
+     ""
+    ],
+    "viet": "Bây giờ nghỉ giải lao!"
+   },
+   {
+    "trung": "看黑板！",
+    "pinyin": [
+     "kàn",
+     "hēi",
+     "bǎn",
+     ""
+    ],
+    "viet": "Nhìn lên bảng!"
+   },
+   {
+    "trung": "跟我读！",
+    "pinyin": [
+     "gēn",
+     "wǒ",
+     "dú",
+     ""
+    ],
+    "viet": "Đọc theo tôi!"
+   }
+  ]
+ },
+ "chuHan": {
+  "net": [
+   {
+    "net": "一",
+    "ten": "横",
+    "pinyin": "héng",
+    "viet": "ngang",
+    "viDu": [
+     "一",
+     "二"
+    ]
+   },
+   {
+    "net": "丨",
+    "ten": "竖",
+    "pinyin": "shù",
+    "viet": "sổ",
+    "viDu": [
+     "十",
+     "工"
+    ]
+   },
+   {
+    "net": "丿",
+    "ten": "撇",
+    "pinyin": "piě",
+    "viet": "phẩy",
+    "viDu": [
+     "人",
+     "八"
+    ]
+   },
+   {
+    "net": "丶",
+    "ten": "点",
+    "pinyin": "diǎn",
+    "viet": "chấm",
+    "viDu": [
+     "不",
+     "六"
+    ]
+   },
+   {
+    "net": "㇏",
+    "ten": "捺",
+    "pinyin": "nà",
+    "viet": "mác",
+    "viDu": [
+     "大",
+     "天"
+    ]
+   }
+  ],
+  "chuDocThe": [
+   {
+    "trung": "一",
+    "pinyin": [
+     "yī"
+    ],
+    "giaiThich": "Nét cơ bản của chữ Hán, đứng một mình là chữ chỉ số 1."
+   },
+   {
+    "trung": "二",
+    "pinyin": [
+     "èr"
+    ],
+    "giaiThich": "Chỉ số 2."
+   },
+   {
+    "trung": "三",
+    "pinyin": [
+     "sān"
+    ],
+    "giaiThich": "Chỉ số 3."
+   },
+   {
+    "trung": "十",
+    "pinyin": [
+     "shí"
+    ],
+    "giaiThich": "Chỉ số 10."
+   },
+   {
+    "trung": "八",
+    "pinyin": [
+     "bā"
+    ],
+    "giaiThich": "Chỉ số 8."
+   },
+   {
+    "trung": "六",
+    "pinyin": [
+     "liù"
+    ],
+    "giaiThich": "Chỉ số 6."
+   }
+  ]
+ },
+ "tuBoSung2025": [
+  {
+   "trung": "你好",
+   "pinyin": [
+    "nǐ",
+    "hǎo"
+   ],
+   "idTuVung": "tu-0147",
+   "capHsk": 1,
+   "viet": "xin chào"
+  },
+  {
+   "trung": "们",
+   "pinyin": [
+    "men"
+   ],
+   "idTuVung": "tu-0124",
+   "capHsk": 1,
+   "viet": "(hậu tố) các, những (số nhiều chỉ người)"
+  },
+  {
+   "trung": "没事",
+   "pinyin": [
+    "méi",
+    "shì"
+   ],
+   "idTuVung": "tu-0122",
+   "capHsk": 1,
+   "viet": "không sao, không có chuyện gì"
+  },
+  {
+   "trung": "上课",
+   "pinyin": [
+    "shàng",
+    "kè"
+   ],
+   "idTuVung": "tu-0177",
+   "capHsk": 1,
+   "viet": "lên lớp, vào học"
+  },
+  {
+   "trung": "下课",
+   "pinyin": [
+    "xià",
+    "kè"
+   ],
+   "idTuVung": "tu-0228",
+   "capHsk": 1,
+   "viet": "tan học, hết giờ học"
+  },
+  {
+   "trung": "休息",
+   "pinyin": [
+    "xiū",
+    "xi"
+   ],
+   "idTuVung": "tu-0246",
+   "capHsk": 1,
+   "viet": "nghỉ, nghỉ ngơi"
+  }
+ ],
+ "nguPhapHsk": [],
+ "canKiemTra": [
+  "Bản dịch tiếng Việt của hội thoại, ví dụ, giải thích là bản nháp của Claude, chưa có người duyệt.",
+  "Pinyin chép tay từ sách (đã đối chiếu tự động với từ điển); ghi chú biến điệu do máy sinh theo quy tắc."
+ ]
+}

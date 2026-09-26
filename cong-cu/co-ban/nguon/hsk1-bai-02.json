@@ -1,0 +1,66 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 2 (trang PDF 27–32). Sách in 不谢 'Bú xiè', 不客气 'bú kèqi' (thanh đã biến điệu) → ở đây ghi thanh gốc bù. Bản dịch Việt là bản nháp.",
+ "bai": 2,
+ "ten": ["谢谢你", "xiè xie nǐ", "Cảm ơn bạn"],
+ "trangPdf": [27, 32],
+ "hoiThoai": [
+  {
+   "am": "02-1", "anh": "hoi-thoai-1",
+   "cau": [["A", "谢谢！", "xiè xie", "Cảm ơn!"], ["B", "不谢！", "bù xiè", "Không có gì!"]],
+   "tuMoi": [["谢谢", "xiè xie", "động từ"], ["不", "bù", "phó từ"]]
+  },
+  {
+   "am": "02-2", "anh": "hoi-thoai-2",
+   "cau": [["A", "谢谢你！", "xiè xie nǐ", "Cảm ơn bạn!"], ["B", "不客气！", "bù kè qi", "Không có gì! (đừng khách sáo)"]],
+   "tuMoi": [["不客气", "bù kè qi", ""]]
+  },
+  {
+   "am": "02-3", "anh": "hoi-thoai-3",
+   "cau": [["A", "再见！", "zài jiàn", "Tạm biệt!"], ["B", "再见！", "zài jiàn", "Tạm biệt!"]],
+   "tuMoi": [["再见", "zài jiàn", "động từ"]]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "bang-am", "am": "02-4", "tieuDe": "Thanh mẫu và vận mẫu (2)",
+   "thanhMau": ["zh ch sh r", "z c s"],
+   "vanMau": ["ou iou(iu)", "an ian uan üan", "en in uen(un) ün", "ang iang uang", "eng ing ueng", "ong iong"]
+  },
+  { "loai": "doc-hinh", "am": "02-5", "tieuDe": "Nhìn tranh, đọc từ một âm tiết", "tu": ["sān", "shān", "zhōng", "yáng", "líng", "cài", "shǒu", "xióng", "yún", "xīng", "yuán", "rén", "chuán", "chuáng", "chī", "rè"] },
+  { "loai": "doc-hinh", "am": "02-6", "tieuDe": "Nhìn tranh, đọc từ hai âm tiết", "tu": ["bīngxiāng", "jīdàn", "sījī", "zúqiú", "jīchǎng", "pá shān", "shǒubiǎo", "xióngmāo"] },
+  {
+   "loai": "thanh-nhe", "tieuDe": "Thanh nhẹ",
+   "giaiThich": "Ngoài 4 thanh còn có một thanh đọc vừa ngắn vừa nhẹ, gọi là thanh nhẹ (轻声). Thanh nhẹ không ghi dấu.",
+   "viDu": [["妈妈", "mā ma", "mẹ"], ["爷爷", "yé ye", "ông nội"], ["奶奶", "nǎi nai", "bà nội"], ["爸爸", "bà ba", "bố"]]
+  },
+  { "loai": "doc-am", "am": "02-7", "tieuDe": "Đọc, chú ý thanh nhẹ", "am_tiet": ["zhuōzi", "fángzi", "yǐzi", "guìzi", "tāmen", "rénmen", "wǒmen", "dìdi", "yīfu", "érzi", "xǐhuan", "rènshi", "xiānsheng", "péngyou", "wǎnshang", "piàoliang"] },
+  {
+   "loai": "quy-tac", "tieuDe": "Quy tắc ghi dấu thanh",
+   "giaiThich": "Dấu thanh đặt trên nguyên âm. Vận mẫu có từ hai nguyên âm trở lên thì dấu đặt trên nguyên âm mở miệng to hơn, theo thứ tự a, o, e, i, u, ü. Ngoại lệ: iu (viết tắt của iou) đặt dấu trên u. Thanh nhẹ không ghi dấu."
+  },
+  { "loai": "doc-am", "am": "02-8", "tieuDe": "Đọc, chú ý vị trí dấu thanh", "am_tiet": ["xuéxiào", "bāng máng", "lánqiú", "nǚ'ér", "yóu yǒng", "shǒubiǎo", "zhōngyú", "gōngsī", "shíjiān", "shēntǐ", "kǎoshì", "guójiā", "bàozhǐ", "hǎochī", "xièxie", "kèqi"] },
+  {
+   "loai": "quy-tac", "tieuDe": "Viết tắt vận mẫu",
+   "giaiThich": "iou, uei, uen đứng sau thanh mẫu thì viết tắt thành iu, ui, un. Ví dụ: niu, gui, lun."
+  },
+  { "loai": "doc-am", "am": "02-9", "tieuDe": "Đọc, chú ý vận mẫu viết tắt", "am_tiet": ["xiūxi", "shuì jiào", "lúnchuán", "niúnǎi", "píjiǔ", "ángguì", "liúyán", "kāi huì", "tǎolùn", "zúqiú", "Lúndūn", "shīrùn", "cánkuì", "shuǐguǒ", "táozuì", "shùnlì"] }
+ ],
+ "cumTuLop": {
+  "am": "02-10",
+  "cau": [["打开书。", "dǎ kāi shū", "Mở sách ra."], ["请大声读。", "qǐng dà shēng dú", "Hãy đọc to lên."], ["再读一遍。", "zài dú yī biàn", "Đọc lại một lần nữa."], ["一起读。", "yī qǐ dú", "Cùng đọc."], ["有问题吗？", "yǒu wèn tí ma", "Có câu hỏi nào không?"]]
+ },
+ "chuHan": {
+  "net": [
+   ["𠃍", "横折", "héngzhé", "ngang gập", ["口", "日"]],
+   ["𠃊", "竖折", "shùzhé", "sổ gập", ["山", "出"]],
+   ["亅", "竖钩", "shùgōu", "sổ móc", ["丁", "小"]]
+  ],
+  "chuDocThe": [
+   ["口", "kǒu", "Nghĩa gốc là cái miệng; chữ trông như cái miệng đang mở."],
+   ["见", "jiàn", "Chữ phồn thể 見 trên là 目 (mắt), dưới là 人 (người): mở mắt ra nhìn."],
+   ["山", "shān", "Trông như dãy núi nhấp nhô, nghĩa là núi."],
+   ["小", "xiǎo", "Vốn trông như những hạt cát nhỏ; nay nghĩa là nhỏ, trái nghĩa với 大."],
+   ["不", "bù", "Vốn chỉ một loại công cụ; nay là phó từ phủ định."]
+  ]
+ }
+}

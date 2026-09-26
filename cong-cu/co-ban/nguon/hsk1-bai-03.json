@@ -1,0 +1,520 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 3 (trang PDF 33–40). Sách in 'bú shì' → ghi thanh gốc bù. Đáp án phần khởi động do Claude suy từ ảnh (sách không in đáp án) → cần duyệt. Bản dịch Việt là bản nháp.",
+ "bai": 3,
+ "ten": [
+  "你叫什么名字",
+  "nǐ jiào shén me míng zi",
+  "Bạn tên là gì"
+ ],
+ "trangPdf": [
+  33,
+  40
+ ],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "tu": [
+   [
+    "中国",
+    "Zhōng guó",
+    "C"
+   ],
+   [
+    "美国",
+    "Měi guó",
+    "D"
+   ],
+   [
+    "中国人",
+    "Zhōng guó rén",
+    "F"
+   ],
+   [
+    "美国人",
+    "Měi guó rén",
+    "E"
+   ],
+   [
+    "老师",
+    "lǎo shī",
+    "A"
+   ],
+   [
+    "学生",
+    "xué sheng",
+    "B"
+   ]
+  ]
+ },
+ "hoiThoai": [
+  {
+   "am": "03-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": [
+    "在学校",
+    "zài xué xiào",
+    "Ở trường"
+   ],
+   "cau": [
+    [
+     "A",
+     "你叫什么名字？",
+     "nǐ jiào shén me míng zi",
+     "Bạn tên là gì?"
+    ],
+    [
+     "B",
+     "我叫李月。",
+     "wǒ jiào Lǐ Yuè",
+     "Tôi tên là Lý Nguyệt."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "叫",
+     "jiào",
+     "động từ"
+    ],
+    [
+     "什么",
+     "shén me",
+     "đại từ"
+    ],
+    [
+     "名字",
+     "míng zi",
+     "danh từ"
+    ],
+    [
+     "我",
+     "wǒ",
+     "đại từ"
+    ]
+   ],
+   "tenRieng": [
+    [
+     "李月",
+     "Lǐ Yuè",
+     "Lý Nguyệt (tên người)"
+    ]
+   ]
+  },
+  {
+   "am": "03-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": [
+    "在教室",
+    "zài jiào shì",
+    "Trong lớp học"
+   ],
+   "cau": [
+    [
+     "A",
+     "你是老师吗？",
+     "nǐ shì lǎo shī ma",
+     "Bạn là giáo viên à?"
+    ],
+    [
+     "B",
+     "我不是老师，我是学生。",
+     "wǒ bù shì lǎo shī wǒ shì xué sheng",
+     "Tôi không phải giáo viên, tôi là học sinh."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "是",
+     "shì",
+     "động từ"
+    ],
+    [
+     "老师",
+     "lǎo shī",
+     "danh từ"
+    ],
+    [
+     "吗",
+     "ma",
+     "trợ từ"
+    ],
+    [
+     "学生",
+     "xué sheng",
+     "danh từ"
+    ]
+   ]
+  },
+  {
+   "am": "03-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": [
+    "在学校",
+    "zài xué xiào",
+    "Ở trường"
+   ],
+   "cau": [
+    [
+     "A",
+     "你是中国人吗？",
+     "nǐ shì Zhōng guó rén ma",
+     "Bạn là người Trung Quốc à?"
+    ],
+    [
+     "B",
+     "我不是中国人，我是美国人。",
+     "wǒ bù shì Zhōng guó rén wǒ shì Měi guó rén",
+     "Tôi không phải người Trung Quốc, tôi là người Mỹ."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "人",
+     "rén",
+     "danh từ"
+    ]
+   ],
+   "tenRieng": [
+    [
+     "中国",
+     "Zhōng guó",
+     "Trung Quốc"
+    ],
+    [
+     "美国",
+     "Měi guó",
+     "Mỹ"
+    ]
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": [
+    "疑问代词“什么”",
+    "Đại từ nghi vấn 什么"
+   ],
+   "giaiThich": "什么 dùng trong câu hỏi, đứng làm tân ngữ một mình hoặc đi cùng danh từ phía sau.",
+   "viDu": [
+    [
+     "你叫什么名字？",
+     "nǐ jiào shén me míng zi",
+     "Bạn tên là gì?"
+    ],
+    [
+     "这是什么？",
+     "zhè shì shén me",
+     "Đây là cái gì?"
+    ],
+    [
+     "这是什么书？",
+     "zhè shì shén me shū",
+     "Đây là sách gì?"
+    ]
+   ]
+  },
+  {
+   "ten": [
+    "“是”字句",
+    "Câu chữ 是"
+   ],
+   "giaiThich": "Câu dùng 是 để nói ai/cái gì là gì hoặc thuộc về cái gì. Phủ định: thêm 不 trước 是.",
+   "mau": "Chủ ngữ + (不)是 + danh từ",
+   "viDu": [
+    [
+     "李月是老师。",
+     "Lǐ Yuè shì lǎo shī",
+     "Lý Nguyệt là giáo viên."
+    ],
+    [
+     "我是美国人。",
+     "wǒ shì Měi guó rén",
+     "Tôi là người Mỹ."
+    ],
+    [
+     "我不是老师。",
+     "wǒ bù shì lǎo shī",
+     "Tôi không phải giáo viên."
+    ]
+   ]
+  },
+  {
+   "ten": [
+    "用“吗”的疑问句",
+    "Câu hỏi với 吗"
+   ],
+   "giaiThich": "Thêm trợ từ 吗 vào cuối câu trần thuật thì thành câu hỏi (có/không).",
+   "mau": "Chủ ngữ + động từ + danh từ + 吗？",
+   "viDu": [
+    [
+     "你是美国人吗？",
+     "nǐ shì Měi guó rén ma",
+     "Bạn là người Mỹ à?"
+    ],
+    [
+     "你是中国人吗？",
+     "nǐ shì Zhōng guó rén ma",
+     "Bạn là người Trung Quốc à?"
+    ],
+    [
+     "你是老师吗？",
+     "nǐ shì lǎo shī ma",
+     "Bạn là giáo viên à?"
+    ]
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo thực tế của bạn",
+   "cau": [
+    [
+     "你叫什么名字？",
+     "nǐ jiào shén me míng zi"
+    ],
+    [
+     "你是中国人吗？",
+     "nǐ shì Zhōng guó rén ma"
+    ],
+    [
+     "你是美国人吗？",
+     "nǐ shì Měi guó rén ma"
+    ],
+    [
+     "你是老师吗？",
+     "nǐ shì lǎo shī ma"
+    ],
+    [
+     "你是学生吗？",
+     "nǐ shì xué sheng ma"
+    ]
+   ]
+  },
+  {
+   "loai": "mo-ta-anh",
+   "tieuDe": "Nhìn ảnh, điền vào chỗ trống",
+   "_ghiChu": "Ảnh người nổi tiếng (Michael Jordan, Diêu Minh) — KHÔNG lấy ảnh, chỉ dùng mẫu câu nếu cần.",
+   "cau": [
+    [
+     "他叫乔丹，他是___人。",
+     "tā jiào Qiáo dān tā shì ___ rén",
+     "美国"
+    ],
+    [
+     "他叫姚明，他是___人。",
+     "tā jiào Yáo Míng tā shì ___ rén",
+     "中国"
+    ]
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "phan-biet",
+   "tieuDe": "Phân biệt thanh mẫu j q x",
+   "hinh": "j-q-x",
+   "giaiThich": "j, q, x: mặt lưỡi chạm ngạc cứng khi phát j, q; j không bật hơi mạnh, q bật hơi mạnh. Phát x thì mặt lưỡi đến gần ngạc cứng nhưng không chạm, luôn chừa một khe hở."
+  },
+  {
+   "loai": "doc-am",
+   "am": "03-4",
+   "tieuDe": "Nghe và đọc theo, chú ý thanh mẫu",
+   "am_tiet": [
+    "xiūxi",
+    "jījí",
+    "jīqì",
+    "xiǎoqū",
+    "xīngqī",
+    "xiāngjiāo",
+    "xìngqù",
+    "jìxù"
+   ]
+  },
+  {
+   "loai": "phan-biet",
+   "tieuDe": "Phân biệt thanh mẫu z c s",
+   "hinh": "z-c-s",
+   "giaiThich": "z, c, s: đầu lưỡi chạm mặt sau răng trên rồi mở ngay thành khe hở khi phát z, c; z không bật hơi mạnh, c bật hơi rõ. Phát s thì đầu lưỡi không chạm răng trên, chừa khe cho hơi đi ra."
+  },
+  {
+   "loai": "doc-am",
+   "am": "03-5",
+   "tieuDe": "Nghe và đọc theo, chú ý thanh mẫu",
+   "am_tiet": [
+    "xǐ zǎo",
+    "dǎsǎo",
+    "sān cì",
+    "zìjǐ",
+    "zuótiān",
+    "zǎoshang",
+    "cāochǎng",
+    "Hànzì"
+   ]
+  },
+  {
+   "loai": "phan-biet",
+   "tieuDe": "Phân biệt vận mẫu i u ü",
+   "hinh": "i-u-ü",
+   "giaiThich": "i và ü cùng vị trí lưỡi, khác hình môi: i môi dẹt, ü môi tròn. Tập: phát i rồi giữ nguyên lưỡi, tròn môi lại là ra ü. u và ü đều tròn môi, nhưng ü lưỡi ở phía trước (đầu lưỡi tì mặt sau răng dưới), còn u lưỡi rút về phía sau."
+  },
+  {
+   "loai": "bien-dieu-bu",
+   "am": "03-6",
+   "tieuDe": "Biến điệu của 不",
+   "giaiThich": "不 đứng trước thanh 1, 2, 3 thì giữ thanh 4 (bù). Đứng trước thanh 4 thì đọc thành thanh 2 (bú).",
+   "giuNguyen": [
+    [
+     "不吃",
+     "bù chī",
+     "không ăn"
+    ],
+    [
+     "不行",
+     "bù xíng",
+     "không được"
+    ],
+    [
+     "不好",
+     "bù hǎo",
+     "không tốt"
+    ],
+    [
+     "不喝",
+     "bù hē",
+     "không uống"
+    ],
+    [
+     "不能",
+     "bù néng",
+     "không thể"
+    ],
+    [
+     "不想",
+     "bù xiǎng",
+     "không muốn"
+    ]
+   ],
+   "doiThanh2": [
+    [
+     "不会",
+     "bù huì",
+     "không biết (làm)"
+    ],
+    [
+     "不是",
+     "bù shì",
+     "không phải"
+    ],
+    [
+     "不看",
+     "bù kàn",
+     "không xem"
+    ]
+   ]
+  },
+  {
+   "loai": "quy-tac",
+   "tieuDe": "ü ghép với j q x",
+   "giaiThich": "ü và vận mẫu bắt đầu bằng ü ghép với j, q, x thì bỏ hai chấm: ju, qu, xu. Ghép với l, n thì vẫn giữ: lü, nü."
+  },
+  {
+   "loai": "doc-am",
+   "am": "03-7",
+   "tieuDe": "Nghe và đọc theo, chú ý cách viết và cách đọc ü",
+   "am_tiet": [
+    "ü üe üan ün",
+    "ju jue juan jun",
+    "qu que quan qun",
+    "xu xue xuan xun"
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [
+   [
+    "𠃌",
+    "横折钩",
+    "héngzhégōu",
+    "ngang gập móc",
+    [
+     "门",
+     "月"
+    ]
+   ],
+   [
+    "㇃",
+    "卧钩",
+    "wògōu",
+    "móc nằm",
+    [
+     "心",
+     "您"
+    ]
+   ]
+  ],
+  "chuDocThe": [
+   [
+    "月",
+    "yuè",
+    "Chỉ mặt trăng."
+   ],
+   [
+    "心",
+    "xīn",
+    "Chỉ quả tim."
+   ],
+   [
+    "中",
+    "zhōng",
+    "Nghĩa gốc là lá cờ tung bay; nay chỉ phương vị, nghĩa là ở giữa."
+   ],
+   [
+    "人",
+    "rén",
+    "Trông như một người đứng thẳng."
+   ]
+  ],
+  "butThuan": [
+   [
+    "先横后竖",
+    "Ngang trước, sổ sau",
+    [
+     "十",
+     "工"
+    ]
+   ],
+   [
+    "先撇后捺",
+    "Phẩy trước, mác sau",
+    [
+     "八",
+     "人"
+    ]
+   ]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Giới thiệu bản thân",
+  "viDu": [
+   [
+    "A",
+    "我叫李月，我是中国人，我是老师。",
+    "wǒ jiào Lǐ Yuè wǒ shì Zhōng guó rén wǒ shì lǎo shī",
+    "Tôi tên là Lý Nguyệt, tôi là người Trung Quốc, tôi là giáo viên."
+   ],
+   [
+    "B",
+    "我叫大卫，我是美国人，我是学生。",
+    "wǒ jiào Dà wèi wǒ shì Měi guó rén wǒ shì xué sheng",
+    "Tôi tên là David, tôi là người Mỹ, tôi là học sinh."
+   ]
+  ]
+ }
+}

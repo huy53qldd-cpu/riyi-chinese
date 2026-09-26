@@ -1,0 +1,594 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 4 (trang PDF 41–48). Sách in 'bú shì' → ghi thanh gốc bù. Đáp án khởi động do Claude suy từ ảnh (sách không in đáp án; 朋友 = F và 中国朋友 = A là suy đoán, cần duyệt). Bản dịch Việt là bản nháp.",
+ "bai": 4,
+ "ten": [
+  "她是我的汉语老师",
+  "tā shì wǒ de Hàn yǔ lǎo shī",
+  "Cô ấy là giáo viên tiếng Trung của tôi"
+ ],
+ "trangPdf": [
+  41,
+  48
+ ],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "tu": [
+   [
+    "他",
+    "tā",
+    "B"
+   ],
+   [
+    "她",
+    "tā",
+    "E"
+   ],
+   [
+    "同学",
+    "tóng xué",
+    "C"
+   ],
+   [
+    "朋友",
+    "péng you",
+    "F"
+   ],
+   [
+    "汉语老师",
+    "Hàn yǔ lǎo shī",
+    "D"
+   ],
+   [
+    "中国朋友",
+    "Zhōng guó péng you",
+    "A"
+   ]
+  ]
+ },
+ "hoiThoai": [
+  {
+   "am": "04-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": [
+    "在教室",
+    "zài jiào shì",
+    "Trong lớp học"
+   ],
+   "cau": [
+    [
+     "A",
+     "她是谁？",
+     "tā shì shéi",
+     "Cô ấy là ai?"
+    ],
+    [
+     "B",
+     "她是我的汉语老师，她叫李月。",
+     "tā shì wǒ de Hàn yǔ lǎo shī tā jiào Lǐ Yuè",
+     "Cô ấy là giáo viên tiếng Trung của tôi, cô ấy tên là Lý Nguyệt."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "她",
+     "tā",
+     "đại từ"
+    ],
+    [
+     "谁",
+     "shéi",
+     "đại từ"
+    ],
+    [
+     "的",
+     "de",
+     "trợ từ"
+    ],
+    [
+     "汉语",
+     "Hàn yǔ",
+     "danh từ"
+    ]
+   ]
+  },
+  {
+   "am": "04-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": [
+    "在图书馆",
+    "zài tú shū guǎn",
+    "Ở thư viện"
+   ],
+   "cau": [
+    [
+     "A",
+     "你是哪国人？",
+     "nǐ shì nǎ guó rén",
+     "Bạn là người nước nào?"
+    ],
+    [
+     "B",
+     "我是美国人。你呢？",
+     "wǒ shì Měi guó rén nǐ ne",
+     "Tôi là người Mỹ. Còn bạn?"
+    ],
+    [
+     "A",
+     "我是中国人。",
+     "wǒ shì Zhōng guó rén",
+     "Tôi là người Trung Quốc."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "哪",
+     "nǎ",
+     "đại từ"
+    ],
+    [
+     "国",
+     "guó",
+     "danh từ"
+    ],
+    [
+     "呢",
+     "ne",
+     "trợ từ"
+    ]
+   ]
+  },
+  {
+   "am": "04-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": [
+    "看照片",
+    "kàn zhào piàn",
+    "Xem ảnh"
+   ],
+   "cau": [
+    [
+     "A",
+     "他是谁？",
+     "tā shì shéi",
+     "Anh ấy là ai?"
+    ],
+    [
+     "B",
+     "他是我同学。",
+     "tā shì wǒ tóng xué",
+     "Anh ấy là bạn học của tôi."
+    ],
+    [
+     "A",
+     "她呢？她是你同学吗？",
+     "tā ne tā shì nǐ tóng xué ma",
+     "Còn cô ấy? Cô ấy là bạn học của bạn à?"
+    ],
+    [
+     "B",
+     "她不是我同学，她是我朋友。",
+     "tā bù shì wǒ tóng xué tā shì wǒ péng you",
+     "Cô ấy không phải bạn học của tôi, cô ấy là bạn của tôi."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "他",
+     "tā",
+     "đại từ"
+    ],
+    [
+     "同学",
+     "tóng xué",
+     "danh từ"
+    ],
+    [
+     "朋友",
+     "péng you",
+     "danh từ"
+    ]
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": [
+    "疑问代词“谁”、“哪”",
+    "Đại từ nghi vấn 谁 và 哪"
+   ],
+   "giaiThich": "谁 dùng để hỏi về người. 哪 dùng theo mẫu: 哪 + lượng từ/danh từ + danh từ.",
+   "viDu": [
+    [
+     "谁是李月？",
+     "shéi shì Lǐ Yuè",
+     "Ai là Lý Nguyệt?"
+    ],
+    [
+     "她是谁？",
+     "tā shì shéi",
+     "Cô ấy là ai?"
+    ],
+    [
+     "他是谁？",
+     "tā shì shéi",
+     "Anh ấy là ai?"
+    ],
+    [
+     "哪本书？",
+     "nǎ běn shū",
+     "Quyển sách nào?"
+    ],
+    [
+     "哪个人？",
+     "nǎ ge rén",
+     "Người nào?"
+    ],
+    [
+     "你是哪国人？",
+     "nǐ shì nǎ guó rén",
+     "Bạn là người nước nào?"
+    ]
+   ]
+  },
+  {
+   "ten": [
+    "结构助词“的”",
+    "Trợ từ kết cấu 的"
+   ],
+   "mau": "Danh từ/Đại từ + 的 + danh từ",
+   "giaiThich": "Chỉ quan hệ sở hữu (của). Khi danh từ sau 的 là người thân hoặc chỉ người thì có thể bỏ 的.",
+   "viDu": [
+    [
+     "李月是我的老师。",
+     "Lǐ Yuè shì wǒ de lǎo shī",
+     "Lý Nguyệt là giáo viên của tôi."
+    ],
+    [
+     "这是我的书。",
+     "zhè shì wǒ de shū",
+     "Đây là sách của tôi."
+    ],
+    [
+     "她不是我同学，她是我朋友。",
+     "tā bù shì wǒ tóng xué tā shì wǒ péng you",
+     "Cô ấy không phải bạn học của tôi, cô ấy là bạn của tôi."
+    ]
+   ]
+  },
+  {
+   "ten": [
+    "疑问助词“呢”(1)",
+    "Trợ từ nghi vấn 呢 (1)"
+   ],
+   "mau": "A……。B呢？",
+   "giaiThich": "呢 đứng sau danh từ hoặc đại từ để hỏi lại tình huống vừa nói ở trước (Còn B thì sao?).",
+   "viDu": [
+    [
+     "我不是老师，我是学生。你呢？",
+     "wǒ bù shì lǎo shī wǒ shì xué sheng nǐ ne",
+     "Tôi không phải giáo viên, tôi là học sinh. Còn bạn?"
+    ],
+    [
+     "她叫李月。他呢？",
+     "tā jiào Lǐ Yuè tā ne",
+     "Cô ấy tên là Lý Nguyệt. Còn anh ấy?"
+    ],
+    [
+     "我是美国人。你呢？",
+     "wǒ shì Měi guó rén nǐ ne",
+     "Tôi là người Mỹ. Còn bạn?"
+    ]
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo thực tế của bạn",
+   "cau": [
+    [
+     "你是哪国人？",
+     "nǐ shì nǎ guó rén"
+    ],
+    [
+     "你叫什么名字？",
+     "nǐ jiào shén me míng zi"
+    ],
+    [
+     "你的汉语老师是哪国人？",
+     "nǐ de Hàn yǔ lǎo shī shì nǎ guó rén"
+    ],
+    [
+     "你的汉语老师叫什么名字？",
+     "nǐ de Hàn yǔ lǎo shī jiào shén me míng zi"
+    ],
+    [
+     "你的中国朋友是谁？",
+     "nǐ de Zhōng guó péng you shì shéi"
+    ]
+   ]
+  },
+  {
+   "loai": "mo-ta-anh",
+   "tieuDe": "Nhìn ảnh, điền vào chỗ trống",
+   "_ghiChu": "Ảnh người nổi tiếng — KHÔNG lấy ảnh. Hai câu cuối dùng được với ảnh tự vẽ/không cần ảnh.",
+   "cau": [
+    [
+     "她叫玛丽，她不是我___，她是我___。",
+     "tā jiào Mǎ lì tā bù shì wǒ ___ tā shì wǒ ___",
+     "同学|朋友"
+    ],
+    [
+     "他叫大卫，他是我们的___。",
+     "tā jiào Dà wèi tā shì wǒ men de ___",
+     "同学"
+    ]
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "phan-biet",
+   "tieuDe": "Phân biệt thanh mẫu zh ch sh r",
+   "hinh": "zh-ch-sh-r",
+   "giaiThich": "zh, ch, sh, r là nhóm âm uốn lưỡi: đầu lưỡi cong lên phối hợp với phần trước ngạc cứng. zh, ch: đầu lưỡi chạm ngạc cứng rồi mở khe cho hơi ra; zh không bật hơi mạnh, ch bật hơi rất mạnh. sh: đầu lưỡi không chạm ngạc cứng, luôn chừa khe hở. r giống sh nhưng dây thanh rung."
+  },
+  {
+   "loai": "doc-am",
+   "am": "04-4",
+   "tieuDe": "Nghe và đọc theo, chú ý thanh mẫu",
+   "am_tiet": [
+    "zhīshi",
+    "chúshī",
+    "shēngrì",
+    "shàng chē",
+    "rènshi",
+    "chángshí",
+    "shìshí",
+    "chāorén",
+    "ránshāo",
+    "rènao",
+    "chū chāi",
+    "Chángchéng",
+    "shǒushù",
+    "shāngchǎng",
+    "chāoshì",
+    "chōng zhí"
+   ]
+  },
+  {
+   "loai": "phan-biet",
+   "tieuDe": "Phân biệt vận mẫu mũi trước -n và mũi sau -ng",
+   "hinh": "n-ng",
+   "giaiThich": "-n: đầu lưỡi tì vào lợi răng trên, hai hàm răng khép gần, miệng mở nhỏ. -ng: phần sau lưỡi nâng lên, cuống lưỡi rút về sau chặn ngạc mềm, miệng mở to hơn."
+  },
+  {
+   "loai": "doc-am",
+   "am": "04-5",
+   "tieuDe": "Nghe và đọc theo, chú ý -n và -ng",
+   "am_tiet": [
+    "an ang",
+    "ian iang",
+    "uan uang",
+    "en eng",
+    "in ing",
+    "uen ueng"
+   ]
+  },
+  {
+   "loai": "bien-dieu-yi",
+   "am": "04-6",
+   "tieuDe": "Biến điệu của 一",
+   "giaiThich": "一 đứng trước thanh 1, 2, 3 thì đọc thành thanh 4 (yì). Đứng trước thanh 4 thì đọc thành thanh 2 (yí). Đứng một mình hoặc dùng làm con số thì giữ thanh 1 (yī).",
+   "doiThanh4": [
+    [
+     "一张",
+     "yī zhāng",
+     "một tờ"
+    ],
+    [
+     "一条",
+     "yī tiáo",
+     "một (vật dài)"
+    ],
+    [
+     "一种",
+     "yī zhǒng",
+     "một loại"
+    ]
+   ],
+   "doiThanh2": [
+    [
+     "一定",
+     "yī dìng",
+     "nhất định"
+    ],
+    [
+     "一块",
+     "yī kuài",
+     "một miếng/một đồng"
+    ]
+   ],
+   "giuNguyen": [
+    [
+     "第一",
+     "dì yī",
+     "thứ nhất"
+    ],
+    [
+     "一二三",
+     "yī èr sān",
+     "một, hai, ba"
+    ],
+    [
+     "星期一",
+     "xīng qī yī",
+     "thứ Hai"
+    ],
+    [
+     "十一",
+     "shí yī",
+     "mười một"
+    ],
+    [
+     "百分之一",
+     "bǎi fēn zhī yī",
+     "một phần trăm"
+    ]
+   ]
+  },
+  {
+   "loai": "quy-tac",
+   "tieuDe": "Cách dùng y và w",
+   "giaiThich": "Vận mẫu bắt đầu bằng i, u, ü mà không có thanh mẫu đứng trước thì phải viết với y hoặc w.",
+   "bang": [
+    [
+     "i, in, ing",
+     "yi, yin, ying"
+    ],
+    [
+     "ia, ie, iao, ian, iang, iong",
+     "ya, ye, yao, yan, yang, yong"
+    ],
+    [
+     "iu",
+     "you"
+    ],
+    [
+     "u",
+     "wu"
+    ],
+    [
+     "ua, uo, uai, uan, uang, ueng",
+     "wa, wo, wai, wan, wang, weng"
+    ],
+    [
+     "ui, un",
+     "wei, wen"
+    ],
+    [
+     "ü, üe, üan, ün",
+     "yu, yue, yuan, yun"
+    ]
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "am": "04-7",
+   "tieuDe": "Nghe và đọc theo, chú ý y và w",
+   "am_tiet": [
+    "yóu yǒng",
+    "yǒuyì",
+    "yīnyuè",
+    "yuányīn",
+    "qīngwā",
+    "yǐngxīng",
+    "yīngxióng",
+    "wēixiǎn",
+    "guó wài",
+    "yīntiān",
+    "yǔyán",
+    "wǎngwǎng",
+    "wǎnyàn",
+    "yéye",
+    "yíngyǎng",
+    "wǒmen"
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [
+   [
+    "㇟",
+    "竖弯钩",
+    "shùwāngōu",
+    "sổ cong móc",
+    [
+     "七",
+     "儿"
+    ]
+   ],
+   [
+    "㇈",
+    "横折弯钩",
+    "héngzhéwāngōu",
+    "ngang gập cong móc",
+    [
+     "九",
+     "几"
+    ]
+   ]
+  ],
+  "chuDocThe": [
+   [
+    "七",
+    "qī",
+    "Chỉ số 7."
+   ],
+   [
+    "儿",
+    "ér",
+    "Nghĩa gốc là đứa trẻ; nay thường chỉ con trai."
+   ],
+   [
+    "几",
+    "jǐ",
+    "Nghĩa gốc là cái bàn thấp nhỏ."
+   ],
+   [
+    "九",
+    "jiǔ",
+    "Chỉ số 9."
+   ]
+  ],
+  "butThuan": [
+   [
+    "从上到下",
+    "Trên trước, dưới sau",
+    [
+     "二",
+     "三"
+    ]
+   ],
+   [
+    "从左到右",
+    "Trái trước, phải sau",
+    [
+     "几",
+     "八"
+    ]
+   ]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi đáp về người trong ảnh",
+  "viDu": [
+   [
+    "A",
+    "他是谁？",
+    "tā shì shéi",
+    "Anh ấy là ai?"
+   ],
+   [
+    "A",
+    "他是哪国人？",
+    "tā shì nǎ guó rén",
+    "Anh ấy là người nước nào?"
+   ],
+   [
+    "B",
+    "他是我同学，他叫……，他是……",
+    "tā shì wǒ tóng xué tā jiào …… tā shì ……",
+    "Anh ấy là bạn học của tôi, anh ấy tên là…, anh ấy là…"
+   ]
+  ]
+ }
+}

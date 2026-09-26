@@ -55,3 +55,9 @@ de_thi_HSK/
 
 # --- Giáo trình tham khảo (bản quyền của nhà xuất bản), KHÔNG đưa lên GitHub ---
 Giao_trinh/
+
+# --- Âm thanh + ảnh cắt từ giáo trình (quyết định 18.68, phương án A) ---
+# Chỉ nằm trên máy và được tải thẳng lên Firebase Hosting khi triển khai.
+# Mất thì dựng lại: python cong-cu/nen-am-thanh-co-ban.py && python cong-cu/cat-anh-co-ban.py
+public/du-lieu/co-ban/*/am/
+public/du-lieu/co-ban/*/hinh/

@@ -1,0 +1,71 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 1 (trang sách 2–7 = trang PDF 21–26). Pinyin ghi THANH GỐC từng chữ (sách in thanh gốc, riêng 不/一 sách in thanh đã biến điệu → ở đây trả về thanh gốc, công cụ tự thêm ghi chú biến điệu). Bản dịch Việt là bản nháp của Claude, cần người duyệt.",
+ "bai": 1,
+ "ten": ["你好", "nǐ hǎo", "Xin chào"],
+ "trangPdf": [21, 26],
+ "hoiThoai": [
+  {
+   "am": "01-1", "anh": "hoi-thoai-1",
+   "cau": [["A", "你好！", "nǐ hǎo", "Chào bạn!"], ["B", "你好！", "nǐ hǎo", "Chào bạn!"]],
+   "tuMoi": [["你", "nǐ", "đại từ"], ["好", "hǎo", "tính từ"]]
+  },
+  {
+   "am": "01-2", "anh": "hoi-thoai-2",
+   "cau": [["A", "您好！", "nín hǎo", "Chào ông/bà! (lịch sự)"], ["B", "你们好！", "nǐ men hǎo", "Chào các bạn!"]],
+   "tuMoi": [["您", "nín", "đại từ", "boSung"], ["你们", "nǐ men", "đại từ"]]
+  },
+  {
+   "am": "01-3", "anh": "hoi-thoai-3",
+   "cau": [["A", "对不起！", "duì bu qǐ", "Xin lỗi!"], ["B", "没关系！", "méi guān xi", "Không sao!"]],
+   "tuMoi": [["对不起", "duì bu qǐ", "động từ"], ["没关系", "méi guān xi", ""]]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "bang-am", "am": "01-4", "tieuDe": "Thanh mẫu và vận mẫu (1)",
+   "thanhMau": ["b p m f", "d t n l", "g k h", "j q x"],
+   "vanMau": ["i u ü er", "a ia ua", "o uo", "e ie üe", "ai uai", "ei uei(ui)", "ao iao"]
+  },
+  {
+   "loai": "thanh-dieu", "tieuDe": "Bốn thanh điệu",
+   "giaiThich": "Tiếng Trung có 4 thanh cơ bản: thanh 1 (55), thanh 2 (35), thanh 3 (214), thanh 4 (51). Thanh điệu phân biệt nghĩa.",
+   "viDu": [["妈", "mā", "mẹ"], ["麻", "má", "cây gai (lấy sợi)"], ["马", "mǎ", "ngựa"], ["骂", "mà", "mắng"]]
+  },
+  { "loai": "doc-am", "am": "01-5", "tieuDe": "Đọc, chú ý thanh điệu", "am_tiet": ["ā á ǎ à", "ō ó ǒ ò", "ē é ě è", "ī í ǐ ì", "ū ú ǔ ù", "ǖ ǘ ǚ ǜ"] },
+  {
+   "loai": "cau-tao-am-tiet", "tieuDe": "Âm tiết tiếng Trung",
+   "giaiThich": "Âm tiết thường gồm thanh mẫu + vận mẫu + thanh điệu; thường một chữ Hán là một âm tiết. Có thể không có thanh mẫu nhưng bắt buộc có vận mẫu và thanh điệu.",
+   "viDu": [["māo", "猫", "m", "ao", 1], ["yú", "鱼", "", "ü", 2], ["jiě", "姐", "j", "ie", 3], ["èr", "二", "", "er", 4]],
+   "luuY": "i và ü đứng một mình thì thêm y phía trước, ü bỏ hai chấm; u đứng một mình thì thêm w phía trước."
+  },
+  { "loai": "doc-hinh", "am": "01-6", "tieuDe": "Nhìn tranh, đọc từ một âm tiết", "tu": ["yī", "wǔ", "yú", "ěr", "bǐ", "māo", "dǎo", "huā", "jī", "qī", "xié", "xuě"] },
+  { "loai": "doc-hinh", "am": "01-7", "tieuDe": "Nhìn tranh, đọc từ hai âm tiết", "tu": ["kāfēi", "kělè", "kǎoyā", "huǒguō", "dìtú", "fēijī", "máobǐ", "ěrjī"] },
+  {
+   "loai": "bien-dieu", "tieuDe": "Hai thanh 3 đi liền nhau",
+   "giaiThich": "Hai âm tiết thanh 3 đọc liền nhau thì âm tiết đầu đọc thành thanh 2 (3+3 → 2+3), ví dụ nǐ + hǎo đọc là ní hǎo. Nhưng khi viết pinyin vẫn ghi thanh gốc.",
+   "viDu": [["你", "nǐ", "好", "hǎo", "ní hǎo"], ["可", "kě", "以", "yǐ", "ké yǐ"], ["辅", "fǔ", "导", "dǎo", "fú dǎo"]]
+  },
+  { "loai": "doc-am", "am": "01-8", "tieuDe": "Đọc, chú ý hai thanh 3 liền nhau", "am_tiet": ["nǐ hǎo", "kěyǐ", "fǔdǎo", "xiǎojiě", "kǒuyǔ", "yǔfǎ", "Fǎyǔ", "tǎo hǎo", "liǎojiě", "yǒuhǎo", "yǔsǎn", "shǒubiǎo"] }
+ ],
+ "cumTuLop": {
+  "am": "01-9",
+  "cau": [["上课！", "shàng kè", "Vào học!"], ["下课！", "xià kè", "Tan học!"], ["现在休息！", "xiàn zài xiū xi", "Bây giờ nghỉ giải lao!"], ["看黑板！", "kàn hēi bǎn", "Nhìn lên bảng!"], ["跟我读！", "gēn wǒ dú", "Đọc theo tôi!"]]
+ },
+ "chuHan": {
+  "net": [
+   ["一", "横", "héng", "ngang", ["一", "二"]],
+   ["丨", "竖", "shù", "sổ", ["十", "工"]],
+   ["丿", "撇", "piě", "phẩy", ["人", "八"]],
+   ["丶", "点", "diǎn", "chấm", ["不", "六"]],
+   ["㇏", "捺", "nà", "mác", ["大", "天"]]
+  ],
+  "chuDocThe": [
+   ["一", "yī", "Nét cơ bản của chữ Hán, đứng một mình là chữ chỉ số 1."],
+   ["二", "èr", "Chỉ số 2."],
+   ["三", "sān", "Chỉ số 3."],
+   ["十", "shí", "Chỉ số 10."],
+   ["八", "bā", "Chỉ số 8."],
+   ["六", "liù", "Chỉ số 6."]
+  ]
+ }
+}
