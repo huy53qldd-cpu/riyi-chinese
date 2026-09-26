@@ -1218,6 +1218,24 @@ def dung_hsk2(tai_lieu, ma, cat):
 # ---------------------------------------------------------------------------
 # CHẠY
 # ---------------------------------------------------------------------------
+# Chỗ PDF gốc bị hỏng, chủ dự án cho sửa tay (quyết định 18.62).
+# (mã đề, số câu, chữ cái lựa chọn) → nội dung thay thế (token [chữ, pinyin])
+SUA_TAY = {
+    # PDF chỉ có số "0" màu xanh (file bị sửa hỏng). Thay bằng một phương án SAI
+    # hợp lý cùng kiểu với B "6 年", C "7 年"; đáp án đúng vẫn là C (七年).
+    ("H11003", 17, "A"): [["5", ""], ["年", "nián"]],
+}
+
+
+def sua_tay(ma, noi_dung):
+    for (ma_de, so, chu_cai), token in SUA_TAY.items():
+        if ma_de != ma:
+            continue
+        cau = next(c for p in noi_dung["phan"] for n in p["nhom"] for c in n["cau"] if c["so"] == so)
+        lc = next(l for l in cau["luaChon"] if l["ma"] == chu_cai)
+        lc["chu"] = token
+
+
 def dung_de(ma):
     pdf, mp3 = tim_file(ma, "pdf"), tim_file(ma, "mp3")
     if not pdf or not mp3:
@@ -1234,6 +1252,7 @@ def dung_de(ma):
         noi_dung = dung_hsk2(tai_lieu, ma, cat)
     else:
         noi_dung = dung_hsk_cao(tai_lieu, ma, cap, cat)
+    sua_tay(ma, noi_dung)
     shutil.copyfile(mp3, ra / "nghe.mp3")
 
     de = {"version": PHIEN_BAN, "ma": ma, "cap": cap, **noi_dung}
