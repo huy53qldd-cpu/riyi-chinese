@@ -6,9 +6,11 @@
      - Mỗi phần thi là MỘT TRANG CUỘN. Làm xong trang Nghe thì bấm nút cuối
        trang sang trang Đọc; ở trang Đọc quay lại trang Nghe để SỬA ĐÁP ÁN được.
      - Phần NGHE: nút nghe ở đầu trang, bấm là phát MỘT MẠCH từ đầu tới cuối như
-       thi thật: không dừng, không tua, không nghe lại. Tải lại trang / thoát ra
-       giữa chừng thì lần sau NGHE TIẾP TỪ CHỖ DỪNG. Nghe hết mới sang phần Đọc
-       được (trừ khi không tải được file nghe). Nghe xong thì nút nghe khoá hẳn.
+       thi thật: không tua lùi. Tải lại trang / thoát ra / app bị crash giữa
+       chừng thì lần sau NGHE LẠI TỪ ĐẦU (quyết định 18.60: không cần quá chặt,
+       tuỳ ý thức người học). Đang nghe mà bị ngắt (cuộc gọi, khoá màn hình) thì
+       bấm là nghe tiếp chỗ đang dở. Nghe hết mới sang phần Đọc được (trừ khi
+       không tải được file nghe). Nghe xong trọn một lần thì nút nghe khoá hẳn.
      - Phần ĐỌC: đếm ngược đúng thời gian của đề (HSK 1: 17 phút) tính từ lúc vào
        trang Đọc lần đầu, vẫn chạy khi thoát ra; hết giờ thì tự nộp.
      - Nộp bài: điểm từng phần, tổng điểm, đạt / chưa đạt theo thang HSK; xem lại
@@ -489,44 +491,39 @@ function DongHoDoc({ batDau, phut, hetGio }) {
 }
 
 /* -----------------------------------------------------------------------------
-   TRÌNH NGHE: chỉ một nút phát, không dừng, không tua, không nghe lại.
-   Vị trí đã phát lưu mỗi giây (bài làm dở), nên thoát ra / tải lại trang thì
-   lần sau phát tiếp từ đó. Ai tua lùi (ví dụ bằng nút trên màn hình khoá)
-   thì bị đưa về chỗ xa nhất đã nghe.
+   TRÌNH NGHE: chỉ một nút phát, không tua lùi (ai tua lùi, ví dụ bằng nút trên
+   màn hình khoá, thì bị đưa về chỗ xa nhất đã nghe).
+   Mở lại trang (thoát ra, tải lại, crash) thì nghe lại TỪ ĐẦU (quyết định
+   18.60). Còn trong cùng một lần mở trang mà bị ngắt thì nghe tiếp chỗ dở.
    ----------------------------------------------------------------------------- */
 function TrinhNghe({ src, nghe, capNhatNghe, khiLoi }) {
   const hienThongBao = useThongBao();
   const am = useRef(null);
   const [dangPhat, setDangPhat] = useState(false);
-  const [giay, setGiay] = useState(nghe.viTri);
+  const [giay, setGiay] = useState(0);
   const [thoiLuong, setThoiLuong] = useState(0);
   const [loi, setLoi] = useState(false);
-  const xaNhat = useRef(nghe.viTri);
-  const daLuuGiay = useRef(Math.floor(nghe.viTri));
-  // Bắt đầu phát từ đúng chỗ đã dừng (chỉ tính một lần lúc mở trang)
-  const [nguon] = useState(() => `${src}#t=${Math.floor(nghe.viTri)}`);
+  // Đã bấm phát trong LẦN MỞ TRANG NÀY chưa: rồi thì bị ngắt là nghe tiếp chỗ dở
+  const [phatPhienNay, setPhatPhienNay] = useState(false);
+  const xaNhat = useRef(0);
 
   function phat() {
     const a = am.current;
     if (!a) return;
-    if (a.readyState >= 1 && Math.abs(a.currentTime - nghe.viTri) > 1.5) a.currentTime = nghe.viTri;
+    if (!phatPhienNay && a.readyState >= 1) a.currentTime = 0;
     // play() phải gọi NGAY trong lần bấm (iPhone chặn phát tự động)
     a.play()
       .then(() => {
+        setPhatPhienNay(true);
         if (!nghe.daBatDau) capNhatNghe({ daBatDau: true });
       })
       .catch(() => hienThongBao("Không phát được file nghe. Hãy bấm lại.", 4));
   }
 
   function khiChay() {
-    const a = am.current;
-    const t = a.currentTime;
+    const t = am.current.currentTime;
     xaNhat.current = Math.max(xaNhat.current, t);
     setGiay(t);
-    if (Math.floor(t) !== daLuuGiay.current) {
-      daLuuGiay.current = Math.floor(t);
-      capNhatNghe({ viTri: t });
-    }
   }
 
   function khiTua() {
@@ -541,7 +538,7 @@ function TrinhNghe({ src, nghe, capNhatNghe, khiLoi }) {
     <div className="border-vien bg-nen-noi flex flex-col gap-3 rounded-[var(--bo-goc)] border p-4">
       <audio
         ref={am}
-        src={nguon}
+        src={src}
         preload="auto"
         onLoadedMetadata={(e) => setThoiLuong(e.currentTarget.duration)}
         onTimeUpdate={khiChay}
@@ -550,7 +547,7 @@ function TrinhNghe({ src, nghe, capNhatNghe, khiLoi }) {
         onPause={() => setDangPhat(false)}
         onEnded={() => {
           setDangPhat(false);
-          capNhatNghe({ xong: true, viTri: am.current.duration });
+          capNhatNghe({ xong: true });
         }}
         onError={() => {
           setLoi(true);
@@ -573,16 +570,19 @@ function TrinhNghe({ src, nghe, capNhatNghe, khiLoi }) {
         <>
           <button type="button" onClick={phat} className={`${kieu.nutChinh} self-stretch`}>
             <BieuTuong ten="nghe" />
-            {nghe.daBatDau ? `Nghe tiếp từ ${phutGiay(nghe.viTri)}` : "Bắt đầu nghe"}
+            {phatPhienNay ? `Nghe tiếp từ ${phutGiay(giay)}` : nghe.daBatDau ? "Nghe lại từ đầu" : "Bắt đầu nghe"}
           </button>
           <p className={kieu.chuNho}>
-            Chỉ nghe được MỘT lần, không dừng và không tua lại. Nếu thoát ra giữa chừng, lần sau
-            sẽ nghe tiếp từ chỗ đã dừng.
+            {phatPhienNay
+              ? "Bài nghe vừa bị ngắt, bấm để nghe tiếp chỗ đang dở."
+              : nghe.daBatDau
+                ? "Lần trước bạn thoát ra khi chưa nghe hết, nên được nghe lại từ đầu."
+                : "Bài nghe phát một mạch từ đầu tới cuối, không tua lại được. Hãy làm bài trong lúc nghe."}
           </p>
         </>
       )}
 
-      {(nghe.daBatDau || dangPhat) && !loi && (
+      {(phatPhienNay || nghe.xong) && !loi && (
         <div className="flex items-center gap-3">
           <div
             className="bg-nen-phu h-2 flex-1 overflow-hidden rounded-[var(--bo-goc-tron)]"

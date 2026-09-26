@@ -346,7 +346,7 @@ def dung_hsk1(tai_lieu, ma, cat):
     vd_y = vi_du_y(manh)
     moc = [(0, vd_y)] + cac_so  # (số câu, y); 0 = ví dụ
     for i, (so, y) in enumerate(moc):
-        y_het = moc[i + 1][1] - 5 if i + 1 < len(moc) else CHAN_TRANG_Y
+        y_het = moc[i + 1][1] - 12 if i + 1 < len(moc) else CHAN_TRANG_Y
         nhom = [m for m in manh if y - 16 <= m.y0 < y_het]
         luac = lua_chon_chu(nhom)
         if so == 0:
@@ -445,11 +445,11 @@ def lua_chon_chu(nhom):
     nhan = sorted(chu_cai(nhom), key=lambda t: t[2])
     if not nhan:
         return []
-    y_nhan = nhan[0][1].y0
     ra = []
     for i, (cc, m, x) in enumerate(nhan):
         x_het = nhan[i + 1][2] - 1 if i + 1 < len(nhan) else 10_000
-        dong = [d for d in cac_dong(nhom, x + 5, x_het) if abs(d[0] - y_nhan) < 6]
+        # Dòng chữ của CHÍNH chữ cái này (chữ cái có khi in lệch cao thấp vài điểm)
+        dong = [d for d in cac_dong(nhom, x + 5, x_het) if abs(d[0] - m.y0) < 9]
         ra.append({"ma": cc, "chu": ghep_dong(dong[0][1], dong[0][2]) if dong else []})
     return ra
 

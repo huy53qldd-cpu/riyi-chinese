@@ -7,8 +7,9 @@
    public/du-lieu/thi-thu/danh-sach.json.
 
    Bài đang làm dở lưu trên MÁY (localStorage), để tải lại trang hay thoát ra
-   vẫn làm tiếp được: đáp án đã chọn, đang ở trang nào, file nghe đã phát tới
-   giây thứ mấy, lúc bắt đầu phần Đọc (để tính giờ). Nộp xong mới lưu điểm lên
+   vẫn làm tiếp được: đáp án đã chọn, đang ở trang nào, đã nghe xong chưa, lúc
+   bắt đầu phần Đọc (để tính giờ). Chưa nghe xong mà thoát ra thì lần sau nghe
+   lại từ đầu (quyết định 18.60). Nộp xong mới lưu điểm lên
    tài khoản (ketQuaThiThu.js).
    ============================================================================= */
 
@@ -38,7 +39,7 @@ const khoa = (ma) => `riyi-thi-thu-${ma}`;
 
 /**
  * trang: 0 = Nghe, 1 = Đọc
- * nghe: { viTri: giây đã phát tới, daBatDau, xong }
+ * nghe: { daBatDau, xong } (không lưu vị trí: mở lại thì nghe lại từ đầu)
  * docBatDau: thời điểm (ms) vào phần Đọc lần đầu, để đếm ngược
  * ketQua: có khi đã nộp
  */
@@ -46,7 +47,7 @@ export function baiLamMoi() {
   return {
     trang: 0,
     traLoi: {},
-    nghe: { viTri: 0, daBatDau: false, xong: false },
+    nghe: { daBatDau: false, xong: false },
     docBatDau: null,
     ketQua: null,
   };
