@@ -61,6 +61,7 @@ import {
   X,
   Bell,
   Megaphone,
+  Timer,
 } from "lucide-react";
 
 const HINH = {
@@ -81,6 +82,8 @@ const HINH = {
   "nhac-hoc": Bell,
   // Quản trị gửi thông báo cho mọi người (Cài đặt, quyết định 18.56)
   "gui-thong-bao": Megaphone,
+  // Đồng hồ đếm ngược phần Đọc (Thi thử HSK, quyết định 18.59)
+  "dong-ho": Timer,
   // Hiệu ứng pháo hoa (theme Hoa Đăng Dạ Nguyệt)
   "phao-hoa": Sparkles,
   // Ô tìm kiếm (GĐ 12)

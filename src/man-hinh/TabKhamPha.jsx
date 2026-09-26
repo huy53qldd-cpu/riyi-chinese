@@ -16,6 +16,7 @@ import BieuTuong from "../thanh-phan/BieuTuong.jsx";
 import { MUC_KHAM_PHA, TAB } from "../thanh-phan/danhSachTab.jsx";
 import TabDongTu from "./TabDongTu.jsx";
 import TabReview from "./TabReview.jsx";
+import ThiThu from "../thi-thu/ThiThu.jsx";
 
 export default function TabKhamPha() {
   const [dangMo, setDangMo] = useState(null);
@@ -29,7 +30,9 @@ export default function TabKhamPha() {
             Khám phá
           </button>
         </div>
-        {dangMo === TAB.DONG_TU ? <TabDongTu /> : <TabReview />}
+        {dangMo === TAB.DONG_TU && <TabDongTu />}
+        {dangMo === TAB.REVIEW && <TabReview />}
+        {dangMo === TAB.THI_THU && <ThiThu />}
       </div>
     );
   }

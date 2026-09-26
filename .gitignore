@@ -49,3 +49,6 @@ cong-cu/nguon-mo/
 
 # --- Bộ nét chữ Nhật KanjiVG tải về (273 MB, chỉ để công cụ đọc) ---
 kanji_kakijun/
+
+# --- Đề thi HSK GỐC (pdf + mp3), công cụ cong-cu/dung-de-thi.py dựng ra public/du-lieu/thi-thu/ ---
+de_thi_HSK/

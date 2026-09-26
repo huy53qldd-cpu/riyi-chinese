@@ -21,6 +21,7 @@ export const TAB = {
   TU_VUNG: "tu-vung",
   NGU_PHAP: "ngu-phap",
   REVIEW: "review",
+  THI_THU: "thi-thu",
   MUC_TIEU: "muc-tieu",
 };
 
@@ -117,6 +118,17 @@ function IconReview(props) {
   );
 }
 
+// Thi thử HSK: tờ đề có dấu tích và bút
+function IconThiThu(props) {
+  return (
+    <svg {...thuocTinhChung} {...props}>
+      <rect x="5" y="3" width="14" height="18" rx="2" />
+      <path d="M8.5 8h7M8.5 12h4" />
+      <path d="m9 16 1.6 1.6L14 14.2" />
+    </svg>
+  );
+}
+
 /* -----------------------------------------------------------------------------
    5 TAB Ở THANH DƯỚI
    nhan     : chữ hiện dưới biểu tượng, phải NGẮN vì màn hình điện thoại hẹp
@@ -178,11 +190,10 @@ export const MUC_KHAM_PHA = [
     moTa: "Tổng kết tuần, các mục sai nhiều nhất và biểu đồ so với tuần trước.",
   },
   {
-    ma: "thi-thu",
+    ma: TAB.THI_THU,
     nhan: "Thi thử HSK",
-    Icon: IconNguPhap,
-    moTa: "Làm bài thi thử theo dạng đề HSK.",
-    sapCo: true,
+    Icon: IconThiThu,
+    moTa: "Làm đề HSK thật như đi thi: phần Nghe chỉ nghe một lần, phần Đọc có giờ.",
   },
 ];
 

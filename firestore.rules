@@ -22,10 +22,12 @@ service cloud.firestore {
 
       allow write: if request.auth != null
         && request.auth.uid == uid
-        && request.resource.data.keys().hasOnly(['caiDat', 'daHoc', 'tapViet', 'mucTieu', 'loTrinh', 'nhatKy', 'chuoi', 'thongBao', 'capNhatLuc'])
+        && request.resource.data.keys().hasOnly(['caiDat', 'daHoc', 'tapViet', 'mucTieu', 'loTrinh', 'nhatKy', 'chuoi', 'thongBao', 'thiThu', 'capNhatLuc'])
         && (!('daHoc' in request.resource.data) || request.resource.data.daHoc.size() <= 5000)
         && (!('tapViet' in request.resource.data) || request.resource.data.tapViet.size() <= 5000)
-        && (!('nhatKy' in request.resource.data) || request.resource.data.nhatKy.size() <= 120);
+        && (!('nhatKy' in request.resource.data) || request.resource.data.nhatKy.size() <= 120)
+        // Điểm thi thử HSK (quyết định 18.59): mỗi đề một mục, tối đa 500 đề
+        && (!('thiThu' in request.resource.data) || request.resource.data.thiThu.size() <= 500);
     }
 
     // Hàng chờ thông báo QUẢN TRỊ (quyết định 18.57). DUY NHẤT tài khoản quản
