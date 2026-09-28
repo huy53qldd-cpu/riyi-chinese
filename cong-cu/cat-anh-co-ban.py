@@ -112,6 +112,54 @@ ANH = {
 }
 
 
+# Sách bài tập: ảnh lưu rời thành nhiều mảnh nhỏ (khoảng 230 px, bảng màu hạn chế).
+# Gom các mảnh chạm nhau thành một tranh, render 216 dpi rồi thu nhỏ (khử nhiễu).
+# Tên: bt-p<trang PDF>-<thứ tự trên trang, trái→phải, trên→dưới>.
+BAI_TAP_TRANG = {1: range(9, 13), 2: range(13, 17), 3: range(17, 25), 4: range(25, 33), 5: range(33, 41)}
+
+
+def gom_manh(rects):
+    """Gộp các khung chạm/chồng nhau (sai lệch ≤ 1,5 pt) thành khung lớn."""
+    hop = [list(r) for r in rects]
+    doi = True
+    while doi:
+        doi = False
+        for i in range(len(hop)):
+            for j in range(i + 1, len(hop)):
+                a, b = hop[i], hop[j]
+                if a[0] <= b[2] + 1.5 and b[0] <= a[2] + 1.5 and a[1] <= b[3] + 1.5 and b[1] <= a[3] + 1.5:
+                    hop[i] = [min(a[0], b[0]), min(a[1], b[1]), max(a[2], b[2]), max(a[3], b[3])]
+                    del hop[j]
+                    doi = True
+                    break
+            if doi:
+                break
+    return hop
+
+
+def cat_bai_tap():
+    f = next(Path(r) / x for r, _, fs in os.walk(GOC / "Giao_trinh" / "HSK1") for x in fs if x.endswith("练习册.pdf"))
+    d = pymupdf.open(f)
+    tong = dem = 0
+    for bai, trang in BAI_TAP_TRANG.items():
+        thu_muc = RA / f"bai-{bai:02d}"
+        thu_muc.mkdir(parents=True, exist_ok=True)
+        for t in trang:
+            p = d[t - 1]
+            rects = [tuple(r) for im in p.get_images(full=True) for r in p.get_image_rects(im[0])]
+            hop = [h for h in gom_manh(rects) if h[2] - h[0] >= 30 and h[3] - h[1] >= 30]  # bỏ biểu tượng đĩa CD
+            hop.sort(key=lambda h: (round(h[1] / 25), h[0]))
+            for i, h in enumerate(hop, 1):
+                pix = p.get_pixmap(dpi=216, clip=pymupdf.Rect(*h))
+                anh = Image.open(io.BytesIO(pix.tobytes("png"))).convert("L")
+                anh.thumbnail((360, 360), Image.LANCZOS)
+                ra = thu_muc / f"bt-p{t}-{i}.webp"
+                anh.save(ra, "WEBP", quality=60, method=6)
+                tong += ra.stat().st_size
+                dem += 1
+    print(f"Sách bài tập: {dem} ảnh, {tong / 1e6:.2f} MB")
+
+
 def anh_trang(d, so, bo_dem):
     if so not in bo_dem:
         p = d[so - 1]
@@ -136,7 +184,8 @@ def main():
             anh.save(ra, "WEBP", quality=60, method=6)
             tong += ra.stat().st_size
             dem += 1
-    print(f"{dem} ảnh, {tong / 1e6:.2f} MB")
+    print(f"Sách giáo khoa: {dem} ảnh, {tong / 1e6:.2f} MB")
+    cat_bai_tap()
 
 
 if __name__ == "__main__":

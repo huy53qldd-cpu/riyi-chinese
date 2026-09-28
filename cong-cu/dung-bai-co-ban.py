@@ -115,11 +115,12 @@ def tai_tu_vung():
 
 
 def tim_am_thanh():
-    """Tên file mp3 của sách giáo khoa, theo cấp: {'01-1', ...}."""
+    """Mã file mp3: sách giáo khoa '01-1', sách bài tập có tiền tố 'bt-01-1'."""
     ra = set()
     for r, _, fs in os.walk(GIAO_TRINH):
-        if "课本" in r:
-            ra |= {f[:-4] for f in fs if f.endswith(".mp3")}
+        tien_to = "" if "课本" in r else "bt-" if "练习册" in r else None
+        if tien_to is not None:
+            ra |= {tien_to + f[:-4] for f in fs if f.endswith(".mp3")}
     return ra
 
 
@@ -252,6 +253,9 @@ def dung_bai(nguon, tu_vung, am_co):
             continue
         ra["tuBoSung2025"].append({"trung": t, "pinyin": w["pinyin"], "idTuVung": w["id"],
                                    "capHsk": w["capHsk"], "viet": w["nghiaViet"]})
+    bt = dung_bai_tap(b, am, noi)
+    if bt:
+        ra["baiTap"] = bt
     # Điểm ngữ pháp HSK 1 bản 2025 dạy trong bài (hsk1-ngu-phap.json)
     ra["nguPhapHsk"] = json.loads((NGUON / "hsk1-ngu-phap.json").read_text(encoding="utf-8"))[str(b)]["hsk"]
     gan_hinh(ra, noi)
@@ -262,6 +266,70 @@ def dung_bai(nguon, tu_vung, am_co):
     if "khoiDong" in nguon:
         ra["canKiemTra"].append("Đáp án phần khởi động do Claude suy từ ảnh (sách không in đáp án).")
     return ra, thieu_tu
+
+
+DAU_CAU = "，。！？、：；…“”"
+
+
+def tach_chu(chuoi, noi):
+    """'你|Nǐ 好|hǎo ，我|wǒ __ 。' -> [['你','Nǐ'],['好','hǎo'],['，',''],['我','wǒ'],['__',''],['。','']]"""
+    ra = []
+    # Pinyin có thể có dấu cách ("Lǐ Yuè") nên tách theo ranh giới chữ Hán, không theo dấu cách
+    for dau, trong, tu, py, khac in re.findall(
+        rf"([{DAU_CAU}]+)|(__)|([㐀-鿿0-9]+)\|([^㐀-鿿0-9{DAU_CAU}_]*)|([^\s㐀-鿿{DAU_CAU}|_]+)", chuoi
+    ):
+        if dau or trong or khac:
+            ra.append([dau or trong or khac, ""])
+            continue
+        py = py.strip()
+        # Đối chiếu pinyin với từ điển (không tính dấu thanh, dấu cách, dấu cách âm)
+        # bo_dau bỏ luôn hai chấm của ü nên so sánh ở dạng u; 谁 đọc shéi (đã xác minh, xem DA_XAC_MINH)
+        goi_y = "".join(x[0] for x in pinyin(tu, style=Style.NORMAL, v_to_u=True)).replace("ü", "u")
+        goi_y = goi_y.replace("shui", "shei") if "谁" in tu else goi_y
+        if not any(c.isdigit() for c in tu) and bo_dau(py.lower()).replace(" ", "").replace("'", "").replace("’", "") != goi_y:
+            canh_bao.append(f"{noi}: '{tu}' pinyin '{py}' khác từ điển '{goi_y}'")
+        ra.append([tu, py])
+    return ra
+
+
+def dung_bai_tap(b, am, noi):
+    """Bài tập chọn lọc từ sách bài tập (hsk1-bt-XX.json), cùng định dạng với đề Thi thử."""
+    f = NGUON / f"hsk1-bt-{b:02d}.json"
+    if not f.exists():
+        return None
+    nguon = json.loads(f.read_text(encoding="utf-8"))
+
+    def cau_hoi(c):
+        c = dict(c)
+        for k in ("chu",):
+            if k in c:
+                c[k] = tach_chu(c[k], noi)
+        if isinstance(c.get("luaChon"), list) and c["luaChon"] and "|" in c["luaChon"][0]:
+            c["luaChon"] = [{"ma": "ABC"[i], "chu": tach_chu(x, noi)} for i, x in enumerate(c["luaChon"])]
+            c["dapAn"] = c["dapAn"]
+        return c
+
+    ra = {}
+    for phan in ("nghe", "doc", "phatAm"):
+        if phan not in nguon:
+            continue
+        p = nguon[phan]
+        muc = {"nhom": []}
+        if p.get("am"):
+            muc["am"] = am("bt-" + p["am"])
+        for n in p["nhom"]:
+            n = dict(n)
+            if isinstance(n.get("luaChon"), dict):
+                n["luaChon"] = [
+                    {"ma": k, **({"hinh": v} if v.startswith("bt-") else {"chu": tach_chu(v, noi)})}
+                    for k, v in n["luaChon"].items()
+                ]
+            if "viDu" in n:
+                n["viDu"] = [cau_hoi(x) for x in n["viDu"]] if isinstance(n["viDu"], list) else cau_hoi(n["viDu"])
+            n["cau"] = [cau_hoi(c) for c in n["cau"]]
+            muc["nhom"].append(n)
+        ra[phan] = muc
+    return ra
 
 
 def gan_hinh(bai, noi):
@@ -281,6 +349,19 @@ def gan_hinh(bai, noi):
             h["anh"] = co(h["anh"])
     if "khoiDong" in bai:
         bai["khoiDong"]["anh"] = [co(f"khoi-dong-{c}") for c in bai["khoiDong"]["anh"]]
+    # Ảnh của bài tập (tên bt-p<trang>-<số>)
+    def moi_hinh(x):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                if k == "hinh" and isinstance(v, str) and v.startswith("bt-"):
+                    co(v)
+                else:
+                    moi_hinh(v)
+        elif isinstance(x, list):
+            for y in x:
+                moi_hinh(y)
+
+    moi_hinh(bai.get("baiTap"))
     for p in bai["phatAm"]:
         if p["loai"] == "doc-hinh":
             p["hinh"] = [co(f"am-{p['am']}-{i}") for i in range(1, len(p["tu"]) + 1)]

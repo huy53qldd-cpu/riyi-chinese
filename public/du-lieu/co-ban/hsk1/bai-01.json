@@ -3,7 +3,7 @@
  "version": 1,
  "cap": 1,
  "bai": 1,
- "capNhatLuc": "2026-09-26",
+ "capNhatLuc": "2026-09-28",
  "nguon": "HSK标准教程 1 (HSK Standard Course 1), bài 1: hội thoại, âm thanh, bài tập chọn lọc.",
  "ten": {
   "trung": "你好",
@@ -597,6 +597,359 @@
    "viet": "nghỉ, nghỉ ngơi"
   }
  ],
+ "baiTap": {
+  "doc": {
+   "nhom": [
+    {
+     "tieuDe": "读一读，猜一猜",
+     "kieu": "doan-hinh",
+     "huongDan": "Đọc phiên âm, đoán xem là tranh nào",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "kāfēi",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "kělè",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "bālěi",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "pài",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "jítā",
+         ""
+        ]
+       ]
+      }
+     ],
+     "cau": [
+      {
+       "so": 1,
+       "hinh": "bt-p9-5",
+       "dapAn": "D",
+       "nghia": "bánh nướng (pie)"
+      },
+      {
+       "so": 2,
+       "hinh": "bt-p9-1",
+       "dapAn": "C",
+       "nghia": "ba lê"
+      },
+      {
+       "so": 3,
+       "hinh": "bt-p9-2",
+       "dapAn": "A",
+       "nghia": "cà phê"
+      },
+      {
+       "so": 4,
+       "hinh": "bt-p9-3",
+       "dapAn": "E",
+       "nghia": "đàn ghi-ta"
+      },
+      {
+       "so": 5,
+       "hinh": "bt-p9-4",
+       "dapAn": "B",
+       "nghia": "cô-ca"
+      }
+     ]
+    },
+    {
+     "tieuDe": "看图片，选择正确的对话",
+     "kieu": "ghep-hinh",
+     "huongDan": "Chọn tranh khớp với hội thoại",
+     "luaChon": [
+      {
+       "ma": "A",
+       "hinh": "bt-p10-1"
+      },
+      {
+       "ma": "B",
+       "hinh": "bt-p11-1"
+      },
+      {
+       "ma": "C",
+       "hinh": "bt-p11-2"
+      },
+      {
+       "ma": "D",
+       "hinh": "bt-p11-3"
+      }
+     ],
+     "cau": [
+      {
+       "so": 1,
+       "chu": [
+        [
+         "A",
+         ""
+        ],
+        [
+         "：",
+         ""
+        ],
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "好",
+         "hǎo"
+        ],
+        [
+         "！",
+         ""
+        ],
+        [
+         "B",
+         ""
+        ],
+        [
+         "：",
+         ""
+        ],
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "好",
+         "hǎo"
+        ],
+        [
+         "！",
+         ""
+        ]
+       ],
+       "dapAn": "C"
+      },
+      {
+       "so": 2,
+       "chu": [
+        [
+         "A",
+         ""
+        ],
+        [
+         "：",
+         ""
+        ],
+        [
+         "您",
+         "Nín"
+        ],
+        [
+         "好",
+         "hǎo"
+        ],
+        [
+         "！",
+         ""
+        ],
+        [
+         "B",
+         ""
+        ],
+        [
+         "：",
+         ""
+        ],
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "好",
+         "hǎo"
+        ],
+        [
+         "！",
+         ""
+        ]
+       ],
+       "dapAn": "B",
+       "chacChan": false,
+       "lyDo": "Tranh B: người cao tuổi ngồi xe lăn → chào lịch sự 您好."
+      },
+      {
+       "so": 3,
+       "chu": [
+        [
+         "A",
+         ""
+        ],
+        [
+         "：",
+         ""
+        ],
+        [
+         "您",
+         "Nín"
+        ],
+        [
+         "好",
+         "hǎo"
+        ],
+        [
+         "！",
+         ""
+        ],
+        [
+         "B",
+         ""
+        ],
+        [
+         "：",
+         ""
+        ],
+        [
+         "你们",
+         "Nǐmen"
+        ],
+        [
+         "好",
+         "hǎo"
+        ],
+        [
+         "！",
+         ""
+        ]
+       ],
+       "dapAn": "D",
+       "chacChan": false,
+       "lyDo": "Tranh D: cô giáo với nhiều học sinh → 你们好."
+      },
+      {
+       "so": 4,
+       "chu": [
+        [
+         "A",
+         ""
+        ],
+        [
+         "：",
+         ""
+        ],
+        [
+         "对不起",
+         "Duìbuqǐ"
+        ],
+        [
+         "！",
+         ""
+        ],
+        [
+         "B",
+         ""
+        ],
+        [
+         "：",
+         ""
+        ],
+        [
+         "没关系",
+         "Méi guānxi"
+        ],
+        [
+         "！",
+         ""
+        ]
+       ],
+       "dapAn": "A",
+       "chacChan": false,
+       "lyDo": "Suy theo loại trừ; tranh A không thể hiện rõ tình huống xin lỗi."
+      }
+     ]
+    }
+   ]
+  },
+  "phatAm": {
+   "nhom": [
+    {
+     "kieu": "doc-theo",
+     "am": "01-1",
+     "huongDan": "Nghe và đọc theo các từ một âm tiết",
+     "cau": [
+      {
+       "so": 1,
+       "amTiet": [
+        "mā má mǎ mà",
+        "bā bá bǎ bà",
+        "fēi féi fěi fèi",
+        "qiē qié qiě qiè",
+        "xuē xué xuě xuè",
+        "tiāo tiáo tiǎo tiào",
+        "huō huó huǒ huò",
+        "māo máo mǎo mào"
+       ]
+      }
+     ]
+    },
+    {
+     "kieu": "doc-theo",
+     "am": "01-2",
+     "huongDan": "Nghe và đọc theo các từ hai âm tiết",
+     "cau": [
+      {
+       "so": 1,
+       "amTiet": [
+        "xià yǔ",
+        "xiàwǔ",
+        "tèbié",
+        "dì yī",
+        "yéxǔ",
+        "pǎo bù",
+        "huídá",
+        "tiào wǔ",
+        "yìqǐ",
+        "kuàilè",
+        "qítā",
+        "biǎodá",
+        "lǐwù",
+        "jīhuì",
+        "líkāi",
+        "fùxí",
+        "dìtú",
+        "dìtiě",
+        "àihào",
+        "jiēdào"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
  "nguPhapHsk": [],
  "canKiemTra": [
   "Bản dịch tiếng Việt của hội thoại, ví dụ, giải thích là bản nháp của Claude, chưa có người duyệt.",

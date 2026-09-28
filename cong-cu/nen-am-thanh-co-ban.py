@@ -30,13 +30,15 @@ RA = BAI / "am"
 
 
 def tim_nguon():
-    """{'01-1': đường dẫn mp3 gốc của sách giáo khoa}."""
+    """{'01-1': mp3 sách giáo khoa, 'bt-01-1': mp3 sách bài tập}."""
     ra = {}
     for r, _, fs in os.walk(GOC / "Giao_trinh"):
-        if "课本" in r:
-            for f in fs:
-                if f.endswith(".mp3"):
-                    ra[f[:-4]] = Path(r) / f
+        tien_to = "" if "课本" in r else "bt-" if "练习册" in r else None
+        if tien_to is None:
+            continue
+        for f in fs:
+            if f.endswith(".mp3"):
+                ra[tien_to + f[:-4]] = Path(r) / f
     return ra
 
 

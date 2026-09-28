@@ -1,0 +1,37 @@
+{
+ "_ghiChu": "Sách bài tập HSK标准教程1, bài 1 (trang PDF 9–12). Chọn lọc: đọc theo (có âm thanh), đọc – đoán từ vay mượn, ghép tranh với hội thoại. Bỏ các bài chép chính tả thanh mẫu/vận mẫu/thanh điệu (01-3..01-5) vì phải nghe từng âm tiết rời, máy nhận dạng không đủ tin cậy. Đáp án do Claude tự giải.",
+ "bai": 1,
+ "phatAm": {
+  "nhom": [
+   { "kieu": "doc-theo", "am": "01-1", "huongDan": "Nghe và đọc theo các từ một âm tiết",
+     "cau": [{ "so": 1, "amTiet": ["mā má mǎ mà", "bā bá bǎ bà", "fēi féi fěi fèi", "qiē qié qiě qiè", "xuē xué xuě xuè", "tiāo tiáo tiǎo tiào", "huō huó huǒ huò", "māo máo mǎo mào"] }] },
+   { "kieu": "doc-theo", "am": "01-2", "huongDan": "Nghe và đọc theo các từ hai âm tiết",
+     "cau": [{ "so": 1, "amTiet": ["xià yǔ", "xiàwǔ", "tèbié", "dì yī", "yéxǔ", "pǎo bù", "huídá", "tiào wǔ", "yìqǐ", "kuàilè", "qítā", "biǎodá", "lǐwù", "jīhuì", "líkāi", "fùxí", "dìtú", "dìtiě", "àihào", "jiēdào"] }] }
+  ]
+ },
+ "doc": {
+  "nhom": [
+   {
+    "tieuDe": "读一读，猜一猜", "kieu": "doan-hinh", "huongDan": "Đọc phiên âm, đoán xem là tranh nào",
+    "luaChon": { "A": "kāfēi", "B": "kělè", "C": "bālěi", "D": "pài", "E": "jítā" },
+    "cau": [
+     { "so": 1, "hinh": "bt-p9-5", "dapAn": "D", "nghia": "bánh nướng (pie)" },
+     { "so": 2, "hinh": "bt-p9-1", "dapAn": "C", "nghia": "ba lê" },
+     { "so": 3, "hinh": "bt-p9-2", "dapAn": "A", "nghia": "cà phê" },
+     { "so": 4, "hinh": "bt-p9-3", "dapAn": "E", "nghia": "đàn ghi-ta" },
+     { "so": 5, "hinh": "bt-p9-4", "dapAn": "B", "nghia": "cô-ca" }
+    ]
+   },
+   {
+    "tieuDe": "看图片，选择正确的对话", "kieu": "ghep-hinh", "huongDan": "Chọn tranh khớp với hội thoại",
+    "luaChon": { "A": "bt-p10-1", "B": "bt-p11-1", "C": "bt-p11-2", "D": "bt-p11-3" },
+    "cau": [
+     { "so": 1, "chu": "A：你|Nǐ 好|hǎo ！ B：你|Nǐ 好|hǎo ！", "dapAn": "C" },
+     { "so": 2, "chu": "A：您|Nín 好|hǎo ！ B：你|Nǐ 好|hǎo ！", "dapAn": "B", "chacChan": false, "lyDo": "Tranh B: người cao tuổi ngồi xe lăn → chào lịch sự 您好." },
+     { "so": 3, "chu": "A：您|Nín 好|hǎo ！ B：你们|Nǐmen 好|hǎo ！", "dapAn": "D", "chacChan": false, "lyDo": "Tranh D: cô giáo với nhiều học sinh → 你们好." },
+     { "so": 4, "chu": "A：对不起|Duìbuqǐ ！ B：没关系|Méi guānxi ！", "dapAn": "A", "chacChan": false, "lyDo": "Suy theo loại trừ; tranh A không thể hiện rõ tình huống xin lỗi." }
+    ]
+   }
+  ]
+ }
+}

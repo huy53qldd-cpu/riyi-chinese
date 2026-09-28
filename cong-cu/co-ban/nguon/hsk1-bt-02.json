@@ -1,0 +1,37 @@
+{
+ "_ghiChu": "Sách bài tập HSK标准教程1, bài 2 (trang PDF 13–16). Chọn lọc như bài 1. Sách in 'Bú kèqi' (thanh đã biến điệu) → ghi thanh gốc bù. Đáp án do Claude tự giải.",
+ "bai": 2,
+ "phatAm": {
+  "nhom": [
+   { "kieu": "doc-theo", "am": "02-1", "huongDan": "Nghe và đọc theo các từ một âm tiết",
+     "cau": [{ "so": 1, "amTiet": ["zhī zhí zhǐ zhì", "chuāng chuáng chuǎng chuàng", "xiāng xiáng xiǎng xiàng", "shēn shén shěn shèn", "zān zán zǎn zàn", "xuān xuán xuǎn xuàn", "yīng yíng yǐng yìng", "rāng ráng rǎng ràng"] }] },
+   { "kieu": "doc-theo", "am": "02-2", "huongDan": "Nghe và đọc theo các từ hai âm tiết",
+     "cau": [{ "so": 1, "amTiet": ["rènzhēn", "rúguǒ", "xǐ zǎo", "zhàopiàn", "cídiǎn", "yīqián", "yīhòu", "yǐnliào", "zhāojí", "huǒchē", "zìjǐ", "yǎnjìng", "tóngxué", "tóngshì", "tóngyì", "tūrán", "yìsi", "zhàngfu", "tóufa", "shìqing"] }] }
+  ]
+ },
+ "doc": {
+  "nhom": [
+   {
+    "tieuDe": "读一读，猜一猜", "kieu": "doan-hinh", "huongDan": "Đọc phiên âm, đoán xem là tranh nào",
+    "luaChon": { "A": "qiǎokèlì", "B": "shāfā", "C": "xiāngbīn", "D": "màikèfēng", "E": "hànbǎo" },
+    "cau": [
+     { "so": 1, "hinh": "bt-p13-2", "dapAn": "E", "nghia": "bánh hamburger" },
+     { "so": 2, "hinh": "bt-p13-1", "dapAn": "C", "nghia": "rượu sâm panh" },
+     { "so": 3, "hinh": "bt-p13-3", "dapAn": "D", "nghia": "micrô" },
+     { "so": 4, "hinh": "bt-p13-4", "dapAn": "A", "nghia": "sô-cô-la" },
+     { "so": 5, "hinh": "bt-p13-5", "dapAn": "B", "nghia": "ghế sô pha" }
+    ]
+   },
+   {
+    "tieuDe": "看图片，选择正确的对话", "kieu": "ghep-hinh", "huongDan": "Chọn tranh khớp với hội thoại",
+    "luaChon": { "A": "bt-p14-1", "B": "bt-p14-2", "C": "bt-p15-1", "D": "bt-p15-2" },
+    "cau": [
+     { "so": 1, "chu": "A：谢谢|Xièxie 你|nǐ ！ B：不客气|Bù kèqi ！", "dapAn": "B" },
+     { "so": 2, "chu": "A：再见|Zàijiàn ！ B：再见|Zàijiàn ！", "dapAn": "C" },
+     { "so": 3, "chu": "A：对不起|Duìbuqǐ ！ B：没关系|Méi guānxi ！", "dapAn": "D" },
+     { "so": 4, "chu": "A：你|Nǐ 好|hǎo ！ B：你|Nǐ 好|hǎo ！", "dapAn": "A" }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,453 @@
+{
+ "_ghiChu": "Sách bài tập HSK标准教程1, bài 5 (trang PDF 33–40). Cách ghi và nguồn đáp án như bài 3. Bỏ phần 2 bài phát âm (chọn từ không có 儿化, câu 9–16): sách chỉ in A/B/C, từ nằm trong âm thanh, máy nhận dạng lúc ghi lúc bỏ chữ 儿 nên không tin được.",
+ "bai": 5,
+ "nghe": {
+  "am": "05-1",
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh",
+    "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+    "viDu": [
+     {
+      "hinh": "bt-p33-1",
+      "chu": "很|hěn 高兴|gāoxìng",
+      "dapAn": "dung"
+     },
+     {
+      "hinh": "bt-p33-2",
+      "chu": "看|kàn 电影|diànyǐng",
+      "dapAn": "sai"
+     }
+    ],
+    "cau": [
+     {
+      "so": 1,
+      "hinh": "bt-p33-3",
+      "loi": [
+       "女儿"
+      ],
+      "dapAn": "sai",
+      "chacChan": false,
+      "lyDo": "Tranh: bé trai đang vẽ."
+     },
+     {
+      "so": 2,
+      "hinh": "bt-p33-4",
+      "loi": [
+       "75岁"
+      ],
+      "dapAn": "dung",
+      "chacChan": false,
+      "lyDo": "Tranh: cụ ông."
+     },
+     {
+      "so": 3,
+      "hinh": "bt-p33-5",
+      "loi": [
+       "五口人"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: gia đình 5 người."
+     },
+     {
+      "so": 4,
+      "hinh": "bt-p33-6",
+      "loi": [
+       "40岁"
+      ],
+      "dapAn": "sai",
+      "chacChan": false,
+      "lyDo": "Tranh: chàng sinh viên trẻ."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-hinh",
+    "huongDan": "Nghe hội thoại, chọn tranh khớp",
+    "luaChon": {
+     "A": "bt-p34-1",
+     "B": "bt-p34-2",
+     "C": "bt-p34-3",
+     "D": "bt-p34-4",
+     "E": "bt-p34-5"
+    },
+    "viDu": {
+     "loi": [
+      "女：你好！",
+      "男：你好！很高兴认识你。"
+     ],
+     "dapAn": "C"
+    },
+    "cau": [
+     {
+      "so": 5,
+      "loi": [
+       "你女儿今年几岁了？",
+       "她今年五岁了。"
+      ],
+      "dapAn": "E",
+      "lyDo": "Tranh E: bé gái nhỏ đội mũ vẫy tay."
+     },
+     {
+      "so": 6,
+      "loi": [
+       "你们的汉语老师今年多大了？",
+       "他今年33岁了。"
+      ],
+      "dapAn": "D",
+      "chacChan": false,
+      "lyDo": "Tranh D: thầy giáo trẻ kèm học sinh."
+     },
+     {
+      "so": 7,
+      "loi": [
+       "你家有几口人？",
+       "我家有六口人。"
+      ],
+      "dapAn": "A",
+      "lyDo": "Tranh A: gia đình 6 người."
+     },
+     {
+      "so": 8,
+      "loi": [
+       "您今年多大了？",
+       "我今年八十岁了。"
+      ],
+      "dapAn": "B",
+      "lyDo": "Tranh B: cụ bà."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "chon-chu",
+    "huongDan": "Nghe câu, trả lời câu hỏi",
+    "viDu": {
+     "loi": [
+      "下午我去商店，我想买一些水果。",
+      "问：她下午去哪里？"
+     ],
+     "luaChon": [
+      "商店|shāngdiàn",
+      "医院|yīyuàn",
+      "学校|xuéxiào"
+     ],
+     "dapAn": "A"
+    },
+    "cau": [
+     {
+      "so": 9,
+      "loi": [
+       "李老师的女儿今年四岁了。",
+       "问：谁今年四岁了？"
+      ],
+      "luaChon": [
+       "张老师|Zhāng lǎoshī",
+       "李老师|Lǐ lǎoshī",
+       "李老师的女儿|Lǐ lǎoshī de nǚ'ér"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 10,
+      "loi": [
+       "她是我的汉语老师，她今年四十五岁。",
+       "问：我的汉语老师今年多大？"
+      ],
+      "luaChon": [
+       "40岁|sìshí suì",
+       "45岁|sìshíwǔ suì",
+       "50岁|wǔshí suì"
+      ],
+      "dapAn": "B"
+     },
+     {
+      "so": 11,
+      "loi": [
+       "他是我的中国朋友，他家有三口人。",
+       "问：谁家有三口人？"
+      ],
+      "luaChon": [
+       "我家|wǒ jiā",
+       "我的中国朋友家|wǒ de Zhōngguó péngyou jiā",
+       "我的美国朋友家|wǒ de Měiguó péngyou jiā"
+      ],
+      "dapAn": "B"
+     },
+     {
+      "so": 12,
+      "loi": [
+       "他叫大卫，他是美国学生，他今年二十二岁。",
+       "问：大卫今年多大？"
+      ],
+      "luaChon": [
+       "20岁|èrshí suì",
+       "21岁|èrshíyī suì",
+       "22岁|èrshí'èr suì"
+      ],
+      "dapAn": "C"
+     }
+    ]
+   }
+  ]
+ },
+ "doc": {
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh-chu",
+    "huongDan": "Xem tranh, từ có khớp tranh không",
+    "viDu": [
+     {
+      "hinh": "bt-p36-1",
+      "chu": "电视|diànshì",
+      "dapAn": "sai"
+     },
+     {
+      "hinh": "bt-p36-2",
+      "chu": "飞机|fēijī",
+      "dapAn": "dung"
+     }
+    ],
+    "cau": [
+     {
+      "so": 13,
+      "hinh": "bt-p36-3",
+      "chu": "七十|qīshí 岁|suì",
+      "dapAn": "sai",
+      "lyDo": "Tranh: người đàn ông trẻ đang gọi điện."
+     },
+     {
+      "so": 14,
+      "hinh": "bt-p36-4",
+      "chu": "女儿|nǚ'ér",
+      "dapAn": "dung",
+      "chacChan": false,
+      "lyDo": "Tranh: bé gái đang viết."
+     },
+     {
+      "so": 15,
+      "hinh": "bt-p36-5",
+      "chu": "三|sān 口|kǒu 人|rén",
+      "dapAn": "sai",
+      "chacChan": false,
+      "lyDo": "Tranh: hai người (mẹ và con gái)."
+     },
+     {
+      "so": 16,
+      "hinh": "bt-p36-6",
+      "chu": "她们|tāmen",
+      "dapAn": "dung"
+     },
+     {
+      "so": 17,
+      "hinh": "bt-p36-7",
+      "chu": "五|wǔ 口|kǒu 人|rén",
+      "dapAn": "sai",
+      "lyDo": "Cùng ảnh '六口人' ở phần khởi động sách giáo khoa: 6 người."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-cau",
+    "huongDan": "Chọn câu trả lời đúng",
+    "luaChon": {
+     "A": "她|Tā 今年|jīnnián 七|qī 岁|suì 了|le 。",
+     "B": "不是|Bù shì ，他|tā 是|shì 学生|xuésheng ，他|tā 今年|jīnnián 21|èrshíyī 岁|suì 。",
+     "C": "他|Tā 是|shì 中国|Zhōngguó 人|rén 。",
+     "D": "我|Wǒ 今年|jīnnián 38|sānshíbā 岁|suì 了|le 。",
+     "E": "我|Wǒ 家|jiā 有|yǒu 四|sì 口|kǒu 人|rén 。",
+     "F": "好|Hǎo 的|de ，谢谢|xièxie ！"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 喝|hē 水|shuǐ 吗|ma ？",
+     "dapAn": "F"
+    },
+    "cau": [
+     {
+      "so": 18,
+      "chu": "你|Nǐ 家|jiā 有|yǒu 几|jǐ 口|kǒu 人|rén ？",
+      "dapAn": "E"
+     },
+     {
+      "so": 19,
+      "chu": "李|Lǐ 老师|lǎoshī 的|de 女儿|nǚ'ér 几|jǐ 岁|suì 了|le ？",
+      "dapAn": "A"
+     },
+     {
+      "so": 20,
+      "chu": "他|Tā 是|shì 老师|lǎoshī 吗|ma ？",
+      "dapAn": "B"
+     },
+     {
+      "so": 21,
+      "chu": "你|Nǐ 今年|jīnnián 多|duō 大|dà 了|le ？",
+      "dapAn": "D"
+     },
+     {
+      "so": 22,
+      "chu": "你|Nǐ 的|de 汉语|Hànyǔ 老师|lǎoshī 是|shì 哪|nǎ 国|guó 人|rén ？",
+      "dapAn": "C"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "A": "大|dà",
+     "B": "几|jǐ",
+     "C": "岁|suì",
+     "D": "名字|míngzi",
+     "E": "口|kǒu"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 叫|jiào 什么|shénme __ ？",
+     "dapAn": "D"
+    },
+    "cau": [
+     {
+      "so": 23,
+      "chu": "我|Wǒ 的|de 中国|Zhōngguó 朋友|péngyou 家|jiā 有|yǒu 三|sān __ 人|rén 。",
+      "dapAn": "E"
+     },
+     {
+      "so": 24,
+      "chu": "你们|Nǐmen 老师|lǎoshī 今年|jīnnián 多|duō __ ？",
+      "dapAn": "A"
+     },
+     {
+      "so": 25,
+      "chu": "我|Wǒ 是|shì 美国|Měiguó 人|rén ，我|wǒ 是|shì 学生|xuésheng ，我|wǒ 19|shíjiǔ __ 。",
+      "dapAn": "C"
+     },
+     {
+      "so": 26,
+      "chu": "你|Nǐ 家|jiā 有|yǒu __ 口|kǒu 人|rén ？",
+      "dapAn": "B"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "F": "呢|ne",
+     "G": "了|le",
+     "H": "吗|ma",
+     "I": "哪|nǎ"
+    },
+    "cau": [
+     {
+      "so": 27,
+      "chu": "他|Tā 是|shì __ 国|guó 人|rén ？",
+      "dapAn": "I"
+     },
+     {
+      "so": 28,
+      "chu": "我|Wǒ 今年|jīnnián 29|èrshíjiǔ 岁|suì 。你|Nǐ __ ？",
+      "dapAn": "F"
+     },
+     {
+      "so": 29,
+      "chu": "这|Zhè 是|shì 你|nǐ 女儿|nǚ'ér __ ？",
+      "dapAn": "H"
+     },
+     {
+      "so": 30,
+      "chu": "他|Tā 是|shì 我|wǒ 的|de 好|hǎo 朋友|péngyou ，他|tā 今年|jīnnián 30|sānshí 岁|suì __ 。",
+      "dapAn": "G"
+     }
+    ]
+   }
+  ]
+ },
+ "phatAm": {
+  "am": "05-2",
+  "nhom": [
+   {
+    "kieu": "chon-am",
+    "huongDan": "Nghe, chọn âm tiết nghe được",
+    "cau": [
+     {
+      "so": 1,
+      "luaChon": [
+       "láng",
+       "liáng"
+      ],
+      "dapAn": "liáng",
+      "may": "凉"
+     },
+     {
+      "so": 2,
+      "luaChon": [
+       "hóng",
+       "xióng"
+      ],
+      "dapAn": "hóng",
+      "may": "红"
+     },
+     {
+      "so": 3,
+      "luaChon": [
+       "dǒng",
+       "tǒng"
+      ],
+      "dapAn": "dǒng",
+      "may": "懂"
+     },
+     {
+      "so": 4,
+      "luaChon": [
+       "nán",
+       "nián"
+      ],
+      "dapAn": "nán",
+      "may": "难"
+     },
+     {
+      "so": 5,
+      "luaChon": [
+       "sēn",
+       "sūn"
+      ],
+      "dapAn": "sūn",
+      "may": "孙"
+     },
+     {
+      "so": 6,
+      "luaChon": [
+       "háng",
+       "huáng"
+      ],
+      "dapAn": "huáng",
+      "may": "黄"
+     },
+     {
+      "so": 7,
+      "luaChon": [
+       "shǎng",
+       "shuǎng"
+      ],
+      "dapAn": "shǎng",
+      "may": "赏"
+     },
+     {
+      "so": 8,
+      "luaChon": [
+       "cōng",
+       "zōng"
+      ],
+      "dapAn": "cōng",
+      "may": "葱"
+     }
+    ]
+   }
+  ]
+ }
+}

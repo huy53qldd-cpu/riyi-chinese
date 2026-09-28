@@ -1,0 +1,512 @@
+{
+ "_ghiChu": "Sách bài tập HSK标准教程1, bài 4 (trang PDF 25–32). Cách ghi và nguồn đáp án như bài 3.",
+ "bai": 4,
+ "nghe": {
+  "am": "04-1",
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh",
+    "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+    "viDu": [
+     {
+      "hinh": "bt-p25-1",
+      "chu": "很|hěn 高兴|gāoxìng",
+      "dapAn": "dung"
+     },
+     {
+      "hinh": "bt-p25-2",
+      "chu": "看|kàn 电影|diànyǐng",
+      "dapAn": "sai"
+     }
+    ],
+    "cau": [
+     {
+      "so": 1,
+      "hinh": "bt-p25-3",
+      "loi": [
+       "老师"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: nữ sinh đang viết bài."
+     },
+     {
+      "so": 2,
+      "hinh": "bt-p25-4",
+      "loi": [
+       "美国"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: cờ Trung Quốc."
+     },
+     {
+      "so": 3,
+      "hinh": "bt-p25-5",
+      "loi": [
+       "同学"
+      ],
+      "dapAn": "dung",
+      "chacChan": false,
+      "lyDo": "Tranh: nhóm nữ sinh ôm sách đi cùng nhau."
+     },
+     {
+      "so": 4,
+      "hinh": "bt-p25-6",
+      "loi": [
+       "朋友"
+      ],
+      "dapAn": "dung",
+      "chacChan": false,
+      "lyDo": "Tranh: hai cô gái vui vẻ cụng ly."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-hinh",
+    "huongDan": "Nghe hội thoại, chọn tranh khớp",
+    "luaChon": {
+     "A": "bt-p26-1",
+     "B": "bt-p26-2",
+     "C": "bt-p26-3",
+     "D": "bt-p26-4",
+     "E": "bt-p26-5"
+    },
+    "viDu": {
+     "loi": [
+      "女：你好！",
+      "男：你好！很高兴认识你。"
+     ],
+     "dapAn": "C"
+    },
+    "cau": [
+     {
+      "so": 5,
+      "loi": [
+       "她是谁？",
+       "她是我的汉语老师。"
+      ],
+      "dapAn": "E",
+      "chacChan": false,
+      "lyDo": "Tranh E: cô giáo đứng cạnh bảng. 他/她 đọc giống nhau (tā)."
+     },
+     {
+      "so": 6,
+      "loi": [
+       "他叫什么名字？",
+       "他叫大卫，他是美国人。"
+      ],
+      "dapAn": "A",
+      "chacChan": false,
+      "lyDo": "Tranh A: người đàn ông phương Tây."
+     },
+     {
+      "so": 7,
+      "loi": [
+       "她是哪国人？",
+       "她是中国人。"
+      ],
+      "dapAn": "D",
+      "chacChan": false,
+      "lyDo": "Tranh D: bé gái mặc sườn xám."
+     },
+     {
+      "so": 8,
+      "loi": [
+       "她是谁？",
+       "她是我同学，她叫玛丽。"
+      ],
+      "dapAn": "B",
+      "chacChan": false,
+      "lyDo": "Tranh B: hai người cùng học."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "chon-chu",
+    "huongDan": "Nghe câu, trả lời câu hỏi",
+    "viDu": {
+     "loi": [
+      "下午我去商店，我想买一些水果。",
+      "问：她下午去哪里？"
+     ],
+     "luaChon": [
+      "商店|shāngdiàn",
+      "医院|yīyuàn",
+      "学校|xuéxiào"
+     ],
+     "dapAn": "A"
+    },
+    "cau": [
+     {
+      "so": 9,
+      "loi": [
+       "他叫李鹏，他是中国人。",
+       "问：他是哪国人？"
+      ],
+      "luaChon": [
+       "美国人|Měiguó rén",
+       "法国人|Fǎguó rén",
+       "中国人|Zhōngguó rén"
+      ],
+      "dapAn": "C",
+      "ghiChu": "Tên 李鹏 do máy nghe, chữ chưa chắc; không ảnh hưởng đáp án."
+     },
+     {
+      "so": 10,
+      "loi": [
+       "他是中国人，他是我的汉语老师。",
+       "问：他是谁？"
+      ],
+      "luaChon": [
+       "我的朋友|wǒ de péngyou",
+       "我的同学|wǒ de tóngxué",
+       "我的老师|wǒ de lǎoshī"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 11,
+      "loi": [
+       "她叫安妮，她不是我同学，她是我朋友。",
+       "问：她是谁？"
+      ],
+      "luaChon": [
+       "我的朋友|wǒ de péngyou",
+       "我的同学|wǒ de tóngxué",
+       "我的老师|wǒ de lǎoshī"
+      ],
+      "dapAn": "A"
+     },
+     {
+      "so": 12,
+      "loi": [
+       "他叫李心，是我的中国朋友。",
+       "问：他叫什么名字？"
+      ],
+      "luaChon": [
+       "王方|Wáng Fāng",
+       "李心|Lǐ Xīn",
+       "安妮|Ānnī"
+      ],
+      "dapAn": "B",
+      "ghiChu": "Máy nghe ra 李欣 (cùng âm Lǐ Xīn); ghi theo phương án của sách."
+     }
+    ]
+   }
+  ]
+ },
+ "doc": {
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh-chu",
+    "huongDan": "Xem tranh, từ có khớp tranh không",
+    "viDu": [
+     {
+      "hinh": "bt-p28-1",
+      "chu": "电视|diànshì",
+      "dapAn": "sai"
+     },
+     {
+      "hinh": "bt-p28-2",
+      "chu": "飞机|fēijī",
+      "dapAn": "dung"
+     }
+    ],
+    "cau": [
+     {
+      "so": 13,
+      "hinh": "bt-p28-3",
+      "chu": "对不起|duìbuqǐ",
+      "dapAn": "sai",
+      "chacChan": false,
+      "lyDo": "Tranh: cô gái vẫy tay, kéo vali (chào tạm biệt)."
+     },
+     {
+      "so": 14,
+      "hinh": "bt-p28-4",
+      "chu": "她|tā",
+      "dapAn": "dung"
+     },
+     {
+      "so": 15,
+      "hinh": "bt-p28-5",
+      "chu": "美国|Měiguó",
+      "dapAn": "sai",
+      "lyDo": "Tranh: lá cờ ba sọc dọc (cờ Pháp), không phải cờ Mỹ."
+     },
+     {
+      "so": 16,
+      "hinh": "bt-p28-6",
+      "chu": "同学|tóngxué",
+      "dapAn": "sai",
+      "chacChan": false,
+      "lyDo": "Tranh: cả gia đình nhiều thế hệ."
+     },
+     {
+      "so": 17,
+      "hinh": "bt-p28-7",
+      "chu": "他们|tāmen",
+      "dapAn": "sai",
+      "chacChan": false,
+      "lyDo": "Tranh: ba cô gái → dùng 她们, không dùng 他们."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-cau",
+    "huongDan": "Chọn câu trả lời đúng",
+    "luaChon": {
+     "A": "是|Shì ，他|tā 是|shì 我|wǒ 的|de 美国|Měiguó 朋友|péngyou 。",
+     "B": "她|Tā 是|shì 李月|Lǐ Yuè ，她|tā 是|shì 我|wǒ 的|de 中国|Zhōngguó 朋友|péngyou 。",
+     "C": "他|Tā 是|shì 我|wǒ 同学|tóngxué ，他|tā 叫|jiào 大卫|Dàwèi 。",
+     "D": "不是|Bù shì ，她|tā 是|shì 我|wǒ 的|de 汉语|Hànyǔ 老师|lǎoshī 。",
+     "E": "我|Wǒ 是|shì 美国|Měiguó 人|rén 。",
+     "F": "好|Hǎo 的|de ，谢谢|xièxie ！"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 喝|hē 水|shuǐ 吗|ma ？",
+     "dapAn": "F"
+    },
+    "cau": [
+     {
+      "so": 18,
+      "chu": "你|Nǐ 是|shì 哪|nǎ 国|guó 人|rén ？",
+      "dapAn": "E"
+     },
+     {
+      "so": 19,
+      "chu": "他|Tā 是|shì 谁|shéi ？",
+      "dapAn": "C"
+     },
+     {
+      "so": 20,
+      "chu": "她|Tā 是|shì 你|nǐ 同学|tóngxué 吗|ma ？",
+      "dapAn": "D"
+     },
+     {
+      "so": 21,
+      "chu": "谁|Shéi 是|shì 李月|Lǐ Yuè ？",
+      "dapAn": "B"
+     },
+     {
+      "so": 22,
+      "chu": "他|Tā 是|shì 你|nǐ 的|de 朋友|péngyou 吗|ma ？",
+      "dapAn": "A"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "A": "哪|nǎ",
+     "B": "叫|jiào",
+     "C": "的|de",
+     "D": "名字|míngzi",
+     "E": "呢|ne"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 叫|jiào 什么|shénme __ ？",
+     "dapAn": "D"
+    },
+    "cau": [
+     {
+      "so": 23,
+      "chu": "你|Nǐ 妈妈|māma __ 什么|shénme ？",
+      "dapAn": "B"
+     },
+     {
+      "so": 24,
+      "chu": "您|Nín 是|shì __ 国|guó 人|rén ？",
+      "dapAn": "A"
+     },
+     {
+      "so": 25,
+      "chu": "他|Tā 不|bù 是|shì 我|wǒ 同学|tóngxué ，他|tā 是|shì 我|wǒ __ 中国|Zhōngguó 朋友|péngyou 。",
+      "dapAn": "C"
+     },
+     {
+      "so": 26,
+      "chu": "我|Wǒ 是|shì 美国|Měiguó 人|rén 。你|Nǐ __ ？",
+      "dapAn": "E"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "F": "是|shì",
+     "G": "不|bù",
+     "H": "吗|ma",
+     "I": "谁|shéi"
+    },
+    "cau": [
+     {
+      "so": 27,
+      "chu": "他|Tā 是|shì __ ？",
+      "dapAn": "I"
+     },
+     {
+      "so": 28,
+      "chu": "我|Wǒ __ 是|shì 中国|Zhōngguó 人|rén ，我|wǒ 是|shì 美国|Měiguó 人|rén 。",
+      "dapAn": "G"
+     },
+     {
+      "so": 29,
+      "chu": "他|Tā 是|shì 你|nǐ 的|de 汉语|Hànyǔ 老师|lǎoshī __ ？",
+      "dapAn": "H"
+     },
+     {
+      "so": 30,
+      "chu": "他|Tā 不|bù 是|shì 我|wǒ 同学|tóngxué ，他|tā __ 我|wǒ 的|de 好|hǎo 朋友|péngyou 。",
+      "dapAn": "F"
+     }
+    ]
+   }
+  ]
+ },
+ "phatAm": {
+  "am": "04-2",
+  "nhom": [
+   {
+    "kieu": "chon-am",
+    "huongDan": "Nghe, chọn âm tiết nghe được",
+    "cau": [
+     {
+      "so": 1,
+      "luaChon": [
+       "zhuāngjiā",
+       "zhuānjiā"
+      ],
+      "dapAn": "zhuānjiā",
+      "may": "专家"
+     },
+     {
+      "so": 2,
+      "luaChon": [
+       "xīnnián",
+       "xīnniáng"
+      ],
+      "dapAn": "xīnnián",
+      "may": "新年"
+     },
+     {
+      "so": 3,
+      "luaChon": [
+       "chènjī",
+       "chéngjì"
+      ],
+      "dapAn": "chéngjì",
+      "may": "成绩"
+     },
+     {
+      "so": 4,
+      "luaChon": [
+       "fāyán",
+       "fāyáng"
+      ],
+      "dapAn": "fāyán",
+      "may": "发言"
+     },
+     {
+      "so": 5,
+      "luaChon": [
+       "zhīdào",
+       "chídào"
+      ],
+      "dapAn": "zhīdào",
+      "may": "知道"
+     },
+     {
+      "so": 6,
+      "luaChon": [
+       "zhījǐ",
+       "chūjí"
+      ],
+      "dapAn": "zhījǐ",
+      "may": "知己"
+     },
+     {
+      "so": 7,
+      "luaChon": [
+       "shǐyòng",
+       "zhǐyào"
+      ],
+      "dapAn": "shǐyòng",
+      "may": "使用"
+     },
+     {
+      "so": 8,
+      "luaChon": [
+       "rìqī",
+       "zhìqì"
+      ],
+      "dapAn": "rìqī",
+      "may": "日期"
+     }
+    ]
+   },
+   {
+    "kieu": "danh-thanh-yi",
+    "huongDan": "Nghe, đánh dấu thanh cho 一",
+    "cau": [
+     {
+      "so": 9,
+      "chu": "一天",
+      "sau": "tiān",
+      "dapAn": "yì"
+     },
+     {
+      "so": 10,
+      "chu": "一年",
+      "sau": "nián",
+      "dapAn": "yì"
+     },
+     {
+      "so": 11,
+      "chu": "一本",
+      "sau": "běn",
+      "dapAn": "yì"
+     },
+     {
+      "so": 12,
+      "chu": "一位",
+      "sau": "wèi",
+      "dapAn": "yí"
+     },
+     {
+      "so": 13,
+      "chu": "一张",
+      "sau": "zhāng",
+      "dapAn": "yì"
+     },
+     {
+      "so": 14,
+      "chu": "一瓶",
+      "sau": "píng",
+      "dapAn": "yì"
+     },
+     {
+      "so": 15,
+      "chu": "一碗",
+      "sau": "wǎn",
+      "dapAn": "yì"
+     },
+     {
+      "so": 16,
+      "chu": "一下",
+      "sau": "xià",
+      "dapAn": "yí"
+     }
+    ]
+   }
+  ]
+ }
+}
