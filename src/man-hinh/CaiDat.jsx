@@ -23,6 +23,7 @@ import {
 } from "../thong-bao/dangKyThongBao.js";
 import { guiThongBaoToanBo, theoDoiThongBaoGanDay } from "../thong-bao/guiThongBaoToanBo.js";
 import { GIOI_HAN_THONG_BAO, laQuanTri } from "../thong-bao/quanTri.js";
+import { dauKhoang, docNguoiDangKy } from "../quan-tri/hoSoNguoiDung.js";
 import HopThoaiXacNhan from "../thanh-phan/HopThoaiXacNhan.jsx";
 import BieuTuong, { DenLong, HoaAnhDao, LogoGoogle } from "../thanh-phan/BieuTuong.jsx";
 import ChuTrung from "../thanh-phan/ChuTrung.jsx";
@@ -145,6 +146,7 @@ export default function CaiDat({ quayLai, thoatKhoa }) {
       {/* Chỉ tài khoản quản trị mới thấy (quyết định 18.56). Máy chủ vẫn tự
           kiểm tra lại quyền khi gửi, không tin vào việc ẩn/hiện ở đây. */}
       {laQuanTri(nd.nguoi?.uid) && <MucQuanTriThongBao />}
+      {laQuanTri(nd.nguoi?.uid) && <MucQuanTriNguoiDung />}
 
       <MucUngDung />
 
@@ -385,6 +387,108 @@ function TrangThaiGui({ tb }) {
     <span className="text-canh-bao font-semibold">
       {tb.trangThai === "dang-gui" ? "Đang gửi..." : "Đang chờ gửi (vài phút)"}
     </span>
+  );
+}
+
+/* -----------------------------------------------------------------------------
+   MỤC QUẢN TRỊ: NGƯỜI MỚI ĐĂNG KÝ (quyết định 18.72)
+   Chỉ tài khoản quản trị thấy; Firestore cũng chỉ cho tài khoản này đọc hoSo.
+   ----------------------------------------------------------------------------- */
+const KHOANG_XEM = [
+  { soNgay: 1, nhan: "Hôm nay" },
+  { soNgay: 7, nhan: "7 ngày" },
+  { soNgay: 30, nhan: "30 ngày" },
+];
+
+const dinhDangGio = (d, soNgay) =>
+  d
+    ? new Intl.DateTimeFormat("vi-VN", {
+        timeZone: "Asia/Ho_Chi_Minh",
+        hour: "2-digit",
+        minute: "2-digit",
+        ...(soNgay > 1 ? { day: "2-digit", month: "2-digit" } : {}),
+      }).format(d)
+    : "";
+
+function MucQuanTriNguoiDung() {
+  const [soNgay, setSoNgay] = useState(1);
+  const [lanTai, setLanTai] = useState(0);
+  const [kq, setKq] = useState(null);
+
+  useEffect(() => {
+    let conSong = true;
+    docNguoiDangKy(dauKhoang(soNgay)).then((r) => conSong && setKq({ ...r, soNgay }));
+    return () => {
+      conSong = false;
+    };
+  }, [soNgay, lanTai]);
+
+  const dangTai = !kq || kq.soNgay !== soNgay;
+
+  return (
+    <section className="border-vien bg-nen-noi flex flex-col gap-3 rounded-[var(--bo-goc)] border p-4">
+      <h2 className="m-0 flex items-center gap-2 text-[length:var(--co-chu-latin)] font-bold">
+        <BieuTuong ten="nguoi-moi" co={20} />
+        Người mới đăng ký
+      </h2>
+      <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+        Chỉ tài khoản quản trị thấy mục này. Tính theo giờ Việt Nam. Người đăng ký trước ngày có mục này chỉ
+        được ghi nhận khi họ mở lại app.
+      </p>
+
+      <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Khoảng thời gian">
+        {KHOANG_XEM.map((k) => (
+          <button
+            key={k.soNgay}
+            type="button"
+            onClick={() => setSoNgay(k.soNgay)}
+            aria-pressed={soNgay === k.soNgay}
+            className={`rounded-[var(--bo-goc-tron)] border px-3 py-1.5 text-[length:var(--co-chu-latin-nho)] ${soNgay === k.soNgay ? "border-nhan bg-nhan-nhat border-2 font-bold" : "border-vien"}`}
+          >
+            {k.nhan}
+          </button>
+        ))}
+        <button
+          type="button"
+          onClick={() => setLanTai((n) => n + 1)}
+          aria-label="Tải lại"
+          className="border-vien text-chu-mo ml-auto flex h-9 w-9 items-center justify-center rounded-full border"
+        >
+          <BieuTuong ten="cap-nhat" co={16} />
+        </button>
+      </div>
+
+      {dangTai ? (
+        <p className="text-chu-mo m-0">Đang tải…</p>
+      ) : kq.loi ? (
+        <p className="text-sai m-0">{kq.loi}</p>
+      ) : (
+        <>
+          <p className="m-0 text-[length:var(--co-chu-latin)]">
+            <b className="text-[length:1.6rem]">{kq.ds.length}</b> người đăng ký mới
+            {kq.tong != null && (
+              <span className="text-chu-mo text-[length:var(--co-chu-latin-nho)]"> · tổng {kq.tong} tài khoản đã ghi nhận</span>
+            )}
+          </p>
+          {kq.ds.length > 0 && (
+            <ul className="m-0 flex list-none flex-col p-0">
+              {kq.ds.map((n) => (
+                <li key={n.uid} className="border-vien flex items-start gap-3 border-t py-2 first:border-t-0">
+                  <div className="min-w-0 flex-1">
+                    <p className="m-0 font-semibold break-words">{n.ten || "(chưa đặt tên)"}</p>
+                    <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)] break-all">{n.email}</p>
+                  </div>
+                  <div className="shrink-0 text-right text-[length:var(--co-chu-latin-nho)]">
+                    <p className="m-0">{n.cach === "google" ? "Google" : "Email"}</p>
+                    <p className="text-chu-mo m-0 tabular-nums">{dinhDangGio(n.taoLuc, soNgay)}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </>
+      )}
+    </section>
   );
 }
 

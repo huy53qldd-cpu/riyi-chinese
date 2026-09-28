@@ -119,6 +119,8 @@ export function theoDoiDangNhap(khiDoi) {
                   // "google.com" hoặc "password" (tài khoản email + mật khẩu)
                   phuongThuc: nguoi.providerData?.[0]?.providerId ?? "",
                   daXacMinh: nguoi.emailVerified === true,
+                  // Ngày tạo tài khoản, để quản trị xem người mới đăng ký (18.72)
+                  taoTaiKhoan: nguoi.metadata?.creationTime ?? null,
                 }
               : null,
           ),

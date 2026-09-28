@@ -53,6 +53,25 @@ service cloud.firestore {
         && request.resource.data.taoLuc == request.time;
     }
 
+    // Hồ sơ người dùng (quyết định 18.72): mỗi người chỉ GHI hồ sơ của chính
+    // mình, đúng 5 trường; CHỈ tài khoản quản trị ĐỌC được (xem ai mới đăng ký).
+    match /hoSo/{uid} {
+      allow read: if request.auth != null
+        && request.auth.uid == 'NGEhCGlJnwXQTJpgDH5bMPNPgwT2';
+
+      allow create, update: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['ten', 'email', 'cach', 'taoLuc', 'lanCuoi'])
+        && request.resource.data.ten is string
+        && request.resource.data.ten.size() <= 100
+        && request.resource.data.email is string
+        && request.resource.data.email.size() <= 200
+        && request.resource.data.cach in ['google', 'email']
+        && request.resource.data.taoLuc is timestamp
+        && request.resource.data.taoLuc <= request.time
+        && request.resource.data.lanCuoi == request.time;
+    }
+
     // Chặn tất cả nơi còn lại (kể cả heThong/nhacHoc: chỉ GitHub Actions ghi)
     match /{tatCa=**} {
       allow read, write: if false;

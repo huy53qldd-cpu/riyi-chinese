@@ -124,6 +124,8 @@ const HINH = {
   "dang-nhap": LogIn,
   "email": Mail,
   "tao-tai-khoan": UserPlus,
+  // Quản trị: người mới đăng ký (18.72)
+  "nguoi-moi": UserPlus,
   "mat-khau": KeyRound,
   "hien-mat-khau": Eye,
   "an-mat-khau": EyeOff,

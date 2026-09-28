@@ -57,6 +57,7 @@ import {
   taoMuc,
 } from "../luyen-tap/baiHoc.js";
 import { useThongBao } from "../thanh-phan/ThongBao.jsx";
+import { ghiHoSo } from "../quan-tri/hoSoNguoiDung.js";
 import {
   apDungCaiDat,
   chuanHoaCaiDat,
@@ -256,6 +257,8 @@ export function NguoiDungProvider({ children }) {
       nguoiRef.current = n;
       setNguoi(n);
       nhoTen(n.ten || n.email);
+      // Hồ sơ cho quản trị xem ai mới đăng ký (18.72); chạy ngầm, lỗi thì thôi
+      ghiHoSo(n);
       try {
         const d = await docTienDo(n.uid);
         if (d.caiDat) {
