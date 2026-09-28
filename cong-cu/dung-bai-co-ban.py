@@ -124,6 +124,20 @@ def tim_am_thanh():
     return ra
 
 
+def dung_bai_0(nguon):
+    """Bài 0 (Claude soạn, không có trong sách): giữ nguyên cấu trúc, gắn pinyin cho chữ Hán ví dụ."""
+    ra = {"loai": "bai-co-ban-0", "version": 1, "cap": 1, "bai": 0, "capNhatLuc": date.today().isoformat(),
+          "nguon": "Claude soạn (quyết định 18.71). So sánh với tiếng Việt là gần đúng, chờ duyệt.",
+          "ten": {"trung": "", "pinyin": [], "viet": nguon["ten"][2]}, "buoi": nguon["buoi"],
+          "canKiemTra": ["Toàn bộ nội dung Bài 0 do Claude soạn; so sánh thanh điệu, âm Việt – Trung là gần đúng."]}
+    for t in ra["buoi"][0]["thanh"]:
+        chu, py, nghia = t["viDu"]
+        t["viDu"] = cau(chu, py, "bài 0", viet=nghia)
+    for v in ra["buoi"][1]["amTiet"]["viDu"]:
+        kiem_tra_am(v[0], [v[1]], "bài 0")
+    return ra
+
+
 def dung_bai(nguon, tu_vung, am_co):
     b = nguon["bai"]
     noi = f"bài {b}"
@@ -405,6 +419,11 @@ def main():
     tong_thieu = {}
     for f in sorted(NGUON.glob("hsk1-bai-*.json")):
         nguon = json.loads(f.read_text(encoding="utf-8"))
+        if nguon["bai"] == 0:
+            (thu_muc / "bai-00.json").write_text(
+                json.dumps(dung_bai_0(nguon), ensure_ascii=False, indent=1), encoding="utf-8")
+            print("bài 0: 2 buổi")
+            continue
         bai, thieu = dung_bai(nguon, tu_vung, am_co)
         (thu_muc / f"bai-{nguon['bai']:02d}.json").write_text(
             json.dumps(bai, ensure_ascii=False, indent=1), encoding="utf-8"

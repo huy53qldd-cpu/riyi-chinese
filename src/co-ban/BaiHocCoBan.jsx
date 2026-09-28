@@ -27,6 +27,7 @@ import { coAmTiet, NGON_NGU, phatAm, taiDanhSachAmTiet } from "../am-thanh/phatA
 import { tachThanh } from "../am-thanh/dauThanh.js";
 import { taiChuHan, taiNguPhap } from "../du-lieu/taiDuLieu.js";
 import { tronNgauNhien } from "../luyen-tap/tienIch.js";
+import BaiKhong from "./BaiKhong.jsx";
 import {
   CAC_BUOI,
   duongDanAm,
@@ -783,8 +784,14 @@ export default function BaiHocCoBan({ soBai, uid, tienDo, capNhatTienDo, quayLai
   const [loi, setLoi] = useState(false);
   const [hanViet, setHanViet] = useState({});
   const daXong = tienDo[maBai(soBai)] ?? [];
+  // Bài 0 có 2 buổi riêng (bai-00.json), các bài khác 6 buổi chung
+  const cacBuoi = bai?.buoi ? bai.buoi.map(({ so, ten, moTa }) => ({ so, ten, moTa })) : CAC_BUOI;
   // Mở bài: vào buổi đầu tiên chưa xong
-  const [buoi, setBuoi] = useState(() => CAC_BUOI.find((b) => !daXong.includes(b.so))?.so ?? 1);
+  const [buoi, setBuoi] = useState(() => {
+    const soBuoi = soBai === 0 ? 2 : CAC_BUOI.length; // Bài 0 chỉ có 2 buổi
+    for (let so = 1; so <= soBuoi; so++) if (!daXong.includes(so)) return so;
+    return 1;
+  });
 
   useEffect(() => {
     taiBai(soBai).then(setBai, () => setLoi(true));
@@ -797,7 +804,7 @@ export default function BaiHocCoBan({ soBai, uid, tienDo, capNhatTienDo, quayLai
 
   async function hoanThanh() {
     capNhatTienDo(await ghiXongBuoi(uid, tienDo, soBai, buoi));
-    if (buoi < CAC_BUOI.length) setBuoi(buoi + 1);
+    if (buoi < cacBuoi.length) setBuoi(buoi + 1);
     else quayLai();
   }
 
@@ -819,14 +826,14 @@ export default function BaiHocCoBan({ soBai, uid, tienDo, capNhatTienDo, quayLai
       {bai && (
         <>
           <div className="mt-3">
-            <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)]">Bài {soBai}</p>
-            <Cau c={bai.ten} />
+            {soBai > 0 && <p className="text-chu-mo m-0 text-[length:var(--co-chu-latin-nho)]">Bài {soBai}</p>}
+            {bai.ten.trung && <Cau c={bai.ten} />}
             <p className="m-0 font-semibold">{bai.ten.viet}</p>
           </div>
 
           {/* 6 buổi */}
           <nav className="-mx-5 mt-4 flex gap-2 overflow-x-auto px-5 pb-2" aria-label="Các buổi của bài">
-            {CAC_BUOI.map((b) => {
+            {cacBuoi.map((b) => {
               const xong = daXong.includes(b.so);
               return (
                 <button
@@ -843,19 +850,26 @@ export default function BaiHocCoBan({ soBai, uid, tienDo, capNhatTienDo, quayLai
             })}
           </nav>
           <p className="text-chu-mo mt-1 mb-4 text-[length:var(--co-chu-latin-nho)]">
-            Buổi {buoi}: {CAC_BUOI[buoi - 1].moTa}
+            Buổi {buoi}: {cacBuoi[buoi - 1]?.moTa}
           </p>
 
-          {buoi === 1 && <BuoiHoiThoai bai={bai} />}
-          {buoi === 2 && <BuoiPhatAm bai={bai} />}
-          {buoi === 3 && <BuoiTuVung bai={bai} hanViet={hanViet} />}
-          {buoi === 4 && <BuoiChuNguPhap bai={bai} />}
-          {buoi === 5 && <BuoiLuyenTap bai={bai} />}
-          {buoi === 6 && <BuoiOnTap bai={bai} />}
+          {soBai === 0 && <BaiKhong bai={bai} buoi={buoi} />}
+          {soBai > 0 && buoi === 1 && <BuoiHoiThoai bai={bai} />}
+          {soBai > 0 && buoi === 2 && <BuoiPhatAm bai={bai} />}
+          {soBai > 0 && buoi === 3 && <BuoiTuVung bai={bai} hanViet={hanViet} />}
+          {soBai > 0 && buoi === 4 && <BuoiChuNguPhap bai={bai} />}
+          {soBai > 0 && buoi === 5 && <BuoiLuyenTap bai={bai} />}
+          {soBai > 0 && buoi === 6 && <BuoiOnTap bai={bai} />}
 
           <p className="text-chu-mo mt-6 text-[length:0.75rem] leading-relaxed">
-            Nội dung chọn lọc từ giáo trình HSK标准教程 1. Bản dịch tiếng Việt và đáp án bài tập là bản nháp, đang
-            chờ duyệt. Âm Hán Việt: Kai Hanzi HSK × Sino-Vietnamese dataset, CC BY 4.0.
+            {soBai === 0 ? (
+              "Bài 0 do Riyi soạn riêng cho người Việt. Các so sánh với tiếng Việt là gần đúng, đang chờ duyệt. Âm thanh: bộ audio-cmn (CC BY-SA)."
+            ) : (
+              <>
+                Nội dung chọn lọc từ giáo trình <VanBanPha noiDung="HSK标准教程" /> 1. Bản dịch tiếng Việt và đáp án bài
+                tập là bản nháp, đang chờ duyệt. Âm Hán Việt: Kai Hanzi HSK × Sino-Vietnamese dataset, CC BY 4.0.
+              </>
+            )}
           </p>
 
           {/* Nút hoàn thành buổi, cố định phía dưới */}
@@ -867,7 +881,7 @@ export default function BaiHocCoBan({ soBai, uid, tienDo, capNhatTienDo, quayLai
                 className="nut-hoan-thanh rounded-[var(--bo-goc-tron)] border px-6 py-3 font-bold"
               >
                 {daXong.includes(buoi) ? "Buổi đã xong · " : "Hoàn thành buổi · "}
-                {buoi < CAC_BUOI.length ? "sang buổi tiếp" : "về lộ trình"}
+                {buoi < cacBuoi.length ? "sang buổi tiếp" : "về lộ trình"}
               </button>
             </div>
           </div>

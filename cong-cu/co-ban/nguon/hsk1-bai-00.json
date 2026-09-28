@@ -1,0 +1,84 @@
+{
+ "_ghiChu": "Bài 0 (quyết định 18.65, 18.71): KHÔNG có trong giáo trình, Claude soạn mới. Độ cao thanh điệu theo thang 5 bậc của Triệu Nguyên Nhiệm (5 = cao nhất). Giá trị tiếng Việt là giọng Bắc (Hà Nội), lấy theo mô tả thường gặp trong ngữ âm học, là GẦN ĐÚNG. Mọi so sánh Việt – Trung đều là 'gần giống, không trùng khít' và cần chủ dự án duyệt.",
+ "bai": 0,
+ "ten": ["", "", "Bài 0: Thanh điệu và cách học"],
+ "buoi": [
+  {
+   "so": 1,
+   "ten": "Thanh điệu",
+   "moTa": "4 thanh, thanh nhẹ, so với dấu tiếng Việt",
+   "gioiThieu": "Tiếng Trung phổ thông có 4 thanh điệu và 1 thanh nhẹ. Giống tiếng Việt, đổi thanh là đổi nghĩa: mā (妈, mẹ) khác mǎ (马, ngựa). Tin vui cho người Việt: bạn đã quen nghe và phân biệt thanh điệu từ nhỏ, nên thường học phần này nhanh hơn người nói tiếng Anh.",
+   "luuYChung": "Dấu tiếng Việt chỉ là chỗ bám để nhớ. Không thanh nào của tiếng Trung trùng khít với một dấu tiếng Việt, nên mỗi thanh bên dưới đều ghi rõ chỗ khác nhau. So sánh dựa trên giọng Bắc; giọng miền Trung, miền Nam đọc dấu hỏi, ngã khác nên có thể thấy gần hoặc xa hơn.",
+   "thanh": [
+    {
+     "so": 1, "ten": "Thanh 1", "dau": "ˉ", "viDu": ["妈", "mā", "mẹ"], "doCao": [5, 5],
+     "gan": { "dau": "ngang", "viDu": "ma", "doCao": [3, 3] },
+     "giong": "Đi ngang, không lên không xuống, như tiếng Việt không dấu.",
+     "khac": "Cao hơn hẳn thanh ngang tiếng Việt và giữ đều tới cuối. Người Việt hay đọc thấp quá, nghe giống thanh nhẹ. Mẹo: nói như đang ngân một nốt nhạc cao."
+    },
+    {
+     "so": 2, "ten": "Thanh 2", "dau": "ˊ", "viDu": ["麻", "má", "cây gai"], "doCao": [3, 5],
+     "gan": { "dau": "sắc", "viDu": "má", "doCao": [3, 5] },
+     "giong": "Đi lên từ giữa lên cao. Đây là cặp gần nhau nhất.",
+     "khac": "Lên đều và dài hơn, không bị cắt ngắn như dấu sắc ở tiếng có âm cuối p, t, c (ví dụ 'mắt', 'tốt'). Mẹo: như giọng hỏi lại 'hả?'."
+    },
+    {
+     "so": 3, "ten": "Thanh 3", "dau": "ˇ", "viDu": ["马", "mǎ", "ngựa"], "doCao": [2, 1, 4],
+     "gan": { "dau": "hỏi", "viDu": "mả", "doCao": [3, 1, 3] },
+     "giong": "Xuống thấp rồi vòng lên, giống dáng dấu hỏi giọng Bắc.",
+     "khac": "Phần quan trọng là đoạn XUỐNG THẤP; khi nói nhanh, người Trung thường chỉ đọc nửa đầu (xuống thấp rồi dừng, gần giống dấu nặng nhưng không bị ngắt họng). Chỉ khi đọc riêng một chữ hoặc cuối câu mới vòng lên rõ. Hai thanh 3 đi liền: chữ đầu đọc thành thanh 2 (nǐ hǎo đọc ní hǎo)."
+    },
+    {
+     "so": 4, "ten": "Thanh 4", "dau": "ˋ", "viDu": ["骂", "mà", "mắng"], "doCao": [5, 1],
+     "gan": { "dau": "huyền", "viDu": "mà", "doCao": [2, 1] },
+     "giong": "Đi xuống. Dấu viết giống dấu huyền nhưng CÁCH ĐỌC KHÁC XA.",
+     "khac": "Không có dấu tiếng Việt nào tương ứng. Thanh 4 bắt đầu từ RẤT CAO rồi rơi mạnh, nhanh xuống thấp; dấu huyền bắt đầu thấp và đi nhẹ. Đọc như dấu huyền là lỗi phổ biến nhất của người Việt. Mẹo: nói dứt khoát như ra lệnh 'Đi!' hoặc như khi quả quyết 'Đúng!'."
+    },
+    {
+     "so": 0, "ten": "Thanh nhẹ", "dau": "không dấu", "viDu": ["吗", "ma", "(trợ từ hỏi)"], "doCao": [3],
+     "gan": { "dau": "ngang (đọc lướt)", "viDu": "ma", "doCao": [3] },
+     "giong": "Không ghi dấu, đọc ngắn và nhẹ, như âm lướt qua.",
+     "khac": "Độ cao thay đổi theo chữ đứng trước, không cố định. Thường ở cuối từ: 妈妈 māma, 谢谢 xièxie."
+    }
+   ],
+   "thanhKhongCo": "Tiếng Trung không có thanh nào giống dấu ngã và dấu nặng (có ngắt họng) của tiếng Việt. Khi đọc tiếng Trung, đừng thêm tiếng ngắt ở họng.",
+   "tuDoThanh": ["妈 mā", "麻 má", "马 mǎ", "骂 mà"],
+   "amNghe": ["ma1", "ma2", "ma3", "ma4"],
+   "troChoi": {
+    "huongDan": "Nghe một âm tiết, chọn thanh 1, 2, 3 hay 4. Nghe lại được nhiều lần.",
+    "soCau": 20,
+    "amTiet": ["ma", "ba", "da", "ta", "ni", "hao", "shi", "yi", "wo", "ta", "xie", "chi", "he", "mai", "tang", "tian", "hua", "yu", "wu", "qi", "zhu", "bao", "mao", "shu", "lai", "ge", "fang", "ren", "da", "li"]
+   }
+  },
+  {
+   "so": 2,
+   "ten": "Pinyin và cách học",
+   "moTa": "Cấu tạo âm tiết, âm dễ đọc sai, cách dùng app",
+   "gioiThieu": "Pinyin là cách viết âm tiếng Trung bằng chữ cái La-tinh, in phía trên mỗi chữ Hán trong app. Pinyin trông giống chữ quốc ngữ nhưng nhiều chữ cái đọc KHÁC tiếng Việt, nên đừng đọc theo thói quen.",
+   "amTiet": {
+    "moTa": "Một âm tiết = âm đầu (thanh mẫu) + vần (vận mẫu) + thanh điệu. Thường một chữ Hán là một âm tiết.",
+    "viDu": [["好", "hǎo", "h", "ao", 3], ["学", "xué", "x", "üe", 2], ["二", "èr", "", "er", 4]]
+   },
+   "amDeSai": [
+    { "chu": "b, d, g", "cachDoc": "Không rung dây thanh, không bật hơi: b gần 'p', d gần 't', g gần 'c' của tiếng Việt.", "loi": "Đọc thành b, đ tiếng Việt (có rung dây thanh).", "viDu": ["ba1", "da4", "ge4"] },
+    { "chu": "p, t, k", "cachDoc": "Bật hơi mạnh (để tờ giấy trước miệng thấy rung): t gần 'th' tiếng Việt.", "loi": "k đọc thành 'kh'. Không phải: k là 'c' bật hơi.", "viDu": ["pa4", "ta1", "ke4"] },
+    { "chu": "h", "cachDoc": "Gần 'kh' tiếng Việt, hơi ma sát ở cuống họng.", "loi": "Đọc nhẹ như 'h' tiếng Việt.", "viDu": ["he1", "hao3"] },
+    { "chu": "j, q, x", "cachDoc": "Mặt lưỡi áp gần vòm miệng, môi dẹt. j ≈ 'ch' nhẹ, q = j bật hơi, x ≈ 'x' tiếng Việt nhưng mặt lưỡi cao hơn.", "loi": "q đọc như 'qu' tiếng Việt; x đọc như 's'.", "viDu": ["ji1", "qi1", "xi1"] },
+    { "chu": "z, c, s", "cachDoc": "Đầu lưỡi sau răng trên: z ≈ 'ts', c = 'ts' bật hơi, s ≈ 'x' tiếng Việt.", "loi": "c đọc thành 'c/k' tiếng Việt. Không phải: c là 'ts' bật hơi.", "viDu": ["zi4", "ci4", "si4"] },
+    { "chu": "zh, ch, sh, r", "cachDoc": "Uốn cong đầu lưỡi lên vòm. Giọng Bắc không có; gần 'tr', 's' uốn lưỡi của một số vùng miền Trung, miền Nam.", "loi": "Đọc thẳng lưỡi thành z, c, s.", "viDu": ["zhi1", "chi1", "shi4", "ri4"] },
+    { "chu": "i sau z c s zh ch sh r", "cachDoc": "KHÔNG đọc 'i': sì, shì, zì đọc gần 'xư', 'sư' (lưỡi giữ nguyên chỗ của âm đầu).", "loi": "Đọc 'si' như 'xi' tiếng Việt.", "viDu": ["si4", "shi4"] },
+    { "chu": "ü (u sau j q x y)", "cachDoc": "Lưỡi đặt như 'i', môi tròn như 'u', đọc liền một hơi. Sau j, q, x, y viết là u nhưng vẫn đọc ü: qù, xué.", "loi": "Đọc thành 'u' hoặc 'uy'.", "viDu": ["nv3", "qu4", "yu2"] },
+    { "chu": "e", "cachDoc": "Gần 'ưa'/'ơ' tiếng Việt (đứng một mình hoặc sau phụ âm: hē, de). Trong ie, üe thì đọc 'ê'.", "loi": "Đọc thành 'e' tiếng Việt.", "viDu": ["e4", "he1"] },
+    { "chu": "ian, üan", "cachDoc": "ian đọc gần 'iên', üan (yuan) gần 'uyên'.", "loi": "Đọc 'ian' thành 'i-an'.", "viDu": ["tian1", "yuan2"] }
+   ],
+   "cachHoc": [
+    "Mỗi bài có 6 buổi. Mỗi ngày học 1 buổi khoảng 20–30 phút, học xong bấm “Hoàn thành buổi”.",
+    "Bấm nút loa hoặc nút ▶ để nghe, rồi ĐỌC TO theo. Phát âm cần luyện bằng miệng, chỉ nghe thôi chưa đủ.",
+    "Pinyin trong app luôn ghi thanh GỐC. Chỗ nào đọc khác (biến điệu) có dòng ghi chú nhỏ bên dưới.",
+    "Buổi Chữ Hán có ô Tập viết: viết bằng ngón tay theo đúng thứ tự nét.",
+    "Âm Hán Việt ở buổi Từ vựng giúp đoán nghĩa, ví dụ 学生 xuésheng = học sinh. Không phải từ nào cũng có âm Hán Việt gần nghĩa hiện đại.",
+    "Đăng nhập bằng tài khoản thì tiến độ được lưu; chế độ khách chỉ lưu trên máy đang dùng."
+   ]
+  }
+ ]
+}
