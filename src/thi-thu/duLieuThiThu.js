@@ -17,6 +17,8 @@ const GOC = `${import.meta.env.BASE_URL}du-lieu/thi-thu/`;
 
 /** Đường dẫn một file của đề (ảnh, file nghe). */
 export function duongDan(ma, tep) {
+  // Khoá Tiếng Trung cơ bản dùng lại phần hiển thị câu hỏi, truyền cả thư mục (có "/" cuối)
+  if (ma.endsWith("/")) return `${ma}${tep}`;
   return `${GOC}${ma}/${tep}`;
 }
 

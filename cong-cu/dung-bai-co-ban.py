@@ -302,11 +302,24 @@ def dung_bai_tap(b, am, noi):
     def cau_hoi(c):
         c = dict(c)
         for k in ("chu",):
-            if k in c:
+            if isinstance(c.get(k), str) and "|" in c[k]:  # "不是" của bài đánh thanh giữ nguyên chuỗi
                 c[k] = tach_chu(c[k], noi)
         if isinstance(c.get("luaChon"), list) and c["luaChon"] and "|" in c["luaChon"][0]:
             c["luaChon"] = [{"ma": "ABC"[i], "chu": tach_chu(x, noi)} for i, x in enumerate(c["luaChon"])]
             c["dapAn"] = c["dapAn"]
+        return c
+
+    def hinh(ten):
+        # Phần hiển thị của Thi thử ghép "hinh/" + tên; ảnh bài tập nằm trong hinh/bai-XX/
+        return f"bai-{b:02d}/{ten}.webp"
+
+    def chuan_hoa(c, vi_du=False):
+        """Đổi sang đúng dạng NhomCau (src/thi-thu/CauHoiThi.jsx) đọc được.
+        Lời thoại chỉ hiện sẵn ở câu VÍ DỤ; câu thật giữ trong loiNghe, xem lại mới hiện."""
+        if isinstance(c.get("hinh"), str) and c["hinh"].startswith("bt-"):
+            c["hinh"] = hinh(c["hinh"])
+        if vi_du and "loi" in c and "dong" not in c and "chu" not in c and "hinh" not in c:
+            c["dong"] = [[[dong, ""]] for dong in c["loi"]]
         return c
 
     ra = {}
@@ -314,19 +327,29 @@ def dung_bai_tap(b, am, noi):
         if phan not in nguon:
             continue
         p = nguon[phan]
-        muc = {"nhom": []}
+        muc = {"nhom": [], "loiNghe": {}}
         if p.get("am"):
             muc["am"] = am("bt-" + p["am"])
         for n in p["nhom"]:
             n = dict(n)
             if isinstance(n.get("luaChon"), dict):
                 n["luaChon"] = [
-                    {"ma": k, **({"hinh": v} if v.startswith("bt-") else {"chu": tach_chu(v, noi)})}
+                    {"ma": k, **({"hinh": hinh(v)} if v.startswith("bt-") else
+                                 {"pinyin": v} if n["kieu"] == "doan-hinh" else {"chu": tach_chu(v, noi)})}
                     for k, v in n["luaChon"].items()
                 ]
             if "viDu" in n:
-                n["viDu"] = [cau_hoi(x) for x in n["viDu"]] if isinstance(n["viDu"], list) else cau_hoi(n["viDu"])
-            n["cau"] = [cau_hoi(c) for c in n["cau"]]
+                n["viDu"] = ([chuan_hoa(cau_hoi(x), True) for x in n["viDu"]] if isinstance(n["viDu"], list)
+                             else chuan_hoa(cau_hoi(n["viDu"]), True))
+            n["cau"] = [chuan_hoa(cau_hoi(c)) for c in n["cau"]]
+            # Dạng ghép / điền: NhomCau đọc câu ở "dong" (danh sách dòng), không phải "chu"
+            if n["kieu"] in ("ghep-hinh", "ghep-cau", "dien-tu"):
+                for c in n["cau"] + ([n["viDu"]] if isinstance(n.get("viDu"), dict) else []):
+                    if "chu" in c:
+                        c["dong"] = [c.pop("chu")]
+            for c in n["cau"]:
+                if "loi" in c:
+                    muc["loiNghe"][str(c["so"])] = c["loi"]
             muc["nhom"].append(n)
         ra[phan] = muc
     return ra
@@ -393,6 +416,14 @@ def main():
     muc_luc = json.loads((NGUON / "hsk1-muc-luc.json").read_text(encoding="utf-8"))
     for m in muc_luc["bai"]:
         m["daCo"] = (thu_muc / f"bai-{m['so']:02d}.json").exists()
+        f_bai = thu_muc / f"bai-{m['so']:02d}.json"
+        # Pinyin tên bài: bài đã dựng lấy từ bản chép tay, bài chưa dựng để máy gắn (thanh gốc)
+        if m["daCo"]:
+            m["pinyin"] = json.loads(f_bai.read_text(encoding="utf-8"))["ten"]["pinyin"]
+        elif "pinyin" not in m:
+            m["pinyin"] = pinyin_cau(m["trung"])
+        if len(m["pinyin"]) != len(m["trung"]):
+            loi.append(f"mục lục bài {m['so']}: {len(m['trung'])} chữ, {len(m['pinyin'])} âm")
     muc_luc.pop("_ghiChu", None)
     (thu_muc / "muc-luc.json").write_text(json.dumps(muc_luc, ensure_ascii=False, indent=1), encoding="utf-8")
     for b, t in tong_thieu.items():

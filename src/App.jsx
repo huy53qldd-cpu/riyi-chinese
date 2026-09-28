@@ -6,7 +6,8 @@
 
    Các màn hình:
        chon-khoa-hoc  →  khung-app       (bấm khoá 1)
-       chon-khoa-hoc  →  dang-nang-cap   (bấm khoá 2 hoặc 3)
+       chon-khoa-hoc  →  co-ban          (bấm khoá 2 Tiếng Trung cơ bản, Phase 1)
+       chon-khoa-hoc  →  dang-nang-cap   (bấm khoá 3)
        chon-khoa-hoc  →  cai-dat         (bấm biểu tượng bánh răng)
    (Trong khung-app, Cài đặt mở ngay bên trong để không mất tab đang xem.)
 
@@ -20,6 +21,7 @@ import ChonKhoaHoc from "./man-hinh/ChonKhoaHoc.jsx";
 import DangNangCap from "./man-hinh/DangNangCap.jsx";
 import CaiDat from "./man-hinh/CaiDat.jsx";
 import KhungApp from "./man-hinh/KhungApp.jsx";
+import ManCoBan from "./co-ban/ManCoBan.jsx";
 import { NguoiDungProvider } from "./nguoi-dung/NguoiDung.jsx";
 import { KhoThongBao } from "./thanh-phan/ThongBao.jsx";
 import PhaoHoa from "./thanh-phan/PhaoHoa.jsx";
@@ -29,6 +31,7 @@ import HoiQuyenThongBao from "./thong-bao/HoiQuyenThongBao.jsx";
 const MAN_HINH = {
   CHON_KHOA: "chon-khoa-hoc",
   KHUNG_APP: "khung-app",
+  CO_BAN: "co-ban",
   NANG_CAP: "dang-nang-cap",
   CAI_DAT: "cai-dat",
 };
@@ -44,13 +47,15 @@ export default function App() {
       <NguoiDungProvider>
         {manHinh === MAN_HINH.CHON_KHOA && (
           <ChonKhoaHoc
-            chonKhoa={() => setManHinh(MAN_HINH.KHUNG_APP)}
+            chonKhoa={(ma) => setManHinh(ma === "trung-co-ban" ? MAN_HINH.CO_BAN : MAN_HINH.KHUNG_APP)}
             moNangCap={() => setManHinh(MAN_HINH.NANG_CAP)}
             moCaiDat={() => setManHinh(MAN_HINH.CAI_DAT)}
           />
         )}
 
         {manHinh === MAN_HINH.KHUNG_APP && <KhungApp thoatKhoa={veChonKhoa} />}
+
+        {manHinh === MAN_HINH.CO_BAN && <ManCoBan thoatKhoa={veChonKhoa} />}
 
         {manHinh === MAN_HINH.NANG_CAP && <DangNangCap quayLai={veChonKhoa} />}
 

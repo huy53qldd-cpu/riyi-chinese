@@ -4,8 +4,8 @@
 
    Màn hình đầu tiên sau khi vào app.
 
-   Ba khoá học, nhưng ở giai đoạn này chỉ khoá 1 hoạt động. Bấm khoá 2 hoặc 3
-   sẽ hiện màn hình "Hệ thống đang nâng cấp".
+   Ba khoá học: khoá 1 và khoá 2 (Tiếng Trung cơ bản, mở từ quyết định 18.70)
+   hoạt động. Bấm khoá 3 sẽ hiện màn hình "Hệ thống đang nâng cấp".
 
    Cấu trúc để sẵn cho dễ mở rộng: thêm khoá mới chỉ cần thêm một mục vào mảng
    DANH_SACH_KHOA bên dưới, không phải sửa giao diện.
@@ -29,8 +29,8 @@ const DANH_SACH_KHOA = [
   {
     ma: "trung-co-ban",
     ten: "Tiếng Trung cơ bản",
-    moTa: "Dành cho người mới, chưa biết tiếng Nhật.",
-    hoatDong: false,
+    moTa: "Dành cho người mới bắt đầu. Theo giáo trình HSK标准教程, đang mở bài 1–5.",
+    hoatDong: true,
   },
   {
     ma: "tieng-nhat",
