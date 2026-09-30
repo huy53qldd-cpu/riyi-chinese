@@ -1,0 +1,437 @@
+{
+ "_ghiChu": "Sách bài tập HSK标准教程1, bài 11. Từ bài 11 mỗi phần Nghe có 15 câu, ảnh A–F có C là ảnh ví dụ. Phần Nghe theo lời Whisper, phần Đọc Claude tự giải.",
+ "bai": 11,
+ "nghe": {
+  "am": "11-1",
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh",
+    "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+    "viDu": [
+     {
+      "hinh": "bt-p81-1",
+      "chu": "很|hěn 高兴|gāoxìng",
+      "dapAn": "dung"
+     },
+     {
+      "hinh": "bt-p81-2",
+      "chu": "看|kàn 电影|diànyǐng",
+      "dapAn": "sai"
+     }
+    ],
+    "cau": [
+     {
+      "so": 1,
+      "hinh": "bt-p81-3",
+      "loi": [
+       "吃饭"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: ba cô gái cùng xem điện thoại.",
+      "chacChan": false
+     },
+     {
+      "so": 2,
+      "hinh": "bt-p81-4",
+      "loi": [
+       "看电影"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: khán giả trong rạp chiếu phim."
+     },
+     {
+      "so": 3,
+      "hinh": "bt-p81-5",
+      "loi": [
+       "九点"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: đồng hồ chỉ 5 giờ.",
+      "chacChan": false
+     },
+     {
+      "so": 4,
+      "hinh": "bt-p81-6",
+      "loi": [
+       "看书"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: cô gái cầm sách/máy tính bảng đứng đọc.",
+      "chacChan": false
+     },
+     {
+      "so": 5,
+      "hinh": "bt-p81-7",
+      "loi": [
+       "北京"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: tháp Eiffel (Paris)."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-hinh",
+    "huongDan": "Nghe hội thoại, chọn tranh khớp",
+    "luaChon": {
+     "A": "bt-p82-1",
+     "B": "bt-p82-2",
+     "C": "bt-p82-3",
+     "D": "bt-p82-4",
+     "E": "bt-p82-5",
+     "F": "bt-p82-6"
+    },
+    "viDu": {
+     "loi": [
+      "女：你好！",
+      "男：你好！很高兴认识你。"
+     ],
+     "dapAn": "C"
+    },
+    "cau": [
+     {
+      "so": 6,
+      "loi": [
+       "现在几点？",
+       "现在五点。"
+      ],
+      "dapAn": "D",
+      "lyDo": "Tranh D: đồng hồ chỉ 5 giờ."
+     },
+     {
+      "so": 7,
+      "loi": [
+       "你什么时候见李老师？",
+       "我下午一点十分去学校见李老师。"
+      ],
+      "dapAn": "F",
+      "lyDo": "Tranh F: đồng hồ chỉ khoảng 1 giờ 10.",
+      "chacChan": false
+     },
+     {
+      "so": 8,
+      "loi": [
+       "我想看电影。",
+       "好啊，下午我有时间，我们一起去。"
+      ],
+      "dapAn": "A",
+      "lyDo": "Tranh A: màn hình rạp chiếu phim."
+     },
+     {
+      "so": 9,
+      "loi": [
+       "你星期六工作吗？",
+       "不工作。"
+      ],
+      "dapAn": "E",
+      "lyDo": "Tranh E: tờ lịch SATURDAY."
+     },
+     {
+      "so": 10,
+      "loi": [
+       "你什么时候去北京？",
+       "9月17号去，住三天。"
+      ],
+      "dapAn": "B",
+      "lyDo": "Tranh B: tờ lịch ngày 17 tháng 9."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "chon-chu",
+    "huongDan": "Nghe câu, trả lời câu hỏi",
+    "viDu": {
+     "loi": [
+      "下午我去商店，我想买一些水果。",
+      "问：她下午去哪里？"
+     ],
+     "luaChon": [
+      "商店|shāngdiàn",
+      "医院|yīyuàn",
+      "学校|xuéxiào"
+     ],
+     "dapAn": "A"
+    },
+    "cau": [
+     {
+      "so": 11,
+      "loi": [
+       "我十点去工作，现在在家。",
+       "问：他几点工作？"
+      ],
+      "luaChon": [
+       "九点|jiǔ diǎn",
+       "十点|shí diǎn",
+       "十一点|shíyī diǎn"
+      ],
+      "dapAn": "B"
+     },
+     {
+      "so": 12,
+      "loi": [
+       "现在八点，我们九点前去看电影。",
+       "问：他们几点去看电影？"
+      ],
+      "luaChon": [
+       "八点五十分|bā diǎn wǔshí fēn",
+       "九点十分|jiǔ diǎn shí fēn",
+       "九点三十分|jiǔ diǎn sānshí fēn"
+      ],
+      "dapAn": "A"
+     },
+     {
+      "so": 13,
+      "loi": [
+       "我中午十二点看书。",
+       "问：他十二点做什么？"
+      ],
+      "luaChon": [
+       "看电影|kàn diànyǐng",
+       "看书|kàn shū",
+       "吃饭|chī fàn"
+      ],
+      "dapAn": "B"
+     },
+     {
+      "so": 14,
+      "loi": [
+       "我下午喝茶，中午十二点前不喝茶。",
+       "问：他什么时候喝茶？"
+      ],
+      "luaChon": [
+       "十点|shí diǎn",
+       "十二点|shí'èr diǎn",
+       "两点|liǎng diǎn"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 15,
+      "loi": [
+       "他在北京住三天，星期五回家。",
+       "问：他什么时候回家？"
+      ],
+      "luaChon": [
+       "星期三|xīngqī sān",
+       "星期五|xīngqī wǔ",
+       "不回家|bù huí jiā"
+      ],
+      "dapAn": "B"
+     }
+    ]
+   }
+  ]
+ },
+ "doc": {
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh-chu",
+    "huongDan": "Xem tranh, từ có khớp tranh không",
+    "viDu": [
+     {
+      "hinh": "bt-p84-1",
+      "chu": "电视|diànshì",
+      "dapAn": "sai"
+     },
+     {
+      "hinh": "bt-p84-2",
+      "chu": "飞机|fēijī",
+      "dapAn": "dung"
+     }
+    ],
+    "cau": [
+     {
+      "so": 16,
+      "hinh": "bt-p84-3",
+      "chu": "我们|wǒmen",
+      "dapAn": "dung",
+      "lyDo": "Tranh: nhóm bạn trẻ chụp ảnh chung."
+     },
+     {
+      "so": 17,
+      "hinh": "bt-p84-4",
+      "chu": "米饭|mǐfàn",
+      "dapAn": "sai",
+      "lyDo": "Tranh: đĩa món xào, không phải cơm.",
+      "chacChan": false
+     },
+     {
+      "so": 18,
+      "hinh": "bt-p84-5",
+      "chu": "中午|zhōngwǔ",
+      "dapAn": "dung",
+      "lyDo": "Tranh: hai đồng hồ chỉ 12 giờ."
+     },
+     {
+      "so": 19,
+      "hinh": "bt-p84-6",
+      "chu": "工作|gōngzuò",
+      "dapAn": "sai",
+      "lyDo": "Tranh: mấy cụ ông ngồi chơi bài.",
+      "chacChan": false
+     },
+     {
+      "so": 20,
+      "hinh": "bt-p84-7",
+      "chu": "电影|diànyǐng",
+      "dapAn": "sai",
+      "lyDo": "Tranh: máy tính xách tay."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-cau",
+    "huongDan": "Chọn câu trả lời đúng",
+    "luaChon": {
+     "A": "不|Bù 去|qù 学校|xuéxiào ，我|wǒ 在|zài 家|jiā 。",
+     "B": "我|Wǒ 不|bù 去|qù ，没有|méiyǒu 时间|shíjiān 。",
+     "C": "不|Bù 工作|gōngzuò ，你|nǐ 12|shí'èr 点|diǎn 来|lái 吧|ba 。",
+     "D": "星期|Xīngqī 五|wǔ 前|qián 。",
+     "E": "他|Tā 不|bù 想|xiǎng 去|qù 。",
+     "F": "好|Hǎo 的|de ，谢谢|xièxie ！"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 喝|hē 水|shuǐ 吗|ma ？",
+     "dapAn": "F"
+    },
+    "cau": [
+     {
+      "so": 21,
+      "chu": "下午|Xiàwǔ 三|sān 点|diǎn 你|nǐ 去|qù 学校|xuéxiào 吗|ma ？",
+      "dapAn": "A"
+     },
+     {
+      "so": 22,
+      "chu": "你|Nǐ 什么|shénme 时候|shíhou 回|huí 北京|Běijīng ？",
+      "dapAn": "D"
+     },
+     {
+      "so": 23,
+      "chu": "中午|Zhōngwǔ 你|nǐ 工作|gōngzuò 吗|ma ？",
+      "dapAn": "C"
+     },
+     {
+      "so": 24,
+      "chu": "你|Nǐ 中午|zhōngwǔ 去|qù 吃|chī 饭|fàn 吗|ma ？",
+      "dapAn": "B"
+     },
+     {
+      "so": 25,
+      "chu": "大卫|Dàwèi 去|qù 看|kàn 电影|diànyǐng 吗|ma ？",
+      "dapAn": "E"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "A": "点|diǎn",
+     "B": "分|fēn",
+     "C": "时候|shíhou",
+     "D": "名字|míngzi",
+     "E": "前|qián",
+     "F": "住|zhù"
+    },
+    "cau": [
+     {
+      "so": 26,
+      "chu": "我|Wǒ 在|zài 王方|Wáng Fāng 家|jiā __ 一|yī 个|ge 星期|xīngqī ，星期|xīngqī 六|liù 回|huí 家|jiā 。",
+      "dapAn": "F"
+     },
+     {
+      "so": 27,
+      "chu": "你|Nǐ 什么|shénme __ 有|yǒu 时间|shíjiān ？我们|Wǒmen 去|qù 看|kàn 电影|diànyǐng 。",
+      "dapAn": "C"
+     },
+     {
+      "so": 28,
+      "chu": "现在|Xiànzài 中午|zhōngwǔ 十二|shí'èr __ ，你|nǐ 去|qù 吃|chī 饭|fàn 吗|ma ？",
+      "dapAn": "A"
+     },
+     {
+      "so": 29,
+      "chu": "我|Wǒ 现在|xiànzài 工作|gōngzuò ，十二|shí'èr 点|diǎn 十|shí __ 去|qù 吃|chī 饭|fàn 。",
+      "dapAn": "B"
+     },
+     {
+      "so": 30,
+      "chu": "我|Wǒ 八|bā 点|diǎn __ 在|zài 家|jiā 。",
+      "dapAn": "E"
+     }
+    ],
+    "viDu": {
+     "chu": "你|Nǐ 叫|jiào 什么|shénme __ ？",
+     "dapAn": "D"
+    }
+   }
+  ]
+ },
+ "phatAm": {
+  "am": "11-2",
+  "nhom": [
+   {
+    "kieu": "chon-am",
+    "huongDan": "Nghe, chọn âm tiết nghe được",
+    "cau": [
+     {
+      "so": 1,
+      "luaChon": [
+       "gǔgǔ",
+       "gūgu",
+       "fùgǔ"
+      ],
+      "dapAn": "gūgu",
+      "may": "姑姑"
+     },
+     {
+      "so": 2,
+      "luaChon": [
+       "tiān shang",
+       "Tiān Shān",
+       "tiān shàng"
+      ],
+      "dapAn": "Tiān Shān",
+      "may": "天山"
+     },
+     {
+      "so": 3,
+      "luaChon": [
+       "kànle",
+       "kàn kè",
+       "kànkan"
+      ],
+      "dapAn": "kànkan",
+      "may": "看看"
+     },
+     {
+      "so": 4,
+      "luaChon": [
+       "tā de",
+       "tè de",
+       "tā dé"
+      ],
+      "dapAn": "tā de",
+      "may": "她的"
+     },
+     {
+      "so": 5,
+      "luaChon": [
+       "nǐmen",
+       "nǐ mén",
+       "nǐ mèn"
+      ],
+      "dapAn": "nǐmen",
+      "may": "你们"
+     }
+    ]
+   }
+  ]
+ }
+}

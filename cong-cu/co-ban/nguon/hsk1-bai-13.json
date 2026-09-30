@@ -1,0 +1,78 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 13 (trang PDF 117–122). Sách in 'Bú shì' → ghi thanh gốc bù. Số điện thoại viết bằng chữ số: một cụm chữ số ứng với một mục pinyin, đọc từng số, số 1 đọc yāo. Đáp án khởi động suy từ ảnh. Bản dịch Việt là bản nháp.",
+ "bai": 13,
+ "ten": ["他在学做中国菜呢", "tā zài xué zuò Zhōng guó cài ne", "Anh ấy đang học nấu món Trung Quốc"],
+ "trangPdf": [117, 122],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": ["A", "B", "C", "D", "E", "F"],
+  "tu": [["看电视", "kàn diàn shì", "B"], ["看书", "kàn shū", "D"], ["睡觉", "shuì jiào", "A"], ["打电话", "dǎ diàn huà", "C"], ["做饭", "zuò fàn", "E"], ["学习", "xué xí", "F"]]
+ },
+ "hoiThoai": [
+  {
+   "am": "13-1", "anh": "hoi-thoai-1", "boiCanh": ["打电话", "dǎ diàn huà", "Gọi điện thoại"],
+   "cau": [["A", "喂，你在做什么呢？", "wèi nǐ zài zuò shén me ne", "A lô, bạn đang làm gì thế?"], ["B", "我在看书呢。", "wǒ zài kàn shū ne", "Tôi đang đọc sách."], ["A", "大卫也在看书吗？", "Dà wèi yě zài kàn shū ma", "David cũng đang đọc sách à?"], ["B", "他没看书，他在学做中国菜呢。", "tā méi kàn shū tā zài xué zuò Zhōng guó cài ne", "Anh ấy không đọc sách, anh ấy đang học nấu món Trung Quốc."]],
+   "tuMoi": [["喂", "wèi", "thán từ"], ["也", "yě", "phó từ", "boSung"], ["学习", "xué xí", "động từ"]],
+   "tenRieng": [["大卫", "Dà wèi", "David (tên người)"]]
+  },
+  {
+   "am": "13-2", "anh": "hoi-thoai-2", "boiCanh": ["在咖啡馆儿", "zài kā fēi guǎnr _", "Ở quán cà phê"],
+   "cau": [["A", "昨天上午你在做什么呢？", "zuó tiān shàng wǔ nǐ zài zuò shén me ne", "Sáng hôm qua bạn đang làm gì?"], ["B", "我在睡觉呢。你呢？", "wǒ zài shuì jiào ne nǐ ne", "Tôi đang ngủ. Còn bạn?"], ["A", "我在家看电视呢。你喜欢看电视吗？", "wǒ zài jiā kàn diàn shì ne nǐ xǐ huan kàn diàn shì ma", "Tôi đang xem ti vi ở nhà. Bạn có thích xem ti vi không?"], ["B", "我不喜欢看电视，我喜欢看电影。", "wǒ bù xǐ huan kàn diàn shì wǒ xǐ huan kàn diàn yǐng", "Tôi không thích xem ti vi, tôi thích xem phim."]],
+   "tuMoi": [["上午", "shàng wǔ", "danh từ"], ["睡觉", "shuì jiào", "động từ"], ["电视", "diàn shì", "danh từ"], ["喜欢", "xǐ huan", "động từ"]]
+  },
+  {
+   "am": "13-3", "anh": "hoi-thoai-3", "boiCanh": ["在学校办公室", "zài xué xiào bàn gōng shì", "Ở văn phòng nhà trường"],
+   "cau": [["A", "82304155，这是李老师的电话吗？", "bāèrsānlíngsìyāowǔwǔ zhè shì Lǐ lǎo shī de diàn huà ma", "82304155, đây là số điện thoại của cô Lý phải không?"], ["B", "不是。她的电话是82304156。", "bù shì tā de diàn huà shì bāèrsānlíngsìyāowǔliù", "Không phải. Số của cô ấy là 82304156."], ["A", "好，我现在给她打电话。", "hǎo wǒ xiàn zài gěi tā dǎ diàn huà", "Được, bây giờ tôi gọi cho cô ấy."], ["B", "她在工作呢，你下午打吧。", "tā zài gōng zuò ne nǐ xià wǔ dǎ ba", "Cô ấy đang làm việc, chiều hãy gọi nhé."]],
+   "tuMoi": [["给", "gěi", "giới từ", "boSung"], ["打电话", "dǎ diàn huà", "động từ"], ["吧", "ba", "trợ từ", "boSung"]]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": ["叹词“喂”", "Thán từ 喂"],
+   "giaiThich": "喂 là câu mở đầu khi gọi hoặc nghe điện thoại (A lô).",
+   "viDu": [["喂，李老师在家吗？", "wèi Lǐ lǎo shī zài jiā ma", "A lô, cô Lý có nhà không?"], ["喂，你是张小姐吗？", "wèi nǐ shì Zhāng xiǎo jiě ma", "A lô, chị là chị Trương phải không?"], ["喂，你在做什么呢？", "wèi nǐ zài zuò shén me ne", "A lô, bạn đang làm gì thế?"]]
+  },
+  {
+   "ten": ["“在……呢”表示动作正在进行", "在……呢: hành động đang diễn ra"],
+   "mau": "Chủ ngữ + 在 + động từ (+ tân ngữ) + (呢)；phủ định: 没（在）+ động từ",
+   "giaiThich": "Thêm phó từ 在 trước động từ, hoặc trợ từ 呢 cuối câu, để nói hành động đang diễn ra (đang). Phủ định dùng 没（在）, cuối câu KHÔNG dùng 呢.",
+   "viDu": [["我在睡觉呢。", "wǒ zài shuì jiào ne", "Tôi đang ngủ."], ["你在做什么呢？", "nǐ zài zuò shén me ne", "Bạn đang làm gì thế?"], ["小王在学习汉语。", "Xiǎo Wáng zài xué xí Hàn yǔ", "Tiểu Vương đang học tiếng Trung."], ["我没在看电视。", "wǒ méi zài kàn diàn shì", "Tôi không xem ti vi."], ["他没看书。", "tā méi kàn shū", "Anh ấy không đọc sách."]]
+  },
+  {
+   "ten": ["电话号码的表达", "Đọc số điện thoại"],
+   "giaiThich": "Số điện thoại đọc từng chữ số một; số 1 đọc là yāo, không đọc yī.",
+   "viDu": [["8069478", "bālíngliùjiǔsìqībā", "8069478"], ["13851897623", "yāosānbāwǔyāobājiǔqīliùèrsān", "13851897623"], ["82304156", "bāèrsānlíngsìyāowǔliù", "82304156"]]
+  },
+  {
+   "ten": ["语气助词“吧”", "Trợ từ ngữ khí 吧"],
+   "giaiThich": "吧 đặt cuối câu cầu khiến để đề nghị hoặc bảo người khác làm gì với giọng nhẹ nhàng (nhé, đi).",
+   "viDu": [["这儿没有人，请坐吧。", "zhèr _ méi yǒu rén qǐng zuò ba", "Ở đây không có ai, mời ngồi đi."], ["今天我们在家吃饭吧。", "jīn tiān wǒ men zài jiā chī fàn ba", "Hôm nay chúng ta ăn cơm ở nhà nhé."], ["她在工作呢，你下午打吧。", "tā zài gōng zuò ne nǐ xià wǔ dǎ ba", "Cô ấy đang làm việc, chiều hãy gọi nhé."]]
+  }
+ ],
+ "luyenTap": [
+  { "loai": "tra-loi-tu-do", "tieuDe": "Trả lời theo nội dung hội thoại", "cau": [["大卫在做什么呢？", "Dà wèi zài zuò shén me ne"], ["昨天上午他在看书吗？", "zuó tiān shàng wǔ tā zài kàn shū ma"], ["他们都喜欢看电视吗？", "tā men dōu xǐ huan kàn diàn shì ma"], ["李老师的电话号码是多少？", "Lǐ lǎo shī de diàn huà hào mǎ shì duō shao"], ["李老师在做什么呢？", "Lǐ lǎo shī zài zuò shén me ne"]] }
+ ],
+ "phatAm": [
+  {
+   "loai": "doc-am", "am": "13-4", "tieuDe": "Phối thanh từ ba âm tiết (2): bắt đầu bằng thanh 2",
+   "am_tiet": ["yánjiūshēng", "tán gāngqín", "túshūguǎn", "wéishēngsù", "yínhángjiā", "Hánguó rén", "Hánguó yǔ", "rénmínbì", "yóuyǒngyī", "yóuyǒngchí", "yóuyǒngguǎn", "niúzǎikù", "móshùshī", "fúwùyuán", "bówùguǎn", "míngxìnpiàn"]
+  }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   ["日", "rì", "Hình mặt trời, nghĩa gốc là mặt trời."],
+   ["目", "mù", "Hình con mắt, nghĩa gốc là mắt."],
+   ["习", "xí", "Nghĩa gốc là ôn đi ôn lại sau khi học cho thành thạo; nay 学 và 习 gần như không khác nhau."]
+  ],
+  "boThu": [
+   ["日", "日字旁", "rì zì páng", "Bộ nhật: thường liên quan đến thời gian.", ["明", "时"]],
+   ["目", "目字旁", "mù zì páng", "Bộ mục: thường liên quan đến mắt.", ["眼", "睡"]]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Kể hôm qua đang làm gì, hỏi số điện thoại",
+  "tuBoSung": [["东西", "dōng xi", "đồ vật"]],
+  "viDu": [["A", "昨天下午五点，你在做什么呢？", "zuó tiān xià wǔ wǔ diǎn nǐ zài zuò shén me ne", "Năm giờ chiều hôm qua bạn đang làm gì?"], ["B", "昨天下午五点，我在学习呢。", "zuó tiān xià wǔ wǔ diǎn wǒ zài xué xí ne", "Năm giờ chiều hôm qua tôi đang học."]]
+ }
+}

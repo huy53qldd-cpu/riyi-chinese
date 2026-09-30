@@ -1,0 +1,414 @@
+{
+ "_ghiChu": "Sách bài tập HSK标准教程1, bài 13. Từ bài 11 mỗi phần Nghe có 15 câu, ảnh A–F có C là ảnh ví dụ. Phần Nghe theo lời Whisper, phần Đọc Claude tự giải. Bỏ phần phát âm (chọn từ khác kiểu thanh, gạch chân từ ba âm tiết): sách không in từ.",
+ "bai": 13,
+ "nghe": {
+  "am": "13-1",
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh",
+    "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+    "viDu": [
+     {
+      "hinh": "bt-p98-1",
+      "chu": "很|hěn 高兴|gāoxìng",
+      "dapAn": "dung"
+     },
+     {
+      "hinh": "bt-p98-2",
+      "chu": "看|kàn 电影|diànyǐng",
+      "dapAn": "sai"
+     }
+    ],
+    "cau": [
+     {
+      "so": 1,
+      "hinh": "bt-p98-3",
+      "loi": [
+       "睡觉"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: chàng trai đang ngủ."
+     },
+     {
+      "so": 2,
+      "hinh": "bt-p98-4",
+      "loi": [
+       "吃饭"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: đầu bếp đang rắc tiêu lên món ăn (nấu, không phải ăn).",
+      "chacChan": false
+     },
+     {
+      "so": 3,
+      "hinh": "bt-p98-5",
+      "loi": [
+       "看电视"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: đôi tay cầm đồ vật, không có ti vi.",
+      "chacChan": false
+     },
+     {
+      "so": 4,
+      "hinh": "bt-p98-6",
+      "loi": [
+       "工作"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: nhân viên văn phòng làm việc với máy tính."
+     },
+     {
+      "so": 5,
+      "hinh": "bt-p98-7",
+      "loi": [
+       "下雨"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: mái chùa phủ tuyết."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-hinh",
+    "huongDan": "Nghe hội thoại, chọn tranh khớp",
+    "luaChon": {
+     "A": "bt-p99-1",
+     "B": "bt-p99-2",
+     "C": "bt-p99-3",
+     "D": "bt-p99-4",
+     "E": "bt-p99-5",
+     "F": "bt-p99-6"
+    },
+    "viDu": {
+     "loi": [
+      "女：你好！",
+      "男：你好！很高兴认识你。"
+     ],
+     "dapAn": "C"
+    },
+    "cau": [
+     {
+      "so": 6,
+      "loi": [
+       "你昨天上午九点在做什么呢？",
+       "我在睡觉呢。"
+      ],
+      "dapAn": "B",
+      "lyDo": "Tranh B: cô gái đang ngủ."
+     },
+     {
+      "so": 7,
+      "loi": [
+       "小猫在哪儿？",
+       "小猫在椅子上面。"
+      ],
+      "dapAn": "A",
+      "lyDo": "Tranh A: con mèo nằm trên ghế."
+     },
+     {
+      "so": 8,
+      "loi": [
+       "你喜欢做饭吗？",
+       "很喜欢，我在学习做中国菜。"
+      ],
+      "dapAn": "D",
+      "lyDo": "Tranh D: đĩa món xào."
+     },
+     {
+      "so": 9,
+      "loi": [
+       "你在做什么呢？",
+       "我和朋友在家看电视呢。"
+      ],
+      "dapAn": "F",
+      "lyDo": "Tranh F: mọi người cùng xem ti vi."
+     },
+     {
+      "so": 10,
+      "loi": [
+       "喂，小明在吗？",
+       "他在打电话呢，你是谁？"
+      ],
+      "dapAn": "E",
+      "lyDo": "Tranh E: chàng trai đang gọi điện."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "chon-chu",
+    "huongDan": "Nghe câu, trả lời câu hỏi",
+    "viDu": {
+     "loi": [
+      "下午我去商店，我想买一些水果。",
+      "问：她下午去哪里？"
+     ],
+     "luaChon": [
+      "商店|shāngdiàn",
+      "医院|yīyuàn",
+      "学校|xuéxiào"
+     ],
+     "dapAn": "A"
+    },
+    "cau": [
+     {
+      "so": 11,
+      "loi": [
+       "下午我和朋友在家里喝茶。",
+       "问：我和朋友在哪儿喝茶？"
+      ],
+      "luaChon": [
+       "学校|xuéxiào",
+       "家里|jiā li",
+       "饭店|fàndiàn"
+      ],
+      "dapAn": "B"
+     },
+     {
+      "so": 12,
+      "loi": [
+       "今天天气不好，我们在家吃饭吧。",
+       "问：今天天气怎么样？"
+      ],
+      "luaChon": [
+       "很好|hěn hǎo",
+       "很热|hěn rè",
+       "不好|bù hǎo"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 13,
+      "loi": [
+       "88302755是张老师的电话。",
+       "问：张老师的电话是多少？"
+      ],
+      "luaChon": [
+       "83302755|bāsānsānlíngèrqīwǔwǔ",
+       "88302775|bābāsānlíngèrqīqīwǔ",
+       "88302755|bābāsānlíngèrqīwǔwǔ"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 14,
+      "loi": [
+       "我没看电视，我在学习呢。",
+       "问：他在做什么呢？"
+      ],
+      "luaChon": [
+       "看电视|kàn diànshì",
+       "看电影|kàn diànyǐng",
+       "学习|xuéxí"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 15,
+      "loi": [
+       "他没在打电话，他在睡觉呢。",
+       "问：他在做什么呢？"
+      ],
+      "luaChon": [
+       "打电话|dǎ diànhuà",
+       "睡觉|shuì jiào",
+       "在家|zài jiā"
+      ],
+      "dapAn": "B"
+     }
+    ]
+   }
+  ]
+ },
+ "doc": {
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh-chu",
+    "huongDan": "Xem tranh, từ có khớp tranh không",
+    "viDu": [
+     {
+      "hinh": "bt-p101-1",
+      "chu": "电视|diànshì",
+      "dapAn": "sai"
+     },
+     {
+      "hinh": "bt-p101-2",
+      "chu": "飞机|fēijī",
+      "dapAn": "dung"
+     }
+    ],
+    "cau": [
+     {
+      "so": 16,
+      "hinh": "bt-p101-3",
+      "chu": "水|shuǐ",
+      "dapAn": "sai",
+      "lyDo": "Tranh: cốc sữa, không phải nước.",
+      "chacChan": false
+     },
+     {
+      "so": 17,
+      "hinh": "bt-p101-4",
+      "chu": "菜|cài",
+      "dapAn": "dung",
+      "lyDo": "Tranh: rau củ."
+     },
+     {
+      "so": 18,
+      "hinh": "bt-p101-5",
+      "chu": "学校|xuéxiào",
+      "dapAn": "dung",
+      "lyDo": "Tranh: toà nhà nhiều tầng, đoán là trường học.",
+      "chacChan": false
+     },
+     {
+      "so": 19,
+      "hinh": "bt-p101-6",
+      "chu": "家|jiā",
+      "dapAn": "sai",
+      "lyDo": "Tranh: phòng bệnh viện.",
+      "chacChan": false
+     },
+     {
+      "so": 20,
+      "hinh": "bt-p101-7",
+      "chu": "电脑|diànnǎo",
+      "dapAn": "dung",
+      "lyDo": "Tranh: máy tính xách tay."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-cau",
+    "huongDan": "Chọn câu trả lời đúng",
+    "luaChon": {
+     "A": "在|Zài 下|xià 雨|yǔ 呢|ne 。",
+     "B": "我|Wǒ 和|hé 朋友|péngyou 在|zài 看|kàn 书|shū 呢|ne 。",
+     "C": "我|Wǒ 没|méi 看|kàn 电视|diànshì ，我|wǒ 在|zài 学习|xuéxí 呢|ne 。",
+     "D": "在|Zài 家|jiā 吃|chī 吧|ba 。",
+     "E": "我|Wǒ 喜欢|xǐhuan 喝|hē 水|shuǐ 。",
+     "F": "好|Hǎo 的|de ，谢谢|xièxie ！"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 喝|hē 水|shuǐ 吗|ma ？",
+     "dapAn": "F"
+    },
+    "cau": [
+     {
+      "so": 21,
+      "chu": "今天|Jīntiān 我们|wǒmen 去|qù 哪儿|nǎr 吃|chī 饭|fàn ？",
+      "dapAn": "D"
+     },
+     {
+      "so": 22,
+      "chu": "昨天|Zuótiān 下午|xiàwǔ 你|nǐ 在|zài 家|jiā 做|zuò 什么|shénme 呢|ne ？",
+      "dapAn": "B"
+     },
+     {
+      "so": 23,
+      "chu": "你|Nǐ 喜欢|xǐhuan 喝|hē 茶|chá 吗|ma ？",
+      "dapAn": "E"
+     },
+     {
+      "so": 24,
+      "chu": "今天|Jīntiān 天气|tiānqì 怎么样|zěnmeyàng ？",
+      "dapAn": "A"
+     },
+     {
+      "so": 25,
+      "chu": "你|Nǐ 在|zài 看|kàn 电视|diànshì 吗|ma ？",
+      "dapAn": "C"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "A": "在|zài",
+     "B": "呢|ne",
+     "C": "没|méi",
+     "D": "名字|míngzi",
+     "E": "也|yě",
+     "F": "吧|ba"
+    },
+    "cau": [
+     {
+      "so": 26,
+      "chu": "我|Wǒ __ 打|dǎ 电话|diànhuà 呢|ne 。",
+      "dapAn": "A"
+     },
+     {
+      "so": 27,
+      "chu": "爸爸|Bàba __ 看|kàn 电视|diànshì ，他|tā 在|zài 工作|gōngzuò 呢|ne 。",
+      "dapAn": "C"
+     },
+     {
+      "so": 28,
+      "chu": "我|Wǒ 家|jiā 的|de 小|xiǎo 狗|gǒu 在|zài 吃|chī 饭|fàn __ 。",
+      "dapAn": "B"
+     },
+     {
+      "so": 29,
+      "chu": "中国|Zhōngguó 菜|cài 很|hěn 好吃|hǎochī ，我们|wǒmen 做|zuò 中国|Zhōngguó 菜|cài __ 。",
+      "dapAn": "F"
+     },
+     {
+      "so": 30,
+      "chu": "我|Wǒ 会|huì 写|xiě 汉字|Hànzì ，我|wǒ 妈妈|māma __ 会|huì 写|xiě 汉字|Hànzì 。",
+      "dapAn": "E"
+     }
+    ],
+    "viDu": {
+     "chu": "你|Nǐ 叫|jiào 什么|shénme __ ？",
+     "dapAn": "D"
+    }
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "G": "喜欢|xǐhuan",
+     "H": "看|kàn",
+     "I": "做|zuò",
+     "J": "电话|diànhuà",
+     "K": "会|huì"
+    },
+    "cau": [
+     {
+      "so": 31,
+      "chu": "我|Wǒ 想|xiǎng 学习|xuéxí __ 中国|Zhōngguó 菜|cài 。",
+      "dapAn": "I"
+     },
+     {
+      "so": 32,
+      "chu": "我|Wǒ 没有|méiyǒu 你|nǐ 的|de __ 。",
+      "dapAn": "J"
+     },
+     {
+      "so": 33,
+      "chu": "我|Wǒ 不|bù __ 看|kàn 电影|diànyǐng 。",
+      "dapAn": "G"
+     },
+     {
+      "so": 34,
+      "chu": "我|Wǒ 昨天|zuótiān 下午|xiàwǔ 四|sì 点|diǎn 在|zài 家|jiā __ 电视|diànshì 呢|ne 。",
+      "dapAn": "H"
+     },
+     {
+      "so": 35,
+      "chu": "我|Wǒ 不|bù __ 写|xiě 汉字|Hànzì ，我|wǒ 很|hěn 想|xiǎng 学|xué 。",
+      "dapAn": "K"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 12 (trang PDF 109–116). Sách in 'bú rè', 'bú huì', 'bú tài' → ghi thanh gốc bù. Đáp án khởi động suy từ ảnh. Bản dịch Việt là bản nháp.",
+ "bai": 12,
+ "ten": ["明天天气怎么样", "míng tiān tiān qì zěn me yàng", "Thời tiết ngày mai thế nào"],
+ "trangPdf": [109, 116],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": ["A", "B", "C", "D", "E", "F"],
+  "tu": [["冷", "lěng", "C"], ["热", "rè", "D"], ["下雨", "xià yǔ", "B"], ["水", "shuǐ", "A"], ["水果", "shuǐ guǒ", "F"], ["医生", "yī shēng", "E"]]
+ },
+ "hoiThoai": [
+  {
+   "am": "12-1", "anh": "hoi-thoai-1", "boiCanh": ["在路上", "zài lù shang", "Trên đường"],
+   "cau": [["A", "昨天北京的天气怎么样？", "zuó tiān Běi jīng de tiān qì zěn me yàng", "Thời tiết Bắc Kinh hôm qua thế nào?"], ["B", "太热了。", "tài rè le", "Nóng quá."], ["A", "明天呢？明天天气怎么样？", "míng tiān ne míng tiān tiān qì zěn me yàng", "Còn ngày mai? Thời tiết ngày mai thế nào?"], ["B", "明天天气很好，不冷不热。", "míng tiān tiān qì hěn hǎo bù lěng bù rè", "Ngày mai thời tiết rất đẹp, không lạnh không nóng."]],
+   "tuMoi": [["天气", "tiān qì", "danh từ"], ["怎么样", "zěn me yàng", "đại từ"], ["太", "tài", "phó từ"], ["热", "rè", "tính từ"], ["冷", "lěng", "tính từ"]]
+  },
+  {
+   "am": "12-2", "anh": "hoi-thoai-2", "boiCanh": ["在健身房", "zài jiàn shēn fáng", "Ở phòng tập"],
+   "cau": [["A", "今天会下雨吗？", "jīn tiān huì xià yǔ ma", "Hôm nay có mưa không?"], ["B", "今天不会下雨。", "jīn tiān bù huì xià yǔ", "Hôm nay sẽ không mưa."], ["A", "王小姐今天会来吗？", "Wáng xiǎo jiě jīn tiān huì lái ma", "Hôm nay cô Vương có đến không?"], ["B", "不会来，天气太冷了。", "bù huì lái tiān qì tài lěng le", "Sẽ không đến, trời lạnh quá."]],
+   "tuMoi": [["下雨", "xià yǔ", "động từ"], ["小姐", "xiǎo jiě", "danh từ"], ["来", "lái", "động từ"]]
+  },
+  {
+   "am": "12-3", "anh": "hoi-thoai-3", "boiCanh": ["在病房", "zài bìng fáng", "Trong phòng bệnh"],
+   "cau": [["A", "你身体怎么样？", "nǐ shēn tǐ zěn me yàng", "Sức khoẻ anh thế nào?"], ["B", "我身体不太好。天气太热了，不爱吃饭。", "wǒ shēn tǐ bù tài hǎo tiān qì tài rè le bù ài chī fàn", "Tôi không khoẻ lắm. Trời nóng quá, không muốn ăn."], ["A", "你多吃些水果，多喝水。", "nǐ duō chī xiē shuǐ guǒ duō hē shuǐ", "Anh ăn nhiều hoa quả, uống nhiều nước vào."], ["B", "谢谢你，医生。", "xiè xie nǐ yī shēng", "Cảm ơn bác sĩ."]],
+   "tuMoi": [["身体", "shēn tǐ", "danh từ"], ["爱", "ài", "động từ"], ["些", "xiē", "lượng từ"], ["水果", "shuǐ guǒ", "danh từ"], ["水", "shuǐ", "danh từ"]]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": ["疑问代词“怎么样”", "Đại từ nghi vấn 怎么样"],
+   "giaiThich": "怎么样 dùng để hỏi tình hình, trạng thái (thế nào).",
+   "viDu": [["你的汉语怎么样？", "nǐ de Hàn yǔ zěn me yàng", "Tiếng Trung của bạn thế nào?"], ["你妈妈身体怎么样？", "nǐ mā ma shēn tǐ zěn me yàng", "Sức khoẻ mẹ bạn thế nào?"], ["明天天气怎么样？", "míng tiān tiān qì zěn me yàng", "Thời tiết ngày mai thế nào?"]]
+  },
+  {
+   "ten": ["主谓谓语句", "Câu vị ngữ chủ vị"],
+   "mau": "Chủ ngữ cả câu + (chủ ngữ nhỏ + vị ngữ nhỏ)",
+   "giaiThich": "Vị ngữ của câu là một cụm chủ–vị. Chủ ngữ nhỏ thường là một phần của, hoặc liên quan đến, chủ ngữ cả câu (giống tiếng Việt: 'Tôi sức khoẻ không tốt lắm').",
+   "viDu": [["我身体不太好。", "wǒ shēn tǐ bù tài hǎo", "Tôi sức khoẻ không tốt lắm."], ["明天天气很好。", "míng tiān tiān qì hěn hǎo", "Ngày mai thời tiết rất đẹp."], ["你身体怎么样？", "nǐ shēn tǐ zěn me yàng", "Bạn sức khoẻ thế nào?"]]
+  },
+  {
+   "ten": ["程度副词“太”", "Phó từ mức độ 太"],
+   "mau": "太 + tính từ + 了；不太 + tính từ",
+   "giaiThich": "太 chỉ mức độ cao (quá). Câu có 太 thường có 了 ở cuối; câu phủ định (不太) thì không dùng 了.",
+   "viDu": [["太热了。", "tài rè le", "Nóng quá."], ["天气太冷了。", "tiān qì tài lěng le", "Trời lạnh quá."], ["我身体不太好。", "wǒ shēn tǐ bù tài hǎo", "Tôi không khoẻ lắm."]]
+  },
+  {
+   "ten": ["能愿动词“会”(2)", "Động từ năng nguyện 会 (2)"],
+   "giaiThich": "会 còn chỉ khả năng một việc sẽ xảy ra (sẽ, có thể sẽ).",
+   "viDu": [["爸爸八点前会回家吗？会。", "bà ba bā diǎn qián huì huí jiā ma huì", "Trước tám giờ bố có về nhà không? Có."], ["明天她会来吗？她会来。", "míng tiān tā huì lái ma tā huì lái", "Ngày mai cô ấy có đến không? Cô ấy sẽ đến."], ["今天会下雨吗？今天不会下雨。", "jīn tiān huì xià yǔ ma jīn tiān bù huì xià yǔ", "Hôm nay có mưa không? Hôm nay sẽ không mưa."]]
+  }
+ ],
+ "luyenTap": [
+  { "loai": "tra-loi-tu-do", "tieuDe": "Trả lời theo nội dung hội thoại", "cau": [["昨天北京的天气怎么样？", "zuó tiān Běi jīng de tiān qì zěn me yàng"], ["明天天气怎么样？", "míng tiān tiān qì zěn me yàng"], ["今天会下雨吗？", "jīn tiān huì xià yǔ ma"], ["王小姐会来吗？", "Wáng xiǎo jiě huì lái ma"], ["他的身体怎么样？", "tā de shēn tǐ zěn me yàng"]] }
+ ],
+ "phatAm": [
+  {
+   "loai": "doc-am", "am": "12-4", "tieuDe": "Phối thanh từ ba âm tiết (1): bắt đầu bằng thanh 1",
+   "am_tiet": ["xīngqī yī", "bīngjīlíng", "xīngqī wǔ", "xīngqī liù", "qīngjiégōng", "zhuōmícáng", "chī píngguǒ", "Jiānádà", "gāojiǎobēi", "duī xuěrén", "huā yǔsǎn", "chī mǐfàn", "hāmìguā", "jīqìrén", "bōlànggǔ", "yīwùshì"]
+  }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   ["天", "tiān", "Nghĩa gốc là đỉnh đầu, sau chỉ bầu trời, đối lại với 地 (đất)."],
+   ["气", "qì", "Dáng giống chữ 三, chỉ chất khí không có hình dạng, thể tích nhất định, tự do lan toả."],
+   ["雨", "yǔ", "Dáng như giọt nước rơi từ trời xuống, chỉ hiện tượng tự nhiên là mưa."]
+  ],
+  "boThu": [
+   ["女", "女字旁", "nǚ zì páng", "Bộ nữ: thường liên quan đến phụ nữ.", ["姐", "妈"]],
+   ["饣", "食字旁", "shí zì páng", "Bộ thực: thường liên quan đến đồ ăn.", ["饭", "饮"]]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Nhận xét bằng 太……了 và hỏi thời tiết",
+  "tuBoSung": [["好看", "hǎo kàn", "đẹp, hay (phim)"]],
+  "viDu": [["A", "她的汉语怎么样？", "tā de Hàn yǔ zěn me yàng", "Tiếng Trung của cô ấy thế nào?"], ["B", "不太好 / 太好了。", "bù tài hǎo tài hǎo le", "Không giỏi lắm / Giỏi quá."], ["A", "明天会下雨吗？", "míng tiān huì xià yǔ ma", "Ngày mai có mưa không?"], ["B", "明天不会下雨。", "míng tiān bù huì xià yǔ", "Ngày mai sẽ không mưa."]]
+ }
+}

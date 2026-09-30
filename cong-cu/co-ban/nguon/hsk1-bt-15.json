@@ -1,0 +1,373 @@
+{
+ "_ghiChu": "Sách bài tập HSK标准教程1, bài 15. Từ bài 11 mỗi phần Nghe có 15 câu, ảnh A–F có C là ảnh ví dụ. Phần Nghe theo lời Whisper, phần Đọc Claude tự giải. Bỏ phần phát âm (chọn từ khác kiểu thanh, gạch chân từ ba âm tiết): sách không in từ.",
+ "bai": 15,
+ "nghe": {
+  "am": "15-1",
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh",
+    "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+    "viDu": [
+     {
+      "hinh": "bt-p115-1",
+      "chu": "很|hěn 高兴|gāoxìng",
+      "dapAn": "dung"
+     },
+     {
+      "hinh": "bt-p115-2",
+      "chu": "看|kàn 电影|diànyǐng",
+      "dapAn": "sai"
+     }
+    ],
+    "cau": [
+     {
+      "so": 1,
+      "hinh": "bt-p115-3",
+      "loi": [
+       "电话"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: hai chiếc điện thoại di động."
+     },
+     {
+      "so": 2,
+      "hinh": "bt-p115-4",
+      "loi": [
+       "出租车"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: tàu hoả trong nhà ga."
+     },
+     {
+      "so": 3,
+      "hinh": "bt-p115-5",
+      "loi": [
+       "听"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: bàn tay khum sau tai để nghe."
+     },
+     {
+      "so": 4,
+      "hinh": "bt-p115-6",
+      "loi": [
+       "饭店"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: kệ hàng siêu thị."
+     },
+     {
+      "so": 5,
+      "hinh": "bt-p115-7",
+      "loi": [
+       "大学"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: cô giáo với các em nhỏ.",
+      "chacChan": false
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-hinh",
+    "huongDan": "Nghe hội thoại, chọn tranh khớp",
+    "luaChon": {
+     "A": "bt-p116-1",
+     "B": "bt-p116-2",
+     "C": "bt-p116-3",
+     "D": "bt-p116-4",
+     "E": "bt-p116-5",
+     "F": "bt-p116-6"
+    },
+    "viDu": {
+     "loi": [
+      "女：你好！",
+      "男：你好！很高兴认识你。"
+     ],
+     "dapAn": "C"
+    },
+    "cau": [
+     {
+      "so": 6,
+      "loi": [
+       "你是什么时候来中国的？",
+       "我是2011年来的，已经两年了。"
+      ],
+      "dapAn": "D",
+      "lyDo": "Tranh D: lịch năm 2011."
+     },
+     {
+      "so": 7,
+      "loi": [
+       "这些苹果是在哪儿买的？",
+       "在前面的商店买的。"
+      ],
+      "dapAn": "A",
+      "lyDo": "Tranh A: sạp táo ngoài chợ."
+     },
+     {
+      "so": 8,
+      "loi": [
+       "你爸爸是怎么去商店的？",
+       "我们一起开车去的。"
+      ],
+      "dapAn": "E",
+      "lyDo": "Tranh E: người đàn ông lái xe."
+     },
+     {
+      "so": 9,
+      "loi": [
+       "李老师睡觉了吗？",
+       "睡了，他是五点睡的。"
+      ],
+      "dapAn": "F",
+      "lyDo": "Tranh F: người đang ngủ cạnh đồng hồ."
+     },
+     {
+      "so": 10,
+      "loi": [
+       "我们怎么去？",
+       "小王是坐出租车去的，我们也坐出租车吧。"
+      ],
+      "dapAn": "B",
+      "lyDo": "Tranh B: đôi nam nữ vẫy xe bên đường.",
+      "chacChan": false
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "chon-chu",
+    "huongDan": "Nghe câu, trả lời câu hỏi",
+    "viDu": {
+     "loi": [
+      "下午我去商店，我想买一些水果。",
+      "问：她下午去哪里？"
+     ],
+     "luaChon": [
+      "商店|shāngdiàn",
+      "医院|yīyuàn",
+      "学校|xuéxiào"
+     ],
+     "dapAn": "A"
+    },
+    "cau": [
+     {
+      "so": 11,
+      "loi": [
+       "我们是2008年在北京认识的。",
+       "问：他们是什么时候认识的？"
+      ],
+      "luaChon": [
+       "2007年|èrlínglíngqī nián",
+       "2008年|èrlínglíngbā nián",
+       "2009年|èrlínglíngjiǔ nián"
+      ],
+      "dapAn": "B"
+     },
+     {
+      "so": 12,
+      "loi": [
+       "我的衣服都是在中国买的，我喜欢中国的衣服。",
+       "问：他喜欢哪儿的衣服？"
+      ],
+      "luaChon": [
+       "美国|Měiguó",
+       "中国|Zhōngguó",
+       "日本|Rìběn"
+      ],
+      "dapAn": "B"
+     },
+     {
+      "so": 13,
+      "loi": [
+       "王老师不是坐出租车去的。",
+       "问：王老师是怎么去的？"
+      ],
+      "luaChon": [
+       "坐出租车|zuò chūzūchē",
+       "开车|kāi chē",
+       "不知道|bù zhīdào"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 14,
+      "loi": [
+       "李老师是八点去学校的，九点前会到。",
+       "问：李老师是什么时候去学校的？"
+      ],
+      "luaChon": [
+       "八点|bā diǎn",
+       "九点|jiǔ diǎn",
+       "十点|shí diǎn"
+      ],
+      "dapAn": "A"
+     },
+     {
+      "so": 15,
+      "loi": [
+       "张先生是坐飞机来的。",
+       "问：张先生是怎么来的？"
+      ],
+      "luaChon": [
+       "坐车|zuò chē",
+       "坐出租车|zuò chūzūchē",
+       "坐飞机|zuò fēijī"
+      ],
+      "dapAn": "C"
+     }
+    ]
+   }
+  ]
+ },
+ "doc": {
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh-chu",
+    "huongDan": "Xem tranh, từ có khớp tranh không",
+    "viDu": [
+     {
+      "hinh": "bt-p118-1",
+      "chu": "电视|diànshì",
+      "dapAn": "sai"
+     },
+     {
+      "hinh": "bt-p118-2",
+      "chu": "飞机|fēijī",
+      "dapAn": "dung"
+     }
+    ],
+    "cau": [
+     {
+      "so": 16,
+      "hinh": "bt-p118-3",
+      "chu": "开|kāi 出租车|chūzūchē",
+      "dapAn": "sai",
+      "lyDo": "Tranh: phi công trong buồng lái máy bay."
+     },
+     {
+      "so": 17,
+      "hinh": "bt-p118-4",
+      "chu": "高兴|gāoxìng",
+      "dapAn": "sai",
+      "lyDo": "Tranh: em bé đang khóc."
+     },
+     {
+      "so": 18,
+      "hinh": "bt-p118-5",
+      "chu": "一起|yīqǐ 学习|xuéxí",
+      "dapAn": "dung",
+      "lyDo": "Tranh: nhóm sinh viên cùng học."
+     },
+     {
+      "so": 19,
+      "hinh": "bt-p118-6",
+      "chu": "开|kāi 飞机|fēijī",
+      "dapAn": "sai",
+      "lyDo": "Tranh: hành khách ngồi trên máy bay vươn vai.",
+      "chacChan": false
+     },
+     {
+      "so": 20,
+      "hinh": "bt-p118-7",
+      "chu": "大学|dàxué 同学|tóngxué",
+      "dapAn": "dung",
+      "lyDo": "Tranh: hai bạn mặc áo tốt nghiệp."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-cau",
+    "huongDan": "Chọn câu trả lời đúng",
+    "luaChon": {
+     "A": "我们|Wǒmen 是|shì 大学|dàxué 同学|tóngxué 。",
+     "B": "我|Wǒ 也|yě 很|hěn 高兴|gāoxìng 。",
+     "C": "在|Zài 一|yī 个|ge 小|xiǎo 商店|shāngdiàn 买|mǎi 的|de 。",
+     "D": "明天|Míngtiān 吧|ba ，小|Xiǎo 王|Wáng 是|shì 今天|jīntiān 去|qù 的|de 。",
+     "E": "我|Wǒ 看见|kànjiàn 他|tā 开|kāi 车|chē 回|huí 家|jiā 了|le 。",
+     "F": "好|Hǎo 的|de ，谢谢|xièxie ！"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 喝|hē 水|shuǐ 吗|ma ？",
+     "dapAn": "F"
+    },
+    "cau": [
+     {
+      "so": 21,
+      "chu": "你们|Nǐmen 是|shì 怎么|zěnme 认识|rènshi 的|de ？",
+      "dapAn": "A"
+     },
+     {
+      "so": 22,
+      "chu": "你|Nǐ 的|de 衣服|yīfu 是|shì 在|zài 哪儿|nǎr 买|mǎi 的|de ？",
+      "dapAn": "C"
+     },
+     {
+      "so": 23,
+      "chu": "小|Xiǎo 王|Wáng 回|huí 家|jiā 了|le 吗|ma ？",
+      "dapAn": "E"
+     },
+     {
+      "so": 24,
+      "chu": "我|Wǒ 很|hěn 高兴|gāoxìng 你|nǐ 来|lái 我们|wǒmen 学校|xuéxiào 。",
+      "dapAn": "B"
+     },
+     {
+      "so": 25,
+      "chu": "你|Nǐ 想|xiǎng 什么|shénme 时候|shíhou 去|qù ？",
+      "dapAn": "D"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "A": "认识|rènshi",
+     "B": "坐|zuò",
+     "C": "一起|yīqǐ",
+     "D": "名字|míngzi",
+     "E": "高兴|gāoxìng",
+     "F": "听|tīng"
+    },
+    "cau": [
+     {
+      "so": 26,
+      "chu": "__ 老师|lǎoshī 说|shuō ，明天|míngtiān 我们|wǒmen 去|qù 看|kàn 电影|diànyǐng 。",
+      "dapAn": "F"
+     },
+     {
+      "so": 27,
+      "chu": "我们|Wǒmen 是|shì 在|zài 飞机|fēijī 上|shang __ 的|de 。",
+      "dapAn": "A"
+     },
+     {
+      "so": 28,
+      "chu": "我|Wǒ 不|bù 喜欢|xǐhuan __ 出租车|chūzūchē ，我|wǒ 喜欢|xǐhuan 开|kāi 车|chē 。",
+      "dapAn": "B"
+     },
+     {
+      "so": 29,
+      "chu": "你|Nǐ 想|xiǎng 不|bu 想|xiǎng 和|hé 我们|wǒmen __ 去|qù 商店|shāngdiàn 买|mǎi 衣服|yīfu ？",
+      "dapAn": "C"
+     },
+     {
+      "so": 30,
+      "chu": "今天|Jīntiān 天气|tiānqì 很|hěn 好|hǎo ，我|wǒ 很|hěn __ 。",
+      "dapAn": "E"
+     }
+    ],
+    "viDu": {
+     "chu": "你|Nǐ 叫|jiào 什么|shénme __ ？",
+     "dapAn": "D"
+    }
+   }
+  ]
+ }
+}

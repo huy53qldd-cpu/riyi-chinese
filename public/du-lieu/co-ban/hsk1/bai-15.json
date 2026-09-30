@@ -1,0 +1,2305 @@
+{
+ "loai": "bai-co-ban",
+ "version": 1,
+ "cap": 1,
+ "bai": 15,
+ "capNhatLuc": "2026-09-30",
+ "nguon": "HSK标准教程 1 (HSK Standard Course 1), bài 15: hội thoại, âm thanh, bài tập chọn lọc.",
+ "ten": {
+  "trung": "我是坐飞机来的",
+  "pinyin": [
+   "wǒ",
+   "shì",
+   "zuò",
+   "fēi",
+   "jī",
+   "lái",
+   "de"
+  ],
+  "viet": "Tôi đến bằng máy bay"
+ },
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": [
+   "khoi-dong-A",
+   "khoi-dong-B",
+   "khoi-dong-C",
+   "khoi-dong-D",
+   "khoi-dong-E",
+   "khoi-dong-F"
+  ],
+  "tu": [
+   {
+    "trung": "飞机",
+    "pinyin": [
+     "fēi",
+     "jī"
+    ],
+    "dapAn": "D"
+   },
+   {
+    "trung": "出租车",
+    "pinyin": [
+     "chū",
+     "zū",
+     "chē"
+    ],
+    "dapAn": "F"
+   },
+   {
+    "trung": "大学",
+    "pinyin": [
+     "dà",
+     "xué"
+    ],
+    "dapAn": "A"
+   },
+   {
+    "trung": "饭店",
+    "pinyin": [
+     "fàn",
+     "diàn"
+    ],
+    "dapAn": "E"
+   },
+   {
+    "trung": "听",
+    "pinyin": [
+     "tīng"
+    ],
+    "dapAn": "B"
+   },
+   {
+    "trung": "开车",
+    "pinyin": [
+     "kāi",
+     "chē"
+    ],
+    "dapAn": "C"
+   }
+  ]
+ },
+ "hoiThoai": [
+  {
+   "so": 1,
+   "am": "15-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": {
+    "trung": "在餐桌旁",
+    "pinyin": [
+     "zài",
+     "cān",
+     "zhuō",
+     "páng"
+    ],
+    "viet": "Bên bàn ăn"
+   },
+   "cau": [
+    {
+     "trung": "你和李小姐是什么时候认识的？",
+     "pinyin": [
+      "nǐ",
+      "hé",
+      "Lǐ",
+      "xiǎo",
+      "jiě",
+      "shì",
+      "shén",
+      "me",
+      "shí",
+      "hou",
+      "rèn",
+      "shi",
+      "de",
+      ""
+     ],
+     "ghiChuBienDieu": "李小姐: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+     "nguoi": "A",
+     "viet": "Bạn và cô Lý quen nhau khi nào?"
+    },
+    {
+     "trung": "我们是2011年9月认识的。",
+     "pinyin": [
+      "wǒ",
+      "men",
+      "shì",
+      "èrlíngyīyī",
+      "",
+      "",
+      "",
+      "nián",
+      "jiǔ",
+      "yuè",
+      "rèn",
+      "shi",
+      "de",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Chúng tôi quen nhau tháng 9 năm 2011."
+    },
+    {
+     "trung": "你们在哪儿认识的？",
+     "pinyin": [
+      "nǐ",
+      "men",
+      "zài",
+      "nǎr",
+      "",
+      "rèn",
+      "shi",
+      "de",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Các bạn quen nhau ở đâu?"
+    },
+    {
+     "trung": "我们是在学校认识的，她是我大学同学。",
+     "pinyin": [
+      "wǒ",
+      "men",
+      "shì",
+      "zài",
+      "xué",
+      "xiào",
+      "rèn",
+      "shi",
+      "de",
+      "",
+      "tā",
+      "shì",
+      "wǒ",
+      "dà",
+      "xué",
+      "tóng",
+      "xué",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Chúng tôi quen nhau ở trường, cô ấy là bạn đại học của tôi."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "认识",
+     "pinyin": [
+      "rèn",
+      "shi"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0171",
+     "capHsk": 1,
+     "viet": "quen biết, nhận ra"
+    },
+    {
+     "trung": "年",
+     "pinyin": [
+      "nián"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0148",
+     "capHsk": 1,
+     "viet": "năm"
+    },
+    {
+     "trung": "大学",
+     "pinyin": [
+      "dà",
+      "xué"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0028",
+     "capHsk": 1,
+     "viet": "đại học"
+    }
+   ]
+  },
+  {
+   "so": 2,
+   "am": "15-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": {
+    "trung": "在饭店门口",
+    "pinyin": [
+     "zài",
+     "fàn",
+     "diàn",
+     "mén",
+     "kǒu"
+    ],
+    "viet": "Trước cửa khách sạn"
+   },
+   "cau": [
+    {
+     "trung": "你们是怎么来饭店的？",
+     "pinyin": [
+      "nǐ",
+      "men",
+      "shì",
+      "zěn",
+      "me",
+      "lái",
+      "fàn",
+      "diàn",
+      "de",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Các bạn đến khách sạn bằng gì?"
+    },
+    {
+     "trung": "我们是坐出租车来的。",
+     "pinyin": [
+      "wǒ",
+      "men",
+      "shì",
+      "zuò",
+      "chū",
+      "zū",
+      "chē",
+      "lái",
+      "de",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Chúng tôi đến bằng taxi."
+    },
+    {
+     "trung": "李先生呢？",
+     "pinyin": [
+      "Lǐ",
+      "xiān",
+      "sheng",
+      "ne",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Còn ông Lý?"
+    },
+    {
+     "trung": "他是和朋友一起开车来的。",
+     "pinyin": [
+      "tā",
+      "shì",
+      "hé",
+      "péng",
+      "you",
+      "yī",
+      "qǐ",
+      "kāi",
+      "chē",
+      "lái",
+      "de",
+      ""
+     ],
+     "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (起).",
+     "nguoi": "B",
+     "viet": "Ông ấy cùng bạn lái xe đến."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "饭店",
+     "pinyin": [
+      "fàn",
+      "diàn"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0051",
+     "capHsk": 1,
+     "viet": "khách sạn; nhà hàng"
+    },
+    {
+     "trung": "出租车",
+     "pinyin": [
+      "chū",
+      "zū",
+      "chē"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0023",
+     "capHsk": 1,
+     "viet": "taxi"
+    },
+    {
+     "trung": "一起",
+     "pinyin": [
+      "yī",
+      "qǐ"
+     ],
+     "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (起).",
+     "tuLoai": "phó từ",
+     "boSung": true,
+     "idTuVung": "tu-0475",
+     "capHsk": 2,
+     "viet": "cùng, cùng nhau"
+    }
+   ]
+  },
+  {
+   "so": 3,
+   "am": "15-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": {
+    "trung": "在公司",
+    "pinyin": [
+     "zài",
+     "gōng",
+     "sī"
+    ],
+    "viet": "Ở công ty"
+   },
+   "cau": [
+    {
+     "trung": "很高兴认识您！李小姐。",
+     "pinyin": [
+      "hěn",
+      "gāo",
+      "xìng",
+      "rèn",
+      "shi",
+      "nín",
+      "",
+      "Lǐ",
+      "xiǎo",
+      "jiě",
+      ""
+     ],
+     "ghiChuBienDieu": "李小姐: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+     "nguoi": "A",
+     "viet": "Rất vui được làm quen với chị, chị Lý."
+    },
+    {
+     "trung": "认识你我也很高兴！",
+     "pinyin": [
+      "rèn",
+      "shi",
+      "nǐ",
+      "wǒ",
+      "yě",
+      "hěn",
+      "gāo",
+      "xìng",
+      ""
+     ],
+     "ghiChuBienDieu": "你我也很: có 4 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+     "nguoi": "B",
+     "viet": "Tôi cũng rất vui được quen anh!"
+    },
+    {
+     "trung": "听张先生说，您是坐飞机来北京的？",
+     "pinyin": [
+      "tīng",
+      "Zhāng",
+      "xiān",
+      "sheng",
+      "shuō",
+      "",
+      "nín",
+      "shì",
+      "zuò",
+      "fēi",
+      "jī",
+      "lái",
+      "Běi",
+      "jīng",
+      "de",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Nghe ông Trương nói chị đến Bắc Kinh bằng máy bay?"
+    },
+    {
+     "trung": "是的。",
+     "pinyin": [
+      "shì",
+      "de",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Vâng."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "高兴",
+     "pinyin": [
+      "gāo",
+      "xìng"
+     ],
+     "tuLoai": "tính từ",
+     "idTuVung": "tu-0057",
+     "capHsk": 1,
+     "viet": "vui, vui mừng"
+    },
+    {
+     "trung": "听",
+     "pinyin": [
+      "tīng"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0209",
+     "capHsk": 1,
+     "viet": "nghe"
+    },
+    {
+     "trung": "飞机",
+     "pinyin": [
+      "fēi",
+      "jī"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0054",
+     "capHsk": 1,
+     "viet": "máy bay"
+    }
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": {
+    "trung": "“是……的”句：强调时间、地点、方式",
+    "viet": "Câu 是……的: nhấn mạnh thời gian, nơi chốn, cách thức"
+   },
+   "mau": "Chủ ngữ + (是) + thời gian/nơi chốn/cách thức + động từ + 的；phủ định: 不是……的",
+   "giaiThich": "Khi đã biết việc đã xảy ra, dùng 是……的 để nhấn mạnh việc đó xảy ra lúc nào, ở đâu, bằng cách nào. Câu khẳng định và câu hỏi có thể lược 是; câu phủ định thì không được lược. Đây là điểm ngữ pháp HSK 2 (bản 2025).",
+   "viDu": [
+    {
+     "trung": "我是昨天来的。",
+     "pinyin": [
+      "wǒ",
+      "shì",
+      "zuó",
+      "tiān",
+      "lái",
+      "de",
+      ""
+     ],
+     "viet": "Tôi đến hôm qua."
+    },
+    {
+     "trung": "这是在北京买的。",
+     "pinyin": [
+      "zhè",
+      "shì",
+      "zài",
+      "Běi",
+      "jīng",
+      "mǎi",
+      "de",
+      ""
+     ],
+     "viet": "Cái này mua ở Bắc Kinh."
+    },
+    {
+     "trung": "你们是怎么来饭店的？",
+     "pinyin": [
+      "nǐ",
+      "men",
+      "shì",
+      "zěn",
+      "me",
+      "lái",
+      "fàn",
+      "diàn",
+      "de",
+      ""
+     ],
+     "viet": "Các bạn đến khách sạn bằng gì?"
+    },
+    {
+     "trung": "我们不是坐出租车来的。",
+     "pinyin": [
+      "wǒ",
+      "men",
+      "bù",
+      "shì",
+      "zuò",
+      "chū",
+      "zū",
+      "chē",
+      "lái",
+      "de",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (是).",
+     "viet": "Chúng tôi không đến bằng taxi."
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "日期的表达(2)：年、月、日/号、星期",
+    "viet": "Nói ngày tháng (2): năm, tháng, ngày, thứ"
+   },
+   "giaiThich": "Ngày tháng viết và đọc từ lớn đến nhỏ. Năm đọc từng chữ số rồi thêm 年; tháng, ngày đọc cả số rồi thêm 月, 日/号; thứ đọc 星期 + số.",
+   "viDu": [
+    {
+     "trung": "2008年8月8号，星期五",
+     "pinyin": [
+      "èrlínglíngbā",
+      "",
+      "",
+      "",
+      "nián",
+      "bā",
+      "yuè",
+      "bā",
+      "hào",
+      "",
+      "xīng",
+      "qī",
+      "wǔ"
+     ],
+     "viet": "Thứ Sáu, ngày 8 tháng 8 năm 2008"
+    },
+    {
+     "trung": "明天是2014年5月11号。",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "shì",
+      "èrlíngyīsì",
+      "",
+      "",
+      "",
+      "nián",
+      "wǔ",
+      "yuè",
+      "shíyī",
+      "",
+      "hào",
+      ""
+     ],
+     "viet": "Ngày mai là ngày 11 tháng 5 năm 2014."
+    },
+    {
+     "trung": "今天9月10号，星期三。",
+     "pinyin": [
+      "jīn",
+      "tiān",
+      "jiǔ",
+      "yuè",
+      "shí",
+      "",
+      "hào",
+      "",
+      "xīng",
+      "qī",
+      "sān",
+      ""
+     ],
+     "viet": "Hôm nay thứ Tư, ngày 10 tháng 9."
+    }
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo nội dung hội thoại",
+   "cau": [
+    {
+     "trung": "她们是什么时候认识的？",
+     "pinyin": [
+      "tā",
+      "men",
+      "shì",
+      "shén",
+      "me",
+      "shí",
+      "hou",
+      "rèn",
+      "shi",
+      "de",
+      ""
+     ]
+    },
+    {
+     "trung": "她们是在哪儿认识的？",
+     "pinyin": [
+      "tā",
+      "men",
+      "shì",
+      "zài",
+      "nǎr",
+      "",
+      "rèn",
+      "shi",
+      "de",
+      ""
+     ]
+    },
+    {
+     "trung": "他们是怎么去饭店的？",
+     "pinyin": [
+      "tā",
+      "men",
+      "shì",
+      "zěn",
+      "me",
+      "qù",
+      "fàn",
+      "diàn",
+      "de",
+      ""
+     ]
+    },
+    {
+     "trung": "李先生是坐出租车去饭店的吗？",
+     "pinyin": [
+      "Lǐ",
+      "xiān",
+      "sheng",
+      "shì",
+      "zuò",
+      "chū",
+      "zū",
+      "chē",
+      "qù",
+      "fàn",
+      "diàn",
+      "de",
+      "ma",
+      ""
+     ]
+    },
+    {
+     "trung": "李小姐是怎么来北京的？",
+     "pinyin": [
+      "Lǐ",
+      "xiǎo",
+      "jiě",
+      "shì",
+      "zěn",
+      "me",
+      "lái",
+      "Běi",
+      "jīng",
+      "de",
+      ""
+     ],
+     "ghiChuBienDieu": "李小姐: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu."
+    }
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "doc-am",
+   "am": "15-4",
+   "tieuDe": "Phối thanh từ ba âm tiết (4): bắt đầu bằng thanh 4",
+   "amTiet": [
+    "diànbīngxiāng",
+    "Màidāngláo",
+    "jiànshēnguǎn",
+    "bàngōngshì",
+    "chàng guógē",
+    "kàn zúqiú",
+    "kuàngquánshuǐ",
+    "shuànyángròu",
+    "mìmǎxiāng",
+    "qìguǎnyán",
+    "dàshǐguǎn",
+    "mièhuǒqì",
+    "zhàoxiàngjī",
+    "zànzhùrén",
+    "diànhuàkǎ",
+    "Àoyùnhuì"
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   {
+    "trung": "年",
+    "pinyin": [
+     "nián"
+    ],
+    "giaiThich": "Nghĩa gốc là chở lúa đã gặt về nhà; nay là đơn vị thời gian (năm)."
+   },
+   {
+    "trung": "出",
+    "pinyin": [
+     "chū"
+    ],
+    "giaiThich": "Dáng như bàn chân rời khỏi một chỗ; nay nghĩa là từ trong ra ngoài."
+   },
+   {
+    "trung": "飞",
+    "pinyin": [
+     "fēi"
+    ],
+    "giaiThich": "Nghĩa gốc là chim, côn trùng dùng cánh bay qua lại trên không; nay chỉ chung bay trên trời, hoặc nhanh."
+   }
+  ],
+  "boThu": [
+   {
+    "bo": "艹",
+    "ten": "草字头",
+    "pinyin": "cǎo zì tóu",
+    "giaiThich": "Bộ thảo: thường liên quan đến cỏ cây, thực vật.",
+    "viDu": [
+     "茶",
+     "菜"
+    ]
+   },
+   {
+    "bo": "宀",
+    "ten": "宝盖头",
+    "pinyin": "bǎo gài tóu",
+    "giaiThich": "Bộ miên: thường liên quan đến nhà cửa.",
+    "viDu": [
+     "安",
+     "家"
+    ]
+   }
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi đồ vật mua ở đâu, khi nào; học tiếng Trung từ bao giờ",
+  "viDu": [
+   {
+    "trung": "这个是在哪儿买的？",
+    "pinyin": [
+     "zhè",
+     "ge",
+     "shì",
+     "zài",
+     "nǎr",
+     "",
+     "mǎi",
+     "de",
+     ""
+    ],
+    "nguoi": "A",
+    "viet": "Cái này mua ở đâu?"
+   },
+   {
+    "trung": "在商店买的。",
+    "pinyin": [
+     "zài",
+     "shāng",
+     "diàn",
+     "mǎi",
+     "de",
+     ""
+    ],
+    "nguoi": "B",
+    "viet": "Mua ở cửa hàng."
+   },
+   {
+    "trung": "什么时候买的？",
+    "pinyin": [
+     "shén",
+     "me",
+     "shí",
+     "hou",
+     "mǎi",
+     "de",
+     ""
+    ],
+    "nguoi": "A",
+    "viet": "Mua khi nào?"
+   },
+   {
+    "trung": "昨天买的。",
+    "pinyin": [
+     "zuó",
+     "tiān",
+     "mǎi",
+     "de",
+     ""
+    ],
+    "nguoi": "B",
+    "viet": "Mua hôm qua."
+   }
+  ]
+ },
+ "vanHoa": {
+  "tieuDe": {
+   "trung": "中国人经常使用的通信工具",
+   "viet": "Phương tiện liên lạc người Trung Quốc hay dùng"
+  },
+  "noiDung": "Ở Trung Quốc, phương tiện liên lạc thông dụng là điện thoại bàn và điện thoại di động. Số điện thoại bàn thường có 6–8 chữ số (ví dụ 2027816, 82304156), mỗi vùng có số chữ số khác nhau. Số di động luôn có 11 chữ số (ví dụ 13576983311), khi đọc thường ngắt theo nhóm 3–4–4, như 139-0107-8866. Số 1 trong số điện thoại đọc là yāo.",
+  "cau": [
+   {
+    "trung": "139-0107-8866",
+    "pinyin": [
+     "yāosānjiǔ",
+     "",
+     "",
+     "",
+     "línglíngyāoqī",
+     "",
+     "",
+     "",
+     "",
+     "bābāliùliù",
+     "",
+     "",
+     ""
+    ]
+   }
+  ]
+ },
+ "tuBoSung2025": [
+  {
+   "trung": "火车",
+   "pinyin": [
+    "huǒ",
+    "chē"
+   ],
+   "idTuVung": "tu-0083",
+   "capHsk": 1,
+   "viet": "tàu hỏa"
+  },
+  {
+   "trung": "开车",
+   "pinyin": [
+    "kāi",
+    "chē"
+   ],
+   "idTuVung": "tu-0098",
+   "capHsk": 1,
+   "viet": "lái xe"
+  },
+  {
+   "trung": "到",
+   "pinyin": [
+    "dào"
+   ],
+   "idTuVung": "tu-0027",
+   "capHsk": 1,
+   "viet": "đến, tới"
+  },
+  {
+   "trung": "电影院",
+   "pinyin": [
+    "diàn",
+    "yǐng",
+    "yuàn"
+   ],
+   "idTuVung": "tu-0038",
+   "capHsk": 1,
+   "viet": "rạp chiếu phim"
+  },
+  {
+   "trung": "书店",
+   "pinyin": [
+    "shū",
+    "diàn"
+   ],
+   "idTuVung": "tu-0191",
+   "capHsk": 1,
+   "viet": "hiệu sách"
+  },
+  {
+   "trung": "觉得",
+   "pinyin": [
+    "jué",
+    "de"
+   ],
+   "idTuVung": "tu-0096",
+   "capHsk": 1,
+   "viet": "cảm thấy, nghĩ rằng"
+  },
+  {
+   "trung": "还",
+   "pinyin": [
+    "hái"
+   ],
+   "idTuVung": "tu-0067",
+   "capHsk": 1,
+   "viet": "còn, vẫn, vẫn còn"
+  },
+  {
+   "trung": "不要",
+   "pinyin": [
+    "bù",
+    "yào"
+   ],
+   "idTuVung": "tu-0015",
+   "capHsk": 1,
+   "viet": "đừng; không cần"
+  },
+  {
+   "trung": "一下",
+   "pinyin": [
+    "yī",
+    "xià"
+   ],
+   "idTuVung": "tu-0259",
+   "capHsk": 1,
+   "viet": "(làm) thử một chút, một lát; một lần"
+  },
+  {
+   "trung": "对",
+   "pinyin": [
+    "duì"
+   ],
+   "idTuVung": "tu-0043",
+   "capHsk": 1,
+   "viet": "đúng; đối với"
+  }
+ ],
+ "baiTap": {
+  "nghe": {
+   "nhom": [
+    {
+     "tieuDe": "第一部分",
+     "kieu": "dung-sai-hinh",
+     "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+     "viDu": [
+      {
+       "hinh": "bai-15/bt-p115-1.webp",
+       "chu": [
+        [
+         "很",
+         "hěn"
+        ],
+        [
+         "高兴",
+         "gāoxìng"
+        ]
+       ],
+       "dapAn": "dung"
+      },
+      {
+       "hinh": "bai-15/bt-p115-2.webp",
+       "chu": [
+        [
+         "看",
+         "kàn"
+        ],
+        [
+         "电影",
+         "diànyǐng"
+        ]
+       ],
+       "dapAn": "sai"
+      }
+     ],
+     "cau": [
+      {
+       "so": 1,
+       "hinh": "bai-15/bt-p115-3.webp",
+       "loi": [
+        "电话"
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: hai chiếc điện thoại di động."
+      },
+      {
+       "so": 2,
+       "hinh": "bai-15/bt-p115-4.webp",
+       "loi": [
+        "出租车"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: tàu hoả trong nhà ga."
+      },
+      {
+       "so": 3,
+       "hinh": "bai-15/bt-p115-5.webp",
+       "loi": [
+        "听"
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: bàn tay khum sau tai để nghe."
+      },
+      {
+       "so": 4,
+       "hinh": "bai-15/bt-p115-6.webp",
+       "loi": [
+        "饭店"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: kệ hàng siêu thị."
+      },
+      {
+       "so": 5,
+       "hinh": "bai-15/bt-p115-7.webp",
+       "loi": [
+        "大学"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: cô giáo với các em nhỏ.",
+       "chacChan": false
+      }
+     ]
+    },
+    {
+     "tieuDe": "第二部分",
+     "kieu": "ghep-hinh",
+     "huongDan": "Nghe hội thoại, chọn tranh khớp",
+     "luaChon": [
+      {
+       "ma": "A",
+       "hinh": "bai-15/bt-p116-1.webp"
+      },
+      {
+       "ma": "B",
+       "hinh": "bai-15/bt-p116-2.webp"
+      },
+      {
+       "ma": "C",
+       "hinh": "bai-15/bt-p116-3.webp"
+      },
+      {
+       "ma": "D",
+       "hinh": "bai-15/bt-p116-4.webp"
+      },
+      {
+       "ma": "E",
+       "hinh": "bai-15/bt-p116-5.webp"
+      },
+      {
+       "ma": "F",
+       "hinh": "bai-15/bt-p116-6.webp"
+      }
+     ],
+     "viDu": {
+      "loi": [
+       "女：你好！",
+       "男：你好！很高兴认识你。"
+      ],
+      "dapAn": "C",
+      "dong": [
+       [
+        [
+         "女：你好！",
+         ""
+        ]
+       ],
+       [
+        [
+         "男：你好！很高兴认识你。",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 6,
+       "loi": [
+        "你是什么时候来中国的？",
+        "我是2011年来的，已经两年了。"
+       ],
+       "dapAn": "D",
+       "lyDo": "Tranh D: lịch năm 2011."
+      },
+      {
+       "so": 7,
+       "loi": [
+        "这些苹果是在哪儿买的？",
+        "在前面的商店买的。"
+       ],
+       "dapAn": "A",
+       "lyDo": "Tranh A: sạp táo ngoài chợ."
+      },
+      {
+       "so": 8,
+       "loi": [
+        "你爸爸是怎么去商店的？",
+        "我们一起开车去的。"
+       ],
+       "dapAn": "E",
+       "lyDo": "Tranh E: người đàn ông lái xe."
+      },
+      {
+       "so": 9,
+       "loi": [
+        "李老师睡觉了吗？",
+        "睡了，他是五点睡的。"
+       ],
+       "dapAn": "F",
+       "lyDo": "Tranh F: người đang ngủ cạnh đồng hồ."
+      },
+      {
+       "so": 10,
+       "loi": [
+        "我们怎么去？",
+        "小王是坐出租车去的，我们也坐出租车吧。"
+       ],
+       "dapAn": "B",
+       "lyDo": "Tranh B: đôi nam nữ vẫy xe bên đường.",
+       "chacChan": false
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "chon-chu",
+     "huongDan": "Nghe câu, trả lời câu hỏi",
+     "viDu": {
+      "loi": [
+       "下午我去商店，我想买一些水果。",
+       "问：她下午去哪里？"
+      ],
+      "luaChon": [
+       {
+        "ma": "A",
+        "chu": [
+         [
+          "商店",
+          "shāngdiàn"
+         ]
+        ]
+       },
+       {
+        "ma": "B",
+        "chu": [
+         [
+          "医院",
+          "yīyuàn"
+         ]
+        ]
+       },
+       {
+        "ma": "C",
+        "chu": [
+         [
+          "学校",
+          "xuéxiào"
+         ]
+        ]
+       }
+      ],
+      "dapAn": "A",
+      "dong": [
+       [
+        [
+         "下午我去商店，我想买一些水果。",
+         ""
+        ]
+       ],
+       [
+        [
+         "问：她下午去哪里？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 11,
+       "loi": [
+        "我们是2008年在北京认识的。",
+        "问：他们是什么时候认识的？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "2007年",
+           "èrlínglíngqī nián"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "2008年",
+           "èrlínglíngbā nián"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "2009年",
+           "èrlínglíngjiǔ nián"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "B"
+      },
+      {
+       "so": 12,
+       "loi": [
+        "我的衣服都是在中国买的，我喜欢中国的衣服。",
+        "问：他喜欢哪儿的衣服？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "美国",
+           "Měiguó"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "中国",
+           "Zhōngguó"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "日本",
+           "Rìběn"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "B"
+      },
+      {
+       "so": 13,
+       "loi": [
+        "王老师不是坐出租车去的。",
+        "问：王老师是怎么去的？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "坐出租车",
+           "zuò chūzūchē"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "开车",
+           "kāi chē"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "不知道",
+           "bù zhīdào"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "C"
+      },
+      {
+       "so": 14,
+       "loi": [
+        "李老师是八点去学校的，九点前会到。",
+        "问：李老师是什么时候去学校的？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "八点",
+           "bā diǎn"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "九点",
+           "jiǔ diǎn"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "十点",
+           "shí diǎn"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "A"
+      },
+      {
+       "so": 15,
+       "loi": [
+        "张先生是坐飞机来的。",
+        "问：张先生是怎么来的？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "坐车",
+           "zuò chē"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "坐出租车",
+           "zuò chūzūchē"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "坐飞机",
+           "zuò fēijī"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "C"
+      }
+     ]
+    }
+   ],
+   "loiNghe": {
+    "1": [
+     "电话"
+    ],
+    "2": [
+     "出租车"
+    ],
+    "3": [
+     "听"
+    ],
+    "4": [
+     "饭店"
+    ],
+    "5": [
+     "大学"
+    ],
+    "6": [
+     "你是什么时候来中国的？",
+     "我是2011年来的，已经两年了。"
+    ],
+    "7": [
+     "这些苹果是在哪儿买的？",
+     "在前面的商店买的。"
+    ],
+    "8": [
+     "你爸爸是怎么去商店的？",
+     "我们一起开车去的。"
+    ],
+    "9": [
+     "李老师睡觉了吗？",
+     "睡了，他是五点睡的。"
+    ],
+    "10": [
+     "我们怎么去？",
+     "小王是坐出租车去的，我们也坐出租车吧。"
+    ],
+    "11": [
+     "我们是2008年在北京认识的。",
+     "问：他们是什么时候认识的？"
+    ],
+    "12": [
+     "我的衣服都是在中国买的，我喜欢中国的衣服。",
+     "问：他喜欢哪儿的衣服？"
+    ],
+    "13": [
+     "王老师不是坐出租车去的。",
+     "问：王老师是怎么去的？"
+    ],
+    "14": [
+     "李老师是八点去学校的，九点前会到。",
+     "问：李老师是什么时候去学校的？"
+    ],
+    "15": [
+     "张先生是坐飞机来的。",
+     "问：张先生是怎么来的？"
+    ]
+   },
+   "am": "bt-15-1"
+  },
+  "doc": {
+   "nhom": [
+    {
+     "tieuDe": "第一部分",
+     "kieu": "dung-sai-hinh-chu",
+     "huongDan": "Xem tranh, từ có khớp tranh không",
+     "viDu": [
+      {
+       "hinh": "bai-15/bt-p118-1.webp",
+       "chu": [
+        [
+         "电视",
+         "diànshì"
+        ]
+       ],
+       "dapAn": "sai"
+      },
+      {
+       "hinh": "bai-15/bt-p118-2.webp",
+       "chu": [
+        [
+         "飞机",
+         "fēijī"
+        ]
+       ],
+       "dapAn": "dung"
+      }
+     ],
+     "cau": [
+      {
+       "so": 16,
+       "hinh": "bai-15/bt-p118-3.webp",
+       "chu": [
+        [
+         "开",
+         "kāi"
+        ],
+        [
+         "出租车",
+         "chūzūchē"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: phi công trong buồng lái máy bay."
+      },
+      {
+       "so": 17,
+       "hinh": "bai-15/bt-p118-4.webp",
+       "chu": [
+        [
+         "高兴",
+         "gāoxìng"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: em bé đang khóc."
+      },
+      {
+       "so": 18,
+       "hinh": "bai-15/bt-p118-5.webp",
+       "chu": [
+        [
+         "一起",
+         "yīqǐ"
+        ],
+        [
+         "学习",
+         "xuéxí"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: nhóm sinh viên cùng học."
+      },
+      {
+       "so": 19,
+       "hinh": "bai-15/bt-p118-6.webp",
+       "chu": [
+        [
+         "开",
+         "kāi"
+        ],
+        [
+         "飞机",
+         "fēijī"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: hành khách ngồi trên máy bay vươn vai.",
+       "chacChan": false
+      },
+      {
+       "so": 20,
+       "hinh": "bai-15/bt-p118-7.webp",
+       "chu": [
+        [
+         "大学",
+         "dàxué"
+        ],
+        [
+         "同学",
+         "tóngxué"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: hai bạn mặc áo tốt nghiệp."
+      }
+     ]
+    },
+    {
+     "tieuDe": "第二部分",
+     "kieu": "ghep-cau",
+     "huongDan": "Chọn câu trả lời đúng",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "我们",
+         "Wǒmen"
+        ],
+        [
+         "是",
+         "shì"
+        ],
+        [
+         "大学",
+         "dàxué"
+        ],
+        [
+         "同学",
+         "tóngxué"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "我",
+         "Wǒ"
+        ],
+        [
+         "也",
+         "yě"
+        ],
+        [
+         "很",
+         "hěn"
+        ],
+        [
+         "高兴",
+         "gāoxìng"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "在",
+         "Zài"
+        ],
+        [
+         "一",
+         "yī"
+        ],
+        [
+         "个",
+         "ge"
+        ],
+        [
+         "小",
+         "xiǎo"
+        ],
+        [
+         "商店",
+         "shāngdiàn"
+        ],
+        [
+         "买",
+         "mǎi"
+        ],
+        [
+         "的",
+         "de"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "明天",
+         "Míngtiān"
+        ],
+        [
+         "吧",
+         "ba"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "小",
+         "Xiǎo"
+        ],
+        [
+         "王",
+         "Wáng"
+        ],
+        [
+         "是",
+         "shì"
+        ],
+        [
+         "今天",
+         "jīntiān"
+        ],
+        [
+         "去",
+         "qù"
+        ],
+        [
+         "的",
+         "de"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "我",
+         "Wǒ"
+        ],
+        [
+         "看见",
+         "kànjiàn"
+        ],
+        [
+         "他",
+         "tā"
+        ],
+        [
+         "开",
+         "kāi"
+        ],
+        [
+         "车",
+         "chē"
+        ],
+        [
+         "回",
+         "huí"
+        ],
+        [
+         "家",
+         "jiā"
+        ],
+        [
+         "了",
+         "le"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "F",
+       "chu": [
+        [
+         "好",
+         "Hǎo"
+        ],
+        [
+         "的",
+         "de"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "谢谢",
+         "xièxie"
+        ],
+        [
+         "！",
+         ""
+        ]
+       ]
+      }
+     ],
+     "viDu": {
+      "dapAn": "F",
+      "dong": [
+       [
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "喝",
+         "hē"
+        ],
+        [
+         "水",
+         "shuǐ"
+        ],
+        [
+         "吗",
+         "ma"
+        ],
+        [
+         "？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 21,
+       "dapAn": "A",
+       "dong": [
+        [
+         [
+          "你们",
+          "Nǐmen"
+         ],
+         [
+          "是",
+          "shì"
+         ],
+         [
+          "怎么",
+          "zěnme"
+         ],
+         [
+          "认识",
+          "rènshi"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 22,
+       "dapAn": "C",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "衣服",
+          "yīfu"
+         ],
+         [
+          "是",
+          "shì"
+         ],
+         [
+          "在",
+          "zài"
+         ],
+         [
+          "哪儿",
+          "nǎr"
+         ],
+         [
+          "买",
+          "mǎi"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 23,
+       "dapAn": "E",
+       "dong": [
+        [
+         [
+          "小",
+          "Xiǎo"
+         ],
+         [
+          "王",
+          "Wáng"
+         ],
+         [
+          "回",
+          "huí"
+         ],
+         [
+          "家",
+          "jiā"
+         ],
+         [
+          "了",
+          "le"
+         ],
+         [
+          "吗",
+          "ma"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 24,
+       "dapAn": "B",
+       "dong": [
+        [
+         [
+          "我",
+          "Wǒ"
+         ],
+         [
+          "很",
+          "hěn"
+         ],
+         [
+          "高兴",
+          "gāoxìng"
+         ],
+         [
+          "你",
+          "nǐ"
+         ],
+         [
+          "来",
+          "lái"
+         ],
+         [
+          "我们",
+          "wǒmen"
+         ],
+         [
+          "学校",
+          "xuéxiào"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 25,
+       "dapAn": "D",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "想",
+          "xiǎng"
+         ],
+         [
+          "什么",
+          "shénme"
+         ],
+         [
+          "时候",
+          "shíhou"
+         ],
+         [
+          "去",
+          "qù"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "dien-tu",
+     "huongDan": "Chọn từ điền vào chỗ trống",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "认识",
+         "rènshi"
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "坐",
+         "zuò"
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "一起",
+         "yīqǐ"
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "名字",
+         "míngzi"
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "高兴",
+         "gāoxìng"
+        ]
+       ]
+      },
+      {
+       "ma": "F",
+       "chu": [
+        [
+         "听",
+         "tīng"
+        ]
+       ]
+      }
+     ],
+     "cau": [
+      {
+       "so": 26,
+       "dapAn": "F",
+       "dong": [
+        [
+         [
+          "__",
+          ""
+         ],
+         [
+          "老师",
+          "lǎoshī"
+         ],
+         [
+          "说",
+          "shuō"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "明天",
+          "míngtiān"
+         ],
+         [
+          "我们",
+          "wǒmen"
+         ],
+         [
+          "去",
+          "qù"
+         ],
+         [
+          "看",
+          "kàn"
+         ],
+         [
+          "电影",
+          "diànyǐng"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 27,
+       "dapAn": "A",
+       "dong": [
+        [
+         [
+          "我们",
+          "Wǒmen"
+         ],
+         [
+          "是",
+          "shì"
+         ],
+         [
+          "在",
+          "zài"
+         ],
+         [
+          "飞机",
+          "fēijī"
+         ],
+         [
+          "上",
+          "shang"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 28,
+       "dapAn": "B",
+       "dong": [
+        [
+         [
+          "我",
+          "Wǒ"
+         ],
+         [
+          "不",
+          "bù"
+         ],
+         [
+          "喜欢",
+          "xǐhuan"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "出租车",
+          "chūzūchē"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "我",
+          "wǒ"
+         ],
+         [
+          "喜欢",
+          "xǐhuan"
+         ],
+         [
+          "开",
+          "kāi"
+         ],
+         [
+          "车",
+          "chē"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 29,
+       "dapAn": "C",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "想",
+          "xiǎng"
+         ],
+         [
+          "不",
+          "bu"
+         ],
+         [
+          "想",
+          "xiǎng"
+         ],
+         [
+          "和",
+          "hé"
+         ],
+         [
+          "我们",
+          "wǒmen"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "去",
+          "qù"
+         ],
+         [
+          "商店",
+          "shāngdiàn"
+         ],
+         [
+          "买",
+          "mǎi"
+         ],
+         [
+          "衣服",
+          "yīfu"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 30,
+       "dapAn": "E",
+       "dong": [
+        [
+         [
+          "今天",
+          "Jīntiān"
+         ],
+         [
+          "天气",
+          "tiānqì"
+         ],
+         [
+          "很",
+          "hěn"
+         ],
+         [
+          "好",
+          "hǎo"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "我",
+          "wǒ"
+         ],
+         [
+          "很",
+          "hěn"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      }
+     ],
+     "viDu": {
+      "dapAn": "D",
+      "dong": [
+       [
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "叫",
+         "jiào"
+        ],
+        [
+         "什么",
+         "shénme"
+        ],
+        [
+         "__",
+         ""
+        ],
+        [
+         "？",
+         ""
+        ]
+       ]
+      ]
+     }
+    }
+   ],
+   "loiNghe": {}
+  }
+ },
+ "nguPhapHsk": [
+  "np-0025"
+ ],
+ "canKiemTra": [
+  "Bản dịch tiếng Việt của hội thoại, ví dụ, giải thích là bản nháp của Claude, chưa có người duyệt.",
+  "Pinyin chép tay từ sách (đã đối chiếu tự động với từ điển); ghi chú biến điệu do máy sinh theo quy tắc.",
+  "Đáp án phần khởi động do Claude suy từ ảnh (sách không in đáp án)."
+ ]
+}

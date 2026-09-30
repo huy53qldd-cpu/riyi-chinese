@@ -1,0 +1,408 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 15 (trang PDF 131–138). Năm đọc từng chữ số: một cụm chữ số ứng với một mục pinyin. Sách in 'yìqǐ' → ghi thanh gốc yī. 是……的 là ngữ pháp HSK 2 bản 2025 (np-0031). Đáp án khởi động suy từ ảnh. Bản dịch Việt là bản nháp.",
+ "bai": 15,
+ "ten": [
+  "我是坐飞机来的",
+  "wǒ shì zuò fēi jī lái de",
+  "Tôi đến bằng máy bay"
+ ],
+ "trangPdf": [
+  131,
+  138
+ ],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "tu": [
+   [
+    "飞机",
+    "fēi jī",
+    "D"
+   ],
+   [
+    "出租车",
+    "chū zū chē",
+    "F"
+   ],
+   [
+    "大学",
+    "dà xué",
+    "A"
+   ],
+   [
+    "饭店",
+    "fàn diàn",
+    "E"
+   ],
+   [
+    "听",
+    "tīng",
+    "B"
+   ],
+   [
+    "开车",
+    "kāi chē",
+    "C"
+   ]
+  ]
+ },
+ "hoiThoai": [
+  {
+   "am": "15-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": [
+    "在餐桌旁",
+    "zài cān zhuō páng",
+    "Bên bàn ăn"
+   ],
+   "cau": [
+    [
+     "A",
+     "你和李小姐是什么时候认识的？",
+     "nǐ hé Lǐ xiǎo jiě shì shén me shí hou rèn shi de",
+     "Bạn và cô Lý quen nhau khi nào?"
+    ],
+    [
+     "B",
+     "我们是2011年9月认识的。",
+     "wǒ men shì èrlíngyīyī nián jiǔ yuè rèn shi de",
+     "Chúng tôi quen nhau tháng 9 năm 2011."
+    ],
+    [
+     "A",
+     "你们在哪儿认识的？",
+     "nǐ men zài nǎr _ rèn shi de",
+     "Các bạn quen nhau ở đâu?"
+    ],
+    [
+     "B",
+     "我们是在学校认识的，她是我大学同学。",
+     "wǒ men shì zài xué xiào rèn shi de tā shì wǒ dà xué tóng xué",
+     "Chúng tôi quen nhau ở trường, cô ấy là bạn đại học của tôi."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "认识",
+     "rèn shi",
+     "động từ"
+    ],
+    [
+     "年",
+     "nián",
+     "danh từ"
+    ],
+    [
+     "大学",
+     "dà xué",
+     "danh từ"
+    ]
+   ]
+  },
+  {
+   "am": "15-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": [
+    "在饭店门口",
+    "zài fàn diàn mén kǒu",
+    "Trước cửa khách sạn"
+   ],
+   "cau": [
+    [
+     "A",
+     "你们是怎么来饭店的？",
+     "nǐ men shì zěn me lái fàn diàn de",
+     "Các bạn đến khách sạn bằng gì?"
+    ],
+    [
+     "B",
+     "我们是坐出租车来的。",
+     "wǒ men shì zuò chū zū chē lái de",
+     "Chúng tôi đến bằng taxi."
+    ],
+    [
+     "A",
+     "李先生呢？",
+     "Lǐ xiān sheng ne",
+     "Còn ông Lý?"
+    ],
+    [
+     "B",
+     "他是和朋友一起开车来的。",
+     "tā shì hé péng you yī qǐ kāi chē lái de",
+     "Ông ấy cùng bạn lái xe đến."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "饭店",
+     "fàn diàn",
+     "danh từ"
+    ],
+    [
+     "出租车",
+     "chū zū chē",
+     "danh từ"
+    ],
+    [
+     "一起",
+     "yī qǐ",
+     "phó từ",
+     "boSung"
+    ]
+   ]
+  },
+  {
+   "am": "15-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": [
+    "在公司",
+    "zài gōng sī",
+    "Ở công ty"
+   ],
+   "cau": [
+    [
+     "A",
+     "很高兴认识您！李小姐。",
+     "hěn gāo xìng rèn shi nín Lǐ xiǎo jiě",
+     "Rất vui được làm quen với chị, chị Lý."
+    ],
+    [
+     "B",
+     "认识你我也很高兴！",
+     "rèn shi nǐ wǒ yě hěn gāo xìng",
+     "Tôi cũng rất vui được quen anh!"
+    ],
+    [
+     "A",
+     "听张先生说，您是坐飞机来北京的？",
+     "tīng Zhāng xiān sheng shuō nín shì zuò fēi jī lái Běi jīng de",
+     "Nghe ông Trương nói chị đến Bắc Kinh bằng máy bay?"
+    ],
+    [
+     "B",
+     "是的。",
+     "shì de",
+     "Vâng."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "高兴",
+     "gāo xìng",
+     "tính từ"
+    ],
+    [
+     "听",
+     "tīng",
+     "động từ"
+    ],
+    [
+     "飞机",
+     "fēi jī",
+     "danh từ"
+    ]
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": [
+    "“是……的”句：强调时间、地点、方式",
+    "Câu 是……的: nhấn mạnh thời gian, nơi chốn, cách thức"
+   ],
+   "mau": "Chủ ngữ + (是) + thời gian/nơi chốn/cách thức + động từ + 的；phủ định: 不是……的",
+   "giaiThich": "Khi đã biết việc đã xảy ra, dùng 是……的 để nhấn mạnh việc đó xảy ra lúc nào, ở đâu, bằng cách nào. Câu khẳng định và câu hỏi có thể lược 是; câu phủ định thì không được lược. Đây là điểm ngữ pháp HSK 2 (bản 2025).",
+   "viDu": [
+    [
+     "我是昨天来的。",
+     "wǒ shì zuó tiān lái de",
+     "Tôi đến hôm qua."
+    ],
+    [
+     "这是在北京买的。",
+     "zhè shì zài Běi jīng mǎi de",
+     "Cái này mua ở Bắc Kinh."
+    ],
+    [
+     "你们是怎么来饭店的？",
+     "nǐ men shì zěn me lái fàn diàn de",
+     "Các bạn đến khách sạn bằng gì?"
+    ],
+    [
+     "我们不是坐出租车来的。",
+     "wǒ men bù shì zuò chū zū chē lái de",
+     "Chúng tôi không đến bằng taxi."
+    ]
+   ]
+  },
+  {
+   "ten": [
+    "日期的表达(2)：年、月、日/号、星期",
+    "Nói ngày tháng (2): năm, tháng, ngày, thứ"
+   ],
+   "giaiThich": "Ngày tháng viết và đọc từ lớn đến nhỏ. Năm đọc từng chữ số rồi thêm 年; tháng, ngày đọc cả số rồi thêm 月, 日/号; thứ đọc 星期 + số.",
+   "viDu": [
+    [
+     "2008年8月8号，星期五",
+     "èrlínglíngbā nián bā yuè bā hào xīng qī wǔ",
+     "Thứ Sáu, ngày 8 tháng 8 năm 2008"
+    ],
+    [
+     "明天是2014年5月11号。",
+     "míng tiān shì èrlíngyīsì nián wǔ yuè shíyī hào",
+     "Ngày mai là ngày 11 tháng 5 năm 2014."
+    ],
+    [
+     "今天9月10号，星期三。",
+     "jīn tiān jiǔ yuè shí hào xīng qī sān",
+     "Hôm nay thứ Tư, ngày 10 tháng 9."
+    ]
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo nội dung hội thoại",
+   "cau": [
+    [
+     "她们是什么时候认识的？",
+     "tā men shì shén me shí hou rèn shi de"
+    ],
+    [
+     "她们是在哪儿认识的？",
+     "tā men shì zài nǎr _ rèn shi de"
+    ],
+    [
+     "他们是怎么去饭店的？",
+     "tā men shì zěn me qù fàn diàn de"
+    ],
+    [
+     "李先生是坐出租车去饭店的吗？",
+     "Lǐ xiān sheng shì zuò chū zū chē qù fàn diàn de ma"
+    ],
+    [
+     "李小姐是怎么来北京的？",
+     "Lǐ xiǎo jiě shì zěn me lái Běi jīng de"
+    ]
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "doc-am",
+   "am": "15-4",
+   "tieuDe": "Phối thanh từ ba âm tiết (4): bắt đầu bằng thanh 4",
+   "am_tiet": [
+    "diànbīngxiāng",
+    "Màidāngláo",
+    "jiànshēnguǎn",
+    "bàngōngshì",
+    "chàng guógē",
+    "kàn zúqiú",
+    "kuàngquánshuǐ",
+    "shuànyángròu",
+    "mìmǎxiāng",
+    "qìguǎnyán",
+    "dàshǐguǎn",
+    "mièhuǒqì",
+    "zhàoxiàngjī",
+    "zànzhùrén",
+    "diànhuàkǎ",
+    "Àoyùnhuì"
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   [
+    "年",
+    "nián",
+    "Nghĩa gốc là chở lúa đã gặt về nhà; nay là đơn vị thời gian (năm)."
+   ],
+   [
+    "出",
+    "chū",
+    "Dáng như bàn chân rời khỏi một chỗ; nay nghĩa là từ trong ra ngoài."
+   ],
+   [
+    "飞",
+    "fēi",
+    "Nghĩa gốc là chim, côn trùng dùng cánh bay qua lại trên không; nay chỉ chung bay trên trời, hoặc nhanh."
+   ]
+  ],
+  "boThu": [
+   [
+    "艹",
+    "草字头",
+    "cǎo zì tóu",
+    "Bộ thảo: thường liên quan đến cỏ cây, thực vật.",
+    [
+     "茶",
+     "菜"
+    ]
+   ],
+   [
+    "宀",
+    "宝盖头",
+    "bǎo gài tóu",
+    "Bộ miên: thường liên quan đến nhà cửa.",
+    [
+     "安",
+     "家"
+    ]
+   ]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi đồ vật mua ở đâu, khi nào; học tiếng Trung từ bao giờ",
+  "viDu": [
+   [
+    "A",
+    "这个是在哪儿买的？",
+    "zhè ge shì zài nǎr _ mǎi de",
+    "Cái này mua ở đâu?"
+   ],
+   [
+    "B",
+    "在商店买的。",
+    "zài shāng diàn mǎi de",
+    "Mua ở cửa hàng."
+   ],
+   [
+    "A",
+    "什么时候买的？",
+    "shén me shí hou mǎi de",
+    "Mua khi nào?"
+   ],
+   [
+    "B",
+    "昨天买的。",
+    "zuó tiān mǎi de",
+    "Mua hôm qua."
+   ]
+  ]
+ },
+ "vanHoa": {
+  "tieuDe": [
+   "中国人经常使用的通信工具",
+   "Phương tiện liên lạc người Trung Quốc hay dùng"
+  ],
+  "noiDung": "Ở Trung Quốc, phương tiện liên lạc thông dụng là điện thoại bàn và điện thoại di động. Số điện thoại bàn thường có 6–8 chữ số (ví dụ 2027816, 82304156), mỗi vùng có số chữ số khác nhau. Số di động luôn có 11 chữ số (ví dụ 13576983311), khi đọc thường ngắt theo nhóm 3–4–4, như 139-0107-8866. Số 1 trong số điện thoại đọc là yāo.",
+  "cau": [
+   [
+    "139-0107-8866",
+    "yāosānjiǔ línglíngyāoqī bābāliùliù"
+   ]
+  ]
+ }
+}

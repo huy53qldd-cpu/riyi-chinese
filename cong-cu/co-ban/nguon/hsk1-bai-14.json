@@ -1,0 +1,80 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 14 (trang PDF 123–130). Sách in 'yìdiǎnr', 'yí ge' → ghi thanh gốc yī; 一点儿 là âm cuốn lưỡi (diǎnr, chữ 儿 để trống). Đáp án khởi động suy từ ảnh. Bản dịch Việt là bản nháp.",
+ "bai": 14,
+ "ten": ["她买了不少衣服", "tā mǎi le bù shǎo yī fu", "Cô ấy đã mua khá nhiều quần áo"],
+ "trangPdf": [123, 130],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": ["A", "B", "C", "D", "E", "F"],
+  "tu": [["苹果", "píng guǒ", "D"], ["车", "chē", "A"], ["衣服", "yī fu", "B"], ["商店", "shāng diàn", "F"], ["书店", "shū diàn", "E"], ["英语书", "Yīng yǔ shū", "C"]]
+ },
+ "hoiThoai": [
+  {
+   "am": "14-1", "anh": "hoi-thoai-1", "boiCanh": ["在宿舍", "zài sù shè", "Ở ký túc xá"],
+   "cau": [["A", "昨天上午你去哪儿了？", "zuó tiān shàng wǔ nǐ qù nǎr _ le", "Sáng hôm qua bạn đi đâu?"], ["B", "我去商店买东西了。", "wǒ qù shāng diàn mǎi dōng xi le", "Tôi đi cửa hàng mua đồ."], ["A", "你买什么了？", "nǐ mǎi shén me le", "Bạn đã mua gì?"], ["B", "我买了一点儿苹果。", "wǒ mǎi le yī diǎnr _ píng guǒ", "Tôi mua một ít táo."]],
+   "tuMoi": [["东西", "dōng xi", "danh từ"], ["一点儿", "yī diǎnr _", "số lượng từ"], ["苹果", "píng guǒ", "danh từ"]]
+  },
+  {
+   "am": "14-2", "anh": "hoi-thoai-2", "boiCanh": ["在公司", "zài gōng sī", "Ở công ty"],
+   "cau": [["A", "你看见张先生了吗？", "nǐ kàn jiàn Zhāng xiān sheng le ma", "Bạn có thấy ông Trương không?"], ["B", "看见了，他去学开车了。", "kàn jiàn le tā qù xué kāi chē le", "Thấy rồi, ông ấy đi học lái xe rồi."], ["A", "他什么时候能回来？", "tā shén me shí hou néng huí lai", "Khi nào ông ấy về được?"], ["B", "40分钟后回来。", "sìshí fēn zhōng hòu huí lai", "40 phút nữa sẽ về."]],
+   "tuMoi": [["看见", "kàn jiàn", "động từ"], ["先生", "xiān sheng", "danh từ"], ["开", "kāi", "động từ"], ["车", "chē", "danh từ"], ["回来", "huí lai", "động từ"], ["分钟", "fēn zhōng", "danh từ"], ["后", "hòu", "danh từ"]],
+   "tenRieng": [["张", "Zhāng", "Trương (họ)"]]
+  },
+  {
+   "am": "14-3", "anh": "hoi-thoai-3", "boiCanh": ["在商店门口", "zài shāng diàn mén kǒu", "Trước cửa hàng"],
+   "cau": [["A", "王方的衣服太漂亮了！", "Wáng Fāng de yī fu tài piào liang le", "Quần áo của Vương Phương đẹp quá!"], ["B", "是啊，她买了不少衣服。", "shì a tā mǎi le bù shǎo yī fu", "Đúng thế, cô ấy mua khá nhiều quần áo."], ["A", "你买什么了？", "nǐ mǎi shén me le", "Bạn mua gì rồi?"], ["B", "我没买，这些都是王方的东西。", "wǒ méi mǎi zhè xiē dōu shì Wáng Fāng de dōng xi", "Tôi không mua gì, những thứ này đều là đồ của Vương Phương."]],
+   "tuMoi": [["衣服", "yī fu", "danh từ"], ["漂亮", "piào liang", "tính từ"], ["啊", "a", "trợ từ", "boSung"], ["少", "shǎo", "tính từ"], ["不少", "bù shǎo", "tính từ"], ["这些", "zhè xiē", "đại từ"], ["都", "dōu", "phó từ"]]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": ["“了”表发生或完成", "了: việc đã xảy ra hoặc đã xong"],
+   "mau": "Chủ ngữ + vị ngữ + 了；Chủ ngữ + động từ + 了 + định ngữ (số lượng/tính từ/đại từ) + tân ngữ；phủ định: 没 + động từ (+ tân ngữ)",
+   "giaiThich": "了 đặt cuối câu, hoặc sau động từ có tân ngữ, để nói việc đã xảy ra/đã xong. Khi 了 đứng sau động từ, trước tân ngữ thường có số lượng từ, tính từ hoặc đại từ. Phủ định dùng 没 và bỏ 了.",
+   "viDu": [["我去商店了。", "wǒ qù shāng diàn le", "Tôi đi cửa hàng rồi."], ["你买什么了？", "nǐ mǎi shén me le", "Bạn đã mua gì?"], ["她买了一点儿苹果。", "tā mǎi le yī diǎnr _ píng guǒ", "Cô ấy mua một ít táo."], ["我买了不少衣服。", "wǒ mǎi le bù shǎo yī fu", "Tôi mua khá nhiều quần áo."], ["她没去商店。", "tā méi qù shāng diàn", "Cô ấy không đi cửa hàng."], ["我没看见张先生。", "wǒ méi kàn jiàn Zhāng xiān sheng", "Tôi không thấy ông Trương."]]
+  },
+  {
+   "ten": ["名词“后”", "Danh từ 后"],
+   "mau": "Thời gian + 后",
+   "giaiThich": "后 đặt sau từ chỉ thời gian, chỉ khoảng thời gian sau thời điểm đó (sau…, … nữa).",
+   "viDu": [["五点后", "wǔ diǎn hòu", "sau năm giờ"], ["星期三后", "xīng qī sān hòu", "sau thứ Tư"], ["你几点去工作？八点后。", "nǐ jǐ diǎn qù gōng zuò bā diǎn hòu", "Mấy giờ bạn đi làm? Sau tám giờ."], ["40分钟后回来。", "sìshí fēn zhōng hòu huí lai", "40 phút nữa về."]]
+  },
+  {
+   "ten": ["语气助词“啊”", "Trợ từ ngữ khí 啊"],
+   "giaiThich": "啊 đặt cuối câu trần thuật để thêm sắc thái tình cảm (xác nhận, khẳng định). Cách đọc 啊 bị âm cuối của chữ trước ảnh hưởng: sau a/e/i/o/ü → ia; sau u/ao/ou → ua; sau -n → na; sau -ng → nga.",
+   "viDu": [["你是王小姐吗？是啊。", "nǐ shì Wáng xiǎo jiě ma shì a", "Chị là chị Vương à? Đúng vậy."], ["你想去吃中国菜吗？好啊。", "nǐ xiǎng qù chī Zhōng guó cài ma hǎo a", "Bạn muốn đi ăn món Trung không? Được đấy."], ["是啊，她买了不少衣服。", "shì a tā mǎi le bù shǎo yī fu", "Đúng thế, cô ấy mua khá nhiều quần áo."]]
+  },
+  {
+   "ten": ["副词“都”", "Phó từ 都"],
+   "mau": "Những người/vật được bao quát + 都 + vị ngữ",
+   "giaiThich": "都 nghĩa là đều, tất cả; những gì được bao quát phải đứng TRƯỚC 都.",
+   "viDu": [["我们都是中国人。", "wǒ men dōu shì Zhōng guó rén", "Chúng tôi đều là người Trung Quốc."], ["他们都喜欢喝茶。", "tā men dōu xǐ huan hē chá", "Họ đều thích uống trà."], ["这些都是王方的东西。", "zhè xiē dōu shì Wáng Fāng de dōng xi", "Những thứ này đều là đồ của Vương Phương."]]
+  }
+ ],
+ "luyenTap": [
+  { "loai": "tra-loi-tu-do", "tieuDe": "Trả lời theo nội dung hội thoại", "cau": [["昨天上午她去哪儿了？", "zuó tiān shàng wǔ tā qù nǎr _ le"], ["她买什么了？", "tā mǎi shén me le"], ["张先生什么时候能回来？", "Zhāng xiān sheng shén me shí hou néng huí lai"], ["王方买什么了？", "Wáng Fāng mǎi shén me le"], ["王方的朋友买什么了？", "Wáng Fāng de péng you mǎi shén me le"]] }
+ ],
+ "phatAm": [
+  {
+   "loai": "doc-am", "am": "14-4", "tieuDe": "Phối thanh từ ba âm tiết (3): bắt đầu bằng thanh 3",
+   "am_tiet": ["xǐyījī", "pǔtōng rén", "zǒngjīnglǐ", "huǒchē piào", "shǐxuéjiā", "jǐngchájú", "měinánzǐ", "měiróngyuàn", "biǎoyǎnjiā", "xiǎo yǎnyuán", "Mǐlǎoshǔ", "yǎnchànghuì", "dǎzìjī", "pǎobù xié", "měishùguǎn", "dǎ diànhuà"]
+  }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   ["开", "kāi", "Dáng như hai tay rút then cửa; nghĩa gốc là mở cửa, nay có nhiều nghĩa như 开车 (lái xe), 开花 (nở hoa)."],
+   ["车", "chē", "Dáng như cỗ xe có bánh hai bên; nay chỉ chung phương tiện giao thông trên bộ, như 出租车 (taxi), 火车 (tàu hoả)."],
+   ["回", "huí", "Dáng như dòng nước xoáy; nghĩa gốc là xoay vòng, sau chỉ trở về."]
+  ],
+  "boThu": [
+   ["月", "肉月旁", "ròu yuè páng", "Bộ nhục (viết như 月): thường liên quan đến cơ thể người, thịt.", ["服", "胖"]],
+   ["扌", "提手旁", "tí shǒu páng", "Bộ thủ (tay): thường chỉ động tác liên quan đến tay.", ["打", "找"]]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi nhau đã mua gì, đã làm gì",
+  "tuBoSung": [["电影院", "diàn yǐng yuàn", "rạp chiếu phim"]],
+  "viDu": [["A", "你去商店买什么了？", "nǐ qù shāng diàn mǎi shén me le", "Bạn đi cửa hàng mua gì?"], ["B", "我买了……", "wǒ mǎi le ……", "Tôi mua…"], ["A", "星期一上午你做什么了？", "xīng qī yī shàng wǔ nǐ zuò shén me le", "Sáng thứ Hai bạn làm gì?"], ["B", "我去电影院了。", "wǒ qù diàn yǐng yuàn le", "Tôi đi rạp chiếu phim."]]
+ }
+}

@@ -1,0 +1,2578 @@
+{
+ "loai": "bai-co-ban",
+ "version": 1,
+ "cap": 1,
+ "bai": 14,
+ "capNhatLuc": "2026-09-30",
+ "nguon": "HSK标准教程 1 (HSK Standard Course 1), bài 14: hội thoại, âm thanh, bài tập chọn lọc.",
+ "ten": {
+  "trung": "她买了不少衣服",
+  "pinyin": [
+   "tā",
+   "mǎi",
+   "le",
+   "bù",
+   "shǎo",
+   "yī",
+   "fu"
+  ],
+  "viet": "Cô ấy đã mua khá nhiều quần áo"
+ },
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": [
+   "khoi-dong-A",
+   "khoi-dong-B",
+   "khoi-dong-C",
+   "khoi-dong-D",
+   "khoi-dong-E",
+   "khoi-dong-F"
+  ],
+  "tu": [
+   {
+    "trung": "苹果",
+    "pinyin": [
+     "píng",
+     "guǒ"
+    ],
+    "dapAn": "D"
+   },
+   {
+    "trung": "车",
+    "pinyin": [
+     "chē"
+    ],
+    "dapAn": "A"
+   },
+   {
+    "trung": "衣服",
+    "pinyin": [
+     "yī",
+     "fu"
+    ],
+    "dapAn": "B"
+   },
+   {
+    "trung": "商店",
+    "pinyin": [
+     "shāng",
+     "diàn"
+    ],
+    "dapAn": "F"
+   },
+   {
+    "trung": "书店",
+    "pinyin": [
+     "shū",
+     "diàn"
+    ],
+    "dapAn": "E"
+   },
+   {
+    "trung": "英语书",
+    "pinyin": [
+     "Yīng",
+     "yǔ",
+     "shū"
+    ],
+    "dapAn": "C"
+   }
+  ]
+ },
+ "hoiThoai": [
+  {
+   "so": 1,
+   "am": "14-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": {
+    "trung": "在宿舍",
+    "pinyin": [
+     "zài",
+     "sù",
+     "shè"
+    ],
+    "viet": "Ở ký túc xá"
+   },
+   "cau": [
+    {
+     "trung": "昨天上午你去哪儿了？",
+     "pinyin": [
+      "zuó",
+      "tiān",
+      "shàng",
+      "wǔ",
+      "nǐ",
+      "qù",
+      "nǎr",
+      "",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "午 đọc thành thanh 2 khi đứng trước thanh 3 (你).",
+     "nguoi": "A",
+     "viet": "Sáng hôm qua bạn đi đâu?"
+    },
+    {
+     "trung": "我去商店买东西了。",
+     "pinyin": [
+      "wǒ",
+      "qù",
+      "shāng",
+      "diàn",
+      "mǎi",
+      "dōng",
+      "xi",
+      "le",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Tôi đi cửa hàng mua đồ."
+    },
+    {
+     "trung": "你买什么了？",
+     "pinyin": [
+      "nǐ",
+      "mǎi",
+      "shén",
+      "me",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (买).",
+     "nguoi": "A",
+     "viet": "Bạn đã mua gì?"
+    },
+    {
+     "trung": "我买了一点儿苹果。",
+     "pinyin": [
+      "wǒ",
+      "mǎi",
+      "le",
+      "yī",
+      "diǎnr",
+      "",
+      "píng",
+      "guǒ",
+      ""
+     ],
+     "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (点). 我 đọc thành thanh 2 khi đứng trước thanh 3 (买).",
+     "nguoi": "B",
+     "viet": "Tôi mua một ít táo."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "东西",
+     "pinyin": [
+      "dōng",
+      "xi"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0040",
+     "capHsk": 1,
+     "viet": "đồ, đồ vật"
+    },
+    {
+     "trung": "一点儿",
+     "pinyin": [
+      "yī",
+      "diǎnr",
+      ""
+     ],
+     "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (点).",
+     "tuLoai": "số lượng từ",
+     "idTuVung": "tu-0256",
+     "capHsk": 1,
+     "viet": "một chút, một ít"
+    },
+    {
+     "trung": "苹果",
+     "pinyin": [
+      "píng",
+      "guǒ"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0159",
+     "capHsk": 1,
+     "viet": "quả táo"
+    }
+   ]
+  },
+  {
+   "so": 2,
+   "am": "14-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": {
+    "trung": "在公司",
+    "pinyin": [
+     "zài",
+     "gōng",
+     "sī"
+    ],
+    "viet": "Ở công ty"
+   },
+   "cau": [
+    {
+     "trung": "你看见张先生了吗？",
+     "pinyin": [
+      "nǐ",
+      "kàn",
+      "jiàn",
+      "Zhāng",
+      "xiān",
+      "sheng",
+      "le",
+      "ma",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Bạn có thấy ông Trương không?"
+    },
+    {
+     "trung": "看见了，他去学开车了。",
+     "pinyin": [
+      "kàn",
+      "jiàn",
+      "le",
+      "",
+      "tā",
+      "qù",
+      "xué",
+      "kāi",
+      "chē",
+      "le",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Thấy rồi, ông ấy đi học lái xe rồi."
+    },
+    {
+     "trung": "他什么时候能回来？",
+     "pinyin": [
+      "tā",
+      "shén",
+      "me",
+      "shí",
+      "hou",
+      "néng",
+      "huí",
+      "lai",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Khi nào ông ấy về được?"
+    },
+    {
+     "trung": "40分钟后回来。",
+     "pinyin": [
+      "sìshí",
+      "",
+      "fēn",
+      "zhōng",
+      "hòu",
+      "huí",
+      "lai",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "40 phút nữa sẽ về."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "看见",
+     "pinyin": [
+      "kàn",
+      "jiàn"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0101",
+     "capHsk": 1,
+     "viet": "nhìn thấy, trông thấy"
+    },
+    {
+     "trung": "先生",
+     "pinyin": [
+      "xiān",
+      "sheng"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0230",
+     "capHsk": 1,
+     "viet": "ông, ngài (Mr.); chồng"
+    },
+    {
+     "trung": "开",
+     "pinyin": [
+      "kāi"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0097",
+     "capHsk": 1,
+     "viet": "mở; lái (xe); bật"
+    },
+    {
+     "trung": "车",
+     "pinyin": [
+      "chē"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0020",
+     "capHsk": 1,
+     "viet": "xe"
+    },
+    {
+     "trung": "回来",
+     "pinyin": [
+      "huí",
+      "lai"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0361",
+     "capHsk": 2,
+     "viet": "trở về, quay lại (đây)"
+    },
+    {
+     "trung": "分钟",
+     "pinyin": [
+      "fēn",
+      "zhōng"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0056",
+     "capHsk": 1,
+     "viet": "phút (khoảng thời gian)"
+    },
+    {
+     "trung": "后",
+     "pinyin": [
+      "hòu"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0080",
+     "capHsk": 1,
+     "viet": "sau; phía sau"
+    }
+   ],
+   "tenRieng": [
+    {
+     "trung": "张",
+     "pinyin": [
+      "Zhāng"
+     ],
+     "tuLoai": "Trương (họ)",
+     "idTuVung": "tu-0968",
+     "capHsk": 3,
+     "viet": "(lượng từ) tờ, tấm, cái (vật phẳng); mở ra"
+    }
+   ]
+  },
+  {
+   "so": 3,
+   "am": "14-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": {
+    "trung": "在商店门口",
+    "pinyin": [
+     "zài",
+     "shāng",
+     "diàn",
+     "mén",
+     "kǒu"
+    ],
+    "viet": "Trước cửa hàng"
+   },
+   "cau": [
+    {
+     "trung": "王方的衣服太漂亮了！",
+     "pinyin": [
+      "Wáng",
+      "Fāng",
+      "de",
+      "yī",
+      "fu",
+      "tài",
+      "piào",
+      "liang",
+      "le",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Quần áo của Vương Phương đẹp quá!"
+    },
+    {
+     "trung": "是啊，她买了不少衣服。",
+     "pinyin": [
+      "shì",
+      "a",
+      "",
+      "tā",
+      "mǎi",
+      "le",
+      "bù",
+      "shǎo",
+      "yī",
+      "fu",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Đúng thế, cô ấy mua khá nhiều quần áo."
+    },
+    {
+     "trung": "你买什么了？",
+     "pinyin": [
+      "nǐ",
+      "mǎi",
+      "shén",
+      "me",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (买).",
+     "nguoi": "A",
+     "viet": "Bạn mua gì rồi?"
+    },
+    {
+     "trung": "我没买，这些都是王方的东西。",
+     "pinyin": [
+      "wǒ",
+      "méi",
+      "mǎi",
+      "",
+      "zhè",
+      "xiē",
+      "dōu",
+      "shì",
+      "Wáng",
+      "Fāng",
+      "de",
+      "dōng",
+      "xi",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Tôi không mua gì, những thứ này đều là đồ của Vương Phương."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "衣服",
+     "pinyin": [
+      "yī",
+      "fu"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0257",
+     "capHsk": 1,
+     "viet": "quần áo"
+    },
+    {
+     "trung": "漂亮",
+     "pinyin": [
+      "piào",
+      "liang"
+     ],
+     "tuLoai": "tính từ",
+     "idTuVung": "tu-0158",
+     "capHsk": 1,
+     "viet": "đẹp, xinh đẹp"
+    },
+    {
+     "trung": "啊",
+     "pinyin": [
+      "a"
+     ],
+     "tuLoai": "trợ từ",
+     "boSung": true,
+     "idTuVung": "tu-0301",
+     "capHsk": 2,
+     "viet": "(trợ từ cuối câu) nhé, à, nhỉ; a, ồ"
+    },
+    {
+     "trung": "少",
+     "pinyin": [
+      "shǎo"
+     ],
+     "tuLoai": "tính từ",
+     "idTuVung": "tu-0180",
+     "capHsk": 1,
+     "viet": "ít; thiếu"
+    },
+    {
+     "trung": "不少",
+     "pinyin": [
+      "bù",
+      "shǎo"
+     ],
+     "tuLoai": "tính từ"
+    },
+    {
+     "trung": "这些",
+     "pinyin": [
+      "zhè",
+      "xiē"
+     ],
+     "tuLoai": "đại từ",
+     "idTuVung": "tu-0286",
+     "capHsk": 1,
+     "viet": "những … này"
+    },
+    {
+     "trung": "都",
+     "pinyin": [
+      "dōu"
+     ],
+     "tuLoai": "phó từ",
+     "idTuVung": "tu-0041",
+     "capHsk": 1,
+     "viet": "đều, tất cả"
+    }
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": {
+    "trung": "“了”表发生或完成",
+    "viet": "了: việc đã xảy ra hoặc đã xong"
+   },
+   "mau": "Chủ ngữ + vị ngữ + 了；Chủ ngữ + động từ + 了 + định ngữ (số lượng/tính từ/đại từ) + tân ngữ；phủ định: 没 + động từ (+ tân ngữ)",
+   "giaiThich": "了 đặt cuối câu, hoặc sau động từ có tân ngữ, để nói việc đã xảy ra/đã xong. Khi 了 đứng sau động từ, trước tân ngữ thường có số lượng từ, tính từ hoặc đại từ. Phủ định dùng 没 và bỏ 了.",
+   "viDu": [
+    {
+     "trung": "我去商店了。",
+     "pinyin": [
+      "wǒ",
+      "qù",
+      "shāng",
+      "diàn",
+      "le",
+      ""
+     ],
+     "viet": "Tôi đi cửa hàng rồi."
+    },
+    {
+     "trung": "你买什么了？",
+     "pinyin": [
+      "nǐ",
+      "mǎi",
+      "shén",
+      "me",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (买).",
+     "viet": "Bạn đã mua gì?"
+    },
+    {
+     "trung": "她买了一点儿苹果。",
+     "pinyin": [
+      "tā",
+      "mǎi",
+      "le",
+      "yī",
+      "diǎnr",
+      "",
+      "píng",
+      "guǒ",
+      ""
+     ],
+     "ghiChuBienDieu": "一 đọc thành yì vì đứng trước thanh 3 (点).",
+     "viet": "Cô ấy mua một ít táo."
+    },
+    {
+     "trung": "我买了不少衣服。",
+     "pinyin": [
+      "wǒ",
+      "mǎi",
+      "le",
+      "bù",
+      "shǎo",
+      "yī",
+      "fu",
+      ""
+     ],
+     "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (买).",
+     "viet": "Tôi mua khá nhiều quần áo."
+    },
+    {
+     "trung": "她没去商店。",
+     "pinyin": [
+      "tā",
+      "méi",
+      "qù",
+      "shāng",
+      "diàn",
+      ""
+     ],
+     "viet": "Cô ấy không đi cửa hàng."
+    },
+    {
+     "trung": "我没看见张先生。",
+     "pinyin": [
+      "wǒ",
+      "méi",
+      "kàn",
+      "jiàn",
+      "Zhāng",
+      "xiān",
+      "sheng",
+      ""
+     ],
+     "viet": "Tôi không thấy ông Trương."
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "名词“后”",
+    "viet": "Danh từ 后"
+   },
+   "mau": "Thời gian + 后",
+   "giaiThich": "后 đặt sau từ chỉ thời gian, chỉ khoảng thời gian sau thời điểm đó (sau…, … nữa).",
+   "viDu": [
+    {
+     "trung": "五点后",
+     "pinyin": [
+      "wǔ",
+      "diǎn",
+      "hòu"
+     ],
+     "ghiChuBienDieu": "五 đọc thành thanh 2 khi đứng trước thanh 3 (点).",
+     "viet": "sau năm giờ"
+    },
+    {
+     "trung": "星期三后",
+     "pinyin": [
+      "xīng",
+      "qī",
+      "sān",
+      "hòu"
+     ],
+     "viet": "sau thứ Tư"
+    },
+    {
+     "trung": "你几点去工作？八点后。",
+     "pinyin": [
+      "nǐ",
+      "jǐ",
+      "diǎn",
+      "qù",
+      "gōng",
+      "zuò",
+      "",
+      "bā",
+      "diǎn",
+      "hòu",
+      ""
+     ],
+     "ghiChuBienDieu": "你几点: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+     "viet": "Mấy giờ bạn đi làm? Sau tám giờ."
+    },
+    {
+     "trung": "40分钟后回来。",
+     "pinyin": [
+      "sìshí",
+      "",
+      "fēn",
+      "zhōng",
+      "hòu",
+      "huí",
+      "lai",
+      ""
+     ],
+     "viet": "40 phút nữa về."
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "语气助词“啊”",
+    "viet": "Trợ từ ngữ khí 啊"
+   },
+   "giaiThich": "啊 đặt cuối câu trần thuật để thêm sắc thái tình cảm (xác nhận, khẳng định). Cách đọc 啊 bị âm cuối của chữ trước ảnh hưởng: sau a/e/i/o/ü → ia; sau u/ao/ou → ua; sau -n → na; sau -ng → nga.",
+   "viDu": [
+    {
+     "trung": "你是王小姐吗？是啊。",
+     "pinyin": [
+      "nǐ",
+      "shì",
+      "Wáng",
+      "xiǎo",
+      "jiě",
+      "ma",
+      "",
+      "shì",
+      "a",
+      ""
+     ],
+     "ghiChuBienDieu": "小 đọc thành thanh 2 khi đứng trước thanh 3 (姐).",
+     "viet": "Chị là chị Vương à? Đúng vậy."
+    },
+    {
+     "trung": "你想去吃中国菜吗？好啊。",
+     "pinyin": [
+      "nǐ",
+      "xiǎng",
+      "qù",
+      "chī",
+      "Zhōng",
+      "guó",
+      "cài",
+      "ma",
+      "",
+      "hǎo",
+      "a",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (想).",
+     "viet": "Bạn muốn đi ăn món Trung không? Được đấy."
+    },
+    {
+     "trung": "是啊，她买了不少衣服。",
+     "pinyin": [
+      "shì",
+      "a",
+      "",
+      "tā",
+      "mǎi",
+      "le",
+      "bù",
+      "shǎo",
+      "yī",
+      "fu",
+      ""
+     ],
+     "viet": "Đúng thế, cô ấy mua khá nhiều quần áo."
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "副词“都”",
+    "viet": "Phó từ 都"
+   },
+   "mau": "Những người/vật được bao quát + 都 + vị ngữ",
+   "giaiThich": "都 nghĩa là đều, tất cả; những gì được bao quát phải đứng TRƯỚC 都.",
+   "viDu": [
+    {
+     "trung": "我们都是中国人。",
+     "pinyin": [
+      "wǒ",
+      "men",
+      "dōu",
+      "shì",
+      "Zhōng",
+      "guó",
+      "rén",
+      ""
+     ],
+     "viet": "Chúng tôi đều là người Trung Quốc."
+    },
+    {
+     "trung": "他们都喜欢喝茶。",
+     "pinyin": [
+      "tā",
+      "men",
+      "dōu",
+      "xǐ",
+      "huan",
+      "hē",
+      "chá",
+      ""
+     ],
+     "viet": "Họ đều thích uống trà."
+    },
+    {
+     "trung": "这些都是王方的东西。",
+     "pinyin": [
+      "zhè",
+      "xiē",
+      "dōu",
+      "shì",
+      "Wáng",
+      "Fāng",
+      "de",
+      "dōng",
+      "xi",
+      ""
+     ],
+     "viet": "Những thứ này đều là đồ của Vương Phương."
+    }
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo nội dung hội thoại",
+   "cau": [
+    {
+     "trung": "昨天上午她去哪儿了？",
+     "pinyin": [
+      "zuó",
+      "tiān",
+      "shàng",
+      "wǔ",
+      "tā",
+      "qù",
+      "nǎr",
+      "",
+      "le",
+      ""
+     ]
+    },
+    {
+     "trung": "她买什么了？",
+     "pinyin": [
+      "tā",
+      "mǎi",
+      "shén",
+      "me",
+      "le",
+      ""
+     ]
+    },
+    {
+     "trung": "张先生什么时候能回来？",
+     "pinyin": [
+      "Zhāng",
+      "xiān",
+      "sheng",
+      "shén",
+      "me",
+      "shí",
+      "hou",
+      "néng",
+      "huí",
+      "lai",
+      ""
+     ]
+    },
+    {
+     "trung": "王方买什么了？",
+     "pinyin": [
+      "Wáng",
+      "Fāng",
+      "mǎi",
+      "shén",
+      "me",
+      "le",
+      ""
+     ]
+    },
+    {
+     "trung": "王方的朋友买什么了？",
+     "pinyin": [
+      "Wáng",
+      "Fāng",
+      "de",
+      "péng",
+      "you",
+      "mǎi",
+      "shén",
+      "me",
+      "le",
+      ""
+     ]
+    }
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "doc-am",
+   "am": "14-4",
+   "tieuDe": "Phối thanh từ ba âm tiết (3): bắt đầu bằng thanh 3",
+   "amTiet": [
+    "xǐyījī",
+    "pǔtōng rén",
+    "zǒngjīnglǐ",
+    "huǒchē piào",
+    "shǐxuéjiā",
+    "jǐngchájú",
+    "měinánzǐ",
+    "měiróngyuàn",
+    "biǎoyǎnjiā",
+    "xiǎo yǎnyuán",
+    "Mǐlǎoshǔ",
+    "yǎnchànghuì",
+    "dǎzìjī",
+    "pǎobù xié",
+    "měishùguǎn",
+    "dǎ diànhuà"
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   {
+    "trung": "开",
+    "pinyin": [
+     "kāi"
+    ],
+    "giaiThich": "Dáng như hai tay rút then cửa; nghĩa gốc là mở cửa, nay có nhiều nghĩa như 开车 (lái xe), 开花 (nở hoa)."
+   },
+   {
+    "trung": "车",
+    "pinyin": [
+     "chē"
+    ],
+    "giaiThich": "Dáng như cỗ xe có bánh hai bên; nay chỉ chung phương tiện giao thông trên bộ, như 出租车 (taxi), 火车 (tàu hoả)."
+   },
+   {
+    "trung": "回",
+    "pinyin": [
+     "huí"
+    ],
+    "giaiThich": "Dáng như dòng nước xoáy; nghĩa gốc là xoay vòng, sau chỉ trở về."
+   }
+  ],
+  "boThu": [
+   {
+    "bo": "月",
+    "ten": "肉月旁",
+    "pinyin": "ròu yuè páng",
+    "giaiThich": "Bộ nhục (viết như 月): thường liên quan đến cơ thể người, thịt.",
+    "viDu": [
+     "服",
+     "胖"
+    ]
+   },
+   {
+    "bo": "扌",
+    "ten": "提手旁",
+    "pinyin": "tí shǒu páng",
+    "giaiThich": "Bộ thủ (tay): thường chỉ động tác liên quan đến tay.",
+    "viDu": [
+     "打",
+     "找"
+    ]
+   }
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi nhau đã mua gì, đã làm gì",
+  "viDu": [
+   {
+    "trung": "你去商店买什么了？",
+    "pinyin": [
+     "nǐ",
+     "qù",
+     "shāng",
+     "diàn",
+     "mǎi",
+     "shén",
+     "me",
+     "le",
+     ""
+    ],
+    "nguoi": "A",
+    "viet": "Bạn đi cửa hàng mua gì?"
+   },
+   {
+    "trung": "我买了……",
+    "pinyin": [
+     "wǒ",
+     "mǎi",
+     "le",
+     "……",
+     ""
+    ],
+    "ghiChuBienDieu": "我 đọc thành thanh 2 khi đứng trước thanh 3 (买).",
+    "nguoi": "B",
+    "viet": "Tôi mua…"
+   },
+   {
+    "trung": "星期一上午你做什么了？",
+    "pinyin": [
+     "xīng",
+     "qī",
+     "yī",
+     "shàng",
+     "wǔ",
+     "nǐ",
+     "zuò",
+     "shén",
+     "me",
+     "le",
+     ""
+    ],
+    "ghiChuBienDieu": "一 đọc thành yí vì đứng trước thanh 4 (上). 午 đọc thành thanh 2 khi đứng trước thanh 3 (你).",
+    "nguoi": "A",
+    "viet": "Sáng thứ Hai bạn làm gì?"
+   },
+   {
+    "trung": "我去电影院了。",
+    "pinyin": [
+     "wǒ",
+     "qù",
+     "diàn",
+     "yǐng",
+     "yuàn",
+     "le",
+     ""
+    ],
+    "nguoi": "B",
+    "viet": "Tôi đi rạp chiếu phim."
+   }
+  ],
+  "tuBoSung": [
+   {
+    "trung": "电影院",
+    "pinyin": [
+     "diàn",
+     "yǐng",
+     "yuàn"
+    ],
+    "tuLoai": "rạp chiếu phim",
+    "idTuVung": "tu-0038",
+    "capHsk": 1,
+    "viet": "rạp chiếu phim"
+   }
+  ]
+ },
+ "tuBoSung2025": [
+  {
+   "trung": "穿",
+   "pinyin": [
+    "chuān"
+   ],
+   "idTuVung": "tu-0022",
+   "capHsk": 1,
+   "viet": "mặc, mang, đi (quần áo, giày dép)"
+  },
+  {
+   "trung": "件",
+   "pinyin": [
+    "jiàn"
+   ],
+   "idTuVung": "tu-0087",
+   "capHsk": 1,
+   "viet": "cái, chiếc (lượng từ cho quần áo, sự việc)"
+  },
+  {
+   "trung": "新",
+   "pinyin": [
+    "xīn"
+   ],
+   "idTuVung": "tu-0242",
+   "capHsk": 1,
+   "viet": "mới"
+  },
+  {
+   "trung": "好看",
+   "pinyin": [
+    "hǎo",
+    "kàn"
+   ],
+   "idTuVung": "tu-0074",
+   "capHsk": 1,
+   "viet": "đẹp, dễ nhìn; hay (khi xem)"
+  },
+  {
+   "trung": "一些",
+   "pinyin": [
+    "yī",
+    "xiē"
+   ],
+   "idTuVung": "tu-0260",
+   "capHsk": 1,
+   "viet": "một vài, một ít"
+  },
+  {
+   "trung": "有些",
+   "pinyin": [
+    "yǒu",
+    "xiē"
+   ],
+   "idTuVung": "tu-0265",
+   "capHsk": 1,
+   "viet": "một số; hơi, có phần"
+  },
+  {
+   "trung": "有的",
+   "pinyin": [
+    "yǒu",
+    "de"
+   ],
+   "idTuVung": "tu-0264",
+   "capHsk": 1,
+   "viet": "có (người, cái)…, một số"
+  },
+  {
+   "trung": "一半",
+   "pinyin": [
+    "yī",
+    "bàn"
+   ],
+   "idTuVung": "tu-0255",
+   "capHsk": 1,
+   "viet": "một nửa"
+  },
+  {
+   "trung": "那些",
+   "pinyin": [
+    "nà",
+    "xiē"
+   ],
+   "idTuVung": "tu-0142",
+   "capHsk": 1,
+   "viet": "những cái đó, những … kia"
+  },
+  {
+   "trung": "哪些",
+   "pinyin": [
+    "nǎ",
+    "xiē"
+   ],
+   "idTuVung": "tu-0143",
+   "capHsk": 1,
+   "viet": "những cái nào, những gì"
+  },
+  {
+   "trung": "事",
+   "pinyin": [
+    "shì"
+   ],
+   "idTuVung": "tu-0185",
+   "capHsk": 1,
+   "viet": "việc, chuyện"
+  }
+ ],
+ "baiTap": {
+  "nghe": {
+   "nhom": [
+    {
+     "tieuDe": "第一部分",
+     "kieu": "dung-sai-hinh",
+     "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+     "viDu": [
+      {
+       "hinh": "bai-14/bt-p107-1.webp",
+       "chu": [
+        [
+         "很",
+         "hěn"
+        ],
+        [
+         "高兴",
+         "gāoxìng"
+        ]
+       ],
+       "dapAn": "dung"
+      },
+      {
+       "hinh": "bai-14/bt-p107-2.webp",
+       "chu": [
+        [
+         "看",
+         "kàn"
+        ],
+        [
+         "电影",
+         "diànyǐng"
+        ]
+       ],
+       "dapAn": "sai"
+      }
+     ],
+     "cau": [
+      {
+       "so": 1,
+       "hinh": "bai-14/bt-p107-3.webp",
+       "loi": [
+        "开车"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: hai người đạp xe đạp."
+      },
+      {
+       "so": 2,
+       "hinh": "bai-14/bt-p107-4.webp",
+       "loi": [
+        "喝茶"
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: cô gái nâng tách uống.",
+       "chacChan": false
+      },
+      {
+       "so": 3,
+       "hinh": "bai-14/bt-p107-5.webp",
+       "loi": [
+        "买衣服"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: cô gái đứng cạnh máy giặt."
+      },
+      {
+       "so": 4,
+       "hinh": "bai-14/bt-p107-6.webp",
+       "loi": [
+        "书店"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: phòng đọc/thư viện với dãy bàn.",
+       "chacChan": false
+      },
+      {
+       "so": 5,
+       "hinh": "bai-14/bt-p107-7.webp",
+       "loi": [
+        "苹果"
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: mấy quả táo."
+      }
+     ]
+    },
+    {
+     "tieuDe": "第二部分",
+     "kieu": "ghep-hinh",
+     "huongDan": "Nghe hội thoại, chọn tranh khớp",
+     "luaChon": [
+      {
+       "ma": "A",
+       "hinh": "bai-14/bt-p108-1.webp"
+      },
+      {
+       "ma": "B",
+       "hinh": "bai-14/bt-p108-2.webp"
+      },
+      {
+       "ma": "C",
+       "hinh": "bai-14/bt-p108-3.webp"
+      },
+      {
+       "ma": "D",
+       "hinh": "bai-14/bt-p108-4.webp"
+      },
+      {
+       "ma": "E",
+       "hinh": "bai-14/bt-p108-5.webp"
+      },
+      {
+       "ma": "F",
+       "hinh": "bai-14/bt-p108-6.webp"
+      }
+     ],
+     "viDu": {
+      "loi": [
+       "女：你好！",
+       "男：你好！很高兴认识你。"
+      ],
+      "dapAn": "C",
+      "dong": [
+       [
+        [
+         "女：你好！",
+         ""
+        ]
+       ],
+       [
+        [
+         "男：你好！很高兴认识你。",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 6,
+       "loi": [
+        "昨天上午你去哪儿了？",
+        "我去学校学汉语了。"
+       ],
+       "dapAn": "E",
+       "lyDo": "Tranh E: cô gái viết chữ Hán lên bảng."
+      },
+      {
+       "so": 7,
+       "loi": [
+        "你去商店买苹果了吗？",
+        "没有，我买了不少菜。"
+       ],
+       "dapAn": "A",
+       "lyDo": "Tranh A: cô gái ôm túi rau."
+      },
+      {
+       "so": 8,
+       "loi": [
+        "你看见张先生了吗？",
+        "看见了，他开车去医院了。"
+       ],
+       "dapAn": "B",
+       "lyDo": "Tranh B: người đàn ông lái xe."
+      },
+      {
+       "so": 9,
+       "loi": [
+        "这些是谁的衣服？",
+        "丽丽的，她昨天买了不少衣服。"
+       ],
+       "dapAn": "D",
+       "lyDo": "Tranh D: cô gái xem giá quần áo."
+      },
+      {
+       "so": 10,
+       "loi": [
+        "喂，请问王小姐回来了吗？",
+        "没有，她一个小时后回来。"
+       ],
+       "dapAn": "F",
+       "lyDo": "Tranh F: cô gái nghe điện thoại."
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "chon-chu",
+     "huongDan": "Nghe câu, trả lời câu hỏi",
+     "viDu": {
+      "loi": [
+       "下午我去商店，我想买一些水果。",
+       "问：她下午去哪里？"
+      ],
+      "luaChon": [
+       {
+        "ma": "A",
+        "chu": [
+         [
+          "商店",
+          "shāngdiàn"
+         ]
+        ]
+       },
+       {
+        "ma": "B",
+        "chu": [
+         [
+          "医院",
+          "yīyuàn"
+         ]
+        ]
+       },
+       {
+        "ma": "C",
+        "chu": [
+         [
+          "学校",
+          "xuéxiào"
+         ]
+        ]
+       }
+      ],
+      "dapAn": "A",
+      "dong": [
+       [
+        [
+         "下午我去商店，我想买一些水果。",
+         ""
+        ]
+       ],
+       [
+        [
+         "问：她下午去哪里？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 11,
+       "loi": [
+        "我上午买了不少菜，中午做饭。",
+        "问：他上午做什么了？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "买菜",
+           "mǎi cài"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "做饭",
+           "zuò fàn"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "买苹果",
+           "mǎi píngguǒ"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "A"
+      },
+      {
+       "so": 12,
+       "loi": [
+        "这些衣服很漂亮，都是张小姐的。",
+        "问：这些衣服都是谁的？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "小王",
+           "Xiǎo Wáng"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "张小姐",
+           "Zhāng xiǎojiě"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "王老师",
+           "Wáng lǎoshī"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "B"
+      },
+      {
+       "so": 13,
+       "loi": [
+        "王老师去学校了，他三点后能回来。",
+        "问：王老师什么时候能回来？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "两点后",
+           "liǎng diǎn hòu"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "三点后",
+           "sān diǎn hòu"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "四点后",
+           "sì diǎn hòu"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "B"
+      },
+      {
+       "so": 14,
+       "loi": [
+        "下午我和大卫去学开车了。",
+        "问：下午大卫做什么了？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "学习",
+           "xuéxí"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "学开车",
+           "xué kāi chē"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "去学校",
+           "qù xuéxiào"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "B"
+      },
+      {
+       "so": 15,
+       "loi": [
+        "我不爱喝水，不爱吃水果。",
+        "问：他不爱吃什么？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "水果",
+           "shuǐguǒ"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "水",
+           "shuǐ"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "米饭",
+           "mǐfàn"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "A"
+      }
+     ]
+    }
+   ],
+   "loiNghe": {
+    "1": [
+     "开车"
+    ],
+    "2": [
+     "喝茶"
+    ],
+    "3": [
+     "买衣服"
+    ],
+    "4": [
+     "书店"
+    ],
+    "5": [
+     "苹果"
+    ],
+    "6": [
+     "昨天上午你去哪儿了？",
+     "我去学校学汉语了。"
+    ],
+    "7": [
+     "你去商店买苹果了吗？",
+     "没有，我买了不少菜。"
+    ],
+    "8": [
+     "你看见张先生了吗？",
+     "看见了，他开车去医院了。"
+    ],
+    "9": [
+     "这些是谁的衣服？",
+     "丽丽的，她昨天买了不少衣服。"
+    ],
+    "10": [
+     "喂，请问王小姐回来了吗？",
+     "没有，她一个小时后回来。"
+    ],
+    "11": [
+     "我上午买了不少菜，中午做饭。",
+     "问：他上午做什么了？"
+    ],
+    "12": [
+     "这些衣服很漂亮，都是张小姐的。",
+     "问：这些衣服都是谁的？"
+    ],
+    "13": [
+     "王老师去学校了，他三点后能回来。",
+     "问：王老师什么时候能回来？"
+    ],
+    "14": [
+     "下午我和大卫去学开车了。",
+     "问：下午大卫做什么了？"
+    ],
+    "15": [
+     "我不爱喝水，不爱吃水果。",
+     "问：他不爱吃什么？"
+    ]
+   },
+   "am": "bt-14-1"
+  },
+  "doc": {
+   "nhom": [
+    {
+     "tieuDe": "第一部分",
+     "kieu": "dung-sai-hinh-chu",
+     "huongDan": "Xem tranh, từ có khớp tranh không",
+     "viDu": [
+      {
+       "hinh": "bai-14/bt-p110-1.webp",
+       "chu": [
+        [
+         "电视",
+         "diànshì"
+        ]
+       ],
+       "dapAn": "sai"
+      },
+      {
+       "hinh": "bai-14/bt-p110-2.webp",
+       "chu": [
+        [
+         "飞机",
+         "fēijī"
+        ]
+       ],
+       "dapAn": "dung"
+      }
+     ],
+     "cau": [
+      {
+       "so": 16,
+       "hinh": "bai-14/bt-p110-3.webp",
+       "chu": [
+        [
+         "一点儿",
+         "yīdiǎnr"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: rất nhiều quả táo, không phải 'một ít'.",
+       "chacChan": false
+      },
+      {
+       "so": 17,
+       "hinh": "bai-14/bt-p110-4.webp",
+       "chu": [
+        [
+         "漂亮",
+         "piàoliang"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: cô gái xinh đẹp."
+      },
+      {
+       "so": 18,
+       "hinh": "bai-14/bt-p110-5.webp",
+       "chu": [
+        [
+         "买",
+         "mǎi"
+        ],
+        [
+         "东西",
+         "dōngxi"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: khách mua hàng ở quầy."
+      },
+      {
+       "so": 19,
+       "hinh": "bai-14/bt-p110-6.webp",
+       "chu": [
+        [
+         "不少",
+         "bùshǎo"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: đĩa đã ăn hết, chỉ còn dao dĩa.",
+       "chacChan": false
+      },
+      {
+       "so": 20,
+       "hinh": "bai-14/bt-p110-7.webp",
+       "chu": [
+        [
+         "衣服",
+         "yīfu"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: giỏ quần áo."
+      }
+     ]
+    },
+    {
+     "tieuDe": "第二部分",
+     "kieu": "ghep-cau",
+     "huongDan": "Chọn câu trả lời đúng",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "我",
+         "Wǒ"
+        ],
+        [
+         "去",
+         "qù"
+        ],
+        [
+         "了",
+         "le"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "我",
+         "Wǒ"
+        ],
+        [
+         "买",
+         "mǎi"
+        ],
+        [
+         "了",
+         "le"
+        ],
+        [
+         "一点儿",
+         "yīdiǎnr"
+        ],
+        [
+         "苹果",
+         "píngguǒ"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "是",
+         "Shì"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "这些",
+         "zhèxiē"
+        ],
+        [
+         "都",
+         "dōu"
+        ],
+        [
+         "是",
+         "shì"
+        ],
+        [
+         "她",
+         "tā"
+        ],
+        [
+         "的",
+         "de"
+        ],
+        [
+         "东西",
+         "dōngxi"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "谢谢",
+         "Xièxie"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "我",
+         "wǒ"
+        ],
+        [
+         "喜欢",
+         "xǐhuan"
+        ],
+        [
+         "买",
+         "mǎi"
+        ],
+        [
+         "漂亮",
+         "piàoliang"
+        ],
+        [
+         "的",
+         "de"
+        ],
+        [
+         "衣服",
+         "yīfu"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "看见",
+         "Kànjiàn"
+        ],
+        [
+         "了",
+         "le"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "他",
+         "tā"
+        ],
+        [
+         "开",
+         "kāi"
+        ],
+        [
+         "车",
+         "chē"
+        ],
+        [
+         "去",
+         "qù"
+        ],
+        [
+         "学校",
+         "xuéxiào"
+        ],
+        [
+         "了",
+         "le"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "F",
+       "chu": [
+        [
+         "好",
+         "Hǎo"
+        ],
+        [
+         "的",
+         "de"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "谢谢",
+         "xièxie"
+        ],
+        [
+         "！",
+         ""
+        ]
+       ]
+      }
+     ],
+     "viDu": {
+      "dapAn": "F",
+      "dong": [
+       [
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "喝",
+         "hē"
+        ],
+        [
+         "水",
+         "shuǐ"
+        ],
+        [
+         "吗",
+         "ma"
+        ],
+        [
+         "？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 21,
+       "dapAn": "A",
+       "dong": [
+        [
+         [
+          "昨天",
+          "Zuótiān"
+         ],
+         [
+          "下午",
+          "xiàwǔ"
+         ],
+         [
+          "你",
+          "nǐ"
+         ],
+         [
+          "去",
+          "qù"
+         ],
+         [
+          "商店",
+          "shāngdiàn"
+         ],
+         [
+          "了",
+          "le"
+         ],
+         [
+          "吗",
+          "ma"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 22,
+       "dapAn": "B",
+       "dong": [
+        [
+         [
+          "我",
+          "Wǒ"
+         ],
+         [
+          "没",
+          "méi"
+         ],
+         [
+          "买",
+          "mǎi"
+         ],
+         [
+          "水果",
+          "shuǐguǒ"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "你",
+          "nǐ"
+         ],
+         [
+          "呢",
+          "ne"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 23,
+       "dapAn": "E",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "看见",
+          "kànjiàn"
+         ],
+         [
+          "小",
+          "Xiǎo"
+         ],
+         [
+          "王",
+          "Wáng"
+         ],
+         [
+          "了",
+          "le"
+         ],
+         [
+          "吗",
+          "ma"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 24,
+       "dapAn": "D",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "衣服",
+          "yīfu"
+         ],
+         [
+          "太",
+          "tài"
+         ],
+         [
+          "漂亮",
+          "piàoliang"
+         ],
+         [
+          "了",
+          "le"
+         ],
+         [
+          "！",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 25,
+       "dapAn": "C",
+       "dong": [
+        [
+         [
+          "这些",
+          "Zhèxiē"
+         ],
+         [
+          "东西",
+          "dōngxi"
+         ],
+         [
+          "是",
+          "shì"
+         ],
+         [
+          "王",
+          "Wáng"
+         ],
+         [
+          "老师",
+          "lǎoshī"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "吗",
+          "ma"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "dien-tu",
+     "huongDan": "Chọn từ điền vào chỗ trống",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "一点儿",
+         "yīdiǎnr"
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "不少",
+         "bùshǎo"
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "都",
+         "dōu"
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "名字",
+         "míngzi"
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "回来",
+         "huílai"
+        ]
+       ]
+      },
+      {
+       "ma": "F",
+       "chu": [
+        [
+         "看见",
+         "kànjiàn"
+        ]
+       ]
+      }
+     ],
+     "cau": [
+      {
+       "so": 26,
+       "dapAn": "B",
+       "dong": [
+        [
+         [
+          "你们",
+          "Nǐmen"
+         ],
+         [
+          "都",
+          "dōu"
+         ],
+         [
+          "来",
+          "lái"
+         ],
+         [
+          "我",
+          "wǒ"
+         ],
+         [
+          "家",
+          "jiā"
+         ],
+         [
+          "吃",
+          "chī"
+         ],
+         [
+          "饭",
+          "fàn"
+         ],
+         [
+          "吧",
+          "ba"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "我",
+          "wǒ"
+         ],
+         [
+          "做",
+          "zuò"
+         ],
+         [
+          "了",
+          "le"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "菜",
+          "cài"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 27,
+       "dapAn": "E",
+       "dong": [
+        [
+         [
+          "今天",
+          "Jīntiān"
+         ],
+         [
+          "星期",
+          "xīngqī"
+         ],
+         [
+          "五",
+          "wǔ"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "我",
+          "wǒ"
+         ],
+         [
+          "想",
+          "xiǎng"
+         ],
+         [
+          "看",
+          "kàn"
+         ],
+         [
+          "电影",
+          "diànyǐng"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "你",
+          "nǐ"
+         ],
+         [
+          "什么",
+          "shénme"
+         ],
+         [
+          "时候",
+          "shíhou"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 28,
+       "dapAn": "F",
+       "dong": [
+        [
+         [
+          "我",
+          "Wǒ"
+         ],
+         [
+          "没",
+          "méi"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "王",
+          "Wáng"
+         ],
+         [
+          "老师",
+          "lǎoshī"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "女朋友",
+          "nǚpéngyou"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "很",
+          "hěn"
+         ],
+         [
+          "漂亮",
+          "piàoliang"
+         ],
+         [
+          "吧",
+          "ba"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 29,
+       "dapAn": "C",
+       "dong": [
+        [
+         [
+          "张",
+          "Zhāng"
+         ],
+         [
+          "小姐",
+          "xiǎojiě"
+         ],
+         [
+          "住",
+          "zhù"
+         ],
+         [
+          "在",
+          "zài"
+         ],
+         [
+          "这儿",
+          "zhèr"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "小",
+          "xiǎo"
+         ],
+         [
+          "猫",
+          "māo"
+         ],
+         [
+          "和",
+          "hé"
+         ],
+         [
+          "小",
+          "xiǎo"
+         ],
+         [
+          "狗",
+          "gǒu"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "是",
+          "shì"
+         ],
+         [
+          "她",
+          "tā"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 30,
+       "dapAn": "A",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "吃",
+          "chī"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "太",
+          "tài"
+         ],
+         [
+          "少",
+          "shǎo"
+         ],
+         [
+          "了",
+          "le"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "多",
+          "duō"
+         ],
+         [
+          "吃",
+          "chī"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "吧",
+          "ba"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      }
+     ],
+     "viDu": {
+      "dapAn": "D",
+      "dong": [
+       [
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "叫",
+         "jiào"
+        ],
+        [
+         "什么",
+         "shénme"
+        ],
+        [
+         "__",
+         ""
+        ],
+        [
+         "？",
+         ""
+        ]
+       ]
+      ]
+     }
+    }
+   ],
+   "loiNghe": {}
+  }
+ },
+ "nguPhapHsk": [
+  "np-0002",
+  "np-0021"
+ ],
+ "canKiemTra": [
+  "Bản dịch tiếng Việt của hội thoại, ví dụ, giải thích là bản nháp của Claude, chưa có người duyệt.",
+  "Pinyin chép tay từ sách (đã đối chiếu tự động với từ điển); ghi chú biến điệu do máy sinh theo quy tắc.",
+  "Đáp án phần khởi động do Claude suy từ ảnh (sách không in đáp án)."
+ ]
+}

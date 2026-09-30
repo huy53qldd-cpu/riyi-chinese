@@ -1,0 +1,2276 @@
+{
+ "loai": "bai-co-ban",
+ "version": 1,
+ "cap": 1,
+ "bai": 12,
+ "capNhatLuc": "2026-09-30",
+ "nguon": "HSK标准教程 1 (HSK Standard Course 1), bài 12: hội thoại, âm thanh, bài tập chọn lọc.",
+ "ten": {
+  "trung": "明天天气怎么样",
+  "pinyin": [
+   "míng",
+   "tiān",
+   "tiān",
+   "qì",
+   "zěn",
+   "me",
+   "yàng"
+  ],
+  "viet": "Thời tiết ngày mai thế nào"
+ },
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": [
+   "khoi-dong-A",
+   "khoi-dong-B",
+   "khoi-dong-C",
+   "khoi-dong-D",
+   "khoi-dong-E",
+   "khoi-dong-F"
+  ],
+  "tu": [
+   {
+    "trung": "冷",
+    "pinyin": [
+     "lěng"
+    ],
+    "dapAn": "C"
+   },
+   {
+    "trung": "热",
+    "pinyin": [
+     "rè"
+    ],
+    "dapAn": "D"
+   },
+   {
+    "trung": "下雨",
+    "pinyin": [
+     "xià",
+     "yǔ"
+    ],
+    "dapAn": "B"
+   },
+   {
+    "trung": "水",
+    "pinyin": [
+     "shuǐ"
+    ],
+    "dapAn": "A"
+   },
+   {
+    "trung": "水果",
+    "pinyin": [
+     "shuǐ",
+     "guǒ"
+    ],
+    "ghiChuBienDieu": "水 đọc thành thanh 2 khi đứng trước thanh 3 (果).",
+    "dapAn": "F"
+   },
+   {
+    "trung": "医生",
+    "pinyin": [
+     "yī",
+     "shēng"
+    ],
+    "dapAn": "E"
+   }
+  ]
+ },
+ "hoiThoai": [
+  {
+   "so": 1,
+   "am": "12-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": {
+    "trung": "在路上",
+    "pinyin": [
+     "zài",
+     "lù",
+     "shang"
+    ],
+    "viet": "Trên đường"
+   },
+   "cau": [
+    {
+     "trung": "昨天北京的天气怎么样？",
+     "pinyin": [
+      "zuó",
+      "tiān",
+      "Běi",
+      "jīng",
+      "de",
+      "tiān",
+      "qì",
+      "zěn",
+      "me",
+      "yàng",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Thời tiết Bắc Kinh hôm qua thế nào?"
+    },
+    {
+     "trung": "太热了。",
+     "pinyin": [
+      "tài",
+      "rè",
+      "le",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Nóng quá."
+    },
+    {
+     "trung": "明天呢？明天天气怎么样？",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "ne",
+      "",
+      "míng",
+      "tiān",
+      "tiān",
+      "qì",
+      "zěn",
+      "me",
+      "yàng",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Còn ngày mai? Thời tiết ngày mai thế nào?"
+    },
+    {
+     "trung": "明天天气很好，不冷不热。",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "tiān",
+      "qì",
+      "hěn",
+      "hǎo",
+      "",
+      "bù",
+      "lěng",
+      "bù",
+      "rè",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (热). 很 đọc thành thanh 2 khi đứng trước thanh 3 (好).",
+     "nguoi": "B",
+     "viet": "Ngày mai thời tiết rất đẹp, không lạnh không nóng."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "天气",
+     "pinyin": [
+      "tiān",
+      "qì"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0208",
+     "capHsk": 1,
+     "viet": "thời tiết"
+    },
+    {
+     "trung": "怎么样",
+     "pinyin": [
+      "zěn",
+      "me",
+      "yàng"
+     ],
+     "tuLoai": "đại từ",
+     "idTuVung": "tu-0277",
+     "capHsk": 1,
+     "viet": "thế nào, ra sao"
+    },
+    {
+     "trung": "太",
+     "pinyin": [
+      "tài"
+     ],
+     "tuLoai": "phó từ",
+     "idTuVung": "tu-0203",
+     "capHsk": 1,
+     "viet": "quá; rất"
+    },
+    {
+     "trung": "热",
+     "pinyin": [
+      "rè"
+     ],
+     "tuLoai": "tính từ",
+     "idTuVung": "tu-0169",
+     "capHsk": 1,
+     "viet": "nóng"
+    },
+    {
+     "trung": "冷",
+     "pinyin": [
+      "lěng"
+     ],
+     "tuLoai": "tính từ",
+     "idTuVung": "tu-0109",
+     "capHsk": 1,
+     "viet": "lạnh"
+    }
+   ]
+  },
+  {
+   "so": 2,
+   "am": "12-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": {
+    "trung": "在健身房",
+    "pinyin": [
+     "zài",
+     "jiàn",
+     "shēn",
+     "fáng"
+    ],
+    "viet": "Ở phòng tập"
+   },
+   "cau": [
+    {
+     "trung": "今天会下雨吗？",
+     "pinyin": [
+      "jīn",
+      "tiān",
+      "huì",
+      "xià",
+      "yǔ",
+      "ma",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Hôm nay có mưa không?"
+    },
+    {
+     "trung": "今天不会下雨。",
+     "pinyin": [
+      "jīn",
+      "tiān",
+      "bù",
+      "huì",
+      "xià",
+      "yǔ",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (会).",
+     "nguoi": "B",
+     "viet": "Hôm nay sẽ không mưa."
+    },
+    {
+     "trung": "王小姐今天会来吗？",
+     "pinyin": [
+      "Wáng",
+      "xiǎo",
+      "jiě",
+      "jīn",
+      "tiān",
+      "huì",
+      "lái",
+      "ma",
+      ""
+     ],
+     "ghiChuBienDieu": "小 đọc thành thanh 2 khi đứng trước thanh 3 (姐).",
+     "nguoi": "A",
+     "viet": "Hôm nay cô Vương có đến không?"
+    },
+    {
+     "trung": "不会来，天气太冷了。",
+     "pinyin": [
+      "bù",
+      "huì",
+      "lái",
+      "",
+      "tiān",
+      "qì",
+      "tài",
+      "lěng",
+      "le",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (会).",
+     "nguoi": "B",
+     "viet": "Sẽ không đến, trời lạnh quá."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "下雨",
+     "pinyin": [
+      "xià",
+      "yǔ"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0226",
+     "capHsk": 1,
+     "viet": "trời mưa"
+    },
+    {
+     "trung": "小姐",
+     "pinyin": [
+      "xiǎo",
+      "jiě"
+     ],
+     "ghiChuBienDieu": "小 đọc thành thanh 2 khi đứng trước thanh 3 (姐).",
+     "tuLoai": "danh từ"
+    },
+    {
+     "trung": "来",
+     "pinyin": [
+      "lái"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0106",
+     "capHsk": 1,
+     "viet": "đến, tới"
+    }
+   ]
+  },
+  {
+   "so": 3,
+   "am": "12-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": {
+    "trung": "在病房",
+    "pinyin": [
+     "zài",
+     "bìng",
+     "fáng"
+    ],
+    "viet": "Trong phòng bệnh"
+   },
+   "cau": [
+    {
+     "trung": "你身体怎么样？",
+     "pinyin": [
+      "nǐ",
+      "shēn",
+      "tǐ",
+      "zěn",
+      "me",
+      "yàng",
+      ""
+     ],
+     "ghiChuBienDieu": "体 đọc thành thanh 2 khi đứng trước thanh 3 (怎).",
+     "nguoi": "A",
+     "viet": "Sức khoẻ anh thế nào?"
+    },
+    {
+     "trung": "我身体不太好。天气太热了，不爱吃饭。",
+     "pinyin": [
+      "wǒ",
+      "shēn",
+      "tǐ",
+      "bù",
+      "tài",
+      "hǎo",
+      "",
+      "tiān",
+      "qì",
+      "tài",
+      "rè",
+      "le",
+      "",
+      "bù",
+      "ài",
+      "chī",
+      "fàn",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (太). 不 đọc thành bú vì đứng trước thanh 4 (爱).",
+     "nguoi": "B",
+     "viet": "Tôi không khoẻ lắm. Trời nóng quá, không muốn ăn."
+    },
+    {
+     "trung": "你多吃些水果，多喝水。",
+     "pinyin": [
+      "nǐ",
+      "duō",
+      "chī",
+      "xiē",
+      "shuǐ",
+      "guǒ",
+      "",
+      "duō",
+      "hē",
+      "shuǐ",
+      ""
+     ],
+     "ghiChuBienDieu": "水 đọc thành thanh 2 khi đứng trước thanh 3 (果).",
+     "nguoi": "A",
+     "viet": "Anh ăn nhiều hoa quả, uống nhiều nước vào."
+    },
+    {
+     "trung": "谢谢你，医生。",
+     "pinyin": [
+      "xiè",
+      "xie",
+      "nǐ",
+      "",
+      "yī",
+      "shēng",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Cảm ơn bác sĩ."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "身体",
+     "pinyin": [
+      "shēn",
+      "tǐ"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0430",
+     "capHsk": 2,
+     "viet": "cơ thể; sức khoẻ"
+    },
+    {
+     "trung": "爱",
+     "pinyin": [
+      "ài"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0001",
+     "capHsk": 1,
+     "viet": "yêu, yêu thích"
+    },
+    {
+     "trung": "些",
+     "pinyin": [
+      "xiē"
+     ],
+     "tuLoai": "lượng từ",
+     "idTuVung": "tu-0239",
+     "capHsk": 1,
+     "viet": "một ít, một vài"
+    },
+    {
+     "trung": "水果",
+     "pinyin": [
+      "shuǐ",
+      "guǒ"
+     ],
+     "ghiChuBienDieu": "水 đọc thành thanh 2 khi đứng trước thanh 3 (果).",
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0194",
+     "capHsk": 1,
+     "viet": "hoa quả, trái cây"
+    },
+    {
+     "trung": "水",
+     "pinyin": [
+      "shuǐ"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0193",
+     "capHsk": 1,
+     "viet": "nước"
+    }
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": {
+    "trung": "疑问代词“怎么样”",
+    "viet": "Đại từ nghi vấn 怎么样"
+   },
+   "giaiThich": "怎么样 dùng để hỏi tình hình, trạng thái (thế nào).",
+   "viDu": [
+    {
+     "trung": "你的汉语怎么样？",
+     "pinyin": [
+      "nǐ",
+      "de",
+      "Hàn",
+      "yǔ",
+      "zěn",
+      "me",
+      "yàng",
+      ""
+     ],
+     "ghiChuBienDieu": "语 đọc thành thanh 2 khi đứng trước thanh 3 (怎).",
+     "viet": "Tiếng Trung của bạn thế nào?"
+    },
+    {
+     "trung": "你妈妈身体怎么样？",
+     "pinyin": [
+      "nǐ",
+      "mā",
+      "ma",
+      "shēn",
+      "tǐ",
+      "zěn",
+      "me",
+      "yàng",
+      ""
+     ],
+     "ghiChuBienDieu": "体 đọc thành thanh 2 khi đứng trước thanh 3 (怎).",
+     "viet": "Sức khoẻ mẹ bạn thế nào?"
+    },
+    {
+     "trung": "明天天气怎么样？",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "tiān",
+      "qì",
+      "zěn",
+      "me",
+      "yàng",
+      ""
+     ],
+     "viet": "Thời tiết ngày mai thế nào?"
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "主谓谓语句",
+    "viet": "Câu vị ngữ chủ vị"
+   },
+   "mau": "Chủ ngữ cả câu + (chủ ngữ nhỏ + vị ngữ nhỏ)",
+   "giaiThich": "Vị ngữ của câu là một cụm chủ–vị. Chủ ngữ nhỏ thường là một phần của, hoặc liên quan đến, chủ ngữ cả câu (giống tiếng Việt: 'Tôi sức khoẻ không tốt lắm').",
+   "viDu": [
+    {
+     "trung": "我身体不太好。",
+     "pinyin": [
+      "wǒ",
+      "shēn",
+      "tǐ",
+      "bù",
+      "tài",
+      "hǎo",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (太).",
+     "viet": "Tôi sức khoẻ không tốt lắm."
+    },
+    {
+     "trung": "明天天气很好。",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "tiān",
+      "qì",
+      "hěn",
+      "hǎo",
+      ""
+     ],
+     "ghiChuBienDieu": "很 đọc thành thanh 2 khi đứng trước thanh 3 (好).",
+     "viet": "Ngày mai thời tiết rất đẹp."
+    },
+    {
+     "trung": "你身体怎么样？",
+     "pinyin": [
+      "nǐ",
+      "shēn",
+      "tǐ",
+      "zěn",
+      "me",
+      "yàng",
+      ""
+     ],
+     "ghiChuBienDieu": "体 đọc thành thanh 2 khi đứng trước thanh 3 (怎).",
+     "viet": "Bạn sức khoẻ thế nào?"
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "程度副词“太”",
+    "viet": "Phó từ mức độ 太"
+   },
+   "mau": "太 + tính từ + 了；不太 + tính từ",
+   "giaiThich": "太 chỉ mức độ cao (quá). Câu có 太 thường có 了 ở cuối; câu phủ định (不太) thì không dùng 了.",
+   "viDu": [
+    {
+     "trung": "太热了。",
+     "pinyin": [
+      "tài",
+      "rè",
+      "le",
+      ""
+     ],
+     "viet": "Nóng quá."
+    },
+    {
+     "trung": "天气太冷了。",
+     "pinyin": [
+      "tiān",
+      "qì",
+      "tài",
+      "lěng",
+      "le",
+      ""
+     ],
+     "viet": "Trời lạnh quá."
+    },
+    {
+     "trung": "我身体不太好。",
+     "pinyin": [
+      "wǒ",
+      "shēn",
+      "tǐ",
+      "bù",
+      "tài",
+      "hǎo",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (太).",
+     "viet": "Tôi không khoẻ lắm."
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "能愿动词“会”(2)",
+    "viet": "Động từ năng nguyện 会 (2)"
+   },
+   "giaiThich": "会 còn chỉ khả năng một việc sẽ xảy ra (sẽ, có thể sẽ).",
+   "viDu": [
+    {
+     "trung": "爸爸八点前会回家吗？会。",
+     "pinyin": [
+      "bà",
+      "ba",
+      "bā",
+      "diǎn",
+      "qián",
+      "huì",
+      "huí",
+      "jiā",
+      "ma",
+      "",
+      "huì",
+      ""
+     ],
+     "viet": "Trước tám giờ bố có về nhà không? Có."
+    },
+    {
+     "trung": "明天她会来吗？她会来。",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "tā",
+      "huì",
+      "lái",
+      "ma",
+      "",
+      "tā",
+      "huì",
+      "lái",
+      ""
+     ],
+     "viet": "Ngày mai cô ấy có đến không? Cô ấy sẽ đến."
+    },
+    {
+     "trung": "今天会下雨吗？今天不会下雨。",
+     "pinyin": [
+      "jīn",
+      "tiān",
+      "huì",
+      "xià",
+      "yǔ",
+      "ma",
+      "",
+      "jīn",
+      "tiān",
+      "bù",
+      "huì",
+      "xià",
+      "yǔ",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (会).",
+     "viet": "Hôm nay có mưa không? Hôm nay sẽ không mưa."
+    }
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo nội dung hội thoại",
+   "cau": [
+    {
+     "trung": "昨天北京的天气怎么样？",
+     "pinyin": [
+      "zuó",
+      "tiān",
+      "Běi",
+      "jīng",
+      "de",
+      "tiān",
+      "qì",
+      "zěn",
+      "me",
+      "yàng",
+      ""
+     ]
+    },
+    {
+     "trung": "明天天气怎么样？",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "tiān",
+      "qì",
+      "zěn",
+      "me",
+      "yàng",
+      ""
+     ]
+    },
+    {
+     "trung": "今天会下雨吗？",
+     "pinyin": [
+      "jīn",
+      "tiān",
+      "huì",
+      "xià",
+      "yǔ",
+      "ma",
+      ""
+     ]
+    },
+    {
+     "trung": "王小姐会来吗？",
+     "pinyin": [
+      "Wáng",
+      "xiǎo",
+      "jiě",
+      "huì",
+      "lái",
+      "ma",
+      ""
+     ],
+     "ghiChuBienDieu": "小 đọc thành thanh 2 khi đứng trước thanh 3 (姐)."
+    },
+    {
+     "trung": "他的身体怎么样？",
+     "pinyin": [
+      "tā",
+      "de",
+      "shēn",
+      "tǐ",
+      "zěn",
+      "me",
+      "yàng",
+      ""
+     ],
+     "ghiChuBienDieu": "体 đọc thành thanh 2 khi đứng trước thanh 3 (怎)."
+    }
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "doc-am",
+   "am": "12-4",
+   "tieuDe": "Phối thanh từ ba âm tiết (1): bắt đầu bằng thanh 1",
+   "amTiet": [
+    "xīngqī yī",
+    "bīngjīlíng",
+    "xīngqī wǔ",
+    "xīngqī liù",
+    "qīngjiégōng",
+    "zhuōmícáng",
+    "chī píngguǒ",
+    "Jiānádà",
+    "gāojiǎobēi",
+    "duī xuěrén",
+    "huā yǔsǎn",
+    "chī mǐfàn",
+    "hāmìguā",
+    "jīqìrén",
+    "bōlànggǔ",
+    "yīwùshì"
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   {
+    "trung": "天",
+    "pinyin": [
+     "tiān"
+    ],
+    "giaiThich": "Nghĩa gốc là đỉnh đầu, sau chỉ bầu trời, đối lại với 地 (đất)."
+   },
+   {
+    "trung": "气",
+    "pinyin": [
+     "qì"
+    ],
+    "giaiThich": "Dáng giống chữ 三, chỉ chất khí không có hình dạng, thể tích nhất định, tự do lan toả."
+   },
+   {
+    "trung": "雨",
+    "pinyin": [
+     "yǔ"
+    ],
+    "giaiThich": "Dáng như giọt nước rơi từ trời xuống, chỉ hiện tượng tự nhiên là mưa."
+   }
+  ],
+  "boThu": [
+   {
+    "bo": "女",
+    "ten": "女字旁",
+    "pinyin": "nǚ zì páng",
+    "giaiThich": "Bộ nữ: thường liên quan đến phụ nữ.",
+    "viDu": [
+     "姐",
+     "妈"
+    ]
+   },
+   {
+    "bo": "饣",
+    "ten": "食字旁",
+    "pinyin": "shí zì páng",
+    "giaiThich": "Bộ thực: thường liên quan đến đồ ăn.",
+    "viDu": [
+     "饭",
+     "饮"
+    ]
+   }
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Nhận xét bằng 太……了 và hỏi thời tiết",
+  "viDu": [
+   {
+    "trung": "她的汉语怎么样？",
+    "pinyin": [
+     "tā",
+     "de",
+     "Hàn",
+     "yǔ",
+     "zěn",
+     "me",
+     "yàng",
+     ""
+    ],
+    "ghiChuBienDieu": "语 đọc thành thanh 2 khi đứng trước thanh 3 (怎).",
+    "nguoi": "A",
+    "viet": "Tiếng Trung của cô ấy thế nào?"
+   },
+   {
+    "trung": "不太好 / 太好了。",
+    "pinyin": [
+     "bù",
+     "tài",
+     "hǎo",
+     "",
+     "",
+     "",
+     "tài",
+     "hǎo",
+     "le",
+     ""
+    ],
+    "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (太).",
+    "nguoi": "B",
+    "viet": "Không giỏi lắm / Giỏi quá."
+   },
+   {
+    "trung": "明天会下雨吗？",
+    "pinyin": [
+     "míng",
+     "tiān",
+     "huì",
+     "xià",
+     "yǔ",
+     "ma",
+     ""
+    ],
+    "nguoi": "A",
+    "viet": "Ngày mai có mưa không?"
+   },
+   {
+    "trung": "明天不会下雨。",
+    "pinyin": [
+     "míng",
+     "tiān",
+     "bù",
+     "huì",
+     "xià",
+     "yǔ",
+     ""
+    ],
+    "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (会).",
+    "nguoi": "B",
+    "viet": "Ngày mai sẽ không mưa."
+   }
+  ],
+  "tuBoSung": [
+   {
+    "trung": "好看",
+    "pinyin": [
+     "hǎo",
+     "kàn"
+    ],
+    "tuLoai": "đẹp, hay (phim)",
+    "idTuVung": "tu-0074",
+    "capHsk": 1,
+    "viet": "đẹp, dễ nhìn; hay (khi xem)"
+   }
+  ]
+ },
+ "tuBoSung2025": [
+  {
+   "trung": "雪",
+   "pinyin": [
+    "xuě"
+   ],
+   "idTuVung": "tu-0248",
+   "capHsk": 1,
+   "viet": "tuyết"
+  },
+  {
+   "trung": "病",
+   "pinyin": [
+    "bìng"
+   ],
+   "idTuVung": "tu-0012",
+   "capHsk": 1,
+   "viet": "bệnh; bị bệnh"
+  },
+  {
+   "trung": "生病",
+   "pinyin": [
+    "shēng",
+    "bìng"
+   ],
+   "idTuVung": "tu-0182",
+   "capHsk": 1,
+   "viet": "bị ốm"
+  },
+  {
+   "trung": "看病",
+   "pinyin": [
+    "kàn",
+    "bìng"
+   ],
+   "idTuVung": "tu-0100",
+   "capHsk": 1,
+   "viet": "đi khám bệnh"
+  },
+  {
+   "trung": "非常",
+   "pinyin": [
+    "fēi",
+    "cháng"
+   ],
+   "idTuVung": "tu-0053",
+   "capHsk": 1,
+   "viet": "rất, vô cùng"
+  },
+  {
+   "trung": "真",
+   "pinyin": [
+    "zhēn"
+   ],
+   "idTuVung": "tu-0283",
+   "capHsk": 1,
+   "viet": "thật, thật là"
+  },
+  {
+   "trung": "有一点儿",
+   "pinyin": [
+    "yǒu",
+    "yī",
+    "diǎn",
+    "r"
+   ],
+   "idTuVung": "tu-0266",
+   "capHsk": 1,
+   "viet": "hơi, có chút (thường chỉ điều không vừa ý)"
+  }
+ ],
+ "baiTap": {
+  "nghe": {
+   "nhom": [
+    {
+     "tieuDe": "第一部分",
+     "kieu": "dung-sai-hinh",
+     "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+     "viDu": [
+      {
+       "hinh": "bai-12/bt-p89-1.webp",
+       "chu": [
+        [
+         "很",
+         "hěn"
+        ],
+        [
+         "高兴",
+         "gāoxìng"
+        ]
+       ],
+       "dapAn": "dung"
+      },
+      {
+       "hinh": "bai-12/bt-p89-2.webp",
+       "chu": [
+        [
+         "看",
+         "kàn"
+        ],
+        [
+         "电影",
+         "diànyǐng"
+        ]
+       ],
+       "dapAn": "sai"
+      }
+     ],
+     "cau": [
+      {
+       "so": 1,
+       "hinh": "bai-12/bt-p89-3.webp",
+       "loi": [
+        "水果"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: đống rau củ, không phải hoa quả.",
+       "chacChan": false
+      },
+      {
+       "so": 2,
+       "hinh": "bai-12/bt-p89-4.webp",
+       "loi": [
+        "下雨"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: phong cảnh có mặt trời chiếu."
+      },
+      {
+       "so": 3,
+       "hinh": "bai-12/bt-p89-5.webp",
+       "loi": [
+        "水"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: bình và cốc sữa.",
+       "chacChan": false
+      },
+      {
+       "so": 4,
+       "hinh": "bai-12/bt-p89-6.webp",
+       "loi": [
+        "热"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: cảnh tuyết rơi."
+      },
+      {
+       "so": 5,
+       "hinh": "bai-12/bt-p89-7.webp",
+       "loi": [
+        "身体"
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: cơ thể khoẻ mạnh.",
+       "chacChan": false
+      }
+     ]
+    },
+    {
+     "tieuDe": "第二部分",
+     "kieu": "ghep-hinh",
+     "huongDan": "Nghe hội thoại, chọn tranh khớp",
+     "luaChon": [
+      {
+       "ma": "A",
+       "hinh": "bai-12/bt-p90-1.webp"
+      },
+      {
+       "ma": "B",
+       "hinh": "bai-12/bt-p90-2.webp"
+      },
+      {
+       "ma": "C",
+       "hinh": "bai-12/bt-p90-3.webp"
+      },
+      {
+       "ma": "D",
+       "hinh": "bai-12/bt-p90-4.webp"
+      },
+      {
+       "ma": "E",
+       "hinh": "bai-12/bt-p90-5.webp"
+      },
+      {
+       "ma": "F",
+       "hinh": "bai-12/bt-p90-6.webp"
+      }
+     ],
+     "viDu": {
+      "loi": [
+       "女：你好！",
+       "男：你好！很高兴认识你。"
+      ],
+      "dapAn": "C",
+      "dong": [
+       [
+        [
+         "女：你好！",
+         ""
+        ]
+       ],
+       [
+        [
+         "男：你好！很高兴认识你。",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 6,
+       "loi": [
+        "今天天气不好，会下雨吗？",
+        "下午会下雨。"
+       ],
+       "dapAn": "E",
+       "lyDo": "Tranh E: thành phố trời nhiều mây."
+      },
+      {
+       "so": 7,
+       "loi": [
+        "今天天气太热了。",
+        "是啊，你多喝水。"
+       ],
+       "dapAn": "B",
+       "lyDo": "Tranh B: chàng trai đang uống nước."
+      },
+      {
+       "so": 8,
+       "loi": [
+        "明天天气很好，你去学校吗？",
+        "不去，明天我去医院。"
+       ],
+       "dapAn": "F",
+       "lyDo": "Tranh F: phòng bệnh viện."
+      },
+      {
+       "so": 9,
+       "loi": [
+        "你身体怎么样？",
+        "不太好，不爱吃饭。"
+       ],
+       "dapAn": "D",
+       "lyDo": "Tranh D: bác sĩ khám cho bệnh nhân.",
+       "chacChan": false
+      },
+      {
+       "so": 10,
+       "loi": [
+        "大卫今天会来吗？",
+        "他身体不好，不会来。"
+       ],
+       "dapAn": "A",
+       "lyDo": "Tranh A: người ốm nằm cạnh lọ thuốc.",
+       "chacChan": false
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "chon-chu",
+     "huongDan": "Nghe câu, trả lời câu hỏi",
+     "viDu": {
+      "loi": [
+       "下午我去商店，我想买一些水果。",
+       "问：她下午去哪里？"
+      ],
+      "luaChon": [
+       {
+        "ma": "A",
+        "chu": [
+         [
+          "商店",
+          "shāngdiàn"
+         ]
+        ]
+       },
+       {
+        "ma": "B",
+        "chu": [
+         [
+          "医院",
+          "yīyuàn"
+         ]
+        ]
+       },
+       {
+        "ma": "C",
+        "chu": [
+         [
+          "学校",
+          "xuéxiào"
+         ]
+        ]
+       }
+      ],
+      "dapAn": "A",
+      "dong": [
+       [
+        [
+         "下午我去商店，我想买一些水果。",
+         ""
+        ]
+       ],
+       [
+        [
+         "问：她下午去哪里？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 11,
+       "loi": [
+        "星期五天气很好，星期六会下雨。",
+        "问：星期五天气怎么样？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "很好",
+           "hěn hǎo"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "不好",
+           "bù hǎo"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "下雨",
+           "xià yǔ"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "A"
+      },
+      {
+       "so": 12,
+       "loi": [
+        "今天太冷了，我不想去了。",
+        "问：今天天气怎么样？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "很好",
+           "hěn hǎo"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "太冷了",
+           "tài lěng le"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "太热了",
+           "tài rè le"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "B"
+      },
+      {
+       "so": 13,
+       "loi": [
+        "明天上午不会下雨，下午会下雨。",
+        "问：明天什么时候会下雨？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "上午",
+           "shàngwǔ"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "中午",
+           "zhōngwǔ"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "下午",
+           "xiàwǔ"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "C"
+      },
+      {
+       "so": 14,
+       "loi": [
+        "王小姐八点前会来。",
+        "问：王小姐什么时候会来？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "八点",
+           "bā diǎn"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "八点前",
+           "bā diǎn qián"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "八点十分",
+           "bā diǎn shí fēn"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "B"
+      },
+      {
+       "so": 15,
+       "loi": [
+        "我爸爸这个星期身体不太好。",
+        "问：他爸爸这个星期身体怎么样？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "很好",
+           "hěn hǎo"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "不太好",
+           "bù tài hǎo"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "太好了",
+           "tài hǎo le"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "B"
+      }
+     ]
+    }
+   ],
+   "loiNghe": {
+    "1": [
+     "水果"
+    ],
+    "2": [
+     "下雨"
+    ],
+    "3": [
+     "水"
+    ],
+    "4": [
+     "热"
+    ],
+    "5": [
+     "身体"
+    ],
+    "6": [
+     "今天天气不好，会下雨吗？",
+     "下午会下雨。"
+    ],
+    "7": [
+     "今天天气太热了。",
+     "是啊，你多喝水。"
+    ],
+    "8": [
+     "明天天气很好，你去学校吗？",
+     "不去，明天我去医院。"
+    ],
+    "9": [
+     "你身体怎么样？",
+     "不太好，不爱吃饭。"
+    ],
+    "10": [
+     "大卫今天会来吗？",
+     "他身体不好，不会来。"
+    ],
+    "11": [
+     "星期五天气很好，星期六会下雨。",
+     "问：星期五天气怎么样？"
+    ],
+    "12": [
+     "今天太冷了，我不想去了。",
+     "问：今天天气怎么样？"
+    ],
+    "13": [
+     "明天上午不会下雨，下午会下雨。",
+     "问：明天什么时候会下雨？"
+    ],
+    "14": [
+     "王小姐八点前会来。",
+     "问：王小姐什么时候会来？"
+    ],
+    "15": [
+     "我爸爸这个星期身体不太好。",
+     "问：他爸爸这个星期身体怎么样？"
+    ]
+   },
+   "am": "bt-12-1"
+  },
+  "doc": {
+   "nhom": [
+    {
+     "tieuDe": "第一部分",
+     "kieu": "dung-sai-hinh-chu",
+     "huongDan": "Xem tranh, từ có khớp tranh không",
+     "viDu": [
+      {
+       "hinh": "bai-12/bt-p92-1.webp",
+       "chu": [
+        [
+         "电视",
+         "diànshì"
+        ]
+       ],
+       "dapAn": "sai"
+      },
+      {
+       "hinh": "bai-12/bt-p92-2.webp",
+       "chu": [
+        [
+         "飞机",
+         "fēijī"
+        ]
+       ],
+       "dapAn": "dung"
+      }
+     ],
+     "cau": [
+      {
+       "so": 16,
+       "hinh": "bai-12/bt-p92-3.webp",
+       "chu": [
+        [
+         "水",
+         "shuǐ"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: cốc nước bắn tung."
+      },
+      {
+       "so": 17,
+       "hinh": "bai-12/bt-p92-4.webp",
+       "chu": [
+        [
+         "下雨",
+         "xià yǔ"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: bầu trời xám, mưa trên mặt nước.",
+       "chacChan": false
+      },
+      {
+       "so": 18,
+       "hinh": "bai-12/bt-p92-5.webp",
+       "chu": [
+        [
+         "水果",
+         "shuǐguǒ"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: giỏ hoa quả."
+      },
+      {
+       "so": 19,
+       "hinh": "bai-12/bt-p92-6.webp",
+       "chu": [
+        [
+         "小姐",
+         "xiǎojiě"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: một chàng trai."
+      },
+      {
+       "so": 20,
+       "hinh": "bai-12/bt-p92-7.webp",
+       "chu": [
+        [
+         "医生",
+         "yīshēng"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: bác sĩ mặc áo blouse."
+      }
+     ]
+    },
+    {
+     "tieuDe": "第二部分",
+     "kieu": "ghep-cau",
+     "huongDan": "Chọn câu trả lời đúng",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "不",
+         "Bù"
+        ],
+        [
+         "会",
+         "huì"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "多",
+         "Duō"
+        ],
+        [
+         "喝",
+         "hē"
+        ],
+        [
+         "水",
+         "shuǐ"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "多",
+         "duō"
+        ],
+        [
+         "吃",
+         "chī"
+        ],
+        [
+         "水果",
+         "shuǐguǒ"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "她",
+         "Tā"
+        ],
+        [
+         "很",
+         "hěn"
+        ],
+        [
+         "好",
+         "hǎo"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "谢谢",
+         "xièxie"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "太",
+         "Tài"
+        ],
+        [
+         "热",
+         "rè"
+        ],
+        [
+         "了",
+         "le"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "我",
+         "wǒ"
+        ],
+        [
+         "一会儿",
+         "yīhuìr"
+        ],
+        [
+         "去",
+         "qù"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "不",
+         "Bù"
+        ],
+        [
+         "冷",
+         "lěng"
+        ],
+        [
+         "不",
+         "bù"
+        ],
+        [
+         "热",
+         "rè"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "F",
+       "chu": [
+        [
+         "好",
+         "Hǎo"
+        ],
+        [
+         "的",
+         "de"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "谢谢",
+         "xièxie"
+        ],
+        [
+         "！",
+         ""
+        ]
+       ]
+      }
+     ],
+     "viDu": {
+      "dapAn": "F",
+      "dong": [
+       [
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "喝",
+         "hē"
+        ],
+        [
+         "水",
+         "shuǐ"
+        ],
+        [
+         "吗",
+         "ma"
+        ],
+        [
+         "？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 21,
+       "dapAn": "A",
+       "dong": [
+        [
+         [
+          "下午",
+          "Xiàwǔ"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "不",
+          "bu"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "下",
+          "xià"
+         ],
+         [
+          "雨",
+          "yǔ"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 22,
+       "dapAn": "E",
+       "dong": [
+        [
+         [
+          "昨天",
+          "Zuótiān"
+         ],
+         [
+          "天气",
+          "tiānqì"
+         ],
+         [
+          "怎么样",
+          "zěnmeyàng"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 23,
+       "dapAn": "C",
+       "dong": [
+        [
+         [
+          "王",
+          "Wáng"
+         ],
+         [
+          "小姐",
+          "xiǎojiě"
+         ],
+         [
+          "身体",
+          "shēntǐ"
+         ],
+         [
+          "怎么样",
+          "zěnmeyàng"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 24,
+       "dapAn": "D",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "什么",
+          "shénme"
+         ],
+         [
+          "时候",
+          "shíhou"
+         ],
+         [
+          "去",
+          "qù"
+         ],
+         [
+          "学校",
+          "xuéxiào"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 25,
+       "dapAn": "B",
+       "dong": [
+        [
+         [
+          "医生",
+          "Yīshēng"
+         ],
+         [
+          "说",
+          "shuō"
+         ],
+         [
+          "什么",
+          "shénme"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "dien-tu",
+     "huongDan": "Chọn từ điền vào chỗ trống",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "太",
+         "tài"
+        ],
+        [
+         "……",
+         ""
+        ],
+        [
+         "了",
+         "le"
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "多",
+         "duō"
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "爱",
+         "ài"
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "名字",
+         "míngzi"
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "些",
+         "xiē"
+        ]
+       ]
+      },
+      {
+       "ma": "F",
+       "chu": [
+        [
+         "怎么样",
+         "zěnmeyàng"
+        ]
+       ]
+      }
+     ],
+     "cau": [
+      {
+       "so": 26,
+       "dapAn": "F",
+       "dong": [
+        [
+         [
+          "北京",
+          "Běijīng"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "天气",
+          "tiānqì"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 27,
+       "dapAn": "B",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "喝",
+          "hē"
+         ],
+         [
+          "水",
+          "shuǐ"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "天气",
+          "tiānqì"
+         ],
+         [
+          "太",
+          "tài"
+         ],
+         [
+          "热",
+          "rè"
+         ],
+         [
+          "了",
+          "le"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 28,
+       "dapAn": "A",
+       "dong": [
+        [
+         [
+          "他们",
+          "Tāmen"
+         ],
+         [
+          "不",
+          "bù"
+         ],
+         [
+          "想",
+          "xiǎng"
+         ],
+         [
+          "住",
+          "zhù"
+         ],
+         [
+          "这儿",
+          "zhèr"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "这儿",
+          "zhèr"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "冷",
+          "lěng"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 29,
+       "dapAn": "C",
+       "dong": [
+        [
+         [
+          "这个",
+          "Zhège"
+         ],
+         [
+          "星期",
+          "xīngqī"
+         ],
+         [
+          "我",
+          "wǒ"
+         ],
+         [
+          "身体",
+          "shēntǐ"
+         ],
+         [
+          "不",
+          "bù"
+         ],
+         [
+          "太",
+          "tài"
+         ],
+         [
+          "好",
+          "hǎo"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "不",
+          "bù"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "吃",
+          "chī"
+         ],
+         [
+          "饭",
+          "fàn"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 30,
+       "dapAn": "E",
+       "dong": [
+        [
+         [
+          "天气",
+          "Tiānqì"
+         ],
+         [
+          "很",
+          "hěn"
+         ],
+         [
+          "热",
+          "rè"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "你",
+          "nǐ"
+         ],
+         [
+          "多",
+          "duō"
+         ],
+         [
+          "吃",
+          "chī"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "水果",
+          "shuǐguǒ"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      }
+     ],
+     "viDu": {
+      "dapAn": "D",
+      "dong": [
+       [
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "叫",
+         "jiào"
+        ],
+        [
+         "什么",
+         "shénme"
+        ],
+        [
+         "__",
+         ""
+        ],
+        [
+         "？",
+         ""
+        ]
+       ]
+      ]
+     }
+    }
+   ],
+   "loiNghe": {}
+  }
+ },
+ "nguPhapHsk": [
+  "np-0006",
+  "np-0028",
+  "np-0011"
+ ],
+ "canKiemTra": [
+  "Bản dịch tiếng Việt của hội thoại, ví dụ, giải thích là bản nháp của Claude, chưa có người duyệt.",
+  "Pinyin chép tay từ sách (đã đối chiếu tự động với từ điển); ghi chú biến điệu do máy sinh theo quy tắc.",
+  "Đáp án phần khởi động do Claude suy từ ảnh (sách không in đáp án)."
+ ]
+}

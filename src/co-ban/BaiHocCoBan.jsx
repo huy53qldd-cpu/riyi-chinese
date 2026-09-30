@@ -136,7 +136,7 @@ function BuoiHoiThoai({ bai }) {
   const nhomKhoiDong = kd && {
     tieuDe: "热身",
     kieu: "ghep-hinh",
-    luaChon: kd.anh.map((ten, i) => ({ ma: "ABCDEF"[i], hinh: `bai-${String(bai.bai).padStart(2, "0")}/${ten}.webp` })),
+    luaChon: kd.anh.map((ten, i) => ({ ma: "ABCDEFGH"[i], hinh: `bai-${String(bai.bai).padStart(2, "0")}/${ten}.webp` })),
     cau: kd.tu.map((t, i) => ({ so: i + 1, dong: [amTiet(t).map((a) => [a.chu, a.pinyin])], dapAn: t.dapAn })),
   };
 

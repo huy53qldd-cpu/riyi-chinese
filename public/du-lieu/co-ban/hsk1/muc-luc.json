@@ -199,7 +199,7 @@
     "jǐ",
     "diǎn"
    ],
-   "daCo": false
+   "daCo": true
   },
   {
    "so": 12,
@@ -215,7 +215,7 @@
     "me",
     "yàng"
    ],
-   "daCo": false
+   "daCo": true
   },
   {
    "so": 13,
@@ -232,7 +232,7 @@
     "cài",
     "ne"
    ],
-   "daCo": false
+   "daCo": true
   },
   {
    "so": 14,
@@ -248,7 +248,7 @@
     "yī",
     "fu"
    ],
-   "daCo": false
+   "daCo": true
   },
   {
    "so": 15,
@@ -264,7 +264,7 @@
     "lái",
     "de"
    ],
-   "daCo": false
+   "daCo": true
   }
  ]
 }

@@ -1,0 +1,478 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 11 (trang PDF 101–108). Khởi động của sách ghi giờ bằng số (5:00…) và vẽ 7 đồng hồ A–G; app ghi giờ bằng chữ Hán để luyện cách đọc. Đáp án suy từ kim đồng hồ; đồng hồ C khó nhìn nên chọn theo loại trừ. Bản dịch Việt là bản nháp.",
+ "bai": 11,
+ "ten": [
+  "现在几点",
+  "xiàn zài jǐ diǎn",
+  "Bây giờ là mấy giờ"
+ ],
+ "trangPdf": [
+  101,
+  108
+ ],
+ "khoiDong": {
+  "tieuDe": "Chọn đồng hồ đúng với mỗi giờ",
+  "anh": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G"
+  ],
+  "tu": [
+   [
+    "五点",
+    "wǔ diǎn",
+    "D"
+   ],
+   [
+    "两点",
+    "liǎng diǎn",
+    "B"
+   ],
+   [
+    "九点四十五分",
+    "jiǔ diǎn sì shí wǔ fēn",
+    "F"
+   ],
+   [
+    "十二点",
+    "shí èr diǎn",
+    "A"
+   ],
+   [
+    "三点零五分",
+    "sān diǎn líng wǔ fēn",
+    "C"
+   ],
+   [
+    "六点三十分",
+    "liù diǎn sān shí fēn",
+    "E"
+   ],
+   [
+    "十点十分",
+    "shí diǎn shí fēn",
+    "G"
+   ]
+  ]
+ },
+ "hoiThoai": [
+  {
+   "am": "11-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": [
+    "在图书馆",
+    "zài tú shū guǎn",
+    "Ở thư viện"
+   ],
+   "cau": [
+    [
+     "A",
+     "现在几点？",
+     "xiàn zài jǐ diǎn",
+     "Bây giờ là mấy giờ?"
+    ],
+    [
+     "B",
+     "现在十点十分。",
+     "xiàn zài shí diǎn shí fēn",
+     "Bây giờ là mười giờ mười phút."
+    ],
+    [
+     "A",
+     "中午几点吃饭？",
+     "zhōng wǔ jǐ diǎn chī fàn",
+     "Buổi trưa mấy giờ ăn cơm?"
+    ],
+    [
+     "B",
+     "十二点吃饭。",
+     "shí èr diǎn chī fàn",
+     "Mười hai giờ ăn cơm."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "现在",
+     "xiàn zài",
+     "danh từ"
+    ],
+    [
+     "点",
+     "diǎn",
+     "lượng từ"
+    ],
+    [
+     "分",
+     "fēn",
+     "lượng từ"
+    ],
+    [
+     "中午",
+     "zhōng wǔ",
+     "danh từ"
+    ],
+    [
+     "吃饭",
+     "chī fàn",
+     "động từ"
+    ]
+   ]
+  },
+  {
+   "am": "11-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": [
+    "在家",
+    "zài jiā",
+    "Ở nhà"
+   ],
+   "cau": [
+    [
+     "A",
+     "爸爸什么时候回家？",
+     "bà ba shén me shí hou huí jiā",
+     "Khi nào bố về nhà?"
+    ],
+    [
+     "B",
+     "下午五点。",
+     "xià wǔ wǔ diǎn",
+     "Năm giờ chiều."
+    ],
+    [
+     "A",
+     "我们什么时候去看电影？",
+     "wǒ men shén me shí hou qù kàn diàn yǐng",
+     "Khi nào chúng ta đi xem phim?"
+    ],
+    [
+     "B",
+     "六点三十分。",
+     "liù diǎn sān shí fēn",
+     "Sáu giờ ba mươi."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "时候",
+     "shí hou",
+     "danh từ"
+    ],
+    [
+     "回",
+     "huí",
+     "động từ"
+    ],
+    [
+     "我们",
+     "wǒ men",
+     "đại từ"
+    ],
+    [
+     "电影",
+     "diàn yǐng",
+     "danh từ"
+    ]
+   ]
+  },
+  {
+   "am": "11-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": [
+    "在家",
+    "zài jiā",
+    "Ở nhà"
+   ],
+   "cau": [
+    [
+     "A",
+     "我星期一去北京。",
+     "wǒ xīng qī yī qù Běi jīng",
+     "Thứ Hai tôi đi Bắc Kinh."
+    ],
+    [
+     "B",
+     "你想在北京住几天？",
+     "nǐ xiǎng zài Běi jīng zhù jǐ tiān",
+     "Anh định ở Bắc Kinh mấy ngày?"
+    ],
+    [
+     "A",
+     "住三天。",
+     "zhù sān tiān",
+     "Ở ba ngày."
+    ],
+    [
+     "B",
+     "星期五前能回家吗？",
+     "xīng qī wǔ qián néng huí jiā ma",
+     "Trước thứ Sáu có về nhà được không?"
+    ],
+    [
+     "A",
+     "能。",
+     "néng",
+     "Được."
+    ]
+   ],
+   "tuMoi": [
+    [
+     "住",
+     "zhù",
+     "động từ"
+    ],
+    [
+     "前",
+     "qián",
+     "danh từ"
+    ]
+   ],
+   "tenRieng": [
+    [
+     "北京",
+     "Běi jīng",
+     "Bắc Kinh"
+    ]
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": [
+    "时间的表达",
+    "Nói giờ"
+   ],
+   "mau": "… 点 … 分；上午/下午 … 点（… 分）",
+   "giaiThich": "Nói giờ dùng 点 (giờ) và 分 (phút), theo thứ tự lớn trước nhỏ sau. 2 giờ nói 两点, không nói 二点. Muốn phân biệt sáng/chiều thì đặt 上午 / 下午 ở trước.",
+   "viDu": [
+    [
+     "九点",
+     "jiǔ diǎn",
+     "9:00"
+    ],
+    [
+     "两点",
+     "liǎng diǎn",
+     "2:00"
+    ],
+    [
+     "五点三十分",
+     "wǔ diǎn sān shí fēn",
+     "5:30"
+    ],
+    [
+     "两点零五分",
+     "liǎng diǎn líng wǔ fēn",
+     "2:05"
+    ],
+    [
+     "上午八点",
+     "shàng wǔ bā diǎn",
+     "8 giờ sáng"
+    ],
+    [
+     "下午五点二十五分",
+     "xià wǔ wǔ diǎn èr shí wǔ fēn",
+     "5 giờ 25 chiều"
+    ]
+   ]
+  },
+  {
+   "ten": [
+    "时间词做状语",
+    "Từ chỉ thời gian làm trạng ngữ"
+   ],
+   "mau": "Chủ ngữ + thời gian + vị ngữ; hoặc Thời gian + chủ ngữ + vị ngữ",
+   "giaiThich": "Từ chỉ thời gian thường đứng sau chủ ngữ, cũng có thể đứng đầu câu; KHÔNG đặt ở cuối câu như tiếng Việt.",
+   "viDu": [
+    [
+     "妈妈六点做饭。",
+     "mā ma liù diǎn zuò fàn",
+     "Mẹ nấu cơm lúc sáu giờ."
+    ],
+    [
+     "李老师上午八点去学校。",
+     "Lǐ lǎo shī shàng wǔ bā diǎn qù xué xiào",
+     "Cô Lý đến trường lúc tám giờ sáng."
+    ],
+    [
+     "中午十二点我们回家。",
+     "zhōng wǔ shí èr diǎn wǒ men huí jiā",
+     "Mười hai giờ trưa chúng tôi về nhà."
+    ],
+    [
+     "下午五点他们去看电影。",
+     "xià wǔ wǔ diǎn tā men qù kàn diàn yǐng",
+     "Năm giờ chiều họ đi xem phim."
+    ]
+   ]
+  },
+  {
+   "ten": [
+    "名词“前”",
+    "Danh từ 前"
+   ],
+   "mau": "Thời gian + 前",
+   "giaiThich": "前 đặt sau từ chỉ thời gian, nghĩa là trước thời điểm đó.",
+   "viDu": [
+    [
+     "三天前",
+     "sān tiān qián",
+     "ba ngày trước"
+    ],
+    [
+     "四点前",
+     "sì diǎn qián",
+     "trước bốn giờ"
+    ],
+    [
+     "你什么时候去学校？八点前。",
+     "nǐ shén me shí hou qù xué xiào bā diǎn qián",
+     "Khi nào bạn đến trường? Trước tám giờ."
+    ],
+    [
+     "你星期五前能回家吗？",
+     "nǐ xīng qī wǔ qián néng huí jiā ma",
+     "Trước thứ Sáu bạn về nhà được không?"
+    ]
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo nội dung hội thoại",
+   "cau": [
+    [
+     "现在几点？",
+     "xiàn zài jǐ diǎn"
+    ],
+    [
+     "他们几点吃饭？",
+     "tā men jǐ diǎn chī fàn"
+    ],
+    [
+     "爸爸什么时候回家？",
+     "bà ba shén me shí hou huí jiā"
+    ],
+    [
+     "他们什么时候去看电影？",
+     "tā men shén me shí hou qù kàn diàn yǐng"
+    ],
+    [
+     "他去哪儿？什么时候能回家？",
+     "tā qù nǎr _ shén me shí hou néng huí jiā"
+    ]
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "thanh-nhe-nghia",
+   "am": "11-4",
+   "tieuDe": "Thanh nhẹ phân biệt nghĩa",
+   "giaiThich": "Thanh nhẹ còn giúp phân biệt nghĩa. Ví dụ 东西: đọc dōngxī là phía đông và phía tây; đọc dōngxi (thanh nhẹ) là đồ vật.",
+   "bang": [
+    [
+     "老子 lǎozi: bố (khẩu ngữ)",
+     "Lǎozǐ: Lão Tử"
+    ],
+    [
+     "买卖 mǎimai: việc buôn bán",
+     "mǎimài: mua và bán"
+    ],
+    [
+     "大意 dàyi: sơ ý",
+     "dàyì: ý chính"
+    ]
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   [
+    "午",
+    "wǔ",
+    "Chỉ khoảng thời gian ban ngày từ 11 giờ đến 1 giờ (buổi trưa)."
+   ],
+   [
+    "电",
+    "diàn",
+    "Nghĩa gốc là tia chớp sắc nhọn xuất hiện trên trời khi mưa; nay là điện."
+   ]
+  ],
+  "boThu": [
+   [
+    "阝",
+    "耳刀旁",
+    "ěr dāo páng",
+    "Bộ ấp/phụ (bên trái): thường liên quan đến địa hình, vị trí.",
+    [
+     "院",
+     "阳"
+    ]
+   ],
+   [
+    "亻",
+    "单人旁",
+    "dān rén páng",
+    "Bộ nhân đứng: thường liên quan đến người.",
+    [
+     "你",
+     "他"
+    ]
+   ]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi giờ và thời gian biểu một ngày",
+  "tuBoSung": [
+   [
+    "早饭",
+    "zǎo fàn",
+    "bữa sáng"
+   ],
+   [
+    "晚上",
+    "wǎn shang",
+    "buổi tối"
+   ],
+   [
+    "电视",
+    "diàn shì",
+    "ti vi"
+   ]
+  ],
+  "viDu": [
+   [
+    "A",
+    "现在几点？",
+    "xiàn zài jǐ diǎn",
+    "Bây giờ mấy giờ?"
+   ],
+   [
+    "B",
+    "现在八点十八分。",
+    "xiàn zài bā diǎn shí bā fēn",
+    "Bây giờ tám giờ mười tám."
+   ],
+   [
+    "A",
+    "你几点吃早饭？",
+    "nǐ jǐ diǎn chī zǎo fàn",
+    "Bạn ăn sáng lúc mấy giờ?"
+   ],
+   [
+    "B",
+    "我七点吃早饭。",
+    "wǒ qī diǎn chī zǎo fàn",
+    "Tôi ăn sáng lúc bảy giờ."
+   ]
+  ]
+ }
+}
