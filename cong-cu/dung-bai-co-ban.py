@@ -43,7 +43,7 @@ GIAO_TRINH = GOC / "Giao_trinh"
 SO = re.compile(r"[0-9]+")
 # Cách đọc đã xác minh khác gợi ý của pypinyin (đối chiếu đại cương HSK 2025):
 # 谁 shéi (HSK 1), 照片 zhàopiàn (HSK 3)
-DA_XAC_MINH = {("谁", "shéi"), ("片", "piàn")}
+DA_XAC_MINH = {("谁", "shéi"), ("片", "piàn"), ("子", "zǐ")}  # 子 đứng riêng (sách in zǐ)
 loi, canh_bao = [], []
 
 
@@ -81,6 +81,8 @@ def kiem_tra_am(trung, am_tiet, noi):
             continue
         cac = pinyin(c, style=Style.TONE, heteronym=True)[0]
         a_nho = a.lower()
+        if a_nho.endswith("r") and a_nho[:-1] in cac:
+            continue  # âm cuốn lưỡi (儿化): 馆儿 guǎnr, 哪儿 nǎr
         if a_nho in cac:
             continue
         if bo_dau(a_nho) == a_nho and a_nho in {bo_dau(x) for x in cac}:
@@ -90,6 +92,8 @@ def kiem_tra_am(trung, am_tiet, noi):
     # để người rà lại. Bỏ qua 一/不 (sách/app ghi thanh gốc) và thanh nhẹ.
     goi_y = pinyin_cau(trung)
     for c, a, g in zip(trung, am_tiet, goi_y):
+        if a and a.lower().endswith("r") and a.lower()[:-1] == g:
+            continue  # âm cuốn lưỡi, đã kiểm ở trên
         if (a and g and c not in "一不" and a.lower() != g and bo_dau(a.lower()) != a.lower()
                 and (c, a) not in DA_XAC_MINH):
             canh_bao.append(f"{noi}: '{trung}' chữ {c} chép '{a}', từ điển đọc theo cụm là '{g}'")
@@ -97,6 +101,8 @@ def kiem_tra_am(trung, am_tiet, noi):
 
 def cau(trung, py, noi, **them):
     am = tach_pinyin(trung, py, noi)
+    # "_" = chữ không có pinyin riêng (儿 của âm cuốn lưỡi: 哪儿 nǎr)
+    am = ["" if a == "_" else a for a in am]
     kiem_tra_am(trung, am, noi)
     ra = {"trung": trung, "pinyin": am}
     ghi = ghi_chu_bien_dieu(trung, am)
@@ -225,8 +231,8 @@ def dung_bai(nguon, tu_vung, am_co):
         for khoa in ("giuNguyen", "doiThanh2", "doiThanh4"):
             if khoa in p:
                 p[khoa] = [cau(t, py, f"{noi} {p['tieuDe']}", viet=v) for t, py, v in p[khoa]]
-        if p["loai"] == "thanh-nhe":
-            p["viDu"] = [cau(t, py, f"{noi} thanh nhẹ", viet=v) for t, py, v in p["viDu"]]
+        if p["loai"] in ("thanh-nhe", "phoi-thanh"):
+            p["viDu"] = [cau(t, py, f"{noi} {p['tieuDe']}", viet=v) for t, py, v in p["viDu"]]
         if p["loai"] == "thanh-dieu":
             p["viDu"] = [cau(t, py, f"{noi} thanh điệu", viet=v) for t, py, v in p["viDu"]]
         if "am_tiet" in p:
@@ -242,6 +248,11 @@ def dung_bai(nguon, tu_vung, am_co):
             "net": [{"net": n, "ten": t, "pinyin": p, "viet": v, "viDu": vd} for n, t, p, v, vd in ch["net"]],
             "chuDocThe": [{**cau(c, p, f"{noi} chữ độc thể"), "giaiThich": g} for c, p, g in ch["chuDocThe"]],
         }
+        if ch.get("cauTruc"):
+            ra["chuHan"]["cauTruc"] = [{"ten": t, "viet": v, "viDu": vd} for t, v, vd in ch["cauTruc"]]
+        if ch.get("boThu"):
+            ra["chuHan"]["boThu"] = [{"bo": b, "ten": t, "pinyin": p, "giaiThich": g, "viDu": vd}
+                                     for b, t, p, g, vd in ch["boThu"]]
         if "butThuan" in ch:
             ra["chuHan"]["butThuan"] = [{"quyTac": q, "viet": v, "viDu": vd} for q, v, vd in ch["butThuan"]]
     if "vanDung" in nguon:
@@ -300,6 +311,7 @@ def tach_chu(chuoi, noi):
         # bo_dau bỏ luôn hai chấm của ü nên so sánh ở dạng u; 谁 đọc shéi (đã xác minh, xem DA_XAC_MINH)
         goi_y = "".join(x[0] for x in pinyin(tu, style=Style.NORMAL, v_to_u=True)).replace("ü", "u")
         goi_y = goi_y.replace("shui", "shei") if "谁" in tu else goi_y
+        goi_y = goi_y.replace("er", "r") if tu.endswith("儿") and len(tu) > 1 and "女儿" not in tu else goi_y  # 儿化: 哪儿 nǎr
         if not any(c.isdigit() for c in tu) and bo_dau(py.lower()).replace(" ", "").replace("'", "").replace("’", "") != goi_y:
             canh_bao.append(f"{noi}: '{tu}' pinyin '{py}' khác từ điển '{goi_y}'")
         ra.append([tu, py])
@@ -404,6 +416,8 @@ def gan_hinh(bai, noi):
             p["hinh"] = [co(f"am-{p['am']}-{i}") for i in range(1, len(p["tu"]) + 1)]
         elif p["loai"] == "thanh-nhe":
             p["hinh"] = [co(f"thanh-nhe-{i}") for i in range(1, len(p["viDu"]) + 1)]
+        elif p["loai"] == "phoi-thanh":
+            p["hinh"] = [co(f"phoi-thanh-{i}") for i in range(1, len(p["viDu"]) + 1)]
         elif p["loai"] == "er-hoa":
             p["hinh"] = [co(f"er-hoa-{i}") for i in range(1, len(p["viDu"]) + 1)]
         elif p["loai"] == "phan-biet" and isinstance(p.get("hinh"), str):

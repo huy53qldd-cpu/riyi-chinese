@@ -1,0 +1,442 @@
+{
+ "_ghiChu": "Sách bài tập HSK标准教程1, bài 8. Cách ghi và nguồn đáp án như bài 3.",
+ "bai": 8,
+ "nghe": {
+  "am": "08-1",
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh",
+    "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+    "viDu": [
+     {
+      "hinh": "bt-p57-1",
+      "chu": "很|hěn 高兴|gāoxìng",
+      "dapAn": "dung"
+     },
+     {
+      "hinh": "bt-p57-2",
+      "chu": "看|kàn 电影|diànyǐng",
+      "dapAn": "sai"
+     }
+    ],
+    "cau": [
+     {
+      "so": 1,
+      "hinh": "bt-p57-3",
+      "loi": [
+       "茶"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: bộ ấm chén trà."
+     },
+     {
+      "so": 2,
+      "hinh": "bt-p57-4",
+      "loi": [
+       "一个杯子"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: HAI cái cốc."
+     },
+     {
+      "so": 3,
+      "hinh": "bt-p57-5",
+      "loi": [
+       "吃米饭"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: cô gái đang ăn bánh (không phải cơm).",
+      "chacChan": false
+     },
+     {
+      "so": 4,
+      "hinh": "bt-p57-6",
+      "loi": [
+       "三个人"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: ba người đi cùng nhau. Máy không nghe rõ số thứ tự câu 4, lời đọc là 三个人.",
+      "chacChan": false
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-hinh",
+    "huongDan": "Nghe hội thoại, chọn tranh khớp",
+    "luaChon": {
+     "A": "bt-p58-1",
+     "B": "bt-p58-2",
+     "C": "bt-p58-3",
+     "D": "bt-p58-4",
+     "E": "bt-p58-5"
+    },
+    "viDu": {
+     "loi": [
+      "女：你好！",
+      "男：你好！很高兴认识你。"
+     ],
+     "dapAn": "C"
+    },
+    "cau": [
+     {
+      "so": 5,
+      "loi": [
+       "你想吃米饭吗？",
+       "我想吃。"
+      ],
+      "dapAn": "D",
+      "lyDo": "Tranh D: bát cơm."
+     },
+     {
+      "so": 6,
+      "loi": [
+       "明天你想吃什么？",
+       "我想吃中国菜。"
+      ],
+      "dapAn": "A",
+      "lyDo": "Tranh A: đĩa món xào.",
+      "chacChan": false
+     },
+     {
+      "so": 7,
+      "loi": [
+       "请问，这个杯子多少钱？",
+       "38块。"
+      ],
+      "dapAn": "B",
+      "lyDo": "Tranh B: cái cốc."
+     },
+     {
+      "so": 8,
+      "loi": [
+       "你朋友家有几口人？",
+       "他家有四口人。"
+      ],
+      "dapAn": "E",
+      "lyDo": "Tranh E: gia đình bốn người."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "chon-chu",
+    "huongDan": "Nghe câu, trả lời câu hỏi",
+    "viDu": {
+     "loi": [
+      "下午我去商店，我想买一些水果。",
+      "问：她下午去哪里？"
+     ],
+     "luaChon": [
+      "商店|shāngdiàn",
+      "医院|yīyuàn",
+      "学校|xuéxiào"
+     ],
+     "dapAn": "A"
+    },
+    "cau": [
+     {
+      "so": 9,
+      "loi": [
+       "明天，他想去商店买一个杯子。",
+       "问：他想买什么？"
+      ],
+      "luaChon": [
+       "桌子|zhuōzi",
+       "椅子|yǐzi",
+       "杯子|bēizi"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 10,
+      "loi": [
+       "他想喝茶。你呢？",
+       "问：他想喝什么？"
+      ],
+      "luaChon": [
+       "茶|chá",
+       "咖啡|kāfēi",
+       "米饭|mǐfàn"
+      ],
+      "dapAn": "A"
+     },
+     {
+      "so": 11,
+      "loi": [
+       "大卫今天下午去中国朋友家喝茶。",
+       "问：大卫今天下午去哪儿？"
+      ],
+      "luaChon": [
+       "商店|shāngdiàn",
+       "学校|xuéxiào",
+       "朋友家|péngyou jiā"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 12,
+      "loi": [
+       "这个菜38块，那个菜49块。",
+       "问：那个菜多少钱？"
+      ],
+      "luaChon": [
+       "38块|sānshíbā kuài",
+       "79块|qīshíjiǔ kuài",
+       "49块|sìshíjiǔ kuài"
+      ],
+      "dapAn": "C"
+     }
+    ]
+   }
+  ]
+ },
+ "doc": {
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh-chu",
+    "huongDan": "Xem tranh, từ có khớp tranh không",
+    "viDu": [
+     {
+      "hinh": "bt-p60-1",
+      "chu": "电视|diànshì",
+      "dapAn": "sai"
+     },
+     {
+      "hinh": "bt-p60-2",
+      "chu": "飞机|fēijī",
+      "dapAn": "dung"
+     }
+    ],
+    "cau": [
+     {
+      "so": 13,
+      "hinh": "bt-p60-3",
+      "chu": "茶|chá",
+      "dapAn": "sai",
+      "lyDo": "Tranh: tách cà phê latte."
+     },
+     {
+      "so": 14,
+      "hinh": "bt-p60-4",
+      "chu": "吃|chī 饭|fàn",
+      "dapAn": "dung",
+      "lyDo": "Tranh: một nhóm người đang ăn cơm."
+     },
+     {
+      "so": 15,
+      "hinh": "bt-p60-5",
+      "chu": "米饭|mǐfàn",
+      "dapAn": "sai",
+      "lyDo": "Tranh: đĩa rau xào, không phải cơm."
+     },
+     {
+      "so": 16,
+      "hinh": "bt-p60-6",
+      "chu": "四|sì 个|ge 学生|xuésheng",
+      "dapAn": "dung",
+      "lyDo": "Tranh: bốn học sinh cùng học."
+     },
+     {
+      "so": 17,
+      "hinh": "bt-p60-7",
+      "chu": "喝|hē 茶|chá",
+      "dapAn": "sai",
+      "lyDo": "Tranh: nhóm bạn nâng ly bia.",
+      "chacChan": false
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-cau",
+    "huongDan": "Chọn câu trả lời đúng",
+    "luaChon": {
+     "A": "我|Wǒ 喝|hē 茶|chá ，谢谢|xièxie 。",
+     "B": "这个|Zhège 菜|cài 18|shíbā 块|kuài 。",
+     "C": "25|Èrshíwǔ 块|kuài 。",
+     "D": "我|Wǒ 想|xiǎng 去|qù 商店|shāngdiàn 买|mǎi 个|ge 杯子|bēizi 。",
+     "E": "不|Bù 去|qù ，明天|míngtiān 我|wǒ 去|qù 朋友|péngyou 家|jiā 。",
+     "F": "好|Hǎo 的|de ，谢谢|xièxie ！"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 喝|hē 水|shuǐ 吗|ma ？",
+     "dapAn": "F"
+    },
+    "cau": [
+     {
+      "so": 18,
+      "chu": "请问|Qǐngwèn ，这个|zhège 杯子|bēizi 多少|duōshao 钱|qián ？",
+      "dapAn": "C"
+     },
+     {
+      "so": 19,
+      "chu": "你|Nǐ 想|xiǎng 喝|hē 什么|shénme ？",
+      "dapAn": "A"
+     },
+     {
+      "so": 20,
+      "chu": "你好|Nǐhǎo ，这个|zhège 菜|cài 多少|duōshao 钱|qián ？",
+      "dapAn": "B"
+     },
+     {
+      "so": 21,
+      "chu": "下午|Xiàwǔ 你|nǐ 想|xiǎng 去|qù 哪儿|nǎr ？",
+      "dapAn": "D"
+     },
+     {
+      "so": 22,
+      "chu": "明天|Míngtiān 你|nǐ 去|qù 学校|xuéxiào 吗|ma ？",
+      "dapAn": "E"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "A": "吃|chī",
+     "B": "喝|hē",
+     "C": "买|mǎi",
+     "D": "名字|míngzi",
+     "E": "做|zuò"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 叫|jiào 什么|shénme __ ？",
+     "dapAn": "D"
+    },
+    "cau": [
+     {
+      "so": 23,
+      "chu": "我|Wǒ 想|xiǎng __ 米饭|mǐfàn 。",
+      "dapAn": "A"
+     },
+     {
+      "so": 24,
+      "chu": "您好|Nínhǎo ，您|nín __ 茶|chá 吗|ma ？",
+      "dapAn": "B"
+     },
+     {
+      "so": 25,
+      "chu": "我|Wǒ 妈妈|māma 会|huì __ 中国|Zhōngguó 菜|cài 。",
+      "dapAn": "E"
+     },
+     {
+      "so": 26,
+      "chu": "你|Nǐ 想|xiǎng 去|qù 商店|shāngdiàn __ 什么|shénme ？",
+      "dapAn": "C"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "F": "几|jǐ",
+     "G": "多少|duōshao"
+    },
+    "cau": [
+     {
+      "so": 27,
+      "chu": "你|Nǐ 家|jiā 有|yǒu __ 口|kǒu 人|rén ？",
+      "dapAn": "F"
+     },
+     {
+      "so": 28,
+      "chu": "你们|Nǐmen 学校|xuéxiào 有|yǒu __ 学生|xuésheng ？",
+      "dapAn": "G"
+     },
+     {
+      "so": 29,
+      "chu": "你好|Nǐhǎo ，这个|zhège 杯子|bēizi __ 钱|qián ？",
+      "dapAn": "G"
+     },
+     {
+      "so": 30,
+      "chu": "你|Nǐ 有|yǒu __ 个|ge 中国|Zhōngguó 朋友|péngyou ？两|Liǎng 个|ge 。",
+      "dapAn": "F"
+     }
+    ]
+   }
+  ]
+ },
+ "phatAm": {
+  "am": "08-2",
+  "nhom": [
+   {
+    "kieu": "chon-am",
+    "huongDan": "Nghe, chọn từ hai âm tiết nghe được",
+    "cau": [
+     {
+      "so": 1,
+      "luaChon": [
+       "yǔyīn",
+       "yǔyán"
+      ],
+      "dapAn": "yǔyán"
+     },
+     {
+      "so": 2,
+      "luaChon": [
+       "guǎngbō",
+       "guǎngbó"
+      ],
+      "dapAn": "guǎngbō"
+     },
+     {
+      "so": 3,
+      "luaChon": [
+       "shuǐjǐng",
+       "shuǐpíng"
+      ],
+      "dapAn": "shuǐpíng"
+     },
+     {
+      "so": 4,
+      "luaChon": [
+       "yǒumíng",
+       "yǒuqíng"
+      ],
+      "dapAn": "yǒumíng"
+     },
+     {
+      "so": 5,
+      "luaChon": [
+       "dǎsǎo",
+       "dǎsuàn"
+      ],
+      "dapAn": "dǎsǎo"
+     },
+     {
+      "so": 6,
+      "luaChon": [
+       "hěn hǎo",
+       "xǐhào"
+      ],
+      "dapAn": "xǐhào"
+     },
+     {
+      "so": 7,
+      "luaChon": [
+       "kǎoshì",
+       "kěshì"
+      ],
+      "dapAn": "kǎoshì"
+     },
+     {
+      "so": 8,
+      "luaChon": [
+       "yǔnxǔ",
+       "yǒuqù"
+      ],
+      "dapAn": "yǔnxǔ"
+     }
+    ]
+   }
+  ]
+ }
+}

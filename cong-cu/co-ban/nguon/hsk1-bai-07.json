@@ -1,0 +1,81 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 7 (trang PDF 67–74). Số viết bằng chữ số (9月1号): một cụm chữ số ứng với một mục pinyin. Đáp án khởi động suy từ ảnh. Bản dịch Việt là bản nháp.",
+ "bai": 7,
+ "ten": ["今天几号", "jīn tiān jǐ hào", "Hôm nay ngày mấy"],
+ "trangPdf": [67, 74],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": ["A", "B", "C", "D", "E", "F"],
+  "tu": [["书", "shū", "E"], ["中国菜", "Zhōng guó cài", "D"], ["学校", "xué xiào", "A"], ["25号", "èrshíwǔ hào", "C"], ["月", "yuè", "F"], ["看书", "kàn shū", "B"]]
+ },
+ "hoiThoai": [
+  {
+   "am": "07-1", "anh": "hoi-thoai-1", "boiCanh": ["在银行", "zài yín háng", "Ở ngân hàng"],
+   "cau": [["A", "请问，今天几号？", "qǐng wèn jīn tiān jǐ hào", "Xin hỏi, hôm nay ngày mấy?"], ["B", "今天9月1号。", "jīn tiān jiǔ yuè yī hào", "Hôm nay ngày 1 tháng 9."], ["A", "今天星期几？", "jīn tiān xīng qī jǐ", "Hôm nay thứ mấy?"], ["B", "星期三。", "xīng qī sān", "Thứ Tư."]],
+   "tuMoi": [["请", "qǐng", "động từ"], ["问", "wèn", "động từ", "boSung"], ["今天", "jīn tiān", "danh từ"], ["号", "hào", "danh từ"], ["月", "yuè", "danh từ"], ["星期", "xīng qī", "danh từ"]]
+  },
+  {
+   "am": "07-2", "anh": "hoi-thoai-2", "boiCanh": ["看日历", "kàn rì lì", "Xem lịch"],
+   "cau": [["A", "昨天是几月几号？", "zuó tiān shì jǐ yuè jǐ hào", "Hôm qua là ngày mấy tháng mấy?"], ["B", "昨天是8月31号，星期二。", "zuó tiān shì bā yuè sānshíyī hào xīng qī èr", "Hôm qua là ngày 31 tháng 8, thứ Ba."], ["A", "明天呢？", "míng tiān ne", "Còn ngày mai?"], ["B", "明天是9月2号，星期四。", "míng tiān shì jiǔ yuè èr hào xīng qī sì", "Ngày mai là ngày 2 tháng 9, thứ Năm."]],
+   "tuMoi": [["昨天", "zuó tiān", "danh từ"], ["明天", "míng tiān", "danh từ"]]
+  },
+  {
+   "am": "07-3", "anh": "hoi-thoai-3", "boiCanh": ["在咖啡馆儿", "zài kā fēi guǎnr _", "Ở quán cà phê"],
+   "cau": [["A", "明天星期六，你去学校吗？", "míng tiān xīng qī liù nǐ qù xué xiào ma", "Ngày mai thứ Bảy, bạn có đến trường không?"], ["B", "我去学校。", "wǒ qù xué xiào", "Tôi đến trường."], ["A", "你去学校做什么？", "nǐ qù xué xiào zuò shén me", "Bạn đến trường làm gì?"], ["B", "我去学校看书。", "wǒ qù xué xiào kàn shū", "Tôi đến trường đọc sách."]],
+   "tuMoi": [["去", "qù", "động từ"], ["学校", "xué xiào", "danh từ"], ["看", "kàn", "động từ"], ["书", "shū", "danh từ"]]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": ["日期的表达(1)：月、日/号、星期", "Nói ngày tháng (1): tháng, ngày, thứ"],
+   "mau": "… 月 … 号，星期 …",
+   "giaiThich": "Ngày tháng nói theo thứ tự từ lớn đến nhỏ: tháng trước, rồi ngày (日/号), cuối cùng là thứ. Khẩu ngữ thường dùng 号. Ngược với tiếng Việt (thứ, ngày, tháng).",
+   "viDu": [["9月1号，星期三。", "jiǔ yuè yī hào xīng qī sān", "Thứ Tư, ngày 1 tháng 9."], ["9月2号，星期四。", "jiǔ yuè èr hào xīng qī sì", "Thứ Năm, ngày 2 tháng 9."], ["8月31号，星期二。", "bā yuè sānshíyī hào xīng qī èr", "Thứ Ba, ngày 31 tháng 8."]]
+  },
+  {
+   "ten": ["名词谓语句", "Câu vị ngữ danh từ"],
+   "mau": "Chủ ngữ + danh từ (tuổi, giờ, ngày)",
+   "giaiThich": "Vị ngữ là danh từ / cụm danh từ, thường dùng để nói tuổi, thời gian, ngày tháng; không cần 是.",
+   "viDu": [["我的汉语老师33岁。", "wǒ de Hàn yǔ lǎo shī sānshísān suì", "Giáo viên tiếng Trung của tôi 33 tuổi."], ["明天星期三。", "míng tiān xīng qī sān", "Ngày mai thứ Tư."], ["今天9月1号。", "jīn tiān jiǔ yuè yī hào", "Hôm nay ngày 1 tháng 9."]]
+  },
+  {
+   "ten": ["连动句(1)：去+地方+做什么", "Câu liên động (1): 去 + nơi chốn + làm gì"],
+   "mau": "Chủ ngữ + 去 + (nơi chốn) + động từ 2",
+   "giaiThich": "Vị ngữ có hai động từ trở lên; động từ sau nói mục đích của động từ trước. Nơi chốn sau 去 đôi khi có thể lược bỏ.",
+   "viDu": [["我去中国学习汉语。", "wǒ qù Zhōng guó xué xí Hàn yǔ", "Tôi đi Trung Quốc học tiếng Trung."], ["我们去中国饭馆儿吃中国菜。", "wǒ men qù Zhōng guó fàn guǎnr _ chī Zhōng guó cài", "Chúng tôi đến quán ăn Trung Quốc ăn món Trung Quốc."], ["我去学校看书。", "wǒ qù xué xiào kàn shū", "Tôi đến trường đọc sách."]]
+  }
+ ],
+ "luyenTap": [
+  { "loai": "tra-loi-tu-do", "tieuDe": "Trả lời theo thực tế của bạn", "cau": [["今天几月几号星期几？", "jīn tiān jǐ yuè jǐ hào xīng qī jǐ"], ["明天几月几号星期几？", "míng tiān jǐ yuè jǐ hào xīng qī jǐ"], ["昨天几月几号星期几？", "zuó tiān jǐ yuè jǐ hào xīng qī jǐ"], ["明天你去哪儿做什么？", "míng tiān nǐ qù nǎr _ zuò shén me"], ["星期日你去哪儿做什么？", "xīng qī rì nǐ qù nǎr _ zuò shén me"]] }
+ ],
+ "phatAm": [
+  { "loai": "doc-am", "tieuDe": "Đọc: 12 tháng", "am_tiet": ["yī yuè", "èr yuè", "sān yuè", "sì yuè", "wǔ yuè", "liù yuè", "qī yuè", "bā yuè", "jiǔ yuè", "shí yuè", "shíyī yuè", "shí'èr yuè"] },
+  { "loai": "doc-am", "tieuDe": "Đọc: các thứ trong tuần", "am_tiet": ["xīngqī yī", "xīngqī èr", "xīngqī sān", "xīngqī sì", "xīngqī wǔ", "xīngqī liù", "xīngqīrì", "xīngqītiān"] },
+  {
+   "loai": "phoi-thanh", "tieuDe": "Thanh điệu trong từ hai âm tiết (2): thanh 2 + thanh 1/2/3/4",
+   "viDu": [["时间", "shí jiān", "thời gian"], ["银行", "yín háng", "ngân hàng"], ["词典", "cí diǎn", "từ điển"], ["蓝色", "lán sè", "màu xanh lam"]]
+  },
+  { "loai": "doc-am", "am": "07-4", "tieuDe": "Nghe và đọc theo, chú ý cách phối thanh", "am_tiet": ["guójiā", "lóufáng", "píngguǒ", "huánjìng", "zuótiān", "lánqiú", "píjiǔ", "hánjià", "míngtiān", "míngnián", "niúnǎi", "niú ròu", "niánqīng", "Chángchéng", "yóu yǒng", "yóuxì"] }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   ["四", "sì", "Chỉ số 4."],
+   ["五", "wǔ", "Chỉ số 5."],
+   ["书", "shū", "Nghĩa gốc là chấm bút lông vào nghiên mực để viết; nay nghĩa là viết, sách."]
+  ],
+  "cauTruc": [
+   ["左右结构", "Cấu trúc trái – phải", ["你", "好"]],
+   ["左中右结构", "Cấu trúc trái – giữa – phải", ["谢", "树"]]
+  ],
+  "boThu": [
+   ["氵", "三点水", "sān diǎn shuǐ", "Ba chấm thủy: thường liên quan đến nước.", ["汉", "没"]],
+   ["讠", "言字旁", "yán zì páng", "Bộ ngôn: thường liên quan đến ngôn ngữ, lời nói.", ["语", "谁"]]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi ngày tháng và ngày sinh",
+  "tuBoSung": [["生日", "shēng rì", "sinh nhật"]],
+  "viDu": [["A", "今天是几月几号？", "jīn tiān shì jǐ yuè jǐ hào", "Hôm nay là ngày mấy tháng mấy?"], ["A", "明天你做什么？", "míng tiān nǐ zuò shén me", "Ngày mai bạn làm gì?"], ["B", "明天我去……", "míng tiān wǒ qù ……", "Ngày mai tôi đi…"]]
+ }
+}

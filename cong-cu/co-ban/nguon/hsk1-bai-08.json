@@ -1,0 +1,82 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 8 (trang PDF 75–82). Sách in 'yí ge' (一 đã biến điệu) → ghi thanh gốc yī. Đáp án khởi động suy từ ảnh. Bản dịch Việt là bản nháp.",
+ "bai": 8,
+ "ten": ["我想喝茶", "wǒ xiǎng hē chá", "Tôi muốn uống trà"],
+ "trangPdf": [75, 82],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": ["A", "B", "C", "D", "E", "F"],
+  "tu": [["钱", "qián", "F"], ["米饭", "mǐ fàn", "C"], ["杯子", "bēi zi", "A"], ["茶", "chá", "B"], ["中国菜", "Zhōng guó cài", "D"], ["汉字", "Hàn zì", "E"]]
+ },
+ "hoiThoai": [
+  {
+   "am": "08-1", "anh": "hoi-thoai-1", "boiCanh": ["在饭馆儿", "zài fàn guǎnr _", "Ở quán ăn"],
+   "cau": [["A", "你想喝什么？", "nǐ xiǎng hē shén me", "Bạn muốn uống gì?"], ["B", "我想喝茶。", "wǒ xiǎng hē chá", "Tôi muốn uống trà."], ["A", "你想吃什么？", "nǐ xiǎng chī shén me", "Bạn muốn ăn gì?"], ["B", "我想吃米饭。", "wǒ xiǎng chī mǐ fàn", "Tôi muốn ăn cơm."]],
+   "tuMoi": [["想", "xiǎng", "động từ năng nguyện"], ["喝", "hē", "động từ"], ["茶", "chá", "danh từ"], ["吃", "chī", "động từ"], ["米饭", "mǐ fàn", "danh từ"]]
+  },
+  {
+   "am": "08-2", "anh": "hoi-thoai-2", "boiCanh": ["在客厅", "zài kè tīng", "Ở phòng khách"],
+   "cau": [["A", "下午你想做什么？", "xià wǔ nǐ xiǎng zuò shén me", "Chiều nay bạn muốn làm gì?"], ["B", "下午我想去商店。", "xià wǔ wǒ xiǎng qù shāng diàn", "Chiều nay tôi muốn đi cửa hàng."], ["A", "你想买什么？", "nǐ xiǎng mǎi shén me", "Bạn muốn mua gì?"], ["B", "我想买一个杯子。", "wǒ xiǎng mǎi yī ge bēi zi", "Tôi muốn mua một cái cốc."]],
+   "tuMoi": [["下午", "xià wǔ", "danh từ"], ["商店", "shāng diàn", "danh từ"], ["买", "mǎi", "động từ"], ["个", "gè", "lượng từ"], ["杯子", "bēi zi", "danh từ"]]
+  },
+  {
+   "am": "08-3", "anh": "hoi-thoai-3", "boiCanh": ["在商店", "zài shāng diàn", "Trong cửa hàng"],
+   "cau": [["A", "你好！这个杯子多少钱？", "nǐ hǎo zhè ge bēi zi duō shao qián", "Chào anh! Cái cốc này bao nhiêu tiền?"], ["B", "28块。", "èrshíbā kuài", "28 đồng."], ["A", "那个杯子多少钱？", "nà ge bēi zi duō shao qián", "Cái cốc kia bao nhiêu tiền?"], ["B", "那个杯子18块钱。", "nà ge bēi zi shíbā kuài qián", "Cái cốc kia 18 đồng."]],
+   "tuMoi": [["这", "zhè", "đại từ"], ["多少", "duō shao", "đại từ"], ["钱", "qián", "danh từ"], ["块", "kuài", "lượng từ"], ["那", "nà", "đại từ"]]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": ["能愿动词“想”", "Động từ năng nguyện 想"],
+   "mau": "Chủ ngữ + 想 + động từ",
+   "giaiThich": "想 đứng trước động từ, chỉ mong muốn hoặc dự định (muốn làm gì).",
+   "viDu": [["我想学汉语。", "wǒ xiǎng xué Hàn yǔ", "Tôi muốn học tiếng Trung."], ["明天我想去学校看书。", "míng tiān wǒ xiǎng qù xué xiào kàn shū", "Ngày mai tôi muốn đến trường đọc sách."], ["我想买一个杯子。", "wǒ xiǎng mǎi yī ge bēi zi", "Tôi muốn mua một cái cốc."]]
+  },
+  {
+   "ten": ["疑问代词“多少”", "Đại từ nghi vấn 多少"],
+   "giaiThich": "多少 hỏi số lượng từ 10 trở lên; lượng từ sau 多少 có thể lược bỏ. Hỏi giá dùng mẫu “……多少钱？”. (几 thì hỏi số nhỏ, dưới 10.)",
+   "viDu": [["你们学校有多少个学生？", "nǐ men xué xiào yǒu duō shao ge xué sheng", "Trường các bạn có bao nhiêu học sinh?"], ["你有多少个汉语老师？", "nǐ yǒu duō shao ge Hàn yǔ lǎo shī", "Bạn có bao nhiêu giáo viên tiếng Trung?"], ["这个杯子多少钱？", "zhè ge bēi zi duō shao qián", "Cái cốc này bao nhiêu tiền?"]]
+  },
+  {
+   "ten": ["量词“个”、“口”", "Lượng từ 个 và 口"],
+   "mau": "Số từ + lượng từ + danh từ",
+   "giaiThich": "个 là lượng từ thông dụng nhất, dùng cho danh từ không có lượng từ riêng. 口 dùng để đếm số người trong gia đình (xem bài 5).",
+   "viDu": [["三个老师", "sān ge lǎo shī", "ba giáo viên"], ["五个学生", "wǔ ge xué sheng", "năm học sinh"], ["一个杯子", "yī ge bēi zi", "một cái cốc"], ["李老师家有六口人。", "Lǐ lǎo shī jiā yǒu liù kǒu rén", "Nhà cô Lý có sáu người."], ["我家有三口人。", "wǒ jiā yǒu sān kǒu rén", "Nhà tôi có ba người."]]
+  },
+  {
+   "ten": ["钱数的表达", "Nói số tiền"],
+   "giaiThich": "Đơn vị cơ bản của nhân dân tệ là 元; khẩu ngữ đọc là 块.",
+   "viDu": [["一元（块）", "yī yuán kuài", "1 đồng"], ["五元（块）", "wǔ yuán kuài", "5 đồng"], ["十元（块）", "shí yuán kuài", "10 đồng"], ["五十元（块）", "wǔ shí yuán kuài", "50 đồng"], ["一百元（块）", "yī bǎi yuán kuài", "100 đồng"]]
+  }
+ ],
+ "luyenTap": [
+  { "loai": "tra-loi-tu-do", "tieuDe": "Trả lời theo thực tế của bạn", "cau": [["你想吃什么？", "nǐ xiǎng chī shén me"], ["你想喝什么？", "nǐ xiǎng hē shén me"], ["明天下午你想做什么？", "míng tiān xià wǔ nǐ xiǎng zuò shén me"], ["你去哪个商店买杯子？", "nǐ qù nǎ ge shāng diàn mǎi bēi zi"], ["一个杯子多少钱？", "yī ge bēi zi duō shao qián"]] }
+ ],
+ "phatAm": [
+  {
+   "loai": "phoi-thanh", "tieuDe": "Thanh điệu trong từ hai âm tiết (3): thanh 3 + thanh 1/2/3/4",
+   "giaiThich": "Thanh 3 đứng trước thanh 1, 2, 4 chỉ đọc nửa đầu (xuống thấp, không lên lại). Thanh 3 + thanh 3: chữ đầu đọc thành thanh 2.",
+   "viDu": [["手机", "shǒu jī", "điện thoại di động"], ["手镯", "shǒu zhuó", "vòng tay"], ["手表", "shǒu biǎo", "đồng hồ đeo tay"], ["手套", "shǒu tào", "găng tay"]]
+  },
+  { "loai": "doc-am", "am": "08-4", "tieuDe": "Nghe và đọc theo, chú ý cách phối thanh", "am_tiet": ["lǎoshī", "lǎorén", "yǔsǎn", "yǒu yòng", "měi tiān", "měi nián", "měihǎo", "měilì", "hǎibiān", "hǎimián", "xǐ zǎo", "gǎnxiè", "yǐjīng", "yǐqián", "biǎoyǎn", "biǎoxiàn"] }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   ["少", "shǎo", "Quy mô nhỏ, số lượng không nhiều; trái nghĩa với 多."],
+   ["个", "gè", "Nghĩa gốc chỉ một người (đơn vị độc lập nhỏ nhất); nay là lượng từ."]
+  ],
+  "cauTruc": [
+   ["上下结构", "Cấu trúc trên – dưới", ["是", "爸"]],
+   ["上中下结构", "Cấu trúc trên – giữa – dưới", ["茶", "高"]]
+  ],
+  "boThu": [
+   ["钅", "金字旁", "jīn zì páng", "Bộ kim: thường liên quan đến kim loại.", ["钟", "钱"]],
+   ["口", "口字旁", "kǒu zì páng", "Bộ khẩu: thường liên quan đến miệng.", ["吃", "喝"]]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi nhau về kế hoạch",
+  "viDu": [["A", "今天下午你想做什么？", "jīn tiān xià wǔ nǐ xiǎng zuò shén me", "Chiều nay bạn muốn làm gì?"], ["A", "你们班有多少个学生？", "nǐ men bān yǒu duō shao ge xué sheng", "Lớp các bạn có bao nhiêu học sinh?"], ["A", "你们学校有多少个老师？", "nǐ men xué xiào yǒu duō shao ge lǎo shī", "Trường các bạn có bao nhiêu giáo viên?"]]
+ }
+}

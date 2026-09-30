@@ -1,0 +1,80 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 6 (trang PDF 59–66). Sách in 'bú huì' → ghi thanh gốc bù. Đáp án khởi động suy từ ảnh. Bản dịch Việt là bản nháp.",
+ "bai": 6,
+ "ten": ["我会说汉语", "wǒ huì shuō Hàn yǔ", "Tôi biết nói tiếng Trung"],
+ "trangPdf": [59, 66],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": ["A", "B", "C", "D", "E", "F"],
+  "tu": [["妈妈", "mā ma", "F"], ["汉字", "Hàn zì", "A"], ["中国菜", "Zhōng guó cài", "B"], ["说汉语", "shuō Hàn yǔ", "C"], ["写汉字", "xiě Hàn zì", "D"], ["做中国菜", "zuò Zhōng guó cài", "E"]]
+ },
+ "hoiThoai": [
+  {
+   "am": "06-1", "anh": "hoi-thoai-1", "boiCanh": ["在学校", "zài xué xiào", "Ở trường"],
+   "cau": [["A", "你会说汉语吗？", "nǐ huì shuō Hàn yǔ ma", "Bạn biết nói tiếng Trung không?"], ["B", "我会说汉语。", "wǒ huì shuō Hàn yǔ", "Tôi biết nói tiếng Trung."], ["A", "你妈妈会说汉语吗？", "nǐ mā ma huì shuō Hàn yǔ ma", "Mẹ bạn biết nói tiếng Trung không?"], ["B", "她不会说。", "tā bù huì shuō", "Mẹ tôi không biết nói."]],
+   "tuMoi": [["会", "huì", "động từ năng nguyện"], ["说", "shuō", "động từ"], ["妈妈", "mā ma", "danh từ"]]
+  },
+  {
+   "am": "06-2", "anh": "hoi-thoai-2", "boiCanh": ["在厨房", "zài chú fáng", "Trong bếp"],
+   "cau": [["A", "中国菜好吃吗？", "Zhōng guó cài hǎo chī ma", "Món Trung Quốc ngon không?"], ["B", "中国菜很好吃。", "Zhōng guó cài hěn hǎo chī", "Món Trung Quốc rất ngon."], ["A", "你会做中国菜吗？", "nǐ huì zuò Zhōng guó cài ma", "Bạn biết nấu món Trung Quốc không?"], ["B", "我不会做。", "wǒ bù huì zuò", "Tôi không biết nấu."]],
+   "tuMoi": [["菜", "cài", "danh từ"], ["很", "hěn", "phó từ"], ["好吃", "hǎo chī", "tính từ", "boSung"], ["做", "zuò", "động từ"]]
+  },
+  {
+   "am": "06-3", "anh": "hoi-thoai-3", "boiCanh": ["在图书馆", "zài tú shū guǎn", "Ở thư viện"],
+   "cau": [["A", "你会写汉字吗？", "nǐ huì xiě Hàn zì ma", "Bạn biết viết chữ Hán không?"], ["B", "我会写。", "wǒ huì xiě", "Tôi biết viết."], ["A", "这个字怎么写？", "zhè ge zì zěn me xiě", "Chữ này viết thế nào?"], ["B", "对不起，这个字我会读，不会写。", "duì bu qǐ zhè ge zì wǒ huì dú bù huì xiě", "Xin lỗi, chữ này tôi biết đọc, không biết viết."]],
+   "tuMoi": [["写", "xiě", "động từ"], ["汉字", "Hàn zì", "danh từ"], ["字", "zì", "danh từ"], ["怎么", "zěn me", "đại từ"], ["读", "dú", "động từ"]]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": ["能愿动词“会”(1)", "Động từ năng nguyện 会 (1)"],
+   "mau": "Chủ ngữ + (不)会 + động từ",
+   "giaiThich": "会 đứng trước động từ, chỉ khả năng có được nhờ học (biết làm gì). Phủ định: 不会.",
+   "viDu": [["我会写汉字。", "wǒ huì xiě Hàn zì", "Tôi biết viết chữ Hán."], ["我不会做中国菜。", "wǒ bù huì zuò Zhōng guó cài", "Tôi không biết nấu món Trung Quốc."], ["你妈妈会说汉语吗？", "nǐ mā ma huì shuō Hàn yǔ ma", "Mẹ bạn biết nói tiếng Trung không?"]]
+  },
+  {
+   "ten": ["形容词谓语句", "Câu vị ngữ tính từ"],
+   "mau": "Chủ ngữ + phó từ mức độ (很) + tính từ; phủ định: Chủ ngữ + 不 + tính từ",
+   "giaiThich": "Tính từ làm vị ngữ để tả tính chất, trạng thái; thường có 很 đứng trước. Không dùng 是 trước tính từ.",
+   "viDu": [["我很好。", "wǒ hěn hǎo", "Tôi khoẻ."], ["我妈妈的汉语不好。", "wǒ mā ma de Hàn yǔ bù hǎo", "Tiếng Trung của mẹ tôi không giỏi."], ["中国菜很好吃。", "Zhōng guó cài hěn hǎo chī", "Món Trung Quốc rất ngon."]]
+  },
+  {
+   "ten": ["疑问代词“怎么”(1)", "Đại từ nghi vấn 怎么 (1)"],
+   "mau": "怎么 + động từ",
+   "giaiThich": "怎么 đứng trước động từ, hỏi cách làm (làm thế nào).",
+   "viDu": [["这个汉字怎么读？", "zhè ge Hàn zì zěn me dú", "Chữ Hán này đọc thế nào?"], ["你的汉语名字怎么写？", "nǐ de Hàn yǔ míng zi zěn me xiě", "Tên tiếng Trung của bạn viết thế nào?"], ["这个字怎么写？", "zhè ge zì zěn me xiě", "Chữ này viết thế nào?"]]
+  }
+ ],
+ "luyenTap": [
+  { "loai": "tra-loi-tu-do", "tieuDe": "Trả lời theo thực tế của bạn", "cau": [["你会说汉语吗？", "nǐ huì shuō Hàn yǔ ma"], ["你会写汉字吗？", "nǐ huì xiě Hàn zì ma"], ["你会做中国菜吗？", "nǐ huì zuò Zhōng guó cài ma"], ["你有汉语名字吗？", "nǐ yǒu Hàn yǔ míng zi ma"], ["你会写你的汉语名字吗？", "nǐ huì xiě nǐ de Hàn yǔ míng zi ma"]] }
+ ],
+ "phatAm": [
+  {
+   "loai": "phoi-thanh", "tieuDe": "Thanh điệu trong từ hai âm tiết (1): thanh 1 + thanh 1/2/3/4",
+   "giaiThich": "Trong từ nhiều âm tiết, thanh 3 KHÔNG đọc đủ 214 như khi đứng riêng, mà là thanh thấp đi xuống gần 211, nửa sau không lên cao nữa.",
+   "viDu": [["咖啡", "kā fēi", "cà phê"], ["公园", "gōng yuán", "công viên"], ["机场", "jī chǎng", "sân bay"], ["车站", "chē zhàn", "bến xe"]]
+  },
+  { "loai": "doc-am", "am": "06-4", "tieuDe": "Nghe và đọc theo, chú ý cách phối thanh", "am_tiet": ["jīntiān", "jīnnián", "jīngcǎi", "chēpiào", "gōngsī", "gāngcái", "cāochǎng", "jīdàn", "guā fēng", "huānyíng", "jīnglǐ", "jīhuì", "guānxīn", "guānyú", "kāishǐ", "gāoxìng"] }
+ ],
+ "chuHan": {
+  "net": [
+   ["㇜", "撇折", "piězhé", "phẩy gập", ["么", "东"]],
+   ["㇂", "斜钩", "xiégōu", "móc xiên", ["我", "钱"]],
+   ["㇀", "提", "tí", "hất", ["我", "打"]]
+  ],
+  "chuDocThe": [
+   ["东", "dōng", "Phía mặt trời mọc, nghĩa là phía đông, trái nghĩa với 西."],
+   ["我", "wǒ", "Vốn vẽ một loại vũ khí có nhiều răng sắc; nay là đại từ 'tôi'."],
+   ["西", "xī", "Vốn vẽ cái tổ chim; nay chỉ phương hướng, phía tây, trái nghĩa với 东."]
+  ],
+  "cauTruc": [
+   ["独体结构", "Chữ độc thể: chỉ có một bộ phận", ["人", "我", "中"]],
+   ["合体结构", "Chữ hợp thể: gồm hai bộ phận trở lên", ["你", "做"]]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi nhau biết những gì",
+  "tuBoSung": [["英语", "Yīng yǔ", "tiếng Anh"], ["法语", "Fǎ yǔ", "tiếng Pháp"], ["日语", "Rì yǔ", "tiếng Nhật"]],
+  "viDu": [["A", "你会说汉语吗？", "nǐ huì shuō Hàn yǔ ma", "Bạn biết nói tiếng Trung không?"], ["A", "你的汉语名字叫什么？", "nǐ de Hàn yǔ míng zi jiào shén me", "Tên tiếng Trung của bạn là gì?"]]
+ }
+}

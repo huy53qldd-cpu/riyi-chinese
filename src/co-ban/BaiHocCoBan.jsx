@@ -273,7 +273,7 @@ function BuoiPhatAm({ bai }) {
             </div>
           )}
 
-          {(p.loai === "thanh-dieu" || p.loai === "thanh-nhe" || p.loai === "er-hoa") && (
+          {(p.loai === "thanh-dieu" || p.loai === "thanh-nhe" || p.loai === "er-hoa" || p.loai === "phoi-thanh") && (
             <div className="flex flex-wrap gap-3">
               {(p.viDu ?? []).map((v, k) =>
                 Array.isArray(v) ? (
@@ -422,6 +422,7 @@ function BuoiChuNguPhap({ bai }) {
     <div className="flex flex-col gap-4">
       {ch && (
         <>
+          {ch.net.length > 0 && (
           <Muc tieuDe="Nét cơ bản">
             <ul className="m-0 flex list-none flex-col gap-2 p-0">
               {ch.net.map((n) => (
@@ -439,6 +440,7 @@ function BuoiChuNguPhap({ bai }) {
               ))}
             </ul>
           </Muc>
+          )}
 
           <Muc tieuDe="Chữ độc thể" phu="Bấm “Tập viết” để viết thử bằng ngón tay.">
             {ch.chuDocThe.map((c) => (
@@ -466,6 +468,41 @@ function BuoiChuNguPhap({ bai }) {
               </div>
             ))}
           </Muc>
+
+          {ch.cauTruc && (
+            <Muc tieuDe="Cấu trúc chữ Hán">
+              {ch.cauTruc.map((c) => (
+                <p key={c.ten} className="m-0">
+                  <b>{c.viet}</b>{" "}
+                  <span lang="zh-CN" className="font-trung text-chu-mo">
+                    ({c.ten})
+                  </span>{" "}
+                  · ví dụ{" "}
+                  <span lang="zh-CN" className="font-trung text-[length:1.3rem]">
+                    {c.viDu.join(" ")}
+                  </span>
+                </p>
+              ))}
+            </Muc>
+          )}
+
+          {ch.boThu && (
+            <Muc tieuDe="Bộ thủ">
+              {ch.boThu.map((b) => (
+                <div key={b.bo} className="flex items-center gap-3">
+                  <span lang="zh-CN" className="font-trung w-10 text-center text-[length:1.8rem]">
+                    {b.bo}
+                  </span>
+                  <span className="min-w-0 flex-1 text-[length:var(--co-chu-latin-nho)] leading-relaxed">
+                    <VanBanPha noiDung={`${b.ten} (${b.pinyin}). ${b.giaiThich}`} />
+                  </span>
+                  <span lang="zh-CN" className="font-trung text-[length:1.3rem]">
+                    {b.viDu.join(" ")}
+                  </span>
+                </div>
+              ))}
+            </Muc>
+          )}
 
           {ch.butThuan && (
             <Muc tieuDe="Quy tắc bút thuận">

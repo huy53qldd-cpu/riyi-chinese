@@ -1,0 +1,98 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 10 (trang PDF 91–100). Sách in 'yí ge', 'yì běn' → ghi thanh gốc yī. 这儿 zhèr: chữ 儿 để '_'. Đáp án khởi động suy từ ảnh. Bản dịch Việt là bản nháp.",
+ "bai": 10,
+ "ten": ["我能坐这儿吗", "wǒ néng zuò zhèr _ ma", "Tôi ngồi đây được không"],
+ "trangPdf": [91, 100],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": ["A", "B", "C", "D", "E", "F"],
+  "tu": [["工作", "gōng zuò", "F"], ["看书", "kàn shū", "C"], ["坐", "zuò", "B"], ["桌子", "zhuō zi", "A"], ["电脑", "diàn nǎo", "D"], ["爸爸和妈妈", "bà ba hé mā ma", "E"]]
+ },
+ "hoiThoai": [
+  {
+   "am": "10-1", "anh": "hoi-thoai-1", "boiCanh": ["在办公室", "zài bàn gōng shì", "Ở văn phòng"],
+   "cau": [["A", "桌子上有什么？", "zhuō zi shang yǒu shén me", "Trên bàn có gì?"], ["B", "桌子上有一个电脑和一本书。", "zhuō zi shang yǒu yī ge diàn nǎo hé yī běn shū", "Trên bàn có một cái máy tính và một quyển sách."], ["A", "杯子在哪儿？", "bēi zi zài nǎr _", "Cái cốc ở đâu?"], ["B", "杯子在桌子里。", "bēi zi zài zhuō zi li", "Cái cốc ở trong bàn."]],
+   "tuMoi": [["桌子", "zhuō zi", "danh từ"], ["上", "shang", "danh từ"], ["电脑", "diàn nǎo", "danh từ"], ["和", "hé", "liên từ"], ["本", "běn", "lượng từ"], ["里", "li", "danh từ"]]
+  },
+  {
+   "am": "10-2", "anh": "hoi-thoai-2", "boiCanh": ["在健身房", "zài jiàn shēn fáng", "Ở phòng tập"],
+   "cau": [["A", "前面那个人叫什么名字？", "qián miàn nà ge rén jiào shén me míng zi", "Người đằng trước kia tên là gì?"], ["B", "她叫王方，在医院工作。", "tā jiào Wáng Fāng zài yī yuàn gōng zuò", "Cô ấy tên là Vương Phương, làm việc ở bệnh viện."], ["A", "后面那个人呢？他叫什么名字？", "hòu miàn nà ge rén ne tā jiào shén me míng zi", "Còn người đằng sau? Anh ấy tên là gì?"], ["B", "他叫谢朋，在商店工作。", "tā jiào Xiè Péng zài shāng diàn gōng zuò", "Anh ấy tên là Tạ Bằng, làm việc ở cửa hàng."]],
+   "tuMoi": [["前面", "qián miàn", "danh từ"], ["后面", "hòu miàn", "danh từ"]],
+   "tenRieng": [["王方", "Wáng Fāng", "Vương Phương (tên người)"], ["谢朋", "Xiè Péng", "Tạ Bằng (tên người)"]]
+  },
+  {
+   "am": "10-3", "anh": "hoi-thoai-3", "boiCanh": ["在图书馆", "zài tú shū guǎn", "Ở thư viện"],
+   "cau": [["A", "这儿有人吗？", "zhèr _ yǒu rén ma", "Chỗ này có người ngồi chưa?"], ["B", "没有。", "méi yǒu", "Chưa có."], ["A", "我能坐这儿吗？", "wǒ néng zuò zhèr _ ma", "Tôi ngồi đây được không?"], ["B", "请坐。", "qǐng zuò", "Mời ngồi."]],
+   "tuMoi": [["这儿", "zhèr _", "đại từ"], ["没有", "méi yǒu", "phó từ"], ["能", "néng", "động từ năng nguyện"], ["坐", "zuò", "động từ"]]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": ["“有”字句：表示存在", "Câu chữ 有: chỉ sự tồn tại"],
+   "mau": "Nơi chốn + 有 + người/vật; phủ định: Nơi chốn + 没有 + người/vật",
+   "giaiThich": "有 nói ở một nơi nào đó có người hoặc vật gì. Phủ định dùng 没有, và trước tân ngữ KHÔNG được có số từ + lượng từ.",
+   "viDu": [["椅子下面有一只小狗。", "yǐ zi xià miàn yǒu yī zhī xiǎo gǒu", "Dưới ghế có một con chó con."], ["学校里有一个商店。", "xué xiào li yǒu yī ge shāng diàn", "Trong trường có một cửa hàng."], ["桌子上有一个电脑和一本书。", "zhuō zi shang yǒu yī ge diàn nǎo hé yī běn shū", "Trên bàn có một cái máy tính và một quyển sách."], ["椅子下面没有小狗。", "yǐ zi xià miàn méi yǒu xiǎo gǒu", "Dưới ghế không có chó con."], ["桌子上没有电脑和书。", "zhuō zi shang méi yǒu diàn nǎo hé shū", "Trên bàn không có máy tính và sách."]]
+  },
+  {
+   "ten": ["连词“和”", "Liên từ 和"],
+   "giaiThich": "和 nối hai hay nhiều thành phần ngang hàng (danh từ, cụm danh từ). Không dùng 和 để nối hai câu như chữ 'và' trong tiếng Việt.",
+   "viDu": [["我有一个中国朋友和一个美国朋友。", "wǒ yǒu yī ge Zhōng guó péng you hé yī ge Měi guó péng you", "Tôi có một người bạn Trung Quốc và một người bạn Mỹ."], ["我家有三口人，爸爸、妈妈和我。", "wǒ jiā yǒu sān kǒu rén bà ba mā ma hé wǒ", "Nhà tôi có ba người: bố, mẹ và tôi."]]
+  },
+  {
+   "ten": ["能愿动词“能”", "Động từ năng nguyện 能"],
+   "mau": "Chủ ngữ + 能 + động từ; hỏi xin phép: 能……吗？",
+   "giaiThich": "能 đứng trước động từ, chỉ khả năng hoặc khả năng cho phép. Mẫu “能……吗？” dùng để xin phép, nhờ vả.",
+   "viDu": [["明天下午我能去商店。", "míng tiān xià wǔ wǒ néng qù shāng diàn", "Chiều mai tôi đi cửa hàng được."], ["你能在这儿写你的名字吗？", "nǐ néng zài zhèr _ xiě nǐ de míng zi ma", "Bạn viết tên của bạn ở đây được không?"], ["我能坐这儿吗？", "wǒ néng zuò zhèr _ ma", "Tôi ngồi đây được không?"]]
+  },
+  {
+   "ten": ["用“请”的祈使句", "Câu cầu khiến với 请"],
+   "mau": "请 + động từ",
+   "giaiThich": "请 đứng trước động từ khác tạo câu mời/đề nghị lịch sự (Mời…, Xin hãy…).",
+   "viDu": [["请写您的名字。", "qǐng xiě nín de míng zi", "Xin hãy viết tên của ông/bà."], ["请喝茶。", "qǐng hē chá", "Mời uống trà."], ["请坐。", "qǐng zuò", "Mời ngồi."]]
+  }
+ ],
+ "luyenTap": [
+  { "loai": "tra-loi-tu-do", "tieuDe": "Trả lời theo nội dung hội thoại", "cau": [["电脑在哪儿？", "diàn nǎo zài nǎr _"], ["书在哪儿？", "shū zài nǎr _"], ["桌子里面有什么？", "zhuō zi lǐ miàn yǒu shén me"], ["哪个人是王方？", "nǎ ge rén shì Wáng Fāng"], ["哪个人是谢朋？", "nǎ ge rén shì Xiè Péng"]] }
+ ],
+ "phatAm": [
+  {
+   "loai": "thanh-nhe", "am": "10-4", "tieuDe": "Cách đọc thanh nhẹ",
+   "giaiThich": "Độ cao của thanh nhẹ do âm tiết đứng trước quyết định: sau thanh 1, 2, 4 thì đọc thấp hơn âm trước; sau thanh 3 thì đọc cao hơn âm trước.",
+   "viDu": [["桌子", "zhuō zi", "cái bàn"], ["盘子", "pán zi", "cái đĩa"], ["椅子", "yǐ zi", "cái ghế"], ["裤子", "kù zi", "cái quần"]]
+  },
+  {
+   "loai": "doc-am", "am": "10-5", "tieuDe": "Từ láy: âm tiết sau thường đọc thanh nhẹ",
+   "am_tiet": ["bàba", "māma", "yéye", "nǎinai", "gēge", "jiějie", "dìdi", "mèimei", "gūgu", "shūshu", "tàitai", "xīngxing", "xièxie", "kànkan", "shuōshuo", "chángchang"]
+  },
+  {
+   "loai": "doc-am", "am": "10-6", "tieuDe": "Hậu tố -们, -子, -头 thường đọc thanh nhẹ",
+   "am_tiet": ["nǐmen", "wǒmen", "tāmen", "rénmen", "zhuōzi", "yǐzi", "bēizi", "bèizi", "shétou", "zhěntou", "shítou", "mùtou", "qiántou", "hòutou", "lǐtou", "wàitou"]
+  }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   ["上", "shàng", "Nét ngang dưới là đường mốc, nét ngắn ở trên chỉ vị trí phía trên; nghĩa là trên, chỗ cao."],
+   ["下", "xià", "Trái nghĩa với 上: ở dưới, chỗ thấp."],
+   ["本", "běn", "Chữ 木 (cây) thêm dấu chấm ở gốc: nghĩa gốc là gốc cây, sau chỉ cái gốc của sự vật."],
+   ["末", "mò", "Nghĩa gốc là ngọn cây, đầu mút; nay còn chỉ cái không cơ bản, thứ yếu."]
+  ],
+  "cauTruc": [
+   ["全包围结构", "Cấu trúc bao quanh hoàn toàn (bốn mặt)", ["四", "国"]]
+  ],
+  "boThu": [
+   ["囗", "国字框", "guó zì kuàng", "Bộ vi: thường chỉ bị vây lại, bao quanh.", ["国", "困"]],
+   ["礻", "示字旁", "shì zì páng", "Bộ thị (biến thể của 示): thường liên quan đến thần linh, cúng tế, phúc họa.", ["视", "祝"]]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Nói vị trí đồ vật và chỗ ngồi",
+  "tuBoSung": [["后面", "hòu miàn", "phía sau"], ["左边", "zuǒ bian", "bên trái"], ["右边", "yòu bian", "bên phải"]],
+  "viDu": [["A", "你的桌子上面有什么？", "nǐ de zhuō zi shàng miàn yǒu shén me", "Trên bàn của bạn có gì?"], ["A", "你的椅子下面有什么？", "nǐ de yǐ zi xià miàn yǒu shén me", "Dưới ghế của bạn có gì?"], ["B", "大卫在我左边。", "Dà wèi zài wǒ zuǒ bian", "David ở bên trái tôi."]]
+ },
+ "vanHoa": {
+  "tieuDe": ["中国人姓名的特点", "Đặc điểm họ tên người Trung Quốc"],
+  "noiDung": "Tên người Trung Quốc thường họ trước, tên sau, như 李月, 谢朋, 王方: 李, 谢, 王 là họ; 月, 朋, 方 là tên (giống tiếng Việt). Trung Quốc có hơn 5000 họ, thường gặp khoảng hơn 200; 张, 王, 李, 赵 là những họ phổ biến nhất. Phần lớn là họ một chữ (单姓); cũng có họ hai chữ trở lên (复姓) như 欧阳, 上官, 诸葛. Khi xưng hô có thể dùng họ + nghề nghiệp: 李月 là giáo viên → gọi 李老师; 王方 là bác sĩ → gọi 王医生.",
+  "cau": [["李老师", "Lǐ lǎo shī"], ["王医生", "Wáng yī shēng"]]
+ }
+}

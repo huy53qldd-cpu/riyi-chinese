@@ -1,0 +1,81 @@
+{
+ "_ghiChu": "Nguồn chép tay từ HSK标准教程1, bài 9 (trang PDF 83–90). Sách in 'Bú zài' → ghi thanh gốc bù. 哪儿 nǎr / 那儿 nàr: âm cuốn lưỡi, chữ 儿 không có pinyin riêng ('_'). Sách in dấu '?' sau câu 我在学校工作 là lỗi in, ghi '。'. Đáp án khởi động suy từ ảnh. Bản dịch Việt là bản nháp.",
+ "bai": 9,
+ "ten": ["你儿子在哪儿工作", "nǐ ér zi zài nǎr _ gōng zuò", "Con trai bạn làm việc ở đâu"],
+ "trangPdf": [83, 90],
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": ["A", "B", "C", "D", "E", "F"],
+  "tu": [["爸爸", "bà ba", "F"], ["医生", "yī shēng", "E"], ["医院", "yī yuàn", "D"], ["椅子", "yǐ zi", "C"], ["猫", "māo", "A"], ["狗", "gǒu", "B"]]
+ },
+ "hoiThoai": [
+  {
+   "am": "09-1", "anh": "hoi-thoai-1", "boiCanh": ["在家", "zài jiā", "Ở nhà"],
+   "cau": [["A", "小猫在哪儿？", "xiǎo māo zài nǎr _", "Con mèo con ở đâu?"], ["B", "小猫在那儿。", "xiǎo māo zài nàr _", "Con mèo con ở đằng kia."], ["A", "小狗在哪儿？", "xiǎo gǒu zài nǎr _", "Con chó con ở đâu?"], ["B", "小狗在椅子下面。", "xiǎo gǒu zài yǐ zi xià miàn", "Con chó con ở dưới ghế."]],
+   "tuMoi": [["小", "xiǎo", "tính từ"], ["猫", "māo", "danh từ"], ["在", "zài", "động từ"], ["那儿", "nàr _", "đại từ"], ["狗", "gǒu", "danh từ"], ["椅子", "yǐ zi", "danh từ"], ["下面", "xià miàn", "danh từ"]]
+  },
+  {
+   "am": "09-2", "anh": "hoi-thoai-2", "boiCanh": ["在车站", "zài chē zhàn", "Ở nhà ga"],
+   "cau": [["A", "你在哪儿工作？", "nǐ zài nǎr _ gōng zuò", "Bạn làm việc ở đâu?"], ["B", "我在学校工作。", "wǒ zài xué xiào gōng zuò", "Tôi làm việc ở trường học."], ["A", "你儿子在哪儿工作？", "nǐ ér zi zài nǎr _ gōng zuò", "Con trai bạn làm việc ở đâu?"], ["B", "我儿子在医院工作，他是医生。", "wǒ ér zi zài yī yuàn gōng zuò tā shì yī shēng", "Con trai tôi làm việc ở bệnh viện, nó là bác sĩ."]],
+   "tuMoi": [["哪儿", "nǎr _", "đại từ"], ["工作", "gōng zuò", "động từ / danh từ"], ["儿子", "ér zi", "danh từ"], ["医院", "yī yuàn", "danh từ"], ["医生", "yī shēng", "danh từ"]]
+  },
+  {
+   "am": "09-3", "anh": "hoi-thoai-3", "boiCanh": ["打电话", "dǎ diàn huà", "Gọi điện thoại"],
+   "cau": [["A", "你爸爸在家吗？", "nǐ bà ba zài jiā ma", "Bố bạn có ở nhà không?"], ["B", "不在家。", "bù zài jiā", "Không có ở nhà."], ["A", "他在哪儿呢？", "tā zài nǎr _ ne", "Ông ấy ở đâu vậy?"], ["B", "他在医院。", "tā zài yī yuàn", "Ông ấy ở bệnh viện."]],
+   "tuMoi": [["爸爸", "bà ba", "danh từ"]]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": ["动词“在”", "Động từ 在"],
+   "mau": "Chủ ngữ + 在 + từ chỉ nơi chốn",
+   "giaiThich": "在 là động từ, theo sau là từ chỉ vị trí, dùng để nói người hoặc vật ở đâu.",
+   "viDu": [["我朋友在学校。", "wǒ péng you zài xué xiào", "Bạn tôi ở trường."], ["我妈妈在家。", "wǒ mā ma zài jiā", "Mẹ tôi ở nhà."], ["小狗在椅子下面。", "xiǎo gǒu zài yǐ zi xià miàn", "Con chó con ở dưới ghế."]]
+  },
+  {
+   "ten": ["疑问代词“哪儿”", "Đại từ nghi vấn 哪儿"],
+   "giaiThich": "哪儿 dùng trong câu hỏi để hỏi vị trí của người hoặc vật (ở đâu).",
+   "viDu": [["我的杯子在哪儿？", "wǒ de bēi zi zài nǎr _", "Cái cốc của tôi ở đâu?"], ["你的中国朋友在哪儿？", "nǐ de Zhōng guó péng you zài nǎr _", "Người bạn Trung Quốc của bạn ở đâu?"], ["小猫在哪儿？", "xiǎo māo zài nǎr _", "Con mèo con ở đâu?"]]
+  },
+  {
+   "ten": ["介词“在”", "Giới từ 在"],
+   "mau": "Chủ ngữ + 在 + nơi chốn + động từ",
+   "giaiThich": "在 cũng là giới từ, đi với từ chỉ nơi chốn, đặt TRƯỚC động từ để nói hành động diễn ra ở đâu (khác tiếng Việt: nơi chốn đứng sau động từ).",
+   "viDu": [["我在朋友家喝茶。", "wǒ zài péng you jiā hē chá", "Tôi uống trà ở nhà bạn."], ["他们在学校看书。", "tā men zài xué xiào kàn shū", "Họ đọc sách ở trường."], ["我儿子在医院工作。", "wǒ ér zi zài yī yuàn gōng zuò", "Con trai tôi làm việc ở bệnh viện."]]
+  },
+  {
+   "ten": ["疑问助词“呢”(2)", "Trợ từ nghi vấn 呢 (2)"],
+   "giaiThich": "呢 đặt cuối câu để hỏi vị trí của người hoặc vật (… đâu rồi?).",
+   "viDu": [["我的小猫呢？", "wǒ de xiǎo māo ne", "Con mèo con của tôi đâu rồi?"], ["我的杯子呢？", "wǒ de bēi zi ne", "Cái cốc của tôi đâu rồi?"], ["他在哪儿呢？", "tā zài nǎr _ ne", "Anh ấy ở đâu vậy?"]]
+  }
+ ],
+ "luyenTap": [
+  { "loai": "tra-loi-tu-do", "tieuDe": "Trả lời theo nội dung hội thoại", "cau": [["小狗在哪儿？", "xiǎo gǒu zài nǎr _"], ["他在哪儿工作？", "tā zài nǎr _ gōng zuò"], ["他儿子在哪儿工作？", "tā ér zi zài nǎr _ gōng zuò"], ["她爸爸在家吗？", "tā bà ba zài jiā ma"], ["她爸爸在哪儿呢？", "tā bà ba zài nǎr _ ne"]] }
+ ],
+ "phatAm": [
+  {
+   "loai": "phoi-thanh", "tieuDe": "Thanh điệu trong từ hai âm tiết (4): thanh 4 + thanh 1/2/3/4",
+   "viDu": [["面包", "miàn bāo", "bánh mì"], ["面条", "miàn tiáo", "mì sợi"], ["电脑", "diàn nǎo", "máy tính"], ["电话", "diàn huà", "điện thoại"]]
+  },
+  { "loai": "doc-am", "am": "09-4", "tieuDe": "Nghe và đọc theo, chú ý cách phối thanh", "am_tiet": ["xiàtiān", "qùnián", "tiào wǔ", "shuì jiào", "diàndēng", "diànchí", "diànyǐng", "diànshì", "chàng gē", "fùxí", "Hànyǔ", "Hànzì", "jiànkāng", "dìtú", "dìtiě", "jiàn miàn"] }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   ["在", "zài", "Hình dạng như cây cỏ mới mọc trên đất; nay nghĩa là sống, tồn tại, ở."],
+   ["子", "zǐ", "Nghĩa gốc là em bé; nay có nhiều nghĩa, như trong 儿子 (con trai), 电子 (điện tử)."],
+   ["工", "gōng", "Hình dạng như cây thước thợ; nay có nhiều nghĩa, như trong 工人 (công nhân), 工作 (làm việc)."]
+  ],
+  "cauTruc": [
+   ["半包围结构", "Cấu trúc nửa bao quanh (bao hai hoặc ba mặt)", ["店", "习", "这", "同", "凶", "医"]]
+  ],
+  "boThu": [
+   ["辶", "走之旁", "zǒu zhī páng", "Bộ sước: thường liên quan đến đi lại.", ["这", "送"]],
+   ["门", "门字框", "mén zì kuàng", "Bộ môn: thường liên quan đến phòng, cửa.", ["问", "间"]]
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi nơi ở và nơi làm việc",
+  "viDu": [["A", "……在哪儿？", "…… zài nǎr _", "… ở đâu?"], ["A", "……在哪儿工作？", "…… zài nǎr _ gōng zuò", "… làm việc ở đâu?"], ["B", "……在……工作，他是……", "…… zài …… gōng zuò tā shì ……", "… làm việc ở …, anh ấy là …"]]
+ }
+}

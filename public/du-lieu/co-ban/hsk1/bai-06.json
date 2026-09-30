@@ -1,0 +1,2453 @@
+{
+ "loai": "bai-co-ban",
+ "version": 1,
+ "cap": 1,
+ "bai": 6,
+ "capNhatLuc": "2026-09-30",
+ "nguon": "HSK标准教程 1 (HSK Standard Course 1), bài 6: hội thoại, âm thanh, bài tập chọn lọc.",
+ "ten": {
+  "trung": "我会说汉语",
+  "pinyin": [
+   "wǒ",
+   "huì",
+   "shuō",
+   "Hàn",
+   "yǔ"
+  ],
+  "viet": "Tôi biết nói tiếng Trung"
+ },
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": [
+   "khoi-dong-A",
+   "khoi-dong-B",
+   "khoi-dong-C",
+   "khoi-dong-D",
+   "khoi-dong-E",
+   "khoi-dong-F"
+  ],
+  "tu": [
+   {
+    "trung": "妈妈",
+    "pinyin": [
+     "mā",
+     "ma"
+    ],
+    "dapAn": "F"
+   },
+   {
+    "trung": "汉字",
+    "pinyin": [
+     "Hàn",
+     "zì"
+    ],
+    "dapAn": "A"
+   },
+   {
+    "trung": "中国菜",
+    "pinyin": [
+     "Zhōng",
+     "guó",
+     "cài"
+    ],
+    "dapAn": "B"
+   },
+   {
+    "trung": "说汉语",
+    "pinyin": [
+     "shuō",
+     "Hàn",
+     "yǔ"
+    ],
+    "dapAn": "C"
+   },
+   {
+    "trung": "写汉字",
+    "pinyin": [
+     "xiě",
+     "Hàn",
+     "zì"
+    ],
+    "dapAn": "D"
+   },
+   {
+    "trung": "做中国菜",
+    "pinyin": [
+     "zuò",
+     "Zhōng",
+     "guó",
+     "cài"
+    ],
+    "dapAn": "E"
+   }
+  ]
+ },
+ "hoiThoai": [
+  {
+   "so": 1,
+   "am": "06-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": {
+    "trung": "在学校",
+    "pinyin": [
+     "zài",
+     "xué",
+     "xiào"
+    ],
+    "viet": "Ở trường"
+   },
+   "cau": [
+    {
+     "trung": "你会说汉语吗？",
+     "pinyin": [
+      "nǐ",
+      "huì",
+      "shuō",
+      "Hàn",
+      "yǔ",
+      "ma",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Bạn biết nói tiếng Trung không?"
+    },
+    {
+     "trung": "我会说汉语。",
+     "pinyin": [
+      "wǒ",
+      "huì",
+      "shuō",
+      "Hàn",
+      "yǔ",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Tôi biết nói tiếng Trung."
+    },
+    {
+     "trung": "你妈妈会说汉语吗？",
+     "pinyin": [
+      "nǐ",
+      "mā",
+      "ma",
+      "huì",
+      "shuō",
+      "Hàn",
+      "yǔ",
+      "ma",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Mẹ bạn biết nói tiếng Trung không?"
+    },
+    {
+     "trung": "她不会说。",
+     "pinyin": [
+      "tā",
+      "bù",
+      "huì",
+      "shuō",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (会).",
+     "nguoi": "B",
+     "viet": "Mẹ tôi không biết nói."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "会",
+     "pinyin": [
+      "huì"
+     ],
+     "tuLoai": "động từ năng nguyện",
+     "idTuVung": "tu-0082",
+     "capHsk": 1,
+     "viet": "biết (làm gì nhờ đã học), có thể"
+    },
+    {
+     "trung": "说",
+     "pinyin": [
+      "shuō"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0196",
+     "capHsk": 1,
+     "viet": "nói"
+    },
+    {
+     "trung": "妈妈",
+     "pinyin": [
+      "mā",
+      "ma"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0117",
+     "capHsk": 1,
+     "viet": "mẹ, má"
+    }
+   ]
+  },
+  {
+   "so": 2,
+   "am": "06-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": {
+    "trung": "在厨房",
+    "pinyin": [
+     "zài",
+     "chú",
+     "fáng"
+    ],
+    "viet": "Trong bếp"
+   },
+   "cau": [
+    {
+     "trung": "中国菜好吃吗？",
+     "pinyin": [
+      "Zhōng",
+      "guó",
+      "cài",
+      "hǎo",
+      "chī",
+      "ma",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Món Trung Quốc ngon không?"
+    },
+    {
+     "trung": "中国菜很好吃。",
+     "pinyin": [
+      "Zhōng",
+      "guó",
+      "cài",
+      "hěn",
+      "hǎo",
+      "chī",
+      ""
+     ],
+     "ghiChuBienDieu": "很 đọc thành thanh 2 khi đứng trước thanh 3 (好).",
+     "nguoi": "B",
+     "viet": "Món Trung Quốc rất ngon."
+    },
+    {
+     "trung": "你会做中国菜吗？",
+     "pinyin": [
+      "nǐ",
+      "huì",
+      "zuò",
+      "Zhōng",
+      "guó",
+      "cài",
+      "ma",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Bạn biết nấu món Trung Quốc không?"
+    },
+    {
+     "trung": "我不会做。",
+     "pinyin": [
+      "wǒ",
+      "bù",
+      "huì",
+      "zuò",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (会).",
+     "nguoi": "B",
+     "viet": "Tôi không biết nấu."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "菜",
+     "pinyin": [
+      "cài"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0016",
+     "capHsk": 1,
+     "viet": "món ăn; rau"
+    },
+    {
+     "trung": "很",
+     "pinyin": [
+      "hěn"
+     ],
+     "tuLoai": "phó từ",
+     "idTuVung": "tu-0079",
+     "capHsk": 1,
+     "viet": "rất"
+    },
+    {
+     "trung": "好吃",
+     "pinyin": [
+      "hǎo",
+      "chī"
+     ],
+     "tuLoai": "tính từ",
+     "boSung": true,
+     "idTuVung": "tu-0073",
+     "capHsk": 1,
+     "viet": "ngon"
+    },
+    {
+     "trung": "做",
+     "pinyin": [
+      "zuò"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0298",
+     "capHsk": 1,
+     "viet": "làm"
+    }
+   ]
+  },
+  {
+   "so": 3,
+   "am": "06-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": {
+    "trung": "在图书馆",
+    "pinyin": [
+     "zài",
+     "tú",
+     "shū",
+     "guǎn"
+    ],
+    "viet": "Ở thư viện"
+   },
+   "cau": [
+    {
+     "trung": "你会写汉字吗？",
+     "pinyin": [
+      "nǐ",
+      "huì",
+      "xiě",
+      "Hàn",
+      "zì",
+      "ma",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Bạn biết viết chữ Hán không?"
+    },
+    {
+     "trung": "我会写。",
+     "pinyin": [
+      "wǒ",
+      "huì",
+      "xiě",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Tôi biết viết."
+    },
+    {
+     "trung": "这个字怎么写？",
+     "pinyin": [
+      "zhè",
+      "ge",
+      "zì",
+      "zěn",
+      "me",
+      "xiě",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Chữ này viết thế nào?"
+    },
+    {
+     "trung": "对不起，这个字我会读，不会写。",
+     "pinyin": [
+      "duì",
+      "bu",
+      "qǐ",
+      "",
+      "zhè",
+      "ge",
+      "zì",
+      "wǒ",
+      "huì",
+      "dú",
+      "",
+      "bù",
+      "huì",
+      "xiě",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (会).",
+     "nguoi": "B",
+     "viet": "Xin lỗi, chữ này tôi biết đọc, không biết viết."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "写",
+     "pinyin": [
+      "xiě"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0238",
+     "capHsk": 1,
+     "viet": "viết"
+    },
+    {
+     "trung": "汉字",
+     "pinyin": [
+      "Hàn",
+      "zì"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0070",
+     "capHsk": 1,
+     "viet": "chữ Hán"
+    },
+    {
+     "trung": "字",
+     "pinyin": [
+      "zì"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0296",
+     "capHsk": 1,
+     "viet": "chữ"
+    },
+    {
+     "trung": "怎么",
+     "pinyin": [
+      "zěn",
+      "me"
+     ],
+     "tuLoai": "đại từ",
+     "idTuVung": "tu-0276",
+     "capHsk": 1,
+     "viet": "thế nào, làm sao; sao, tại sao"
+    },
+    {
+     "trung": "读",
+     "pinyin": [
+      "dú"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0042",
+     "capHsk": 1,
+     "viet": "đọc"
+    }
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": {
+    "trung": "能愿动词“会”(1)",
+    "viet": "Động từ năng nguyện 会 (1)"
+   },
+   "mau": "Chủ ngữ + (不)会 + động từ",
+   "giaiThich": "会 đứng trước động từ, chỉ khả năng có được nhờ học (biết làm gì). Phủ định: 不会.",
+   "viDu": [
+    {
+     "trung": "我会写汉字。",
+     "pinyin": [
+      "wǒ",
+      "huì",
+      "xiě",
+      "Hàn",
+      "zì",
+      ""
+     ],
+     "viet": "Tôi biết viết chữ Hán."
+    },
+    {
+     "trung": "我不会做中国菜。",
+     "pinyin": [
+      "wǒ",
+      "bù",
+      "huì",
+      "zuò",
+      "Zhōng",
+      "guó",
+      "cài",
+      ""
+     ],
+     "ghiChuBienDieu": "不 đọc thành bú vì đứng trước thanh 4 (会).",
+     "viet": "Tôi không biết nấu món Trung Quốc."
+    },
+    {
+     "trung": "你妈妈会说汉语吗？",
+     "pinyin": [
+      "nǐ",
+      "mā",
+      "ma",
+      "huì",
+      "shuō",
+      "Hàn",
+      "yǔ",
+      "ma",
+      ""
+     ],
+     "viet": "Mẹ bạn biết nói tiếng Trung không?"
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "形容词谓语句",
+    "viet": "Câu vị ngữ tính từ"
+   },
+   "mau": "Chủ ngữ + phó từ mức độ (很) + tính từ; phủ định: Chủ ngữ + 不 + tính từ",
+   "giaiThich": "Tính từ làm vị ngữ để tả tính chất, trạng thái; thường có 很 đứng trước. Không dùng 是 trước tính từ.",
+   "viDu": [
+    {
+     "trung": "我很好。",
+     "pinyin": [
+      "wǒ",
+      "hěn",
+      "hǎo",
+      ""
+     ],
+     "ghiChuBienDieu": "我很好: có 3 thanh 3 liền nhau, cách biến điệu phụ thuộc cách ngắt nhịp câu.",
+     "viet": "Tôi khoẻ."
+    },
+    {
+     "trung": "我妈妈的汉语不好。",
+     "pinyin": [
+      "wǒ",
+      "mā",
+      "ma",
+      "de",
+      "Hàn",
+      "yǔ",
+      "bù",
+      "hǎo",
+      ""
+     ],
+     "viet": "Tiếng Trung của mẹ tôi không giỏi."
+    },
+    {
+     "trung": "中国菜很好吃。",
+     "pinyin": [
+      "Zhōng",
+      "guó",
+      "cài",
+      "hěn",
+      "hǎo",
+      "chī",
+      ""
+     ],
+     "ghiChuBienDieu": "很 đọc thành thanh 2 khi đứng trước thanh 3 (好).",
+     "viet": "Món Trung Quốc rất ngon."
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "疑问代词“怎么”(1)",
+    "viet": "Đại từ nghi vấn 怎么 (1)"
+   },
+   "mau": "怎么 + động từ",
+   "giaiThich": "怎么 đứng trước động từ, hỏi cách làm (làm thế nào).",
+   "viDu": [
+    {
+     "trung": "这个汉字怎么读？",
+     "pinyin": [
+      "zhè",
+      "ge",
+      "Hàn",
+      "zì",
+      "zěn",
+      "me",
+      "dú",
+      ""
+     ],
+     "viet": "Chữ Hán này đọc thế nào?"
+    },
+    {
+     "trung": "你的汉语名字怎么写？",
+     "pinyin": [
+      "nǐ",
+      "de",
+      "Hàn",
+      "yǔ",
+      "míng",
+      "zi",
+      "zěn",
+      "me",
+      "xiě",
+      ""
+     ],
+     "viet": "Tên tiếng Trung của bạn viết thế nào?"
+    },
+    {
+     "trung": "这个字怎么写？",
+     "pinyin": [
+      "zhè",
+      "ge",
+      "zì",
+      "zěn",
+      "me",
+      "xiě",
+      ""
+     ],
+     "viet": "Chữ này viết thế nào?"
+    }
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo thực tế của bạn",
+   "cau": [
+    {
+     "trung": "你会说汉语吗？",
+     "pinyin": [
+      "nǐ",
+      "huì",
+      "shuō",
+      "Hàn",
+      "yǔ",
+      "ma",
+      ""
+     ]
+    },
+    {
+     "trung": "你会写汉字吗？",
+     "pinyin": [
+      "nǐ",
+      "huì",
+      "xiě",
+      "Hàn",
+      "zì",
+      "ma",
+      ""
+     ]
+    },
+    {
+     "trung": "你会做中国菜吗？",
+     "pinyin": [
+      "nǐ",
+      "huì",
+      "zuò",
+      "Zhōng",
+      "guó",
+      "cài",
+      "ma",
+      ""
+     ]
+    },
+    {
+     "trung": "你有汉语名字吗？",
+     "pinyin": [
+      "nǐ",
+      "yǒu",
+      "Hàn",
+      "yǔ",
+      "míng",
+      "zi",
+      "ma",
+      ""
+     ],
+     "ghiChuBienDieu": "你 đọc thành thanh 2 khi đứng trước thanh 3 (有)."
+    },
+    {
+     "trung": "你会写你的汉语名字吗？",
+     "pinyin": [
+      "nǐ",
+      "huì",
+      "xiě",
+      "nǐ",
+      "de",
+      "Hàn",
+      "yǔ",
+      "míng",
+      "zi",
+      "ma",
+      ""
+     ],
+     "ghiChuBienDieu": "写 đọc thành thanh 2 khi đứng trước thanh 3 (你)."
+    }
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "phoi-thanh",
+   "tieuDe": "Thanh điệu trong từ hai âm tiết (1): thanh 1 + thanh 1/2/3/4",
+   "giaiThich": "Trong từ nhiều âm tiết, thanh 3 KHÔNG đọc đủ 214 như khi đứng riêng, mà là thanh thấp đi xuống gần 211, nửa sau không lên cao nữa.",
+   "viDu": [
+    {
+     "trung": "咖啡",
+     "pinyin": [
+      "kā",
+      "fēi"
+     ],
+     "viet": "cà phê"
+    },
+    {
+     "trung": "公园",
+     "pinyin": [
+      "gōng",
+      "yuán"
+     ],
+     "viet": "công viên"
+    },
+    {
+     "trung": "机场",
+     "pinyin": [
+      "jī",
+      "chǎng"
+     ],
+     "viet": "sân bay"
+    },
+    {
+     "trung": "车站",
+     "pinyin": [
+      "chē",
+      "zhàn"
+     ],
+     "viet": "bến xe"
+    }
+   ],
+   "hinh": [
+    "phoi-thanh-1",
+    "phoi-thanh-2",
+    "phoi-thanh-3",
+    "phoi-thanh-4"
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "am": "06-4",
+   "tieuDe": "Nghe và đọc theo, chú ý cách phối thanh",
+   "amTiet": [
+    "jīntiān",
+    "jīnnián",
+    "jīngcǎi",
+    "chēpiào",
+    "gōngsī",
+    "gāngcái",
+    "cāochǎng",
+    "jīdàn",
+    "guā fēng",
+    "huānyíng",
+    "jīnglǐ",
+    "jīhuì",
+    "guānxīn",
+    "guānyú",
+    "kāishǐ",
+    "gāoxìng"
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [
+   {
+    "net": "㇜",
+    "ten": "撇折",
+    "pinyin": "piězhé",
+    "viet": "phẩy gập",
+    "viDu": [
+     "么",
+     "东"
+    ]
+   },
+   {
+    "net": "㇂",
+    "ten": "斜钩",
+    "pinyin": "xiégōu",
+    "viet": "móc xiên",
+    "viDu": [
+     "我",
+     "钱"
+    ]
+   },
+   {
+    "net": "㇀",
+    "ten": "提",
+    "pinyin": "tí",
+    "viet": "hất",
+    "viDu": [
+     "我",
+     "打"
+    ]
+   }
+  ],
+  "chuDocThe": [
+   {
+    "trung": "东",
+    "pinyin": [
+     "dōng"
+    ],
+    "giaiThich": "Phía mặt trời mọc, nghĩa là phía đông, trái nghĩa với 西."
+   },
+   {
+    "trung": "我",
+    "pinyin": [
+     "wǒ"
+    ],
+    "giaiThich": "Vốn vẽ một loại vũ khí có nhiều răng sắc; nay là đại từ 'tôi'."
+   },
+   {
+    "trung": "西",
+    "pinyin": [
+     "xī"
+    ],
+    "giaiThich": "Vốn vẽ cái tổ chim; nay chỉ phương hướng, phía tây, trái nghĩa với 东."
+   }
+  ],
+  "cauTruc": [
+   {
+    "ten": "独体结构",
+    "viet": "Chữ độc thể: chỉ có một bộ phận",
+    "viDu": [
+     "人",
+     "我",
+     "中"
+    ]
+   },
+   {
+    "ten": "合体结构",
+    "viet": "Chữ hợp thể: gồm hai bộ phận trở lên",
+    "viDu": [
+     "你",
+     "做"
+    ]
+   }
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi nhau biết những gì",
+  "viDu": [
+   {
+    "trung": "你会说汉语吗？",
+    "pinyin": [
+     "nǐ",
+     "huì",
+     "shuō",
+     "Hàn",
+     "yǔ",
+     "ma",
+     ""
+    ],
+    "nguoi": "A",
+    "viet": "Bạn biết nói tiếng Trung không?"
+   },
+   {
+    "trung": "你的汉语名字叫什么？",
+    "pinyin": [
+     "nǐ",
+     "de",
+     "Hàn",
+     "yǔ",
+     "míng",
+     "zi",
+     "jiào",
+     "shén",
+     "me",
+     ""
+    ],
+    "nguoi": "A",
+    "viet": "Tên tiếng Trung của bạn là gì?"
+   }
+  ],
+  "tuBoSung": [
+   {
+    "trung": "英语",
+    "pinyin": [
+     "Yīng",
+     "yǔ"
+    ],
+    "viet": "tiếng Anh"
+   },
+   {
+    "trung": "法语",
+    "pinyin": [
+     "Fǎ",
+     "yǔ"
+    ],
+    "ghiChuBienDieu": "法 đọc thành thanh 2 khi đứng trước thanh 3 (语).",
+    "viet": "tiếng Pháp"
+   },
+   {
+    "trung": "日语",
+    "pinyin": [
+     "Rì",
+     "yǔ"
+    ],
+    "viet": "tiếng Nhật"
+   }
+  ]
+ },
+ "tuBoSung2025": [
+  {
+   "trung": "可以",
+   "pinyin": [
+    "kě",
+    "yǐ"
+   ],
+   "idTuVung": "tu-0103",
+   "capHsk": 1,
+   "viet": "có thể, được (phép)"
+  },
+  {
+   "trung": "知道",
+   "pinyin": [
+    "zhī",
+    "dào"
+   ],
+   "idTuVung": "tu-0288",
+   "capHsk": 1,
+   "viet": "biết"
+  },
+  {
+   "trung": "说话",
+   "pinyin": [
+    "shuō",
+    "huà"
+   ],
+   "idTuVung": "tu-0197",
+   "capHsk": 1,
+   "viet": "nói chuyện"
+  },
+  {
+   "trung": "唱",
+   "pinyin": [
+    "chàng"
+   ],
+   "idTuVung": "tu-0018",
+   "capHsk": 1,
+   "viet": "hát"
+  },
+  {
+   "trung": "歌",
+   "pinyin": [
+    "gē"
+   ],
+   "idTuVung": "tu-0059",
+   "capHsk": 1,
+   "viet": "bài hát"
+  },
+  {
+   "trung": "好听",
+   "pinyin": [
+    "hǎo",
+    "tīng"
+   ],
+   "idTuVung": "tu-0075",
+   "capHsk": 1,
+   "viet": "hay, nghe êm tai"
+  },
+  {
+   "trung": "读书",
+   "pinyin": [
+    "dú",
+    "shū"
+   ],
+   "idTuVung": "tu-0047",
+   "capHsk": 1,
+   "viet": "đọc sách; học"
+  }
+ ],
+ "baiTap": {
+  "nghe": {
+   "nhom": [
+    {
+     "tieuDe": "第一部分",
+     "kieu": "dung-sai-hinh",
+     "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+     "viDu": [
+      {
+       "hinh": "bai-06/bt-p41-1.webp",
+       "chu": [
+        [
+         "很",
+         "hěn"
+        ],
+        [
+         "高兴",
+         "gāoxìng"
+        ]
+       ],
+       "dapAn": "dung"
+      },
+      {
+       "hinh": "bai-06/bt-p41-2.webp",
+       "chu": [
+        [
+         "看",
+         "kàn"
+        ],
+        [
+         "电影",
+         "diànyǐng"
+        ]
+       ],
+       "dapAn": "sai"
+      }
+     ],
+     "cau": [
+      {
+       "so": 1,
+       "hinh": "bai-06/bt-p41-3.webp",
+       "loi": [
+        "说汉语"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: tay cầm bút lông viết chữ (viết, không phải nói).",
+       "chacChan": false
+      },
+      {
+       "so": 2,
+       "hinh": "bai-06/bt-p41-4.webp",
+       "loi": [
+        "中国菜"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: khay sushi (món Nhật).",
+       "chacChan": false
+      },
+      {
+       "so": 3,
+       "hinh": "bai-06/bt-p41-5.webp",
+       "loi": [
+        "做中国菜"
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: đôi nam nữ đang nấu ăn."
+      },
+      {
+       "so": 4,
+       "hinh": "bai-06/bt-p41-6.webp",
+       "loi": [
+        "汉语老师"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: cậu bé đang ngồi viết bài.",
+       "chacChan": false
+      }
+     ]
+    },
+    {
+     "tieuDe": "第二部分",
+     "kieu": "ghep-hinh",
+     "huongDan": "Nghe hội thoại, chọn tranh khớp",
+     "luaChon": [
+      {
+       "ma": "A",
+       "hinh": "bai-06/bt-p42-1.webp"
+      },
+      {
+       "ma": "B",
+       "hinh": "bai-06/bt-p42-2.webp"
+      },
+      {
+       "ma": "C",
+       "hinh": "bai-06/bt-p42-3.webp"
+      },
+      {
+       "ma": "D",
+       "hinh": "bai-06/bt-p42-4.webp"
+      },
+      {
+       "ma": "E",
+       "hinh": "bai-06/bt-p42-5.webp"
+      }
+     ],
+     "viDu": {
+      "loi": [
+       "女：你好！",
+       "男：你好！很高兴认识你。"
+      ],
+      "dapAn": "C",
+      "dong": [
+       [
+        [
+         "女：你好！",
+         ""
+        ]
+       ],
+       [
+        [
+         "男：你好！很高兴认识你。",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 5,
+       "loi": [
+        "你们家谁会说汉语？",
+        "我妈妈会说汉语。"
+       ],
+       "dapAn": "E",
+       "lyDo": "Tranh E: người phụ nữ lớn tuổi (mẹ) đang gọi điện.",
+       "chacChan": false
+      },
+      {
+       "so": 6,
+       "loi": [
+        "你会做中国菜吗？",
+        "我不会做，我的好朋友会做。"
+       ],
+       "dapAn": "B",
+       "lyDo": "Tranh B: cô gái đang nấu ăn.",
+       "chacChan": false
+      },
+      {
+       "so": 7,
+       "loi": [
+        "这个汉字怎么写？",
+        "对不起，我会读，不会写。"
+       ],
+       "dapAn": "A",
+       "lyDo": "Tranh A: hai bạn đang cùng xem bài.",
+       "chacChan": false
+      },
+      {
+       "so": 8,
+       "loi": [
+        "中国菜好吃吗？",
+        "中国菜很好吃！"
+       ],
+       "dapAn": "D",
+       "lyDo": "Tranh D: món đậu phụ Tứ Xuyên."
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "chon-chu",
+     "huongDan": "Nghe câu, trả lời câu hỏi",
+     "viDu": {
+      "loi": [
+       "下午我去商店，我想买一些水果。",
+       "问：她下午去哪里？"
+      ],
+      "luaChon": [
+       {
+        "ma": "A",
+        "chu": [
+         [
+          "商店",
+          "shāngdiàn"
+         ]
+        ]
+       },
+       {
+        "ma": "B",
+        "chu": [
+         [
+          "医院",
+          "yīyuàn"
+         ]
+        ]
+       },
+       {
+        "ma": "C",
+        "chu": [
+         [
+          "学校",
+          "xuéxiào"
+         ]
+        ]
+       }
+      ],
+      "dapAn": "A",
+      "dong": [
+       [
+        [
+         "下午我去商店，我想买一些水果。",
+         ""
+        ]
+       ],
+       [
+        [
+         "问：她下午去哪里？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 9,
+       "loi": [
+        "我会做中国菜，中国菜很好吃。",
+        "问：他会做什么菜？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "中国菜",
+           "Zhōngguó cài"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "美国菜",
+           "Měiguó cài"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "法国菜",
+           "Fǎguó cài"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "A"
+      },
+      {
+       "so": 10,
+       "loi": [
+        "我的汉语名字是李朋，我会写我的汉语名字。",
+        "问：他的汉语名字是什么？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "张朋",
+           "Zhāng Péng"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "王朋",
+           "Wáng Péng"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "李朋",
+           "Lǐ Péng"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "C"
+      },
+      {
+       "so": 11,
+       "loi": [
+        "我的好朋友是中国人，他会说汉语。",
+        "问：他的好朋友会说什么？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "英语",
+           "Yīngyǔ"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "汉语",
+           "Hànyǔ"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "法语",
+           "Fǎyǔ"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "B"
+      },
+      {
+       "so": 12,
+       "loi": [
+        "我妈妈不会写汉字，我会写汉字。",
+        "问：谁会写汉字？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "我",
+           "wǒ"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "我妈妈",
+           "wǒ māma"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "我朋友",
+           "wǒ péngyou"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "A"
+      }
+     ]
+    }
+   ],
+   "loiNghe": {
+    "1": [
+     "说汉语"
+    ],
+    "2": [
+     "中国菜"
+    ],
+    "3": [
+     "做中国菜"
+    ],
+    "4": [
+     "汉语老师"
+    ],
+    "5": [
+     "你们家谁会说汉语？",
+     "我妈妈会说汉语。"
+    ],
+    "6": [
+     "你会做中国菜吗？",
+     "我不会做，我的好朋友会做。"
+    ],
+    "7": [
+     "这个汉字怎么写？",
+     "对不起，我会读，不会写。"
+    ],
+    "8": [
+     "中国菜好吃吗？",
+     "中国菜很好吃！"
+    ],
+    "9": [
+     "我会做中国菜，中国菜很好吃。",
+     "问：他会做什么菜？"
+    ],
+    "10": [
+     "我的汉语名字是李朋，我会写我的汉语名字。",
+     "问：他的汉语名字是什么？"
+    ],
+    "11": [
+     "我的好朋友是中国人，他会说汉语。",
+     "问：他的好朋友会说什么？"
+    ],
+    "12": [
+     "我妈妈不会写汉字，我会写汉字。",
+     "问：谁会写汉字？"
+    ]
+   },
+   "am": "bt-06-1"
+  },
+  "doc": {
+   "nhom": [
+    {
+     "tieuDe": "第一部分",
+     "kieu": "dung-sai-hinh-chu",
+     "huongDan": "Xem tranh, từ có khớp tranh không",
+     "viDu": [
+      {
+       "hinh": "bai-06/bt-p44-1.webp",
+       "chu": [
+        [
+         "电视",
+         "diànshì"
+        ]
+       ],
+       "dapAn": "sai"
+      },
+      {
+       "hinh": "bai-06/bt-p44-2.webp",
+       "chu": [
+        [
+         "飞机",
+         "fēijī"
+        ]
+       ],
+       "dapAn": "dung"
+      }
+     ],
+     "cau": [
+      {
+       "so": 13,
+       "hinh": "bai-06/bt-p44-3.webp",
+       "chu": [
+        [
+         "说",
+         "shuō"
+        ],
+        [
+         "汉语",
+         "Hànyǔ"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: hai người phụ nữ đang trò chuyện.",
+       "chacChan": false
+      },
+      {
+       "so": 14,
+       "hinh": "bai-06/bt-p44-4.webp",
+       "chu": [
+        [
+         "中国",
+         "Zhōngguó"
+        ],
+        [
+         "菜",
+         "cài"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: đĩa bít tết kiểu Tây.",
+       "chacChan": false
+      },
+      {
+       "so": 15,
+       "hinh": "bai-06/bt-p44-5.webp",
+       "chu": [
+        [
+         "妈妈",
+         "māma"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: người đàn ông và bé gái."
+      },
+      {
+       "so": 16,
+       "hinh": "bai-06/bt-p44-6.webp",
+       "chu": [
+        [
+         "写",
+         "xiě"
+        ],
+        [
+         "汉字",
+         "Hànzì"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: hai người viết chữ Hán lên bảng.",
+       "chacChan": false
+      },
+      {
+       "so": 17,
+       "hinh": "bai-06/bt-p44-7.webp",
+       "chu": [
+        [
+         "做",
+         "zuò"
+        ],
+        [
+         "中国",
+         "Zhōngguó"
+        ],
+        [
+         "菜",
+         "cài"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: đầu bếp đang xào chảo."
+      }
+     ]
+    },
+    {
+     "tieuDe": "第二部分",
+     "kieu": "ghep-cau",
+     "huongDan": "Chọn câu trả lời đúng",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "对不起",
+         "Duìbuqǐ"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "这个",
+         "zhège"
+        ],
+        [
+         "汉字",
+         "Hànzì"
+        ],
+        [
+         "我",
+         "wǒ"
+        ],
+        [
+         "会",
+         "huì"
+        ],
+        [
+         "读",
+         "dú"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "不",
+         "bù"
+        ],
+        [
+         "会",
+         "huì"
+        ],
+        [
+         "写",
+         "xiě"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "会",
+         "Huì"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "李",
+         "Lǐ"
+        ],
+        [
+         "老师",
+         "lǎoshī"
+        ],
+        [
+         "是",
+         "shì"
+        ],
+        [
+         "中国",
+         "Zhōngguó"
+        ],
+        [
+         "人",
+         "rén"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "中国",
+         "Zhōngguó"
+        ],
+        [
+         "菜",
+         "cài"
+        ],
+        [
+         "很",
+         "hěn"
+        ],
+        [
+         "好吃",
+         "hǎochī"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "我",
+         "Wǒ"
+        ],
+        [
+         "会",
+         "huì"
+        ],
+        [
+         "说",
+         "shuō"
+        ],
+        [
+         "汉语",
+         "Hànyǔ"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "不",
+         "bù"
+        ],
+        [
+         "会",
+         "huì"
+        ],
+        [
+         "写",
+         "xiě"
+        ],
+        [
+         "汉字",
+         "Hànzì"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "她",
+         "Tā"
+        ],
+        [
+         "不",
+         "bù"
+        ],
+        [
+         "会",
+         "huì"
+        ],
+        [
+         "做",
+         "zuò"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "F",
+       "chu": [
+        [
+         "好",
+         "Hǎo"
+        ],
+        [
+         "的",
+         "de"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "谢谢",
+         "xièxie"
+        ],
+        [
+         "！",
+         ""
+        ]
+       ]
+      }
+     ],
+     "viDu": {
+      "dapAn": "F",
+      "dong": [
+       [
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "喝",
+         "hē"
+        ],
+        [
+         "水",
+         "shuǐ"
+        ],
+        [
+         "吗",
+         "ma"
+        ],
+        [
+         "？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 18,
+       "dapAn": "E",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "妈妈",
+          "māma"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "做",
+          "zuò"
+         ],
+         [
+          "中国",
+          "Zhōngguó"
+         ],
+         [
+          "菜",
+          "cài"
+         ],
+         [
+          "吗",
+          "ma"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 19,
+       "dapAn": "A",
+       "dong": [
+        [
+         [
+          "这个",
+          "Zhège"
+         ],
+         [
+          "汉字",
+          "Hànzì"
+         ],
+         [
+          "怎么",
+          "zěnme"
+         ],
+         [
+          "写",
+          "xiě"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 20,
+       "dapAn": "B",
+       "dong": [
+        [
+         [
+          "李",
+          "Lǐ"
+         ],
+         [
+          "老师",
+          "lǎoshī"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "说",
+          "shuō"
+         ],
+         [
+          "汉语",
+          "Hànyǔ"
+         ],
+         [
+          "吗",
+          "ma"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 21,
+       "dapAn": "D",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "写",
+          "xiě"
+         ],
+         [
+          "汉字",
+          "Hànzì"
+         ],
+         [
+          "吗",
+          "ma"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 22,
+       "dapAn": "C",
+       "dong": [
+        [
+         [
+          "中国",
+          "Zhōngguó"
+         ],
+         [
+          "菜",
+          "cài"
+         ],
+         [
+          "好吃",
+          "hǎochī"
+         ],
+         [
+          "吗",
+          "ma"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "dien-tu",
+     "huongDan": "Chọn từ điền vào chỗ trống",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "很",
+         "hěn"
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "会",
+         "huì"
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "怎么",
+         "zěnme"
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "名字",
+         "míngzi"
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "不",
+         "bù"
+        ]
+       ]
+      }
+     ],
+     "viDu": {
+      "dapAn": "D",
+      "dong": [
+       [
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "叫",
+         "jiào"
+        ],
+        [
+         "什么",
+         "shénme"
+        ],
+        [
+         "__",
+         ""
+        ],
+        [
+         "？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 23,
+       "dapAn": "E",
+       "dong": [
+        [
+         [
+          "我",
+          "Wǒ"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "写",
+          "xiě"
+         ],
+         [
+          "我",
+          "wǒ"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "汉语",
+          "Hànyǔ"
+         ],
+         [
+          "名字",
+          "míngzi"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 24,
+       "dapAn": "B",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "做",
+          "zuò"
+         ],
+         [
+          "中国",
+          "Zhōngguó"
+         ],
+         [
+          "菜",
+          "cài"
+         ],
+         [
+          "吗",
+          "ma"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 25,
+       "dapAn": "A",
+       "dong": [
+        [
+         [
+          "我",
+          "Wǒ"
+         ],
+         [
+          "朋友",
+          "péngyou"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "说",
+          "shuō"
+         ],
+         [
+          "汉语",
+          "Hànyǔ"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "他",
+          "tā"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "汉语",
+          "Hànyǔ"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "好",
+          "hǎo"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 26,
+       "dapAn": "C",
+       "dong": [
+        [
+         [
+          "老师",
+          "Lǎoshī"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "这个",
+          "zhège"
+         ],
+         [
+          "汉字",
+          "Hànzì"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "读",
+          "dú"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "dien-tu",
+     "huongDan": "Chọn từ điền vào chỗ trống",
+     "luaChon": [
+      {
+       "ma": "F",
+       "chu": [
+        [
+         "吗",
+         "ma"
+        ]
+       ]
+      },
+      {
+       "ma": "G",
+       "chu": [
+        [
+         "呢",
+         "ne"
+        ]
+       ]
+      },
+      {
+       "ma": "H",
+       "chu": [
+        [
+         "哪",
+         "nǎ"
+        ]
+       ]
+      },
+      {
+       "ma": "I",
+       "chu": [
+        [
+         "的",
+         "de"
+        ]
+       ]
+      }
+     ],
+     "cau": [
+      {
+       "so": 27,
+       "dapAn": "F",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "中国",
+          "Zhōngguó"
+         ],
+         [
+          "朋友",
+          "péngyou"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "做",
+          "zuò"
+         ],
+         [
+          "中国",
+          "Zhōngguó"
+         ],
+         [
+          "菜",
+          "cài"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 28,
+       "dapAn": "G",
+       "dong": [
+        [
+         [
+          "我",
+          "Wǒ"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "说",
+          "shuō"
+         ],
+         [
+          "汉语",
+          "Hànyǔ"
+         ],
+         [
+          "。",
+          ""
+         ],
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 29,
+       "dapAn": "I",
+       "dong": [
+        [
+         [
+          "我",
+          "Wǒ"
+         ],
+         [
+          "妈妈",
+          "māma"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "朋友",
+          "péngyou"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "说",
+          "shuō"
+         ],
+         [
+          "汉语",
+          "Hànyǔ"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 30,
+       "dapAn": "H",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "同学",
+          "tóngxué"
+         ],
+         [
+          "是",
+          "shì"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "国",
+          "guó"
+         ],
+         [
+          "人",
+          "rén"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "loiNghe": {}
+  },
+  "phatAm": {
+   "nhom": [
+    {
+     "kieu": "chon-am",
+     "huongDan": "Nghe, chọn từ hai âm tiết nghe được",
+     "cau": [
+      {
+       "so": 1,
+       "luaChon": [
+        "jīntiān",
+        "jīngyàn"
+       ],
+       "dapAn": "jīngyàn"
+      },
+      {
+       "so": 2,
+       "luaChon": [
+        "yāoqǐng",
+        "yāoqiú"
+       ],
+       "dapAn": "yāoqǐng"
+      },
+      {
+       "so": 3,
+       "luaChon": [
+        "xiūlǐ",
+        "xūyào"
+       ],
+       "dapAn": "xiūlǐ"
+      },
+      {
+       "so": 4,
+       "luaChon": [
+        "wēixiǎn",
+        "wēihài"
+       ],
+       "dapAn": "wēixiǎn"
+      },
+      {
+       "so": 5,
+       "luaChon": [
+        "chūntiān",
+        "Chūnjié"
+       ],
+       "dapAn": "chūntiān"
+      },
+      {
+       "so": 6,
+       "luaChon": [
+        "xīnxiān",
+        "xīnnián"
+       ],
+       "dapAn": "xīnnián"
+      },
+      {
+       "so": 7,
+       "luaChon": [
+        "shāngxīn",
+        "shāngrén"
+       ],
+       "dapAn": "shāngrén"
+      },
+      {
+       "so": 8,
+       "luaChon": [
+        "cāntīng",
+        "cānguān"
+       ],
+       "dapAn": "cānguān"
+      }
+     ]
+    }
+   ],
+   "loiNghe": {},
+   "am": "bt-06-2"
+  }
+ },
+ "nguPhapHsk": [
+  "np-0011",
+  "np-0017",
+  "np-0006",
+  "np-0020"
+ ],
+ "canKiemTra": [
+  "Bản dịch tiếng Việt của hội thoại, ví dụ, giải thích là bản nháp của Claude, chưa có người duyệt.",
+  "Pinyin chép tay từ sách (đã đối chiếu tự động với từ điển); ghi chú biến điệu do máy sinh theo quy tắc.",
+  "Đáp án phần khởi động do Claude suy từ ảnh (sách không in đáp án)."
+ ]
+}

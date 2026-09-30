@@ -1,0 +1,2428 @@
+{
+ "loai": "bai-co-ban",
+ "version": 1,
+ "cap": 1,
+ "bai": 7,
+ "capNhatLuc": "2026-09-30",
+ "nguon": "HSK标准教程 1 (HSK Standard Course 1), bài 7: hội thoại, âm thanh, bài tập chọn lọc.",
+ "ten": {
+  "trung": "今天几号",
+  "pinyin": [
+   "jīn",
+   "tiān",
+   "jǐ",
+   "hào"
+  ],
+  "viet": "Hôm nay ngày mấy"
+ },
+ "khoiDong": {
+  "tieuDe": "Chọn ảnh đúng cho mỗi từ",
+  "anh": [
+   "khoi-dong-A",
+   "khoi-dong-B",
+   "khoi-dong-C",
+   "khoi-dong-D",
+   "khoi-dong-E",
+   "khoi-dong-F"
+  ],
+  "tu": [
+   {
+    "trung": "书",
+    "pinyin": [
+     "shū"
+    ],
+    "dapAn": "E"
+   },
+   {
+    "trung": "中国菜",
+    "pinyin": [
+     "Zhōng",
+     "guó",
+     "cài"
+    ],
+    "dapAn": "D"
+   },
+   {
+    "trung": "学校",
+    "pinyin": [
+     "xué",
+     "xiào"
+    ],
+    "dapAn": "A"
+   },
+   {
+    "trung": "25号",
+    "pinyin": [
+     "èrshíwǔ",
+     "",
+     "hào"
+    ],
+    "dapAn": "C"
+   },
+   {
+    "trung": "月",
+    "pinyin": [
+     "yuè"
+    ],
+    "dapAn": "F"
+   },
+   {
+    "trung": "看书",
+    "pinyin": [
+     "kàn",
+     "shū"
+    ],
+    "dapAn": "B"
+   }
+  ]
+ },
+ "hoiThoai": [
+  {
+   "so": 1,
+   "am": "07-1",
+   "anh": "hoi-thoai-1",
+   "boiCanh": {
+    "trung": "在银行",
+    "pinyin": [
+     "zài",
+     "yín",
+     "háng"
+    ],
+    "viet": "Ở ngân hàng"
+   },
+   "cau": [
+    {
+     "trung": "请问，今天几号？",
+     "pinyin": [
+      "qǐng",
+      "wèn",
+      "",
+      "jīn",
+      "tiān",
+      "jǐ",
+      "hào",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Xin hỏi, hôm nay ngày mấy?"
+    },
+    {
+     "trung": "今天9月1号。",
+     "pinyin": [
+      "jīn",
+      "tiān",
+      "jiǔ",
+      "yuè",
+      "yī",
+      "hào",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Hôm nay ngày 1 tháng 9."
+    },
+    {
+     "trung": "今天星期几？",
+     "pinyin": [
+      "jīn",
+      "tiān",
+      "xīng",
+      "qī",
+      "jǐ",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Hôm nay thứ mấy?"
+    },
+    {
+     "trung": "星期三。",
+     "pinyin": [
+      "xīng",
+      "qī",
+      "sān",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Thứ Tư."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "请",
+     "pinyin": [
+      "qǐng"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0165",
+     "capHsk": 1,
+     "viet": "mời; xin, vui lòng; đãi (ăn)"
+    },
+    {
+     "trung": "问",
+     "pinyin": [
+      "wèn"
+     ],
+     "tuLoai": "động từ",
+     "boSung": true,
+     "idTuVung": "tu-0219",
+     "capHsk": 1,
+     "viet": "hỏi"
+    },
+    {
+     "trung": "今天",
+     "pinyin": [
+      "jīn",
+      "tiān"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0094",
+     "capHsk": 1,
+     "viet": "hôm nay"
+    },
+    {
+     "trung": "号",
+     "pinyin": [
+      "hào"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0071",
+     "capHsk": 1,
+     "viet": "ngày (trong tháng); số"
+    },
+    {
+     "trung": "月",
+     "pinyin": [
+      "yuè"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0269",
+     "capHsk": 1,
+     "viet": "tháng; mặt trăng"
+    },
+    {
+     "trung": "星期",
+     "pinyin": [
+      "xīng",
+      "qī"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0243",
+     "capHsk": 1,
+     "viet": "tuần; thứ (trong tuần)"
+    }
+   ]
+  },
+  {
+   "so": 2,
+   "am": "07-2",
+   "anh": "hoi-thoai-2",
+   "boiCanh": {
+    "trung": "看日历",
+    "pinyin": [
+     "kàn",
+     "rì",
+     "lì"
+    ],
+    "viet": "Xem lịch"
+   },
+   "cau": [
+    {
+     "trung": "昨天是几月几号？",
+     "pinyin": [
+      "zuó",
+      "tiān",
+      "shì",
+      "jǐ",
+      "yuè",
+      "jǐ",
+      "hào",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Hôm qua là ngày mấy tháng mấy?"
+    },
+    {
+     "trung": "昨天是8月31号，星期二。",
+     "pinyin": [
+      "zuó",
+      "tiān",
+      "shì",
+      "bā",
+      "yuè",
+      "sānshíyī",
+      "",
+      "hào",
+      "",
+      "xīng",
+      "qī",
+      "èr",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Hôm qua là ngày 31 tháng 8, thứ Ba."
+    },
+    {
+     "trung": "明天呢？",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "ne",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Còn ngày mai?"
+    },
+    {
+     "trung": "明天是9月2号，星期四。",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "shì",
+      "jiǔ",
+      "yuè",
+      "èr",
+      "hào",
+      "",
+      "xīng",
+      "qī",
+      "sì",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Ngày mai là ngày 2 tháng 9, thứ Năm."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "昨天",
+     "pinyin": [
+      "zuó",
+      "tiān"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0300",
+     "capHsk": 1,
+     "viet": "hôm qua"
+    },
+    {
+     "trung": "明天",
+     "pinyin": [
+      "míng",
+      "tiān"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0129",
+     "capHsk": 1,
+     "viet": "ngày mai"
+    }
+   ]
+  },
+  {
+   "so": 3,
+   "am": "07-3",
+   "anh": "hoi-thoai-3",
+   "boiCanh": {
+    "trung": "在咖啡馆儿",
+    "pinyin": [
+     "zài",
+     "kā",
+     "fēi",
+     "guǎnr",
+     ""
+    ],
+    "viet": "Ở quán cà phê"
+   },
+   "cau": [
+    {
+     "trung": "明天星期六，你去学校吗？",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "xīng",
+      "qī",
+      "liù",
+      "",
+      "nǐ",
+      "qù",
+      "xué",
+      "xiào",
+      "ma",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Ngày mai thứ Bảy, bạn có đến trường không?"
+    },
+    {
+     "trung": "我去学校。",
+     "pinyin": [
+      "wǒ",
+      "qù",
+      "xué",
+      "xiào",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Tôi đến trường."
+    },
+    {
+     "trung": "你去学校做什么？",
+     "pinyin": [
+      "nǐ",
+      "qù",
+      "xué",
+      "xiào",
+      "zuò",
+      "shén",
+      "me",
+      ""
+     ],
+     "nguoi": "A",
+     "viet": "Bạn đến trường làm gì?"
+    },
+    {
+     "trung": "我去学校看书。",
+     "pinyin": [
+      "wǒ",
+      "qù",
+      "xué",
+      "xiào",
+      "kàn",
+      "shū",
+      ""
+     ],
+     "nguoi": "B",
+     "viet": "Tôi đến trường đọc sách."
+    }
+   ],
+   "tuMoi": [
+    {
+     "trung": "去",
+     "pinyin": [
+      "qù"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0167",
+     "capHsk": 1,
+     "viet": "đi"
+    },
+    {
+     "trung": "学校",
+     "pinyin": [
+      "xué",
+      "xiào"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0251",
+     "capHsk": 1,
+     "viet": "trường học"
+    },
+    {
+     "trung": "看",
+     "pinyin": [
+      "kàn"
+     ],
+     "tuLoai": "động từ",
+     "idTuVung": "tu-0099",
+     "capHsk": 1,
+     "viet": "nhìn, xem, đọc"
+    },
+    {
+     "trung": "书",
+     "pinyin": [
+      "shū"
+     ],
+     "tuLoai": "danh từ",
+     "idTuVung": "tu-0190",
+     "capHsk": 1,
+     "viet": "sách"
+    }
+   ]
+  }
+ ],
+ "nguPhap": [
+  {
+   "ten": {
+    "trung": "日期的表达(1)：月、日/号、星期",
+    "viet": "Nói ngày tháng (1): tháng, ngày, thứ"
+   },
+   "mau": "… 月 … 号，星期 …",
+   "giaiThich": "Ngày tháng nói theo thứ tự từ lớn đến nhỏ: tháng trước, rồi ngày (日/号), cuối cùng là thứ. Khẩu ngữ thường dùng 号. Ngược với tiếng Việt (thứ, ngày, tháng).",
+   "viDu": [
+    {
+     "trung": "9月1号，星期三。",
+     "pinyin": [
+      "jiǔ",
+      "yuè",
+      "yī",
+      "hào",
+      "",
+      "xīng",
+      "qī",
+      "sān",
+      ""
+     ],
+     "viet": "Thứ Tư, ngày 1 tháng 9."
+    },
+    {
+     "trung": "9月2号，星期四。",
+     "pinyin": [
+      "jiǔ",
+      "yuè",
+      "èr",
+      "hào",
+      "",
+      "xīng",
+      "qī",
+      "sì",
+      ""
+     ],
+     "viet": "Thứ Năm, ngày 2 tháng 9."
+    },
+    {
+     "trung": "8月31号，星期二。",
+     "pinyin": [
+      "bā",
+      "yuè",
+      "sānshíyī",
+      "",
+      "hào",
+      "",
+      "xīng",
+      "qī",
+      "èr",
+      ""
+     ],
+     "viet": "Thứ Ba, ngày 31 tháng 8."
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "名词谓语句",
+    "viet": "Câu vị ngữ danh từ"
+   },
+   "mau": "Chủ ngữ + danh từ (tuổi, giờ, ngày)",
+   "giaiThich": "Vị ngữ là danh từ / cụm danh từ, thường dùng để nói tuổi, thời gian, ngày tháng; không cần 是.",
+   "viDu": [
+    {
+     "trung": "我的汉语老师33岁。",
+     "pinyin": [
+      "wǒ",
+      "de",
+      "Hàn",
+      "yǔ",
+      "lǎo",
+      "shī",
+      "sānshísān",
+      "",
+      "suì",
+      ""
+     ],
+     "ghiChuBienDieu": "语 đọc thành thanh 2 khi đứng trước thanh 3 (老).",
+     "viet": "Giáo viên tiếng Trung của tôi 33 tuổi."
+    },
+    {
+     "trung": "明天星期三。",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "xīng",
+      "qī",
+      "sān",
+      ""
+     ],
+     "viet": "Ngày mai thứ Tư."
+    },
+    {
+     "trung": "今天9月1号。",
+     "pinyin": [
+      "jīn",
+      "tiān",
+      "jiǔ",
+      "yuè",
+      "yī",
+      "hào",
+      ""
+     ],
+     "viet": "Hôm nay ngày 1 tháng 9."
+    }
+   ]
+  },
+  {
+   "ten": {
+    "trung": "连动句(1)：去+地方+做什么",
+    "viet": "Câu liên động (1): 去 + nơi chốn + làm gì"
+   },
+   "mau": "Chủ ngữ + 去 + (nơi chốn) + động từ 2",
+   "giaiThich": "Vị ngữ có hai động từ trở lên; động từ sau nói mục đích của động từ trước. Nơi chốn sau 去 đôi khi có thể lược bỏ.",
+   "viDu": [
+    {
+     "trung": "我去中国学习汉语。",
+     "pinyin": [
+      "wǒ",
+      "qù",
+      "Zhōng",
+      "guó",
+      "xué",
+      "xí",
+      "Hàn",
+      "yǔ",
+      ""
+     ],
+     "viet": "Tôi đi Trung Quốc học tiếng Trung."
+    },
+    {
+     "trung": "我们去中国饭馆儿吃中国菜。",
+     "pinyin": [
+      "wǒ",
+      "men",
+      "qù",
+      "Zhōng",
+      "guó",
+      "fàn",
+      "guǎnr",
+      "",
+      "chī",
+      "Zhōng",
+      "guó",
+      "cài",
+      ""
+     ],
+     "viet": "Chúng tôi đến quán ăn Trung Quốc ăn món Trung Quốc."
+    },
+    {
+     "trung": "我去学校看书。",
+     "pinyin": [
+      "wǒ",
+      "qù",
+      "xué",
+      "xiào",
+      "kàn",
+      "shū",
+      ""
+     ],
+     "viet": "Tôi đến trường đọc sách."
+    }
+   ]
+  }
+ ],
+ "luyenTap": [
+  {
+   "loai": "tra-loi-tu-do",
+   "tieuDe": "Trả lời theo thực tế của bạn",
+   "cau": [
+    {
+     "trung": "今天几月几号星期几？",
+     "pinyin": [
+      "jīn",
+      "tiān",
+      "jǐ",
+      "yuè",
+      "jǐ",
+      "hào",
+      "xīng",
+      "qī",
+      "jǐ",
+      ""
+     ]
+    },
+    {
+     "trung": "明天几月几号星期几？",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "jǐ",
+      "yuè",
+      "jǐ",
+      "hào",
+      "xīng",
+      "qī",
+      "jǐ",
+      ""
+     ]
+    },
+    {
+     "trung": "昨天几月几号星期几？",
+     "pinyin": [
+      "zuó",
+      "tiān",
+      "jǐ",
+      "yuè",
+      "jǐ",
+      "hào",
+      "xīng",
+      "qī",
+      "jǐ",
+      ""
+     ]
+    },
+    {
+     "trung": "明天你去哪儿做什么？",
+     "pinyin": [
+      "míng",
+      "tiān",
+      "nǐ",
+      "qù",
+      "nǎr",
+      "",
+      "zuò",
+      "shén",
+      "me",
+      ""
+     ]
+    },
+    {
+     "trung": "星期日你去哪儿做什么？",
+     "pinyin": [
+      "xīng",
+      "qī",
+      "rì",
+      "nǐ",
+      "qù",
+      "nǎr",
+      "",
+      "zuò",
+      "shén",
+      "me",
+      ""
+     ]
+    }
+   ]
+  }
+ ],
+ "phatAm": [
+  {
+   "loai": "doc-am",
+   "tieuDe": "Đọc: 12 tháng",
+   "amTiet": [
+    "yī yuè",
+    "èr yuè",
+    "sān yuè",
+    "sì yuè",
+    "wǔ yuè",
+    "liù yuè",
+    "qī yuè",
+    "bā yuè",
+    "jiǔ yuè",
+    "shí yuè",
+    "shíyī yuè",
+    "shí'èr yuè"
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "tieuDe": "Đọc: các thứ trong tuần",
+   "amTiet": [
+    "xīngqī yī",
+    "xīngqī èr",
+    "xīngqī sān",
+    "xīngqī sì",
+    "xīngqī wǔ",
+    "xīngqī liù",
+    "xīngqīrì",
+    "xīngqītiān"
+   ]
+  },
+  {
+   "loai": "phoi-thanh",
+   "tieuDe": "Thanh điệu trong từ hai âm tiết (2): thanh 2 + thanh 1/2/3/4",
+   "viDu": [
+    {
+     "trung": "时间",
+     "pinyin": [
+      "shí",
+      "jiān"
+     ],
+     "viet": "thời gian"
+    },
+    {
+     "trung": "银行",
+     "pinyin": [
+      "yín",
+      "háng"
+     ],
+     "viet": "ngân hàng"
+    },
+    {
+     "trung": "词典",
+     "pinyin": [
+      "cí",
+      "diǎn"
+     ],
+     "viet": "từ điển"
+    },
+    {
+     "trung": "蓝色",
+     "pinyin": [
+      "lán",
+      "sè"
+     ],
+     "viet": "màu xanh lam"
+    }
+   ],
+   "hinh": [
+    "phoi-thanh-1",
+    "phoi-thanh-2",
+    "phoi-thanh-3",
+    "phoi-thanh-4"
+   ]
+  },
+  {
+   "loai": "doc-am",
+   "am": "07-4",
+   "tieuDe": "Nghe và đọc theo, chú ý cách phối thanh",
+   "amTiet": [
+    "guójiā",
+    "lóufáng",
+    "píngguǒ",
+    "huánjìng",
+    "zuótiān",
+    "lánqiú",
+    "píjiǔ",
+    "hánjià",
+    "míngtiān",
+    "míngnián",
+    "niúnǎi",
+    "niú ròu",
+    "niánqīng",
+    "Chángchéng",
+    "yóu yǒng",
+    "yóuxì"
+   ]
+  }
+ ],
+ "chuHan": {
+  "net": [],
+  "chuDocThe": [
+   {
+    "trung": "四",
+    "pinyin": [
+     "sì"
+    ],
+    "giaiThich": "Chỉ số 4."
+   },
+   {
+    "trung": "五",
+    "pinyin": [
+     "wǔ"
+    ],
+    "giaiThich": "Chỉ số 5."
+   },
+   {
+    "trung": "书",
+    "pinyin": [
+     "shū"
+    ],
+    "giaiThich": "Nghĩa gốc là chấm bút lông vào nghiên mực để viết; nay nghĩa là viết, sách."
+   }
+  ],
+  "cauTruc": [
+   {
+    "ten": "左右结构",
+    "viet": "Cấu trúc trái – phải",
+    "viDu": [
+     "你",
+     "好"
+    ]
+   },
+   {
+    "ten": "左中右结构",
+    "viet": "Cấu trúc trái – giữa – phải",
+    "viDu": [
+     "谢",
+     "树"
+    ]
+   }
+  ],
+  "boThu": [
+   {
+    "bo": "氵",
+    "ten": "三点水",
+    "pinyin": "sān diǎn shuǐ",
+    "giaiThich": "Ba chấm thủy: thường liên quan đến nước.",
+    "viDu": [
+     "汉",
+     "没"
+    ]
+   },
+   {
+    "bo": "讠",
+    "ten": "言字旁",
+    "pinyin": "yán zì páng",
+    "giaiThich": "Bộ ngôn: thường liên quan đến ngôn ngữ, lời nói.",
+    "viDu": [
+     "语",
+     "谁"
+    ]
+   }
+  ]
+ },
+ "vanDung": {
+  "tieuDe": "Hỏi ngày tháng và ngày sinh",
+  "viDu": [
+   {
+    "trung": "今天是几月几号？",
+    "pinyin": [
+     "jīn",
+     "tiān",
+     "shì",
+     "jǐ",
+     "yuè",
+     "jǐ",
+     "hào",
+     ""
+    ],
+    "nguoi": "A",
+    "viet": "Hôm nay là ngày mấy tháng mấy?"
+   },
+   {
+    "trung": "明天你做什么？",
+    "pinyin": [
+     "míng",
+     "tiān",
+     "nǐ",
+     "zuò",
+     "shén",
+     "me",
+     ""
+    ],
+    "nguoi": "A",
+    "viet": "Ngày mai bạn làm gì?"
+   },
+   {
+    "trung": "明天我去……",
+    "pinyin": [
+     "míng",
+     "tiān",
+     "wǒ",
+     "qù",
+     "……",
+     ""
+    ],
+    "nguoi": "B",
+    "viet": "Ngày mai tôi đi…"
+   }
+  ],
+  "tuBoSung": [
+   {
+    "trung": "生日",
+    "pinyin": [
+     "shēng",
+     "rì"
+    ],
+    "tuLoai": "sinh nhật",
+    "idTuVung": "tu-0429",
+    "capHsk": 2,
+    "viet": "sinh nhật"
+   }
+  ]
+ },
+ "tuBoSung2025": [
+  {
+   "trung": "日",
+   "pinyin": [
+    "rì"
+   ],
+   "idTuVung": "tu-0172",
+   "capHsk": 1,
+   "viet": "ngày; mặt trời"
+  },
+  {
+   "trung": "天",
+   "pinyin": [
+    "tiān"
+   ],
+   "idTuVung": "tu-0207",
+   "capHsk": 1,
+   "viet": "ngày; trời"
+  },
+  {
+   "trung": "星期日",
+   "pinyin": [
+    "xīng",
+    "qī",
+    "rì"
+   ],
+   "idTuVung": "tu-0244",
+   "capHsk": 1,
+   "viet": "Chủ nhật"
+  },
+  {
+   "trung": "星期天",
+   "pinyin": [
+    "xīng",
+    "qī",
+    "tiān"
+   ],
+   "idTuVung": "tu-0245",
+   "capHsk": 1,
+   "viet": "Chủ nhật"
+  },
+  {
+   "trung": "第",
+   "pinyin": [
+    "dì"
+   ],
+   "idTuVung": "tu-0031",
+   "capHsk": 1,
+   "viet": "thứ (tiền tố chỉ số thứ tự)"
+  },
+  {
+   "trung": "去年",
+   "pinyin": [
+    "qù",
+    "nián"
+   ],
+   "idTuVung": "tu-0168",
+   "capHsk": 1,
+   "viet": "năm ngoái"
+  },
+  {
+   "trung": "明年",
+   "pinyin": [
+    "míng",
+    "nián"
+   ],
+   "idTuVung": "tu-0128",
+   "capHsk": 1,
+   "viet": "năm sau, sang năm"
+  },
+  {
+   "trung": "时间",
+   "pinyin": [
+    "shí",
+    "jiān"
+   ],
+   "idTuVung": "tu-0188",
+   "capHsk": 1,
+   "viet": "thời gian"
+  }
+ ],
+ "baiTap": {
+  "nghe": {
+   "nhom": [
+    {
+     "tieuDe": "第一部分",
+     "kieu": "dung-sai-hinh",
+     "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+     "viDu": [
+      {
+       "hinh": "bai-07/bt-p49-1.webp",
+       "chu": [
+        [
+         "很",
+         "hěn"
+        ],
+        [
+         "高兴",
+         "gāoxìng"
+        ]
+       ],
+       "dapAn": "dung"
+      },
+      {
+       "hinh": "bai-07/bt-p49-2.webp",
+       "chu": [
+        [
+         "看",
+         "kàn"
+        ],
+        [
+         "电影",
+         "diànyǐng"
+        ]
+       ],
+       "dapAn": "sai"
+      }
+     ],
+     "cau": [
+      {
+       "so": 1,
+       "hinh": "bai-07/bt-p49-3.webp",
+       "loi": [
+        "学校"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: phòng bệnh viện."
+      },
+      {
+       "so": 2,
+       "hinh": "bai-07/bt-p49-4.webp",
+       "loi": [
+        "8月5号"
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: lịch ngày 5 tháng Tám (August)."
+      },
+      {
+       "so": 3,
+       "hinh": "bai-07/bt-p49-5.webp",
+       "loi": [
+        "看书"
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: khán giả trong rạp chiếu phim."
+      },
+      {
+       "so": 4,
+       "hinh": "bai-07/bt-p49-6.webp",
+       "loi": [
+        "4月20号"
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: lịch ngày 20 tháng Tư (April)."
+      }
+     ]
+    },
+    {
+     "tieuDe": "第二部分",
+     "kieu": "ghep-hinh",
+     "huongDan": "Nghe hội thoại, chọn tranh khớp",
+     "luaChon": [
+      {
+       "ma": "A",
+       "hinh": "bai-07/bt-p50-1.webp"
+      },
+      {
+       "ma": "B",
+       "hinh": "bai-07/bt-p50-2.webp"
+      },
+      {
+       "ma": "C",
+       "hinh": "bai-07/bt-p50-3.webp"
+      },
+      {
+       "ma": "D",
+       "hinh": "bai-07/bt-p50-4.webp"
+      },
+      {
+       "ma": "E",
+       "hinh": "bai-07/bt-p50-5.webp"
+      }
+     ],
+     "viDu": {
+      "loi": [
+       "女：你好！",
+       "男：你好！很高兴认识你。"
+      ],
+      "dapAn": "C",
+      "dong": [
+       [
+        [
+         "女：你好！",
+         ""
+        ]
+       ],
+       [
+        [
+         "男：你好！很高兴认识你。",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 5,
+       "loi": [
+        "今天是几月几号？",
+        "今天是9月12号。"
+       ],
+       "dapAn": "E",
+       "lyDo": "Tranh E: lịch ngày 12 tháng Chín."
+      },
+      {
+       "so": 6,
+       "loi": [
+        "明天你做什么？",
+        "明天我去学校看书。"
+       ],
+       "dapAn": "B",
+       "lyDo": "Tranh B: cô gái ngồi đọc sách giữa giá sách.",
+       "chacChan": false
+      },
+      {
+       "so": 7,
+       "loi": [
+        "三十一号是星期几？",
+        "三十一号是星期一。"
+       ],
+       "dapAn": "A",
+       "lyDo": "Tranh A: tờ lịch có ngày 31 rơi vào thứ Hai (Mon)."
+      },
+      {
+       "so": 8,
+       "loi": [
+        "明天是星期六，你做什么？",
+        "明天，我去中国朋友家吃中国菜。"
+       ],
+       "dapAn": "D",
+       "lyDo": "Tranh D: đĩa thức ăn."
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "chon-chu",
+     "huongDan": "Nghe câu, trả lời câu hỏi",
+     "viDu": {
+      "loi": [
+       "下午我去商店，我想买一些水果。",
+       "问：她下午去哪里？"
+      ],
+      "luaChon": [
+       {
+        "ma": "A",
+        "chu": [
+         [
+          "商店",
+          "shāngdiàn"
+         ]
+        ]
+       },
+       {
+        "ma": "B",
+        "chu": [
+         [
+          "医院",
+          "yīyuàn"
+         ]
+        ]
+       },
+       {
+        "ma": "C",
+        "chu": [
+         [
+          "学校",
+          "xuéxiào"
+         ]
+        ]
+       }
+      ],
+      "dapAn": "A",
+      "dong": [
+       [
+        [
+         "下午我去商店，我想买一些水果。",
+         ""
+        ]
+       ],
+       [
+        [
+         "问：她下午去哪里？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 9,
+       "loi": [
+        "明天是3月19号，星期三。",
+        "问：明天星期几？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "星期一",
+           "xīngqī yī"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "星期二",
+           "xīngqī èr"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "星期三",
+           "xīngqī sān"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "C"
+      },
+      {
+       "so": 10,
+       "loi": [
+        "昨天是8月20号。",
+        "问：今天是几月几号？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "8月19号",
+           "bā yuè shíjiǔ hào"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "8月20号",
+           "bā yuè èrshí hào"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "8月21号",
+           "bā yuè èrshíyī hào"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "C"
+      },
+      {
+       "so": 11,
+       "loi": [
+        "妈妈的生日是1月22号。",
+        "问：妈妈的生日是几月几号？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "1月22号",
+           "yī yuè èrshí'èr hào"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "7月22号",
+           "qī yuè èrshí'èr hào"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "3月22号",
+           "sān yuè èrshí'èr hào"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "A"
+      },
+      {
+       "so": 12,
+       "loi": [
+        "我朋友会做中国菜，明天我去他家吃中国菜。",
+        "问：明天我做什么？"
+       ],
+       "luaChon": [
+        {
+         "ma": "A",
+         "chu": [
+          [
+           "去学校",
+           "qù xuéxiào"
+          ]
+         ]
+        },
+        {
+         "ma": "B",
+         "chu": [
+          [
+           "去医院",
+           "qù yīyuàn"
+          ]
+         ]
+        },
+        {
+         "ma": "C",
+         "chu": [
+          [
+           "去朋友家",
+           "qù péngyou jiā"
+          ]
+         ]
+        }
+       ],
+       "dapAn": "C"
+      }
+     ]
+    }
+   ],
+   "loiNghe": {
+    "1": [
+     "学校"
+    ],
+    "2": [
+     "8月5号"
+    ],
+    "3": [
+     "看书"
+    ],
+    "4": [
+     "4月20号"
+    ],
+    "5": [
+     "今天是几月几号？",
+     "今天是9月12号。"
+    ],
+    "6": [
+     "明天你做什么？",
+     "明天我去学校看书。"
+    ],
+    "7": [
+     "三十一号是星期几？",
+     "三十一号是星期一。"
+    ],
+    "8": [
+     "明天是星期六，你做什么？",
+     "明天，我去中国朋友家吃中国菜。"
+    ],
+    "9": [
+     "明天是3月19号，星期三。",
+     "问：明天星期几？"
+    ],
+    "10": [
+     "昨天是8月20号。",
+     "问：今天是几月几号？"
+    ],
+    "11": [
+     "妈妈的生日是1月22号。",
+     "问：妈妈的生日是几月几号？"
+    ],
+    "12": [
+     "我朋友会做中国菜，明天我去他家吃中国菜。",
+     "问：明天我做什么？"
+    ]
+   },
+   "am": "bt-07-1"
+  },
+  "doc": {
+   "nhom": [
+    {
+     "tieuDe": "第一部分",
+     "kieu": "dung-sai-hinh-chu",
+     "huongDan": "Xem tranh, từ có khớp tranh không",
+     "viDu": [
+      {
+       "hinh": "bai-07/bt-p52-1.webp",
+       "chu": [
+        [
+         "电视",
+         "diànshì"
+        ]
+       ],
+       "dapAn": "sai"
+      },
+      {
+       "hinh": "bai-07/bt-p52-2.webp",
+       "chu": [
+        [
+         "飞机",
+         "fēijī"
+        ]
+       ],
+       "dapAn": "dung"
+      }
+     ],
+     "cau": [
+      {
+       "so": 13,
+       "hinh": "bai-07/bt-p52-3.webp",
+       "chu": [
+        [
+         "看",
+         "kàn"
+        ],
+        [
+         "书",
+         "shū"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: chàng trai đang đọc sách."
+      },
+      {
+       "so": 14,
+       "hinh": "bai-07/bt-p52-4.webp",
+       "chu": [
+        [
+         "学校",
+         "xuéxiào"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: ngân hàng (Bank of China)."
+      },
+      {
+       "so": 15,
+       "hinh": "bai-07/bt-p52-5.webp",
+       "chu": [
+        [
+         "六",
+         "liù"
+        ],
+        [
+         "月",
+         "yuè"
+        ],
+        [
+         "六",
+         "liù"
+        ],
+        [
+         "号",
+         "hào"
+        ]
+       ],
+       "dapAn": "dung",
+       "lyDo": "Tranh: lịch ngày 6 tháng Sáu (June)."
+      },
+      {
+       "so": 16,
+       "hinh": "bai-07/bt-p52-6.webp",
+       "chu": [
+        [
+         "吃",
+         "chī"
+        ],
+        [
+         "中国",
+         "Zhōngguó"
+        ],
+        [
+         "菜",
+         "cài"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: cô gái ngồi quán cà phê xem máy tính bảng.",
+       "chacChan": false
+      },
+      {
+       "so": 17,
+       "hinh": "bai-07/bt-p52-7.webp",
+       "chu": [
+        [
+         "去",
+         "qù"
+        ],
+        [
+         "学校",
+         "xuéxiào"
+        ]
+       ],
+       "dapAn": "sai",
+       "lyDo": "Tranh: các cô gái đi mua sắm trong trung tâm thương mại.",
+       "chacChan": false
+      }
+     ]
+    },
+    {
+     "tieuDe": "第二部分",
+     "kieu": "ghep-cau",
+     "huongDan": "Chọn câu trả lời đúng",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "她",
+         "Tā"
+        ],
+        [
+         "29",
+         "èrshíjiǔ"
+        ],
+        [
+         "岁",
+         "suì"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "今天",
+         "Jīntiān"
+        ],
+        [
+         "星期日",
+         "xīngqīrì"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "我",
+         "Wǒ"
+        ],
+        [
+         "去",
+         "qù"
+        ],
+        [
+         "同学",
+         "tóngxué"
+        ],
+        [
+         "家",
+         "jiā"
+        ],
+        [
+         "看",
+         "kàn"
+        ],
+        [
+         "书",
+         "shū"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "我",
+         "Wǒ"
+        ],
+        [
+         "不",
+         "bù"
+        ],
+        [
+         "会",
+         "huì"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "我",
+         "wǒ"
+        ],
+        [
+         "爸爸",
+         "bàba"
+        ],
+        [
+         "会",
+         "huì"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "今天",
+         "Jīntiān"
+        ],
+        [
+         "是",
+         "shì"
+        ],
+        [
+         "10",
+         "shí"
+        ],
+        [
+         "月",
+         "yuè"
+        ],
+        [
+         "5",
+         "wǔ"
+        ],
+        [
+         "号",
+         "hào"
+        ],
+        [
+         "。",
+         ""
+        ]
+       ]
+      },
+      {
+       "ma": "F",
+       "chu": [
+        [
+         "好",
+         "Hǎo"
+        ],
+        [
+         "的",
+         "de"
+        ],
+        [
+         "，",
+         ""
+        ],
+        [
+         "谢谢",
+         "xièxie"
+        ],
+        [
+         "！",
+         ""
+        ]
+       ]
+      }
+     ],
+     "viDu": {
+      "dapAn": "F",
+      "dong": [
+       [
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "喝",
+         "hē"
+        ],
+        [
+         "水",
+         "shuǐ"
+        ],
+        [
+         "吗",
+         "ma"
+        ],
+        [
+         "？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 18,
+       "dapAn": "B",
+       "dong": [
+        [
+         [
+          "今天",
+          "Jīntiān"
+         ],
+         [
+          "星期",
+          "xīngqī"
+         ],
+         [
+          "几",
+          "jǐ"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 19,
+       "dapAn": "E",
+       "dong": [
+        [
+         [
+          "今天",
+          "Jīntiān"
+         ],
+         [
+          "是",
+          "shì"
+         ],
+         [
+          "几",
+          "jǐ"
+         ],
+         [
+          "月",
+          "yuè"
+         ],
+         [
+          "几",
+          "jǐ"
+         ],
+         [
+          "号",
+          "hào"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 20,
+       "dapAn": "A",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "的",
+          "de"
+         ],
+         [
+          "汉语",
+          "Hànyǔ"
+         ],
+         [
+          "老师",
+          "lǎoshī"
+         ],
+         [
+          "多",
+          "duō"
+         ],
+         [
+          "大",
+          "dà"
+         ],
+         [
+          "了",
+          "le"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 21,
+       "dapAn": "C",
+       "dong": [
+        [
+         [
+          "明天",
+          "Míngtiān"
+         ],
+         [
+          "你",
+          "nǐ"
+         ],
+         [
+          "做",
+          "zuò"
+         ],
+         [
+          "什么",
+          "shénme"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 22,
+       "dapAn": "D",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "说",
+          "shuō"
+         ],
+         [
+          "汉语",
+          "Hànyǔ"
+         ],
+         [
+          "吗",
+          "ma"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "dien-tu",
+     "huongDan": "Chọn từ điền vào chỗ trống",
+     "luaChon": [
+      {
+       "ma": "A",
+       "chu": [
+        [
+         "几",
+         "jǐ"
+        ]
+       ]
+      },
+      {
+       "ma": "B",
+       "chu": [
+        [
+         "月",
+         "yuè"
+        ]
+       ]
+      },
+      {
+       "ma": "C",
+       "chu": [
+        [
+         "号",
+         "hào"
+        ]
+       ]
+      },
+      {
+       "ma": "D",
+       "chu": [
+        [
+         "名字",
+         "míngzi"
+        ]
+       ]
+      },
+      {
+       "ma": "E",
+       "chu": [
+        [
+         "星期",
+         "xīngqī"
+        ]
+       ]
+      }
+     ],
+     "viDu": {
+      "dapAn": "D",
+      "dong": [
+       [
+        [
+         "你",
+         "Nǐ"
+        ],
+        [
+         "叫",
+         "jiào"
+        ],
+        [
+         "什么",
+         "shénme"
+        ],
+        [
+         "__",
+         ""
+        ],
+        [
+         "？",
+         ""
+        ]
+       ]
+      ]
+     },
+     "cau": [
+      {
+       "so": 23,
+       "dapAn": "E",
+       "dong": [
+        [
+         [
+          "昨天",
+          "Zuótiān"
+         ],
+         [
+          "是",
+          "shì"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "三",
+          "sān"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 24,
+       "dapAn": "A",
+       "dong": [
+        [
+         [
+          "明天",
+          "Míngtiān"
+         ],
+         [
+          "星期",
+          "xīngqī"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 25,
+       "dapAn": "B",
+       "dong": [
+        [
+         [
+          "今天",
+          "Jīntiān"
+         ],
+         [
+          "是",
+          "shì"
+         ],
+         [
+          "9",
+          "jiǔ"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "31",
+          "sānshíyī"
+         ],
+         [
+          "号",
+          "hào"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "星期",
+          "xīngqī"
+         ],
+         [
+          "六",
+          "liù"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 26,
+       "dapAn": "C",
+       "dong": [
+        [
+         [
+          "你",
+          "Nǐ"
+         ],
+         [
+          "10",
+          "shí"
+         ],
+         [
+          "月",
+          "yuè"
+         ],
+         [
+          "几",
+          "jǐ"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "去",
+          "qù"
+         ],
+         [
+          "中国",
+          "Zhōngguó"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "tieuDe": "第三部分",
+     "kieu": "dien-tu",
+     "huongDan": "Chọn từ điền vào chỗ trống",
+     "luaChon": [
+      {
+       "ma": "F",
+       "chu": [
+        [
+         "问",
+         "wèn"
+        ]
+       ]
+      },
+      {
+       "ma": "G",
+       "chu": [
+        [
+         "去",
+         "qù"
+        ]
+       ]
+      },
+      {
+       "ma": "H",
+       "chu": [
+        [
+         "做",
+         "zuò"
+        ]
+       ]
+      },
+      {
+       "ma": "I",
+       "chu": [
+        [
+         "会",
+         "huì"
+        ]
+       ]
+      }
+     ],
+     "cau": [
+      {
+       "so": 27,
+       "dapAn": "G",
+       "dong": [
+        [
+         [
+          "明天",
+          "Míngtiān"
+         ],
+         [
+          "我",
+          "wǒ"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "一",
+          "yī"
+         ],
+         [
+          "个",
+          "ge"
+         ],
+         [
+          "中国",
+          "Zhōngguó"
+         ],
+         [
+          "朋友",
+          "péngyou"
+         ],
+         [
+          "家",
+          "jiā"
+         ],
+         [
+          "吃",
+          "chī"
+         ],
+         [
+          "饭",
+          "fàn"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 28,
+       "dapAn": "H",
+       "dong": [
+        [
+         [
+          "明天",
+          "Míngtiān"
+         ],
+         [
+          "星期",
+          "xīngqī"
+         ],
+         [
+          "六",
+          "liù"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "你",
+          "nǐ"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "什么",
+          "shénme"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 29,
+       "dapAn": "I",
+       "dong": [
+        [
+         [
+          "我",
+          "Wǒ"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "说",
+          "shuō"
+         ],
+         [
+          "汉语",
+          "Hànyǔ"
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "不",
+          "bù"
+         ],
+         [
+          "会",
+          "huì"
+         ],
+         [
+          "写",
+          "xiě"
+         ],
+         [
+          "汉字",
+          "Hànzì"
+         ],
+         [
+          "。",
+          ""
+         ]
+        ]
+       ]
+      },
+      {
+       "so": 30,
+       "dapAn": "F",
+       "dong": [
+        [
+         [
+          "请",
+          "Qǐng"
+         ],
+         [
+          "__",
+          ""
+         ],
+         [
+          "，",
+          ""
+         ],
+         [
+          "这个",
+          "zhège"
+         ],
+         [
+          "汉字",
+          "Hànzì"
+         ],
+         [
+          "怎么",
+          "zěnme"
+         ],
+         [
+          "读",
+          "dú"
+         ],
+         [
+          "？",
+          ""
+         ]
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "loiNghe": {}
+  },
+  "phatAm": {
+   "nhom": [
+    {
+     "kieu": "chon-am",
+     "huongDan": "Nghe, chọn từ hai âm tiết nghe được",
+     "cau": [
+      {
+       "so": 1,
+       "luaChon": [
+        "shífēn",
+        "shítáng"
+       ],
+       "dapAn": "shítáng"
+      },
+      {
+       "so": 2,
+       "luaChon": [
+        "shíjiān",
+        "chángcháng"
+       ],
+       "dapAn": "chángcháng"
+      },
+      {
+       "so": 3,
+       "luaChon": [
+        "niánqīng",
+        "niánlíng"
+       ],
+       "dapAn": "niánqīng"
+      },
+      {
+       "so": 4,
+       "luaChon": [
+        "míngtiān",
+        "míngnián"
+       ],
+       "dapAn": "míngnián"
+      },
+      {
+       "so": 5,
+       "luaChon": [
+        "héshì",
+        "hébìng"
+       ],
+       "dapAn": "héshì"
+      },
+      {
+       "so": 6,
+       "luaChon": [
+        "ménkǒu",
+        "mén hòu"
+       ],
+       "dapAn": "ménkǒu"
+      },
+      {
+       "so": 7,
+       "luaChon": [
+        "érqiě",
+        "érhòu"
+       ],
+       "dapAn": "érqiě"
+      }
+     ]
+    }
+   ],
+   "loiNghe": {},
+   "am": "bt-07-2"
+  }
+ },
+ "nguPhapHsk": [
+  "np-0025",
+  "np-0018",
+  "np-0023"
+ ],
+ "canKiemTra": [
+  "Bản dịch tiếng Việt của hội thoại, ví dụ, giải thích là bản nháp của Claude, chưa có người duyệt.",
+  "Pinyin chép tay từ sách (đã đối chiếu tự động với từ điển); ghi chú biến điệu do máy sinh theo quy tắc.",
+  "Đáp án phần khởi động do Claude suy từ ảnh (sách không in đáp án)."
+ ]
+}

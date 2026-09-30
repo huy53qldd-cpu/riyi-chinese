@@ -1,0 +1,370 @@
+{
+ "_ghiChu": "Sách bài tập HSK标准教程1, bài 10. Cách ghi và nguồn đáp án như bài 3. Bỏ phần phát âm (chọn từ KHÔNG phải từ láy trong ba từ nghe được): sách chỉ in A/B/C, từ nằm trong âm thanh.",
+ "bai": 10,
+ "nghe": {
+  "am": "10-1",
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh",
+    "huongDan": "Nghe từ hoặc cụm từ, xem tranh đúng hay sai",
+    "viDu": [
+     {
+      "hinh": "bt-p73-1",
+      "chu": "很|hěn 高兴|gāoxìng",
+      "dapAn": "dung"
+     },
+     {
+      "hinh": "bt-p73-2",
+      "chu": "看|kàn 电影|diànyǐng",
+      "dapAn": "sai"
+     }
+    ],
+    "cau": [
+     {
+      "so": 1,
+      "hinh": "bt-p73-3",
+      "loi": [
+       "坐"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: mọi người đang ngồi thành hàng."
+     },
+     {
+      "so": 2,
+      "hinh": "bt-p73-4",
+      "loi": [
+       "桌子"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: cái bàn."
+     },
+     {
+      "so": 3,
+      "hinh": "bt-p73-5",
+      "loi": [
+       "爸爸和女儿"
+      ],
+      "dapAn": "sai",
+      "lyDo": "Tranh: MẸ và con gái."
+     },
+     {
+      "so": 4,
+      "hinh": "bt-p73-6",
+      "loi": [
+       "请喝茶"
+      ],
+      "dapAn": "dung",
+      "lyDo": "Tranh: rót trà mời khách."
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-hinh",
+    "huongDan": "Nghe hội thoại, chọn tranh khớp",
+    "luaChon": {
+     "A": "bt-p74-1",
+     "B": "bt-p74-2",
+     "C": "bt-p74-3",
+     "D": "bt-p74-4",
+     "E": "bt-p74-5"
+    },
+    "viDu": {
+     "loi": [
+      "女：你好！",
+      "男：你好！很高兴认识你。"
+     ],
+     "dapAn": "C"
+    },
+    "cau": [
+     {
+      "so": 5,
+      "loi": [
+       "你的桌子上有什么？",
+       "我的桌子上有一个电脑。"
+      ],
+      "dapAn": "E",
+      "lyDo": "Tranh E: máy tính xách tay trên bàn."
+     },
+     {
+      "so": 6,
+      "loi": [
+       "你女儿呢？",
+       "在那儿，她在桌子下面。"
+      ],
+      "dapAn": "A",
+      "lyDo": "Tranh A: bé gái chui dưới gầm bàn.",
+      "chacChan": false
+     },
+     {
+      "so": 7,
+      "loi": [
+       "谁是大卫？",
+       "我后面的那个人是大卫。"
+      ],
+      "dapAn": "D",
+      "lyDo": "Tranh D: bé gái giơ tay, phía sau có bạn nam.",
+      "chacChan": false
+     },
+     {
+      "so": 8,
+      "loi": [
+       "李老师家在后面吗？",
+       "不是，李老师家在前面。"
+      ],
+      "dapAn": "B",
+      "lyDo": "Tranh B: các toà nhà.",
+      "chacChan": false
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "chon-chu",
+    "huongDan": "Nghe câu, trả lời câu hỏi",
+    "viDu": {
+     "loi": [
+      "下午我去商店，我想买一些水果。",
+      "问：她下午去哪里？"
+     ],
+     "luaChon": [
+      "商店|shāngdiàn",
+      "医院|yīyuàn",
+      "学校|xuéxiào"
+     ],
+     "dapAn": "A"
+    },
+    "cau": [
+     {
+      "so": 9,
+      "loi": [
+       "桌子上有一个杯子和一本书。",
+       "问：桌子上有什么？"
+      ],
+      "luaChon": [
+       "椅子|yǐzi",
+       "电脑|diànnǎo",
+       "杯子和书|bēizi hé shū"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 10,
+      "loi": [
+       "我能看看你的书吗？",
+       "问：他想做什么？"
+      ],
+      "luaChon": [
+       "看书|kàn shū",
+       "喝茶|hē chá",
+       "写汉字|xiě Hànzì"
+      ],
+      "dapAn": "A"
+     },
+     {
+      "so": 11,
+      "loi": [
+       "前面那个人是谢朋的同学，他在学校工作。",
+       "问：前面的人是谁？"
+      ],
+      "luaChon": [
+       "医生|yīshēng",
+       "谢朋|Xiè Péng",
+       "谢朋的同学|Xiè Péng de tóngxué"
+      ],
+      "dapAn": "C"
+     },
+     {
+      "so": 12,
+      "loi": [
+       "我的小狗在那儿，桌子下面。",
+       "问：桌子下面有什么？"
+      ],
+      "luaChon": [
+       "小猫|xiǎo māo",
+       "小狗|xiǎo gǒu",
+       "椅子|yǐzi"
+      ],
+      "dapAn": "B"
+     }
+    ]
+   }
+  ]
+ },
+ "doc": {
+  "nhom": [
+   {
+    "tieuDe": "第一部分",
+    "kieu": "dung-sai-hinh-chu",
+    "huongDan": "Xem tranh, từ có khớp tranh không",
+    "viDu": [
+     {
+      "hinh": "bt-p76-1",
+      "chu": "电视|diànshì",
+      "dapAn": "sai"
+     },
+     {
+      "hinh": "bt-p76-2",
+      "chu": "飞机|fēijī",
+      "dapAn": "dung"
+     }
+    ],
+    "cau": [
+     {
+      "so": 13,
+      "hinh": "bt-p76-3",
+      "chu": "工作|gōngzuò",
+      "dapAn": "dung",
+      "lyDo": "Tranh: nhân viên đang làm việc ở quầy.",
+      "chacChan": false
+     },
+     {
+      "so": 14,
+      "hinh": "bt-p76-4",
+      "chu": "电脑|diànnǎo",
+      "dapAn": "sai",
+      "lyDo": "Tranh: một quyển sách."
+     },
+     {
+      "so": 15,
+      "hinh": "bt-p76-5",
+      "chu": "请|qǐng 喝|hē 茶|chá",
+      "dapAn": "dung",
+      "lyDo": "Tranh: ấm trà và chén trà."
+     },
+     {
+      "so": 16,
+      "hinh": "bt-p76-6",
+      "chu": "在|zài 学校|xuéxiào",
+      "dapAn": "sai",
+      "lyDo": "Tranh: cô gái trong siêu thị."
+     },
+     {
+      "so": 17,
+      "hinh": "bt-p76-7",
+      "chu": "桌子|zhuōzi 上|shang",
+      "dapAn": "dung",
+      "lyDo": "Tranh: cốc cà phê, máy tính bảng, giấy bút đặt trên mặt bàn.",
+      "chacChan": false
+     }
+    ]
+   },
+   {
+    "tieuDe": "第二部分",
+    "kieu": "ghep-cau",
+    "huongDan": "Chọn câu trả lời đúng",
+    "luaChon": {
+     "A": "在|Zài 那儿|nàr ，桌子|zhuōzi 里面|lǐmiàn 。",
+     "B": "好|Hǎo ，请|qǐng 坐|zuò 。",
+     "C": "一|Yī 个|ge 电脑|diànnǎo 和|hé 一|yī 本|běn 书|shū 。",
+     "D": "她|Tā 叫|jiào 李月|Lǐ Yuè ，是|shì 我|wǒ 的|de 汉语|Hànyǔ 老师|lǎoshī 。",
+     "E": "不|Bù 是|shì ，我|wǒ 后面|hòumiàn 那个|nàge 人|rén 是|shì 李朋|Lǐ Péng 。",
+     "F": "好|Hǎo 的|de ，谢谢|xièxie ！"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 喝|hē 水|shuǐ 吗|ma ？",
+     "dapAn": "F"
+    },
+    "cau": [
+     {
+      "so": 18,
+      "chu": "你好|Nǐhǎo ，我|wǒ 能|néng 坐|zuò 这儿|zhèr 吗|ma ？",
+      "dapAn": "B"
+     },
+     {
+      "so": 19,
+      "chu": "你|Nǐ 的|de 杯子|bēizi 呢|ne ？",
+      "dapAn": "A"
+     },
+     {
+      "so": 20,
+      "chu": "你|Nǐ 的|de 桌子|zhuōzi 上|shang 有|yǒu 什么|shénme ？",
+      "dapAn": "C"
+     },
+     {
+      "so": 21,
+      "chu": "你|Nǐ 后面|hòumiàn 那个|nàge 人|rén 是|shì 谁|shéi ？",
+      "dapAn": "D"
+     },
+     {
+      "so": 22,
+      "chu": "你|Nǐ 前面|qiánmiàn 那个|nàge 人|rén 是|shì 李朋|Lǐ Péng 吗|ma ？",
+      "dapAn": "E"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "A": "有|yǒu",
+     "B": "在|zài",
+     "C": "请|qǐng",
+     "D": "名字|míngzi",
+     "E": "能|néng"
+    },
+    "viDu": {
+     "chu": "你|Nǐ 叫|jiào 什么|shénme __ ？",
+     "dapAn": "D"
+    },
+    "cau": [
+     {
+      "so": 23,
+      "chu": "我|Wǒ __ 看看|kànkan 你|nǐ 的|de 汉语|Hànyǔ 书|shū 吗|ma ？",
+      "dapAn": "E"
+     },
+     {
+      "so": 24,
+      "chu": "我|Wǒ 爸爸|bàba 今天|jīntiān 不|bù __ 家|jiā 。",
+      "dapAn": "B"
+     },
+     {
+      "so": 25,
+      "chu": "您好|Nínhǎo ，__ 喝|hē 茶|chá 。",
+      "dapAn": "C"
+     },
+     {
+      "so": 26,
+      "chu": "学校|Xuéxiào 里|li __ 一|yī 个|ge 商店|shāngdiàn 。",
+      "dapAn": "A"
+     }
+    ]
+   },
+   {
+    "tieuDe": "第三部分",
+    "kieu": "dien-tu",
+    "huongDan": "Chọn từ điền vào chỗ trống",
+    "luaChon": {
+     "F": "不|bù",
+     "G": "没|méi",
+     "H": "很|hěn",
+     "I": "多|duō"
+    },
+    "cau": [
+     {
+      "so": 27,
+      "chu": "你|Nǐ 爸爸|bàba 今年|jīnnián __ 大|dà 了|le ？",
+      "dapAn": "I"
+     },
+     {
+      "so": 28,
+      "chu": "请|Qǐng 坐|zuò ，这儿|zhèr 的|de 中国|Zhōngguó 菜|cài __ 好吃|hǎochī 。",
+      "dapAn": "H"
+     },
+     {
+      "so": 29,
+      "chu": "他|Tā __ 是|shì 学生|xuésheng ，他|tā 是|shì 老师|lǎoshī 。",
+      "dapAn": "F"
+     },
+     {
+      "so": 30,
+      "chu": "我|Wǒ 的|de 桌子|zhuōzi 上|shang __ 有|yǒu 电脑|diànnǎo 。",
+      "dapAn": "G"
+     }
+    ]
+   }
+  ]
+ }
+}
